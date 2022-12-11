@@ -1,0 +1,1 @@
+![[_my-graden 2022-09-22 14.12.12.excalidraw]]

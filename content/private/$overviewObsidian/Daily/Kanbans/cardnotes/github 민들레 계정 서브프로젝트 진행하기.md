@@ -1,0 +1,129 @@
+# 할 일 목록
+- 민들레 코어에 아래 서브모듈 TUI로 구현하기
+	- [ ] 스니펫
+		- [ ] BEM 컨벤션이 좋긴하지만 딱 맞아떨어지지 않아 그냥 상하위 문서로 나누고 npm 스크립트 옵션을 잘 엮어두기만 하고 모듈들 이름은 평범하게 짓기.
+		- [ ] 대신 함수들 이름을 bem 컨벤션으로 지을까? 고민해보기. 해보면 감이 올듯.
+	- [ ] 유용한 문서
+	- [ ] 유즈케이스 로깅
+
+- 학습하기
+	- [ ] responsive 디자인 이어서
+	- [ ] 스토리북 차크라 ui 구현하며 학습하기
+
+- 실습하기
+	- [ ] 다큐사우르스에 스토리북 적용 실험해보며 온갖 짓 다해보기(도커라이징, 오토메이션, npm publish 등)
+	- [ ] 온갖 짓 다해보고 정리가 좀 되면(npm 모듈도 몇가지 생기고 괜찮은 패턴도 추가가 되면 민들레 시스템즈 본작업 들어가기)
+
+- 모듈 제작 참고 레퍼런스
+	- npm 패키지 빌드 과정 : https://heropy.blog/2019/01/31/node-js-npm-module-publish/
+	- npm 패키지 배포 과정 : https://min9nim.vercel.app/2021-05-17-github-packages/
+	- 저장소 관리 : http://blog.hwahae.co.kr/all/tech/tech-tech/9507/
+	- ![[Pasted image 20221025130732.png]]
+
+- (예상) 모듈의 구조
+- mindulle
+	- core(거대한 에셋 역할) : actions 세팅하기
+		- study
+			- knowledgebases
+			- casestudies
+			- demos
+		- experience
+			- my-garden
+				- [[#내 컨텐츠 구조]]를 따라감
+				- fruits만 뽑아서 blog에
+			- my-favorite-codes
+				- popular-modules
+				- my-snippets : 여기에는 코드에 관한 간단한 메모만
+					- 실제 스니펫은 scripts 레포에
+		- assets
+			- codes(.mdx) : BEM file naming
+			- diagrams(.svg, avif, webp, ... ) : BEM file naming
+				- e.g reactjs__animation--understood
+				- lib|prog-lang__issues--cognitive-status
+				- values can be used in cognitive-status field.
+					- attention : ==inspired==
+					- learning : ==learing==
+					- memory : ==memorized==
+					- perception : ==perceptive==
+					- thought : ==[toy/office/indibiz]projectName-devops(tested, released, deploied, operated, monitoring, integrate, ...)==
+					- 아이콘 스프라이트 이미지도 포함해 둘 것.
+	- (public)scripts(실사용 코드 역할)
+		- actions : 이하 작업들 일부 패턴 선택해 자동화
+		- shell
+			- 각종 쉘스크립트 모음
+		- dockerize
+			1. 현재 프로젝트를 이미지에 마는 도커파일
+			2. 이미지 생성 과정을 기록/정리한 도커파일
+			3. 컨테이너(이미지)가 이미지간 통신, 라우팅 등, 자동화 로직 등이 필요 할 때 사용할 도커파일
+			- 1, 2, 3을 분류하여 작성한 뒤 npx @mindulle/scripts/dockerize -- --options 하면 알아서 배포/컨테이너화 할 수 있게 스크립팅 해두기.
+			- 아니면 @mindulle/scripts/dockerize init 해서 TUI 인터페이스로 처리하는것도 좋음.
+			- 옵션화 해두면 action에서 쓰기 좋고
+			- TUI 해두면 로컬에서 쓰기 좋음.
+			- 익숙해 질 때 까진 TUI 인터페이스로 구축해서 쓰다가 제대로 릴리즈 할때쯤 옵션 기능 구현한 뒤 액션화해서 쓰자.
+		- package
+			- actions : 자주 사용하는 깃허브 액션 패턴 모아서 정리해두기(yml 파일)
+			- codeblock
+				- 코드블럭 모아서 모듈화하기(클립보드 저장, CLI 출력(console.log))
+			- demo
+				- 코샌박 임베드 주소 쉽게 얻기
+				- 코샌박 실행 혹은 브라우저에서 띄우기
+			- helper
+				- 디자인, 개발 헬퍼 사이트 목록 불러오기(주제별)
+			- test
+				- 스토리북하고 연계된 테스트 정리해두기
+				- 자주쓰는 테스트(test-library, jest, cypress) 넣어두기
+			- integrate
+				- 특정 플랫폼별 사용하는 패턴만 지정(특히 슬랙)
+			- utils(misc)
+				- 기타 잡다한 패키징 필요한거 싹다 모으기
+		- index.js에서 물어보기
+	- (public)blog
+		- 다큐사우르스 구조 따라감
+		- 문서화도 진행하고
+		- 블로그도 만들고.
+		- 필요하면 스토리북 삽입도 하고
+		- 하위 주제로 나눠서 추가 블로깅도 가능은 함.
+		- 또 필요하면 strapi/ghost같은 headless cms도 도입하고.
+	- projects
+		- (public)toyprojects
+		- (private)design/dev-systems
+		- (private)officeproject : separated programming logics from business logics 
+			- 프로젝트별 민감한 정보 관리에 대한 암호나 힌트 적어두기
+		- (private)indibiz :  separated programming logics from business logics.
+			- 프로젝트별 민감한 정보 관리에 대한 암호나 힌트 적어두기
+
+# 내 컨텐츠 구조
+- study : 학습용, 공부용
+	- 각종 공식문서, 스펙문서(보는법 설명 포함해서), 쓸만한 책. 이론적 베이스
+		- 우선순위별로 사이트 나열해놓기(공식문서, 책 - 커뮤니티 - 코샌박 순)
+	- 사례분석(usecase)
+		- 오픈소스 깃허브 이슈
+		- 오픈소스 블로그 글 / 구글링 중 발견한 코드 조각들 / 기업 블로그 글 정리
+	- 코샌박/코드펜(Demos)
+		- 어느정도 권위있는 커뮤니티/블로그 글
+		- 30seconds of code, css tricks 같은 사이트들
+		- 에서 발견되는 데모들 모아놓기
+- Experiences : 실무/프로젝트 경험 용
+	- In my brain
+		- Blog(Diary) : 프로젝트 진행 중 겪은 경험을 글로 정리. 공개용
+		- issues : 이슈단위로 자연스레 깃에 기록이 남을것임. 이것에 대한 로그
+		- Garden(obsidian) : 비공개용 대충 막 휘갈긴 기록 다 포함해서 올라감. 개인용
+	- In my computer
+		- useful modules/libs
+			- 유명한 오픈소스 라이브러리들(환경변수나 http통신 로컬 세팅 쉘스크립팅 등 개발 과정에서 발생 할 수 있는 다양한 이슈들엔 거의 웬만해선 이미 잘 사용되는 오픈소스 라이브러리/공식 지원 문법이 존재함. 항상 잘 찾아보기)
+			- 내 커스텀 스니펫도 여기 작성해서 넣어놓기(@mindulle/core)
+		- snippets/demos
+			- 실습하면서 발생하는 코드 조각들을 코샌박에/로컬에서 작동 확인하고
+			- npm publish 과정을 거쳐 배포해두기.(mindulle/core에 자연스레 업데이트가 될 것임)
+			- 여유가 되거나 중요한 스니펫이라 생각되면 코샌박에 실습을 진행하고 embed 링크를 걸어두자.
+		- Patterns
+			- 문서화도 필요하고
+				- 일단 Patterns.dev라는 좋은 레퍼런스가 있음
+				- 옵시디언에 베껴적기 하면서 이해하고
+				- 실제 사용례가 생기면 그때 fruits로 격상시켜서 공개용 문서화 진행
+			- 코드화도 필요함
+				- patterns.dev에는 실 적용사례는 드뭄
+				- 실제 사용했던 경험에 대해서만 코드화를 해두면 좋을 듯 함.
+				- 이 경우 카카오 엔터프라이즈 기술블로그 글 같은 좋은 사례도 같이 포함시켜도 좋을 것 같음.
+				- https://fe-developers.kakaoent.com/2022/220609-storybookwise-component-refactoring/
+				- @mindulle/core/patterns에 배포해두면 될듯.

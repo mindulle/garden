@@ -1,0 +1,169 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="three.js objects that implement their own raycast method (meshes, lines, etc) can be interacted with by declaring events on them. We support pointer events, clicks and wheel-scroll."><title>Events</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://quartz.jzhao.xyz//icon.png><link href=https://quartz.jzhao.xyz/styles.706bb6073ba85d26809f9096dae23a6b.min.css rel=stylesheet><link href=https://quartz.jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://quartz.jzhao.xyz/js/darkmode.63d6a3e095d0bd2b935b62adec9dc11b.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/util.5e39932758f9ecaf45fd54506ed61416.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://quartz.jzhao.xyz/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.7990055742f3c933ce66299cc250c568.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.6b7b8589d27c8bc078940fbece810de1.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://quartz.jzhao.xyz",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://quartz.jzhao.xyz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/quartz.jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/full-text-search.51f0b1753e9b30839d053f8a98cc20d1.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://quartz.jzhao.xyz/>🪴 Quartz 3.3</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Events</h1><p class=meta>Last updated
+Dec 11, 2022
+<a href=https://github.com/jackyzha0/quartz/tree/hugo/content/Develop/Trees/Dev/Libs&Fwks/Frontend/React/React-three/API/Events.md rel=noopener>Edit Source</a></p><ul class=tags></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><ol><li><a href=#event-data>Event data</a></li><li><a href=#how-the-event-system-works-bubbling-and-capture>How the event-system works, bubbling and capture</a></li><li><a href=#event-propagation-bubbling>Event propagation (bubbling)</a></li><li><a href=#pointer-capture>Pointer capture</a></li><li><a href=#customizing-the-event-settings>Customizing the event settings</a></li><li><a href=#using-a-different-target-element>Using a different target element</a></li></ol></li></ol></nav></details></aside><p><code>three.js</code> objects that implement their own <code>raycast</code> method (meshes, lines, etc) can be interacted with by declaring events on them. We support pointer events, clicks and wheel-scroll. Events contain the browser event as well as the <code>three.js</code> event data (object, point, distance, etc). You may want to
+<a href=https://github.com/jquery/PEP rel=noopener>polyfill</a> them, if that&rsquo;s a concern.</p><p>Additionally, there&rsquo;s a special <code>onUpdate</code> that is called every time the object gets fresh props, which is good for things like <code>self => (self.verticesNeedUpdate = true)</code>.</p><p>Also notice the <code>onPointerMissed</code> on the canvas element, which fires on clicks that haven&rsquo;t hit <em>any</em> meshes.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>mesh</span>
+</span></span><span class=line><span class=cl>  <span class=na>onClick</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;click&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onContextMenu</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;context menu&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onDoubleClick</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;double click&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onWheel</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;wheel spins&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onPointerUp</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;up&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onPointerDown</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;down&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onPointerOver</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;over&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onPointerOut</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;out&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onPointerEnter</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;enter&#39;</span><span class=p>)}</span> <span class=err>//</span> <span class=na>see</span> <span class=na>note</span> <span class=na>1</span>
+</span></span><span class=line><span class=cl>  <span class=na>onPointerLeave</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;leave&#39;</span><span class=p>)}</span> <span class=err>//</span> <span class=na>see</span> <span class=na>note</span> <span class=na>1</span>
+</span></span><span class=line><span class=cl>  <span class=na>onPointerMove</span><span class=o>=</span><span class=p>{(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;move&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onPointerMissed</span><span class=o>=</span><span class=p>{()</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;missed&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl>  <span class=na>onUpdate</span><span class=o>=</span><span class=p>{(</span><span class=nx>self</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;props have been updated&#39;</span><span class=p>)}</span>
+</span></span><span class=line><span class=cl><span class=p>/&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#event-data><h3 id=event-data><span class=hanchor arialabel=Anchor># </span>Event data</h3></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=p>({</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span><span class=nx>DomEvent</span>                   <span class=c1>// All the original event data
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=p>...</span><span class=nx>Intersection</span>                 <span class=c1>// All of Three&#39;s intersection data - see note 2
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>intersections</span><span class=o>:</span> <span class=nx>Intersection</span><span class=p>[]</span>    <span class=c1>// The first intersection of each intersected object
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>object</span><span class=o>:</span> <span class=nx>Object3D</span>              <span class=c1>// The object that was actually hit
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>eventObject</span><span class=o>:</span> <span class=nx>Object3D</span>         <span class=c1>// The object that registered the event
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>unprojectedPoint</span><span class=o>:</span> <span class=nx>Vector3</span>     <span class=c1>// Camera-unprojected point
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>ray</span><span class=o>:</span> <span class=nx>Ray</span>                      <span class=c1>// The ray that was used to strike the object
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>camera</span><span class=o>:</span> <span class=nx>Camera</span>                <span class=c1>// The camera that was used in the raycaster
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>sourceEvent</span><span class=o>:</span> <span class=nx>DomEvent</span>         <span class=c1>// A reference to the host event
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>delta</span><span class=o>:</span> <span class=nx>number</span>                 <span class=c1>// Distance between mouse down and mouse up event in pixels
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>})</span> <span class=p>=&gt;</span> <span class=p>...</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#how-the-event-system-works-bubbling-and-capture><h3 id=how-the-event-system-works-bubbling-and-capture><span class=hanchor arialabel=Anchor># </span>How the event-system works, bubbling and capture</h3></a><hint><p><code>pointerenter</code> and <code>pointerleave</code> events work exactly the same as pointerover and pointerout.
+<code>pointerenter</code> and <code>pointerleave</code> semantics are not implemented.</p></hint><hint><p>Some events (such as <code>pointerout</code>) happen when there is no intersection between <code>eventObject</code> and
+the ray. When this happens, the event will contain intersection data from a previous event with
+this object.</p></hint><a href=#event-propagation-bubbling><h3 id=event-propagation-bubbling><span class=hanchor arialabel=Anchor># </span>Event propagation (bubbling)</h3></a><p>Propagation works a bit differently to the DOM because objects can occlude each other in 3D. The <code>intersections</code> array in the event includes all objects intersecting the ray, not just the nearest. Only the first intersection with each object is included.
+The event is first delivered to the object nearest the camera, and then bubbles up through its ancestors like in the DOM. After that, it is delivered to the next nearest object, and then its ancestors, and so on. This means objects are transparent to pointer events by default, even if the object handles the event.</p><p><code>event.stopPropagation()</code> doesn&rsquo;t just stop this event from bubbling up, it also stops it from being delivered to farther objects (objects behind this one). All other objects, nearer or farther, no longer count as being hit while the pointer is over this object. If they were previously delivered pointerover events, they will immediately be delivered pointerout events. If you want an object to block pointer events from objects behind it, it needs to have an event handler as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=nx>onPointerOver</span><span class=o>=</span><span class=p>{</span><span class=nx>e</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>e</span><span class=p>.</span><span class=nx>stopPropagation</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// ...
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}}</span>
+</span></span></code></pre></td></tr></table></div></div><p>even if you don&rsquo;t want this object to respond to the pointer event. If you do want to handle the event as well as using <code>stopPropagation()</code>, remember that the pointerout events will happen <strong>during</strong> the <code>stopPropagation()</code> call. You probably want your other event handling to happen after this.</p><a href=#pointer-capture><h3 id=pointer-capture><span class=hanchor arialabel=Anchor># </span>Pointer capture</h3></a><p>Because events go to all intersected objects, capturing the pointer also works differently. In the DOM, the capturing object <strong>replaces</strong> the hit test, but in React Three Fiber, the capturing object is <strong>added</strong> to the hit test result: if the capturing object was not hit, then all of the hit objects (and their ancestors) get the event first, followed by the capturing object and its ancestors. The capturing object can also use <code>event.stopPropagation()</code> so that objects that really were hit get pointerout events.</p><p>Note that you can access the <code>setPointerCapture</code> and <code>releasePointerCapture</code> methods <strong>only</strong> via <code>event.target</code>: they don&rsquo;t get added to the <code>Object3D</code> instances in the scene graph.</p><p><code>setPointerCapture</code> and <code>releasePointerCapture</code> take a <code>pointerId</code> parameter like in the DOM, but for now they don&rsquo;t have support for multiple active pointers. PRs are welcome!</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=nx>onPointerDown</span><span class=o>=</span><span class=p>{</span><span class=nx>e</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Only the mesh closest to the camera will be processed
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>e</span><span class=p>.</span><span class=nx>stopPropagation</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// You may optionally capture the target
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>e</span><span class=p>.</span><span class=nx>target</span><span class=p>.</span><span class=nx>setPointerCapture</span><span class=p>(</span><span class=nx>e</span><span class=p>.</span><span class=nx>pointerId</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}}</span>
+</span></span><span class=line><span class=cl><span class=nx>onPointerUp</span><span class=o>=</span><span class=p>{</span><span class=nx>e</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>e</span><span class=p>.</span><span class=nx>stopPropagation</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Optionally release capture
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>e</span><span class=p>.</span><span class=nx>target</span><span class=p>.</span><span class=nx>releasePointerCapture</span><span class=p>(</span><span class=nx>e</span><span class=p>.</span><span class=nx>pointerId</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#customizing-the-event-settings><h3 id=customizing-the-event-settings><span class=hanchor arialabel=Anchor># </span>Customizing the event settings</h3></a><p>For some advanced usage it&rsquo;s possible to customize the setting of the event manager globally with the <code>events</code> prop on <code>&lt;Canvas/></code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-tsx data-lang=tsx><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Canvas</span><span class=p>,</span> <span class=nx>events</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@react-three/fiber&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>eventManagerFactory</span>: <span class=kt>Parameters</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Canvas</span><span class=p>&gt;[</span><span class=mi>0</span><span class=p>][</span><span class=s1>&#39;events&#39;</span><span class=p>]</span> <span class=o>=</span> <span class=p>(</span><span class=nx>state</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>({</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Default configuration
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=p>...</span><span class=nx>events</span><span class=p>(</span><span class=nx>state</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// Determines if the event layer is active
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>enabled</span>: <span class=kt>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// Event layer priority, higher prioritized layers come first and may stop(-propagate) lower layer
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>priority</span>: <span class=kt>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// The filter can re-order or re-structure the intersections
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>filter</span><span class=o>:</span> <span class=p>(</span><span class=nx>items</span>: <span class=kt>THREE.Intersection</span><span class=p>[],</span> <span class=nx>state</span>: <span class=kt>RootState</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=nx>items</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// Find more configuration default on ./packages/fiber/src/web/events.ts
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=c1>// And type definitions in ./packages/fiber/src/core/events.ts
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>})</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>App() {</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>&lt;</span><span class=nt>Canvas</span> <span class=na>events</span><span class=o>=</span><span class=p>{</span><span class=nx>eventManagerFactory</span><span class=p>}</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#using-a-different-target-element><h3 id=using-a-different-target-element><span class=hanchor arialabel=Anchor># </span>Using a different target element</h3></a><p>There are cases in which you may want to connect the event handlers to another DOM element instead of the canvas. It&rsquo;s possible to do so using the <code>connect</code> function of the event manager:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=kd>function</span> <span class=nx>App</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>target</span> <span class=o>=</span> <span class=nx>useRef</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>div</span> <span class=na>ref</span><span class=o>=</span><span class=p>{</span><span class=nx>target</span><span class=p>}&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>Canvas</span> <span class=na>onCreated</span><span class=o>=</span><span class=p>{(</span><span class=nx>state</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>state</span><span class=p>.</span><span class=nx>events</span><span class=p>.</span><span class=nx>connect</span><span class=p>(</span><span class=nx>target</span><span class=p>.</span><span class=nx>current</span><span class=p>)}&gt;&lt;/</span><span class=nt>Canvas</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://quartz.jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Jacky Zhao using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://quartz.jzhao.xyz/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/jackyzha0>Github</a></li></ul></footer></div></div></body></html>

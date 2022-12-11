@@ -1,0 +1,1298 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="1  style: bullet   Building pages with Storybook Storybook helps you build any component, from small “atomic” components to composed pages."><title>Build pages and screens</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://quartz.jzhao.xyz//icon.png><link href=https://quartz.jzhao.xyz/styles.706bb6073ba85d26809f9096dae23a6b.min.css rel=stylesheet><link href=https://quartz.jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://quartz.jzhao.xyz/js/darkmode.63d6a3e095d0bd2b935b62adec9dc11b.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/util.5e39932758f9ecaf45fd54506ed61416.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://quartz.jzhao.xyz/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.7990055742f3c933ce66299cc250c568.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.6b7b8589d27c8bc078940fbece810de1.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://quartz.jzhao.xyz",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://quartz.jzhao.xyz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/quartz.jzhao.xyz\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/full-text-search.51f0b1753e9b30839d053f8a98cc20d1.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://quartz.jzhao.xyz/>🪴 Quartz 3.3</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Build pages and screens</h1><p class=meta>Last updated
+Dec 11, 2022
+<a href=https://github.com/jackyzha0/quartz/tree/hugo/content/Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write%20stories/Build%20pages%20and%20screens.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://quartz.jzhao.xyz/tags/tree/>Tree</a></li><li><a href=https://quartz.jzhao.xyz/tags/storybook/>Storybook</a></li><li><a href=https://quartz.jzhao.xyz/tags/test/>Test</a></li><li><a href=https://quartz.jzhao.xyz/tags/web/>Web</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#pure-presentational-pages>Pure presentational pages</a><ol><li><a href=#args-composition-for-presentational-screens>Args composition for presentational screens</a></li></ol></li><li><a href=#mocking-connected-components>Mocking connected components</a><ol><li><a href=#mocking-providers>Mocking providers</a></li><li><a href=#mocking-api-services>Mocking API Services</a></li><li><a href=#mocking-imports>Mocking imports</a></li><li><a href=#specific-mocks>Specific mocks</a></li><li><a href=#avoiding-mocking-dependencies>Avoiding mocking dependencies</a></li></ol></li></ol></nav></details></aside><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-toc data-lang=toc><span class=line><span class=cl>style: bullet
+</span></span></code></pre></td></tr></table></div></div><a href=#building-pages-with-storybook><h1 id=building-pages-with-storybook><span class=hanchor arialabel=Anchor># </span>Building pages with Storybook</h1></a><p>Storybook helps you build any component, from small “atomic” components to composed pages. But as you move up the component hierarchy toward the level of pages, you end up dealing with more complexity.</p><p>There are many ways to build pages in Storybook. Here are common patterns and solutions.</p><ul><li>Pure presentational pages.</li><li>Connected components (e.g., network requests, context, browser environment).</li></ul><a href=#pure-presentational-pages><h2 id=pure-presentational-pages><span class=hanchor arialabel=Anchor># </span>Pure presentational pages</h2></a><p>Teams at the BBC, The Guardian, and the Storybook maintainers themselves build pure presentational pages. If you take this approach, you don&rsquo;t need to do anything special to render your pages in Storybook.</p><p>It&rsquo;s straightforward to write components to be fully presentational up to the screen level. That makes it easy to show in Storybook. The idea is that you do all the messy “connected” logic in a single wrapper component in your app outside of Storybook. You can see an example of this approach in the
+<a href=https://storybook.js.org/tutorials/intro-to-storybook/react/en/data/ rel=noopener>Data</a> chapter of the Intro to Storybook tutorial.</p><p>The benefits:</p><ul><li>Easy to write stories once components are in this form.</li><li>All the data for the story is encoded in the args of the story, which works well with other parts of Storybook&rsquo;s tooling (e.g.
+<a href=https://storybook.js.org/docs/react/essentials/controls rel=noopener>controls</a>).</li></ul><p>The downsides:</p><ul><li>Your existing app may not be structured in this way, and it may be difficult to change it.</li><li>Fetching data in one place means that you need to drill it down to the components that use it. This can be natural in a page that composes one big GraphQL query (for instance), but other data fetching approaches may make this less appropriate.</li><li>It&rsquo;s less flexible if you want to load data incrementally in different places on the screen.</li></ul><a href=#args-composition-for-presentational-screens><h3 id=args-composition-for-presentational-screens><span class=hanchor arialabel=Anchor># </span>Args composition for presentational screens</h3></a><p>When you are building screens in this way, it is typical that the inputs of a composite component are a combination of the inputs of the various sub-components it renders. For instance, if your screen renders a page layout (containing details of the current user), a header (describing the document you are looking at), and a list (of the subdocuments), the inputs of the screen may consist of the user, document and subdocuments.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// YourPage.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>PageLayout</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./PageLayout&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentHeader</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentHeader&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentList</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentList&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kd>function</span> <span class=nx>DocumentScreen</span><span class=p>({</span> <span class=nx>user</span><span class=p>,</span> <span class=nb>document</span><span class=p>,</span> <span class=nx>subdocuments</span> <span class=p>})</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>PageLayout</span> <span class=nx>user</span><span class=o>=</span><span class=p>{</span><span class=nx>user</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>DocumentHeader</span> <span class=nb>document</span><span class=o>=</span><span class=p>{</span><span class=nb>document</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>DocumentList</span> <span class=nx>documents</span><span class=o>=</span><span class=p>{</span><span class=nx>subdocuments</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/PageLayout&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// YourPage.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>PageLayout</span> <span class=nx>from</span> <span class=s1>&#39;./PageLayout&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>Document</span> <span class=nx>from</span> <span class=s1>&#39;./Document&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>SubDocuments</span> <span class=nx>from</span> <span class=s1>&#39;./SubDocuments&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>DocumentHeader</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentHeader&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>DocumentList</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentList&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>interface</span> <span class=nx>DocumentScreen</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>user</span><span class=o>?:</span> <span class=p>{};</span>
+</span></span><span class=line><span class=cl>  <span class=nb>document</span><span class=o>?:</span> <span class=nx>Document</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=nx>subdocuments</span><span class=o>?:</span> <span class=nx>SubDocuments</span><span class=p>[];</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>DocumentScreen</span><span class=p>({</span> <span class=nx>user</span><span class=p>,</span> <span class=nb>document</span><span class=p>,</span> <span class=nx>subdocuments</span> <span class=p>})</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>PageLayout</span> <span class=nx>user</span><span class=o>=</span><span class=p>{</span><span class=nx>user</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>DocumentHeader</span> <span class=nb>document</span><span class=o>=</span><span class=p>{</span><span class=nb>document</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>DocumentList</span> <span class=nx>documents</span><span class=o>=</span><span class=p>{</span><span class=nx>subdocuments</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/PageLayout&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>In such cases it is natural to use
+<a href=https://storybook.js.org/docs/react/writing-stories/args#args-composition rel=noopener>args composition</a> to build the stories for the page based on the stories of the sub-components:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// YourPage.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentScreen</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./YourPage&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇 Imports the required stories
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>import</span> <span class=o>*</span> <span class=nx>as</span> <span class=nx>PageLayout</span> <span class=nx>from</span> <span class=s1>&#39;./PageLayout.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=o>*</span> <span class=nx>as</span> <span class=nx>DocumentHeader</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentHeader.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=o>*</span> <span class=nx>as</span> <span class=nx>DocumentList</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentList.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;DocumentScreen&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>DocumentScreen</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>DocumentScreen</span> <span class=p>{...</span><span class=nx>args</span><span class=p>}</span> <span class=o>/&gt;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Simple</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Simple</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>user</span><span class=o>:</span> <span class=nx>PageLayout</span><span class=p>.</span><span class=nx>Simple</span><span class=p>.</span><span class=nx>args</span><span class=p>.</span><span class=nx>user</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nb>document</span><span class=o>:</span> <span class=nx>DocumentHeader</span><span class=p>.</span><span class=nx>Simple</span><span class=p>.</span><span class=nx>args</span><span class=p>.</span><span class=nb>document</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>subdocuments</span><span class=o>:</span> <span class=nx>DocumentList</span><span class=p>.</span><span class=nx>Simple</span><span class=p>.</span><span class=nx>args</span><span class=p>.</span><span class=nx>documents</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// YourPage.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=kr>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentStory</span><span class=p>,</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentScreen</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./YourPage&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>PageLayout</span> <span class=kr>from</span> <span class=s1>&#39;./PageLayout.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>DocumentHeader</span> <span class=kr>from</span> <span class=s1>&#39;./DocumentHeader.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>DocumentList</span> <span class=kr>from</span> <span class=s1>&#39;./DocumentList.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;DocumentScreen&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>DocumentScreen</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>DocumentScreen</span><span class=p>&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span>: <span class=kt>ComponentStory</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>DocumentScreen</span><span class=p>&gt;</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>&lt;</span><span class=nt>DocumentScreen</span> <span class=p>{</span><span class=na>...args</span><span class=p>}</span> <span class=p>/&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Simple</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Simple</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>user</span>: <span class=kt>PageLayout.Simple.args.user</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nb>document</span><span class=o>:</span> <span class=nx>DocumentHeader</span><span class=p>.</span><span class=nx>Simple</span><span class=p>.</span><span class=nx>args</span><span class=p>.</span><span class=nb>document</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>subdocuments</span>: <span class=kt>DocumentList.Simple.args.documents</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><p>This approach is beneficial when the various subcomponents export a complex list of different stories. You can pick and choose to build realistic scenarios for your screen-level stories without repeating yourself. Your story maintenance burden is minimal by reusing the data and taking a Don&rsquo;t-Repeat-Yourself(DRY) philosophy.</p><a href=#mocking-connected-components><h2 id=mocking-connected-components><span class=hanchor arialabel=Anchor># </span>Mocking connected components</h2></a><p>If you need to render a connected component in Storybook, you can mock the network requests to fetch its data. There are various layers in which you can do that.</p><a href=#mocking-providers><h3 id=mocking-providers><span class=hanchor arialabel=Anchor># </span>Mocking providers</h3></a><p>If you are using a provider that supplies data via the context, you can wrap your story in a decorator that provides a mocked version of that provider. For example, in the
+<a href=https://storybook.js.org/tutorials/intro-to-storybook/react/en/screen/ rel=noopener>Screens</a> chapter of the Intro to Storybook tutorial, we mock a Redux provider with mock data.</p><a href=#mocking-api-services><h3 id=mocking-api-services><span class=hanchor arialabel=Anchor># </span>Mocking API Services</h3></a><p>Connected applications such as Twitter, Instagram, amongst others, are everywhere, consuming data either from REST or GraphQL endpoints. If you&rsquo;re working in an application that relies on either of these data providers, you can add Mock Service Worker (MSW) via
+<a href=https://storybook.js.org/addons/msw-storybook-addon rel=noopener>Storybook&rsquo;s MSW addon</a> to mock data alongside your app and stories.</p><p><a href=https://mswjs.io/ rel=noopener>Mock Service Worker</a> is an API mocking library. It relies on service workers to capture network requests and provides mocked data in response. The MSW addon adds this functionality into Storybook, allowing you to mock API requests in your stories.</p><a href=#mocking-rest-requests-with-msw-addon><h4 id=mocking-rest-requests-with-msw-addon><span class=hanchor arialabel=Anchor># </span>Mocking REST requests with MSW addon</h4></a><p>If you&rsquo;re working with pure presentational screens, adding stories through
+<a href=https://storybook.js.org/docs/react/writing-stories/parameters#args-composition-for-presentational-screens rel=noopener>args composition</a> is recommended. You can easily encode all the data via
+<a href=https://storybook.js.org/docs/react/writing-stories/args rel=noopener>args</a>, removing the need for handling it with &ldquo;wrapper components&rdquo;. However, this approach loses its flexibility if the screen&rsquo;s data is retrieved from a RESTful endpoint within the screen itself. For instance, if your screen had a similar implementation to retrieve a list of documents:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// YourPage.js|jsx|ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span><span class=p>,</span> <span class=p>{</span> <span class=nx>useState</span><span class=p>,</span> <span class=nx>useEffect</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>PageLayout</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./PageLayout&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentHeader</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentHeader&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentList</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentList&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Example hook to retrieve data from an external endpoint
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>function</span> <span class=nx>useFetchData</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>status</span><span class=p>,</span> <span class=nx>setStatus</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useState</span><span class=p>(</span><span class=s1>&#39;idle&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>[</span><span class=nx>data</span><span class=p>,</span> <span class=nx>setData</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useState</span><span class=p>([]);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>useEffect</span><span class=p>(()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>setStatus</span><span class=p>(</span><span class=s1>&#39;loading&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nx>fetch</span><span class=p>(</span><span class=s1>&#39;https://your-restful-endpoint&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>      <span class=p>.</span><span class=nx>then</span><span class=p>((</span><span class=nx>res</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=o>!</span><span class=nx>res</span><span class=p>.</span><span class=nx>ok</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>          <span class=k>throw</span> <span class=k>new</span> <span class=nb>Error</span><span class=p>(</span><span class=nx>res</span><span class=p>.</span><span class=nx>statusText</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=nx>res</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=p>})</span>
+</span></span><span class=line><span class=cl>      <span class=p>.</span><span class=nx>then</span><span class=p>((</span><span class=nx>res</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=nx>res</span><span class=p>.</span><span class=nx>json</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>      <span class=p>.</span><span class=nx>then</span><span class=p>((</span><span class=nx>data</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nx>setStatus</span><span class=p>(</span><span class=s1>&#39;success&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=nx>setData</span><span class=p>(</span><span class=nx>data</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>      <span class=p>})</span>
+</span></span><span class=line><span class=cl>      <span class=p>.</span><span class=k>catch</span><span class=p>(()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nx>setStatus</span><span class=p>(</span><span class=s1>&#39;error&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>      <span class=p>});</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span> <span class=p>[]);</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>status</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>data</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kd>function</span> <span class=nx>DocumentScreen</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>{</span> <span class=nx>status</span><span class=p>,</span> <span class=nx>data</span> <span class=p>}</span> <span class=o>=</span> <span class=nx>useFetchData</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>{</span> <span class=nx>user</span><span class=p>,</span> <span class=nb>document</span><span class=p>,</span> <span class=nx>subdocuments</span> <span class=p>}</span> <span class=o>=</span> <span class=nx>data</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>status</span> <span class=o>===</span> <span class=s1>&#39;loading&#39;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=o>&lt;</span><span class=nx>p</span><span class=o>&gt;</span><span class=nx>Loading</span><span class=p>...</span><span class=o>&lt;</span><span class=err>/p&gt;;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>status</span> <span class=o>===</span> <span class=s1>&#39;error&#39;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=o>&lt;</span><span class=nx>p</span><span class=o>&gt;</span><span class=nx>There</span> <span class=nx>was</span> <span class=nx>an</span> <span class=nx>error</span> <span class=nx>fetching</span> <span class=nx>the</span> <span class=nx>data</span><span class=o>!&lt;</span><span class=err>/p&gt;;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>PageLayout</span> <span class=nx>user</span><span class=o>=</span><span class=p>{</span><span class=nx>user</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>DocumentHeader</span> <span class=nb>document</span><span class=o>=</span><span class=p>{</span><span class=nb>document</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>DocumentList</span> <span class=nx>documents</span><span class=o>=</span><span class=p>{</span><span class=nx>subdocuments</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/PageLayout&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>To test your screen with the mocked data, you could write a similar set of stories:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span><span class=lnt>65
+</span><span class=lnt>66
+</span><span class=lnt>67
+</span><span class=lnt>68
+</span><span class=lnt>69
+</span><span class=lnt>70
+</span><span class=lnt>71
+</span><span class=lnt>72
+</span><span class=lnt>73
+</span><span class=lnt>74
+</span><span class=lnt>75
+</span><span class=lnt>76
+</span><span class=lnt>77
+</span><span class=lnt>78
+</span><span class=lnt>79
+</span><span class=lnt>80
+</span><span class=lnt>81
+</span><span class=lnt>82
+</span><span class=lnt>83
+</span><span class=lnt>84
+</span><span class=lnt>85
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// YourPage.stories.js|jsx|ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>rest</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;msw&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentScreen</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./YourPage&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;DocumentScreen&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>DocumentScreen</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇The mocked data that will be used in the story
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>TestData</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>user</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>userID</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>name</span><span class=o>:</span> <span class=s1>&#39;Someone&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=nb>document</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>id</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>userID</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Something&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>brief</span><span class=o>:</span> <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;approved&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=nx>subdocuments</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>id</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>userID</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Something&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>content</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;approved&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>id</span><span class=o>:</span> <span class=mi>2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>userID</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Something else&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>content</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;awaiting review&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>id</span><span class=o>:</span> <span class=mi>3</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>userID</span><span class=o>:</span> <span class=mi>2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Another document&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>content</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;approved&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>id</span><span class=o>:</span> <span class=mi>4</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>userID</span><span class=o>:</span> <span class=mi>2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Something&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>content</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;approved&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>PageTemplate</span> <span class=o>=</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>DocumentScreen</span> <span class=o>/&gt;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>MockedSuccess</span> <span class=o>=</span> <span class=nx>PageTemplate</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>MockedSuccess</span><span class=p>.</span><span class=nx>parameters</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>msw</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=nx>rest</span><span class=p>.</span><span class=nx>get</span><span class=p>(</span><span class=s1>&#39;https://your-restful-endpoint/&#39;</span><span class=p>,</span> <span class=p>(</span><span class=nx>_req</span><span class=p>,</span> <span class=nx>res</span><span class=p>,</span> <span class=nx>ctx</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>res</span><span class=p>(</span><span class=nx>ctx</span><span class=p>.</span><span class=nx>json</span><span class=p>(</span><span class=nx>TestData</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=p>}),</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>MockedError</span> <span class=o>=</span> <span class=nx>PageTemplate</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>MockedError</span><span class=p>.</span><span class=nx>parameters</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>msw</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=nx>rest</span><span class=p>.</span><span class=nx>get</span><span class=p>(</span><span class=s1>&#39;https://your-restful-endpoint&#39;</span><span class=p>,</span> <span class=p>(</span><span class=nx>_req</span><span class=p>,</span> <span class=nx>res</span><span class=p>,</span> <span class=nx>ctx</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>res</span><span class=p>(</span><span class=nx>ctx</span><span class=p>.</span><span class=nx>delay</span><span class=p>(</span><span class=mi>800</span><span class=p>),</span> <span class=nx>ctx</span><span class=p>.</span><span class=nx>status</span><span class=p>(</span><span class=mi>403</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=p>}),</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><p>💡 This example details how you can mock the REST request with fetch. Similar HTTP clients such as
+<a href=https://axios-http.com/ rel=noopener>axios</a> can be used as well.</p><p>The mocked data (i.e., <code>TestData</code>) will be injected via
+<a href=https://storybook.js.org/docs/react/writing-stories/parameters rel=noopener>parameters</a>, enabling you to configure it per-story basis.</p><a href=#mocking-graphql-queries-with-msw-addon><h4 id=mocking-graphql-queries-with-msw-addon><span class=hanchor arialabel=Anchor># </span>Mocking GraphQL queries with MSW addon</h4></a><p>In addition to mocking RESTful requests, the other noteworthy feature of the
+<a href="https://msw-sb.vercel.app/?path=/story/guides-introduction--page" rel=noopener>MSW addon</a> is the ability to mock incoming data from any of the mainstream
+<a href=https://www.apollographql.com/docs/react/integrations/integrations/ rel=noopener>GraphQL</a> clients (e.g.,
+<a href=https://www.apollographql.com/docs/ rel=noopener>Apollo Client</a>,
+<a href=https://formidable.com/open-source/urql/ rel=noopener>URQL</a> or
+<a href=https://react-query.tanstack.com/ rel=noopener>React Query</a>). For instance, if your screen retrieves the user&rsquo;s information and a list of documents based on a query result, you could have a similar implementation:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// YourPage.js|jsx|ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>useQuery</span><span class=p>,</span> <span class=nx>gql</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;@apollo/client&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>PageLayout</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./PageLayout&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentHeader</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentHeader&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentList</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./DocumentList&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>AllInfoQuery</span> <span class=o>=</span> <span class=nx>gql</span><span class=sb>`
+</span></span></span><span class=line><span class=cl><span class=sb>  query AllInfo {
+</span></span></span><span class=line><span class=cl><span class=sb>    user {
+</span></span></span><span class=line><span class=cl><span class=sb>      userID
+</span></span></span><span class=line><span class=cl><span class=sb>      name
+</span></span></span><span class=line><span class=cl><span class=sb>    }
+</span></span></span><span class=line><span class=cl><span class=sb>    document {
+</span></span></span><span class=line><span class=cl><span class=sb>      id
+</span></span></span><span class=line><span class=cl><span class=sb>      userID
+</span></span></span><span class=line><span class=cl><span class=sb>      title
+</span></span></span><span class=line><span class=cl><span class=sb>      brief
+</span></span></span><span class=line><span class=cl><span class=sb>      status
+</span></span></span><span class=line><span class=cl><span class=sb>    }
+</span></span></span><span class=line><span class=cl><span class=sb>    subdocuments {
+</span></span></span><span class=line><span class=cl><span class=sb>      id
+</span></span></span><span class=line><span class=cl><span class=sb>      userID
+</span></span></span><span class=line><span class=cl><span class=sb>      title
+</span></span></span><span class=line><span class=cl><span class=sb>      content
+</span></span></span><span class=line><span class=cl><span class=sb>      status
+</span></span></span><span class=line><span class=cl><span class=sb>    }
+</span></span></span><span class=line><span class=cl><span class=sb>  }
+</span></span></span><span class=line><span class=cl><span class=sb>`</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>useFetchInfo</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>{</span> <span class=nx>loading</span><span class=p>,</span> <span class=nx>error</span><span class=p>,</span> <span class=nx>data</span> <span class=p>}</span> <span class=o>=</span> <span class=nx>useQuery</span><span class=p>(</span><span class=nx>AllInfoQuery</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>{</span> <span class=nx>loading</span><span class=p>,</span> <span class=nx>error</span><span class=p>,</span> <span class=nx>data</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kd>function</span> <span class=nx>DocumentScreen</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=p>{</span> <span class=nx>loading</span><span class=p>,</span> <span class=nx>error</span><span class=p>,</span> <span class=nx>data</span> <span class=p>}</span> <span class=o>=</span> <span class=nx>useFetchInfo</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>loading</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=o>&lt;</span><span class=nx>p</span><span class=o>&gt;</span><span class=nx>Loading</span><span class=p>...</span><span class=o>&lt;</span><span class=err>/p&gt;;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>if</span> <span class=p>(</span><span class=nx>error</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=o>&lt;</span><span class=nx>p</span><span class=o>&gt;</span><span class=nx>There</span> <span class=nx>was</span> <span class=nx>an</span> <span class=nx>error</span> <span class=nx>fetching</span> <span class=nx>the</span> <span class=nx>data</span><span class=o>!&lt;</span><span class=err>/p&gt;;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>PageLayout</span> <span class=nx>user</span><span class=o>=</span><span class=p>{</span><span class=nx>data</span><span class=p>.</span><span class=nx>user</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>DocumentHeader</span> <span class=nb>document</span><span class=o>=</span><span class=p>{</span><span class=nx>data</span><span class=p>.</span><span class=nb>document</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>DocumentList</span> <span class=nx>documents</span><span class=o>=</span><span class=p>{</span><span class=nx>data</span><span class=p>.</span><span class=nx>subdocuments</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/PageLayout&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>To test your screen with the GraphQL mocked data, you could write the following stories:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// YourPage.stories.js|jsx|ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ApolloClient</span><span class=p>,</span> <span class=nx>ApolloProvider</span><span class=p>,</span> <span class=nx>InMemoryCache</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;@apollo/client&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>graphql</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;msw&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>DocumentScreen</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./YourPage&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;DocumentScreen&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>DocumentScreen</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>mockedClient</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>ApolloClient</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>  <span class=nx>uri</span><span class=o>:</span> <span class=s1>&#39;https://your-graphql-endpoint&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>cache</span><span class=o>:</span> <span class=k>new</span> <span class=nx>InMemoryCache</span><span class=p>(),</span>
+</span></span><span class=line><span class=cl>  <span class=nx>defaultOptions</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>watchQuery</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>fetchPolicy</span><span class=o>:</span> <span class=s1>&#39;no-cache&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>errorPolicy</span><span class=o>:</span> <span class=s1>&#39;all&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=nx>query</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>fetchPolicy</span><span class=o>:</span> <span class=s1>&#39;no-cache&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>errorPolicy</span><span class=o>:</span> <span class=s1>&#39;all&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇The mocked data that will be used in the story
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>TestData</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>user</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>userID</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>name</span><span class=o>:</span> <span class=s1>&#39;Someone&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=nb>document</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>id</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>userID</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Something&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>brief</span><span class=o>:</span> <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;approved&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=nx>subdocuments</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>id</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>userID</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Something&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>content</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;approved&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>id</span><span class=o>:</span> <span class=mi>2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>userID</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Something else&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>content</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;awaiting review&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>id</span><span class=o>:</span> <span class=mi>3</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>userID</span><span class=o>:</span> <span class=mi>2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Another document&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>content</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;approved&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>id</span><span class=o>:</span> <span class=mi>4</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>userID</span><span class=o>:</span> <span class=mi>2</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Something&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>content</span><span class=o>:</span>
+</span></span><span class=line><span class=cl>        <span class=s1>&#39;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>status</span><span class=o>:</span> <span class=s1>&#39;approved&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>PageTemplate</span> <span class=o>=</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=o>&lt;</span><span class=nx>ApolloProvider</span> <span class=nx>client</span><span class=o>=</span><span class=p>{</span><span class=nx>mockedClient</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>DocumentScreen</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=o>&lt;</span><span class=err>/ApolloProvider&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>MockedSuccess</span> <span class=o>=</span> <span class=nx>PageTemplate</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>MockedSuccess</span><span class=p>.</span><span class=nx>parameters</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>msw</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=nx>graphql</span><span class=p>.</span><span class=nx>query</span><span class=p>(</span><span class=s1>&#39;AllInfoQuery&#39;</span><span class=p>,</span> <span class=p>(</span><span class=nx>req</span><span class=p>,</span> <span class=nx>res</span><span class=p>,</span> <span class=nx>ctx</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>res</span><span class=p>(</span><span class=nx>ctx</span><span class=p>.</span><span class=nx>data</span><span class=p>(</span><span class=nx>TestData</span><span class=p>));</span>
+</span></span><span class=line><span class=cl>    <span class=p>}),</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>MockedError</span> <span class=o>=</span> <span class=nx>PageTemplate</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>MockedError</span><span class=p>.</span><span class=nx>parameters</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>msw</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=nx>graphql</span><span class=p>.</span><span class=nx>query</span><span class=p>(</span><span class=s1>&#39;AllInfoQuery&#39;</span><span class=p>,</span> <span class=p>(</span><span class=nx>req</span><span class=p>,</span> <span class=nx>res</span><span class=p>,</span> <span class=nx>ctx</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>res</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>        <span class=nx>ctx</span><span class=p>.</span><span class=nx>delay</span><span class=p>(</span><span class=mi>800</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>        <span class=nx>ctx</span><span class=p>.</span><span class=nx>errors</span><span class=p>([</span>
+</span></span><span class=line><span class=cl>          <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=nx>message</span><span class=o>:</span> <span class=s1>&#39;Access denied&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>          <span class=p>},</span>
+</span></span><span class=line><span class=cl>        <span class=p>])</span>
+</span></span><span class=line><span class=cl>      <span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>}),</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#mocking-imports><h3 id=mocking-imports><span class=hanchor arialabel=Anchor># </span>Mocking imports</h3></a><p>It is also possible to mock imports directly, as you might in a unit test, using Webpack’s aliasing. It&rsquo;s advantageous if your component makes network requests directly with third-party libraries.</p><p>We&rsquo;re going to use
+<a href=https://www.npmjs.com/package/isomorphic-fetch rel=noopener>isomorphic-fetch</a> as an example.</p><p>Inside a directory called <code>__mocks__</code>, create a new file called <code>isomorphic-fetch.js</code> with the following code:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>// __mocks__/isomorphic-fetch.js
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>// Your fetch implementation to be added to ./storybook/main.js.
+</span></span><span class=line><span class=cl>// In your webpackFinal configuration object.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>let nextJson;
+</span></span><span class=line><span class=cl>export default async function fetch() {
+</span></span><span class=line><span class=cl>  if (nextJson) {
+</span></span><span class=line><span class=cl>    return {
+</span></span><span class=line><span class=cl>      json: () =&gt; nextJson,
+</span></span><span class=line><span class=cl>    };
+</span></span><span class=line><span class=cl>  }
+</span></span><span class=line><span class=cl>  nextJson = null;
+</span></span><span class=line><span class=cl>}
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>// The decorator to be used in ./storybook/preview to apply the mock to all stories
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>export function decorator(story, { parameters }) {
+</span></span><span class=line><span class=cl>  if (parameters &amp;&amp; parameters.fetch) {
+</span></span><span class=line><span class=cl>    nextJson = parameters.fetch.json;
+</span></span><span class=line><span class=cl>  }
+</span></span><span class=line><span class=cl>  return story();  
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><p>The code above creates a decorator which reads story-specific data off the story&rsquo;s
+<a href=https://storybook.js.org/docs/react/writing-stories/parameters rel=noopener>parameters</a>, enabling you to configure the mock on a per-story basis.</p><p>To use the mock in place of the real import, we use
+<a href=https://webpack.js.org/configuration/resolve/#resolvealias rel=noopener>webpack aliasing</a>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// .storybook/main.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=nx>module</span><span class=p>.</span><span class=nx>exports</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Your Storybook configuration
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  <span class=nx>webpackFinal</span><span class=o>:</span> <span class=kr>async</span> <span class=p>(</span><span class=nx>config</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>config</span><span class=p>.</span><span class=nx>resolve</span><span class=p>.</span><span class=nx>alias</span><span class=p>[</span><span class=s1>&#39;isomorphic-fetch&#39;</span><span class=p>]</span> <span class=o>=</span> <span class=nx>require</span><span class=p>.</span><span class=nx>resolve</span><span class=p>(</span><span class=s1>&#39;../__mocks__/isomorphic-fetch.js&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nx>config</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><p>Add the decorator you&rsquo;ve just implemented to your
+<a href=https://storybook.js.org/docs/react/configure/overview#configure-story-rendering rel=noopener>storybook/preview.js</a>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// .storybook/preview.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>decorator</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;../__mocks__/isomorphic-fetch&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Add the decorator to all stories
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>export</span> <span class=kr>const</span> <span class=nx>decorators</span> <span class=o>=</span> <span class=p>[</span><span class=nx>decorator</span><span class=p>];</span>
+</span></span></code></pre></td></tr></table></div></div><p>Finally, we can set the mock values in a specific story. Let&rsquo;s borrow an example from this
+<a href=https://medium.com/@edogc/visual-unit-testing-with-react-storybook-and-fetch-mock-4594d3a281e6 rel=noopener>blog post</a>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// App.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>App</span> <span class=nx>from</span> <span class=s1>&#39;./App&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;App&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>App</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span> <span class=o>=</span> <span class=p>(</span><span class=nx>ags</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>App</span> <span class=o>/&gt;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Success</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Success</span><span class=p>.</span><span class=nx>parameters</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>fetch</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>json</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>JavaScript</span><span class=o>:</span> <span class=mi>3390991</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s1>&#39;C++&#39;</span><span class=o>:</span> <span class=mi>44974</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>TypeScript</span><span class=o>:</span> <span class=mi>15530</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>CoffeeScript</span><span class=o>:</span> <span class=mi>12253</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>Python</span><span class=o>:</span> <span class=mi>9383</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>C</span><span class=o>:</span> <span class=mi>5341</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>Shell</span><span class=o>:</span> <span class=mi>5115</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>HTML</span><span class=o>:</span> <span class=mi>3420</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>CSS</span><span class=o>:</span> <span class=mi>3171</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>Makefile</span><span class=o>:</span> <span class=mi>189</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// App.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=kr>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentStory</span><span class=p>,</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>App</span> <span class=kr>from</span> <span class=s1>&#39;./App&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;App&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>App</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>App</span><span class=p>&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span>: <span class=kt>ComponentStory</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>App</span><span class=p>&gt;</span> <span class=o>=</span> <span class=p>()</span> <span class=o>=&gt;</span> <span class=p>&lt;</span><span class=nt>App</span> <span class=p>/&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Success</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Success</span><span class=p>.</span><span class=nx>parameters</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>fetch</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>json</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>JavaScript</span>: <span class=kt>3390991</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s1>&#39;C++&#39;</span><span class=o>:</span> <span class=mi>44974</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>TypeScript</span>: <span class=kt>15530</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>CoffeeScript</span>: <span class=kt>12253</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>Python</span>: <span class=kt>9383</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>C</span>: <span class=kt>5341</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>Shell</span>: <span class=kt>5115</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>HTML</span>: <span class=kt>3420</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>CSS</span>: <span class=kt>3171</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>Makefile</span>: <span class=kt>189</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#specific-mocks><h3 id=specific-mocks><span class=hanchor arialabel=Anchor># </span>Specific mocks</h3></a><p>Another mocking approach is to use libraries that intercept calls at a lower level. For instance, you can use
+<a href=https://www.npmjs.com/package/fetch-mock rel=noopener><code>fetch-mock</code></a> to mock fetch requests specifically.</p><p>Like the
+<a href=https://storybook.js.org/docs/react/writing-stories/parameters##mocking-imports rel=noopener>import mocking</a> above, once you have a mock, you’ll still want to set the return value of the mock per-story basis. Do this in Storybook with a
+<a href=https://storybook.js.org/docs/react/writing-stories/decorators rel=noopener>decorator</a> that reads the story&rsquo;s
+<a href=https://storybook.js.org/docs/react/writing-stories/parameters rel=noopener>parameters</a>.</p><a href=#avoiding-mocking-dependencies><h3 id=avoiding-mocking-dependencies><span class=hanchor arialabel=Anchor># </span>Avoiding mocking dependencies</h3></a><p>It&rsquo;s possible to avoid mocking the dependencies of connected &ldquo;container&rdquo; components entirely by passing them around via props or React context. However, it requires a strict split of the container and presentational component logic. For example, if you have a component responsible for data fetching logic and rendering DOM, it will need to be mocked as previously described.</p><p>It’s common to import and embed container components amongst presentational components. However, as we discovered earlier, to render them within Storybook, we’ll likely have to mock their dependencies or the imports themselves.</p><p>Not only can this quickly grow to become a tedious task, but it’s also challenging to mock container components that use local states. So, instead of importing containers directly, a solution to this problem is to create a React context that provides the container components. It allows you to freely embed container components as usual, at any level in the component hierarchy without worrying about subsequently mocking their dependencies; since we can swap out the containers themselves with their mocked presentational counterpart.</p><p>We recommend dividing context containers up over specific pages or views in your app. For example, if you had a <code>ProfilePage</code> component, you might set up a file structure as follows:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>ProfilePage.js
+</span></span><span class=line><span class=cl>ProfilePage.stories.js
+</span></span><span class=line><span class=cl>ProfilePageContainer.js
+</span></span><span class=line><span class=cl>ProfilePageContext.js
+</span></span></code></pre></td></tr></table></div></div><p>It’s also often helpful to set up a “global” container context (perhaps named <code>GlobalContainerContext</code>) for container components that may be rendered on every page of your app and adding them to the top level of your application. While it’s possible to place every container within this global context, it should only provide globally required containers.</p><p>Let’s look at an example implementation of this approach.</p><p>First, create a React context, and name it <code>ProfilePageContext</code>. It does nothing more than export a React context:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>// ProfilePageContext.js | ProfilePageContext.jsx
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { createContext } from &#39;react&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>const ProfilePageContext = createContext();
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>export default ProfilePageContext;
+</span></span></code></pre></td></tr></table></div></div><p><code>ProfilePage</code> is our presentational component. It will use the <code>useContext</code> hook to retrieve the container components from <code>ProfilePageContext</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>// ProfilePage.js|jsx
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { useContext } from &#39;react&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import ProfilePageContext from &#39;./ProfilePageContext&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>export const ProfilePage = ({ name, userId }) =&gt; {
+</span></span><span class=line><span class=cl>  const { UserPostsContainer, UserFriendsContainer } = useContext(ProfilePageContext);
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  return (
+</span></span><span class=line><span class=cl>    &lt;div&gt;
+</span></span><span class=line><span class=cl>      &lt;h1&gt;{name}&lt;/h1&gt;
+</span></span><span class=line><span class=cl>      &lt;UserPostsContainer userId={userId} /&gt;
+</span></span><span class=line><span class=cl>      &lt;UserFriendsContainer userId={userId} /&gt;
+</span></span><span class=line><span class=cl>    &lt;/div&gt;
+</span></span><span class=line><span class=cl>  );
+</span></span><span class=line><span class=cl>};
+</span></span></code></pre></td></tr></table></div></div><a href=#mocking-containers-in-storybook><h4 id=mocking-containers-in-storybook><span class=hanchor arialabel=Anchor># </span>Mocking containers in Storybook</h4></a><p>In the context of Storybook, instead of providing container components through context, we’ll instead provide their mocked counterparts. In most cases, the mocked versions of these components can often be borrowed directly from their associated stories.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// ProfilePage.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ProfilePage</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./ProfilePage&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>UserPosts</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./UserPosts&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇 Imports a specific story from a story file
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>import</span> <span class=p>{</span> <span class=nx>normal</span> <span class=nx>as</span> <span class=nx>UserFriendsNormal</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./UserFriends.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;ProfilePage&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>ProfilePage</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>ProfilePageProps</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>name</span><span class=o>:</span> <span class=s1>&#39;Jimi Hendrix&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>userId</span><span class=o>:</span> <span class=s1>&#39;1&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>context</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=c1>//👇 We can access the `userId` prop here if required:
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>UserPostsContainer</span><span class=p>({</span> <span class=nx>userId</span> <span class=p>})</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=o>&lt;</span><span class=nx>UserPosts</span> <span class=p>{...</span><span class=nx>UserPostsProps</span><span class=p>}</span> <span class=o>/&gt;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// Most of the time we can simply pass in a story.
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=c1>// In this case we&#39;re passing in the `normal` story export
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=c1>// from the `UserFriends` component stories.
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>UserFriendsContainer</span><span class=o>:</span> <span class=nx>UserFriendsNormal</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>normal</span> <span class=o>=</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>ProfilePageContext</span><span class=p>.</span><span class=nx>Provider</span> <span class=nx>value</span><span class=o>=</span><span class=p>{</span><span class=nx>context</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>ProfilePage</span> <span class=p>{...</span><span class=nx>ProfilePageProps</span><span class=p>}</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/ProfilePageContext.Provider&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><p>If the same context applies to all <code>ProfilePage</code> stories, we can also use a
+<a href=https://storybook.js.org/docs/react/writing-stories/decorators rel=noopener>decorator</a>.</p><a href=#providing-containers-to-your-application><h4 id=providing-containers-to-your-application><span class=hanchor arialabel=Anchor># </span>Providing containers to your application</h4></a><p>Now, in the context of your application, you’ll need to provide <code>ProfilePage</code> with all of the container components it requires by wrapping it with <code>ProfilePageContext.Provider</code>:</p><p>For example, in Next.js, this would be your <code>pages/profile.js</code> component.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// pages/profile.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>ProfilePageContext</span> <span class=nx>from</span> <span class=s1>&#39;./ProfilePageContext&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ProfilePageContainer</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./ProfilePageContainer&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>UserPostsContainer</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./UserPostsContainer&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>UserFriendsContainer</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./UserFriendsContainer&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇 Ensure that your context value remains referentially equal between each render.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>context</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>UserPostsContainer</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>UserFriendsContainer</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>AppProfilePage</span> <span class=o>=</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>ProfilePageContext</span><span class=p>.</span><span class=nx>Provider</span> <span class=nx>value</span><span class=o>=</span><span class=p>{</span><span class=nx>context</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>ProfilePageContainer</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/ProfilePageContext.Provider&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#mocking-global-containers-in-storybook><h4 id=mocking-global-containers-in-storybook><span class=hanchor arialabel=Anchor># </span>Mocking global containers in Storybook</h4></a><p>If you’ve set up <code>GlobalContainerContext</code>, you’ll need to set up a decorator within Storybook’s <code>preview.js</code> to provide context to all stories. For example:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// .storybook/preview.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>normal</span> <span class=nx>as</span> <span class=nx>NavigationNormal</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;../components/Navigation.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>GlobalContainerContext</span> <span class=nx>from</span> <span class=s1>&#39;../components/lib/GlobalContainerContext&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>context</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>NavigationContainer</span><span class=o>:</span> <span class=nx>NavigationNormal</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>AppDecorator</span> <span class=o>=</span> <span class=p>(</span><span class=nx>storyFn</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>GlobalContainerContext</span><span class=p>.</span><span class=nx>Provider</span> <span class=nx>value</span><span class=o>=</span><span class=p>{</span><span class=nx>context</span><span class=p>}</span><span class=o>&gt;</span><span class=p>{</span><span class=nx>storyFn</span><span class=p>()}</span><span class=o>&lt;</span><span class=err>/GlobalContainerContext.Provider&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>addDecorator</span><span class=p>(</span><span class=nx>AppDecorator</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><p><a href=https://github.com/storybookjs/storybook/tree/next/docs/writing-stories/build-pages-with-storybook.md target=_blank rel=noopener class="e1soj9vu1 e1ja7avb2 css-1ii1tfm e1ja7avb1"><span class="css-1xdhyk6 e1ja7avb3"><span role=img aria-label=write>✍️</span> Edit on GitHub – PRs welcome!</span></a></p></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://quartz.jzhao.xyz/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Jacky Zhao using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://quartz.jzhao.xyz/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/jackyzha0>Github</a></li></ul></footer></div></div></body></html>

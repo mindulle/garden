@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "_Devsigner"
+title: "🎉Design"
 lastModified: "2022-12-11"
 
 # field for querying only entry point notes.

@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "_Design"
+title: "🎉Devsigner"
 lastModified: "2022-12-11"
 
 # field for querying only entry point notes.
@@ -23,6 +23,8 @@ style: bullet
 # Receipes
 
 ## Receipe map
+![Absolute Path|300](Devsigner/%F0%9F%93%A6assets/%F0%9F%8E%89Devsigner%202022-12-12%2019.30.56.excalidraw.svg)
+%%[🖋 Edit in Excalidraw](Devsigner/%F0%9F%93%A6assets/%F0%9F%8E%89Devsigner%202022-12-12%2019.30.56.excalidraw.md), and the [dark exported image](Devsigner/%F0%9F%93%A6assets/%F0%9F%8E%89Devsigner%202022-12-12%2019.30.56.excalidraw.dark.svg)%%
 
 - Draw a simple excalidraw scatch to understand how this tool works roughly.
 

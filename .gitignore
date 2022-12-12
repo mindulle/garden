@@ -3,7 +3,7 @@ public
 resources
 .idea
 content/.obsidian
-content/private
+content/.gitignore
 assets/indices/linkIndex.json
 assets/indices/contentIndex.json
 linkmap

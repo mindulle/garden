@@ -14,7 +14,7 @@ kanban-plugin: basic
 - [ ] GOF 디자인 패턴 엑스칼리드로우로 그리기
 - [ ] Write docs 문서 완성하기
 - [ ] Storybook 문서 프론트메터 업데이트하기
-- [ ] [[github 민들레 계정 서브프로젝트 진행하기]]
+- [ ] [[github mindulle subproject]]
 
 
 ## Activate

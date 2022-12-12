@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "_Devsigner"
+title: "_Develop"
 lastModified: "2022-12-11"
 
 # field for querying only entry point notes.
@@ -21,6 +21,7 @@ style: bullet
 # Receipes
 ## Receipe map
 - Draw a simple excalidraw scatch to understand how this tool works roughly.
+- [[Fruits/_Fruits]]
 
 ## Featured APIs
 - List up frequently used APIs.

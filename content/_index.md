@@ -9,5 +9,5 @@ enableToc: true
 
 # [[Devsigner/_Devsigner|Devsigner]]
 
-
-![[_assets/_index 2022-12-12 12.58.22.excalidraw]]
+![[_assets/_index 2022-12-12 17.54.00.excalidraw.svg]]
+%%[[_assets/_index 2022-12-12 17.54.00.excalidraw.md|🖋 Edit in Excalidraw]], and the [[_assets/_index 2022-12-12 17.54.00.excalidraw.dark.svg|dark exported image]]%%

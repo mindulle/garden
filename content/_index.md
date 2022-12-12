@@ -10,3 +10,4 @@ enableToc: true
 # [[Devsigner/_Devsigner|Devsigner]]
 
 
+![[_assets/_index 2022-12-12 12.58.22.excalidraw]]

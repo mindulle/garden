@@ -1,6 +1,6 @@
 ---
 last-modified: 2022-10-04
 ---
-[[01. Strapi quick start guide]]
-[[02. Strapi Project Structure]]
-[[03. Strapi TypeScript development]]
+[[Develop/Trees/Dev/Stacks/JAMSTACK/Headless CMS/Strapi/01. Strapi quick start guide]]
+[[Develop/Trees/Dev/Stacks/JAMSTACK/Headless CMS/Strapi/02. Strapi Project Structure]]
+[[Develop/Trees/Dev/Stacks/JAMSTACK/Headless CMS/Strapi/03. Strapi TypeScript development]]

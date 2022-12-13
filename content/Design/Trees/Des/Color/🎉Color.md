@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉Design"
+title: "🎉Color"
 lastModified: "2022-12-13"
 
 # field for querying only entry point notes.
@@ -9,6 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "color"
 ---
 ```toc
 style: bullet
@@ -36,4 +37,11 @@ style: bullet
 - construct visual gallery to summarize your expriences.
 
 # See also
-- Further readings
+- __[Color Hunt](https://colorhunt.co/)__ : belt shaped online color palette
+- __[LOLCOLORS](https://www.webdesignrankings.com/resources/lolcolors/)__ : water drop sahped online color palette
+- __[Colordrop](https://colordrop.io/)__ : frame shaped online color palette
+- __[UiGradients](https://uigradients.com/#EmeraldWater)__ : Online gradient generator
+- __[Blend](http://www.colinkeany.com/blend/)__ : Create and customize beautiful CSS3 gradients
+- __[Color Claim](https://vanschneider.com/colors)__ : Various preset of colors prefferd by many people.
+- __[Plaettable](https://www.palettable.io/E7EAD9)__ : Recommand color following to user's selections.
+- __[BrandColors](https://brandcolors.net/)__ : show colors famous brand select.

@@ -19,7 +19,7 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-- ![[_Responsive Design 2022-11-13 16.35.03.excalidraw]]
+- ![[Design/Trees/Expiriences/WEB/Responsive Design/_assets/_Responsive Design 2022-11-13 16.35.03.excalidraw]]
 
 # Receipes
 ## Receipe map

@@ -25,7 +25,7 @@ style: bullet
 ## Receipe map
 
 - Draw a simple excalidraw scatch to understand how this tool works roughly.
-- [[Fruits/_Fruits]]
+- [[Develop/Fruits/🎉Fruits]]
 
 ## Featured APIs
 

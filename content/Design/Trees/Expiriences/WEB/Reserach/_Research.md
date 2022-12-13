@@ -13,14 +13,14 @@ tags:
 ```toc
 
 ```
-# [[Editorial]]
+# [[Design/Trees/Expiriences/WEB/Reserach/Editorial]]
 ## [캔바](https://www.canva.com/)
 ## [미리캔버스](https://www.miricanvas.com/)
-# [[UIUX]]
+# [[Design/Trees/Expiriences/WEB/Reserach/UIUX]]
 ## [awwards](https://www.awwwards.com/)
 ## [dribbble](https://dribbble.com/)
 # [storybook design system](https://storybook.js.org/showcase)
-# [[Character]]
+# [[Design/Trees/Expiriences/WEB/Reserach/Character]]
 ## [Character Design Reference](https://characterdesignreferences.com/)
 # [Chracter Design Reference Pinterest](https://www.pinterest.com/characterdesigh/)
 # 🏷️ Tags

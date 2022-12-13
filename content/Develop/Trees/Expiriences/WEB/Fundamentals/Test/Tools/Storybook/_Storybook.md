@@ -57,7 +57,7 @@ max_depth: 2
 ## Details
 | __Title__                     | __Diagram__                           | __Description__      |
 | ------------------------- | :-------------------------------------: | -------------------- |
-| __Workflow__ | ![[_Storybook-Intro.excalidraw\|200]] | Tasks for storybook. |
+| __Workflow__ | ![[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Assets/_Storybook-Intro.excalidraw\|200]] | Tasks for storybook. |
 | __Guides__                  |                                       |                      |
 | __Tutorials__             |                                       |                      |
 | __Integrations__                          |                                       |                      |
@@ -67,22 +67,22 @@ max_depth: 2
 # Guides
 ## Get started
 ### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/Introduction|Introduction]]
-### [[Install]]
-### [[What's a story]]
-### [[Browse stories]]
-### [[Setup]]
-### [[Conclusion]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/Install]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/What's a story]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/Browse stories]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/Setup]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/Conclusion]]
 
 ## Write stories
 ### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write stories/Introduction |Introduction]]
-### [[Args]]
-### [[Parameters]]
-### [[Decorators]]
-### [[Play function]]
-### [[Loaders]]
-### [[Naming components and hierarchy]]
-### [[Build pages and screens]]
-### [[Stories for multiple components]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write stories/Args]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write stories/Parameters]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write stories/Decorators]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write stories/Play function]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write stories/Loaders]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write stories/Naming components and hierarchy]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write stories/Build pages and screens]]
+### [[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Write stories/Stories for multiple components]]
 
 ## Write docs
 ### Introduction

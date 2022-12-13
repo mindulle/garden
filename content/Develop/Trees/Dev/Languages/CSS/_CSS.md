@@ -51,7 +51,7 @@ style: bullet
 ```
 
 # Map
-![[_CSS MAP]] 
+![[Develop/Trees/Dev/Languages/CSS/assets/_CSS MAP]] 
 
 # Emmet
 # Commonly used

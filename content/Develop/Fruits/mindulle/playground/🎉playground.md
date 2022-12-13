@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉Design"
+title: "🎉playground"
 lastModified: "2022-12-13"
 
 # field for querying only entry point notes.
@@ -9,6 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "@mindulle/playground"
 ---
 ```toc
 style: bullet
@@ -37,3 +38,21 @@ style: bullet
 
 # See also
 - Further readings
+# npm modules
+## Components
+@mindulle/component.vanilla
+@mindulle/component.vue
+@mindulle/component.react
+...
+
+## snippets
+@mindulle/snippets.advanced-apps-patterns
+@mindulle/snippets.animation-patterns
+@mindulle/snippets.clipboard-patterns
+@mindulle/snippets.component-patterns
+@mindulle/snippets.files-and-directories-patterns
+@mindulle/snippets.layout-patterns
+@mindulle/snippets.media-patterns
+@mindulle/snippets.theming-patterns
+@mindulle/snippets.web-vital-patterns
+...

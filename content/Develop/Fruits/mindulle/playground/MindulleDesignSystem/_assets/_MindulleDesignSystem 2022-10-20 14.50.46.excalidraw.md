@@ -20,8 +20,8 @@ cy ^2GOu6up8
 
 
 # Embedded files
-3a5a94700529c073aff263d88a6965af5e4ad521: [[Pasted Image 20221020164448_588.png]]
-de5ad822ae3b60ab938272d24ef5a73e4bdc738c: [[Pasted Image 20221020165544_483.png]]
+3a5a94700529c073aff263d88a6965af5e4ad521: [[Develop/Fruits/@mindulle/playground/MindulleDesignSystem/_assets/Assets/Pasted Image 20221020164448_588.png]]
+de5ad822ae3b60ab938272d24ef5a73e4bdc738c: [[Develop/Fruits/@mindulle/playground/MindulleDesignSystem/_assets/Assets/Pasted Image 20221020165544_483.png]]
 
 %%
 # Drawing

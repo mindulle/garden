@@ -32,6 +32,6 @@ style: bullet
 ```
 
 # Class diagram for my workfolw
-![[(todo)_Web Develop Fundamentals 2022-10-18 19.42.22.excalidraw]]
+![[Develop/Trees/Expiriences/WEB/Fundamentals/Assets/(todo)_Web Develop Fundamentals 2022-10-18 19.42.22.excalidraw]]
 
-![[_my-real-world-workflow.excalidraw]]
+![[Develop/Trees/Expiriences/WEB/Fundamentals/Assets/_my-real-world-workflow.excalidraw]]

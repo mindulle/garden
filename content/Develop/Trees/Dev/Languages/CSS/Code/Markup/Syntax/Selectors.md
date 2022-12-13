@@ -372,6 +372,6 @@ a.my-class {
 -   [CSS 선택기를 일반 영어 설명자로 변환하는 도구](https://kittygiraudel.github.io/selectors-explained/)
 
 ## 주석
-[^pesudo-class]: [[Pesudo-classes]] e.g) a:hover
-[^pesudo-element]: [[Pesudo-elemnts]] e.g.) my.element::before
+[^pesudo-class]: [[Develop/Trees/Dev/Languages/CSS/Code/Markup/Syntax/Pesudo-classes]] e.g) a:hover
+[^pesudo-element]: [[Develop/Trees/Dev/Languages/CSS/Code/Markup/Syntax/Pesudo-elemnts]] e.g.) my.element::before
 

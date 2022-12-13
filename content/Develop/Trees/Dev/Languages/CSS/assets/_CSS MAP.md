@@ -18,9 +18,9 @@ Learn CSS ^NarNyLtx
 
 Box Model ^lmm2MaSx
 
-[[Selectors]] ^VWfdP3Ao
+[[Develop/Trees/Dev/Languages/CSS/Code/Markup/Syntax/Selectors]] ^VWfdP3Ao
 
-[[The cascade]] ^msWmBsdJ
+[[Develop/Trees/Dev/Languages/CSS/Code/Markup/Syntax/The cascade]] ^msWmBsdJ
 
 specificity ^tfcA1dQ2
 

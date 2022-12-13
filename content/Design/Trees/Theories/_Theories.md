@@ -1,4 +1,4 @@
 ```toc
 style: bullet
 ```
-# [[psychology in UX]]
+# [[Design/Trees/Theories/psychology in UX]]

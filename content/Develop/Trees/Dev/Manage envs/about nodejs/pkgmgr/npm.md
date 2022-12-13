@@ -10,4 +10,4 @@ npm install -g yarn
 ```
 
 # use yarn
-[[Yarn]]
+[[Develop/Trees/Dev/Manage envs/about nodejs/pkgmgr/Yarn]]

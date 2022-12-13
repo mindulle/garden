@@ -44,7 +44,7 @@ style: bullet
 | 15, 16      | naver, instagram, youtube, pintereset, ... |
 | 20          | appstore, brunch, naver blog, ...          |
 | 25, 26      | airbnb, kakaobank, ...                                           |
-![[Pasted image 20221022183726.png]]
+![[Design/Trees/Expiriences/WEB/Wireframing/_assets/Pasted image 20221022183726.png]]
 ### Gutter
 - 8px grid
 

@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉Design"
+title: "🎉garden"
 lastModified: "2022-12-13"
 
 # field for querying only entry point notes.
@@ -20,7 +20,8 @@ style: bullet
 
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+![Garden MOC | 400](Develop/Fruits/mindulle/garden/%F0%9F%93%A6assets/%F0%9F%8E%89garden%202022-12-13%2017.03.36.excalidraw.svg)
+%%[🖋 Edit in Excalidraw](Develop/Fruits/mindulle/garden/%F0%9F%93%A6assets/%F0%9F%8E%89garden%202022-12-13%2017.03.36.excalidraw.md), and the [dark exported image](Develop/Fruits/mindulle/garden/%F0%9F%93%A6assets/%F0%9F%8E%89garden%202022-12-13%2017.03.36.excalidraw.dark.svg)%%
 
 # Features
 - List up frequently used features.

@@ -5,4 +5,4 @@ last-modified: 2022-10-04
 style: bullet
 ```
 
-# [[Effect]]
+# [[Design/Trees/Des/Tool dictionary/photoshop/Filter]]

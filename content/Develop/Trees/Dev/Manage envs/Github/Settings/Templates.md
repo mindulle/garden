@@ -27,7 +27,7 @@ max_depth: 3
 
 # Issue
 - example of ionic framework
-![[Pasted image 20221109142128.png ]]
+![[Develop/Trees/Dev/Manage envs/Github/Settings/_assets/Pasted image 20221109142128.png ]]
 ## English
 ### FEATURE REQUEST
 > [!tldr] [en]feature-request.yml
@@ -148,8 +148,8 @@ contact_links:
     about: This issue tracker is not for support *SUBJECT*. Please post your question on the *SUBJECT OR EMAIL*.
 ```
 ### SEQURITY VULNERAVILITY
-![[Pasted image 20221109142802.png]]
-![[Pasted image 20221109142852.png]]
+![[Develop/Trees/Dev/Manage envs/Github/Settings/_assets/Pasted image 20221109142802.png]]
+![[Develop/Trees/Dev/Manage envs/Github/Settings/_assets/Pasted image 20221109142852.png]]
 > [!tldr] Security.md
 ```yaml
 # Security Policy

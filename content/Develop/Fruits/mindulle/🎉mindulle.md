@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "_@mindulle"
+title: "🎉mindulle"
 lastModified: "2022-12-03"
 
 # field for querying only entry point notes.
@@ -24,6 +24,7 @@ style: bullet
 # Receipes
 ## Receipe map
 - Draw a simple excalidraw scatch to understand this tools rough workflows.
+- [[Develop/Fruits/mindulle/garden/🎉garden|🎉garden]]
 
 ## Featured APIs
 - List up frequently used APIs.
@@ -55,9 +56,11 @@ style: bullet
 |         |--- todo : note for details.
 |    |--- blog
 |         |--- todo : note for details.
-|
+|    |--- [[Develop/Fruits/@mindulle/garden/🎉graden]]
 ```
 
 
+
 # TODO : 계정 관리 흐름도 그려놓기
-![[_@mindulle 2022-11-26 20.35.14.excalidraw]]
+![MOC | 400](Develop/Fruits/mindulle/%F0%9F%93%A6assets/%F0%9F%8E%89mindulle%202022-12-13%2017.02.42.excalidraw.svg)
+%%[🖋 Edit in Excalidraw](Develop/Fruits/mindulle/%F0%9F%93%A6assets/%F0%9F%8E%89mindulle%202022-12-13%2017.02.42.excalidraw.md), and the [dark exported image](Develop/Fruits/mindulle/%F0%9F%93%A6assets/%F0%9F%8E%89mindulle%202022-12-13%2017.02.42.excalidraw.dark.svg)%%

@@ -15,14 +15,14 @@ style: bullet
 ### Summary
 | __명령어__                                | __문법__                                                         | __예시__                                    |
 | ----------------------------------------- | ---------------------------------------------------------------- | :-------------------------------------------: |
-| `_shortcut`                               | `$_`                                                             | ![[Pasted image 20221103184811.png \| 100]] |
-| DOM elemens can be saved up to 5 elements | `$0` ~ `$5`                                                      | ![[Pasted image 20221103185252.png \| 100]] |
-| Short alias for querySelector()           | `$('HtmlTagName', DomElement)`                                   | ![[Pasted image 20221103185703.png\|100]]   |
-| Short alias for querySelectorAll()        | `$$('HtmlTagName', DomElement)`                                  | ![[Pasted image 20221103185926.png\|100 ]]  |
-| Xpath shortcut                            | `$x('Xpath')`                                                    | ![[Pasted image 20221103190127.png\|100]]   |
-| shortcuts for logging command             | `methodOfBrowserConsoleAPI`                                      | ![[Pasted image 20221103190406.png\|100]]   |
-| Get just keys or values of objects        | `keys(object), values(object)`                                   | ![[Pasted image 20221103190608.png\|100]]   |
-| Get evenet listener and monitor evenets   | `getEventListeners(DOM)`, `monitorEvents(window, optionalEvent)` | ![[Pasted image 20221103191235.png\|100]]   |
+| `_shortcut`                               | `$_`                                                             | ![[Develop/Trees/Expiriences/WEB/Fundamentals/Tooling/Chrome devtools/_assets/Pasted image 20221103184811.png \| 100]] |
+| DOM elemens can be saved up to 5 elements | `$0` ~ `$5`                                                      | ![[Develop/Trees/Expiriences/WEB/Fundamentals/Tooling/Chrome devtools/_assets/Pasted image 20221103185252.png \| 100]] |
+| Short alias for querySelector()           | `$('HtmlTagName', DomElement)`                                   | ![[Develop/Trees/Expiriences/WEB/Fundamentals/Tooling/Chrome devtools/_assets/Pasted image 20221103185703.png\|100]]   |
+| Short alias for querySelectorAll()        | `$$('HtmlTagName', DomElement)`                                  | ![[Develop/Trees/Expiriences/WEB/Fundamentals/Tooling/Chrome devtools/_assets/Pasted image 20221103185926.png\|100 ]]  |
+| Xpath shortcut                            | `$x('Xpath')`                                                    | ![[Develop/Trees/Expiriences/WEB/Fundamentals/Tooling/Chrome devtools/_assets/Pasted image 20221103190127.png\|100]]   |
+| shortcuts for logging command             | `methodOfBrowserConsoleAPI`                                      | ![[Develop/Trees/Expiriences/WEB/Fundamentals/Tooling/Chrome devtools/_assets/Pasted image 20221103190406.png\|100]]   |
+| Get just keys or values of objects        | `keys(object), values(object)`                                   | ![[Develop/Trees/Expiriences/WEB/Fundamentals/Tooling/Chrome devtools/_assets/Pasted image 20221103190608.png\|100]]   |
+| Get evenet listener and monitor evenets   | `getEventListeners(DOM)`, `monitorEvents(window, optionalEvent)` | ![[Develop/Trees/Expiriences/WEB/Fundamentals/Tooling/Chrome devtools/_assets/Pasted image 20221103191235.png\|100]]   |
 
 ## [How to emulate CSS user preference media features](https://www.youtube.com/watch?v=gOkM1L6azEI&list=PLNYkxOF6rcIAcezfL8q0rjt13ufKseL5X&index=6&ab_channel=GoogleChromeDevelopers)
 ### TODO : Summary

@@ -20,15 +20,15 @@ Automate ^SlL8qdmQ
 
 %%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/Introduction]]<<<***%%📍Get Started ^sg08tzdk
 
-%%***>>>text element-link:[[Why Storybook#The solution]]<<<***%%🧱 Build UI components and pages in isolation! ^xtftf1HT
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Why Storybook#The solution]]<<<***%%🧱 Build UI components and pages in isolation! ^xtftf1HT
 
 Code ^nuC1aPqm
 
-%%***>>>text element-link:[[What's a story]]<<<***%%🕶️ Mock hard-to-reach edge cases as stories ^ZWFml7eT
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/What's a story]]<<<***%%🕶️ Mock hard-to-reach edge cases as stories ^ZWFml7eT
 
 %%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Addons/Introduction]]<<<***%%📦 Supercharge your workflow with addons ^OkgxTjig
 
-%%***>>>text element-link:[[Why Storybook#The solution]]<<<***%%🖱️ Drop the finished UI components into your app ^50kC99gj
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Why Storybook#The solution]]<<<***%%🖱️ Drop the finished UI components into your app ^50kC99gj
 
 🧩 Integrate with the tools you already use ^k55E0ILq
 
@@ -40,43 +40,43 @@ Test ^BoiPu1sW
 
 %%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Addons/Introduction]]<<<***%%👁️ Spot test ^wSRo7TMX
 
-%%***>>>text element-link:[[Visual tests]]<<<***%%🧩 Visual test apperance ^Ip3wf1u8
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Testing/Visual tests]]<<<***%%🧩 Visual test apperance ^Ip3wf1u8
 
-%%***>>>text element-link:[[Interaction tests]]<<<***%%🤝 Interaction test behavior ^SzIt6Hw3
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Testing/Interaction tests]]<<<***%%🤝 Interaction test behavior ^SzIt6Hw3
 
-%%***>>>text element-link:[[Accessibility tests]]<<<***%%🚹 Accessibility test ^oxzVd22u
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Testing/Accessibility tests]]<<<***%%🚹 Accessibility test ^oxzVd22u
 
-%%***>>>text element-link:[[Snapshot tests]]<<<***%%✨ Snapshot test markup ^FN0UIv0E
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Testing/Snapshot tests]]<<<***%%✨ Snapshot test markup ^FN0UIv0E
 
-%%***>>>text element-link:[[Import stories in tests]]<<<***%%♻️ Reuse tests in other tools ^FLLunhc8
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Testing/Import stories in tests]]<<<***%%♻️ Reuse tests in other tools ^FLLunhc8
 
 Docs ^5FiAHsVl
 
-%%***>>>text element-link:[[Browse stories#sidebar and canvas]]<<<***%%🔎 Find any component or page in your app ^Wfm7SYZq
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/Browse stories#sidebar and canvas]]<<<***%%🔎 Find any component or page in your app ^Wfm7SYZq
 
 %%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Addons/Introduction]]<<<***%%📄 Generate UI docs automatically ^9LbpnIGy
 
-%%***>>>text element-link:[[Browse stories#Use stories to build UIs]]<<<***%%♻️ Reuse components across pages and apps ^GbtW2ksi
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Get started/Browse stories#Use stories to build UIs]]<<<***%%♻️ Reuse components across pages and apps ^GbtW2ksi
 
-%%***>>>text element-link:[[Publish#versioning and history]]<<<***%%🏁 Track component history and versions ^B78KGFiv
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Sharing/Publish#versioning and history]]<<<***%%🏁 Track component history and versions ^B78KGFiv
 
 share ^57CxrQlD
 
-%%***>>>text element-link:[[Publish]]<<<***%%📚 publish Storybook to sign off from teammates ^xjHwHPxt
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Sharing/Publish]]<<<***%%📚 publish Storybook to sign off from teammates ^xjHwHPxt
 
-%%***>>>text element-link:[[Embed]]<<<***%%📋 Embed stories in wikis, Markdown, and Figma ^aCwJKzR3
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Sharing/Embed]]<<<***%%📋 Embed stories in wikis, Markdown, and Figma ^aCwJKzR3
 
-%%***>>>text element-link:[[Import stories in tests]]<<<***%%💉 import stories into other Javascript tooling ^MWPtXnXj
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Testing/Import stories in tests]]<<<***%%💉 import stories into other Javascript tooling ^MWPtXnXj
 
 Automate ^0J14L8jB
 
-%%***>>>text element-link:[[Publish]]<<<***%%📚 Publish Storybook ^LGFeFD78
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Sharing/Publish]]<<<***%%📚 Publish Storybook ^LGFeFD78
 
-%%***>>>text element-link:[[Test runner]]<<<***%%📏 UI Tests ^qzYEsmeQ
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Testing/Test runner]]<<<***%%📏 UI Tests ^qzYEsmeQ
 
-%%***>>>text element-link:[[Publish#review with your team]]<<<***%%👓 UI Review ^ilRqL736
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Sharing/Publish#review with your team]]<<<***%%👓 UI Review ^ilRqL736
 
-%%***>>>text element-link:[[Automate]]<<<***%%🌈 Merge and ship ^Zqsby0Po
+%%***>>>text element-link:[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Tutorials/UI Testing handbook/Automate]]<<<***%%🌈 Merge and ship ^Zqsby0Po
 
 community ^jHx63kvZ
 

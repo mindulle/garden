@@ -82,12 +82,12 @@ Storybook addons allow you to extend what's already possible with Storybook, eve
 
 [UI-based addons](https://storybook.js.org/docs/react/addons/addon-types#ui-based-addons) focus on customizing Storybook's user interface to extend your development workflow. Examples of UI-based addons include: [Controls](https://storybook.js.org/docs/react/essentials/controls), [Docs](https://storybook.js.org/docs/react/writing-docs/introduction) and [Accessibility](https://github.com/storybookjs/storybook/tree/master/addons/a11y).
 
-[[Write|Learn how to write an addon]]
+[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Addons/Write|Learn how to write an addon]]
 
 ### Preset addons
 
 [Preset addons](https://storybook.js.org/docs/react/addons/addon-types#preset-addons) help you integrate Storybook with other technologies and libraries. Examples of preset addons are: [preset-scss](https://github.com/storybookjs/presets/tree/master/packages/preset-scss) and [preset-create-react-app](https://github.com/storybookjs/presets/tree/master/packages/preset-create-react-app).
 
-[[Write a preset|Learn how to write a preset addon]]
+[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Addons/Write a preset|Learn how to write a preset addon]]
 
 <a href="https://github.com/storybookjs/storybook/tree/next/docs/addons/introduction.md" target="_blank" rel="noopener" class="e1soj9vu1 e1ja7avb2 css-1ii1tfm e1ja7avb1"><span class="css-1xdhyk6 e1ja7avb3"><span role="img" aria-label="write">✍️</span> <!-- -->Edit on GitHub – PRs welcome!</span></a>

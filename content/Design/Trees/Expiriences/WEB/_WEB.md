@@ -16,7 +16,7 @@ tags:
 style: bullet
 ```
 
-# [[_Research]]
-# [[_Wireframing]]
-# [[_Visualization]]
+# [[Design/Trees/Expiriences/WEB/Reserach/_Research]]
+# [[Design/Trees/Expiriences/WEB/Wireframing/_Wireframing]]
+# [[Design/Trees/Expiriences/WEB/Visualization/_Visualization]]
 # [[_Slicing]]

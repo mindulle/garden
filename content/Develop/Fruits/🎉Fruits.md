@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Design"
-lastModified: "2022-12-13"
+title: "🎉Fruits"
+lastModified: "2022-12-11"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -18,22 +18,28 @@ style: bullet
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
 
+# Receipes
+## Receipe map
+- Draw a simple excalidraw scatch to understand how this tool works roughly.
+- [[Develop/Fruits/📌mindulle/🎉📌mindulle | 🎉📌mindulle]]
 
-# Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+## Featured APIs
+- List up frequently used APIs.
 
-# Features
-- List up frequently used features.
-
-# Issues
+## My issues
 - what design patterns adapated to each features.
 - how to pipe logics to build features.
 - challenges during implementing features.
 - helpful supports deserve to remember.
-- Glean tips using `mindulle-cli` for digital gardening.
 
-# Showcases
+## Showcases
 - construct visual gallery to summarize your expriences.
 
-# See also
-- Further readings
+## From community
+- Glean tips using `mindulle-cli` for digital gardening.
+
+# Version-controled documents
+## vMajor.Minor.patch
+- link to each version's entry point note.
+- list of important changes.
+

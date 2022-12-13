@@ -4,7 +4,7 @@ last-modified: 2022-09-30
 ```toc
 style: bullet
 ```
-# [[_Tutorials]]
+# [[Develop/Trees/Dev/Libs&Fwks/Frontend/React/React-three/Tutorials/_Tutorials]]
 > [!tip] play with codesanddbox!
 > 
 | docs                                                                                                | ex1                                                                                                | ex2                                                            | ex3                                                            | ex4                                                                      | ex5                                                                   |
@@ -21,11 +21,11 @@ style: bullet
 
 
 
-# [[_API]]
+# [[Develop/Trees/Dev/Libs&Fwks/Frontend/React/React-three/API/_API]]
 
 # 🏷️Tags
 #cramming
 
 # 🔗LINKS
-## [[_API]]
-## [[_Tutorials]]
+## [[Develop/Trees/Dev/Libs&Fwks/Frontend/React/React-three/API/_API]]
+## [[Develop/Trees/Dev/Libs&Fwks/Frontend/React/React-three/Tutorials/_Tutorials]]

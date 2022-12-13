@@ -16,4 +16,4 @@ style:bullet
 ## 사례
 
 # 프로젝트 목록
-## [[_건강관리 어플리케이션 캐릭터 의뢰]]
+## [[Design/Fruits/@magicwand/loudsourcing/(cancel)건강관리 어플리케이션 캐릭터 의뢰/_건강관리 어플리케이션 캐릭터 의뢰]]

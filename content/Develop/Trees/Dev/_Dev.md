@@ -1,5 +1,0 @@
-[[Develop/Trees/Dev/Stacks/_Stacks]]
-[[Develop/Trees/Dev/_Dev]]
-[[Develop/Trees/Dev/Libs&Fwks/_Libs&Fwks]]
-[[Develop/Trees/Dev/Manage envs/_Manage envs]]
-[[Develop/Trees/Dev/Languages/_Languages]]

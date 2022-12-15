@@ -1,18 +1,15 @@
 ---
 # configs for document itself.
-title: "obsidian"
+title: "🎉Realworld"
 lastModified: "2022-12-14"
 visibility: "public"
 
 # configs for annotating data to obsidian dataview plugin.
 noteImportance: ⭐⭐⭐⭐⭐
-noteStatus: "in progress"
-noteCertanity: "certain"
+noteStatus: "draft"
+noteCertanity: "impossible/unlike/certain"
 noteField:
   - "develop"
-  - "design"
-  - "devsigner"
-  - "dataScience"
 notePurpose:
   - "background"
   - "individual"
@@ -20,9 +17,9 @@ notePurpose:
 noteTimeliness:
   - "lts"
 
-# configs for selecting seed type.
-seedType:
-  - "shovel"
+# configs for selecting tree type.
+treeType:
+  - "expirence"
 
 # configs to decide whether external contents are appropriate to me or not.
 contentLevel:
@@ -34,36 +31,15 @@ contentType:
   - "img"
   - "video"
 contentPurpose:
+  - "tutorial"
+  - "howto"
   - "explain"
   - "reference"
   - "realworld"
 
 # configs for querying particular datas to specify notes which have been noted expirences related to particular subject.
-# e.g. short tips useful vscode extensions to let me know how errors occur.
-# tags=[#seed, #shortTip, #vscode, #extension, #errorHandling]
+# e.g. performance optimization using lighthouse in web development environments:
+# tags=[#tree, #web, #lighthouse, #perfOpt]
 tags:
-  - "seed"
-  - "shovel"
-  - "obsidian"
+  - "tree"
 ---
-```toc
-style: bullet
-```
-
-# Markdown
-## Frequently used
-## Documents & Specs
-
-
-# Shortcuts
-
-# Plugins
-## My favorites
-## Documents
-
-# Deploy
-## Free
-### Quartz 🎯
-
-## Paid
-### Obsidian Publish

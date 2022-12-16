@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "_cli"
+title: "🎉cli"
 lastModified: "2022-12-03"
 
 # field for querying only entry point notes.

@@ -43,7 +43,7 @@ tags:
 ```toc
 style: bullet
 ```
-
+ 
 > [!info] 모든 명령어는 기본적으로
 > 아무런 추가 패러미터를 넘기지 않으면 대화형 인터페이스가 실행됩니다.
 # 공통 변수
@@ -199,6 +199,25 @@ __SCOPE__
 - `-s=<SCOPE_NAME>`, `--scope=<SCOPE_NAME>` : 활용하려는 code의 범위를 제한 할 수 있습니다. `<SCOPE_NAME>`에는 __TITLE NAMING CONVENTION__ 의 다섯가지  카테고리 혹은 카테고리의 모든 하위 요소가 사용될 수 있습니다.
 - e.g. `--scope=base`, `--scope=HTML`, `--scope=animation`, `--scope=FE`, ...
 
+# code 명령어를 아래 3개 명령어로 세분화 해 두세요
+## webFront
+### 옵션 목록
+- ROLE(Markup, Styling, JS(State, effect(event), pipe, syntatic sugars, Mock, Test, reafctor, CLI commands)
+- PURPOSE(snippet, practical, realworld, reproduce)
+- ACTION(clipboard, docs, example, print)
+- MANAGE(add, remove, list)
+
+## webBackend
+- ROLE(Model, View, Controller, pipe, middleware, syntatic sugars, Test, refactor, CLI commands)
+- PURPOSE(snippet, practical, realworld, reproduce)
+- ACTION(clipboard, docs, example, print)
+- MANAGE(add, remove, list)
+
+## database
+- ROLE(SQL, Cyper, Graphql)
+- PURPOSE(snippet, practical, realworld, reproduce)
+- ACTION(clipboard, docs, example, print)
+- MANAGE(add, remove, list)
 
 ## env
 ### 문법과 예시

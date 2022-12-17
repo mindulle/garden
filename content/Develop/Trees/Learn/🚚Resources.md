@@ -1,10 +1,15 @@
 ---
-last-modified: "2022-11-21"
----
-```toc
-style: bullet
-```
+# configs for document itself.
+title: "🚚Resources"
+lastModified: "2022-12-17"
 
+# field for querying only entry point notes.
+isResources: true
+
+# add some tags for specifying particular subjects.
+tags:
+  - "resource"
+---
 # Overview
 | Name | document type | tutorials/demos | examples projects |
 | ---- | ------------- | --------------- | -------- |

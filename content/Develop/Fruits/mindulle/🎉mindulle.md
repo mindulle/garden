@@ -10,7 +10,7 @@ isEntryPoint: true
 tags:
   - "entrypoint"
   - "web"
-  - "@mindulle"
+  - "mindulle"
   - "fruit"
 ---
 ```toc

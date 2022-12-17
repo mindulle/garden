@@ -37,8 +37,7 @@ fruitTarget:
 # tags=[#fruit, #mindulle-cli, #customModule, #web]
 tags:
   - "fruit"
-  - "web"
-  - "@mindulle"
+  - "mindulle/cli"
 ---
 ```toc
 style: bullet
@@ -53,12 +52,20 @@ style: bullet
 
 | Category                 | Description                                                                                             |
 | ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| none                     | 미분류, 기본값                                                                                                        |
+| none                     | 미분류, 기본값                                                                                          |
 | performance              | 성능 최적화를 위한 카테고리                                                                             |
 | build-excellent-websites | PWA, a11y, Network, securem payments 등 심화된 웹 기능을 위한 카테고리                                  |
-| Frameworks               | 다양한 프레임워크를 위한 카테고리                                                                       |
-| Lighthouse               | Lighthouse를 위한 카테고리                                                                              |
+| frameworks               | 다양한 프레임워크를 위한 카테고리                                                                       |
+| lighthouse               | Lighthouse를 위한 카테고리                                                                              |
 | modern-web-patterns      | advanced apps, animation, clipboard, component, files and directory, layout, media, theming, web vitals |
+| cmd-webfront             |                                                                                                         |
+| cmd-webbackend           |                                                                                                         |
+| cmd-database             |                                                                                                         |
+| cmd-env                  |                                                                                                         |
+| cmd-module               |                                                                                                         |
+| cmd-predev               |                                                                                                         |
+| cmd-postdev              |                                                                                                         |
+| cmd-ping                         |                                                                                                         |
 
 
 # 학습 목적 명령어
@@ -287,7 +294,7 @@ __OPTIONS__
 - `-ex`, `--example` : `NAME`을 활용한 간단한 데모를 엽니다.
 
 ## script
-문법과 예시
+### 문법과 예시
 ```shell
 $ mindulle script TASK [OPTIONS]
 ```
@@ -296,10 +303,10 @@ $ mindulle script TASK [OPTIONS]
 $ mindulle script prepare-msw --docs
 ```
 
-용도
+### 용도
 > 개발 과정에서 단순 반복 작업의 자동화 스크립트, 자주 사용되는 유닛 테스트 패턴 등 보조적인 역할을 수행하는 스크립트들을 빠르고 쉽게 사용하기 위한 명령어
 
-필수
+### 필수
 __TASK__
 - 개발 과정에서 발생 할 수 있는 이슈의 주제라면 무엇이든 여기 올 수 있습니다.
 - TODO : 표 만들어두기
@@ -312,7 +319,7 @@ __TASK__
 | prepare-ts-fullstack.js | npm commands script module |             |
 
 
-선택
+### 선택
 __OPTIONS__
 - `-d`, `--docs` : `TITLE`에 해당하는 간략한 설명 문서를 브라우저에서 엽니다. (기본값)
 - `-p`, `--print` : `TITLE`에 해당하는 스크립트를 터미널에 출력합니다.
@@ -322,10 +329,47 @@ __OPTIONS__
 
 # Script 명령어를 아래 세 명령어로 세분화 해 두세요.
 ## predev
-- 개발 전 환경설정 스크립트 실행
-
-## pipe
-- API 통신, fetch, back <-> front, 등 다양한 통신 주체별 연결을 중개하기 위한 명령어.
+### 문법과 예시
+### 용도
+### 필수
+### 선택
 
 ## postdev
 - operation에 해당하는 작업들(백엔드 작업 포함, operate, deploy, monitoring, etc...) 을 수행하기 위한 스크립트 모음
+
+## ping
+### 문법과 예시
+```shell
+$ mindulle ping TARGET [PROTOCOL]
+```
+
+```shell
+$ mindulle ping DB --get-page-content
+```
+
+### 용도
+> API, 데이터베이스 등 개발에 필요한 다양한 서비스의 정상 작동 여부를 확인하기 위한 명령어 입니다. 
+
+### 필수
+__TARGET__
+- 테스트 요청을 보내볼 API 목록이 올 수 있습니다.
+- 혹은 임의의 url을 넣어 사용 할 수도 있습니다.
+- TODO : 아래 표 채워두기
+
+| Target | Description                                                               | endpoint        |
+| ------ | ------------------------------------------------------------------------- | --------------- |
+| DB     | mindulle 계정의 개발 도움 도구들에서 사용 할 데이터를 모아둔 데이터베이스 | localhost:????/ |
+| API    | mindulle 계정의 백엔드 API 서버                                           | localhost:????/ |
+| BLOG   | mindulle 계정의 블로그 서버                                               | https://mindulle.github.com/blog                |
+
+### 선택
+__PROTOCOL__
+- [cu](https://curl.se/docs/httpscripting.html)[rl](https://curl.se/docs/manual.html) [요청](https://reqbin.com/req/c-s3bfyrby/curl-examples)을 이용한 자주 사용되는 usecase들을 미리 지정해둔 옵션으로 바로 사용 할 수 있습니다.
+- `mindulle ping TARGET --PROTOCOL_NAME` 의 형태로 사용합니다.
+- TODO : 아래 표 채워두기
+
+| Name             | origin curl command                                                       | example                                                 | Description                                                                     |
+| ---------------- | ------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| get-page-content | `curl https://example.com`                                                | `mindulle ping DB --get-page-content`                   | 타겟 url의 HTTP 응답을 출력합니다.                                              |
+| send-json        | `curl -X POST [URL] -H "Content-Type: application/json" -d "[JSON data]"` | `mindulle ping BLOG mock.json `                         | 타겟 url에 헤더에 JSON 타입 요청임이 명시된 HTTP 요청을 보고 결과값을 출력합니다. |
+| submit-form-data | `curl [URL] -F key1=value1 -F key2=value2 -F key2=@filename`              | `mindulle ping API --submit-form-data="key/value data"` | 타겟 url에 key/value 형태의 폼 데이터를 제출하고 그 결과값을 출력합니다.                                                                                |

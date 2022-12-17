@@ -32,12 +32,14 @@ fruitTarget:
 # tags=[#fruit, #mindulle-cli, #customModule, #web]
 tags:
   - "fruit"
-  - "web"
-  - "@mindulle"
+  - "mindulle/cli"
 ---
 
-TODO : COMMANDS 문서 보고 다시 쓰기.
+__TODO__ : COMMANDS 문서 보고 다시 쓰기.
 - 우테코 기능 명세서처럼 쓰기.
+- 우테코 기능명세서도 딱히 특별한 양식이 있진 않은 것 같다.
+- 스탠포드대 양식이 제일 좋은 예시인듯.
+- 하단에 막 적어놓은 내용들 정리해서 집어넣자.
 
 Syntax:
 mindulle [COMMAND]
@@ -85,3 +87,6 @@ $ copy to clipboard for '-cb' option using clipboard api(https://developer.mozil
 
 $ construct json api server and request to that server for fetching shorthanded name list with fetch api(https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch)
 
+[Editable functional specification document download](https://uit.stanford.edu/pmo/templates) 
+
+![[Develop/Fruits/mindulle/cli/Functional Specification Document Template.pdf]]

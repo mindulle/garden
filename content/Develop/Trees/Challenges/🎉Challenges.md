@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉blog"
-lastModified: "2022-12-17"
+title: "🎉Challenges"
+lastModified: "2022-12-16"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,24 +9,15 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
-  - "mindulle/blog"
+  - "challenge"
 ---
 ```toc
 style: bullet
 ```
-
-# TL;DR
-- you can summarize contents as a table format.
-- or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
-
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- 
+- 
 
 # Features
 - List up frequently used features.
@@ -40,3 +31,8 @@ erDiagram
 
 # Showcases
 - construct visual gallery to summarize your expriences.
+
+# See also
+- [Category:Programming contests - Wikipedia](https://en.wikipedia.org/wiki/Category:Programming_contests)
+- [awesome-daily-programming-challenges](https://github.com/samukaunt/awesome-daily-programming-challenges)
+- 

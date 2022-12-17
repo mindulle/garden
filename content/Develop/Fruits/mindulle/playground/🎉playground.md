@@ -9,7 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
-  - "@mindulle/playground"
+  - "mindulle/playground"
 ---
 ```toc
 style: bullet

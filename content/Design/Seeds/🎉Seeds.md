@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉blog"
-lastModified: "2022-12-17"
+title: "🎉Seeds"
+lastModified: "2022-12-16"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,7 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
-  - "mindulle/blog"
+  - "seed"
 ---
 ```toc
 style: bullet
@@ -40,3 +40,6 @@ erDiagram
 
 # Showcases
 - construct visual gallery to summarize your expriences.
+
+# See also
+- Further readings

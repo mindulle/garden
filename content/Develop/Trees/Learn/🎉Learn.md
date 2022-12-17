@@ -21,7 +21,7 @@ style: bullet
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Learn/Resources|Resources]]
+- [[Develop/Trees/Learn/🚚Resources|Resources]]
 
 # Features
 - List up frequently used features.

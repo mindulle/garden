@@ -10,8 +10,7 @@ isEntryPoint: true
 tags:
   - "entrypoint"
   - "fruit"
-  - "web"
-  - "@mindulle"
+  - "mindulle/cli"
 ---
 ```toc
 style: bullet
@@ -24,6 +23,8 @@ style: bullet
 # Receipes
 ## Receipe map
 - Draw a simple excalidraw scatch to understand this tools rough workflows.
+- [[Develop/Fruits/mindulle/cli/COMMANDS|COMMANDS]]
+- [[Develop/Fruits/mindulle/cli/Functional specifiactions|feature specifications]]
 
 ## Featured APIs
 - List up frequently used APIs.
@@ -40,15 +41,8 @@ style: bullet
 ## From community
 - Glean tips using `mindulle-cli` for digital gardening.
 
-# Version-controled documents
-## vMajor.Minor.patch
-- link to each version's entry point note.
-- list of important changes.
 
-
-
-
-# [[Develop/Fruits/@mindulle/cli/COMMANDS]]
+# 
 ## 공부용 명령어
 | 명령어 | 예시                                                   | 설명                                     |
 | ------ | ------------------------------------------------------ | ---------------------------------------- |
@@ -64,4 +58,4 @@ style: bullet
 | module | `$ mindulle module monochrome.css --docs`       | 모듈화 해 둔 다양한 코드 모음을 설치하거나 문서를 엽니다.                                               |
 | script | `$ mindulle script prepare-msw --docs`          | 개발 과정에서 단순 반복 작업의 자동화 스크립트, 자주 사용되는 유닛 테스트 패턴 등 보조적인 역할을 수행하는 스크립트들을 빠르고 쉽게 사용하기 위한 명령어                                                                                                        |
 
-# [[Develop/Fruits/@mindulle/cli/feature specifiactions]]
+# 

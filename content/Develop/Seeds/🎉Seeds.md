@@ -19,7 +19,7 @@ tags:
 style: bullet
 ```
 # Seeds의 구조
-![[Develop/Seeds/🎉assets/_Seeds 2022-10-14 20.48.06.excalidraw]]
+![[Develop/Seeds/📦assets/_Seeds 2022-10-14 20.48.06.excalidraw]]
 
 # 씨앗 관리
 ## 씨앗 모으고 분류하기

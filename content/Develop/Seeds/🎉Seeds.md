@@ -28,16 +28,16 @@ style: bullet
 
 ## 분류한 씨앗 내용 정리하기
 ### Grocery
-- [[Develop/Seeds/Grocery/Tech Blog Articles]]
-- [[Develop/Seeds/Grocery/Official Documents]]
-- [[Develop/Seeds/Grocery/Code Share in online]]
+- [[Develop/Seeds/Grocery/Blog articles]]
+- [[Develop/Seeds/Grocery/Case study]]
+- [[Develop/Seeds/Grocery/Share in online]]
 - [[Opensource Proejcts]]
 - [[Develop/Seeds/Grocery/Newsletters]]
 
 ### TODO : Shovel
--  [[Develop/Seeds/Storage/Miscs]]
--  [[Develop/Seeds/Storage/My issues]]
--  [[Develop/Seeds/Storage/Sparkling Ideas]]
+-  [[Develop/Seeds/Storage/Miscs/🎉Miscs]]
+-  [[Develop/Seeds/Storage/My issues/🎉My issues]]
+-  [[Develop/Seeds/Storage/Ideas/🎉Ideas]]
 
 ### TODO : Storage
 ### TODO : Miscs

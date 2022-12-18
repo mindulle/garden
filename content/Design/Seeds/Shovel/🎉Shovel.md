@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
 title: "🎉Shovel"
-lastModified: "2022-12-14"
+lastModified: "2022-12-18"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,7 +9,6 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
-  - "shovel"
 ---
 ```toc
 style: bullet
@@ -18,10 +17,19 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
+```mermaid
+erDiagram
+	You ||--|| Table : Summarize
+	You ||--|| Statements : Sentence
+```
 
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Design/Seeds/Shovel/Helper sites/🎉Helper sites|🎉Helper sites]]
+- [[Design/Seeds/Shovel/Manage resources/🎉Manage resources|🎉Manage resources]]
+- [[Design/Seeds/Shovel/Search/🎉Search|🎉Search]]
+- [[Design/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
 
 # Features
 - List up frequently used features.
@@ -35,5 +43,3 @@ style: bullet
 
 # Showcases
 - construct visual gallery to summarize your expriences.
-
-# See also

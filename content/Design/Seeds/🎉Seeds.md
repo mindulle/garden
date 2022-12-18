@@ -27,9 +27,15 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Design/Seeds/Storage/🎉Storage|🎉Storage]]
+- [[Design/Seeds/Shovel/🎉Shovel|🎉Shovel]]
+- [[Design/Seeds/Grocery/🎉Grocery|🎉Grocery]]
 
 # Features
 - List up frequently used features.
+- [[Design/Seeds/🌱Distribute|🌱Distribute]]
+- [[Design/Seeds/🎻Orchestrate|🎻Orchestrate]]
+- [[Design/Seeds/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

@@ -8,7 +8,7 @@ isResources: true
 
 # add some tags for specifying particular subjects.
 tags:
-  - "resource"
+  - "resources"
 ---
 | Name | tag | purpose | offcial document | pined issue |
 | ---- | --- | ------- | ---------------- | ---- |

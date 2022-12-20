@@ -6,7 +6,7 @@ visibility: "public"
 
 # configs for annotating data to obsidian dataview plugin.
 noteImportance: ⭐⭐⭐⭐
-noteStatus: "in progress"
+noteStatus: "finished"
 noteCertanity: "certain"
 noteField:
   - "develop"
@@ -914,7 +914,7 @@ If a class is named default it will be assigned to all classes without specific 
 ```
 
 ---
-## Basic support for fontawesome
+## Basic support for fontawesome (Doesn't support in obsidian)
 
 It is possible to add icons from fontawesome.
 
@@ -936,28 +936,17 @@ flowchart TD
     B-->E(A fa:fa-camera-retro perhaps?)
 ```
 
-
-for peace
-
-forbidden
-
-A perhaps?
-
-?> Mermaid is now only compatible with Font Awesome versions 4 and 5. Check that you are using the correct version of Font Awesome.
+Mermaid is now only compatible with Font Awesome versions 4 and 5. Check that you are using the correct version of Font Awesome.
 
 ## Graph declarations with spaces between vertices and link and without semicolon
 
--   In graph declarations, the statements also can now end without a semicolon. After release 0.2.16, ending a graph statement with semicolon is just optional. So the below graph declaration is also valid along with the old declarations of the graph.
-    
--   A single space is allowed between vertices and the link. However there should not be any space between a vertex and its text and a link and its text. The old syntax of graph declaration will also work and hence this new feature is optional and is introduced to improve readability.
-    
+- In graph declarations, the statements also can now end without a semicolon. After release 0.2.16, ending a graph statement with semicolon is just optional. So the below graph declaration is also valid along with the old declarations of the graph.
+
+- A single space is allowed between vertices and the link. However there should not be any space between a vertex and its text and a link and its text. The old syntax of graph declaration will also work and hence this new feature is optional and is introduced to improve readability.
 
 Below is the new declaration of the graph edges which is also valid along with the old declaration of the graph edges.
 
 ##### Code:
-
-mermaid
-
 ```
 flowchart LR
     A[Hard edge] -->|Link text| B(Round edge)
@@ -965,32 +954,20 @@ flowchart LR
     C -->|One| D[Result one]
     C -->|Two| E[Result two]
 ```
-
-Link text
-
-One
-
-Two
-
-Hard edge
-
-Round edge
-
-Decision
-
-Result one
-
-Result two
-
+```mermaid
+flowchart LR
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+```
 ## Configuration...
 
 It is possible to adjust the width of the rendered flowchart.
 
 This is done by defining **mermaid.flowchartConfig** or by the CLI to use a JSON file with the configuration. How to use the CLI is described in the mermaidCLI page. mermaid.flowchartConfig can be set to a JSON string with config parameters or the corresponding object.
 
-javascript
-
-```
+```javascript
 mermaid.flowchartConfig = {
     width: 100%
 }

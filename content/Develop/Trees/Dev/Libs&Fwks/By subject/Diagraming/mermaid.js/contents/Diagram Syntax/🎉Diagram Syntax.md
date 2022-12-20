@@ -9,6 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "mermaidjs"
 ---
 ```toc
 style: bullet
@@ -27,6 +28,7 @@ erDiagram
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
 - [[Develop/Trees/Dev/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Flowcahrt|Flowcahrt]]
+- [[Sequence Diagram]]
 
 # Showcases
 - construct visual gallery to summarize your expriences.

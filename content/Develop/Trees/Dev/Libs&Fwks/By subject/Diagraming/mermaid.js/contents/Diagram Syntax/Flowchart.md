@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "Flowcahrt"
+title: "Flowchart"
 lastModified: "2022-12-20"
 visibility: "public"
 
@@ -18,12 +18,7 @@ noteTimeliness:
 
 # configs for selecting tree type.
 treeType:
-  - "cahllenge"
-  - "dev"
   - "learn"
-  - "expirence"
-  - "ecosystem"
-  - "trend"
 treePurpose:
   - "webClipping"
 
@@ -35,7 +30,8 @@ contentRepresentation:
   - "text"
   - "img"
 contentPurpose:
-  - "explain"
+  - "howto"
+  - "reference"
   - "realworld"
 contentOrigin:
   - "technicalDocument"

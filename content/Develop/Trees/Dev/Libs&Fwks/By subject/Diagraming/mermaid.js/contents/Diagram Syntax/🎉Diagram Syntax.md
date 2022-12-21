@@ -27,8 +27,9 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Flowcahrt|Flowcahrt]]
+- [[Develop/Trees/Dev/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Flowchart|Flowcahrt]]
 - [[Sequence Diagram]]
+- [[Develop/Trees/Dev/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Entity Relationship Diagram|Entity Relationship Diagram]]
 
 # Showcases
 - construct visual gallery to summarize your expriences.

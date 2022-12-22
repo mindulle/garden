@@ -32,6 +32,7 @@ erDiagram
 - List up frequently used features.
 - [[Auto Painters]]
 - [[Web assets]]
+- [[Graphic design assistances]]
 
 # Issues
 - what design patterns adapated to each features.

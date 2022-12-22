@@ -24,7 +24,7 @@ tags:
 ```toc
 style: bullet
 ```
-[[Develop/Trees/Expiriences/WEB/Fundamentals/Test/Tools/Storybook/_Storybook#Glance quickly]]에 전반적인 정리는 되었다. 이제 실습해보며 민들레 디자인 시스템을 실제로 만들어보는 수순으로 넘어가도 괜찮을 것 같다.
+[[Develop/Trees/Experiences/WEB/Fundamentals/Test/Tools/Storybook/_Storybook#Glance quickly]]에 전반적인 정리는 되었다. 이제 실습해보며 민들레 디자인 시스템을 실제로 만들어보는 수순으로 넘어가도 괜찮을 것 같다.
 
 # 프로젝트 설계
 ## 업무분장? - 더 나은 용어 찾아보기(애자일 용어 참고)

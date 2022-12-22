@@ -46,9 +46,12 @@ tags:
   - "helperSites"
 ---
 # Overview
-| name                                     | frequently used features                                    | note |
-| ---------------------------------------- | ----------------------------------------------------------- | ---- |
+| name                                     | frequently used features                                                                                          | note |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---- |
 | [Font awesome](https://fontawesome.com/) | [use a kit](https://fontawesome.com/docs/web/setup/use-kit), [javascript API](https://fontawesome.com/docs/apis/) |      |
+| [Fontpair](https://www.fontpair.co/all)  | [figma plugin](https://www.figma.com/community/plugin/1105220730154050357)                                                                                                                  |      |
+
+
 
 # Glance
 | ![Font awesome\|300](https://img.fortawesome.com/1ce05b4b/open-graph-general.png) | Thumbnail of site2 | Thumbnail of site3 | Thumbnail of site4 |

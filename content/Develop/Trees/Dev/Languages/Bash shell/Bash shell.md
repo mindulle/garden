@@ -62,3 +62,4 @@ style: bullet
 - [Terminal-mac-cheatsheet](https://github.com/0nn0/terminal-mac-cheatsheet)
 - [고급 Bash 스크립팅 가이드](http://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/)
 - [Bash - 제타위키](https://zetawiki.com/wiki/Bash)
+- [Shell scripting with Node.js](https://exploringjs.com/nodejs-shell-scripting/toc.html)

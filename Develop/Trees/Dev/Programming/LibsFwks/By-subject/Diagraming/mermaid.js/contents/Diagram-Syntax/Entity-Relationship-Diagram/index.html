@@ -1,0 +1,215 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="1  max_depth: 3   Entity Relationship Diagrams  An entity–relationship model (or ER model) describes interrelated things of interest in a specific domain of knowledge."><title>Entity Relationship Diagram</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://mindulle.github.io/garden/icon.png><link href=https://mindulle.github.io/garden/styles.706bb6073ba85d26809f9096dae23a6b.min.css rel=stylesheet><link href=https://mindulle.github.io/garden/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://mindulle.github.io/garden/js/darkmode.71fd764547989a0d567451669afd7a55.min.js></script>
+<script src=https://mindulle.github.io/garden/js/util.5e39932758f9ecaf45fd54506ed61416.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script type=module>
+      import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script><script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://mindulle.github.io/garden/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js></script>
+<script src=https://mindulle.github.io/garden/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://mindulle.github.io/garden/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://mindulle.github.io/garden/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://mindulle.github.io/garden",fetchData=Promise.all([fetch("https://mindulle.github.io/garden/indices/linkIndex.50400a908956a9f90ab06e3e1ce9ae23.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://mindulle.github.io/garden/indices/contentIndex.8d5c54ed893eda559f5244f1d07f416b.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://mindulle.github.io/garden",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!0;drawGraph("https://mindulle.github.io/garden",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/mindulle.github.io\/garden\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://mindulle.github.io/garden/js/full-text-search.51f0b1753e9b30839d053f8a98cc20d1.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://mindulle.github.io/garden>Mindulle Garden🎉</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Entity Relationship Diagram</h1><p class=meta>Last updated
+Dec 22, 2022
+<a href=https://github.com/mindulle/garden/tree/hugo/content/Develop/Trees/Dev/Programming/Libs&Fwks/By%20subject/Diagraming/mermaid.js/contents/Diagram%20Syntax/Entity%20Relationship%20Diagram.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://mindulle.github.io/garden/tags/tree/>Tree</a></li><li><a href=https://mindulle.github.io/garden/tags/mermaidjs/>Mermaidjs</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#entity-relationship-diagrams>Entity Relationship Diagrams</a><ol><li></li></ol></li><li><a href=#syntax>Syntax</a><ol><li><a href=#entities-and-relationships>Entities and Relationships</a></li><li><a href=#relationship-syntax>Relationship Syntax</a></li><li><a href=#identification>Identification</a></li><li><a href=#attributes>Attributes</a></li><li><a href=#other-things>Other Things</a></li></ol></li><li><a href=#styling>Styling</a><ol><li><a href=#config-options>Config options</a></li><li><a href=#classes-used>Classes used</a></li></ol></li></ol></nav></details></aside><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-toc data-lang=toc><span class=line><span class=cl>max<span class=nb>_</span>depth: 3
+</span></span></code></pre></td></tr></table></div></div><a href=#entity-relationship-diagrams><h2 id=entity-relationship-diagrams><span class=hanchor arialabel=Anchor># </span>Entity Relationship Diagrams</h2></a><blockquote><p>An entity–relationship model (or ER model) describes interrelated things of interest in a specific domain of knowledge. A basic ER model is composed of entity types (which classify the things of interest) and specifies relationships that can exist between entities (instances of those entity types). Wikipedia.</p></blockquote><p>Note that practitioners<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> of ER modelling almost always refer to <em>entity types</em> simply as <em>entities</em>. For example the <code>CUSTOMER</code> entity <em>type</em> would be referred to simply as the <code>CUSTOMER</code> entity. This is so common it would be inadvisable<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup> to do anything else, but technically <strong>an entity is an <mark>abstract <em>instance</em></mark></strong> of an entity type, and <strong><em>this is what an ER diagram shows</em></strong> - abstract instances, and the relationships between them. This is why <strong>entities are always named using <mark>singular nouns.</mark></strong></p><p>Mermaid can render ER diagrams</p><a href=#code><h5 id=code><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>title: Order example
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>erDiagram
+</span></span><span class=line><span class=cl>    CUSTOMER ||--o{ ORDER : places
+</span></span><span class=line><span class=cl>    ORDER ||--|{ LINE-ITEM : contains
+</span></span><span class=line><span class=cl>    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>erDiagram
+CUSTOMER ||--o{ ORDER : places
+ORDER ||--|{ LINE-ITEM : contains
+CUSTOMER }|..|{ DELIVERY-ADDRESS : uses</div><p><strong>Entity</strong> names are often <strong>capitalised</strong>, although <strong>there is no accepted standard</strong> on this, and it is not required in Mermaid.</p><p>Relationships between entities are represented by lines with end markers representing <strong>cardinality.</strong><sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup> Mermaid uses the most popular
+<a href=https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow%27s_foot_notation rel=noopener>crow&rsquo;s foot notation.</a> The crow&rsquo;s foot intuitively <strong>conveys</strong> the possibility of many instances of the entity that it connects to.</p><p>ER diagrams can be used for various purposes, ranging from abstract logical models devoid<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup> of any implementation details, through to physical models of relational database tables. It can be useful to include attribute definitions on ER diagrams to aid comprehension of the purpose and meaning of entities. These do not necessarily need to be exhaustive; often a small subset of attributes is enough. Mermaid allows them to be defined in terms of their <em>type</em> and <em>name</em>.</p><a href=#code-1><h5 id=code-1><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>erDiagram
+</span></span><span class=line><span class=cl>    CUSTOMER ||--o{ ORDER : places
+</span></span><span class=line><span class=cl>    CUSTOMER {
+</span></span><span class=line><span class=cl>        string name
+</span></span><span class=line><span class=cl>        string custNumber
+</span></span><span class=line><span class=cl>        string sector
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    ORDER ||--|{ LINE-ITEM : contains
+</span></span><span class=line><span class=cl>    ORDER {
+</span></span><span class=line><span class=cl>        int orderNumber
+</span></span><span class=line><span class=cl>        string deliveryAddress
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    LINE-ITEM {
+</span></span><span class=line><span class=cl>        string productCode
+</span></span><span class=line><span class=cl>        int quantity
+</span></span><span class=line><span class=cl>        float pricePerUnit
+</span></span><span class=line><span class=cl>    }
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>erDiagram
+CUSTOMER ||--o{ ORDER : places
+CUSTOMER {
+string name
+string custNumber
+string sector
+}
+ORDER ||--|{ LINE-ITEM : contains
+ORDER {
+int orderNumber
+string deliveryAddress
+}
+LINE-ITEM {
+string productCode
+int quantity
+float pricePerUnit
+}</div><p>When including attributes on ER diagrams, you must decide whether to include foreign keys as attributes. This probably depends on how closely you are trying to represent relational table structures. If your diagram is a <em>logical</em> model which is not meant to imply a relational implementation, then <strong>it is better to leave these out</strong> because the associative relationships already convey the way that entities are associated. <mark>For example</mark>, a <strong>JSON data</strong> structure can <strong>implement a one-to-many relationship</strong> <em>without the need for foreign key</em> properties, using arrays. Similarly an object-oriented programming language may use pointers or references to collections. Even for models that are intended for relational implementation, you might decide that inclusion of foreign key attributes duplicates information <strong>already portrayed<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup> by the relationships</strong>, and does not add meaning to entities. Ultimately, it&rsquo;s your choice.</p><blockquote class=note-callout><p>외래 키를 속성으로 넣을 지 말지는 네 자유인데
+JSON이나 배열처럼 프로그래밍 요소에 자연스레 Entity나 Relation에 관한 정보가 포함되어 있을 수 있으니 굳이 한번 더 다이어그램으로 표시를 할 지 말지는 개발자의 선택에 달렸단 얘기 같음. 물론 난 귀찮으니 웬만해선 가장 쉽고 단순한 표기를 사용 할 것 같음.</p></blockquote><a href=#syntax><h2 id=syntax><span class=hanchor arialabel=Anchor># </span>Syntax</h2></a><a href=#entities-and-relationships><h3 id=entities-and-relationships><span class=hanchor arialabel=Anchor># </span>Entities and Relationships</h3></a><p>Mermaid syntax for ER diagrams is compatible with PlantUML, with an extension to label the relationship. Each statement consists of the following parts:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>    &lt;first-entity&gt; [&lt;relationship&gt; &lt;second-entity&gt; : &lt;relationship-label&gt;]
+</span></span></code></pre></td></tr></table></div></div><p>Where:</p><ul><li><code>first-entity</code> is the name of an entity. Names must begin with an alphabetic character and may also contain digits, hyphens, and underscores.</li><li><code>relationship</code> describes the way that both entities inter-relate. See below.</li><li><code>second-entity</code> is the name of the other entity.</li><li><code>relationship-label</code> describes the relationship from the perspective of the first entity.</li></ul><p>For example:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>    PROPERTY ||--|{ ROOM : contains
+</span></span></code></pre></td></tr></table></div></div><p>This statement can be read as <em>a property contains one or more rooms, and a room is part of one and only one property</em>. You can see that the label here is from the first entity&rsquo;s perspective: a property contains a room, but a room does not contain a property. When considered from the perspective of the second entity, the equivalent label is usually very easy to infer. (Some ER diagrams label relationships from both perspectives, but this is not supported here, and is usually superfluous).</p><p>Only the <code>first-entity</code> part of a statement is mandatory. This makes it possible to show an entity with no relationships, which can be useful during iterative construction of diagrams. If any other parts of a statement are specified, then all parts are mandatory.</p><a href=#relationship-syntax><h3 id=relationship-syntax><span class=hanchor arialabel=Anchor># </span>Relationship Syntax</h3></a><p>The <code>relationship</code> part of each statement can be broken down into three sub-components:</p><ul><li>the cardinality of the first entity with respect to the second,</li><li>whether the relationship confers identity on a &lsquo;child&rsquo; entity</li><li>the cardinality of the second entity with respect to the first</li></ul><p><strong>Cardinality</strong> is a property that describes <strong>how many elements of another entity can be related to the entity in question.</strong> In the above example a <code>PROPERTY</code> can have one or more <code>ROOM</code> instances associated to it, whereas a <code>ROOM</code> can only be associated with one <code>PROPERTY</code>. In each cardinality marker there are two characters. The outermost character represents a maximum value, and the innermost character represents a minimum value. <strong>The table below summarises <mark>possible cardinalities.</strong></mark></p><table><thead><tr><th>Value (left)</th><th>Value (right)</th><th>Meaning (cardinality)</th></tr></thead><tbody><tr><td>|o</td><td>o|</td><td>Zero or one</td></tr><tr><td>||</td><td>||</td><td>Excatly one</td></tr><tr><td>}o</td><td>o{</td><td>Zero or more (no upper limit)</td></tr><tr><td>}|</td><td>|{</td><td>One or more (no upper limit)</td></tr></tbody></table><p><strong>Aliases</strong></p><table><thead><tr><th>Value (left)</th><th>Value (right)</th><th>Alias for</th></tr></thead><tbody><tr><td>one or zero</td><td>one or zero</td><td>Zero or one</td></tr><tr><td>zero or one</td><td>zero or one</td><td>Zero or one</td></tr><tr><td>one or more</td><td>one or more</td><td>One or more</td></tr><tr><td>one or many</td><td>one or many</td><td>One or more</td></tr><tr><td>many(1)</td><td>many(1)</td><td>One or more</td></tr><tr><td>1+</td><td>1+</td><td>One or more</td></tr><tr><td>zero or more</td><td>zero or more</td><td>Zero or more</td></tr><tr><td>zero or many</td><td>zero or many</td><td>Zero or more</td></tr><tr><td>many(0)</td><td>many(1)</td><td>Zero or more</td></tr><tr><td>0+</td><td>0+</td><td>Zero or more</td></tr><tr><td>only one</td><td>only one</td><td>Excatly one</td></tr><tr><td>1</td><td>1</td><td>Exactly one</td></tr></tbody></table><a href=#identification><h3 id=identification><span class=hanchor arialabel=Anchor># </span>Identification</h3></a><p>Relationships may be classified as either <em>identifying</em> or <em>non-identifying</em> and these are rendered with either solid or dashed lines respectively. This is relevant when one of the entities in question can not have independent existence without the other. For example a firm that insures people to drive cars might need to store data on <code>NAMED-DRIVER</code>s. In modelling this we might start out by observing that a <code>CAR</code> can be driven by many <code>PERSON</code> instances, and a <code>PERSON</code> can drive many <code>CAR</code>s - both entities can exist without the other, so this is a non-identifying relationship that we might specify in Mermaid as: <code>PERSON }|..|{ CAR : "driver"</code>. Note the two dots in the middle of the relationship that will result in a dashed line being drawn between the two entities. But when this many-to-many relationship is resolved into two one-to-many relationships, we observe that a <code>NAMED-DRIVER</code> cannot exist without both a <code>PERSON</code> and a <code>CAR</code> - the relationships become identifying and would be specified using hyphens, which translate to a solid line:</p><p><strong>Aliases</strong></p><table><thead><tr><th>Value</th><th>Alias for</th></tr></thead><tbody><tr><td>to</td><td>identifying</td></tr><tr><td>optionally to</td><td>non-identifying</td></tr></tbody></table><a href=#code-2><h5 id=code-2><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>erDiagram
+</span></span><span class=line><span class=cl>    CAR ||--o{ NAMED-DRIVER : allows
+</span></span><span class=line><span class=cl>    PERSON ||--o{ NAMED-DRIVER : is
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>erDiagram
+CAR ||--o{ NAMED-DRIVER : allows
+PERSON ||--o{ NAMED-DRIVER : is</div><a href=#attributes><h3 id=attributes><span class=hanchor arialabel=Anchor># </span>Attributes</h3></a><p>Attributes can be defined for entities by specifying the entity name followed by a block containing multiple <code>type name</code> pairs, where a block is delimited by an opening <code>{</code> and a closing <code>}</code>. For example:</p><a href=#code-3><h5 id=code-3><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>erDiagram
+</span></span><span class=line><span class=cl>    CAR ||--o{ NAMED-DRIVER : allows
+</span></span><span class=line><span class=cl>    CAR {
+</span></span><span class=line><span class=cl>        string registrationNumber
+</span></span><span class=line><span class=cl>        string make
+</span></span><span class=line><span class=cl>        string model
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    PERSON ||--o{ NAMED-DRIVER : is
+</span></span><span class=line><span class=cl>    PERSON {
+</span></span><span class=line><span class=cl>        string firstName
+</span></span><span class=line><span class=cl>        string lastName
+</span></span><span class=line><span class=cl>        int age
+</span></span><span class=line><span class=cl>    }
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>erDiagram
+CAR ||--o{ NAMED-DRIVER : allows
+CAR {
+string registrationNumber
+string make
+string model
+}
+PERSON ||--o{ NAMED-DRIVER : is
+PERSON {
+string firstName
+string lastName
+int age
+}</div><p>The attributes are rendered inside the entity boxes:</p><a href=#code-4><h5 id=code-4><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>erDiagram
+</span></span><span class=line><span class=cl>    CAR ||--o{ NAMED-DRIVER : allows
+</span></span><span class=line><span class=cl>    CAR {
+</span></span><span class=line><span class=cl>        string registrationNumber
+</span></span><span class=line><span class=cl>        string make
+</span></span><span class=line><span class=cl>        string model
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    PERSON ||--o{ NAMED-DRIVER : is
+</span></span><span class=line><span class=cl>    PERSON {
+</span></span><span class=line><span class=cl>        string firstName
+</span></span><span class=line><span class=cl>        string lastName
+</span></span><span class=line><span class=cl>        int age
+</span></span><span class=line><span class=cl>    }
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>erDiagram
+CAR ||--o{ NAMED-DRIVER : allows
+CAR {
+string registrationNumber
+string make
+string model
+}
+PERSON ||--o{ NAMED-DRIVER : is
+PERSON {
+string firstName
+string lastName
+int age
+}</div><p>The <code>type</code> and <code>name</code> values must begin with an alphabetic character and may contain digits, hyphens or underscores. Other than that, there are no restrictions, and there is no implicit set of valid data types.</p><a href=#attribute-keys-and-comments><h4 id=attribute-keys-and-comments><span class=hanchor arialabel=Anchor># </span>Attribute Keys and Comments</h4></a><p>Attributes may also have a <code>key</code> or comment defined. Keys can be &ldquo;PK&rdquo; or &ldquo;FK&rdquo;, for Primary Key or Foreign Key. And a <code>comment</code> is defined by double quotes at the end of an attribute. Comments themselves cannot have double-quote characters in them.</p><a href=#code-5><h5 id=code-5><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>erDiagram
+</span></span><span class=line><span class=cl>    CAR ||--o{ NAMED-DRIVER : allows
+</span></span><span class=line><span class=cl>    CAR {
+</span></span><span class=line><span class=cl>        string allowedDriver FK &#34;The license of the allowed driver&#34;
+</span></span><span class=line><span class=cl>        string registrationNumber
+</span></span><span class=line><span class=cl>        string make
+</span></span><span class=line><span class=cl>        string model
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    PERSON ||--o{ NAMED-DRIVER : is
+</span></span><span class=line><span class=cl>    PERSON {
+</span></span><span class=line><span class=cl>        string driversLicense PK &#34;The license #&#34;
+</span></span><span class=line><span class=cl>        string firstName
+</span></span><span class=line><span class=cl>        string lastName
+</span></span><span class=line><span class=cl>        int age
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    MANUFACTURER only one to zero or more CAR
+</span></span></code></pre></td></tr></table></div></div><a href=#other-things><h3 id=other-things><span class=hanchor arialabel=Anchor># </span>Other Things</h3></a><ul><li>If you want the relationship label to be more than one word, you must use double quotes around the phrase</li><li>If you don&rsquo;t want a label at all on a relationship, you must use an empty double-quoted string</li></ul><hr><a href=#styling><h2 id=styling><span class=hanchor arialabel=Anchor># </span>Styling</h2></a><a href=#config-options><h3 id=config-options><span class=hanchor arialabel=Anchor># </span>Config options</h3></a><p>For simple color customization:</p><table><thead><tr><th>Name</th><th>Used as</th></tr></thead><tbody><tr><td><code>fill</code></td><td>Background color of an entity or attribute</td></tr><tr><td><code>stroke</code></td><td>Border color of an entity or attribute, line color of a relationship</td></tr></tbody></table><a href=#classes-used><h3 id=classes-used><span class=hanchor arialabel=Anchor># </span>Classes used</h3></a><p>The following CSS class selectors are available for richer styling:</p><table><thead><tr><th>Selector</th><th>Description</th></tr></thead><tbody><tr><td><code>.er.attributeBoxEven</code></td><td>The box containing attributes on even-numbered rows</td></tr><tr><td><code>.er.attributeBoxOdd</code></td><td>The box containing attributes on odd-numbered rows</td></tr><tr><td><code>.er.entityBox</code></td><td>The box representing an entity</td></tr><tr><td><code>.er.entityLabel</code></td><td>The label for an entity</td></tr><tr><td><code>.er.relationshipLabel</code></td><td>The label for a relationship</td></tr><tr><td><code>.er.relationshipLabelBox</code></td><td>The box surrounding a relationship label</td></tr><tr><td><code>.er.relationshipLine</code></td><td>The line representing a relationship between entities</td></tr></tbody></table><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p>실무자&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2 role=doc-endnote><p>권할 수 없는&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3 role=doc-endnote><p>특정 데이터 집합의 고유한 값의 종류의 수. 성별이면 여성 타입 남성 타입으로 2.
+<a href=https://soft.plusblog.co.kr/87 rel=noopener>cf</a>. selectivity.&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:4 role=doc-endnote><p>결여된&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:5 role=doc-endnote><p>묘사하다.&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/garden/Develop/Trees/Dev/Programming/LibsFwks/By-subject/Diagraming/mermaid.js/contents/Diagram-Syntax/Diagram-Syntax/ data-ctx="Entity Relationship Diagram" data-src=/Develop/Trees/Dev/Programming/LibsFwks/By-subject/Diagraming/mermaid.js/contents/Diagram-Syntax/Diagram-Syntax class=internal-link>🎉Diagram Syntax</a></li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://mindulle.github.io/garden/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Mindulle using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://mindulle.github.io/garden>Home</a></li><li><a href=https://github.com/mindulle>Github</a></li></ul></footer></div></div></body></html>

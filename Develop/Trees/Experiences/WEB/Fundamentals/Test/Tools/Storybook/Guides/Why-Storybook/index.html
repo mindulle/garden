@@ -1,0 +1,185 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="1  style: bullet   The problem The web’s universality is pushing more complexity into the frontend. It began with responsive web design, which turned every user interface from one to 10, 100, 1000 different user interfaces."><title>Why storybook</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://mindulle.github.io/garden/icon.png><link href=https://mindulle.github.io/garden/styles.706bb6073ba85d26809f9096dae23a6b.min.css rel=stylesheet><link href=https://mindulle.github.io/garden/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://mindulle.github.io/garden/js/darkmode.71fd764547989a0d567451669afd7a55.min.js></script>
+<script src=https://mindulle.github.io/garden/js/util.5e39932758f9ecaf45fd54506ed61416.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://mindulle.github.io/garden/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js></script>
+<script src=https://mindulle.github.io/garden/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://mindulle.github.io/garden/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://mindulle.github.io/garden/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://mindulle.github.io/garden",fetchData=Promise.all([fetch("https://mindulle.github.io/garden/indices/linkIndex.50400a908956a9f90ab06e3e1ce9ae23.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://mindulle.github.io/garden/indices/contentIndex.8d5c54ed893eda559f5244f1d07f416b.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://mindulle.github.io/garden",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!0;drawGraph("https://mindulle.github.io/garden",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/mindulle.github.io\/garden\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://mindulle.github.io/garden/js/full-text-search.51f0b1753e9b30839d053f8a98cc20d1.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://mindulle.github.io/garden>Mindulle Garden🎉</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Why storybook</h1><p class=meta>Last updated
+Dec 22, 2022
+<a href=https://github.com/mindulle/garden/tree/hugo/content/Develop/Trees/Experiences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Why%20Storybook.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://mindulle.github.io/garden/tags/tree/>Tree</a></li><li><a href=https://mindulle.github.io/garden/tags/storybook/>Storybook</a></li><li><a href=https://mindulle.github.io/garden/tags/test/>Test</a></li><li><a href=https://mindulle.github.io/garden/tags/web/>Web</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#the-problem>The problem</a></li><li><a href=#the-solution>The solution</a><ol><li></li></ol></li><li><a href=#benefits>Benefits</a><ol><li></li></ol></li><li><a href=#httpsstorybookjsorgdocsreactwhy-storybookwrite-stories-once-reuse-everywherewrite-stories-once-reuse-everywhere><a href=https://storybook.js.org/docs/react/why-storybook#write-stories-once-reuse-everywhere></a>Write stories once, reuse everywhere</a></li></ol></nav></details></aside><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-toc data-lang=toc><span class=line><span class=cl>style: bullet
+</span></span></code></pre></td></tr></table></div></div><a href=#the-problem><h2 id=the-problem><span class=hanchor arialabel=Anchor># </span>The problem</h2></a><p>The web’s universality is pushing more complexity into the frontend. It began with responsive web design, which turned every user interface from one to 10, 100, 1000 different user interfaces. Over time, additional requirements piled on like devices, browsers, accessibility, performance, and async states.</p><p>Component-driven tools like React, Vue, and Angular help break down complex UIs into simple components but they’re not silver bullets. As frontends grow, the number of components swells. Mature projects can contain hundreds of components that yield thousands of discrete variations.</p><p>To complicate matters further, those UIs are painful to debug because they’re entangled in business logic, interactive states, and app context.</p><p>The breadth of modern frontends overwhelm existing workflows. Developers must consider countless UI variations, yet aren’t equipped to develop or organize them all. You end up in a situation where UIs are tougher to build, less satisfying to work on, and brittle.</p><p><img src=https://storybook.js.org/0930d02ee2c69e80e8eb796e8be8981c/multiverse.png width=auto alt="UI multiverse"></p><a href=#the-solution><h2 id=the-solution><span class=hanchor arialabel=Anchor># </span>The solution</h2></a><a href=#build-uis-in-isolation><h4 id=build-uis-in-isolation><span class=hanchor arialabel=Anchor># </span>Build UIs in isolation</h4></a><p>Every piece of UI is now a
+<a href=https://www.componentdriven.org/ rel=noopener>component</a>. The superpower of components is that you don&rsquo;t need to spin up the whole app just to see how they render. You can render a specific variation in isolation by passing in props, mocking data, or faking events.</p><p>Storybook is packaged as a small, development-only,
+<a href=https://bradfrost.com/blog/post/a-frontend-workshop-environment/ rel=noopener>workshop</a> that lives alongside your app. It provides an isolated iframe to render components without interference from app business logic and context. That helps you focus development on each variation of a component, even the hard-to-reach edge cases.</p><p><video autoplay muted playsinline loop draggable=true><source src=https://storybook.js.org/ef49deb4e1999a89b796fdd33dfdffc1/whats-a-story.mp4 type=video/mp4></video></p><a href=#capture-ui-variations-as-stories><h4 id=capture-ui-variations-as-stories><span class=hanchor arialabel=Anchor># </span>Capture UI variations as “stories”</h4></a><p>When developing a component variation in isolation, save it as a story.
+<a href=https://github.com/ComponentDriven/csf rel=noopener>Stories</a> are a declarative syntax for supplying props and mock data to simulate component variations. Each component can have multiple stories. Each story allows you to demonstrate a specific variation of that component to verify appearance and behavior.</p><p>You write stories for granular UI component variation and then use those stories in development, testing, and documentation.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Histogram.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Histogram</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./Histogram&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>   * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Histogram&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Histogram</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>Histogram</span> <span class=p>{...</span><span class=nx>args</span><span class=p>}</span> <span class=o>/&gt;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Default</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Default</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>dataType</span><span class=o>:</span> <span class=s1>&#39;latency&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>showHistogramLabels</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>histogramAccentColor</span><span class=o>:</span> <span class=s1>&#39;#1EA7FD&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>label</span><span class=o>:</span> <span class=s1>&#39;Latency distribution&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// Histogram.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=kr>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentStory</span><span class=p>,</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Histogram</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./Histogram&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>   * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>   * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Histogram&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>Histogram</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Histogram</span><span class=p>&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span>: <span class=kt>ComponentStory</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Histogram</span><span class=p>&gt;</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>&lt;</span><span class=nt>Histogram</span> <span class=p>{</span><span class=na>...args</span><span class=p>}</span> <span class=p>/&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Default</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Default</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>dataType</span><span class=o>:</span> <span class=s1>&#39;latency&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>showHistogramLabels</span>: <span class=kt>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>histogramAccentColor</span><span class=o>:</span> <span class=s1>&#39;#1EA7FD&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>label</span><span class=o>:</span> <span class=s1>&#39;Latency distribution&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl><span class=c>&lt;!-- Histogram.stories.mdx --&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Canvas, Meta, Story } from &#39;@storybook/addon-docs&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Histogram } from &#39;./Histogram&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Meta</span> <span class=na>title</span><span class=o>=</span><span class=s>&#34;Histogram&#34;</span> <span class=na>component</span><span class=o>=</span><span class=s>{Histogram}</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>export const Template = (args) =&gt; <span class=p>&lt;</span><span class=nt>Histogram</span> <span class=err>{...</span><span class=na>args</span><span class=err>}</span> <span class=p>/&gt;</span>;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Canvas</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>Story</span>
+</span></span><span class=line><span class=cl>    <span class=na>name</span><span class=o>=</span><span class=s>&#34;Default&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=na>args</span><span class=o>=</span><span class=s>{{</span>
+</span></span><span class=line><span class=cl>      <span class=na>dataType:</span> <span class=err>&#39;</span><span class=na>latency</span><span class=err>&#39;,</span>
+</span></span><span class=line><span class=cl>      <span class=na>showHistogramLabels:</span> <span class=na>true</span><span class=err>,</span>
+</span></span><span class=line><span class=cl>      <span class=na>histogramAccentColor:</span> <span class=err>&#39;#</span><span class=na>1EA7FD</span><span class=err>&#39;,</span>
+</span></span><span class=line><span class=cl>      <span class=na>label:</span> <span class=err>&#39;</span><span class=na>Latency</span> <span class=na>distribution</span><span class=err>&#39;,</span>
+</span></span><span class=line><span class=cl>    <span class=err>}}</span> <span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    {Template.bind({})}
+</span></span><span class=line><span class=cl>  <span class=p>&lt;/</span><span class=nt>Story</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>Canvas</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#storybook-keeps-track-of-every-story><h4 id=storybook-keeps-track-of-every-story><span class=hanchor arialabel=Anchor># </span>Storybook keeps track of every story</h4></a><p>Storybook is an interactive directory of your UI components and their stories. In the past, you&rsquo;d have to spin up the app, navigate to a page, and contort the UI into the right state. This is a huge waste of time and bogs down frontend development. With Storybook, you can skip all those steps and jump straight to working on a UI component in a specific state.</p><p><video autoplay muted playsinline loop draggable=true><source src=https://storybook.js.org//0f37e3bc4895c3ad120d760b704a2ee1/7.0-storybook-hero-video.mp4 type=video/mp4></video></p><details><summary>Where does Storybook fit into my project?</summary><p>Storybook is packaged as a small, development-only, <a href=https://bradfrost.com/blog/post/a-frontend-workshop-environment/>workshop</a> that lives alongside your app. Install it by <a href=/docs/react/get-started/install>running a command</a>.</p><p>During development, run it in a separate node process. If you’re working on UI in isolation, the only thing you’ll need to run is Storybook.</p></details><details><summary>Does Storybook work with X?</summary><p>Storybook aims to integrate with industry-standard tools and platforms to simplify setup. Thanks to our ambitious developer community, we’ve made significant progress. There are hundreds of <a href=https://storybook.js.org/addons/>addons</a> and tutorials that walk through how to set up Storybook in all types of projects.</p><p>If you’re using a niche framework or a recently launched tool, we might not have an integration for it yet. Consider creating a <a href=/docs/react/addons/writing-addons>proof of concept</a> yourself first to lead the way for the rest of the community.</p></details><details><summary>What’s the recommended Storybook workflow?</summary><p>Every team is different and so is their workflow. Storybook is designed to be incrementally adoptable. Teams can gradually try features to see what works best for them.</p><p>Most community members choose a <a href=https://www.componentdriven.org/>Component-Driven</a> workflow. UIs are developed in isolation from the “bottom up” starting with basic components then progressively combined to assemble pages.</p><ol><li>Build each component in isolation and write stories for its variations.</li><li>Compose small components together to enable more complex functionality.</li><li>Assemble pages by combining composite components.</li><li>Integrate pages into your project by hooking up data and business logic.</li></ol></details><a href=#benefits><h2 id=benefits><span class=hanchor arialabel=Anchor># </span>Benefits</h2></a><p>When you write stories for components, you get a bunch of additional benefits for free.</p><a href=#-develop-uis-that-are-more-durable><h4 id=-develop-uis-that-are-more-durable><span class=hanchor arialabel=Anchor># </span>📝 Develop UIs that are more durable</h4></a><p>Isolate components and pages and track their use cases as
+<a href=https://storybook.js.org/docs/react/writing-stories/introduction rel=noopener>stories</a>. Verify hard-to-reach edge cases of UI. Use addons to mock everything a component needs—context, API requests, device features, etc.</p><a href=#-test-uis-with-less-effort-and-no-flakes><h4 id=-test-uis-with-less-effort-and-no-flakes><span class=hanchor arialabel=Anchor># </span>✅ Test UIs with less effort and no flakes</h4></a><p>Stories are a pragmatic, reproducible way of tracking UI states. Use them to spot-test the UI during development. Storybook offers built-in workflows for automated
+<a href=https://storybook.js.org/docs/react/writing-tests/accessibility-testing rel=noopener>Accessibility</a>,
+<a href=https://storybook.js.org/docs/react/writing-tests/interaction-testing rel=noopener>Interaction</a>, and
+<a href=https://storybook.js.org/docs/react/writing-tests/visual-testing rel=noopener>Visual</a> testing. Or use stories as test cases by importing them into other JavaScript testing tools.</p><a href=#-document-ui-for-your-team-to-reuse><h4 id=-document-ui-for-your-team-to-reuse><span class=hanchor arialabel=Anchor># </span>📚 Document UI for your team to reuse</h4></a><p>Storybook is the single source of truth for your UI. Stories index all your components and their various states, making it easy for your team to find and reuse existing UI patterns. Storybook also auto-generates
+<a href=https://storybook.js.org/docs/react/writing-docs/introduction rel=noopener>documentation</a> from those stories.</p><p>Stories show how UIs actually work, not just a picture of how they&rsquo;re supposed to work. That keeps everyone aligned on what&rsquo;s currently in production.
+<a href=https://storybook.js.org/docs/react/sharing/publish-storybook rel=noopener>Publish Storybook</a> to get sign-off from teammates. Or
+<a href=https://storybook.js.org/docs/react/sharing/embed rel=noopener>embed</a> them in wikis, Markdown, and Figma to streamline collaboration.</p><a href=#automate-ui-workflows><h4 id=automate-ui-workflows><span class=hanchor arialabel=Anchor># </span>🚦Automate UI workflows</h4></a><p>Storybook is compatible with your continuous integration workflow. Add it as a CI step to automate user interface testing, review implementation with teammates, and get signoff from stakeholders.</p><h2 id=httpsstorybookjsorgdocsreactwhy-storybookwrite-stories-once-reuse-everywherewrite-stories-once-reuse-everywhere><a href=https://storybook.js.org/docs/react/why-storybook#write-stories-once-reuse-everywhere rel=noopener></a>Write stories once, reuse everywhere</h2><p>Storybook is powered by
+<a href=https://github.com/ComponentDriven/csf rel=noopener>Component Story Format</a>, an open standard based on JavaScript ES6 modules. This enables stories to interoperate between development, testing, and design tools. Each story is exported as a JavaScript function enabling you to reuse it with other tools. No vendor lock-in.</p><p>Reuse stories with
+<a href=https://jestjs.io/ rel=noopener>Jest</a> and
+<a href=https://testing-library.com/ rel=noopener>Testing Library</a> to verify interactions. Put them in
+<a href=https://www.chromatic.com/ rel=noopener>Chromatic</a> for visual testing. Audit story accessibility with
+<a href=https://github.com/dequelabs/axe-core rel=noopener>Axe</a>. Or test user flows with
+<a href=https://playwright.dev/ rel=noopener>Playwright</a> and
+<a href=https://www.cypress.io/ rel=noopener>Cypress</a>. Reuse unlocks more workflows at no extra cost.</p><hr><p>Storybook is purpose-built to help you develop complex UIs faster with greater durability and lower maintenance. It’s used by 100s of
+<a href=https://storybook.js.org/showcase rel=noopener>leading companies</a> and thousands of
+<a href=https://github.com/storybookjs/storybook/ rel=noopener>developers</a>.</p></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/garden/Develop/Trees/Experiences/WEB/Fundamentals/Test/Tools/Storybook/Assets/_Storybook-Intro.excalidraw/ data-ctx="Develop/Trees/Experiences/WEB/Fundamentals/Test/Tools/Storybook/Guides/Why Storybook#The solution" data-src=/Develop/Trees/Experiences/WEB/Fundamentals/Test/Tools/Storybook/Assets/_Storybook-Intro.excalidraw class=internal-link></a></li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://mindulle.github.io/garden/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Mindulle using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://mindulle.github.io/garden>Home</a></li><li><a href=https://github.com/mindulle>Github</a></li></ul></footer></div></div></body></html>

@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Shovel"
-lastModified: "2022-12-18"
+title: "🎉mermaid.js"
+lastModified: "2022-12-20"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,6 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "mermaidjs"
 ---
 ```toc
 style: bullet
@@ -26,10 +27,9 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Design/Seeds/Shovel/Work Assistants/🎉Work Assistants|🎉Helper sites]]
-- [[Design/Seeds/Shovel/Manage resources/🎉Manage resources|🎉Manage resources]]
-- [[Design/Seeds/Shovel/Search/🎉Search|🎉Search]]
-- [[Design/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/🎉Diagram Syntax|Diagram Syntax]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Use-cases and Integrations|Use-cases and Integrations]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Overview for Beginners|Overview for Beginners]]
 
 # Features
 - List up frequently used features.

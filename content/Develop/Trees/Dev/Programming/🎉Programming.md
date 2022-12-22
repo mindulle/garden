@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Shovel"
-lastModified: "2022-12-18"
+title: "🎉Programming"
+lastModified: "2022-12-22"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -26,10 +26,9 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Design/Seeds/Shovel/Work Assistants/🎉Work Assistants|🎉Helper sites]]
-- [[Design/Seeds/Shovel/Manage resources/🎉Manage resources|🎉Manage resources]]
-- [[Design/Seeds/Shovel/Search/🎉Search|🎉Search]]
-- [[Design/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
+- [[Develop/Trees/Dev/Programming/Languages/🎉Languages|🎉Languages]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/🎉Libs&Fwks|🎉Libs&Fwks]]
+- [[Develop/Trees/Dev/Programming/Stacks/🎉Stacks|🎉Stacks]]
 
 # Features
 - List up frequently used features.

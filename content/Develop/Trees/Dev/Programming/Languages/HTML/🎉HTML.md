@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Shovel"
-lastModified: "2022-12-18"
+title: "🎉HTML"
+lastModified: "2022-12-21"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -23,16 +23,17 @@ erDiagram
 	You ||--|| Statements : Sentence
 ```
 
-
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Design/Seeds/Shovel/Work Assistants/🎉Work Assistants|🎉Helper sites]]
-- [[Design/Seeds/Shovel/Manage resources/🎉Manage resources|🎉Manage resources]]
-- [[Design/Seeds/Shovel/Search/🎉Search|🎉Search]]
-- [[Design/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
+![Map of contents |400](Develop/Trees/Dev/Programming/Languages/HTML/📦assets/🎉HTML%202022-12-21%2002.32.28.excalidraw.dark.svg)
+%%[🖋 Edit in Excalidraw](Develop/Trees/Dev/Programming/Languages/HTML/📦assets/🎉HTML%202022-12-21%2002.32.28.excalidraw.md), and the [light exported image](Develop/Trees/Dev/Programming/Languages/HTML/📦assets/🎉HTML%202022-12-21%2002.32.28.excalidraw.light.svg)%%
 
 # Features
-- List up frequently used features.
+- Markup
+- Form
+- Semantic tags
+- enmet and snippets
+- Naming conventions
+- Document Object Model
 
 # Issues
 - what design patterns adapated to each features.
@@ -43,3 +44,8 @@ erDiagram
 
 # Showcases
 - construct visual gallery to summarize your expriences.
+
+# Markup tips
+- Enmet and snippets
+- Naming and conventions
+

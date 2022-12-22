@@ -26,12 +26,13 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Trends/annual/2022|2022]]
-- 
-- 
+- [[Develop/Trees/Trends/Conferences/🎉Conferences|🎉Conferences]]
+- [[Develop/Trees/Trends/Statistics/🎉Statstics|🎉Statstics]]
 
 # Features
 - List up frequently used features.
+- [[Develop/Trees/Trends/📚Dictionary|📚Dictionary]]
+- [[Develop/Trees/Trends/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Shovel"
-lastModified: "2022-12-18"
+title: "🎉Work Assistants"
+lastModified: "2022-12-22"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,6 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "helperSites"
 ---
 ```toc
 style: bullet
@@ -26,13 +27,10 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Design/Seeds/Shovel/Work Assistants/🎉Work Assistants|🎉Helper sites]]
-- [[Design/Seeds/Shovel/Manage resources/🎉Manage resources|🎉Manage resources]]
-- [[Design/Seeds/Shovel/Search/🎉Search|🎉Search]]
-- [[Design/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
 
 # Features
 - List up frequently used features.
+- [[]]
 
 # Issues
 - what design patterns adapated to each features.

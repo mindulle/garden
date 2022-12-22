@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Tools for work"
-lastModified: "2022-12-18"
+title: "🎉Diagram Syntax"
+lastModified: "2022-12-20"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,6 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "mermaidjs"
 ---
 ```toc
 style: bullet
@@ -26,20 +27,9 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- chrome
-- vscode
-- obsidian
-- zsh
-
-# Features
-- List up frequently used features.
-
-# Issues
-- what design patterns adapated to each features.
-- how to pipe logics to build features.
-- challenges during implementing features.
-- helpful supports deserve to remember.
-- Glean tips using `mindulle-cli` for digital gardening.
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Flowchart|Flowcahrt]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Sequence Diagram]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Entity Relationship Diagram|Entity Relationship Diagram]]
 
 # Showcases
 - construct visual gallery to summarize your expriences.

@@ -22,6 +22,10 @@ style: bullet
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Seeds/Shovel/Manage resources/🎉Manage resources||🎉Manage resources]]
+- [[Develop/Seeds/Shovel/Search/🎉Search|🎉Search]]
+- [[Develop/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
+- [[Develop/Seeds/Shovel/Work Assistants/🎉Work Assistants|🎉Work Assistants]]
 
 # Features
 - List up frequently used features.

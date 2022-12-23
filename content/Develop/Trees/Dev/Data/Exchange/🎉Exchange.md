@@ -27,6 +27,8 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Trees/Dev/Data/Exchange/Languages/🎉Languages|🎉Languages]]
+- [[Develop/Trees/Dev/Data/Exchange/Formats/🎉Formats|🎉Formats]]
 
 # Features
 - List up frequently used features.

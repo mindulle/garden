@@ -21,7 +21,7 @@ style: bullet
 # Receipes
 ## Receipe map
 - Draw a simple excalidraw scatch to understand how this tool works roughly.
-- [[Develop/Trees/Dev/Version control/My issues|My issues]]
+- [[Develop/Trees/Dev/Version control/My Github Project workflow|My Github Project workflow]]
 
 ## Featured APIs
 - List up frequently used APIs.

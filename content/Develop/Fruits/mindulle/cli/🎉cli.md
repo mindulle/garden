@@ -57,5 +57,3 @@ style: bullet
 | env    | `$ mindulle env githubAction --docs`            | 다양한 플랫폼, 라이브러리, 시스템 별 환경 설정 방법을 빠르고 쉽게 이해하고 사용하기 위한 명령어 입니다. |
 | module | `$ mindulle module monochrome.css --docs`       | 모듈화 해 둔 다양한 코드 모음을 설치하거나 문서를 엽니다.                                               |
 | script | `$ mindulle script prepare-msw --docs`          | 개발 과정에서 단순 반복 작업의 자동화 스크립트, 자주 사용되는 유닛 테스트 패턴 등 보조적인 역할을 수행하는 스크립트들을 빠르고 쉽게 사용하기 위한 명령어                                                                                                        |
-
-# 

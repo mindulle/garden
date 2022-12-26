@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Libs&Fwks"
-lastModified: "2022-12-26"
+title: "🎉WebFrontend"
+lastModified: "2022-12-25"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -26,12 +26,15 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/Database/🎉Database|🎉Database]]
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/WebBackend/🎉WebBackend|🎉WebBackend]]
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/🎉WebFrontend|🎉WebFrontend]]
+- [[Develop/Seeds/Grocery/WebFrontend/React/🎉React|🎉React]]
+- [[Develop/Seeds/Grocery/WebFrontend/Vanlia/🎉Vanlia|🎉Vanlia]]
+- [[Develop/Seeds/Grocery/WebFrontend/Vue/🎉Vue|🎉Vue]]
 
 # Features
 - List up frequently used features.
+- [[Develop/Seeds/Grocery/WebFrontend/🐝Buzzwords|🐝Buzzwords]]
+- [[Develop/Seeds/Grocery/WebFrontend/📚Dictionary|📚Dictionary]]
+- [[Develop/Seeds/Grocery/WebFrontend/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

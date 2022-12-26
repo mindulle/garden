@@ -4,7 +4,7 @@ last-modified: 2022-09-30
 ```toc
 style: bullet
 ```
-# [[Develop/Trees/Dev/Programming/Libs&Fwks/webFrontend/React/React-three/Tutorials/_Tutorials]]
+# [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/React/React-three/Tutorials/_Tutorials]]
 > [!tip] play with codesanddbox!
 > 
 | docs                                                                                                | ex1                                                                                                | ex2                                                            | ex3                                                            | ex4                                                                      | ex5                                                                   |
@@ -21,11 +21,11 @@ style: bullet
 
 
 
-# [[Develop/Trees/Dev/Programming/Libs&Fwks/webFrontend/React/React-three/API/_API]]
+# [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/React/React-three/API/_API]]
 
 # 🏷️Tags
 #cramming
 
 # 🔗LINKS
-## [[Develop/Trees/Dev/Programming/Libs&Fwks/webFrontend/React/React-three/API/_API]]
-## [[Develop/Trees/Dev/Programming/Libs&Fwks/webFrontend/React/React-three/Tutorials/_Tutorials]]
+## [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/React/React-three/API/_API]]
+## [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/React/React-three/Tutorials/_Tutorials]]

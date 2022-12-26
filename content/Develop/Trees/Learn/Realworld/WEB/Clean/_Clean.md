@@ -1,0 +1,1 @@
+![[Develop/Trees/Learn/Realworld/WEB/Clean/_assets/_Clean Patterns]]

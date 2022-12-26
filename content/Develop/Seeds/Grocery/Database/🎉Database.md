@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Libs&Fwks"
-lastModified: "2022-12-26"
+title: "🎉Database"
+lastModified: "2022-12-25"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,6 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "database"
 ---
 ```toc
 style: bullet
@@ -26,12 +27,15 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/Database/🎉Database|🎉Database]]
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/WebBackend/🎉WebBackend|🎉WebBackend]]
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/🎉WebFrontend|🎉WebFrontend]]
+- [[Develop/Seeds/Grocery/Database/Graphql/🎉Graphql|🎉Graphql]]
+- [[Develop/Seeds/Grocery/Database/PostgreSQL/🎉PostgreSQL|🎉PostgreSQL]]
+- [[Develop/Seeds/Grocery/Database/Redis/🎉Redis|🎉Redis]]
 
 # Features
 - List up frequently used features.
+- [[Develop/Seeds/Grocery/Database/🐝Buzzwords|🐝Buzzwords]]
+- [[Develop/Seeds/Grocery/Database/📚Dictionary|📚Dictionary]]
+- [[Develop/Seeds/Grocery/Database/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

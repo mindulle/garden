@@ -1,38 +1,64 @@
 ---
-last-modified: "2022-11-21"
-visibility: "private"
-seed-status:
-  - "activate"
-  - "stale"
-seed-field:
-  - "develop"
-seed-timeliness:
-  - "lts"
-seed-type:
-  - "bookamrk"
-  - "miscellaneous"
-  - "inspiration"
+# configs for document itself.
+title: "🎉Seeds"
+lastModified: "2022-12-25"
+
+# field for querying only entry point notes.
+isEntryPoint: true
+
+# add some tags for specifying particular subjects.
 tags:
-  - "seed"
+  - "entrypoint"
 ---
 ```toc
 style: bullet
 ```
+
+# TL;DR
+- you can summarize contents as a table format.
+- or just write down statements you think it is important within 3 lines.
+```mermaid
+erDiagram
+	You ||--|| Table : Summarize
+	You ||--|| Statements : Sentence
+```
+
+
+# Map of contents
+- ![[Develop/Seeds/📦assets/_Seeds 2022-10-14 20.48.06.excalidraw]]
+- [[Develop/Seeds/Grocery/🎉Grocery|🎉Grocery]]
+- [[Develop/Seeds/Shovel/🎉Shovel|🎉Shovel]]
+- [[Develop/Seeds/Storage/🎉Storage|🎉Storage]]
+
+# Features
+- List up frequently used features.
+- [[Develop/Seeds/🌱Distribute|🌱Distribute]] : 씨앗을 분류하기 위한 옵시디언 칸반
+- [[Develop/Seeds/🎻Orchestrate|🎻Orchestrate]] : 모은 씨앗을 내가 자주 사용하는 업무용, 학습용 소프트웨어에서 어떻게 정리하고 관리할지를 전략화하여 정리해둔 문서.
+
+# Issues
+- what design patterns adapated to each features.
+- how to pipe logics to build features.
+- challenges during implementing features.
+- helpful supports deserve to remember.
+- Glean tips using `mindulle-cli` for digital gardening.
+
+# Showcases
+- construct visual gallery to summarize your expriences.
+
+
 # Seeds의 구조
-![[Develop/Seeds/📦assets/_Seeds 2022-10-14 20.48.06.excalidraw]]
+
 
 # 씨앗 관리
 ## 씨앗 모으고 분류하기
 - [[Develop/Seeds/🎻Orchestrate]] : 씨앗 모으는 방법 정리
-- [[Develop/Seeds/🌱Distribute]] : 씨앗을 분류하기 위한 옵시디언 칸반
+- [[Develop/Seeds/🌱Distribute]] : 
 
 ## 분류한 씨앗 내용 정리하기
 ### Grocery
-- [[Develop/Seeds/Grocery/Blog articles]]
-- [[Develop/Seeds/Grocery/Case study]]
-- [[Develop/Seeds/Grocery/Share in online]]
-- [[Opensource Proejcts]]
-- [[Develop/Seeds/Grocery/Newsletters]]
+- [[Develop/Seeds/Grocery/Database/🎉Database|🎉Database]] : `데이터베이스` 관련 씨앗[^씨앗]을 모으고 정리합니다.
+- [[Develop/Seeds/Grocery/WebBackend/🎉WebBackend|🎉webBackend]] : `웹 백엔드` 관련 씨앗[^씨앗]을 모으고 정리합니다.
+- [[Develop/Seeds/Grocery/WebFrontend/🎉WebFrontend|🎉webFrontend]] : `웹 프론트엔드` 관련 씨앗[^씨앗]을 모으고 정리합니다.
 
 ### TODO : Shovel
 -  [[Develop/Seeds/Storage/Miscs/🎉Miscs]]
@@ -44,3 +70,5 @@ style: bullet
 
 ## 씨앗 줍기
 - [[Develop/Seeds/🚚Resources|Resources]]
+
+[^씨앗]: 내가 직접 발견한 지식 중 아직 사용해보거나 검증되지 않고 쌓여있는 지식만을 부르는 개인 은어. [디지털 정원](https://maggieappleton.com/garden-history) 개념에서 빌려온 용어.

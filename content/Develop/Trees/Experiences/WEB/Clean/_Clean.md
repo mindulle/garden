@@ -1,1 +1,0 @@
-![[Develop/Trees/Experiences/WEB/Clean/_assets/_Clean Patterns]]

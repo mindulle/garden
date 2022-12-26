@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉Develop"
+title: "🎉PostgreSQL"
 lastModified: "2022-12-26"
 
 # field for querying only entry point notes.
@@ -9,37 +9,36 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "postgreSQL"
 ---
-
 ```toc
 style: bullet
 ```
 
 # TL;DR
-
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
+```mermaid
+erDiagram
+	You ||--|| Table : Summarize
+	You ||--|| Statements : Sentence
+```
 
-# Receipes
 
-## Receipe map
-- Draw a simple excalidraw scatch to understand how this tool works roughly.
-- [[Develop/Seeds/🎉Seeds|🎉Seeds]]
-- [[Develop/Trees/🎉Trees|🎉Trees]]
-- [[Develop/Fruits/🎉Fruits|🎉Fruits]]
+# Map of contents
+- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/Database/PostgreSQL/contents/CREATE TABLE|CREATE TABLE]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/Database/PostgreSQL/contents/joins Between Tables|joins Between Tables]]
 
-## Featured APIs
-- List up frequently used APIs.
+# Features
+- List up frequently used features.
 
-## My issues
+# Issues
 - what design patterns adapated to each features.
 - how to pipe logics to build features.
 - challenges during implementing features.
 - helpful supports deserve to remember.
-
-## Showcases
-- construct visual gallery to summarize your expriences.
-
-## From community
 - Glean tips using `mindulle-cli` for digital gardening.
 
+# Showcases
+- construct visual gallery to summarize your expriences.

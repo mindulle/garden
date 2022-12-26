@@ -48,7 +48,7 @@ tags:
 ```toc
 max_depth: 3
 ```
-## Entity Relationship Diagrams
+## Entity Relationship Diagrams ⭐
 
 > An entity–relationship model (or ER model) describes interrelated things of interest in a specific domain of knowledge. A basic ER model is composed of entity types (which classify the things of interest) and specifies relationships that can exist between entities (instances of those entity types). Wikipedia.
 
@@ -157,7 +157,7 @@ This statement can be read as *a property contains one or more rooms, and a room
 
 Only the `first-entity` part of a statement is mandatory. This makes it possible to show an entity with no relationships, which can be useful during iterative construction of diagrams. If any other parts of a statement are specified, then all parts are mandatory.
 
-### Relationship Syntax
+### Relationship Syntax ⭐
 
 The `relationship` part of each statement can be broken down into three sub-components:
 
@@ -175,6 +175,7 @@ __Cardinality__ is a property that describes __how many elements of another enti
 | }\|          | \|{           | One or more (no upper limit)                              |
 
 **Aliases**
+
 | Value (left) | Value (right) | Alias for    |
 | ------------ | ------------- | ------------ |
 | one or zero  | one or zero   | Zero or one  |
@@ -194,6 +195,7 @@ __Cardinality__ is a property that describes __how many elements of another enti
 Relationships may be classified as either *identifying* or *non-identifying* and these are rendered with either solid or dashed lines respectively. This is relevant when one of the entities in question can not have independent existence without the other. For example a firm that insures people to drive cars might need to store data on `NAMED-DRIVER`s. In modelling this we might start out by observing that a `CAR` can be driven by many `PERSON` instances, and a `PERSON` can drive many `CAR`s - both entities can exist without the other, so this is a non-identifying relationship that we might specify in Mermaid as: `PERSON }|..|{ CAR : "driver"`. Note the two dots in the middle of the relationship that will result in a dashed line being drawn between the two entities. But when this many-to-many relationship is resolved into two one-to-many relationships, we observe that a `NAMED-DRIVER` cannot exist without both a `PERSON` and a `CAR` - the relationships become identifying and would be specified using hyphens, which translate to a solid line:
 
 **Aliases**
+
 | Value         | Alias for   |
 | ------------- | ----------- |
 | to            | identifying |
@@ -211,7 +213,7 @@ erDiagram
     PERSON ||--o{ NAMED-DRIVER : is
 ```
 
-### Attributes
+### Attributes ⭐
 
 Attributes can be defined for entities by specifying the entity name followed by a block containing multiple `type name` pairs, where a block is delimited by an opening `{` and a closing `}`. For example:
 
@@ -316,6 +318,7 @@ erDiagram
 ### Config options
 
 For simple color customization:
+
 | Name     | Used as                                    |
 | -------- | ------------------------------------------ |
 | `fill`   | Background color of an entity or attribute |

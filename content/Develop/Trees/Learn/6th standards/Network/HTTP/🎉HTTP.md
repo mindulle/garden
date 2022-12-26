@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Libs&Fwks"
-lastModified: "2022-12-26"
+title: "🎉HTTP"
+lastModified: "2022-12-20"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -26,12 +26,12 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/Database/🎉Database|🎉Database]]
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/WebBackend/🎉WebBackend|🎉WebBackend]]
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/🎉WebFrontend|🎉WebFrontend]]
 
 # Features
 - List up frequently used features.
+- [[Develop/Trees/Learn/6th standards/Network/HTTP/Methods]]
+- [[Develop/Trees/Learn/6th standards/Network/HTTP/RESTful]]
+- [[Develop/Trees/Learn/6th standards/Network/HTTP/Implements]]
 
 # Issues
 - what design patterns adapated to each features.
@@ -39,6 +39,7 @@ erDiagram
 - challenges during implementing features.
 - helpful supports deserve to remember.
 - Glean tips using `mindulle-cli` for digital gardening.
+- TODO : describe how to use obsidian web chrome extension to append to existing note.
 
 # Showcases
 - construct visual gallery to summarize your expriences.

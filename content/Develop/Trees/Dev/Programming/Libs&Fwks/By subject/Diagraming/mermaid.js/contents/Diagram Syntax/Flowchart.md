@@ -116,7 +116,7 @@ flowchart LR
 ```
 
 ---
-## Flowchart Orientation⭐
+## Flowchart Orientation 🌱
 Possible FlowChart orientations are:
 -   TB - top to bottom
 -   TD - top-down/ same as top to bottom
@@ -137,7 +137,7 @@ flowchart LR
 	id1(This is the text in the box)
 ```
 
-### A stadium-shaped node ⭐
+### A stadium-shaped node
 ##### Code:
 ```
 flowchart LR
@@ -148,7 +148,7 @@ flowchart LR
 	id1([This is the text in the box])
 ```
 
-### A node in a subroutine shape ⭐
+### A node in a subroutine shape
 ##### Code:
 ```
 flowchart LR
@@ -206,7 +206,7 @@ flowchart LR
 	id1{This is the text in the box}
 ```
 
-### A hexagon node ⭐
+### A hexagon node
 ##### Code:
 ```
 flowchart LR
@@ -216,7 +216,7 @@ flowchart LR
 flowchart LR
 	id1{{This is the text in the box}}
 ```
-### Parallelogram ⭐
+### Parallelogram
 ##### Code:
 ```
 flowchart TD
@@ -271,7 +271,7 @@ flowchart TD
 ## Links between nodes
 Nodes can be connected with links/edges. It is possible to have different types of links or attach a text string to a link.
 
-### A link with arrow head ⭐
+### A link with arrow head 🌱⭐
 ##### Code:
 ```
 flowchart LR
@@ -282,7 +282,7 @@ flowchart LR
 	A-->B
 ```
 
-### An open link ⭐
+### An open link 🌱⭐
 ##### Code:
 ```
 flowchart LR
@@ -292,7 +292,7 @@ flowchart LR
 flowchart LR
 	A --- B
 ```
-### Text on links ⭐
+### Text on links 🌱⭐
 ##### Code:
 ```
 flowchart LR
@@ -315,7 +315,7 @@ flowchart LR
 	A---|This is the text|B
 ```
 
-### A link with arrow head and text ⭐
+### A link with arrow head and text 🌱⭐
 ##### Code:
 ```
 flowchart LR
@@ -334,7 +334,7 @@ flowchart LR
     A-- text -->B
 ```
 
-### Dotted link
+### Dotted link 🌱⭐
 ##### Code:
 ```
 flowchart LR
@@ -377,7 +377,7 @@ flowchart LR
 	A == text ==> B
 ```
 
-### Chaining of links ⭐
+### Chaining of links 🎯⭐
 It is possible declare many links in the same line as per below:
 ##### Code:
 ```
@@ -463,7 +463,7 @@ flowchart LR
 	C x--x D
 ```
 
-### Minimum length of a link ⭐
+### Minimum length of a link 🎯⭐
 Each node in the flowchart is ultimately assigned to a rank in the rendered graph, i.e. to a vertical or horizontal level (depending on the flowchart orientation), based on the nodes to which it is linked. By default, links can span any number of ranks, but you can ask for any link to be longer than the others by adding extra dashes in the link definition.
 
 In the following example, two extra dashes are added in the link from node *B* to node *E*, so that it spans two more ranks than regular links:
@@ -532,7 +532,7 @@ flowchart LR
 	id1["This is the (text) in the box"]
 ```
 
-### Entity codes to escape characters ⭐
+### Entity codes to escape characters 🏁⭐
 It is possible to escape characters using the syntax exemplified here.
 
 ##### Code:
@@ -548,7 +548,7 @@ flowchart LR
 Numbers given are base 10, so `#` can be encoded as `#35;`. It is also supported to use HTML character names.
 
 ---
-## Subgraphs ⭐
+## Subgraphs 🎯⭐
 ```syntax
 subgraph title
     graph definition
@@ -681,7 +681,7 @@ flowchart LR
 ```
 ---
 
-## Interaction ⭐
+## Interaction 🎯⭐
 It is possible to bind a click event to a node, the click can lead to either a javascript callback or to a link which will be opened in a new browser tab. **Note**: This functionality is disabled when using `securityLevel='strict'` and enabled when using `securityLevel='loose'`.
 
 ```syntax
@@ -868,7 +868,7 @@ flowchart LR
 
 ```
 
-### Css classes ⭐
+### Css classes 🏁⭐
 It is also possible to predefine classes in css styles that can be applied from the graph definition as in the example below:
 
 	**Example style**

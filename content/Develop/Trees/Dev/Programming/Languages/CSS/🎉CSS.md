@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "_CSS"
+title: "🎉CSS"
 lastModified: "2022-12-10"
 visibility: "private/public"
 

@@ -77,7 +77,7 @@ sequenceDiagram
 ---
 ## Syntax
 
-### Participants ⭐
+### Participants 🌱
 
 The participants can be defined implicitly as in the first example on this page. The participants or actors are rendered in order of appearance in the diagram source text. Sometimes you might want to show the participants in a different order than how they appear in the first message. It is possible to specify the actor's order of appearance by doing the following:
 
@@ -97,7 +97,7 @@ sequenceDiagram
     Bob->>Alice: Hi Alice
 ```
 
-### Actors ⭐
+### Actors 🌱
 
 If you specifically want to use the ==actor symbol== instead of a rectangle with text you can do so by using ==actor statements as per== below.
 
@@ -117,7 +117,7 @@ sequenceDiagram
     Bob->>Alice: Hi Alice
 ```
 
-### Aliases ⭐
+### Aliases 🌱
 
 The actor __can have__ a convenient identifier and __a descriptive label.__
 
@@ -159,7 +159,7 @@ There are six types of ==__arrows__== currently supported:
 | --)  | Dotted line with a open arrow at the end (async)                                                 |
 
 ---
-## Activations[^activations] ⭐
+## Activations[^activations] 🌱⭐
 
 [^activations]:  It is used to indicate that ==__an object is active (or instantiated)__== during an interaction between two objects.
 ![Activation exampele | 200](https://d3n817fwly711g.cloudfront.net/uploads/2017/01/Sequence-Diagram-Activation-Bars.png)
@@ -213,7 +213,7 @@ sequenceDiagram
 ```
 
 ---
-## Notes ⭐
+## Notes 🏁
 
 It is possible to add notes to a sequence diagram. This is done by the notation Note \[ right of | left of | over \] \[Actor\]: Text in note content
 
@@ -394,7 +394,7 @@ sequenceDiagram
 
 
 ---
-## Critical Region ⭐
+## Critical Region 🎯⭐
 
 It is possible to show actions that ==__must happen automatically__== with conditional handling of circumstances.
 
@@ -486,7 +486,7 @@ sequenceDiagram
     API-->BillingService: Start billing process
 ```
 ---
-## Background Highlighting ⭐
+## Background Highlighting 🎯⭐
 
 It is possible to highlight flows by providing colored background rects. This is done by the notation
 
@@ -713,7 +713,7 @@ Styling of a sequence diagram is done by defining a number of css classes. Durin
 | note         | Styles for the note box.                                    |
 | noteText     | Styles for the text on in the note boxes.                                                            |
 
-### Sample stylesheet
+### Sample stylesheet 🏁⭐
 ```css
 body {
   background: white;
@@ -795,7 +795,7 @@ text.actor {
 ```
 
 ---
-## Configuration
+## Configuration 🏁⭐
 
 It is possible to adjust the margins for rendering the sequence diagram.
 

@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Data"
-lastModified: "2022-12-22"
+title: "🎉English"
+lastModified: "2022-12-26"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -26,8 +26,6 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/Data/Database/🎉Database|🎉Database]]
-- [[Develop/Trees/Dev/Data/Exchange/🎉Exchange|🎉Exchange]]
 
 # Features
 - List up frequently used features.

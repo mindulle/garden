@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🐝Buzzwords"
-lastModified: "2022-12-25"
+title: "🐝Buzzwords for everyday life"
+lastModified: "2022-12-26"
 
 # field for querying only entry point notes.
 isDictionary: true
@@ -9,7 +9,6 @@ isDictionary: true
 # add some tags for specifying particular subjects.
 tags:
   - "buzzword"
-  - "database"
 ---
 # 나열한 단어에 아래의 각주 중 하나를 붙여 분류해주세요.
 ## 공통

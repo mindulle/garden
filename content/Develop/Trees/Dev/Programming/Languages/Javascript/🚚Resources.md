@@ -17,6 +17,6 @@ tags:
 - documents : well explained documents or official document.
 - related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| name | purpose | documents | related issues | 
-| ---- | ------- | --------- | ------------- |
-|      |         |           |               |
+| name                                    | purpose       | documents | related issues |
+| --------------------------------------- | ------------- | --------- | -------------- |
+| Javascript best practices - w3.org wiki | best practice | [wikidocs](https://www.w3.org/wiki/JavaScript_best_practices)          |                |

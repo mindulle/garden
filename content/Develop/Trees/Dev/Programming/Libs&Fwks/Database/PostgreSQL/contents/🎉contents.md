@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Languages"
-lastModified: "2022-12-22"
+title: "🎉contents"
+lastModified: "2022-12-26"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -39,3 +39,11 @@ erDiagram
 
 # Showcases
 - construct visual gallery to summarize your expriences.
+
+# Version control for this document
+## Up-to-date
+> [!done] Current released version : v15.1
+> last checked: 2022-12-26
+
+## Deprecated
+### vmajor.minor.patch

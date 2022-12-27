@@ -29,8 +29,7 @@ erDiagram
 
 # Features
 - List up frequently used features.
-- 
-- [[Develop/Trees/Dev/Data/Database/🚚Resources|🚚Resources]]
+- [[Data/Trees/Save/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

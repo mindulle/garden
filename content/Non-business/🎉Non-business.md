@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Dev"
-lastModified: "2022-12-14"
+title: "🎉Non-business"
+lastModified: "2022-12-26"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -17,18 +17,20 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
+```mermaid
+erDiagram
+	You ||--|| Table : Summarize
+	You ||--|| Statements : Sentence
+```
 
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/Programming/Languages/🎉Languages|🎉Languages]]
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/🎉Libs&Fwks|🎉Libs&Fwks]]
-- [[Develop/Trees/Dev/Specifications/🎉Specifications|🎉Specifications]]
-- [[Develop/Trees/Dev/Programming/Stacks/🎉Stacks|🎉Stacks]]
-- [[Develop/Trees/Dev/Version control/🎉Version control|🎉Version control]]
 
 # Features
 - List up frequently used features.
+- [[Non-business/English/🎉English|🎉English]]
+- 
 
 # Issues
 - what design patterns adapated to each features.
@@ -39,6 +41,3 @@ style: bullet
 
 # Showcases
 - construct visual gallery to summarize your expriences.
-
-# See also
-- Further readings

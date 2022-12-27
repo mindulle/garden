@@ -48,7 +48,7 @@ tags:
 ```toc
 max_depth: 3
 ```
-## Entity Relationship Diagrams ⭐
+## Entity Relationship Diagrams 🌱
 
 > An entity–relationship model (or ER model) describes interrelated things of interest in a specific domain of knowledge. A basic ER model is composed of entity types (which classify the things of interest) and specifies relationships that can exist between entities (instances of those entity types). Wikipedia.
 
@@ -157,7 +157,7 @@ This statement can be read as *a property contains one or more rooms, and a room
 
 Only the `first-entity` part of a statement is mandatory. This makes it possible to show an entity with no relationships, which can be useful during iterative construction of diagrams. If any other parts of a statement are specified, then all parts are mandatory.
 
-### Relationship Syntax ⭐
+### Relationship Syntax 🌱
 
 The `relationship` part of each statement can be broken down into three sub-components:
 
@@ -213,7 +213,7 @@ erDiagram
     PERSON ||--o{ NAMED-DRIVER : is
 ```
 
-### Attributes ⭐
+### Attributes 🎯⭐
 
 Attributes can be defined for entities by specifying the entity name followed by a block containing multiple `type name` pairs, where a block is delimited by an opening `{` and a closing `}`. For example:
 
@@ -313,7 +313,7 @@ erDiagram
 -   If you don't want a label at all on a relationship, you must use an empty double-quoted string
 
 ---
-## Styling
+## Styling 🏁⭐
 
 ### Config options
 

@@ -1,0 +1,287 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="1  style: bullet   Write an addon One of Storybook&rsquo;s main features is its robust addon ecosystem. Use addons to enhance and extend your development workflow."><title>Write</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://mindulle.github.io/garden/icon.png><link href=https://mindulle.github.io/garden/styles.706bb6073ba85d26809f9096dae23a6b.min.css rel=stylesheet><link href=https://mindulle.github.io/garden/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://mindulle.github.io/garden/js/darkmode.71fd764547989a0d567451669afd7a55.min.js></script>
+<script src=https://mindulle.github.io/garden/js/util.5e39932758f9ecaf45fd54506ed61416.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://mindulle.github.io/garden/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js></script>
+<script src=https://mindulle.github.io/garden/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://mindulle.github.io/garden/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://mindulle.github.io/garden/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://mindulle.github.io/garden",fetchData=Promise.all([fetch("https://mindulle.github.io/garden/indices/linkIndex.28d4528215bf8ba808dee3bf915015d4.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://mindulle.github.io/garden/indices/contentIndex.c8a656a6055bff349574976941122938.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://mindulle.github.io/garden",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!0;drawGraph("https://mindulle.github.io/garden",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/mindulle.github.io\/garden\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://mindulle.github.io/garden/js/full-text-search.51f0b1753e9b30839d053f8a98cc20d1.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://mindulle.github.io/garden>Mindulle Garden🎉</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Write</h1><p class=meta>Last updated
+Dec 26, 2022
+<a href=https://github.com/mindulle/garden/tree/hugo/content/Develop/Trees/Learn/Realworld/WEB/Fundamentals/Test/Tools/Storybook/Guides/Addons/Write.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://mindulle.github.io/garden/tags/tree/>Tree</a></li><li><a href=https://mindulle.github.io/garden/tags/storybook/>Storybook</a></li><li><a href=https://mindulle.github.io/garden/tags/test/>Test</a></li><li><a href=https://mindulle.github.io/garden/tags/web/>Web</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#what-were-building>What we&rsquo;re building</a><ol><li><a href=#addon-kit>Addon kit</a></li><li><a href=#addon-directory-structure>Addon directory structure</a></li><li><a href=#get-started>Get started</a></li><li><a href=#build-system>Build system</a></li><li><a href=#add-a-panel>Add a panel</a></li><li><a href=#register-the-addon>Register the addon</a></li><li><a href=#display-story-parameter>Display story parameter</a></li><li><a href=#using-the-addon-with-a-story>Using the addon with a story</a></li><li><a href=#root-level-presetjs>Root level preset.js</a></li><li><a href=#packaging-and-publishing>Packaging and publishing</a></li><li><a href=#more-guides-and-tutorials>More guides and tutorials</a></li><li><a href=#addon-kit-1>Addon kit</a></li></ol></li></ol></nav></details></aside><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-toc data-lang=toc><span class=line><span class=cl>style: bullet
+</span></span></code></pre></td></tr></table></div></div><a href=#write-an-addon><h1 id=write-an-addon><span class=hanchor arialabel=Anchor># </span>Write an addon</h1></a><p>One of Storybook&rsquo;s main features is its robust addon ecosystem. Use addons to enhance and extend your development workflow. This page shows you how to create your own addon.</p><a href=#what-were-building><h2 id=what-were-building><span class=hanchor arialabel=Anchor># </span>What we&rsquo;re building</h2></a><p>For this example, we&rsquo;re going to build a bare-bones addon which:</p><ul><li>Adds a new panel in Storybook.</li><li>Retrieves a custom parameter from the stories.</li><li>Displays the parameter data in the panel.</li></ul><a href=#addon-kit><h3 id=addon-kit><span class=hanchor arialabel=Anchor># </span>Addon kit</h3></a><p>This guide shows you how to setup an addon from scratch. Alternatively, you can jumpstart your addon development with the
+<a href=https://github.com/storybookjs/addon-kit rel=noopener><code>addon-kit</code></a>.</p><a href=#addon-directory-structure><h3 id=addon-directory-structure><span class=hanchor arialabel=Anchor># </span>Addon directory structure</h3></a><p>We recommend a common addon file and directory structure for consistency.</p><table><thead><tr><th>Files/Directorie</th><th>Description</th></tr></thead><tbody><tr><td>dist</td><td>Transpiled directory for the addon</td></tr><tr><td>src</td><td>Source code for the addon</td></tr><tr><td>.babelrc.js</td><td>Babel configuration</td></tr><tr><td>preset.js</td><td>Addon entry point</td></tr><tr><td>package.json</td><td>Addon metadata information</td></tr><tr><td>README.md</td><td>General information for the addon</td></tr></tbody></table><a href=#get-started><h3 id=get-started><span class=hanchor arialabel=Anchor># </span>Get started</h3></a><p>Open a new terminal and create a new directory called <code>my-addon</code>. Inside it, run <code>npm init</code> to initialize a new node project. For your project&rsquo;s name, choose <code>my-addon</code> and for entry point <code>dist/preset.js</code>.</p><p>Once you&rsquo;ve gone through the prompts, your <code>package.json</code> should look like:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{
+</span></span><span class=line><span class=cl>  &#34;name&#34;: &#34;my-addon&#34;,
+</span></span><span class=line><span class=cl>  &#34;version&#34;: &#34;1.0.0&#34;,
+</span></span><span class=line><span class=cl>  &#34;description&#34;: &#34;A barebones Storybook addon&#34;,
+</span></span><span class=line><span class=cl>  &#34;main&#34;: &#34;dist/preset.js&#34;,
+</span></span><span class=line><span class=cl>  &#34;files&#34;: [&#34;dist/**/*&#34;, &#34;README.md&#34;, &#34;*.js&#34;],
+</span></span><span class=line><span class=cl>  &#34;keywords&#34;: [&#34;storybook&#34;, &#34;addons&#34;],
+</span></span><span class=line><span class=cl>  &#34;author&#34;: &#34;YourUsername&#34;,
+</span></span><span class=line><span class=cl>  &#34;license&#34;: &#34;MIT&#34;
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><a href=#build-system><h3 id=build-system><span class=hanchor arialabel=Anchor># </span>Build system</h3></a><p>We&rsquo;ll need to add the necessary dependencies and make some adjustments. Run the following command to install the required dependencies:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>yarn add react react-dom @babel/cli
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>npm install react react-dom @babel/cli
+</span></span></code></pre></td></tr></table></div></div><p>Initialize a local Storybook instance to allow you to test your addon.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>npx storybook init
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>💡 Initializing Storybook adds the building blocks for our addon. If you&rsquo;re building a standalone Storybook addon, set the React and Storybook packages as peer dependencies. It prevents the addon from breaking Storybook when there are different versions available.</p></blockquote><p>Next, create a <code>.babelrc.js</code> file in the root directory with the following:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// /my-addon/.babelrc.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=nx>module</span><span class=p>.</span><span class=nx>exports</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>presets</span><span class=o>:</span> <span class=p>[</span><span class=s2>&#34;@babel/preset-env&#34;</span><span class=p>,</span> <span class=s2>&#34;@babel/preset-react&#34;</span><span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>Babel configuration is required because our addon uses ES6 and JSX.</p></blockquote><p>Change your <code>package.json</code> and add the following script to build the addon:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;scripts&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;build&#34;</span><span class=p>:</span> <span class=s2>&#34;babel ./src --out-dir ./dist&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>💡 Running <code>yarn build</code> at this stage will output the code into the <code>dist</code> directory, transpiled into a ES5 module ready to be installed into any Storybook.</p></blockquote><p>Finally, create a new directory called <code>src</code> and inside a new file called <code>preset.js</code> with the following:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// /my-addon/src/preset.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kd>function</span> <span class=nx>managerEntries</span><span class=p>(</span><span class=nx>entry</span> <span class=o>=</span> <span class=p>[])</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=p>[...</span><span class=nx>entry</span><span class=p>,</span> <span class=nx>require</span><span class=p>.</span><span class=nx>resolve</span><span class=p>(</span><span class=s2>&#34;./register&#34;</span><span class=p>)];</span> <span class=c1>//👈 Addon implementation
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>module</span><span class=p>.</span><span class=nx>exports</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>managerEntries</span> <span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Presets are the way addons hook into Storybook. Among other tasks they allow you to:</p><ul><li>Add to
+<a href=https://storybook.js.org/docs/react/addons/writing-addons#add-a-panel rel=noopener>Storybook&rsquo;s UI</a></li><li>Add to the
+<a href=https://storybook.js.org/docs/react/addons/writing-presets#preview-entries rel=noopener>preview iframe</a></li><li>Modify
+<a href=https://storybook.js.org/docs/react/addons/writing-presets#babel rel=noopener>babel</a> and
+<a href=https://storybook.js.org/docs/react/addons/writing-presets#webpack rel=noopener>webpack settings</a></li></ul><p>For this example, we&rsquo;ll modify Storybook&rsquo;s UI.</p><a href=#add-a-panel><h3 id=add-a-panel><span class=hanchor arialabel=Anchor># </span>Add a panel</h3></a><p>Now let’s add a panel to Storybook. Inside the <code>src</code> directory, create a new file called <code>register.js</code> and add the following:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// /my-addon/src/manager.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>addons</span><span class=p>,</span> <span class=nx>types</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;@storybook/addons&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>AddonPanel</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;@storybook/components&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>ADDON_ID</span> <span class=o>=</span> <span class=s1>&#39;myaddon&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>PANEL_ID</span> <span class=o>=</span> <span class=sb>`</span><span class=si>${</span><span class=nx>ADDON_ID</span><span class=si>}</span><span class=sb>/panel`</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// give a unique name for the panel
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>MyPanel</span> <span class=o>=</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>div</span><span class=o>&gt;</span><span class=nx>MyAddon</span><span class=o>&lt;</span><span class=err>/div&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>addons</span><span class=p>.</span><span class=nx>register</span><span class=p>(</span><span class=nx>ADDON_ID</span><span class=p>,</span> <span class=p>(</span><span class=nx>api</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>addons</span><span class=p>.</span><span class=nx>add</span><span class=p>(</span><span class=nx>PANEL_ID</span><span class=p>,</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>type</span><span class=o>:</span> <span class=nx>types</span><span class=p>.</span><span class=nx>PANEL</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;My Addon&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>render</span><span class=o>:</span> <span class=p>({</span> <span class=nx>active</span><span class=p>,</span> <span class=nx>key</span> <span class=p>})</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>AddonPanel</span> <span class=nx>active</span><span class=o>=</span><span class=p>{</span><span class=nx>active</span><span class=p>}</span> <span class=nx>key</span><span class=o>=</span><span class=p>{</span><span class=nx>key</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>MyPanel</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=err>/AddonPanel&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>),</span>
+</span></span><span class=line><span class=cl>  <span class=p>});</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>💡 Make sure to include the <code>key</code> when you register the addon. It will prevent any issues when the addon renders.</p></blockquote><p>Going over the code snippet in more detail. When Storybook starts up:</p><ol><li>It
+<a href=https://storybook.js.org/docs/react/addons/addons-api#addonsregister rel=noopener>registers</a> the addon</li><li><a href=https://storybook.js.org/docs/react/addons/addons-api#addonsadd rel=noopener>Adds</a> a new <code>panel</code> titled <code>My Addon</code> to the UI</li><li>When selected, the <code>panel</code> renders the static <code>div</code> content</li></ol><a href=#register-the-addon><h3 id=register-the-addon><span class=hanchor arialabel=Anchor># </span>Register the addon</h3></a><p>Finally, let’s hook it all up. Change <code>.storybook/main.js</code> to the following:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// /my-addon/.storybook/main.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=nx>module</span><span class=p>.</span><span class=nx>exports</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>stories</span><span class=o>:</span> <span class=p>[],</span>
+</span></span><span class=line><span class=cl>  <span class=nx>addons</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;@storybook/addon-links&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;@storybook/addon-essentials&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;@storybook/preset-create-react-app&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;../src/preset.js&#34;</span> <span class=c1>//👈 Our addon registered here
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>💡 When you register a Storybook addon, it will look for either <code>register.js</code> or <code>preset.js</code> as the entry points.</p><p>Run <code>yarn storybook</code> and you should see something similar to:</p><p><img src=https://storybook.js.org/8a84ad965e96ef91ab0feb62f03b48b9/addon-initial-state.png width=auto alt="Storybook addon initial state"></p><a href=#display-story-parameter><h3 id=display-story-parameter><span class=hanchor arialabel=Anchor># </span>Display story parameter</h3></a><p>Next, let’s replace the <code>MyPanel</code> component from above to show the parameter.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// /my-addon/src/manager.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>useParameter</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;@storybook/api&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>PARAM_KEY</span> <span class=o>=</span> <span class=s1>&#39;myAddon&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>MyPanel</span> <span class=o>=</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>value</span> <span class=o>=</span> <span class=nx>useParameter</span><span class=p>(</span><span class=nx>PARAM_KEY</span><span class=p>,</span> <span class=kc>null</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>item</span> <span class=o>=</span> <span class=nx>value</span> <span class=o>?</span> <span class=nx>value</span><span class=p>.</span><span class=nx>data</span> <span class=o>:</span> <span class=s1>&#39;No story parameter defined&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>return</span> <span class=o>&lt;</span><span class=nx>div</span><span class=o>&gt;</span><span class=p>{</span><span class=nx>item</span><span class=p>}</span><span class=o>&lt;</span><span class=err>/div&gt;;</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><p>The new version is made smarter by
+<a href=https://storybook.js.org/docs/react/addons/addons-api#useparameter rel=noopener><code>useParameter</code></a>, which is a
+<a href=https://reactjs.org/docs/hooks-intro.html rel=noopener>React hook</a> that updates the parameter value and re-renders the panel every time the story changes.</p><p>The
+<a href=https://storybook.js.org/docs/react/addons/addons-api rel=noopener>addon API</a> provides hooks like this, so all of that communication can happen behind the scenes. That means you can focus on your addon&rsquo;s functionality.</p><a href=#using-the-addon-with-a-story><h3 id=using-the-addon-with-a-story><span class=hanchor arialabel=Anchor># </span>Using the addon with a story</h3></a><p>When Storybook was initialized, it provided a small set of example stories. Change your <code>Button.stories.js</code> to the following:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Button.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=c1>//👇 Creates specific parameters for the story
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>parameters</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>myAddon</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>data</span><span class=o>:</span> <span class=s1>&#39;this data is passed to the addon&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Basic</span> <span class=o>=</span> <span class=p>()</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>Button</span><span class=o>&gt;</span><span class=nx>hello</span><span class=o>&lt;</span><span class=err>/Button&gt;;</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// Button.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=kr>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentStory</span><span class=p>,</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=c1>//👇 Creates specific parameters for the story
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>parameters</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>myAddon</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>data</span><span class=o>:</span> <span class=s1>&#39;this data is passed to the addon&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Button</span><span class=p>&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Basic</span>: <span class=kt>ComponentStory</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Button</span><span class=p>&gt;</span> <span class=o>=</span> <span class=p>()</span> <span class=o>=&gt;</span> <span class=p>&lt;</span><span class=nt>Button</span><span class=p>&gt;</span><span class=nx>hello</span><span class=p>&lt;/</span><span class=nt>Button</span><span class=p>&gt;;</span>
+</span></span></code></pre></td></tr></table></div></div><p>After applying the changes to the story, the Storybook UI will show the following:</p><p><video autoplay muted playsinline loop draggable=true><source src=https://storybook.js.org/812658cbb04480314165b27f79511fcd/addon-final-stage-optimized.mp4 type=video/mp4></video></p><a href=#root-level-presetjs><h3 id=root-level-presetjs><span class=hanchor arialabel=Anchor># </span>Root level preset.js</h3></a><p>Before publishing the addon, we&rsquo;ll need to make one last change. In the root directory of the addon, create a new file called <code>preset.js</code> and add the following:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// /my-addon/preset.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=nx>module</span><span class=p>.</span><span class=nx>exports</span> <span class=o>=</span> <span class=nx>require</span><span class=p>(</span><span class=s1>&#39;./dist/preset.js&#39;</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><p>This auto-registers the addon without any additional configuration from the user. Storybook looks for either a <code>preset.js</code> or a <code>register.js</code> file located at the root level.</p><a href=#packaging-and-publishing><h3 id=packaging-and-publishing><span class=hanchor arialabel=Anchor># </span>Packaging and publishing</h3></a><p>Now that you&rsquo;ve seen how to create a bare-bones addon let&rsquo;s see how to share it with the community. Before we begin, make sure your addon meets the following requirements:</p><ul><li><code>package.json</code> file with metadata about the addon</li><li>Peer dependencies of <code>react</code> and <code>@storybook/addons</code></li><li><code>preset.js</code> file at the root level written as an ES5 module</li><li><code>src</code> directory containing the ES6 addon code</li><li><code>dist</code> directory containing transpiled ES5 code on publish</li><li><a href=https://github.com/ rel=noopener>GitHub</a> account to host your code</li><li><a href=https://www.npmjs.com/ rel=noopener>NPM</a> account to publish the addon</li></ul><p>Reference the
+<a href=https://www.npmjs.com/package/storybook-addon-outline rel=noopener>storybook-addon-outline</a> to see a project that meets these requirements.</p><p>Learn how to
+<a href=https://storybook.js.org/docs/react/addons/addon-catalog rel=noopener>add to the addon catalog</a>.</p><a href=#more-guides-and-tutorials><h3 id=more-guides-and-tutorials><span class=hanchor arialabel=Anchor># </span>More guides and tutorials</h3></a><p>In the previous example, we introduced the structure of an addon but barely scratched the surface of what addons can do.</p><p>To dive deeper, we recommend Storybook&rsquo;s
+<a href=https://storybook.js.org/tutorials/create-an-addon/ rel=noopener>creating an addon</a> tutorial. It’s an excellent walkthrough covering the same ground as the above introduction but goes further and leads you through the entire process of creating a realistic addon.</p><a href=#addon-kit-1><h3 id=addon-kit-1><span class=hanchor arialabel=Anchor># </span>Addon kit</h3></a><p>To help you jumpstart the addon development, the Storybook maintainers created an
+<a href=https://github.com/storybookjs/addon-kit rel=noopener><code>addon-kit</code></a>, use it to bootstrap your next addon.</p><p><a href=https://github.com/storybookjs/storybook/tree/next/docs/addons/writing-addons.md target=_blank rel=noopener class="e1soj9vu1 e1ja7avb2 css-1ii1tfm e1ja7avb1"><span class="css-1xdhyk6 e1ja7avb3"><span role=img aria-label=write>✍️</span> Edit on GitHub – PRs welcome!</span></a></p></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/garden/Develop/Trees/Learn/Realworld/WEB/Fundamentals/Test/Tools/Storybook/Guides/Addons/Introduction/ data-ctx="Learn how to write an addon" data-src=/Develop/Trees/Learn/Realworld/WEB/Fundamentals/Test/Tools/Storybook/Guides/Addons/Introduction class=internal-link>Introduction</a></li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://mindulle.github.io/garden/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Mindulle using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2022</p><ul><li><a href=https://mindulle.github.io/garden>Home</a></li><li><a href=https://github.com/mindulle>Github</a></li></ul></footer></div></div></body></html>

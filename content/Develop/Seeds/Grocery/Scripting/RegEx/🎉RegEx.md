@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉React"
-lastModified: "2022-12-25"
+title: "🎉RegEx"
+lastModified: "2022-12-28"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -29,8 +29,7 @@ erDiagram
 
 # Features
 - List up frequently used features.
-- [[Develop/Seeds/Grocery/WebFrontend/React/📚Dictionary|📚Dictionary]]
-- [[Develop/Seeds/Grocery/WebFrontend/React/🚚Resources|🚚Resources]]
+- [[Develop/Seeds/Grocery/Scripting/RegEx/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

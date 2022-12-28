@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉React"
-lastModified: "2022-12-25"
+title: "🎉Scripting"
+lastModified: "2022-12-28"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -26,11 +26,11 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Seeds/Grocery/Scripting/RegEx/🎉RegEx|🎉RegEx]]
+- [[Develop/Seeds/Grocery/Scripting/ShellScript/🎉Shellscript|🎉Shellscript]]
 
 # Features
 - List up frequently used features.
-- [[Develop/Seeds/Grocery/WebFrontend/React/📚Dictionary|📚Dictionary]]
-- [[Develop/Seeds/Grocery/WebFrontend/React/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

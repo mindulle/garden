@@ -21,10 +21,8 @@ style: bullet
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/Programming/Languages/🎉Languages|🎉Languages]]
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/🎉Libs&Fwks|🎉Libs&Fwks]]
+- [[Develop/Trees/Dev/Programming/🎉Programming|🎉Programming]]
 - [[Develop/Trees/Dev/Specifications/🎉Specifications|🎉Specifications]]
-- [[Develop/Trees/Dev/Programming/Stacks/🎉Stacks|🎉Stacks]]
 - [[Develop/Trees/Dev/Version control/🎉Version control|🎉Version control]]
 
 # Features

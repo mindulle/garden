@@ -27,8 +27,8 @@ erDiagram
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
 - [[Develop/Trees/Dev/🎉Dev|🎉Dev]] : 현업 개발중 __코드 작성__ 단계에서 사용할 나무[^나무] 모음
-- [[Develop/Trees/Infra/🎉Infra|🎉Infra]] : 현업 개발 중 __인프라 구축__ 단계에서 사용할 나무[^나무] 모음
 - [[Develop/Trees/Learn/🎉Learn|🎉Learn]]
+- [[Develop/Trees/Ops/🎉Ops|🎉Ops]]
 - [[Develop/Trees/Trends/🎉Trends|🎉Trends]]
 
 # Features

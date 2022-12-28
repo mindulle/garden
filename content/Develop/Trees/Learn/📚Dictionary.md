@@ -13,6 +13,9 @@ tags:
 ```toc
 ```
 # D
+## Data source name(DSN)
+> [In](https://en.wikipedia.org/wiki/Internet "Internet") [computing](https://en.wikipedia.org/wiki/Computing "Computing"), a **data source name** (**DSN**, sometimes known as a **database source name**, though "[data sources](https://en.wikipedia.org/wiki/Computer_file "Computer file")" can comprise other repositories apart from [databases](https://en.wikipedia.org/wiki/Database_management_system "Database management system")) is a string that has an associated [data structure](https://en.wikipedia.org/wiki/Data_structure "Data structure") used to describe a connection to a data source. **_[wikipedia](https://en.wikipedia.org/wiki/Data_source_name)_**
+
 ## Drop-in replacement
 > **Drop-in replacement** is a term used in [computer science](https://en.wikipedia.org/wiki/Computer_science "Computer science") and other fields. It refers to the ability to replace one [hardware](https://en.wikipedia.org/wiki/Computer_hardware "Computer hardware") (or [software](https://en.wikipedia.org/wiki/Software "Software")) component with another one without any other code or configuration changes being required and resulting in no negative impacts. __*[wikipedia](https://en.wikipedia.org/wiki/Drop-in_replacement)*__.
 - realworld example link

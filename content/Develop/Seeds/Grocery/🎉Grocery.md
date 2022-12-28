@@ -22,6 +22,7 @@ style: bullet
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Seeds/Grocery/Configurations/🎉Configurations|🎉Configuration]]
 - [[Develop/Seeds/Grocery/Database/🎉Database|🎉Database]]
 - [[Develop/Seeds/Grocery/WebBackend/🎉WebBackend|🎉webBackend]]
 - [[Develop/Seeds/Grocery/WebFrontend/🎉WebFrontend|🎉webFrontend]]

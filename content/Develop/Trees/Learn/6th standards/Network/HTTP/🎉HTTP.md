@@ -32,6 +32,7 @@ erDiagram
 - [[Develop/Trees/Learn/6th standards/Network/HTTP/Methods]]
 - [[Develop/Trees/Learn/6th standards/Network/HTTP/RESTful]]
 - [[Develop/Trees/Learn/6th standards/Network/HTTP/Implements]]
+- [[Develop/Trees/Learn/6th standards/Network/HTTP/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

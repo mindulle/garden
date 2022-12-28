@@ -26,7 +26,7 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Learn/6th standards/Network/HTTP/🎉HTTP]]
+- [[Develop/Trees/Learn/6th standards/Network/HTTP/🎉HTTP|🎉HTTP]]
 
 # Features
 - List up frequently used features.

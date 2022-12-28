@@ -21,6 +21,7 @@ style: bullet
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Design/Seeds/🎉Seeds|🎉Seeds]]
 
 # Features
 - List up frequently used features.

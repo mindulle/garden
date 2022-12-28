@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Learn"
-lastModified: "2022-12-14"
+title: "🎉Programming Functions"
+lastModified: "2022-12-27"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -17,16 +17,22 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
+```mermaid
+erDiagram
+	You ||--|| Table : Summarize
+	You ||--|| Statements : Sentence
+```
 
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Learn/6th standards/🎉6th standards|🎉6th standards]]
+- [[Develop/Trees/Dev/Programming/Languages/CSS/Code/Markup/Snippets/🎉Snippets|🎉Snippets]]
+- [[Develop/Trees/Dev/Programming/Languages/CSS/Code/Markup/Syntax/🎉Syntax|🎉Syntax]]
 
 # Features
 - List up frequently used features.
-- [[Develop/Trees/Learn/📚Dictionary|📚Dictionary]]
-- [[Develop/Trees/Learn/🚚Resources|🚚Resources]]
+- [[Develop/Trees/Dev/Programming/Languages/CSS/Code/Programming Features/Functions|Functions]]
+- [[Develop/Trees/Dev/Programming/Languages/CSS/Code/Programming Features/Lists|Lists]]
 
 # Issues
 - what design patterns adapated to each features.
@@ -37,6 +43,3 @@ style: bullet
 
 # Showcases
 - construct visual gallery to summarize your expriences.
-
-# See also
-- Further readings

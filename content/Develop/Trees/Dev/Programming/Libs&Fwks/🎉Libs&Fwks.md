@@ -26,6 +26,7 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/🎉By subject|🎉By subject]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/Database/🎉Database|🎉Database]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/WebBackend/🎉WebBackend|🎉WebBackend]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/🎉WebFrontend|🎉WebFrontend]]

@@ -18,7 +18,7 @@ tags:
 
 ## 개발
 - [[Develop/Trees/Dev/🎉Dev|🎉Dev]][^dev]
-- [[Develop/Trees/Infra/🎉Infra|🎉Infra]][^infra]
+- [[Develop/Seeds/Grocery/Configurations/🎉Configurations|🎉Infra]][^infra]
 - more detailed categories would be here.
 
 ## 디자인
@@ -37,7 +37,7 @@ tags:
 [^experience]: [[Design/Trees/Experiences/📚Dictionary|📚Design Experience Dictionary]], [[Develop/Trees/Experiences/📚Dictionary|📚Develop Experience Dictionary]]
 
 [^dev]: [[Develop/Trees/Dev/📚Dictionary|📚Dev Dictionary]]
-[^infra]: [[Develop/Trees/Infra/📚Dictionary|📚Infra Dictionary]]
+[^infra]: [[Develop/Seeds/Grocery/Configurations/📚Dictionary|📚Infra Dictionary]]
 
 [^des]: [[Design/Trees/Des/📚Dictionary|📚Des Dictionary]]
 [^graphic]: [[Design/Trees/Graphic/📚Dictionary|📚Graphic Dictionary]]

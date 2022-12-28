@@ -50,11 +50,17 @@ tags:
 style: bullet
 ```
 
-# Map
-![[Develop/Trees/Dev/Programming/Languages/CSS/assets/_CSS MAP]] 
+# Map of contents
+- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- ![[Develop/Trees/Dev/Programming/Languages/CSS/📦assets/_CSS MAP|_CSS MAP]]
+- [[Develop/Trees/Dev/Programming/Languages/CSS/Code/🎉Code|🎉Code]]
 
+# Features
+- List up frequently used features.
+- [[Develop/Trees/Dev/Programming/Languages/CSS/🚚Resources|🚚Resources]]
+ 
 # Emmet
 # Commonly used
 
 ## Cheat sheet
-![[Develop/Trees/Dev/Programming/Languages/CSS/assets/emmet_cheat_sheet.pdf#page=7]]
+![[Develop/Trees/Dev/Programming/Languages/CSS/📦assets/emmet_cheat_sheet.pdf#page=7]]

@@ -59,6 +59,19 @@ style: bullet
 
 # Plugins
 ## My favorites
+## Customize
+### obsidian better codeblock
+```diff {title="yourObsidianPluginFolder/obsidian-bettercodeblock/main.js"}
+- titleRegExp = /TI:"([^"]*)"}/i/
++ titleRegExp = /{title="([^"]*)"}/i;
+
+- highLightLinesRegExp = /HL="([^"]*)"/i;
++ highLightLinesRegExp = /{highlight="([^"]*)"}/i;
+```
+- It's customized to sync with Quartz's code block syntax.
+- If plugin updated, this changes will be lost. you shoud update this two line after  you update this plugin.
+- [TODO](https://marcus.se.net/obsidian-plugin-docs/) : make my own plugin to preserve this changes and add a feature that make a number on top of codeblock could be changed to another number.
+
 ## Documents
 
 # Deploy

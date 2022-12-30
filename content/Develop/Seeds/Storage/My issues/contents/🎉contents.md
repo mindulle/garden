@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉My issues"
+title: "🎉contents"
 lastModified: "2022-12-30"
 
 # field for querying only entry point notes.
@@ -9,9 +9,6 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
-  - "myIssue"
-  - "storage"
-  - "seed"
 ---
 ```toc
 style: bullet

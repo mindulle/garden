@@ -1,9 +1,9 @@
 ---
 # configs for document itself.
-title: "🐝Buzzwords for everyday life"
-lastModified: "2022-12-26"
+title: "🐝Buzzwords"
+lastModified: "2022-12-30"
 
-# field for querying only entry point notes.
+# field for querying only buzzwords notes.
 isDictionary: true
 
 # add some tags for specifying particular subjects.

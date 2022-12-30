@@ -556,14 +556,14 @@ TAG=prod FRONTEND_ENV=production bash ./scripts/build-push.sh
 -   Use the provided `scripts/deploy.sh` file with those environment variables:
 
 ```env
-DOMAIN={{cookiecutter.domain\_main}} \\
-TRAEFIK\_TAG={{cookiecutter.traefik\_constraint\_tag}} \\
-STACK\_NAME={{cookiecutter.docker\_swarm\_stack\_name\_main}} \\
-TAG=prod \\
+DOMAIN={{cookiecutter.domain\_main}} \
+TRAEFIK_TAG={{cookiecutter.traefik\_constraint\_tag}} \
+STACK_NAME={{cookiecutter.docker\_swarm\_stack\_name\_main}} \
+TAG=prod \
 bash ./scripts/deploy.sh
 ```
 
-> [!NOTE] Because I didn't understand how to import environment varaibles in bash script,
+> [!NOTE] Cause I didn't understand how to import environment varaibles in bash script,
 > I prepared [this question and answer](https://unix.stackexchange.com/questions/495161/import-environment-variables-in-a-bash-script)  and save to [[Develop/Seeds/Grocery/Scripting/ShellScript/🚚Resources|🚚Resources]]
 ---
 
@@ -577,21 +577,22 @@ The deployment requires using `docker stack` instead of `docker-swarm`, and it c
 
 You can do the process by hand based on those same scripts if you wanted. The general structure is like this:
 
+```shell
 # Use the environment variables passed to this script, as TAG and FRONTEND\_ENV
 # And re-create those variables as environment variables for the next command
-TAG=${TAG?Variable not set} \\
+TAG=${TAG?Variable not set} \
 # Set the environment variable FRONTEND\_ENV to the same value passed to this script with
 # a default value of "production" if nothing else was passed
-FRONTEND\_ENV=${FRONTEND\_ENV-production?Variable not set} \\
+FRONTEND_ENV=${FRONTEND\_ENV-production?Variable not set} \
 # The actual comand that does the work: docker-compose
-docker-compose \\
+docker-compose \
 # Pass the file that should be used, setting explicitly docker-compose.yml avoids the
 # default of also using docker-compose.override.yml
--f docker-compose.yml \\
+-f docker-compose.yml \
 # Use the docker-compose sub command named "config", it just uses the docker-compose.yml
 # file passed to it and prints their combined contents
 # Put those contents in a file "docker-stack.yml", with ">"
-config \> docker-stack.yml
+config > docker-stack.yml
 
 # The previous only generated a docker-stack.yml file,
 # but didn't do anything with it yet
@@ -600,7 +601,8 @@ config \> docker-stack.yml
 docker-auto-labels docker-stack.yml
 
 # Now this command uses that same file to deploy it
-docker stack deploy -c docker-stack.yml --with-registry-auth "${STACK\_NAME?Variable not set}"
+docker stack deploy -c docker-stack.yml --with-registry-auth "${STACK_NAME?Variable not set}"
+```
 
 ### Continuous Integration / Continuous Delivery
 

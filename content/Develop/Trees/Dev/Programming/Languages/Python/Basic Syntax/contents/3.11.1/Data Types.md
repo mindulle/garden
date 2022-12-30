@@ -1,0 +1,6 @@
+# Primitives
+## Number
+## String
+## List
+
+#

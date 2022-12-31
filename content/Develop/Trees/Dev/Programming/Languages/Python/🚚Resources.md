@@ -17,12 +17,13 @@ tags:
 - Documents : well explained documents or official document.
 - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name                                                                       | Purpose       | Documents                                                                           | Related issues |
-| -------------------------------------------------------------------------- | ------------- | ----------------------------------------------------------------------------------- | -------------- |
-| 파이썬 자습서                                                              | explain       | [official document](https://docs.python.org/ko/3/tutorial/index.html)               |                |
-| 파이썬 릴리즈 노트                                                         | explain       | [official document](https://docs.python.org/release/3.8.11/whatsnew/changelog.html) |                |
-| pydoc  - Documentation generator and online help system                    | explain       | [official document](https://docs.python.org/3/library/pydoc.html)                   |                |
-| PyQt5 Tutorial - wikidocs                                                  | tutorial      | [wikidocs books](https://wikidocs.net/book/2165)                                    |                |
-| PEP 257 – Docstring Conventions                                            | Specification | [official document](https://peps.python.org/pep-0257/)                              |                |
-| PEP 518 - Specifying Minimum Build System Requirements for Python Projects | Specification | [official document](https://peps.python.org/pep-0518/)                              | [poetry pyproject.toml document](https://python-poetry.org/docs/pyproject/)               |
+| Name                                                                       | Purpose           | Documents                                                                           | Related issues                                                              |
+| -------------------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 파이썬 자습서                                                              | explain           | [official document](https://docs.python.org/ko/3/tutorial/index.html)               |                                                                             |
+| 파이썬 릴리즈 노트                                                         | explain           | [official document](https://docs.python.org/release/3.8.11/whatsnew/changelog.html) |                                                                             |
+| pydoc  - Documentation generator and online help system                    | explain           | [official document](https://docs.python.org/3/library/pydoc.html)                   |                                                                             |
+| Poetry로 파이썬 의존성 관리하기                                            | Read & Understand | [Blog article](https://blog.flynnpark.dev/15)                                                                                    |                                                                             |
+| PyQt5 Tutorial - wikidocs                                                  | tutorial          | [wikidocs books](https://wikidocs.net/book/2165)                                    |                                                                             |
+| PEP 257 – Docstring Conventions                                            | Specification     | [official document](https://peps.python.org/pep-0257/)                              |                                                                             |
+| PEP 518 - Specifying Minimum Build System Requirements for Python Projects | Specification     | [official document](https://peps.python.org/pep-0518/)                              | [poetry pyproject.toml document](https://python-poetry.org/docs/pyproject/) |
 

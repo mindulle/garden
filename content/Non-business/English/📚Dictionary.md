@@ -18,6 +18,11 @@ tags:
 - The [general](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/general "general") consensus in the [office](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/office "office") is that he can't do his [job](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/job "job").
 - Could we [reach](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/reach "reach") a consensus on this [matter](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/matter "matter")? Let's take a [vote](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/vote "vote").
 
+## Consolidated
+> made [stronger](https://dictionary.cambridge.org/dictionary/english/strong "stronger") and more [certain](https://dictionary.cambridge.org/dictionary/english/certain "certain"): **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/consolidated)_**
+- He was [re-elected](https://dictionary.cambridge.org/dictionary/english/re-elect "re-elected") for another four [years](https://dictionary.cambridge.org/dictionary/english/year "years") and with his [power](https://dictionary.cambridge.org/dictionary/english/power "power") consolidated.
+- 통합, 합병정리된
+
 ## Cumbersome
 > [awkward](https://dictionary.cambridge.org/dictionary/english/awkward "awkward") because of being [large](https://dictionary.cambridge.org/dictionary/english/large "large"), [heavy](https://dictionary.cambridge.org/dictionary/english/heavy "heavy"), or not [effective](https://dictionary.cambridge.org/dictionary/english/effective "effective"): __*[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/cumbersome)*__
 - cumbersome [equipment](https://dictionary.cambridge.org/dictionary/english/equipment "equipment")

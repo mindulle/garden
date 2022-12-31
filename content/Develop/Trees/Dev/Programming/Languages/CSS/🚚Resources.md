@@ -17,6 +17,7 @@ tags:
 - Documents : well explained documents or official document.
 - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name                            | Purpose   | Documents | Related issues |
-| ------------------------------- | --------- | --------- | -------------- |
-| w3.org standards - css property | reference | [specification](https://www.w3.org/TR/CSS/#properties)          |                |
+| Name                                     | Purpose   | Documents                                              | Related issues |
+| ---------------------------------------- | --------- | ------------------------------------------------------ | -------------- |
+| w3.org standards - css property          | reference | [specification](https://www.w3.org/TR/CSS/#properties) |                |
+| CSS Sprite Sheet Animations with steps() | howto     | [Blog Article](https://blog.teamtreehouse.com/css-sprite-sheet-animations-steps)                                                       |                |

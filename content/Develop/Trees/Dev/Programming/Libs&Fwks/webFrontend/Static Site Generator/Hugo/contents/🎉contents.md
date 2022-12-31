@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Shellscript"
-lastModified: "2022-12-28"
+title: "🎉contents"
+lastModified: "2022-12-30"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -26,10 +26,10 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/Static Site Generator/Hugo/contents/v0.109.0/🎉v0.109.0|🎉v0.109.0]]
 
 # Features
 - List up frequently used features.
-- [[Develop/Seeds/Grocery/Scripting/ShellScript/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

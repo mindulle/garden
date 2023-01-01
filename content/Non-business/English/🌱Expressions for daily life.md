@@ -25,3 +25,10 @@ last-modified: "2022-12-28"
 | come/go in |     enter     |
 | deal with  |    handle     |
 | enjoyment  | gratification              |
+
+# Conversations
+| English           | Korean     |
+| :-----------------: | :----------: |
+| Where you off to? | 어디 가니? |
+
+

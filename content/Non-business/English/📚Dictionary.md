@@ -49,6 +49,12 @@ tags:
 - The Prince's [tour](https://dictionary.cambridge.org/dictionary/english/tour "tour") [conveniently](https://dictionary.cambridge.org/dictionary/english/conveniently "conveniently") omitted the most [deprived](https://dictionary.cambridge.org/dictionary/english/deprived "deprived") [areas](https://dictionary.cambridge.org/dictionary/english/area "areas") of the [city](https://dictionary.cambridge.org/dictionary/english/city "city").
 - \[ + to infinitive \](https://dictionary.cambridge.org/help/codes.html) formal She omitted to [mention](https://dictionary.cambridge.org/dictionary/english/mention "mention") that she would be away next [week](https://dictionary.cambridge.org/dictionary/english/week "week").
 
+# P
+## Perspective
+> a [particular](https://dictionary.cambridge.org/dictionary/english/particular "particular") way of [considering](https://dictionary.cambridge.org/dictionary/english/considering "considering") something: **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/perspective)_**
+- **get/keep something in perspective**
+- **put something in(to) perspective**
+- 기하적으로 쓰일땐 원근법이란 의미도 있음.
 # R 
 ## Raft
 > a [flat](https://dictionary.cambridge.org/dictionary/english/flat "flat") [floating](https://dictionary.cambridge.org/dictionary/english/floating "floating") [structure](https://dictionary.cambridge.org/dictionary/english/structure "structure") for [travelling](https://dictionary.cambridge.org/dictionary/english/travelling "travelling") [across](https://dictionary.cambridge.org/dictionary/english/across "across") [water](https://dictionary.cambridge.org/dictionary/english/water "water"), often made of [pieces](https://dictionary.cambridge.org/dictionary/english/piece "pieces") of [wood](https://dictionary.cambridge.org/dictionary/english/wood "wood") [tied](https://dictionary.cambridge.org/dictionary/english/tie "tied") [roughly](https://dictionary.cambridge.org/dictionary/english/roughly "roughly") together and [moved](https://dictionary.cambridge.org/dictionary/english/moved "moved") along with a [paddle](https://dictionary.cambridge.org/dictionary/english/paddle "paddle") (= [pole](https://dictionary.cambridge.org/dictionary/english/pole "pole") with a [flat](https://dictionary.cambridge.org/dictionary/english/flat "flat") end): **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/raft)_**

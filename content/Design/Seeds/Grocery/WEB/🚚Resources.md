@@ -1,9 +1,9 @@
 ---
 # configs for document itself.
 title: "🚚Resources"
-lastModified: "2022-12-25"
+lastModified: "2023-01-02"
 
-# field for querying only entry point notes.
+# field for querying only resources notes.
 isResources: true
 
 # add some tags for specifying particular subjects.
@@ -17,6 +17,7 @@ tags:
 - Documents : well explained documents or official document.
 - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name             | Purpose   | Documents | Related issues |
-| ---------------- | --------- | --------- | -------------- |
-| freefrontend.com | reference | [Hompage](https://freefrontend.com/)          |                |
+| Name     | Purpose   | Documents                             | Related issues |
+| -------- | --------- | ------------------------------------- | -------------- |
+| awwwards | Reference | [Homepage](https://www.awwwards.com/) |                |
+| dribbble | Reference          | [Homepage](https://dribbble.com/)     |                |

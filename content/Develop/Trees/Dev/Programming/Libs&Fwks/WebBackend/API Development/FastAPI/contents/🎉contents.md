@@ -26,7 +26,8 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/WebBackend/API Development/FastAPI/contents/v0.5.0/🎉v0.5.0|🎉v0.5.0]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/WebBackend/API Development/FastAPI/contents/🎉contents|🎉contents]]
+- 
 
 # Features
 - List up frequently used features.

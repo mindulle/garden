@@ -1,45 +1,45 @@
 ---
 # configs for document itself.
 title: "🎉Grocery"
-lastModified: "2022-12-18"
-visibility: "public"
+lastModified: "2023-01-02"
 
-# configs for annotating data to obsidian dataview plugin.
-noteImportance: ⭐⭐⭐⭐⭐
-noteStatus: "in progress"
-noteCertanity: "unlike"
-noteField:
-  - "design"
-  - "devsigner"
-notePurpose:
-  - "background"
-noteTimeliness:
-  - "lts"
+# field for querying only entry point notes.
+isEntryPoint: true
 
-# configs for selecting seed type.
-seedType:
-  - "grocery"
-
-# configs to decide whether external contents are appropriate to me or not.
-contentLevel:
-  - "beginner"
-  - "intermediate"
-  - "professional"
-contentType:
-  - "text"
-  - "img"
-  - "video"
-contentPurpose:
-  - "tutorial"
-  - "howto"
-  - "explain"
-  - "reference"
-  - "realworld"
-
-# configs for querying particular datas to specify notes which have been noted expirences related to particular subject.
-# e.g. short tips for useful vscode extensions to let me know how errors occur.
-# tags=[#seed, #shortTip, #vscode, #extension, #errorHandling]
+# add some tags for specifying particular subjects.
 tags:
-  - "seed"
-  - "grocery"
+  - "entrypoint"
 ---
+```toc
+style: bullet
+```
+
+# TL;DR
+- you can summarize contents as a table format.
+- or just write down statements you think it is important within 3 lines.
+```mermaid
+erDiagram
+	You ||--|| Table : Summarize
+	You ||--|| Statements : Sentence
+```
+
+
+# Map of contents
+- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Design/Seeds/Grocery/Static Graphic design/🎉Static Graphic design|🎉Static Graphic design]]
+- [[Design/Seeds/Grocery/Dynamic Graphic design/🎉Dynamic Graphic deisgn|🎉Dynamic Graphic deisgn]]
+- [[Design/Seeds/Grocery/Preperations/🎉Preperations|🎉Preperations]]
+- [[Design/Seeds/Grocery/WEB/🎉WEB|🎉WEB]]
+
+# Features
+- List up frequently used features.
+
+# Issues
+- what design patterns adapated to each features.
+- how to pipe logics to build features.
+- challenges during implementing features.
+- helpful supports deserve to remember.
+- Glean tips using `mindulle-cli` for digital gardening.
+
+# Showcases
+- construct visual gallery to summarize your expriences.

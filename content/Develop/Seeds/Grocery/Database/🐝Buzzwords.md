@@ -34,7 +34,7 @@ tags:
 
 
 [^learn]: [[Design/Trees/Learn/📚Dictionary|📚Design Learn Dictionary]], [[Develop/Trees/Learn/📚Dictionary|📚Develop Learn Dictionary]]
-[^experience]: [[Design/Trees/Experiences/📚Dictionary|📚Design Experience Dictionary]], [[Develop/Trees/Experiences/📚Dictionary|📚Develop Experience Dictionary]]
+[^experience]: [[Design/Seeds/Experiences/📚Dictionary|📚Design Experience Dictionary]], [[Develop/Trees/Experiences/📚Dictionary|📚Develop Experience Dictionary]]
 
 [^dev]: [[Develop/Trees/Dev/📚Dictionary|📚Dev Dictionary]]
 [^infra]: [[Develop/Seeds/Grocery/Configurations/📚Dictionary|📚Infra Dictionary]]

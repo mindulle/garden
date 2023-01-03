@@ -24,4 +24,5 @@ tags:
 | Formal and Informal words in English    | reference         | [Word Coach blog article](https://www.wordscoach.com/blog/formal-and-informal-words-in-english/)       |                |
 | Learn English online on the internet    | reference         | [main homepage](https://learnenglishontheinternet.com/blog)                                            |                |
 | Giving directions in English            | Read & Understand | [Wallstreet English Blog Article](https://www.wallstreetenglish.com/blog/giving-directions-in-english) |                |
-| Youglish                                | Trainning         | [Official Hompage](https://youglish.com/)                                                           |                |
+| Youglish                                | Trainning         | [Official Hompage](https://youglish.com/)                                                              |                |
+| SEANCHAI LIBRARIES                      | Online Library    | [Oneline Library](http://irelandslstory.blogspot.com/?m=1)                                                                                                       |                |

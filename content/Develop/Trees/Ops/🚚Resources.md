@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
 title: "🚚Resources"
-lastModified: "2023-01-02"
+lastModified: "2023-01-03"
 
 # field for querying only resources notes.
 isResources: true
@@ -17,7 +17,6 @@ tags:
 - Documents : well explained documents or official document.
 - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name       | Purpose                 | Documents                     | Related issues |
-| ---------- | ----------------------- | ----------------------------- | -------------- |
-| Aggie.io   | Collaborative painting  | [Homepage](https://aggie.io/) |                |
-
+| Name | Purpose | Documents | Related issues |
+| ---- | ------- | --------- | -------------- |
+|      |         |           |                |

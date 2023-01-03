@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉Typescript"
+title: "🎉Infra"
 lastModified: "2023-01-03"
 
 # field for querying only entry point notes.

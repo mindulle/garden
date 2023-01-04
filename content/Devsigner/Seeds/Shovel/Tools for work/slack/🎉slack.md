@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Work Assistants"
-lastModified: "2022-12-22"
+title: "🎉slack"
+lastModified: "2023-01-04"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,7 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
-  - "helperSites"
+  - "toolsForWork"
 ---
 ```toc
 style: bullet
@@ -30,7 +30,6 @@ erDiagram
 
 # Features
 - List up frequently used features.
-- [[]]
 
 # Issues
 - what design patterns adapated to each features.

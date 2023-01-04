@@ -18,7 +18,11 @@ tags:
 - Documents : well explained documents or official document.
 - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name                      | Purpose                                    | Documents                                         | Related issues |
-| ------------------------- | ------------------------------------------ | ------------------------------------------------- | -------------- |
-| Data exchange description | Explain various things about data exchange | [wikipedia](https://en.wikipedia.org/wiki/Data_exchange)                                     |                |
-| JSON Crack                | Visualize complicated JSON file.           | [official document](https://jsoncrack.com/editor) |                |
+| Name                      | Purpose                                         | Documents                                                | Related issues |
+| ------------------------- | ----------------------------------------------- | -------------------------------------------------------- | -------------- |
+| Data exchange description | Explain various things about data exchange      | [wikipedia](https://en.wikipedia.org/wiki/Data_exchange) |                |
+| jsonapi                   | A SPECIFICATION FOR BUILDING APIS IN JSON                                   | [Official Site](https://jsonapi.org/)                                                         |                |
+| JSON Crack                | Visualize complicated JSON file.                | [official document](https://jsoncrack.com/editor)        |                |
+| Dummy Json                | Mock JSON API                                   | [Homepage](https://dummyjson.com/)                       |                |
+| My Json Server            | Mock JSON API                                   | [Homepage](https://my-json-server.typicode.com/)         |                |
+| Json Place Holder         | pre-built JSON API with already organized datas | [Homepage](https://jsonplaceholder.typicode.com/)        |                |

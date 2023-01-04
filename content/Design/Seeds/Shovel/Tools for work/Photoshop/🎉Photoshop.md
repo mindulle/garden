@@ -10,6 +10,7 @@ isEntryPoint: true
 tags:
   - "entrypoint"
   - "photoshop"
+  - "toolsForWork"
 ---
 ```toc
 style: bullet

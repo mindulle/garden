@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "oh my zsh!"
+title: "🎉oh my zsh!"
 lastModified: "2022-12-25"
 
 # field for querying only entry point notes.
@@ -9,6 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "toolsForWork"
 ---
 ```toc
 style: bullet

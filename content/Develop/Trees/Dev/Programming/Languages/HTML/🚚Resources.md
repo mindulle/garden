@@ -17,10 +17,11 @@ tags:
 - documents : well explained documents or official document.
 - related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| name                  | purpose | documents                                                                   | related issues                    |
-| --------------------- | ------- | --------------------------------------------------------------------------- | --------------------------------- |
-| Markup language       | 학습용  | [wikipedia](https://en.wikipedia.org/wiki/Markup_language)                                                                            |                                   |
-| Blob - Web API        | 학습용  | [MDN official document](https://developer.mozilla.org/ko/docs/Web/API/Blob) |                                   |
-| Learn Forms - web.dev | 학습용  | [web.dev official document](https://web.dev/learn/forms/)                   |                                   |
-| Learn HTML - web.dev  | 학습용  | [web.dev official document](https://web.dev/learn/html/)                    |                                   |
-| Emmet Cheat sheet     | 참고용  | [official document](https://docs.emmet.io/cheat-sheet/)                     | [View PDF](http://bit.ly/2mLmFAn) |
+| name                  | purpose           | documents                                                                   | related issues                    |
+| --------------------- | ----------------- | --------------------------------------------------------------------------- | --------------------------------- |
+| html5 doctor          | Curated list      | [Homepage](http://html5doctor.com/)                                                                            |                                   |
+| Markup language       | Read & Understand | [wikipedia](https://en.wikipedia.org/wiki/Markup_language)                  |                                   |
+| Blob - Web API        | Reference         | [MDN official document](https://developer.mozilla.org/ko/docs/Web/API/Blob) |                                   |
+| Learn Forms - web.dev | Howto             | [web.dev official document](https://web.dev/learn/forms/)                   |                                   |
+| Learn HTML - web.dev  | Howto             | [web.dev official document](https://web.dev/learn/html/)                    |                                   |
+| Emmet Cheat sheet     | Cheat sheet       | [official document](https://docs.emmet.io/cheat-sheet/)                     | [View PDF](http://bit.ly/2mLmFAn) |

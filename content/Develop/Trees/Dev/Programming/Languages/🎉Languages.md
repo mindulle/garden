@@ -34,7 +34,7 @@ erDiagram
 
 # Features
 - List up frequently used features.
-- [[Develop/Trees/Dev/Programming/Languages/👓Look over features|👓Look over the features]]
+- [[Develop/Trees/Dev/Programming/Languages/👓Take a look at features|👓Take a look at features]]
 
 # Issues
 - what design patterns adapated to each features.

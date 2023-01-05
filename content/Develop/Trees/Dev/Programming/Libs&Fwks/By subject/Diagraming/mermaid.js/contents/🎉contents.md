@@ -26,6 +26,7 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/🎉Diagram Syntax|🎉Diagram Syntax]]
 
 # Features
 - List up frequently used features.

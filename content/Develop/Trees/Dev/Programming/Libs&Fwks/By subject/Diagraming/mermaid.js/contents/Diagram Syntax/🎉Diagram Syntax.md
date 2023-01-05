@@ -20,7 +20,7 @@ style: bullet
 - or just write down statements you think it is important within 3 lines.
 ```mermaid
 flowchart LR
-	Entry[fa:ad Diagram Syntax] --> Lists
+	Entry[fa:f641 Diagram Syntax] --> Lists
 	subgraph Syntax
 		direction LR
 		Lists --> ERD[Entity Relationship Diagram]

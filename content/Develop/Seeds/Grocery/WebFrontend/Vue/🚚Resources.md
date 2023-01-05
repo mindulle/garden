@@ -17,6 +17,7 @@ tags:
 - Documents : well explained documents or official document.
 - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name                                                            | Purpose  | Documents | Related issues |
-| --------------------------------------------------------------- | -------- | --------- | -------------- |
-| How To Debug Components, State, and Events with Vue.js Devtools | Tutorial | [Digital Ocean Blog Article](https://www.digitalocean.com/community/tutorials/how-to-debug-components-state-and-events-with-vue-js-devtools)          |                |
+| Name                                                            | Purpose                | Documents                                                                                                                                    | Related issues |
+| --------------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| Vetur                                                           | **OFFICIAL** LSP + TUI | [Github repo](https://github.com/vuejs/vetur)                                                                                                                                             |                |
+| How To Debug Components, State, and Events with Vue.js Devtools | Tutorial               | [Digital Ocean Blog Article](https://www.digitalocean.com/community/tutorials/how-to-debug-components-state-and-events-with-vue-js-devtools) |                |

@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Programming"
-lastModified: "2022-12-22"
+title: "🎉Test"
+lastModified: "2023-01-05"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,6 +9,7 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
+  - "test"
 ---
 ```toc
 style: bullet
@@ -26,13 +27,11 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/Programming/Languages/🎉Languages|🎉Languages]]
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/🎉Libs&Fwks|🎉Libs&Fwks]]
-- [[Develop/Trees/Dev/Programming/Stacks/🎉Stacks|🎉Stacks]]
-- [[Develop/Trees/Dev/Programming/📚Dictionary|📚Dictionary]]
 
 # Features
 - List up frequently used features.
+- [[Develop/Trees/Dev/Programming/Test/📚Dictionary|📚Dictionary]]
+- [[Develop/Trees/Dev/Programming/Test/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

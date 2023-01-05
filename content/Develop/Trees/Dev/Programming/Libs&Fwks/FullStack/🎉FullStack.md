@@ -26,6 +26,8 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/FullStack/Buffalo/🎉Buffalo|🎉Buffalo]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/FullStack/Svelet/🎉Svelet|🎉Svelet]]
 
 # Features
 - List up frequently used features.

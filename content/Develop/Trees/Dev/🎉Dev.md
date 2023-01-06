@@ -20,13 +20,28 @@ style: bullet
 
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	HERE[&#127881Dev]
+	subgraph Content[Map of contents]
+		programming[&#127881Programming]
+		specifications[&#127881Specifications]
+		versionControl[&#127881Version control]
+	end
+	subgraph Features
+		dictionary[&#128218Dictionary]
+		resources[&#128666Resources]
+	end
+	HERE --> Content
+	HERE --> Features
+```
 - [[Develop/Trees/Dev/Programming/🎉Programming|🎉Programming]]
 - [[Develop/Trees/Dev/Specifications/🎉Specifications|🎉Specifications]]
 - [[Develop/Trees/Dev/Version control/🎉Version control|🎉Version control]]
 
 # Features
-- List up frequently used features.
+- [[Develop/Trees/Dev/📚Dictionary|📚Dictionary]]
+- [[Develop/Trees/Dev/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

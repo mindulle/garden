@@ -21,12 +21,27 @@ style: bullet
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
 
-# Receipes
-## Receipe map
-- Draw a simple excalidraw scatch to understand this tools rough workflows.
+# Map of contents
+```mermaid
+flowchart LR
+	HERE[&#127881mindulle]
+	subgraph repositories
+		direction LR
+		blog[&#127881blog]
+		cli[&#127881cli]
+		garden[&#127881garden]
+		packages[&#127881packages]
+		playground[&#127881playground]
+	end
+	HERE --> repositories
+```
+- [[Develop/Fruits/mindulle/blog/🎉blog|🎉blog]]
+- [[Develop/Fruits/mindulle/cli/🎉cli|🎉cli]]
 - [[Develop/Fruits/mindulle/garden/🎉garden|🎉garden]]
+- [[Develop/Fruits/mindulle/packages/🎉packages|🎉packages]]
+- [[Develop/Fruits/mindulle/playground/🎉playground|🎉playground]]
 
-## Featured APIs
+# Features
 - List up frequently used APIs.
 
 ## My issues

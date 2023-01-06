@@ -17,22 +17,29 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Dev/🎉Dev|🎉Dev]] : 현업 개발중 __코드 작성__ 단계에서 사용할 나무[^나무] 모음
-- [[Develop/Trees/Learn/🎉Learn|🎉Learn]]
-- [[Develop/Trees/Ops/🎉Ops|🎉Ops]]
-- [[Develop/Trees/Trends/🎉Trends|🎉Trends]]
+```mermaid
+flowchart LR
+	HERE[&#127881Trees]
+	subgraph treeContents
+		Dev[&#127881Dev]
+		Learn[&#127881Learn]
+		Ops[&#127881Ops]
+		Trends[&#127881Trends]
+	end
+	subgraph Features
+		readingList[&#128278Reading list]
+	end
+	HERE --> treeContents
+	HERE --> Features
+```
+- [[Develop/Trees/Dev/🎉Dev|🎉Dev]] : __코드 작성__ 단계에서 정리된 나무[^나무] 모음
+- [[Develop/Trees/Learn/🎉Learn|🎉Learn]] : **개념 학습** 단계에서 정리된  나무[^나무] 모음
+- [[Develop/Trees/Ops/🎉Ops|🎉Ops]] : **운영 및 배포** 단계에서 정리된 나무[^나무] 모음
+- [[Develop/Trees/Trends/🎉Trends|🎉Trends]] : **동향 파악** 단계에서 정리된 나무[^나무] 모음
 
 # Features
-- List up frequently used features.
 - [[Develop/Trees/🔖Reading list|🔖Reading list]]
 
 # Issues

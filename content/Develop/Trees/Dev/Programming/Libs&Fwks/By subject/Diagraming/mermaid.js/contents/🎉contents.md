@@ -17,15 +17,17 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
 
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	HERE[&#127881Contents]
+	subgraph Diagraming
+		diagramSyntax[&#127881Diagram Syntax]	
+	end
+	HERE --> Diagraming
+```
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/🎉Diagram Syntax|🎉Diagram Syntax]]
 
 # Features
@@ -45,14 +47,14 @@ erDiagram
 
 > [!tip] Mark cute emojis for your note-taking!
 
-| Emoji | Meaning                                                                                          |
-|:-----:| ------------------------------------------------------------------------------------------------ |
-|  🌱   | Basic concepts.                                                                                   |
-|  ⭐   | My favorites.                                                                                     |
-|  🎯   | To implement issue that have specific purpose.                                                            |
-|  🏁   | Not essential feature. can be used optionally.                                                                                                 |
-|  🐞   | Have possibilities that feature make some annoying situation 😕                                     |
-|  🔥   | Have possibilities that feature make some critical issue and will kill our service in the end!! 😱 |
+| Emoji | Meaning                                                                                            | HTML Entity DEC |
+|:-----:| -------------------------------------------------------------------------------------------------- |:---------------:|
+|  🌱   | Basic concepts.                                                                                    |    `127793`     |
+|  ⭐   | My favorites.                                                                                      |     `11088`     |
+|  🎯   | To implement issue that have specific purpose.                                                     |    `127919`     |
+|  🏁   | Not essential feature. can be used optionally.                                                     |    `127937`     |
+|  🐞   | Have possibilities that feature make some annoying situation 😕                                    |    `128030`     |
+|  🔥   | Have possibilities that feature make some critical issue and will kill our service in the end!! 😱 | `128293`                |
 
 # Version control for this document
 ## Up-to-date

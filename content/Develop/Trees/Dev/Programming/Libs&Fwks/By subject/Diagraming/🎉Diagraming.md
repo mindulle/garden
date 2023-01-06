@@ -17,15 +17,16 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart
+	HERE[&#127881Diagraming]
+	subgraph mermaid.js
+		mermaid[&#127881mermaid.js]
+	end
+	HERE --> mermaid.js
+```
 
 # Featured list
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/🎉mermaid.js|🎉mermaid.js]]

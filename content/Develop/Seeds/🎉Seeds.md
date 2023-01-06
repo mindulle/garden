@@ -17,23 +17,32 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- ![[Develop/Seeds/📦assets/_Seeds 2022-10-14 20.48.06.excalidraw]]
+```mermaid
+flowchart LR
+	HERE[&#127881Seeds]
+	subgraph seedsContents
+		grocery[&#127881Grocery]
+		shovel[&#127881Shovel]
+		storage[&#127881Storage]
+	end
+	subgraph features
+		distribute[&#127793Distribute]
+		orchestrate[&#127931Orchestrate]
+		resources[&#128666Resources]
+	end
+	HERE --> seedsContents
+	HERE --> features
+```
 - [[Develop/Seeds/Grocery/🎉Grocery|🎉Grocery]]
 - [[Develop/Seeds/Shovel/🎉Shovel|🎉Shovel]]
 - [[Develop/Seeds/Storage/🎉Storage|🎉Storage]]
 
 # Features
-- List up frequently used features.
 - [[Develop/Seeds/🌱Distribute|🌱Distribute]] : 씨앗을 분류하기 위한 옵시디언 칸반
 - [[Develop/Seeds/🎻Orchestrate|🎻Orchestrate]] : 모은 씨앗을 내가 자주 사용하는 업무용, 학습용 소프트웨어에서 어떻게 정리하고 관리할지를 전략화하여 정리해둔 문서.
+- [[Develop/Seeds/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

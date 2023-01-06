@@ -20,16 +20,21 @@ style: bullet
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
 
-# Receipes
-
-## Receipe map
-- Draw a simple excalidraw scatch to understand how this tool works roughly.
+## Map of contents
+```mermaid
+flowchart LR
+	HERE[&#127881Develop]
+	subgraph Garden
+		direction LR
+		Seeds[&#127881Seeds]
+		Trees[&#127881Trees]
+		Fruits[&#127881Fruits]
+	end
+	HERE --> Garden
+```
 - [[Develop/Seeds/🎉Seeds|🎉Seeds]]
 - [[Develop/Trees/🎉Trees|🎉Trees]]
 - [[Develop/Fruits/🎉Fruits|🎉Fruits]]
-
-## Featured APIs
-- List up frequently used APIs.
 
 ## My issues
 - what design patterns adapated to each features.

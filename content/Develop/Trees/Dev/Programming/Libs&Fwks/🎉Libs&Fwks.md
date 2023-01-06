@@ -17,15 +17,21 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	HERE[&#127881Libs&Fwks]
+	subgraph contents
+		direction LR
+		bySubject[&#127881By subject]
+		database[&#127881Database]
+		fullStack[&#127881FullStack]
+		webBackend[&#127881WebBackend]
+		webFrontend[&#127881WebFrontend]
+	end
+	HERE --> contents
+```
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/🎉By subject|🎉By subject]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/Database/🎉Database|🎉Database]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/FullStack/🎉FullStack|🎉FullStack]]

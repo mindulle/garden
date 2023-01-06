@@ -18,12 +18,19 @@ style: bullet
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
 
-# Receipes
-## Receipe map
-- Draw a simple excalidraw scatch to understand how this tool works roughly.
-- [[Develop/Fruits/📌mindulle/🎉📌mindulle | 🎉📌mindulle]]
 
-## Featured APIs
+# Map of contents
+```mermaid
+flowchart LR
+	HERE[&#127881Fruits]
+	subgraph fruitAccounts
+		mindulle[&#127881mindulle]
+	end
+	HERE --> fruitAccounts
+```
+- [[Develop/Fruits/mindulle/🎉mindulle|🎉mindulle]]
+
+# Features
 - List up frequently used APIs.
 
 ## My issues
@@ -37,9 +44,4 @@ style: bullet
 
 ## From community
 - Glean tips using `mindulle-cli` for digital gardening.
-
-# Version-controled documents
-## vMajor.Minor.patch
-- link to each version's entry point note.
-- list of important changes.
 

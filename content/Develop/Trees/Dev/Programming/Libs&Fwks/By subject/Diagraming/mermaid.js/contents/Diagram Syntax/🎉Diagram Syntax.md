@@ -18,22 +18,23 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-flowchart LR
-	Entry[fa:f641 Diagram Syntax] --> Lists
-	subgraph Syntax
-		direction LR
-		Lists --> ERD[Entity Relationship Diagram]
-		Lists --> FlOW[Flowcahrt]
-		Lists --> REQ[Requirement Diagram]
-		Lists --> SEQ[Sequence Diagram]
-		Lists --> SD[State Diagram]
-	end
-```
 
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	Entry[&#127881Diagram Syntax]
+	subgraph features
+		direction LR
+		ERD[Entity Relationship Diagram]
+		FlOW[Flowcahrt]
+		REQ[Requirement Diagram]
+		SEQ[Sequence Diagram]
+		SD[State Diagram]
+	end
+	Entry --> features
+```
+
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Entity Relationship Diagram|Entity Relationship Diagram]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Flowchart|Flowcahrt]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Requirement Diagram|Requirement Diagram]]

@@ -1,9 +1,9 @@
 ---
 # configs for document itself.
 title: "📚Dictionary"
-lastModified: "2022-12-21"
+lastModified: "2023-01-06"
 
-# field for querying only entry point notes.
+# field for querying only dictionary notes.
 isDictionary: true
 
 # add some tags for specifying particular subjects.
@@ -17,5 +17,3 @@ tags:
 > Definiotn here, __*souce*__.
 - realworld example link
 - (opt) usecase in my document.
-
-## Language Server

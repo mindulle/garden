@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉Exchange"
+title: "🎉Database"
 lastModified: "2022-12-22"
 
 # field for querying only entry point notes.
@@ -9,7 +9,6 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
-  - "dataExchange"
 ---
 ```toc
 style: bullet
@@ -27,11 +26,10 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Data/Trees/Exchange/Languages/🎉Languages|🎉Languages]]
-- [[Data/Trees/Exchange/Formats/🎉Formats|🎉Formats]]
 
 # Features
 - List up frequently used features.
+- [[Data/Save/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

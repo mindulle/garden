@@ -35,3 +35,9 @@ flowchart RL
 	DNS --> |192.0.2.23|ME
 ```
 - RFC [2219](https://datatracker.ietf.org/doc/html/rfc2219) – Use of DNS Aliases for Network Services
+
+# H
+## HTTP
+
+# U
+## URI 

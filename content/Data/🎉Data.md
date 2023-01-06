@@ -26,8 +26,8 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Data/Trees/Save/🎉Save|🎉Database]]
-- [[Data/Trees/Exchange/🎉Exchange|🎉Exchange]]
+- [[Data/Save/🎉Save|🎉Database]]
+- [[Data/Exchange/🎉Exchange|🎉Exchange]]
 
 # Features
 - List up frequently used features.

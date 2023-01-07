@@ -27,7 +27,6 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Seeds/Grocery/Database/Graphql/🎉Graphql|🎉Graphql]]
 - [[Develop/Seeds/Grocery/Database/PostgreSQL/🎉PostgreSQL|🎉PostgreSQL]]
 - [[Develop/Seeds/Grocery/Database/Redis/🎉Redis|🎉Redis]]
 

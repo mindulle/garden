@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉WebBackend"
+title: "🎉Markdown"
 lastModified: "2023-01-07"
 
 # field for querying only entry point notes.
@@ -27,6 +27,7 @@ flowchart LR
 
 # Features
 - List up frequently used features.
+- [[Develop/Trees/Dev/Programming/Languages/Markdown/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

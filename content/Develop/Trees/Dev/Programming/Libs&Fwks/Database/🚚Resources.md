@@ -17,6 +17,7 @@ tags:
 - Documents : well explained documents or official document.
 - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name                                      | Purpose | Documents                                      | Related issues |
-| ----------------------------------------- | ------- | ---------------------------------------------- | -------------- |
+| Name                                      | Purpose | Documents                                                                                                  | Related issues |
+| ----------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------- | -------------- |
 | 세상에서 가장 많이 사용되는 DB의 동작방식 | E-book  | [요약](https://news.hada.io/topic?id=8162) [원본](https://www.compileralchemy.com/books/sqlite-internals/) |                |
+| Lexical Structure - Postgresql                                          | Reference        | [Official Document](https://www.postgresql.org/docs/current/sql-syntax-lexical.html)                       |                |

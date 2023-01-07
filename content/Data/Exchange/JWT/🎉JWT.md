@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉WebBackend"
+title: "🎉JWT"
 lastModified: "2023-01-07"
 
 # field for querying only entry point notes.

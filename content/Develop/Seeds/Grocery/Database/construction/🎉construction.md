@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Redis"
-lastModified: "2022-12-25"
+title: "🎉construction"
+lastModified: "2023-01-08"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -17,18 +17,20 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	You --> |Draw| Content[a Map of contents and features]
+```
+- 
 
 # Features
 - List up frequently used features.
+- [[Develop/Seeds/Grocery/Database/construction/0. Understand Requirements|0. Understand Requirements]]
+- [[Develop/Seeds/Grocery/Database/construction/1. Draw ER Diagram|1. Draw ER Diagram]]
+- [[Develop/Seeds/Grocery/Database/construction/2. Create Tables and Insert datas|2. Create Tables and Insert datas]]
+- [[Develop/Seeds/Grocery/Database/construction/3. Manage and monitors|3. Manage and monitors]]
 
 # Issues
 - what design patterns adapated to each features.

@@ -18,22 +18,16 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
 
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Seeds/Grocery/Database/PostgreSQL/🎉PostgreSQL|🎉PostgreSQL]]
-- [[Develop/Seeds/Grocery/Database/Redis/🎉Redis|🎉Redis]]
+- [[Develop/Seeds/Grocery/Database/construction/🎉construction|🎉construction]]
+
 
 # Features
 - List up frequently used features.
 - [[Develop/Seeds/Grocery/Database/🐝Buzzwords|🐝Buzzwords]]
-- [[Develop/Seeds/Grocery/Database/📚Dictionary|📚Dictionary]]
 - [[Develop/Seeds/Grocery/Database/🚚Resources|🚚Resources]]
 
 # Issues

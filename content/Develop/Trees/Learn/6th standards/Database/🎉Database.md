@@ -29,7 +29,6 @@ erDiagram
 
 # Features
 - List up frequently used features.
-- [[Develop/Seeds/Grocery/Database/📚Dictionary|📚Dictionary]]
 - [[Develop/Trees/Learn/6th standards/Database/🚚Resources|🚚Resources]]
 
 # Issues

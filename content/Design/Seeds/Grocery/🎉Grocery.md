@@ -17,19 +17,22 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Design/Seeds/Grocery/Static Graphic design/🎉Static Graphic design|🎉Static Graphic design]]
-- [[Design/Seeds/Grocery/Dynamic Graphic design/🎉Dynamic Graphic deisgn|🎉Dynamic Graphic deisgn]]
-- [[Design/Seeds/Grocery/Preperations/🎉Preperations|🎉Preperations]]
-- [[Design/Seeds/Grocery/WEB/🎉WEB|🎉WEB]]
+```mermaid
+flowchart LR
+	HERE[&#127881Grocery]
+	subgraph work[Types of designer's work]
+		direction LR
+		brefing&presentation[&#127881Briefing and Presentation]
+		designAssets[&#127881Design Assets]
+		resarch[&#127881Research]
+	end
+	HERE --> work
+```
+- [[Design/Seeds/Grocery/Brefing & Presentation/🎉Brefing & Presentation|🎉Brefing & Presentation]]
+- [[Design/Seeds/Grocery/Design Assets/🎉Design Assets|🎉Design Assets]]
+- [[Design/Seeds/Grocery/Research/🎉Research|🎉Research]]
 
 # Features
 - List up frequently used features.

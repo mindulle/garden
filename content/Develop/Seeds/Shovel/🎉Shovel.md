@@ -21,7 +21,18 @@ style: bullet
 
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	HERE[&#127881Shovel]
+	subgraph triage[Shovel classifications]
+		direction LR
+		manageResources[&#127881manageResources]
+		Search[&#127881search]
+		toolsForWork[&#127881toolsForWork]
+		workAssistnats[&#127881Work Assistants]
+	end
+	HERE --> triage
+```
 - [[Develop/Seeds/Shovel/Manage resources/🎉Manage resources||🎉Manage resources]]
 - [[Develop/Seeds/Shovel/Search/🎉Search|🎉Search]]
 - [[Develop/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]

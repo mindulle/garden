@@ -17,18 +17,15 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
 
 # Features
 - List up frequently used features.
+- [[Non-business/English/🌹Expressions for daily life|🌹Expressions for daily life]]
+- [[Non-business/English/📚Dictionary|📚Dictionary]]
+- [[Non-business/English/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

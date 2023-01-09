@@ -15,15 +15,25 @@ style: bullet
 ```
 
 # TL;DR
-- Grocery에는 주요 학습 개념 중 내가 사용해보고 경험해 본 씨앗만 모아두는 역할을 합니다.
-- 자세한 개념이나 공식 문서 번역은 Tree에서 진행하고
-- Grocery에 작성된 개념은 Tree 레벨에서 인용될 수 있습니다.
-
+- Grocery는 주요 학습 개념 중 내가 사용해보고 경험해 본 씨앗만 모아두는 역할을 합니다.
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	HERE[&#127881Grocery]
+	subgraph triage[Types of developer's work]
+		direction LR
+		configuration[&#127881Configuration]
+		database[&#127881Database]
+		scripting[&#127881Scripting]
+		webBackend[&#127881webBackend]
+		webFrontend[&#127881webFrontend]
+	end
+	HERE --> triage
+```
 - [[Develop/Seeds/Grocery/Configurations/🎉Configurations|🎉Configuration]]
 - [[Develop/Seeds/Grocery/Database/🎉Database|🎉Database]]
+- [[Develop/Seeds/Grocery/Scripting/🎉Scripting|🎉Scripting]]
 - [[Develop/Seeds/Grocery/WebBackend/🎉WebBackend|🎉webBackend]]
 - [[Develop/Seeds/Grocery/WebFrontend/🎉WebFrontend|🎉webFrontend]]
 

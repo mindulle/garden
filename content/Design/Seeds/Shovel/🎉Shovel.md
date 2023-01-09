@@ -17,19 +17,24 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Design/Seeds/Shovel/Work Assistants/🎉Work Assistants|🎉Helper sites]]
+```mermaid
+flowchart LR
+	HERE[&#127881Shovel]
+	subgraph triage[Shovel classifications]
+		direction LR
+		manageResources[&#127881manageResources]
+		Search[&#127881search]
+		toolsForWork[&#127881toolsForWork]
+		workAssistnats[&#127881Work Assistants]
+	end
+	HERE --> triage
+```
 - [[Design/Seeds/Shovel/Manage resources/🎉Manage resources|🎉Manage resources]]
 - [[Design/Seeds/Shovel/Search/🎉Search|🎉Search]]
 - [[Design/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
+- [[Design/Seeds/Shovel/Work Assistants/🎉Work Assistants|🎉Work Assistants]]
 
 # Features
 - List up frequently used features.

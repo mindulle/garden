@@ -11,6 +11,10 @@ tags:
   - "dictionary"
   - "techInterview"
 ---
+
+> [!error] TOO
+> Bring detailed descriptions into [[Develop/Trees/Dev/Programming/Test/🗝️Terminologies|🗝️Terminologies]].
+
 ```toc
 ```
 # B

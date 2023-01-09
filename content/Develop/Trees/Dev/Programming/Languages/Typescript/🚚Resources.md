@@ -10,12 +10,14 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- Name : name of documents
-- Purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- Documents : well explained documents or official document.
-- Related issue : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
+
 
 | Name                                                     | Purpose           | Documents                                                                                             | Related issues                                                                                                                                                                                                                                                                                                                                                   |
 | -------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,4 +31,8 @@ tags:
 | Optional chaining and nullish coalescing in TypeScript   | Read & Understand | [LogRocket Blog Article](https://blog.logrocket.com/optional-chaining-nullish-coalescing-typescript/) |                                                                                                                                                                                                                                                                                                                                                                  |
 | Using JSDOC-Based TypeScript                             | remeber to cod    | [Github gist\|noembed](https://gist.github.com/DeruiDENG/074b15de1ebc23ee8d307c14198c1231)            |                                                                                                                                                                                                                                                                                                                                                                  |
 
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |
 

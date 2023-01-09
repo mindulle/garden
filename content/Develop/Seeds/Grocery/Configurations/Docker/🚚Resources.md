@@ -10,12 +10,13 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- Name : name of documents
-- Purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- Documents : well explained documents or official document.
-- Related issue : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
 | Name                                                                      | Purpose           | Documents                                                                                                                                                                                                                       | Related issues     |
 | ------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -31,4 +32,3 @@ tags:
 | Docker compose 사용법 - 매일 꾸준히, 더 깊이                              | Read & Understand | [blog article](https://engineer-mole.tistory.com/221)                                                                                                                                                                           | 이미지명 예시 포함 |
 | Docker Swarm의 주요 용어, 활성화 방법 및 노드 관리법 살펴보기 ⭐          | Read & Understand | [blog article](https://seongjin.me/docker-swarm-introduction-nodes/)                                                                                                                                                            |                    |
 | How To Remove Docker Images, Containers, and Volumes                                                                          | howto             | [Tech Blog Article](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)                                                                                                        |                    |
-

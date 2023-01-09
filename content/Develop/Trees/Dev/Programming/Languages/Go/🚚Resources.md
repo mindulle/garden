@@ -10,12 +10,13 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- Name : name of documents
-- Purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- Documents : well explained documents or official document.
-- Related issue : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
 | Name                                           | Purpose               | Documents                                                                                                        | Related issues |
 | ---------------------------------------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------- | -------------- |
@@ -24,3 +25,8 @@ tags:
 | Playground                                     | Playground            | [Playground](https://go.dev/play/)                                                                               |                |
 | What is the difference between := and = in Go? | Read & Understand     | [Stack overflow question](https://stackoverflow.com/questions/36512919/what-is-the-difference-between-and-in-go) |                |
 | godoc                                          | tools for development | [Official document](https://pkg.go.dev/golang.org/x/tools/cmd/godoc)                                                                                                                 |                |
+
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |

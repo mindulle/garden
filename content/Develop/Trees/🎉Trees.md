@@ -40,7 +40,7 @@ flowchart LR
 - [[Develop/Trees/Trends/🎉Trends|🎉Trends]] : **동향 파악** 단계에서 정리된 나무[^나무] 모음
 
 # Features
-- [[Develop/Trees/🔖Reading list|🔖Reading list]]
+- [[Develop/Trees/🔖Reading list as developer|🔖Reading list as developer]]
 
 # Issues
 - what design patterns adapated to each features.

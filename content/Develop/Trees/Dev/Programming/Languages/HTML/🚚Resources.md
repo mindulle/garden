@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
 title: "🚚Resources"
-lastModified: "2022-12-21"
+lastModified: "2023-01-08"
 
 # field for querying only entry point notes.
 isResources: true
@@ -10,12 +10,13 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- name : name of documents
-- purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- documents : well explained documents or official document.
-- related issue : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
 | name                  | purpose           | documents                                                                   | related issues                    |
 | --------------------- | ----------------- | --------------------------------------------------------------------------- | --------------------------------- |
@@ -25,3 +26,10 @@ tags:
 | Learn Forms - web.dev | Howto             | [web.dev official document](https://web.dev/learn/forms/)                   |                                   |
 | Learn HTML - web.dev  | Howto             | [web.dev official document](https://web.dev/learn/html/)                    |                                   |
 | Emmet Cheat sheet     | Cheat sheet       | [official document](https://docs.emmet.io/cheat-sheet/)                     | [View PDF](http://bit.ly/2mLmFAn) |
+
+
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |
+TODO : https://www.w3schools.com/html/html_emojis.asp

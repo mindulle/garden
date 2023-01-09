@@ -10,12 +10,13 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- Name : name of documents
-- Purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- Documents : well explained documents or official document.
-- Related issue : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
 | Name                                          | Purpose                       | Documents                                                                                          | Related issues |
 | --------------------------------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------- | -------------- |
@@ -30,3 +31,8 @@ tags:
 | 실용적인 프론트엔드 테스트 전략 (3)           | Explain & Example             | [Tech Blog](https://meetup.nhncloud.com/posts/180)                                                 |                |
 | 시각적 회귀 테스트로 서비스 안정성 끌어올리기 | Explain & Example             | [Tech Blog](https://techblog.woowahan.com/7332/)                                                   |                |
 | 스토리북으로 인터렉션 테스트하기              | Explain & Example             | [Tech Blog](https://ui.toast.com/weekly-pick/ko_20220111)                                          |                |
+
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |

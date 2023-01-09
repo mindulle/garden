@@ -22,7 +22,7 @@ style: bullet
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Design/Trees/Des/Color/🎉Color|Color]]
+- [[Design/Trees/Learn/Color/🎉Color|Color]]
 
 # Features
 - List up frequently used features.

@@ -3,13 +3,13 @@ title: Mindulle Garden🌱
 enableToc: true
 ---
 
-# [[Data/🎉Data|🎉Data]]
+# [[Develop/Trees/Ops/manage data/🎉manage Data|🎉Data]]
 
 # [[Develop/🎉Develop|🎉Develop]]
 
 # [[Design/🎉Design|🎉Design]]
 
-# [[Devsigner/🎉Devsigner|🎉Devsigner]]
+# [[private/Device settings/🎉Device settings|🎉Devsigner]]
 
 # [[Non-business/🎉Non-business|🎉Non-business]]
 

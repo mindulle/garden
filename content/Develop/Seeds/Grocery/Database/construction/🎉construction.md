@@ -20,13 +20,14 @@ style: bullet
 
 # Map of contents
 ```mermaid
-flowchart LR
-	You --> |Draw| Content[a Map of contents and features]
+flowchart
+	A[0. Understand Requirements] --> B[1. Draw ER Diagram]
+	B --> C[2. Create Tablees and Insert datas]
+	C --> D[3. Manage and monitors]
+	D --> A
 ```
-- 
 
 # Features
-- List up frequently used features.
 - [[Develop/Seeds/Grocery/Database/construction/0. Understand Requirements|0. Understand Requirements]]
 - [[Develop/Seeds/Grocery/Database/construction/1. Draw ER Diagram|1. Draw ER Diagram]]
 - [[Develop/Seeds/Grocery/Database/construction/2. Create Tables and Insert datas|2. Create Tables and Insert datas]]

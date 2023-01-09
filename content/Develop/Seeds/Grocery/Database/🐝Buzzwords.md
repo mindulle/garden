@@ -40,4 +40,4 @@ tags:
 [^infra]: [[Develop/Seeds/Grocery/Configurations/📚Dictionary|📚Infra Dictionary]]
 
 [^des]: [[Design/Trees/Des/📚Dictionary|📚Des Dictionary]]
-[^graphic]: [[Design/Trees/Graphic/📚Dictionary|📚Graphic Dictionary]]
+[^graphic]: [[Design/Trees/Des/Graphic/📚Dictionary|📚Graphic Dictionary]]

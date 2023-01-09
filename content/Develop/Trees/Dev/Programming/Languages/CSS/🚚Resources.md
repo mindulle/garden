@@ -10,12 +10,13 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- Name : name of documents
-- Purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- Documents : well explained documents or official document.
-- Related issue : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
 | Name                                                     | Purpose                                       | Documents                                                                         | Related issues                                                                                                                                                          |
 | -------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,3 +40,8 @@ tags:
 | chakra⭐                                                 | 🎨UI Framework for simple and clean prototype | [Homepage](https://chakra-ui.com/)                                                |                                                                                                                                                                         |
 | Elastic UI                                               | 🎨UI Framework for business                   | [Homepage](https://elastic.github.io/eui/#/)                                      | [Installation](https://elastic.github.io/eui/#/guidelines/getting-started#installation)                                                                                 |
 | NES.css - NES-style CSS Framework                        | 🤓UI Framework for toy                        | [Homepage](https://nostalgic-css.github.io/NES.css/)                              | [Installation via CDN](https://github.com/nostalgic-css/NES.css#via-cdn)                                                                                                |
+
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |

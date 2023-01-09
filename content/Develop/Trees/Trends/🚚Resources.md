@@ -8,25 +8,31 @@ isResources: true
 
 # add some tags for specifying particular subjects.
 tags:
-  - "resource"
+  - "resources"
 ---
-# Overview
-| Name                                                 | tag | purpose | official documents                                       | pinned issue |
-| ---------------------------------------------------- | --- | ------- | -------------------------------------------------------- | ------------ |
-| What web can do today?                               |     |         | [click](https://whatwebcando.today/)                     |              |
-| Stack overflow anuual developer survey               |     |         | [click](https://insights.stackoverflow.com/survey)       |              |
-| Google trend                                         |     |         | [click](https://trends.google.com/)                      |              |
-| npm trend                                            |     |         | [click](https://npmtrends.com/)                          |              |
-| The State of Developer Ecosystem in 20xx by jetbrain |     |         | [click](https://www.jetbrains.com/lp/devecosystem-2021/) |              |
-| State of CSS                                         |     |         | [click](https://stateofcss.com/en-us/)                   |              |
-| State of Javascript                                  |     |         | [click](https://stateofjs.com/en-us/)                    |              |
-| State of Graphql                                     |     |         | [click](https://www.stateofgraphql.com/en-us/)           |              |
-| Github Awsome series                                 |     |         | [click](https://github.com/sindresorhus/awesome)         |              |
-| openbase                                             |     |         | [click](https://openbase.com/)                           |              |
-| DB-Engines Ranking                                   |     |         | [click](https://db-engines.com/en/ranking)               |              |
-| Web Framework benchmarks                             |     |         | [click](https://www.techempower.com/benchmarks)          |              |
-| Programmers Dev-Survey                               |     |         | [click](https://programmers.co.kr/pages/2022-dev-survey)                                                         |              |
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
+| Name                                                 | Purpose                   | Documents                                                     | Related issues |
+| ---------------------------------------------------- | ------------------------- | ------------------------------------------------------------- | -------------- |
+| What web can do today?                               | Reference                 | [Homepage](https://whatwebcando.today/)                       |                |
+| Google trend                                         | search two or more things | [Search page](https://trends.google.com/)                     |                |
+| npm trend                                            | search two or more things | [Search page](https://npmtrends.com/)                         |                |
+| Stack overflow annual developer survey               | Reference                 | [Statistics](https://insights.stackoverflow.com/survey)       |                |
+| The state of Developer Ecosystem in 20xx by jetbrain | Reference                 | [Statistics](https://www.jetbrains.com/lp/devecosystem-2021)  |                |
+| Programmers Dev-survey                               | Reference                 | [Statistics](https://programmers.co.kr/pages/2022-dev-survey) |                |
+| State of CSS                                         | Reference                 | [Statistics](https://stateofcss.com/en-us/)                   |                |
+| State of javascript                                  | Reference                 | [Statistics](https://stateofjs.com/en-us/)                    |                |
+| State of Graphql                                     | Reference                 | [Statistics](https://www.stateofgraphql.com/en-us/)           |                |
+| DB-engines Ranking                                   | Reference                 | [Statistics](https://db-engines.com/en/ranking)               |                |
+| Web Framework benchmarks                             | Reference                 | [Statistics](https://www.techempower.com/benchmarks)                                                  |                |
 
-# TODO
-- [ ] purpose 에 슬랙 연동을 해 둘지 그냥 수시 참고용으로 쓰일지 같은걸 적어두기. 슬랙 연동같은 경우에는 문서화 하나 해둘 것
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |

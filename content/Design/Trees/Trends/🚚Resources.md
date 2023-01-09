@@ -10,14 +10,20 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- Name : name of documents
-- Purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- Documents : well explained documents or official document.
-- Related issue : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
 | Name                                  | Purpose        | Documents                                        | Related issues |
 | ------------------------------------- | -------------- | ------------------------------------------------ | -------------- |
 | Graphic Design Trends - 99designs.com | follow a trend | [blog reads](https://99designs.com/blog/trends/) |                |
 | The stae of Ux                        | follow a trend | [official website](https://trends.uxdesign.cc/)                                                 |                |
+
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |

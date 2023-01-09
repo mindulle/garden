@@ -10,12 +10,14 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- Name : name of documents
-- Purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- Documents : well explained documents or official document.
-- Related issue : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
+
 
 | Name                                                                       | Purpose           | Documents                                                                           | Related issues                                                              |
 | -------------------------------------------------------------------------- | ----------------- | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -27,3 +29,7 @@ tags:
 | PEP 257 – Docstring Conventions                                            | Specification     | [official document](https://peps.python.org/pep-0257/)                              |                                                                             |
 | PEP 518 - Specifying Minimum Build System Requirements for Python Projects | Specification     | [official document](https://peps.python.org/pep-0518/)                              | [poetry pyproject.toml document](https://python-poetry.org/docs/pyproject/) |
 
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |

@@ -18,15 +18,24 @@ style: bullet
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	HERE[&#127881Seeds]
+	subgraph seedsContents
+		grocery[&#127881Grocery]
+		shovel[&#127881Shovel]
+		storage[&#127881Storage]
+	end
+	subgraph features
+		distribute[&#127793Distribute]
+		orchestrate[&#127931Orchestrate]
+		resources[&#128666Resources]
+	end
+	HERE --> seedsContents
+	HERE --> features
+```
 - [[Design/Seeds/Storage/🎉Storage|🎉Storage]]
 - [[Design/Seeds/Shovel/🎉Shovel|🎉Shovel]]
 - [[Design/Seeds/Grocery/🎉Grocery|🎉Grocery]]

@@ -10,12 +10,13 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- name : name of documents
-- purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- documents : well explained documents or official document.
-- related issues : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
 | name                        | purpose            | documents                                                                             | related issues                                                                                                                    |
 | --------------------------- | ------------------ | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,3 +27,7 @@ tags:
 | ﻿﻿안전한 웹을 위해 HTTPS 이해하기 - 1. HTTPS의 작동 원리                            | Learn & Understand | [Blog Article](https://yozm.wishket.com/magazine/detail/1852/)                        |                                                                                                                                   |
 | Local REST API for Obsidian | Example           | [Swagger document](https://coddingtonbear.github.io/obsidian-local-rest-api/)         |                                                                                                                                   |
 
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |

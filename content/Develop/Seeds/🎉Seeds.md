@@ -15,8 +15,7 @@ style: bullet
 ```
 
 # TL;DR
-- you can summarize contents as a table format.
-- or just write down statements you think it is important within 3 lines.
+- Seeds에 작성된 개념은 Tree 레벨에서 인용될 수 있습니다.
 
 # Map of contents
 ```mermaid

@@ -20,8 +20,20 @@ style: bullet
 
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	HERE[&#127881Design]
+	subgraph Garden
+		direction LR
+		Seeds[&#127881Seeds]
+		Trees[&#127881Trees]
+		Fruits[&#127881Fruits]
+	end
+	HERE --> Garden
+```
 - [[Design/Seeds/🎉Seeds|🎉Seeds]]
+- [[Design/Trees/🎉Trees|🎉Trees]]
+- [[Design/Fruits/🎉Fruits|🎉Fruits]]
 
 # Features
 - List up frequently used features.

@@ -10,6 +10,9 @@ isDictionary: true
 tags:
   - "dictionary"
 ---
+> [!error] TODO
+> Bring detailed descriptions into [[Develop/Trees/Learn/6th standards/Network/🗝️Terminologies|🗝️Terminologies]]
+
 ```toc
 ```
 # C

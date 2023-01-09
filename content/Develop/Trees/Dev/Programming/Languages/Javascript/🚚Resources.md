@@ -10,13 +10,19 @@ isResources: true
 tags:
   - "resources"
 ---
-# Each column means
-- name : name of documents
-- purpose : How can I use this material for my study.
-	- e.g. development, design, demonstration, learn, challenge, etc...
-- documents : well explained documents or official document.
-- related issue : realworld examples such as github issue, showcase blog post, business newletters...
+# 🎓From credible authors...
+> [!info] Each column means
+> - Name : name of documents
+> - Purpose : How can I use this material for my study.
+> 	- e.g. development, design, demonstration, learn, challenge, etc...
+> - Documents : well explained documents or official document.
+> - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
 | name                                    | purpose       | documents | related issues |
 | --------------------------------------- | ------------- | --------- | -------------- |
 | Javascript best practices - w3.org wiki | best practice | [wikidocs](https://www.w3.org/wiki/JavaScript_best_practices)          |                |
+
+# 🌱reading list from my seed storage...
+| link for seed | Purpose | keywords to remeber |
+| ------------- | ------- | ----------------- |
+|               |         |                   |

@@ -1,0 +1,260 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="[!tldr] Theming Adapt your design to match user preferences such as a dark mode.
+ 1  style: bullet   Even branding can be responsive."><title>Theming</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://mindulle.github.io/garden/icon.png><link href=https://mindulle.github.io/garden/styles.706bb6073ba85d26809f9096dae23a6b.min.css rel=stylesheet><link href=https://mindulle.github.io/garden/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://mindulle.github.io/garden/js/darkmode.71fd764547989a0d567451669afd7a55.min.js></script>
+<script src=https://mindulle.github.io/garden/js/util.5e39932758f9ecaf45fd54506ed61416.min.js></script>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
+<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
+<script src=https://mindulle.github.io/garden/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js></script>
+<script src=https://mindulle.github.io/garden/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
+<script src=https://mindulle.github.io/garden/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
+<script src=https://mindulle.github.io/garden/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://mindulle.github.io/garden",fetchData=Promise.all([fetch("https://mindulle.github.io/garden/indices/linkIndex.371ca00ba29fc657aefaab985029a943.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://mindulle.github.io/garden/indices/contentIndex.bd6f48240e8d715e7e5b06ce446bd748.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://mindulle.github.io/garden",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!0;drawGraph("https://mindulle.github.io/garden",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/mindulle.github.io\/garden\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+    attachSPARouting(init, render)
+  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://mindulle.github.io/garden/js/full-text-search.51f0b1753e9b30839d053f8a98cc20d1.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://mindulle.github.io/garden>Mindulle Garden🎉</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Theming</h1><p class=meta>Last updated
+Jan 9, 2023
+<a href=https://github.com/mindulle/garden/tree/hugo/content/Design/Trees/Des/WEB/Responsive%20Design/Prequesites/pre-dev/Theming.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://mindulle.github.io/garden/tags/tree/>Tree</a></li><li><a href=https://mindulle.github.io/garden/tags/responsivedesign/>Responsivedesign</a></li><li><a href=https://mindulle.github.io/garden/tags/web/>Web</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#customize-the-browser-interface>Customize the browser interface</a></li><li><a href=#provide-a-dark-mode>Provide a dark mode</a></li><li><a href=#theming-with-custom-properties>Theming with custom properties</a></li><li><a href=#images>Images</a></li><li><a href=#forms>Forms</a></li><li><a href=#check-your-understanding>Check your understanding</a></li></ol></nav></details></aside><blockquote class=tldr-callout><p>Theming
+Adapt your design to match user preferences such as a dark mode.</p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-toc data-lang=toc><span class=line><span class=cl>style: bullet
+</span></span></code></pre></td></tr></table></div></div><p>Even branding can be responsive. You can adjust the presentation of your website to match the user&rsquo;s preference. But first, here&rsquo;s how to extend your website&rsquo;s branding to include the browser itself.</p><a href=#customize-the-browser-interface><h2 id=customize-the-browser-interface><span class=hanchor arialabel=Anchor># </span>Customize the browser interface</h2></a><p>Some browsers allow you to suggest a theme color based on your website&rsquo;s palette. The browser&rsquo;s interface adapts to your suggested color. Add the color in a <code>meta</code> element named <code>theme-color</code> in the <code>head</code> of your pages.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>meta</span> <span class=na>name</span><span class=o>=</span><span class=s>&#34;theme-color&#34;</span> <span class=na>content</span><span class=o>=</span><span class=s>&#34;#00D494&#34;</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><hr><aside class="aside flow bg-state-info-bg color-state-info-text"><div class=flow>It feels a little strange to put styling information like this in HTML rather than CSS, <b>but this allows the browser to update its interface as soon as the page is loading rather than waiting for the CSS.</b></div></aside><hr><p><img src="https://web-dev.imgix.net/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/bM78eiZbOqwZ5doqKyaQ.png?auto=format" width=auto alt="Clearleft dot com.">
+<img src="https://web-dev.imgix.net/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/kN9Un2PoYIKdVzH9I2Ac.png?auto=format" width=auto alt="Resilient Web Design dot com.">
+<img src="https://web-dev.imgix.net/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/b8AUE0DLJX5uLhJH9kaE.png?auto=format" width=auto alt="The Session dot org."></p><blockquote><p>Three websites are viewed in the Safari browser. Each one has its own theme color that extends into the browser interface.</p></blockquote><p>You can update the value of <code>theme-color</code> using JavaScript. But use this power wisely. It can be overwhelming for users if their browser&rsquo;s color scheme changes too often. Think about subtle ways to adjust the theme color. If the changes are too jarring, users will leave in annoyance.</p><p>You can also specify a theme color in a
+<a href=https://developer.mozilla.org/docs/Web/Manifest rel=noopener>web app manifest</a> file. This is a JSON file with metadata about your website.</p><p>Link to the manifest file from the <code>head</code> of your documents. Use a <code>link</code> element with a <code>rel</code> value of <code>manifest</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;manifest&#34;</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;/manifest.json&#34;</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>In the manifest file, list your metadata using key/value pairs.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>  
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;short_name&#34;</span><span class=p>:</span> <span class=s2>&#34;Clearleft&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;Clearleft design agency&#34;</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;start_url&#34;</span><span class=p>:</span> <span class=s2>&#34;/&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;background_color&#34;</span><span class=p>:</span> <span class=s2>&#34;#00D494&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;theme_color&#34;</span><span class=p>:</span> <span class=s2>&#34;#00D494&#34;</span><span class=p>,</span>  
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;display&#34;</span><span class=p>:</span> <span class=s2>&#34;standalone&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>If a visitor decides to add your website to their home screen, the browser will use the information in your manifest file to display an appropriate shortcut.</p><hr><aside class="aside flow bg-state-info-bg color-state-info-text"><div class=flow>Find out more about how to <a href=/add-manifest/><b>add a web app manifest</b></a>.</div></aside><hr><a href=#provide-a-dark-mode><h2 id=provide-a-dark-mode><span class=hanchor arialabel=Anchor># </span>Provide a dark mode</h2></a><p>Many operating systems allow users to specify a preference for a light or a dark color palette, which is a good idea to optimize your site to your user&rsquo;s theme preferences. You can access this preference in a media feature called <code>prefers-color-scheme</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=p>@</span><span class=k>media</span> <span class=o>(</span><span class=nt>prefers-color-scheme</span><span class=o>:</span> <span class=nt>dark</span><span class=o>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=o>//</span> <span class=nt>Styles</span> <span class=nt>for</span> <span class=nt>a</span> <span class=nt>dark</span> <span class=nt>theme</span><span class=o>.</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div style=height:400px;width:100%><iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" src="https://codepen.io/web-dot-dev/embed/wvrwLgN?height=400&theme-id=dark&default-tab=css%2C%20result&editable=true" style=height:100%;width:100%;border:0 title="Pen wvrwLgN by web-dot-dev on Codepen" loading=lazy></iframe></div><p><video controls loop draggable=true><source src=https://storage.googleapis.com/web-dev-uploads/video/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/hpMyDvtHUyLPz0ltO6SS.mp4 type=video/mp4></video></p><p>Specify theme colors with the <code>prefers-color-scheme</code> media feature within the <code>meta</code> element.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>meta</span> <span class=na>name</span><span class=o>=</span><span class=s>&#34;theme-color&#34;</span> <span class=na>content</span><span class=o>=</span><span class=s>&#34;#ffffff&#34;</span> <span class=na>media</span><span class=o>=</span><span class=s>&#34;(prefers-color-scheme: light)&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>meta</span> <span class=na>name</span><span class=o>=</span><span class=s>&#34;theme-color&#34;</span> <span class=na>content</span><span class=o>=</span><span class=s>&#34;#000000&#34;</span> <span class=na>media</span><span class=o>=</span><span class=s>&#34;(prefers-color-scheme: dark)&#34;</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>You can also use the <code>prefers-color-scheme</code> media feature inside SVG. If you use an SVG file for your favicon, it can be adjusted for dark mode.
+<a href=https://web.dev/authors/thomassteiner/ rel=noopener>Thomas Steiner</a> wrote about <strong><a href=https://blog.tomayac.com/2019/09/21/prefers-color-scheme-in-svg-favicons-for-dark-mode-icons/ rel=noopener><code>prefers-color-scheme</code> in SVG favicons for dark mode icons</a>.</strong></p><a href=#theming-with-custom-properties><h2 id=theming-with-custom-properties><span class=hanchor arialabel=Anchor># </span>Theming with custom properties</h2></a><p>If you use the same color values in multiple places throughout your CSS, it could be quite tedious to repeat all your selectors within a <code>prefers-color-scheme</code> media query.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>body</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>background-color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nt>input</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>background-color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>border-color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nt>button</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>background-color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>@</span><span class=k>media</span> <span class=o>(</span><span class=nt>prefers-color-scheme</span><span class=o>:</span> <span class=nt>dark</span><span class=o>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>body</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>background-color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=p>}</span>  
+</span></span><span class=line><span class=cl>  <span class=nt>input</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>background-color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>    
+</span></span><span class=line><span class=cl>    <span class=k>border-color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=p>}</span>  
+</span></span><span class=line><span class=cl>  <span class=nt>button</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>background-color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=k>color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Use CSS custom properties to store your color values. <strong>Custom properties</strong> work like <strong>variables in a programming language.</strong> You can update the value of a variable without updating its name.</p><p>If you update the values of your custom properties within a <code>prefers-color-scheme</code> media query, you won&rsquo;t have to write all your selectors twice.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>html</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nv>--page-color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=nv>--ink-color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>@</span><span class=k>media</span> <span class=o>(</span><span class=nt>prefers-color-scheme</span><span class=o>:</span> <span class=nt>dark</span><span class=o>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>html</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nv>--page-color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>--ink-color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nt>body</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>background-color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>page</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>ink</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nt>input</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>background-color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>page</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=k>color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>ink</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>  
+</span></span><span class=line><span class=cl>  <span class=k>border-color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>ink</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nt>button</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>background-color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>ink</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=k>color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>page</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><div style=height:440px;width:100%><iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" src="https://codepen.io/web-dot-dev/embed/qBPWzrj?height=440&theme-id=dark&default-tab=css%2Cresult&editable=true" style=height:100%;width:100%;border:0 title="Pen qBPWzrj by web-dot-dev on Codepen" loading=lazy></iframe></div><p>See
+<a href=https://web.dev/building-a-color-scheme/ rel=noopener>building a color scheme</a> for more advanced examples of theming with custom properties.</p><a href=#images><h2 id=images><span class=hanchor arialabel=Anchor># </span>Images</h2></a><p>If you are using SVGs in your HTML, you can apply custom properties there too.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>svg</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>stroke</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>ink</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=n>fill</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>page</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>Now your icons will change their colors along with the other elements on your page.</p><p>If you want to tone down the brightness of your photographic images when displayed in dark mode, you can apply a filter in CSS.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=p>@</span><span class=k>media</span> <span class=o>(</span><span class=nt>prefers-color-scheme</span><span class=o>:</span> <span class=nt>dark</span><span class=o>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>img</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>filter</span><span class=p>:</span> <span class=nb>brightness</span><span class=p>(</span><span class=mf>.8</span><span class=p>)</span> <span class=nb>contrast</span><span class=p>(</span><span class=mf>1.2</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p><img src="https://web-dev.imgix.net/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/j4Hkz0lwHv1HOr3Qd6Wc.png?auto=format" width=auto alt="Three photographs at normal brightness.">
+<img src="https://web-dev.imgix.net/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/ChcCHA1JLRX4F2IaLOXR.png?auto=format" width=auto alt="Three photographs with slightly less brightness."></p><blockquote><p>The effect is subtle, but you can tone down the brightness of images in dark mode.</p></blockquote><p>For some images, you might want to swap them out completely in dark mode. For example, you might want to show a map with a darker color scheme. Use the <code>&lt;picture></code> element containing a <code>&lt;source></code> element with the <code>prefers-color-scheme</code> media query.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>picture</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>source</span> <span class=na>srcset</span><span class=o>=</span><span class=s>&#34;darkimage.png&#34;</span> <span class=na>media</span><span class=o>=</span><span class=s>&#34;(prefers-color-scheme: dark)&#34;</span><span class=p>&gt;</span>  
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>img</span> <span class=na>src</span><span class=o>=</span><span class=s>&#34;lightimage.png&#34;</span> <span class=na>alt</span><span class=o>=</span><span class=s>&#34;A description of the image.&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>picture</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><div style=height:600px;width:100%><iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" src="https://codepen.io/web-dot-dev/embed/MWEgMmw?height=600&theme-id=dark&default-tab=html%2Cresult&editable=true" style=height:100%;width:100%;border:0 title="Pen MWEgMmw by web-dot-dev on Codepen" loading=lazy></iframe></div><p><video controls loop draggable=true><source src=https://storage.googleapis.com/web-dev-uploads/video/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/8Sz0XmotUrwnbprrHtoZ.mp4 type=video/mp4></video></p><p><img src="https://web-dev.imgix.net/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/aX6PmKj8pQudiWgt4x31.png?auto=format" width=auto alt="Two maps of Broolyn, one using light colors and the other using dark colors."></p><p>Two versions of the same map, one for light mode and one for dark mode.</p><a href=#forms><h2 id=forms><span class=hanchor arialabel=Anchor># </span>Forms</h2></a><p>Browsers provide a default color palette for form fields. Let the browser know that your site offers both a dark and a light mode. That way, the browser can provide the appropriate default styling for forms.</p><p>Add this to your CSS:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>html</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>color-scheme</span><span class=p>:</span> <span class=n>light</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>@</span><span class=k>media</span> <span class=o>(</span><span class=nt>prefers-color-scheme</span><span class=o>:</span> <span class=nt>dark</span><span class=o>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>html</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>color-scheme</span><span class=p>:</span> <span class=n>dark</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>You can also use HTML. Add this in the <code>head</code> of your documents:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>meta</span> <span class=na>name</span><span class=o>=</span><span class=s>&#34;supported-color-schemes&#34;</span> <span class=na>content</span><span class=o>=</span><span class=s>&#34;light dark&#34;</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><div style=height:400px;width:100%><iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" src="https://codepen.io/web-dot-dev/embed/dyVbBWZ?height=400&theme-id=dark&default-tab=result&editable=true" style=height:100%;width:100%;border:0 title="Pen dyVbBWZ by web-dot-dev on Codepen" loading=lazy></iframe></div><p><video controls loop draggable=true><source src=https://storage.googleapis.com/web-dev-uploads/video/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/6YuAM0ZCNhGNAjpI8fyT.mp4 type=video/mp4></video></p>Use the [`accent-color`](https://web.dev/accent-color/) property in CSS to style checkboxes, radio buttons, and some other form fields.<div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>html</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>accent-color</span><span class=p>:</span> <span class=kc>red</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>It&rsquo;s common for dark themes to have subdued brand colors. You can update the <code>accent-color</code> value for dark mode.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>html</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>accent-color</span><span class=p>:</span> <span class=kc>red</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>@</span><span class=k>media</span> <span class=o>(</span><span class=nt>prefers-color-scheme</span><span class=o>:</span> <span class=nt>dark</span><span class=o>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>html</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>accent-color</span><span class=p>:</span> <span class=kc>pink</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>It makes sense to use a custom property for this so you can keep all your color declarations in one place.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>html</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>color-scheme</span><span class=p>:</span> <span class=n>light</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=nv>--page-color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=nv>--ink-color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=nv>--highlight-color</span><span class=p>:</span> <span class=kc>red</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>@</span><span class=k>media</span> <span class=o>(</span><span class=nt>prefers-color-scheme</span><span class=o>:</span> <span class=nt>dark</span><span class=o>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>html</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>color-scheme</span><span class=p>:</span> <span class=n>dark</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=nv>--page-color</span><span class=p>:</span> <span class=kc>black</span><span class=p>;</span>    
+</span></span><span class=line><span class=cl>    <span class=nv>--ink-color</span><span class=p>:</span> <span class=kc>white</span><span class=p>;</span>    
+</span></span><span class=line><span class=cl>    <span class=nv>--highlight-color</span><span class=p>:</span> <span class=kc>pink</span><span class=p>;</span>  
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nt>html</span> <span class=p>{</span>  <span class=n>accent-color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=n>highlight</span><span class=o>-</span><span class=kc>color</span><span class=p>);}</span><span class=nt>body</span> <span class=p>{</span>  <span class=k>background-color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>page</span><span class=o>-</span><span class=kc>color</span><span class=p>);</span>  <span class=k>color</span><span class=p>:</span> <span class=nf>var</span><span class=p>(</span><span class=o>--</span><span class=kc>ink</span><span class=o>-</span><span class=kc>color</span><span class=p>);}</span>
+</span></span></code></pre></td></tr></table></div></div><div style=height:400px;width:100%><iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" src="https://codepen.io/web-dot-dev/embed/WNZeqjB?height=400&theme-id=dark&default-tab=result&editable=true" style=height:100%;width:100%;border:0 title="Pen WNZeqjB by web-dot-dev on Codepen" loading=lazy></iframe></div><p><video controls loop draggable=true><source src=https://storage.googleapis.com/web-dev-uploads/video/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/Dl00EnG4mwTbSQIkYBF9.mp4 type=video/mp4></video></p><hr><aside class="aside flow bg-state-info-bg color-state-info-text"><div class=flow>For more on tinting elements with theme colors, see the section on <a href=https://web.dev/accent-color/#extra-more-tinting><b>more tinting</b></a>.</div></aside><hr><p>Providing a dark mode is just one example of adapting your site to suit your user&rsquo;s preferences. Next you&rsquo;ll learn how to make your adaptable to all sorts of
+<a href=https://web.dev/learn/design/accessibility/ rel=noopener>accessibility</a> considerations.</p><a href=#check-your-understanding><h2 id=check-your-understanding><span class=hanchor arialabel=Anchor># </span>Check your understanding</h2></a><hr><p>웹 페이지 외부에서 브라우저에게 테마 컬러를 넘겨주고 싶다면 아래 목록에 있는 것들을 사용하세요.</p><ul><li>웹 앱 매니페스트 파일<ul><li>manifest.json 파일은 모바일 홈스크린 화면에서부터 앱이 열렸을 때 어떤 테마 색상으로 보일 지에 대한 값을 지정하고 제공할 수 있는 필드를 포함하고 있습니다.</li><li>manifest.json 파일에서 모바일 테마 색상 지정도 가능하다는 얘기.</li></ul></li><li>&rsquo;theme-color&rsquo; <code>&lt;meta></code> 태그<ul><li>원치않는 눈뽕이나 시각적 테러 없이 OS에서 제공되는 테마 값을 브라우저가 읽어 브라우저에서도 스무스하게 동일한 테마를 미리 적용시킬 수 있다는 얘기</li></ul></li></ul><p>유저의 시스템에서 테마 정보를 읽어오고 싶다면</p><ul><li>css에서 prefer-color-scheme 미디어 쿼리를 사용하거나<ul><li>라이트든 다크든 가져온 뒤 원하는 식으로 미디어 쿼리를 적용시키세요</li></ul></li><li>자바스크립트로 가져오세요.<ul><li>가져온 뒤 css에서 미디어 쿼리 문법을 적용해서 현재 선택된 테마가 무엇인지 알아내세요.</li></ul></li></ul><p>테마는 가져왔는데 form태그가 다 여전히
+새하얗거나 테마가 적용이 안되었을 수 있어요. 그럴땐 당황하지 말고</p><ul><li>html { color-scheme: light dark; } 구문을 css에 추가하세요.<ul><li>이 css를 적용하면 css를 이용해 테마를 적용해 줄 수 있습니다.</li></ul></li><li><code>&lt;meta name="supported-color-schemes" content="light dark"></code> 를 html 헤드 태그에 추가하세요.<ul><li>이 태그를 추가해주면 html이 알아서 테마에 맞게 input 태그를 수정해 줄 것입니다.</li></ul></li><li>아니면 수동으로 input 태그에 css를 다 따로 작성 할 수도 있습니다.<ul><li>가능이야 하지만. 공수가 많이 들 것입니다.</li></ul></li></ul><hr></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://mindulle.github.io/garden/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Mindulle using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://mindulle.github.io/garden>Home</a></li><li><a href=https://github.com/mindulle>Github</a></li></ul></footer></div></div></body></html>

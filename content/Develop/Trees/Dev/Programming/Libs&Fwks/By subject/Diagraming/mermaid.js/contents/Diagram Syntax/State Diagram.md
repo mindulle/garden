@@ -1,3 +1,51 @@
+---
+# configs for document itself.
+title: "State Diagram"
+lastModified: "2023-01-10"
+visibility: "public"
+
+# configs for annotating data to obsidian dataview plugin.
+noteImportance: ⭐⭐⭐⭐
+noteStatus: "finished"
+noteCertanity: "certain"
+noteField:
+  - "develop"
+  - "devsigner"
+notePurpose:
+  - "background"
+  - "individual"
+  - "business"
+noteTimeliness:
+  - "lts"
+
+# configs for selecting tree type.
+treeType:
+  - "learn"
+treePurpose:
+  - "webClipping"
+
+# configs to decide whether external contents are appropriate to me or not.
+contentLevel:
+  - "beginner"
+  - "intermediate"
+  - "professional"
+contentRepresentation:
+  - "text"
+  - "img"
+contentPurpose:
+  - "howto"
+  - "reference"
+  - "realworld"
+contentOrigin:
+  - "technicalDocument"
+
+# configs for querying particular datas to specify notes which have been noted expirences related to particular subject.
+# e.g. performance optimization using lighthouse in web development environments:
+# tags=[#tree, #web, #lighthouse, #perfOpt]
+tags:
+  - "tree"
+  - "mermaidjs"
+---
 ```toc
 style: bullet
 max_depth: 3

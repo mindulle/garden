@@ -38,7 +38,7 @@ contentPurpose:
   - "realworld"
 contentOrigin:
   - "technicalDocument"
-  - 
+
 # configs for querying particular datas to specify notes which have been noted expirences related to particular subject.
 # e.g. performance optimization using lighthouse in web development environments:
 # tags=[#tree, #web, #lighthouse, #perfOpt]

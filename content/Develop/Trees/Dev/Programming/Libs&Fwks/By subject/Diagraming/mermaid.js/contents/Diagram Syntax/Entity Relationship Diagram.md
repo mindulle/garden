@@ -6,7 +6,7 @@ visibility: "public"
 
 # configs for annotating data to obsidian dataview plugin.
 noteImportance: ⭐⭐⭐⭐⭐
-noteStatus: "in progress"
+noteStatus: "finished"
 noteCertanity: "certain"
 noteField:
   - "develop"

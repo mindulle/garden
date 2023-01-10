@@ -30,6 +30,7 @@ erDiagram
 
 # Features
 - List up frequently used features.
+- [[Develop/Seeds/Grocery/Configurations/Docker/⚡Cheat sheet|⚡Cheat sheet]]
 - [[Develop/Seeds/Grocery/Configurations/Docker/🚚Resources|🚚Resources]]
 
 # Issues

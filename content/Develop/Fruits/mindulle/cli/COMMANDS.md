@@ -221,7 +221,7 @@ __SCOPE__
 - MANAGE(add, remove, list)
 
 ## database
-- ROLE(SQL, Cyper, Graphql)
+- QUERYLANG (SQL, Cyper, Graphql)
 - PURPOSE(snippet, practical, realworld, reproduce)
 - ACTION(clipboard, docs, example, print)
 - MANAGE(add, remove, list)
@@ -337,7 +337,7 @@ __OPTIONS__
 ## postdev
 - operation에 해당하는 작업들(백엔드 작업 포함, operate, deploy, monitoring, etc...) 을 수행하기 위한 스크립트 모음
 
-## ping
+## request
 ### 문법과 예시
 ```shell
 $ mindulle ping TARGET [PROTOCOL]
@@ -368,8 +368,8 @@ __PROTOCOL__
 - `mindulle ping TARGET --PROTOCOL_NAME` 의 형태로 사용합니다.
 - TODO : 아래 표 채워두기
 
-| Name             | origin curl command                                                       | example                                                 | Description                                                                     |
-| ---------------- | ------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| get-page-content | `curl https://example.com`                                                | `mindulle ping DB --get-page-content`                   | 타겟 url의 HTTP 응답을 출력합니다.                                              |
-| send-json        | `curl -X POST [URL] -H "Content-Type: application/json" -d "[JSON data]"` | `mindulle ping BLOG mock.json `                         | 타겟 url에 헤더에 JSON 타입 요청임이 명시된 HTTP 요청을 보고 결과값을 출력합니다. |
-| submit-form-data | `curl [URL] -F key1=value1 -F key2=value2 -F key2=@filename`              | `mindulle ping API --submit-form-data="key/value data"` | 타겟 url에 key/value 형태의 폼 데이터를 제출하고 그 결과값을 출력합니다.                                                                                |
+| Name             | origin curl command                                                       | example                                                 | Description                                                                       |
+| ---------------- | ------------------------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| get-page-content | `curl https://example.com`                                                | `mindulle request DB --get-page-content`                   | 타겟 url의 HTTP 응답을 출력합니다.                                                |
+| send-json        | `curl -X POST [URL] -H "Content-Type: application/json" -d "[JSON data]"` | `mindulle request BLOG mock.json `                         | 타겟 url에 헤더에 JSON 타입 요청임이 명시된 HTTP 요청을 보고 결과값을 출력합니다. |
+| submit-form-data | `curl [URL] -F key1=value1 -F key2=value2 -F key2=@filename`              | `mindulle request API --submit-form-data="key/value data"` | 타겟 url에 key/value 형태의 폼 데이터를 제출하고 그 결과값을 출력합니다.          |

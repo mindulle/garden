@@ -1,9 +1,6 @@
 ---
 last-modified: 2022-09-30
 ---
-```toc
-style: bullet
-```
 # [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/Component/React/React-three/Tutorials/_Tutorials]]
 > [!tip] play with codesanddbox!
 > 

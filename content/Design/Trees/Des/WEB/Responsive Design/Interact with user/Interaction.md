@@ -49,9 +49,6 @@ tags:
 
 > [!tldr] Interaction
 > Prepare your pages for different input mechanism; mouse, keyboard, and touch.
-```toc
-style: bullet
-```
 
 Small screen devices like mobile phones often have touchscreens. Large screen devices like laptops and desktop computers often come with hardware like a mouse or a trackpad. It’s tempting to equate small screens with touch and large screens with pointers.
 

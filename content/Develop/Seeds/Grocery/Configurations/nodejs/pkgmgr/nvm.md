@@ -1,9 +1,6 @@
 ---
 last-modified: "2022-11-18"
 ---
-```toc
-style: bullet
-```
 # install nvm in liunx
 ## install
 ```shell

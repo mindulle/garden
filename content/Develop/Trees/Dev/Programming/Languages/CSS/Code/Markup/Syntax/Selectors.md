@@ -26,9 +26,6 @@ tags:
 CSS는 이를 수행하는 다양한 방법을 제공합니다.  
 이 모듈에서 탐색할 수 있습니다.
 <figure><div class="audio-player cluster"><img sizes="(min-width: 80px) 80px, calc(100vw - 48px)" src="https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format" srcset="https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=80 80w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=91 91w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=104 104w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=119 119w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=135 135w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=154 154w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=160 160w" alt="" class="audio-player__thumbnail" decoding="async" height="80" loading="lazy" width="80"><div class="audio-player__inner flow"><div class="audio-player__title">CSS 팟캐스트 - 002: 선택기</div><audio src="https://traffic.libsyn.com/secure/thecsspodcast/TCP_CSS_Podcast__Episode_002_v2.0_FINAL.mp3?dest-id=1891556" class="audio-player__element" controls="" id="audio-player"></audio></div></div><figcaption class="visually-hidden">An audio version of this module</figcaption></figure>
-```toc
-style: bullet
-```
 
 `<article>`의 첫 번째 단락인 경우에만 더 크게 빨간색으로 표시하고 싶은 텍스트가 있는 경우 어떻게 합니까?
 

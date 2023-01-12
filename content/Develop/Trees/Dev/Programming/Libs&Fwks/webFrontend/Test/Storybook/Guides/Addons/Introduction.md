@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style:bullet
-```
 # Introduction to addons
 Addons extend Storybook with features and integrations that are not built into the core. Most Storybook features are implemented as addons. For instance: [documentation](https://storybook.js.org/docs/react/writing-docs/introduction), [accessibility testing](https://github.com/storybookjs/storybook/tree/master/addons/a11y), [interactive controls](https://storybook.js.org/docs/react/essentials/controls), among others. The [addon API](https://storybook.js.org/docs/react/addons/addons-api) makes it easy for you to configure and customize Storybook in new ways. There are countless addons made by the community that unlock time-saving workflows.
 

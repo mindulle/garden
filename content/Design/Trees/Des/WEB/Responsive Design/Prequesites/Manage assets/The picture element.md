@@ -48,9 +48,7 @@ tags:
 ---
 > [!tldr] The picture element
 > Exercise more creative control over your images.
-```toc
-style: bullet
-```
+
 [The previous module](https://web.dev/learn/design/responsive-images/) demonstrated how the `srcset` attribute allows you to provide different-sized versions of the same image. The browser can then decide which is the right version to use. If you want to change the image completely, you'll need the [`picture`](https://developer.mozilla.org/docs/Web/HTML/Element/picture) element.
 
 In the same way that `srcset` builds upon the `src` attribute, the `picture` element builds upon the `img` element. The `picture` element wraps around an `img` element.

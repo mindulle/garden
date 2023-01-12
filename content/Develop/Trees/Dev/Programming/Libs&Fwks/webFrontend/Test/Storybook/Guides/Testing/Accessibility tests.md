@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Accessibility tests
 Accessibility is the practice of making websites inclusive to all. That means supporting requirements such as: keyboard navigation, screen reader support, touch-friendly, usable color contrast, reduced motion, and zoom support.
 

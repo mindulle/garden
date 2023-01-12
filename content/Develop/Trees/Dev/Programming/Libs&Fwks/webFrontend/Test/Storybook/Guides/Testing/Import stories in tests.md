@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Import stories in tests
 Teams test a variety of UI characteristics using different tools. Each tool requires you to replicate the same component state over and over. That’s a maintenance headache. Ideally, you’d set up your tests in the same way and reuse that across tools.
 

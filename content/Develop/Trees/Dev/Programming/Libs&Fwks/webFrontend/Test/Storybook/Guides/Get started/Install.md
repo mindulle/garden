@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Install Storybook
 
 Use the Storybook CLI to install it in a single command. Run this inside your _existing project’s_ root directory:

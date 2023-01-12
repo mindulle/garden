@@ -50,9 +50,6 @@ tags:
 > [!tldr] Theming
 > Adapt your design to match user preferences such as a dark mode.
 
-```toc
-style: bullet
-```
 Even branding can be responsive. You can adjust the presentation of your website to match the user's preference. But first, here's how to extend your website's branding to include the browser itself.
 
 ## Customize the browser interface

@@ -6,7 +6,7 @@ lastModified: "2023-01-10"
 # configs for annotating data to obsidian dataview plugin.
 noteImportance: ⭐⭐⭐⭐
 noteStatus: "in progress"
-noteCertanity: "/certain"
+noteCertanity: "certain"
 noteField:
   - "develop"
 notePurpose:

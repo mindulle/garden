@@ -27,9 +27,6 @@ tags:
   - "tree"
   - "web"
 ---
-```toc
-style: bullet
-```
 
 # Class diagram for my workfolw
 ![[Develop/Trees/Learn/Realworld/webFrontend/Fundamentals/Assets/(todo)_Web Develop Fundamentals 2022-10-18 19.42.22.excalidraw]]

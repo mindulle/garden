@@ -6,10 +6,6 @@ tags:
   - bundler
   - vite
 ---
-```toc
-style: bullet
-```
-
 # Vite
 - summrize here.
 - [[Develop/Seeds/Grocery/Configurations/nodejs/bundler/Vite|Contents]]

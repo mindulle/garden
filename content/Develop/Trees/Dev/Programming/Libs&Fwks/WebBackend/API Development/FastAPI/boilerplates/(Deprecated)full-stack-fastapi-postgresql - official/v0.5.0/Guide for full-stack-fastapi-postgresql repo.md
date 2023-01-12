@@ -41,10 +41,6 @@ contentOrigin:
 tags:
   - "tree"
 ---
-```toc
-style: bullet
-max_depth: 3
-```
 ## Backend Requirements
 
 -   [Docker](https://www.docker.com/).

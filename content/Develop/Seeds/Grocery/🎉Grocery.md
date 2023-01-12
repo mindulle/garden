@@ -10,10 +10,6 @@ isEntryPoint: true
 tags:
   - "entrypoint"
 ---
-```toc
-style: bullet
-```
-
 # TL;DR
 - Grocery는 주요 학습 개념 중 내가 사용해보고 경험해 본 씨앗만 모아두는 역할을 합니다.
 

@@ -14,9 +14,6 @@ tags:
 ---
 > [!tldr] Introduction
 > Find out where responsive design came from.
-```toc
-style: bullet
-```
 
 Right from the start, the World Wide Web was designed to be agnostic. It doesn't matter what hardware you've got. It doesn't matter what operating system your device is running. As long as you can connect to the internet, the World Wide Web is accessible to you.
 

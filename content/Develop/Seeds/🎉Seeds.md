@@ -10,10 +10,6 @@ isEntryPoint: true
 tags:
   - "entrypoint"
 ---
-```toc
-style: bullet
-```
-
 # TL;DR
 - Seeds에 작성된 개념은 Tree 레벨에서 인용될 수 있습니다.
 

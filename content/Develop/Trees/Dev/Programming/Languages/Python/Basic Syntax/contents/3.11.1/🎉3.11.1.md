@@ -10,9 +10,6 @@ isEntryPoint: true
 tags:
   - "entrypoint"
 ---
-```toc
-style: bullet
-```
 
 # TL;DR
 - you can summarize contents as a table format.

@@ -10,8 +10,6 @@ isDictionary: true
 tags:
   - "dictionary"
 ---
-```toc
-```
 # D
 ## Dictionary
 > Definiotn here, __*souce*__.

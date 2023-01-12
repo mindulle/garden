@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style:bullet
-```
 # Snapshot tests
 Snapshot tests compare the rendered markup of every story against known baselines. It’s a way to identify markup changes that trigger rendering errors and warnings.
 

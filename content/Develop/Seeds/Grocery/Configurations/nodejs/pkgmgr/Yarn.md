@@ -1,9 +1,6 @@
 ---
 last-modified: "2022-11-18"
 ---
-```toc
-style: bullet
-```
 # sdks
 ## yarn vscode sdks install
 

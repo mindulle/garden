@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Stories for multiple components
 
 It's useful to write stories that [render two or more components](https://storybook.js.org/docs/react/writing-stories/introduction#stories-for-two-or-more-components) at once if those components are designed to work together. For example, `ButtonGroups`, `Lists`, and `Page` components. Here's an example with `List` and `ListItem` components:

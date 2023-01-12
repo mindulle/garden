@@ -48,9 +48,7 @@ tags:
 ---
 > [!tldr] Internationalization
 > Prepare your designs for different languages and writing modes.
-```toc
-style: bullet
-```
+
 The World Wide Web is available to everyone in the world—it's right there in the name! That means that your website is potentially available to anyone who has access to the internet, regardless of where they are, what device they're using, or what languages they speak.
 
 The goal of responsive design is to make your content available to everyone. Applying that same philosophy to human languages is the driving force behind internationalization—preparing your content and designs for an international audience.

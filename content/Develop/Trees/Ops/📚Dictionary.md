@@ -10,8 +10,6 @@ isDictionary: true
 tags:
   - "dictionary"
 ---
-```toc
-```
 
 # S
 ## Software release life cycle

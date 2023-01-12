@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # How to write stories
 A story captures the rendered state of a UI component. It’s a function that returns a component’s state given a set of arguments.
 

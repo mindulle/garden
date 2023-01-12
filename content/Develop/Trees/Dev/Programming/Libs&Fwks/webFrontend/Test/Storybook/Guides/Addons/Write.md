@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Write an addon
 One of Storybook's main features is its robust addon ecosystem. Use addons to enhance and extend your development workflow. This page shows you how to create your own addon.
 

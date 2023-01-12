@@ -11,8 +11,6 @@ tags:
   - "dictionary"
   - "techInterview"
 ---
-```toc
-```
 # C
 ## Command Line Interface
 > A **command-line interpreter** or **command-line processor** uses a **command-line interface** (**CLI**) to receive [commands](https://en.wikipedia.org/wiki/Command_(computing) "Command (computing)") from a user in the form of lines of text. (...) **_[wikipedia](https://en.wikipedia.org/wiki/Command-line_interface)_**

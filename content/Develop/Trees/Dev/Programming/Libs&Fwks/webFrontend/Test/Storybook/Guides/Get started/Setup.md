@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Setup Storybook
 
 Now that you’ve learned what stories are and how to browse them, let’s demo working on one of your components.

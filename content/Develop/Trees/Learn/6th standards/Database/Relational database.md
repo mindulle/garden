@@ -34,9 +34,6 @@ tags:
   - "tree"
   - "database"
 ---
-```toc
-style: bullet
-```
 # TL;DR
 ## Situation
 - most cases to save datas.

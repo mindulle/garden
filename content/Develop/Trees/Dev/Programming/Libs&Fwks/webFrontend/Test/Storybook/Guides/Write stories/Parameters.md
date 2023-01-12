@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Parameters
 
 Parameters are a set of static, named metadata about a story, typically used to control the behavior of Storybook features and addons.

@@ -11,9 +11,6 @@ tags:
   - "entrypoint"
   - "challenge"
 ---
-```toc
-style: bullet
-```
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
 - 

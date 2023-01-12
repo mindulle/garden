@@ -11,10 +11,6 @@ tree-timeliness:
 tags:
   - tree
 ---
-```toc
-style: bullet
-```
-
 # Profile
 
 # Repos

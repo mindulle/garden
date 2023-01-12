@@ -47,10 +47,6 @@ tags:
   - "obsidian"
   - "toolsForWork"
 ---
-```toc
-style: bullet
-```
-
 # Markdown
 ## Frequently used
 ## Documents & Specs

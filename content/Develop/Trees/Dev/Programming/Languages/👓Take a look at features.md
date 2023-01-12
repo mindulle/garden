@@ -10,9 +10,6 @@ isLookOverTheFeatures: true
 tags:
   - "lookOverTheFeatures"
 ---
-```toc
-style: bullet
-```
 # Overview
 ## Basic syntax
 | Feature name | Python | Javascript & Typescript | Go  |

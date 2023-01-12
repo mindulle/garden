@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Write a preset
 
 [Storybook preset addons](https://storybook.js.org/docs/react/addons/addon-types#preset-addons) are grouped collections of `babel`, `webpack`, and `addons` configurations that support specific use cases in Storybook, such as TypeScript or MDX support.

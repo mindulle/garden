@@ -46,10 +46,6 @@ tags:
   - "tree"
   - "mermaidjs"
 ---
-```toc
-style: bullet
-max_depth: 3
-```
 ## State diagrams 🌱
 
 > "A state diagram is a type of diagram used in computer science and related fields to describe the behavior of systems. State diagrams require that the system described is composed of a __finite number of states__; sometimes, this is indeed the case, while at other times this is a reasonable abstraction." **_Wikipedia_**

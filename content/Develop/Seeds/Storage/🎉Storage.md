@@ -10,10 +10,6 @@ isEntryPoint: true
 tags:
   - "entrypoint"
 ---
-```toc
-style: bullet
-```
-
 # TL;DR
 - Storage는 주요 학습 개념이지만 아직 경험해보지 못했고 호기심이 생기는 씨앗만 모아두는 역할을 합니다.
 

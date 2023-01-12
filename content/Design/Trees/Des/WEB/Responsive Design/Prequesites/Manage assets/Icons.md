@@ -50,10 +50,6 @@ tags:
 > [!tldr] Icons
 > Use SVG for scalable responsive iconography.
 
-```toc
-style: bullet
-```
-
 Most images are part of your content, but icons are part of your user interface. They should scale and adapt in the same way that the text of your UI scales and adapts.
 
 ## Scalable Vector Graphics

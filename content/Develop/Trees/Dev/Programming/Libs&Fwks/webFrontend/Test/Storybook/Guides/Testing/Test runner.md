@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 Storybook test runner turns all of your stories into executable tests. It is powered by [Jest](https://jestjs.io/) and [Playwright](https://playwright.dev/).
 
 -   For those [without a play function](https://storybook.js.org/docs/react/writing-stories/introduction): it verifies whether the story renders without any errors.

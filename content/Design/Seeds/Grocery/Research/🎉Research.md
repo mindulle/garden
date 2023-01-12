@@ -10,10 +10,6 @@ isEntryPoint: true
 tags:
   - "entrypoint"
 ---
-```toc
-
-```
-
 
 
 # [storybook design system](https://storybook.js.org/showcase)

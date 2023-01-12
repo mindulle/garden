@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Loaders (experimental)
 Loaders (experimental) are asynchronous functions that load data for a story and its [decorators](https://storybook.js.org/docs/react/writing-stories/decorators). A story's loaders run before the story renders, and the loaded data injected into the story via its render context.
 

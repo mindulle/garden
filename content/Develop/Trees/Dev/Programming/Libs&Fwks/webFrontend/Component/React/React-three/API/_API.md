@@ -4,12 +4,6 @@ last-modifiied: 2022-09-30
 
 > [!tldr] Table of Contents에서
 >  마우스 커서만 올려도 모든 콘텐츠를 편하게 미리보기 할 수 있어요 😆
-
-```toc
-style: bullet
-max_depth: 1
-```
-
 # [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/Component/React/React-three/API/Canvas]]
 - ## [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/Component/React/React-three/API/Canvas#Render Props]]
 - ## [[Develop/Trees/Dev/Programming/Libs&Fwks/WebFrontend/Component/React/React-three/API/Canvas#Render defaults]]

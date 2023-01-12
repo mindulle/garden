@@ -16,10 +16,6 @@ content-purpose:
 tags:
   - "tree"
 ---
-```toc
-style: bullet
-max_depth: 3
-```
 # README
 | ![readme.so \|300 ](https://readme.so/screenshot.png)    |
 | :---: |

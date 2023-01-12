@@ -10,13 +10,7 @@ isEntryPoint: true
 tags:
   - "entrypoint"
 ---
-
-```toc
-style: bullet
-```
-
 # TL;DR
-
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
 

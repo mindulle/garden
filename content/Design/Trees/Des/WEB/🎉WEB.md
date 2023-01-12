@@ -12,8 +12,4 @@ tags:
   - "web"
   - "tree"
 ---
-```toc
-style: bullet
-```
-
 # [[Design/Seeds/Grocery/Research/🎉Research]]

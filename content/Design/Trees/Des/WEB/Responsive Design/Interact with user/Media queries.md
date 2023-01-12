@@ -50,9 +50,6 @@ tags:
 > [!tldr] Media queries
 > Adapt your designs to different screen sizes using CSS media queries.
 
-```toc
-style: bullet
-```
 Designers can adjust their designs to accommodate users. The clearest example of this is the form factor of a user's device; its width, the device aspect ratio, and so on. Using media queries, designers can respond to these different form factors.
 
 Media queries are initiated with the `@media` keyword (a CSS at-rule), and can be used for a variety of use cases.

@@ -20,6 +20,3 @@ content-purpose:
 tags:
   - tree
 ---
-```toc
-style: bullet
-```

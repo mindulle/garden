@@ -26,9 +26,6 @@ tags:
 이 모듈에서는 브라우저가 사용할 것을 선택하는 방법과 이 선택을 제어하는 방법을 알아봅니다.
 <figure><div class="audio-player cluster"><img sizes="(min-width: 80px) 80px, calc(100vw - 48px)" src="https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format" srcset="https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=80 80w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=91 91w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=104 104w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=119 119w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=135 135w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=154 154w,     https://web-dev.imgix.net/image/forR0vJZKULb5AGJExlazy1xYDgI2/ECDb0qa4TB7yUsHwBic8.png?auto=format&amp;w=160 160w" alt="" class="audio-player__thumbnail" decoding="async" height="80" loading="lazy" width="80"><div class="audio-player__inner flow"><div class="audio-player__title">CSS 팟캐스트 - 004: 캐스케이드</div><audio src="https://traffic.libsyn.com/secure/thecsspodcast/TCP_CSS_Podcast__Episode_004_v1.0_FINAL.mp3?dest-id=1891556" class="audio-player__element" controls="" id="audio-player"></audio></div></div><figcaption class="visually-hidden">An audio version of this module</figcaption></figure>
 
-```toc
-style: bullet
-```
 CSS는 Cascading Stylesheets의 약자입니다. 캐스케이드는 여러 ==CSS 규칙이 HTML 요소에 적용되는 충돌을 해결하기 위한 알고리즘==입니다. 다음 CSS로 스타일이 지정된 버튼의 텍스트가 파란색이 되는 이유입니다.
 
 ```css

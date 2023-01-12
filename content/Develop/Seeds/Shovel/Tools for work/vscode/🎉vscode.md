@@ -45,10 +45,6 @@ tags:
   - "vscode"
   - "toolsForWork"
 ---
-```toc
-style: bullet
-```
-
 # Code Edit
 ## Frequently used features
 1. peek : 몰래 엿보기 기능

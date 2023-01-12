@@ -1,10 +1,6 @@
 ---
 last-modified: "2022-11-22"
 ---
-```toc
-style: bullet
-```
-
 # Data
 - [Faker](https://faker.readthedocs.io/)
 - [mocakroo](https://www.mockaroo.com/)

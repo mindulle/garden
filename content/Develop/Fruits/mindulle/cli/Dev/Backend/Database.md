@@ -1,6 +1,3 @@
-```toc
-style: bullet
-```
 # Manage seed
 ## UI sktech
 ### case 1 : SeedType 선택 전

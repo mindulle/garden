@@ -10,8 +10,21 @@ isDictionary: true
 tags:
   - "dictionary"
 ---
-```toc
-```
+# A
+## Admire
+> B1 : to [find](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/find "find") someone or something [attractive](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/attractive "attractive") and [pleasant](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/pleasant "pleasant") to [look](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/look "look") at
+- We [stood](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/stood "stood") for a few [moments](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/moment "moments"), admiring the [view](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/view "view").
+- I was just admiring [your](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/your "your") [jacket](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/jacket "jacket"), Delia.
+
+> B2 : to [respect](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/respect "respect") and [approve](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/approve "approve") of someone or [their](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/their "their") [behaviour](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/behaviour "behaviour"):
+- I admired him **for** his [determination](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/determination "determination").
+- I really admire [people](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/people "people") who can [work](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/work "work") in such [difficult](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/difficult "difficult") [conditions](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/conditions "conditions")
+
+# B
+##  Bustle
+> to do things in a [hurried](https://dictionary.cambridge.org/dictionary/english/hurried "hurried") and [busy](https://dictionary.cambridge.org/dictionary/english/busy "busy") way **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/bustle)_**
+- Thora bustled around the [house](https://dictionary.cambridge.org/dictionary/english/house "house"), getting everything [ready](https://dictionary.cambridge.org/dictionary/english/ready "ready").
+
 # C
 ## Consensus
 > a [generally](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/generally "generally") [accepted](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/accepted "accepted") [opinion](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/opinion "opinion") or [decision](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/decision "decision") among a [group](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/group "group") of [people](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/people "people"): **_[Cambridge Dictionary](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/consensus)_**
@@ -55,6 +68,7 @@ tags:
 - **get/keep something in perspective**
 - **put something in(to) perspective**
 - 기하적으로 쓰일땐 원근법이란 의미도 있음.
+
 # R 
 ## Raft
 > a [flat](https://dictionary.cambridge.org/dictionary/english/flat "flat") [floating](https://dictionary.cambridge.org/dictionary/english/floating "floating") [structure](https://dictionary.cambridge.org/dictionary/english/structure "structure") for [travelling](https://dictionary.cambridge.org/dictionary/english/travelling "travelling") [across](https://dictionary.cambridge.org/dictionary/english/across "across") [water](https://dictionary.cambridge.org/dictionary/english/water "water"), often made of [pieces](https://dictionary.cambridge.org/dictionary/english/piece "pieces") of [wood](https://dictionary.cambridge.org/dictionary/english/wood "wood") [tied](https://dictionary.cambridge.org/dictionary/english/tie "tied") [roughly](https://dictionary.cambridge.org/dictionary/english/roughly "roughly") together and [moved](https://dictionary.cambridge.org/dictionary/english/moved "moved") along with a [paddle](https://dictionary.cambridge.org/dictionary/english/paddle "paddle") (= [pole](https://dictionary.cambridge.org/dictionary/english/pole "pole") with a [flat](https://dictionary.cambridge.org/dictionary/english/flat "flat") end): **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/raft)_**
@@ -67,6 +81,11 @@ tags:
 - Clinton and Zedillo [ordered](https://dictionary.cambridge.org/dictionary/english/ordered "ordered") [their](https://dictionary.cambridge.org/dictionary/english/their "their") respective [Cabinets](https://dictionary.cambridge.org/dictionary/english/cabinet "Cabinets") to [devise](https://dictionary.cambridge.org/dictionary/english/devise "devise") a [common](https://dictionary.cambridge.org/dictionary/english/common "common") counter-drug [strategy](https://dictionary.cambridge.org/dictionary/english/strategy "strategy").
 
 # S
+## Serenity
+> the [quality](https://dictionary.cambridge.org/dictionary/english/quality "quality") of being [peaceful](https://dictionary.cambridge.org/dictionary/english/peaceful "peaceful") and [calm](https://dictionary.cambridge.org/dictionary/english/calm "calm") **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/serenity)_**
+- I [admired](https://dictionary.cambridge.org/dictionary/english/admire "admired") her serenity in the [midst](https://dictionary.cambridge.org/dictionary/english/midst "midst") of so much [chaos](https://dictionary.cambridge.org/dictionary/english/chaos "chaos").
+- The [hotel](https://dictionary.cambridge.org/dictionary/english/hotel "hotel") [offers](https://dictionary.cambridge.org/dictionary/english/offer "offers") a [tranquil](https://dictionary.cambridge.org/dictionary/english/tranquil "tranquil") haven of [peace](https://dictionary.cambridge.org/dictionary/english/peace "peace") and serenity, away from the [bustle](https://dictionary.cambridge.org/dictionary/english/bustle "bustle") of the [city](https://dictionary.cambridge.org/dictionary/english/city "city").
+
 ## Shamelessly
 > in a way that [shows](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/show "shows") that you are not [ashamed](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/ashamed "ashamed"), [especially](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/especially "especially") about something [generally](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/generally "generally") [considered](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/considered "considered") [unacceptable](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/unacceptable "unacceptable"): _**[Cambridge Dictionary](https://dictionary.cambridge.org/us/dictionary/english/shamelessly)**_
 - The [company](https://dictionary.cambridge.org/us/dictionary/english/company "company") has shamelessly [abandoned](https://dictionary.cambridge.org/us/dictionary/english/abandoned "abandoned") [its](https://dictionary.cambridge.org/us/dictionary/english/its "its") [principles](https://dictionary.cambridge.org/us/dictionary/english/principle "principles").
@@ -75,3 +94,8 @@ tags:
 ## Supposedly
 > used to show that you do not [believe](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/believe "believe") that something you have been told is [true](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/true "true"): **_[Cambridge Dictionary](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/supposedly)_**
 - Well, the [tickets](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/ticket "tickets") are supposedly in the [mail](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/mail "mail").
+
+# T
+## Tranquil
+> [calm](https://dictionary.cambridge.org/dictionary/english/calm "calm") and [peaceful](https://dictionary.cambridge.org/dictionary/english/peaceful "peaceful") and without [noise](https://dictionary.cambridge.org/dictionary/english/noise "noise"), [violence](https://dictionary.cambridge.org/dictionary/english/violence "violence"), [worry](https://dictionary.cambridge.org/dictionary/english/worry "worry"), etc.:
+- She [stared](https://dictionary.cambridge.org/dictionary/english/stare "stared") at the tranquil [surface](https://dictionary.cambridge.org/dictionary/english/surface "surface") of the [water](https://dictionary.cambridge.org/dictionary/english/water "water").

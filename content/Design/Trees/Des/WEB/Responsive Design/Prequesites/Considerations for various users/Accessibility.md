@@ -50,10 +50,6 @@ tags:
 > [!tldr] Accessibility
 > Ensure that your website is available to everyone.
 
-```toc
-style: bullet
-```
-
 Allowing your pages to respond to different screen sizes is just one way of making sure your website is accessible to as many people as possible. Consider some of these other factors that you should keep in mind.
 
 ## Color vision deficiency

@@ -46,10 +46,6 @@ tags:
   - "css"
   - "web"
 ---
-```toc
-style: bullet
-```
-
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
 - ![[Develop/Trees/Dev/Programming/Languages/CSS/📦assets/_CSS MAP|_CSS MAP]]

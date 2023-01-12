@@ -42,9 +42,6 @@ tags:
   - "shovel"
   - "bash"
 ---
-```toc
-style: bullet
-```
 # Automate your startup programs
 ## Windows
 ### Docker desktop

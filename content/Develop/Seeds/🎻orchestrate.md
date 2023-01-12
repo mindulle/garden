@@ -1,8 +1,3 @@
-
-```toc
-style: bullet
-```
-
 # 슬랙
 
 # 메일

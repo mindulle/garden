@@ -6,10 +6,6 @@ tags:
   - bundler
   - vite
 ---
-```toc
-style: bullet
-```
-
 # vite.config.js
 ## sourcemap
 - https://vitejs.dev/config/build-options.html#build-sourcemap

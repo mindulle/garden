@@ -2,10 +2,6 @@
 > [!quote] Chrome devtools tips by Google Chrome Developers
 > [📽️Playlist by google chrome developers youtube](https://www.youtube.com/playlist?list=PLNYkxOF6rcIAcezfL8q0rjt13ufKseL5X)
 
-```toc
-style: bullet
-```
-
 # Episodes
 ## [How to edit and extend user flows with Recorder and Puppeteer Replay](https://www.youtube.com/watch?v=LBgzmqzp7ew&list=PLNYkxOF6rcIAcezfL8q0rjt13ufKseL5X&index=2&ab_channel=GoogleChromeDevelopers)
 ### TODO : Summary

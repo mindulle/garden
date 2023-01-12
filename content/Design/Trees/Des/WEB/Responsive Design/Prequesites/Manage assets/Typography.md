@@ -48,9 +48,6 @@ tags:
 ---
 > [!tldr] Typography
 > Make your text legible and beautiful, no matter where it appears.
-```toc
-style: bullet
-```
 
 If you don't specify any styles for your text, browsers will apply their own default styles. These are called *User Agent stylesheets*, and may vary from browser to browser. Users can set their own preferences for displaying text too.
 

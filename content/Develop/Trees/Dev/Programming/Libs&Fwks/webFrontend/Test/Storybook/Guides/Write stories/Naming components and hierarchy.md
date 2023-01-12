@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style: bullet
-```
 # Naming components and hierachy
 The title of the component you export in the `default` export controls the name shown in the sidebar.
 

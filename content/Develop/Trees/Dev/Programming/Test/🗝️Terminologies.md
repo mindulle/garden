@@ -10,9 +10,6 @@ isDictionary: true
 tags:
   - "terminologies"
 ---
-```toc
-style: bullet
-```
 TODO : Bring explanations about TDD and BDD in dictionary.
 # Term1
 ## Title of important subject

@@ -44,10 +44,6 @@ tags:
   - "tree"
   - "postgreSQL"
 ---
-```toc
-style: bullet
-max_depth: 4
-```
 ## 2.6. Joins Between Tables
 Thus far, __our queries have only accessed one table at a time.__ Queries can access multiple tables at once, or access the same table in such a way that multiple rows of the table are being processed at the same time. __Queries that access multiple tables__ (or multiple instances of the same table) at one time __are called *join* queries.__ They combine rows from one table with rows from a second table, with an expression specifying which rows are to be paired. For example, to return all the weather records together with the location of the associated city, the database needs to compare the `city` column of each row of the `weather` table with the `name` column of all rows in the `cities` table, and select the pairs of rows where these values match.[^4] This would be accomplished by the following query:
 

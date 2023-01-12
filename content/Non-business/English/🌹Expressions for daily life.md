@@ -2,9 +2,6 @@
 title: "🌱Vocabularies"
 last-modified: "2022-12-28"
 ---
-```toc
-```
-
 🐶 : 친근한 표현
 🐱 : 까칠한 표현
 🍦 : 부드럽고 공손한 표현

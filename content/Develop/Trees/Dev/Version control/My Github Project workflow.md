@@ -42,10 +42,6 @@ tags:
   - "versionControl"
   - "myIssues"
 ---
-```toc
-style: bullet
-```
-
 # Frequently used
 ## Commands
 ### 

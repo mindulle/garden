@@ -15,8 +15,6 @@ tags:
 > [!error] TOO
 > Bring detailed descriptions into [[Develop/Trees/Dev/Programming/Test/🗝️Terminologies|🗝️Terminologies]].
 
-```toc
-```
 # B
 ## Behavior Driven Development
 > (...) BDD is largely facilitated through the use of a simple [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language "Domain-specific language") (DSL) using natural-language constructs (e.g., English-like sentences) that can express the behaviour and the expected outcomes. (...) **_[wikipedia](https://en.wikipedia.org/wiki/Behavior-driven_development)_**

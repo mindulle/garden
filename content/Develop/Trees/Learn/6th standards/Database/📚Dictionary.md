@@ -10,8 +10,6 @@ isDictionary: true
 tags:
   - "dictionary"
 ---
-```toc
-```
 # C
 ## Candidate key
 > A **candidate key**, or simply a **key**, of a [relational database](https://en.wikipedia.org/wiki/Relation_schema "Relation schema") is a minimal [superkey](https://en.wikipedia.org/wiki/Superkey "Superkey"). In other words, it is any set of columns that have a unique combination of values in each row (which makes it a superkey), with the additional constraint that removing any column would possibly produce duplicate rows (which makes it a minimal superkey).

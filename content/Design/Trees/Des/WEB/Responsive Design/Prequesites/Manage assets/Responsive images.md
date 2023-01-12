@@ -48,9 +48,7 @@ tags:
 ---
 > [!tldr] Responsive images
 > Give your visitors the most appropriate images for their devices and screens.
-```toc
-style:bullet
-```
+
 Text on the web automatically wraps at the edge of the screen so that it doesn't overflow. It's different with images. Images have an intrinsic size. If an image is wider than the screen, the image will overflow, causing a horizontal scrollbar to appear.
 
 Fortunately, you can take measures in CSS to stop this from happening.

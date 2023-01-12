@@ -49,9 +49,6 @@ tags:
   - "test"
   - "web"
 ---
-```toc
-style:bullet
-```
 # Publish Storybook
 Teams publish Storybook online to review and collaborate on works in progress. That allows developers, designers, PMs, and other stakeholders to check if the UI looks right without touching code or requiring a local dev environment.
 

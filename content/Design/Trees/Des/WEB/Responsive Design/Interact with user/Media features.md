@@ -50,10 +50,6 @@ tags:
 > [!tldr] Media features
 > A round-up of all the ways that media features let you respond to devices and preferences.
 
-```toc
-style: bullet
-```
-
 __Responsive design wouldn't be possible without media queries.__ Before media queries there was no way of knowing what kind of device people were using to visit your website. Designers had to make assumptions. Those assumptions were encoded into fixed-width designs or liquid layouts.
 - 미디어 쿼리 이전엔 유저가 어떤 화면을 보는 지 조차 알 수가 없었다네요.. 감사합니다 미디어 쿼리님
 

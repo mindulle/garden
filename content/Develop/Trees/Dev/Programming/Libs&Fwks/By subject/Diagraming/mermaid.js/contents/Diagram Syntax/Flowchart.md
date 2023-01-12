@@ -43,9 +43,6 @@ tags:
   - "tree"
   - "mermaidjs"
 ---
-```toc
-max_depth: 3
-```
 # Flowcharts - Basic Syntax
 
 All Flowcharts are composed of **nodes**, the geometric shapes and **edges**, the arrows or lines. The mermaid code defines the way that these **nodes** and **edges** are made and interact.

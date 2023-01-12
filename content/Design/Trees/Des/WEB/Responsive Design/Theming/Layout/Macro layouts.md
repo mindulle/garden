@@ -50,9 +50,7 @@ tags:
 
 > [!tldr] Macro layouts
 > Design page layouts using a choice of CSS techniques.
-```toc
-style:bullet
-```
+
 Macro layouts describe the larger, page-wide organization of your interface.
 
 ![A wireframe of a two column layout, next to the same layout as one column for a narrow view.](https://web-dev.imgix.net/image/HodOHWjMnbNw56hvNASHWSgZyAf2/HoOnH9yMrSY6MhQdRNRZ.jpeg?auto=format)

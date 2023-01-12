@@ -1,6 +1,3 @@
-```toc
-style: bullet
-```
 # About FE
 ## Envs
 ### Package management

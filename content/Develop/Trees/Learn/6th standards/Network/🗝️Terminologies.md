@@ -10,9 +10,6 @@ isDictionary: true
 tags:
   - "terminologies"
 ---
-```toc
-style: bullet
-```
 TODO : Bring explnantion of CNAME from dictionary.
 # Term1
 ## Title of important subject

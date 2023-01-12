@@ -4,10 +4,6 @@ tags:
   - tree
   - data
 ---
-```toc
-style: bullet
-```
-
 # JSON
 - [json.org](https://www.json.org/)
 - [Google Json style guide](https://google.github.io/styleguide/jsoncstyleguide.xml)

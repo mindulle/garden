@@ -11,10 +11,10 @@ tags:
   - "quickReference"
 ---
 # Shortcuts
-| Name                     | key bindings | Target(If needed)                                                                               | Importance |
-| ------------------------ | :------------: | ----------------------------------------------------------------------------------------------- | ---------- |
-| Reveal just one layer    | Alt + click  | ![[Design/Seeds/Shovel/Tools for work/Photoshop/📦assets/Pasted image 20221223005105.png\|200]] | ⭐⭐⭐     |
-| Fill or Adjustment layer | click        | ![[Design/Seeds/Shovel/Tools for work/Photoshop/📦assets/Pasted image 20221223005658.png\|200]] | ⭐⭐⭐⭐⭐           |
+| Name                     | key bindings | Target(If needed)                                                                               | Importance | Note |
+| ------------------------ |:------------:| ----------------------------------------------------------------------------------------------- | ---------- | ---- |
+| Reveal just one layer    | Alt + click  | ![[Design/Seeds/Shovel/Tools for work/Photoshop/📦assets/Pasted image 20221223005105.png\|200]] | ⭐⭐⭐     |      |
+| Fill or Adjustment layer |    click     | ![[Design/Seeds/Shovel/Tools for work/Photoshop/📦assets/Pasted image 20221223005658.png\|200]] | ⭐⭐⭐⭐⭐ |      |
 
 # My cheat sheet 
 > Origin cheat sheets here.

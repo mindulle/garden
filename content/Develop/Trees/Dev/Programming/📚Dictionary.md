@@ -43,6 +43,20 @@ tags:
 ## Mixin
 > [객체 지향 프로그래밍 언어](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)에서 믹스인(**mixin** 또는 **mix-in**)은 다른 클래스의 부모클래스가 되지 않으면서 다른 클래스에서 사용할 수 있는 메서드를 포함하는 [클래스](https://ko.wikipedia.org/wiki/%ED%81%B4%EB%9E%98%EC%8A%A4_(%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D) "클래스 (컴퓨터 프로그래밍)")이다. 다른 클래스가 믹스인의 메소드에 액세스하는 방법은 언어에 따라 다르다. 믹스인은 때때로 "상속"이 아니라 "포함"으로 설명된다. **_[wikipedia](https://en.wikipedia.org/wiki/Mixin)_**
 - 믹스인은 깍두기다.
+# N
+## New line
+> **새줄 문자**(newline)는 [텍스트](https://ko.wikipedia.org/wiki/%ED%85%8D%EC%8A%A4%ED%8A%B8 "텍스트")의 한 줄이 끝남을 표시하는 [문자](https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%9E%90 "문자") 또는 [문자열](https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%9E%90%EC%97%B4 "문자열")이다. **개행 문자**, **줄바꿈 문자**(line break), **EOL**(end-of-line)과 같은 뜻이다. **_[wikipedia](https://ko.wikipedia.org/wiki/%EC%83%88%EC%A4%84_%EB%AC%B8%EC%9E%90)_**
+- 유닉스 계열 운영체제에서, line feed: `'\n'`, carriage return: `\r` 
+- 프린터에서 줄을 바꾸며 좌우로 움직이는 장치의 이름이 캐리지였단다.
+[캐리지 리턴과 라인피드에 관한 스택 오버플로우 답변](https://stackoverflow.com/questions/1761051/difference-between-n-and-r)
+| OS                                        | character which mean end of line(EOL) |
+| ----------------------------------------- | ------------------------------------- |
+| Unix-like Systems                         | `\n`                                  |
+| C and most programming language           | `\n`                                  |
+| Old mac                                   | `\r`                                  |
+| Windows                                   | `\r\n`                                |
+| standard line-termination on the internet | `\r\n`                                |
+
 
 # R
 ## Read–eval–print loop(REPL)

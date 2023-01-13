@@ -20,6 +20,11 @@ tags:
 - I admired him **for** his [determination](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/determination "determination").
 - I really admire [people](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/people "people") who can [work](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/work "work") in such [difficult](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/difficult "difficult") [conditions](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/conditions "conditions")
 
+## As is
+> in the [state](https://dictionary.cambridge.org/dictionary/english/state "state") that something is in at the [present](https://dictionary.cambridge.org/dictionary/english/present "present") [time](https://dictionary.cambridge.org/dictionary/english/time "time"): **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/as-is)_**
+- Will you [wait](https://dictionary.cambridge.org/dictionary/english/wait "wait") till it's [finished](https://dictionary.cambridge.org/dictionary/english/finished "finished") or take it [home](https://dictionary.cambridge.org/dictionary/english/home "home") as is?
+- tkae it home : take it easy와 비슷한 맥락인듯.
+
 ## As such
 > using the [exact](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/exact "exact") [meaning](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/meaning "meaning") of the word or phrase: **_[Cambridge Dictionary](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/as-such)_**
 - 다시 말해

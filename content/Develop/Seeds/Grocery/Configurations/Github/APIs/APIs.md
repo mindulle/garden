@@ -1,1 +1,0 @@
-github graphql api explorer : https://docs.github.com/en/graphql/overview/explorer

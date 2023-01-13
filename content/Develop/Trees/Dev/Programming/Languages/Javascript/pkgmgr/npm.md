@@ -7,4 +7,4 @@ npm install -g yarn
 ```
 
 # use yarn
-[[Develop/Seeds/Grocery/Configurations/nodejs/pkgmgr/Yarn]]
+[[Develop/Trees/Dev/Programming/Languages/Javascript/pkgmgr/Yarn]]

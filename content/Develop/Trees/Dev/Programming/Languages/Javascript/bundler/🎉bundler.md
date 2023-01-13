@@ -8,5 +8,5 @@ tags:
 ---
 # Vite
 - summrize here.
-- [[Develop/Seeds/Grocery/Configurations/nodejs/bundler/Vite|Contents]]
+- [[Develop/Trees/Dev/Programming/Languages/Javascript/bundler/Vite|Contents]]
 - 

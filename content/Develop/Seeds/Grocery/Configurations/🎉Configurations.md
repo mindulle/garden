@@ -27,7 +27,7 @@ erDiagram
 
 # Features
 - List up frequently used features.
-- [[Develop/Seeds/Grocery/Configurations/📚Dictionary|📚Dictionary]]
+
 
 # Issues
 - what design patterns adapated to each features.

@@ -21,6 +21,9 @@ tags:
 | name                                    | purpose       | documents | related issues |
 | --------------------------------------- | ------------- | --------- | -------------- |
 | Javascript best practices - w3.org wiki | best practice | [wikidocs](https://www.w3.org/wiki/JavaScript_best_practices)          |                |
+| nodejs api                  | Reference         | [Official document](https://nodejs.org/api/)       | [Buffer](https://nodejs.org/api/buffer.html)               |
+| dotenv로 환경 변수 관리하기 | Read & Understand | [Blog Article](https://www.daleseo.com/js-dotenv/) |                |
+
 
 # 🌱reading list from my seed storage...
 | link for seed | Purpose | keywords to remeber |

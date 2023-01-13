@@ -20,6 +20,11 @@ tags:
 - I admired him **for** his [determination](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/determination "determination").
 - I really admire [people](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/people "people") who can [work](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/work "work") in such [difficult](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/difficult "difficult") [conditions](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/conditions "conditions")
 
+## As such
+> using the [exact](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/exact "exact") [meaning](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/meaning "meaning") of the word or phrase: **_[Cambridge Dictionary](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/as-such)_**
+- 다시 말해
+- Both static and instance public fields are writable, enumerable, and configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance. - MDN Public class fileds -
+
 # B
 ##  Bustle
 > to do things in a [hurried](https://dictionary.cambridge.org/dictionary/english/hurried "hurried") and [busy](https://dictionary.cambridge.org/dictionary/english/busy "busy") way **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/bustle)_**

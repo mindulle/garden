@@ -105,6 +105,10 @@ tags:
 > used to show that you do not [believe](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/believe "believe") that something you have been told is [true](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/true "true"): **_[Cambridge Dictionary](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/supposedly)_**
 - Well, the [tickets](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/ticket "tickets") are supposedly in the [mail](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/mail "mail").
 
+## Stutter
+> to [speak](https://dictionary.cambridge.org/dictionary/english/speak "speak") or say something, [especially](https://dictionary.cambridge.org/dictionary/english/especially "especially") the first [part](https://dictionary.cambridge.org/dictionary/english/part "part") of a word, with [difficulty](https://dictionary.cambridge.org/dictionary/english/difficulty "difficulty"), for [example](https://dictionary.cambridge.org/dictionary/english/example "example") [pausing](https://dictionary.cambridge.org/dictionary/english/pause "pausing") before it or [repeating](https://dictionary.cambridge.org/dictionary/english/repeat "repeating") it several [times](https://dictionary.cambridge.org/dictionary/english/times "times"): **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/stutter)_**
+- She stutters a little, so be [patient](https://dictionary.cambridge.org/dictionary/english/patience "patient") and [let](https://dictionary.cambridge.org/dictionary/english/let "let") her [finish](https://dictionary.cambridge.org/dictionary/english/finish "finish") what she's saying.
+
 # T
 ## Tranquil
 > [calm](https://dictionary.cambridge.org/dictionary/english/calm "calm") and [peaceful](https://dictionary.cambridge.org/dictionary/english/peaceful "peaceful") and without [noise](https://dictionary.cambridge.org/dictionary/english/noise "noise"), [violence](https://dictionary.cambridge.org/dictionary/english/violence "violence"), [worry](https://dictionary.cambridge.org/dictionary/english/worry "worry"), etc.:

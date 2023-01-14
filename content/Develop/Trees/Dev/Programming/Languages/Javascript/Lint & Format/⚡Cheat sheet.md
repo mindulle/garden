@@ -19,22 +19,31 @@ tags:
 | [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) | `yarn add --dev eslint-plugin-prettier` |
 | [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)       | `yarn add --dev eslint-plugin-react`    |
 | [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)           | `yarn add --dev eslint-plugin-vue`      |
-| [eslint-plugin-svelte](https://www.npmjs.com/package/eslint-plugin-svelte)     | `yarn add --dev eslint-plugin-svelte`                                        |
+| [eslint-plugin-svelte](https://www.npmjs.com/package/eslint-plugin-svelte)     | `yarn add --dev eslint-plugin-svelte`   |
+| [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) | `yarn add --dev eslint-plugin-prettier`                                        |
 
 # My cheat sheet
 ## ESLint
 ```yaml {title="eslintrc.yml"}
-# An environment provides predefined global variables. The available environments
-# See this page if you need more informations:
-# https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-environments
+# Docs for env key : https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-environments
+# Docs for overrides key : https://eslint.org/docs/latest/user-guide/configuring/configuration-files#how-do-overrides-work
+# Docs for extends key : # https://eslint.org/docs/latest/user-guide/configuring/configuration-files#how-do-overrides-work
+# Docs for parser key : https://eslint.org/docs/latest/user-guide/configuring/plugins#configure-a-parser
+# Docs for parserOptions key : https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-parser-options
+# Docs for parseroOptions using typescript : https://typescript-eslint.io/linting/typed-linting/monorepos
+
 
 env:
-  # Type of all key's value is boolean. Its value is true or false.
+  # Type of all key's value is boolean. Its value is either true or false.
   # browser: browser global variables.
   # node: Node.js global variables and Node.js scoping.
   # es202X: adds all ECMAScript 202x globals and automatically sets the `ecmaVersion` parser option to 2X-9.
 
-# It is possible to override settings based on file glob patterns
+	# Example settings for command line interface development using es2022 script.
+	node: true
+	es2022: true
+
+
 overrides:
   # Type of file and excludeFiles key can be string or string array.
   # - files: You can specificy files using glob patterns. (e.g. ["bin/*.js*", "lib/*.js"])
@@ -47,22 +56,56 @@ overrides:
       # - error
       # - single
 
+	# Example setting when you want lint only your javascript or typescript code in src directory.
+	files:
+	  - src/*.{js,ts}
+
+
 extends:
-  - standard-with-typescript
-  - plugin:prettier/recommended
-  - plugin:@typescript-eslint/recommended
-  - prettier
+  # shareable configuration package: it's a npm package that exports a configuration object.
+  # There are two commonly used packages, "eslint:recommended" and "eslint:all".
+  # In most cases, use eslint:recommended that has a subset of core rules which report common problems.
+  # If you need specify a particular version of eslint. use eslint:all. It make version of ESlint cannot be changed whatever hapeend.
+  # And If you want to lint your code of frontend library, you can use plugins for various frontend library such as React, vue, svelte, and so on.
+  # e.g. plugin:react/recommended, plugin:vue/vue3-recommended, plugin:svelte/recommended
+  # Lastly, two custom packages to support silly javascript typescript and prettier. use "standard-with-typescript" and "prettier". There's no need to add suffix or preix. just set a plain string value.
+  
+  # Example for project implemented by Reactjs, Typescript, and prettier
+  - eslint:recommended
+  - standard-with-typescript
+  - prettier
+  - plugin:prettier/recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+  - plugin:react/recommended
+
+
+praser: 
+  # By default, Eslint uses Espree as its parser.
+  # But in recent modern javascript development, it's bare to find a proejct that doesn't use typescript and frontend library in realworld development.
+  # So many cases you can casually find another parser option to be set just like '@typescript-eslint/parser' for typescript project.
+  # or "vue-eslint-parser" and addtionally add a one more parser key in parserOptions key set to "@typescript-eslint/parser" for vue proejct with typescript.
+  # You can see an example from here:
+  # https://eslint.vuejs.org/user-guide/#how-to-use-a-custom-parser
+	@typescript-eslint/parser
+
 parserOptions:
+  # ecmaVersion: set to 3, 5(default), 6, 7, 8, 9, 10, 11, 12, 13 or 14, or "latest"
+  # sourceType: script(default) or module if your code is in ECMAScript modules.
+  # project:
+    # - ./tsconfig.json
+    # - (optional value for monorepo) ./packages/*/tsconfig.json
+  # rules:
+    # If some rules so strick that it makes you be annoyed, you can turn off it as below value of rule set to off.
+    # @typescript-eslint/explicit-function-return-type: off
+
+  # Example for project using lateset ECMAScript, module, typescript, and you want turn off the option that annoying you.
   ecmaVersion: latest
   sourceType: module
-  project: "./tsconfig.json"
-rules: { "@typescript-eslint/explicit-function-return-type": "off" }
+  project: ./tsconfig.json
+  rules:
+    @typescript-eslint/explicit-function-return-type: off
 ```
-
-### ESLint + Typescript + React
-```
-```
-### ESLint + Typescript + VUe
 
 ## Prettier
 ```yaml {title="prettierrc.yml"}

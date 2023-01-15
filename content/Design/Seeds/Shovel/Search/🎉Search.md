@@ -1,4 +1,0 @@
-# Dribbble
-# Pinterest
-# Behance
-# Awwwards

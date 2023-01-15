@@ -21,16 +21,14 @@ flowchart LR
 	subgraph triage[Shovel classifications]
 		direction LR
 		manageResources[&#127881manageResources]
-		Search[&#127881search]
 		toolsForWork[&#127881toolsForWork]
-		workAssistnats[&#127881Work Assistants]
+		usefulSites[&#127881Useful sites]
 	end
 	HERE --> triage
 ```
 - [[Design/Seeds/Shovel/Manage resources/🎉Manage resources|🎉Manage resources]]
-- [[Design/Seeds/Shovel/Search/🎉Search|🎉Search]]
 - [[Design/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
-- [[Design/Seeds/Shovel/Work Assistants/🎉Work Assistants|🎉Work Assistants]]
+- [[Design/Seeds/Shovel/Useful sites/🎉Useful sites|🎉Useful sites]]
 
 # Features
 - List up frequently used features.

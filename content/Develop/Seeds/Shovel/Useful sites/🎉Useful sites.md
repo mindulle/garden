@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Work Assistants"
-lastModified: "2022-12-20"
+title: "🎉Useful sites"
+lastModified: "2023-01-15"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -9,26 +9,20 @@ isEntryPoint: true
 # add some tags for specifying particular subjects.
 tags:
   - "entrypoint"
-  - "helperSites"
 ---
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	You --> |Draw| Content[a Map of contents and features]
+```
+- 
 
 # Features
-- [[Design/Seeds/Shovel/Work Assistants/Auto Painters]]
-- [[Design/Seeds/Shovel/Work Assistants/Web assets]]
-- [[Design/Seeds/Shovel/Work Assistants/Graphic design assistances]]
-- [[Design base]]
+- List up frequently used features.
 
 # Issues
 - what design patterns adapated to each features.
@@ -39,9 +33,3 @@ erDiagram
 
 # Showcases
 - construct visual gallery to summarize your expriences.
-
-# 
-
-# [webtoon AI Painter](https://ai.webtoons.com/ko/painter)
-
-# [Fontawesome](https://fontawesome.com/)

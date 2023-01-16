@@ -87,7 +87,7 @@ praser:
   # or "vue-eslint-parser" and addtionally add a one more parser key in parserOptions key set to "@typescript-eslint/parser" for vue proejct with typescript.
   # You can see an example from here:
   # https://eslint.vuejs.org/user-guide/#how-to-use-a-custom-parser
-	@typescript-eslint/parser
+	"@typescript-eslint/parser"
 
 parserOptions:
   # ecmaVersion: set to 3, 5(default), 6, 7, 8, 9, 10, 11, 12, 13 or 14, or "latest"
@@ -113,5 +113,5 @@ parserOptions:
 trailingComma: "es5" 
 tabWidth: 2 
 semi: true 
-singleQuote: flase
+singleQuote: false
 ```

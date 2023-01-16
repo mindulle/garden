@@ -23,6 +23,8 @@ flowchart LR
 
 # Features
 - List up frequently used features.
+- [[Develop/Trees/Dev/Programming/Languages/Javascript/Lint & Format/⚡Cheat sheet|⚡Cheat sheet]]
+- [[Develop/Trees/Dev/Programming/Languages/Javascript/Lint & Format/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

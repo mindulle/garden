@@ -52,6 +52,9 @@ tags:
 - cumbersome [bureaucracy](https://dictionary.cambridge.org/dictionary/english/bureaucracy "bureaucracy")
 - 번거로운
 
+## Downside
+> a [disadvantage](https://dictionary.cambridge.org/dictionary/english/disadvantage "disadvantage") of a [situation](https://dictionary.cambridge.org/dictionary/english/situation "situation"), **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/downside)_**
+
 # I
 ## immerse
 > to [become](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/become "become") [completely](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/completely "completely") [involved](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/involved "involved") in something: **_[Cambridge Dictionary](https://dictionary.cambridge.org/us/dictionary/english/immerse)_**

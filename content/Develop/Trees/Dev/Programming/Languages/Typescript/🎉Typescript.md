@@ -13,11 +13,6 @@ tags:
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
 
 
 # Map of contents
@@ -25,6 +20,9 @@ erDiagram
 
 # Features
 - List up frequently used features.
+- [[Develop/Trees/Dev/Programming/Languages/Typescript/⚡Cheat sheet|⚡Cheat sheet]]
+- [[Develop/Trees/Dev/Programming/Languages/Typescript/🚚Resources|🚚Resources]]
+- 
 
 # Issues
 - what design patterns adapated to each features.

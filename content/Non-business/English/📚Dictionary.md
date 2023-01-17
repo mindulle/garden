@@ -52,6 +52,10 @@ tags:
 - cumbersome [bureaucracy](https://dictionary.cambridge.org/dictionary/english/bureaucracy "bureaucracy")
 - 번거로운
 
+# D
+## Delineate
+> to [describe](https://dictionary.cambridge.org/dictionary/english/describe "describe") or [mark](https://dictionary.cambridge.org/dictionary/english/mark "mark") the [edge](https://dictionary.cambridge.org/dictionary/english/edge "edge") of something, **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/delineate)_**
+
 ## Downside
 > a [disadvantage](https://dictionary.cambridge.org/dictionary/english/disadvantage "disadvantage") of a [situation](https://dictionary.cambridge.org/dictionary/english/situation "situation"), **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/downside)_**
 

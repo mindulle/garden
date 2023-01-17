@@ -39,29 +39,23 @@ tags:
   - "fruit"
   - "mindulle/cli"
 ---
-> [!info] 모든 명령어는 기본적으로
-> 아무런 추가 패러미터를 넘기지 않으면 대화형 인터페이스가 실행됩니다.
 # 공통 변수
-## Category
-- 분자(molecule) 수준의 주제를 선정할 것.
-- 유기체(Organism) 수준의 분류는 learn 명령어에서 이루어짐.
+## Label
+- commit message 기준
 
-| Category                 | Description                                                                                             |
-| ------------------------ | ------------------------------------------------------------------------------------------------------- |
-| none                     | 미분류, 기본값                                                                                          |
-| performance              | 성능 최적화를 위한 카테고리                                                                             |
-| build-excellent-websites | PWA, a11y, Network, securem payments 등 심화된 웹 기능을 위한 카테고리                                  |
-| frameworks               | 다양한 프레임워크를 위한 카테고리                                                                       |
-| lighthouse               | Lighthouse를 위한 카테고리                                                                              |
-| modern-web-patterns      | advanced apps, animation, clipboard, component, files and directory, layout, media, theming, web vitals |
-| cmd-webfront             |                                                                                                         |
-| cmd-webbackend           |                                                                                                         |
-| cmd-database             |                                                                                                         |
-| cmd-env                  |                                                                                                         |
-| cmd-module               |                                                                                                         |
-| cmd-predev               |                                                                                                         |
-| cmd-postdev              |                                                                                                         |
-| cmd-ping                         |                                                                                                         |
+| Label1         | Label2    | Label3          | Label4 |
+| -------------- | --------- | --------------- | --------- |
+| undefined (default) | Implement | Troubleshooting | Build     |
+| Chore          | Ci        | Docs            | Style     |
+| Reafactor      | Perf      | Test            |           |
+
+## Field
+- 분야 기준
+| Field1         | Field2      | Field3       | Field4   |
+| -------------- | ----------- | ------------ | -------- |
+| NONE (default) | WEB_BACKEND | WEB_FRONTEND | DATABASE |
+
+
 
 
 # 학습 목적 명령어
@@ -324,16 +318,16 @@ __OPTIONS__
 
 
 # Script 명령어를 아래 세 명령어로 세분화 해 두세요.
-## predev
+## devScript
 ### 문법과 예시
 ### 용도
 ### 필수
 ### 선택
 
-## postdev
+## opsScript
 - operation에 해당하는 작업들(백엔드 작업 포함, operate, deploy, monitoring, etc...) 을 수행하기 위한 스크립트 모음
 
-## request
+## ping
 ### 문법과 예시
 ```shell
 $ mindulle ping TARGET [PROTOCOL]

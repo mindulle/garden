@@ -12,6 +12,9 @@ tags:
   - "techInterview"
 ---
 # C
+## Callable
+> A **callable object**, in [computer programming](https://en.wikipedia.org/wiki/Computer_programming "Computer programming"), is any object that can be called like a [function](https://en.wikipedia.org/wiki/Subroutine "Subroutine"). **_[wikipedia](https://en.wikipedia.org/wiki/Callable_object)_**
+
 ## Command Line Interface
 > A **command-line interpreter** or **command-line processor** uses a **command-line interface** (**CLI**) to receive [commands](https://en.wikipedia.org/wiki/Command_(computing) "Command (computing)") from a user in the form of lines of text. (...) **_[wikipedia](https://en.wikipedia.org/wiki/Command-line_interface)_**
 - [Windows Commands - microsoft](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
@@ -40,6 +43,10 @@ tags:
 - IDE나 에디터(vim)에서 코드 자동완성 구문 강조등을 제공하는 프로토콜
 
 # M
+## Marshalling
+> [컴퓨터 과학](https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99 "컴퓨터 과학")에서 **마셜링**(marshalling, l을 하나만 사용하여 marshaling이라고도 표기)이란 한 [객체](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99) "객체 (컴퓨터 과학)")의 메모리에서 표현방식을 저장 또는 전송에 적합한 다른 데이터 형식으로 변환하는 과정이다.
+> "마셜링하다"라는 용어는 파이썬 표준 라이브러리(Python standard library)에서 "직렬화하다"는 용어와 동일하게 간주되지만 자바 계열 RFC 2713에서는 동일하게 간주되지 않는다. **_[wikipedia](https://ko.wikipedia.org/wiki/%EB%A7%88%EC%83%AC%EB%A7%81_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99))_**
+
 ## Mixin
 > [객체 지향 프로그래밍 언어](https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)에서 믹스인(**mixin** 또는 **mix-in**)은 다른 클래스의 부모클래스가 되지 않으면서 다른 클래스에서 사용할 수 있는 메서드를 포함하는 [클래스](https://ko.wikipedia.org/wiki/%ED%81%B4%EB%9E%98%EC%8A%A4_(%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D) "클래스 (컴퓨터 프로그래밍)")이다. 다른 클래스가 믹스인의 메소드에 액세스하는 방법은 언어에 따라 다르다. 믹스인은 때때로 "상속"이 아니라 "포함"으로 설명된다. **_[wikipedia](https://en.wikipedia.org/wiki/Mixin)_**
 - 믹스인은 깍두기다.
@@ -63,3 +70,7 @@ tags:
 > **REPL**(read-eval-print loop) 또는 **인터랙티브 톱레벨**(interactive toplevel), **랭기지 셸**(language shell)은 단일 사용자의 입력(예: 단일 [식](https://ko.wikipedia.org/wiki/%EC%8B%9D_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D) "식 (프로그래밍)"))을 취하고 이를 평가(실행)하고 결과를 사용자에게 반환시키는 단순한 상호작용 [컴퓨터 프로그래밍](https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D "컴퓨터 프로그래밍") 환경이다. **_[wikipedia](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop)_**
 - Joël Franusic [Online-REPs-and-REPLs list](http://joel.franusic.com/Online-REPs-and-REPLs)
 - 한줄짜리 커맨드라인
+
+# W
+## Wrapper
+> In the context of software engineering, a wrapper is defined as an **entity** that **encapsulates and hides the underlying complexity** of another entity by means of **well-defined interfaces**. **_[techopedia](https://www.techopedia.com/definition/4389/wrapper-software-engineering)_**

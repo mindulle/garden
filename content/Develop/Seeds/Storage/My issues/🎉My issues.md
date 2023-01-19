@@ -19,6 +19,7 @@ tags:
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Seeds/Storage/My issues/2023/🎉2023|🎉2023]]
 
 
 # Features

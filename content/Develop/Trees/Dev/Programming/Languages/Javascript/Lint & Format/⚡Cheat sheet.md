@@ -56,9 +56,11 @@ overrides:
       # - error
       # - single
 
-	# Example setting when you want lint only your javascript or typescript code in src directory.
-	files:
-	  - src/*.{js,ts}
+	# Example
+- files:
+  - bin/*.js
+  - lib/*.js
+  excludedFiles: "*.test.js"
 
 
 extends:

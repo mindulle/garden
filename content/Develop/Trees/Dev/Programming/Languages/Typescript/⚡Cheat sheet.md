@@ -10,10 +10,8 @@ isCheatSheet: true
 tags:
   - "cheatSheet"
 ---
-
-
-# My cheat sheet
-> Origin cheat sheets here.
+# Playground
+> [Typescript Playground](https://www.typescriptlang.org/play/)
 
 # tsconfig.base.json
 | Name                        | install                                           | extends in `tsconfig.json`                                    |

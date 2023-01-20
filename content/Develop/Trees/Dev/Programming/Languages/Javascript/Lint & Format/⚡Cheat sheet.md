@@ -10,6 +10,24 @@ isCheatSheet: true
 tags:
   - "cheatSheet"
 ---
+# Initialize
+## ESLint
+```shell
+$ yarn dlx eslint --init
+```
+
+```shell
+$ yarn add --dev eslint-config-prettier
+```
+## Prettier
+```yaml {title="prettierrc.yml"}
+# .prettierrc or .prettierrc.yaml
+trailingComma: "es5" 
+tabWidth: 2 
+semi: true 
+singleQuote: false
+```
+
 # Dependencies
 | Name                                                                           | How to install                          |
 | ------------------------------------------------------------------------------ | --------------------------------------- |
@@ -22,7 +40,11 @@ tags:
 | [eslint-plugin-svelte](https://www.npmjs.com/package/eslint-plugin-svelte)     | `yarn add --dev eslint-plugin-svelte`   |
 | [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier) | `yarn add --dev eslint-plugin-prettier`                                        |
 
-# My cheat sheet
+# Playground
+- [ESLint Playground](https://eslint.org/play/)
+- [Prettier Playground](https://prettier.io/playground/)
+
+# Explanations for config files
 ## ESLint
 ```yaml {title="eslintrc.yml"}
 # Docs for env key : https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-environments
@@ -112,8 +134,21 @@ parserOptions:
 ## Prettier
 ```yaml {title="prettierrc.yml"}
 # .prettierrc or .prettierrc.yaml
-trailingComma: "es5" 
+trailingComma: "es5" | "none" | "all" 
 tabWidth: 2 
-semi: true 
-singleQuote: false
+semi: true | false
+singleQuote: false | true
+```
+
+### Overrides
+```yaml
+semi: false 
+overrides: 
+  - files: "*.test.js" 
+    options: 
+      semi: true 
+  - files: 
+      - "*.html" 
+      - "legacy/**/*.js" 
+    options: tabWidth: 4
 ```

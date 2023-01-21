@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Realworld"
-lastModified: "2022-12-27"
+title: "🎉computerGraphics"
+lastModified: "2023-01-20"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -13,19 +13,13 @@ tags:
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Learn/Realworld/cloudComputing/🎉cloudComputing|🎉cloudComputing]]
-- [[Develop/Trees/Learn/Realworld/computerGraphics/🎉computerGraphics|🎉computerGraphics]]
-- [[Develop/Trees/Learn/Realworld/InfraStructure/🎉InfraStructure|🎉InfraStructure]]
-- [[Develop/Trees/Learn/Realworld/webFrontend/🎉webFrontend|🎉webFrontend]]
+```mermaid
+flowchart LR
+	You --> |Draw| Content[a Map of contents and features]
+```
+- 
 
 # Features
 - List up frequently used features.

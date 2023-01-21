@@ -18,8 +18,8 @@ noteTimeliness:
 seedType:
   - "storage"
 seedPurpose:
-  - "myIssue"
-  - "Drawing for Understand"
+  - "My issues"
+  - "Drawing and Understanding"
 
 # configs to decide whether external contents are appropriate to me or not.
 contentLevel:
@@ -34,7 +34,6 @@ contentPurpose:
 # tags=[#seed, #shortTip, #vscode, #extension, #errorHandling]
 tags:
   - "seed"
-  - "coommadLineInterface"
 ---
 # 그리면서 이해하기
 ```mermaid

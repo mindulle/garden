@@ -28,7 +28,7 @@ flowchart LR
 	end
 	HERE --> contents
 ```
-- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/🎉By subject|🎉By subject]]
+- [[Develop/Trees/Dev/Programming/Libs&Fwks/By subject/🎉Advanced|🎉Advanced]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/Database/🎉Database|🎉Database]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/FullStack/🎉FullStack|🎉FullStack]]
 - [[Develop/Trees/Dev/Programming/Libs&Fwks/WebBackend/🎉WebBackend|🎉WebBackend]]

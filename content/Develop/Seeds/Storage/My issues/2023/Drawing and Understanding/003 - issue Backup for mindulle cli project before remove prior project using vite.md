@@ -1,3 +1,32 @@
+---
+# configs for document itself.
+title: "003 - issue Backup for mindulle cli project before remove prior project using vite"
+lastModified: "2023-01-21"
+
+# configs for annotating data to obsidian dataview plugin.
+noteImportance: ⭐⭐⭐
+noteStatus: "finished"
+noteCertanity: "certain"
+noteField:
+  - "develop"
+notePurpose:
+  - "individual"
+noteTimeliness:
+  - "lts"
+
+# configs for selecting seed type.
+seedType:
+  - "storage"
+seedPurpose:
+  - "My issues"
+  - "Drawing and Understanding"
+
+# configs for querying particular datas to specify notes which have been noted expirences related to particular subject.
+# e.g. short tips for useful vscode extensions to let me know how errors occur.
+# tags=[#seed, #shortTip, #vscode, #extension, #errorHandling]
+tags:
+  - "seed"
+---
 ## Dev ecosystems(refer to [these](https://yozm.wishket.com/magazine/detail/1796/) [article](http://blog.hwahae.co.kr/all/tech/tech-tech/9507/))
 ### prepare to commit with [husky](https://typicode.github.io/husky/#/)
 - [x] set `pre-commit` githook for `unit testing` and to lint staged file using `lint-staged` library.

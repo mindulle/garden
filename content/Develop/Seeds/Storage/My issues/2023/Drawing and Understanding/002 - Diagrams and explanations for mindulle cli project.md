@@ -18,8 +18,8 @@ noteTimeliness:
 seedType:
   - "storage"
 seedPurpose:
-  - "myIssue"
-  - "Drawing for Understand"
+  - "My issues"
+  - "Drawing and Understanding"
 
 # configs to decide whether external contents are appropriate to me or not.
 contentLevel:
@@ -29,8 +29,6 @@ contentRepresentation:
   - "img"
 contentPurpose:
   - "realworld"
-issueTriage:
-  - 
 
 # configs for querying particular datas to specify notes which have been noted expirences related to particular subject.
 # e.g. short tips for useful vscode extensions to let me know how errors occur.

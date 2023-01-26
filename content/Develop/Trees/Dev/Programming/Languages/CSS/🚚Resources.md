@@ -49,3 +49,7 @@ tags:
 | link for seed | Purpose | keywords to remeber |
 | ------------- | ------- | ----------------- |
 |               |         |                   |
+
+Report the issues to my seeds related with this:
+https://www.freecodecamp.org/news/learn-css-create-the-nextflix-logo/
+https://velog.io/@teo/css-history-1

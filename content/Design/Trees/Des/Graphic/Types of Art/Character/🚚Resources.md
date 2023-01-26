@@ -18,6 +18,7 @@ tags:
 > - Documents : well explained documents or official document.
 > - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name                      | Purpose   | Documents | Related issues |
-| ------------------------- | --------- | --------- | -------------- |
-| CharacterDesignReferences | Reference | [Homepage](https://characterdesignreferences.com/)          |                |
+| Name                      | Purpose                     | Documents                                          | Related issues |
+| ------------------------- | --------------------------- | -------------------------------------------------- | -------------- |
+| CharacterDesignReferences | Reference                   | [Homepage](https://characterdesignreferences.com/) |                |
+| DMHeros                          | Generator for DnD Character | [Homepage](http://www.dmheroes.com/)                                                   |                |

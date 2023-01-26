@@ -18,10 +18,15 @@ tags:
 > - Documents : well explained documents or official document.
 > - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name                                                              | Purpose                             | Documents                                                           | Related issues |
-| ----------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------- | -------------- |
-| web.dev                                                           | Everything of the web!              | [web.dev](https://web.dev/)                                         |                |
-| patterns.dev                                                      | Everything of the web app patterns! | [Patterns.dev](https://www.patterns.dev/)                                                                    |                |
-| freefrontend.com                                                  | reference                           | [Hompage](https://freefrontend.com/)                                |                |
-| Atomic State management - joatai                                  | Tech Blog Article                   | [HawHae Article](http://blog.hwahae.co.kr/all/tech/tech-tech/6099/) |                |
-| React 상태 관리 라이브러리 라이브러리 Zustand의 코드를 파헤쳐보자 | Tech Blog Article                   | [Toast UI Article](https://ui.toast.com/posts/ko_20210812)          |                |
+| Name                                                              | Purpose                             | Documents                                                                             | Related issues |
+| ----------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------- | -------------- |
+| web.dev                                                           | Everything of the web!              | [web.dev](https://web.dev/)                                                           |                |
+| patterns.dev                                                      | Everything of the web app patterns! | [Patterns.dev](https://www.patterns.dev/)                                             |                |
+| freefrontend.com                                                  | reference                           | [Hompage](https://freefrontend.com/)                                                  |                |
+| How to use React Dev Tools - With Example code and videos         | Tutorial                            | [Freecodecamp Article](https://www.freecodecamp.org/news/how-to-use-react-dev-tools/) |                |
+| Atomic State management - joatai                                  | Tech Blog Article                   | [HawHae Article](http://blog.hwahae.co.kr/all/tech/tech-tech/6099/)                   |                |
+| React 상태 관리 라이브러리 라이브러리 Zustand의 코드를 파헤쳐보자 | Tech Blog Article                   | [Toast UI Article](https://ui.toast.com/posts/ko_20210812)                            |                |
+
+
+TODO : 블로그 아티클 두개
+[[Develop/Trees/Learn/Realworld/webFrontend/🚚Resources]] 로 옮겨두기

@@ -11,6 +11,11 @@ tags:
   - "dictionary"
   - "techInterview"
 ---
+# A
+## AST(TODO)
+> Blabal Lolerm ipsum ...
+- [AST explorer](https://astexplorer.net/)
+
 # C
 ## Callable
 > A **callable object**, in [computer programming](https://en.wikipedia.org/wiki/Computer_programming "Computer programming"), is any object that can be called like a [function](https://en.wikipedia.org/wiki/Subroutine "Subroutine"). **_[wikipedia](https://en.wikipedia.org/wiki/Callable_object)_**

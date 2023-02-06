@@ -18,7 +18,8 @@ tags:
 > - Documents : well explained documents or official document.
 > - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name                      | Purpose   | Documents                                   | Related issues |
-| ------------------------- | --------- | ------------------------------------------- | -------------- |
-| google/zx - github repo   | reference | [Github repo](https://github.com/google/zx) |                |
-| yargs - official document | reference | [Official document](http://yargs.js.org/)                                            |                |
+| Name                                        | Purpose                      | Documents                                   | Related issues |
+| ------------------------------------------- | ---------------------------- | ------------------------------------------- | -------------- |
+| google/zx - github repo                     | reference                    | [Github repo](https://github.com/google/zx) |                |
+| yargs - official document                   | reference                    | [Official document](http://yargs.js.org/)   |                |
+| CLI tools you won't be able to live without | use on realworld development | [Dev community post](https://dev.to/lissy93/cli-tools-you-cant-live-without-57f6)                                            |                |

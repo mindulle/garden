@@ -10,6 +10,12 @@ isDictionary: true
 tags:
   - "dictionary"
 ---
+# V
+## Vendor Prefix
+> Browser vendors used to add prefixes to experimental or nonstandard CSS properties and JavaScript APIs, so developers could experiment with new ideas. **_[MDN Web Docs Glossary](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)_**
+- Example
+- `-webkit-transition: all 4s ease;`
+
 # W
 ## Web template engine
 > Definiotn here, __*souce*__.

@@ -18,10 +18,13 @@ tags:
 > - Documents : well explained documents or official document.
 > - Related issue : realworld examples such as github issue, showcase blog post, business newletters...
 
-| Name                                  | Purpose        | Documents                                        | Related issues |
-| ------------------------------------- | -------------- | ------------------------------------------------ | -------------- |
-| Graphic Design Trends - 99designs.com | follow a trend | [blog reads](https://99designs.com/blog/trends/) |                |
-| The stae of Ux                        | follow a trend | [official website](https://trends.uxdesign.cc/)                                                 |                |
+| Name                                  | Purpose             | Documents                                        | Related issues |
+| ------------------------------------- | ------------------- | ------------------------------------------------ | -------------- |
+| Graphic Design Trends - 99designs.com | keep up with trends | [blog reads](https://99designs.com/blog/trends/) |                |
+| The stae of Ux                        | keep up with trends | [official website](https://trends.uxdesign.cc/)  |                |
+| FramerAwards                          | keep up with trends | [Site](https://www.framer.com/awards/)           |                |
+| Golden Kitty Awards                   | keep up with trends | [Hall of Fame](https://www.producthunt.com/golden-kitty-awards/hall-of-fame)                                                 |                |
+
 
 # 🌱reading list from my seed storage...
 | link for seed | Purpose | keywords to remeber |

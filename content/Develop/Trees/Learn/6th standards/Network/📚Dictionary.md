@@ -40,5 +40,10 @@ flowchart RL
 # H
 ## HTTP
 
+# I
+## IP address
+> An **Internet Protocol address** (**IP address**) is a numerical label such as _192.0.2.1_ that is connected to a [computer network](https://en.wikipedia.org/wiki/Computer_network "Computer network") that uses the [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol "Internet Protocol") for communication. **_[wikipedia](https://en.wikipedia.org/wiki/IP_address)_**
+- [IP 주소 - 네이버 지식백과](https://terms.naver.com/entry.naver?docId=3571314&cid=59088&categoryId=59096)
+
 # U
 ## URI 

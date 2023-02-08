@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Trends"
-lastModified: "2022-12-28"
+title: "🎉Background Knowledge"
+lastModified: "2023-02-06"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -13,20 +13,16 @@ tags:
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
-
 
 # Map of contents
-- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+```mermaid
+flowchart LR
+	You --> |Draw| Content[a Map of contents and features]
+```
+- 
 
 # Features
 - List up frequently used features.
-- [[Design/Trees/Trends/📚Dictionary|📚Dictionary]]
-- [[Design/Trees/Trends/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

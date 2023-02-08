@@ -23,8 +23,9 @@ tags:
 | Awesome babylon.js   | Curated List | [Github Repo](https://github.com/Symbitic/awesome-babylonjs) |                                             |
 | Babylonjs Playground | Playground   | [Page](https://www.babylonjs-playground.com/)                | Click Right upper side to see more examples |
 | Babylon.js Sandbox   | Viwer        | [Page](https://sandbox.babylonjs.com/)                       |                                             |
-| Babylon.js Demos     | Demos        | [Page](https://www.babylonjs.com/community/)                                                             |                                             |
-| svelte-babylon       | practice     | [Github Repo](https://github.com/SectorXUSA/svelte-babylon)  | Maybe it looks deprecated(2023-01-20)       |
+| Babylon.js Demos     | Demo         | [Page](https://www.babylonjs.com/community/)                 |                                             |
+| svelte-babylon       | practice     | [Github Repo](https://github.com/SectorXUSA/svelte-babylon)  | Maybe it seems to be deprecated(2023-01-20) |
+| svelte-babylon REPL  | Demo         | [Svelte playground sample app](https://svelte.dev/repl/3119711d043c4a8ba34c2931098a1e9c?version=3.55.1)                                                             |                                             |
 
 # 🌱reading list from my seed storage...
 | link for seed | Purpose | keywords to remeber |

@@ -24,13 +24,14 @@ tags:
 | 테스트 렌더러 - React                         | Explain & Example & Reference | [Official document](https://ko.reactjs.org/docs/test-renderer.html)                                |                |
 | 테스팅 도구 - React                           | Explain & Example & Reference | [Official document](https://ko.reactjs.org/docs/test-utils.html)                                   |                |
 | Testing - Vuejs                               | Explain & Example & Recipes   | [Official document](https://vuejs.org/guide/scaling-up/testing.html)                               |                |
-| test-utils - Vuejs                            | Reference                     | [Github Repo](https://github.com/vuejs/test-utils)                                                                                                   |                |
+| test-utils - Vuejs                            | Reference                     | [Github Repo](https://github.com/vuejs/test-utils)                                                 |                |
 | Testing - Nestjs                              | Explain & Example & Reference | [Official document](https://docs.nestjs.com/fundamentals/testing#testing-request-scoped-instances) |                |
 | 실용적인 프론트엔드 테스트 전략 (1)           | Explain & Example             | [Tech Blog](https://meetup.nhncloud.com/posts/174)                                                 |                |
 | 실용적인 프론트엔드 테스트 전략 (2)           | Explain & Example             | [Tech Blog](https://meetup.nhncloud.com/posts/178)                                                 |                |
 | 실용적인 프론트엔드 테스트 전략 (3)           | Explain & Example             | [Tech Blog](https://meetup.nhncloud.com/posts/180)                                                 |                |
 | 시각적 회귀 테스트로 서비스 안정성 끌어올리기 | Explain & Example             | [Tech Blog](https://techblog.woowahan.com/7332/)                                                   |                |
 | 스토리북으로 인터렉션 테스트하기              | Explain & Example             | [Tech Blog](https://ui.toast.com/weekly-pick/ko_20220111)                                          |                |
+| Stroybook Ecosystem CI                        | Introduce new feature         | [Official Blog Post](https://storybook.js.org/blog/storybook-ecosystem-ci/?utm_campaign=meetedgar&utm_medium=social&utm_source=meetedgar.com)                                                                                                   |                |
 
 # 🌱reading list from my seed storage...
 | link for seed | Purpose | keywords to remeber |

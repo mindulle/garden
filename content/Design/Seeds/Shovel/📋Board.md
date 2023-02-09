@@ -17,6 +17,7 @@ kanban-plugin: basic
 - [ ] --- Auto painters ---
 - [x] --- Curations ---
 - [ ] [[Design/Seeds/Shovel/Useful sites/Curations/illustrationlink|illustrationlink]]
+- [ ] [Raindrop.io](https://raindrop.io/)
 - [x] --- Generators ---
 - [ ] [[Design/Seeds/Shovel/Useful sites/Generators/more.graphics|more.graphics]]
 - [x] --- Search ---

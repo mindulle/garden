@@ -560,7 +560,7 @@ bash ./scripts/deploy.sh
 ```
 
 > [!NOTE] Cause I didn't understand how to import environment varaibles in bash script,
-> I prepared [this question and answer](https://unix.stackexchange.com/questions/495161/import-environment-variables-in-a-bash-script)  and save to [[Develop/Seeds/Grocery/Scripting/ShellScript/🚚Resources|🚚Resources]]
+> I prepared [this question and answer](https://unix.stackexchange.com/questions/495161/import-environment-variables-in-a-bash-script)  and save to [[Develop/Seeds/(Destructure this)Grocery/Scripting/ShellScript/🚚Resources|🚚Resources]]
 ---
 
 If you change your mind and, for example, __want to deploy ==everything to a different domain==__, you only have to change the `DOMAIN` environment variable in the previous commands. If you wanted to add a different __==version / environment==__ of your stack, like "`preproduction`", you would only have to set `TAG=preproduction` in your command and update these other environment variables accordingly. And it would all work, that way you could have different environments and deployments of the same app in the same cluster.

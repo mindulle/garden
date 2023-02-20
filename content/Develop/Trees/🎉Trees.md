@@ -33,7 +33,7 @@ flowchart LR
 - [[Develop/Trees/Dev/🎉Dev|🎉Dev]] : __코드 작성__ 단계에서 정리된 나무[^나무] 모음
 - [[Develop/Trees/Learn/🎉Learn|🎉Learn]] : **개념 학습** 단계에서 정리된  나무[^나무] 모음
 - [[Develop/Trees/Ops/🎉Ops|🎉Ops]] : **운영 및 배포** 단계에서 정리된 나무[^나무] 모음
-- [[Develop/Trees/Trends/🎉Trends|🎉Trends]] : **동향 파악** 단계에서 정리된 나무[^나무] 모음
+- [[Develop/Trees/(goToRaindrop)Trends/🎉Trends|🎉Trends]] : **동향 파악** 단계에서 정리된 나무[^나무] 모음
 
 # Features
 - [[Develop/Trees/🔖Reading list as developer|🔖Reading list as developer]]

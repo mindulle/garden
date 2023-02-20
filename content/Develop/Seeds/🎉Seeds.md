@@ -30,9 +30,9 @@ flowchart LR
 	HERE --> seedsContents
 	HERE --> features
 ```
-- [[Develop/Seeds/Grocery/🎉Grocery|🎉Grocery]]
-- [[Develop/Seeds/Shovel/🎉Shovel|🎉Shovel]]
-- [[Develop/Seeds/Storage/🎉Storage|🎉Storage]]
+- [[Develop/Seeds/(Destructure this)Grocery/🎉Grocery|🎉Grocery]]
+- [[Develop/Seeds/(go to raindrop)Shovel/🎉Shovel|🎉Shovel]]
+- [[Develop/Seeds/(go to raindrop)Storage/🎉Storage|🎉Storage]]
 
 # Features
 - [[Develop/Seeds/🌱Distribute|🌱Distribute]] : 씨앗을 분류하기 위한 옵시디언 칸반
@@ -60,14 +60,14 @@ flowchart LR
 
 ## 분류한 씨앗 내용 정리하기
 ### Grocery
-- [[Develop/Seeds/Grocery/Database/🎉Database|🎉Database]] : `데이터베이스` 관련 씨앗[^씨앗]을 모으고 정리합니다.
-- [[Develop/Seeds/Grocery/WebBackend/🎉WebBackend|🎉webBackend]] : `웹 백엔드` 관련 씨앗[^씨앗]을 모으고 정리합니다.
-- [[Develop/Seeds/Grocery/WebFrontend/🎉WebFrontend|🎉webFrontend]] : `웹 프론트엔드` 관련 씨앗[^씨앗]을 모으고 정리합니다.
+- [[Develop/Seeds/(Destructure this)Grocery/Database/🎉Database|🎉Database]] : `데이터베이스` 관련 씨앗[^씨앗]을 모으고 정리합니다.
+- [[Develop/Seeds/(Destructure this)Grocery/WebDev/Backend/🎉Backend|🎉webBackend]] : `웹 백엔드` 관련 씨앗[^씨앗]을 모으고 정리합니다.
+- [[Develop/Seeds/(Destructure this)Grocery/WebDev/Frontend/🎉Frontend|🎉webFrontend]] : `웹 프론트엔드` 관련 씨앗[^씨앗]을 모으고 정리합니다.
 
 ### TODO : Shovel
 -  [[Develop/Seeds/Storage/Miscs/🎉Miscs]]
--  [[Develop/Seeds/Storage/My issues/🎉My issues]]
--  [[Develop/Seeds/Storage/Ideas/🎉Ideas]]
+-  [[Develop/Seeds/(go to raindrop)Storage/My issues/🎉My issues]]
+-  [[Develop/Seeds/(go to raindrop)Storage/Ideas/🎉Ideas]]
 
 ### TODO : Storage
 ### TODO : Miscs

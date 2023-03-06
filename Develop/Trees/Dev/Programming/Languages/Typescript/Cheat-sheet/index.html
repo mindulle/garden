@@ -1,20 +1,541 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Shortcuts    Name key bindings Target(If needed) Importance            My cheat sheet  Origin cheat sheets here."><title>⚡Cheat sheet</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://mindulle.github.io/garden/icon.png><link href=https://mindulle.github.io/garden/styles.706bb6073ba85d26809f9096dae23a6b.min.css rel=stylesheet><link href=https://mindulle.github.io/garden/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://mindulle.github.io/garden/js/darkmode.71fd764547989a0d567451669afd7a55.min.js></script>
-<script src=https://mindulle.github.io/garden/js/util.5e39932758f9ecaf45fd54506ed61416.min.js></script>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Playground   Typescript Playground
+ tsconfig.base.json    Name install extends in tsconfig.json     Recommended yarn add --dev @tsconfig/recommended &#34;extends&#34;: &#34;@tsconfig/recommended/tsconfig."><meta property="og:title" content="⚡Cheat sheet"><meta property="og:description" content="Playground   Typescript Playground
+ tsconfig.base.json    Name install extends in tsconfig.json     Recommended yarn add --dev @tsconfig/recommended &#34;extends&#34;: &#34;@tsconfig/recommended/tsconfig."><meta property="og:type" content="website"><meta property="og:image" content="https://quartz.jzhao.xyz/icon.png"><meta property="og:url" content="https://quartz.jzhao.xyz/Develop/Trees/Dev/Programming/Languages/Typescript/Cheat-sheet/"><meta property="og:width" content="200"><meta property="og:height" content="200"><meta name=twitter:card content="summary"><meta name=twitter:title content="⚡Cheat sheet"><meta name=twitter:description content="Playground   Typescript Playground
+ tsconfig.base.json    Name install extends in tsconfig.json     Recommended yarn add --dev @tsconfig/recommended &#34;extends&#34;: &#34;@tsconfig/recommended/tsconfig."><meta name=twitter:image content="https://quartz.jzhao.xyz/icon.png"><meta name=twitter:site content="_jzhao"><title>⚡Cheat sheet</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://quartz.jzhao.xyz//icon.png><link href=https://quartz.jzhao.xyz/styles.b369a84b3c6e6bfd686ad1f9da65641c.min.css rel=stylesheet><link href=https://quartz.jzhao.xyz/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://quartz.jzhao.xyz/js/darkmode.63d6a3e095d0bd2b935b62adec9dc11b.min.js></script>
+<script src=https://quartz.jzhao.xyz/js/util.a0ccf91e1937fe761a74da4946452710.min.js></script>
+<link rel=preload href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css as=style onload='this.onload=null,this.rel="stylesheet"' integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
 <script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
-<script src=https://unpkg.com/@floating-ui/core@0.7.3></script>
-<script src=https://unpkg.com/@floating-ui/dom@0.5.4></script>
-<script src=https://mindulle.github.io/garden/js/popover.6da9b273c092cc16fc1aa904d71a2163.min.js></script>
-<script src=https://mindulle.github.io/garden/js/code-title.b35124ad8db0ba37162b886afb711cbc.min.js></script>
-<script src=https://mindulle.github.io/garden/js/clipboard.c20857734e53a3fb733b7443879efa61.min.js></script>
-<script src=https://mindulle.github.io/garden/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
-<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://mindulle.github.io/garden",fetchData=Promise.all([fetch("https://mindulle.github.io/garden/indices/linkIndex.bd5dc71edd1066e1e9204b78b6cb5272.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://mindulle.github.io/garden/indices/contentIndex.bb42b25daf0f26492693ad83b0271995.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://mindulle.github.io/garden",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!0;drawGraph("https://mindulle.github.io/garden",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
-    import { attachSPARouting } from "https:\/\/mindulle.github.io\/garden\/js\/router.9d4974281069e9ebb189f642ae1e3ca2.min.js"
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1></script>
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1></script>
+<script async src=https://quartz.jzhao.xyz/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js></script>
+<script defer src=https://quartz.jzhao.xyz/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js></script>
+<script defer src=https://quartz.jzhao.xyz/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js></script>
+<script defer src=https://quartz.jzhao.xyz/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://quartz.jzhao.xyz/",fetchData=Promise.all([fetch("https://quartz.jzhao.xyz/indices/linkIndex.001b7a11a5af4e77787c329a6fad4fc7.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://quartz.jzhao.xyz/indices/contentIndex.06709d407d7f60a41c9cd2fc29970161.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://quartz.jzhao.xyz",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!1;drawGraph("https://quartz.jzhao.xyz",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!1,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()});function a(n){const e=n.target,t=e.className.split(" "),s=t.includes("broken"),o=t.includes("internal-link");plausible("Link Click",{props:{href:e.href,broken:s,internal:o,graph:!1}})}const r=document.querySelectorAll("a");for(link of r)link.className.includes("root-title")&&link.addEventListener("click",a,{once:!0})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/quartz.jzhao.xyz\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
     attachSPARouting(init, render)
-  </script></head><script async src="https://www.googletagmanager.com/gtag/js?id=G-XYFD95KB4J"></script>
-<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-XYFD95KB4J",{anonymize_ip:!1})}</script><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
-<script defer src=https://mindulle.github.io/garden/js/full-text-search.51f0b1753e9b30839d053f8a98cc20d1.min.js></script><div class=singlePage><header><h1 id=page-title><a href=https://mindulle.github.io/garden>Mindulle Garden🎉</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+  </script><script defer data-domain=quartz.jzhao.xyz src=https://plausible.io/js/script.js></script>
+<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script></head><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://quartz.jzhao.xyz/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js></script><div class=singlePage><header><h1 id=page-title><a class=root-title href=https://quartz.jzhao.xyz/>🪴 Quartz 3.3</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
 <label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>⚡Cheat sheet</h1><p class=meta>Last updated
 Unknown
-<a href=https://github.com/mindulle/garden/tree/hugo/content/Develop/Trees/Dev/Programming/Languages/Typescript/%e2%9a%a1Cheat%20sheet.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://mindulle.github.io/garden/tags/cheatSheet/>Cheat sheet</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents></nav></details></aside><a href=#shortcuts><h1 id=shortcuts><span class=hanchor arialabel=Anchor># </span>Shortcuts</h1></a><table><thead><tr><th>Name</th><th>key bindings</th><th style=text-align:center>Target(If needed)</th><th>Importance</th></tr></thead><tbody><tr><td></td><td></td><td style=text-align:center></td><td></td></tr></tbody></table><a href=#my-cheat-sheet><h1 id=my-cheat-sheet><span class=hanchor arialabel=Anchor># </span>My cheat sheet</h1></a><blockquote><p>Origin cheat sheets here.</p></blockquote><ul><li>tsconfig init 해보고 쓰일 것 같은 옵션만 일단 적기</li><li>옵션 나누기(tsconfig.base.json, tsconfig.json 사용하는 법 알기)</li></ul></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li>No backlinks found</li></ul></div><div><script src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://mindulle.github.io/garden/js/graph.abd4bc2af3869a96524d7d23b76152c7.js></script></div></div><div id=contact_buttons><footer><p>Made by Mindulle using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://mindulle.github.io/garden>Home</a></li><li><a href=https://github.com/mindulle>Github</a></li></ul></footer></div></div></body></html>
+<a href=https://github.com/jackyzha0/quartz/tree/hugo/content/Develop/Trees/Dev/Programming/Languages/Typescript/%e2%9a%a1Cheat%20sheet.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://quartz.jzhao.xyz/tags/cheatSheet/>Cheat sheet</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#what-i-understood-when-read-official-document>What I understood when read official document.</a></li><li><a href=#generated-by-tsc---init>Generated by <code>tsc --init</code></a></li></ol></nav></details></aside><a href=#playground><h1 id=playground><span class=hanchor arialabel=Anchor># </span>Playground</h1></a><blockquote><p><a href=https://www.typescriptlang.org/play/ rel=noopener>Typescript Playground</a></p></blockquote><a href=#tsconfigbasejson><h1 id=tsconfigbasejson><span class=hanchor arialabel=Anchor># </span>tsconfig.base.json</h1></a><table><thead><tr><th>Name</th><th>install</th><th>extends in <code>tsconfig.json</code></th></tr></thead><tbody><tr><td>Recommended</td><td><code>yarn add --dev @tsconfig/recommended</code></td><td><code>"extends": "@tsconfig/recommended/tsconfig.json"</code></td></tr><tr><td>Create React app</td><td><code>yarn add --dev @tsconfig/create-react-app</code></td><td><code>"extends": "@tsconfig/create-react-app/tsconfig.json"</code></td></tr><tr><td>Cypress</td><td><code>yarn add --dev @tsconfig/cypress</code></td><td><code>"extends": "@tsconfig/cypress/tsconfig.json"</code></td></tr><tr><td>Deno</td><td><code>yarn add --dev @tsconfig/deno</code></td><td><code>"extends": "@tsconfig/deno/tsconfig.json"</code></td></tr><tr><td>Docusaurus v2</td><td><code>yarn add --dev @tsconfig/docusaurus</code></td><td><code>"extends": "@tsconfig/docusaurus/tsconfig.json"</code></td></tr><tr><td>Ember</td><td><code>yarn add --dev @tsconfig/ember</code></td><td><code>"extends": "@tsconfig/ember/tsconfig.json"</code></td></tr><tr><td>ESM</td><td><code>yarn add --dev @tsconfig/esm</code></td><td><code>"extends": "@tsconfig/esm/tsconfig.json"</code></td></tr><tr><td>Next.js strictest</td><td><code>yarn add --dev @tsconfig/next-strictest</code></td><td><code>"extends": "@tsconfig/next-strictest/tsconfig.json"</code></td></tr><tr><td>Next.js</td><td><code>yarn add --dev @tsconfig/next</code></td><td><code>"extends": "@tsconfig/next/tsconfig.json"</code></td></tr><tr><td>Node LTS + ESM + Strictest</td><td><code>yarn add --dev @tsconfig/node-lts-strictest-esm</code></td><td><code>"extends": "@tsconfig/node-lts-strictest-esm/tsconfig.json"</code></td></tr><tr><td>Node LTS + Strictest</td><td><code>yarn add --dev @tsconfig/node-lts-strictest</code></td><td><code>"extends": "@tsconfig/node-lts-strictest/tsconfig.json"</code></td></tr><tr><td>Node LTS</td><td><code>yarn add --dev @tsconfig/node-lts</code></td><td><code>"extends": "@tsconfig/node-lts/tsconfig.json"</code></td></tr><tr><td>Node xx - strictest? - ESM?</td><td><code>yarn add --dev @tsconfig/nodexx-strictest?-esm?</code></td><td><code>"extends": "@tsconfig/nodexx-strictest?-esm?/tsconfig.json"</code></td></tr><tr><td>Nuxt</td><td><code>yarn add --dev @tsconfig/nuxt</code></td><td><code>"extends": "@tsconfig/nuxt/tsconfig.json"</code></td></tr><tr><td>React Native</td><td><code>yarn add --dev @tsconfig/react-native</code></td><td><code>"extends": "@tsconfig/react-native/tsconfig.json"</code></td></tr><tr><td>Remix</td><td><code>yarn add --dev @tsconfig/remix</code></td><td><code>"extends": "@tsconfig/remix/tsconfig.json"</code></td></tr><tr><td>Svelte</td><td><code>yarn add --dev @tsconfig/svelte</code></td><td><code>"extends": "@tsconfig/svelte/tsconfig.json"</code></td></tr><tr><td>Vite React</td><td><code>yarn add --dev @tsconfig/vite-react</code></td><td><code>"extends": "@tsconfig/vite-react/tsconfig.json"</code></td></tr></tbody></table><a href=#tsconfigjson><h1 id=tsconfigjson><span class=hanchor arialabel=Anchor># </span>tsconfig.json</h1></a><a href=#what-i-understood-when-read-official-document><h2 id=what-i-understood-when-read-official-document><span class=hanchor arialabel=Anchor># </span>What I understood when read official document.</h2></a><div class=highlight title=tsconfig.json><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Array of string that contain filenames. Doesn&#39;t support glob pattern
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nt>&#34;files&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>		<span class=s2>&#34;module1.ts&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=err>...</span>
+</span></span><span class=line><span class=cl>		<span class=s2>&#34;modulen.ts&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=p>],</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Allow tsconfig to extend its options. only string value will be allowed.
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nt>&#34;extends&#34;</span><span class=p>:</span> <span class=s2>&#34;/path/to/basefile.json&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Directory which is able to have glob pattern that will be transpiled by typescript compiler.
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=s2>&#34;include&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>		<span class=s2>&#34;dir/with/patterns&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=p>],</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Directory which is able to have glob pattern that will be excluded from directory defiend in include field.
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nt>&#34;exclude&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>		<span class=s2>&#34;dir/to/exclude&#34;</span>
+</span></span><span class=line><span class=cl>	<span class=p>],</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// Field for monorepo. See this:
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// https://www.typescriptlang.org/docs/handbook/project-references.html#what-is-a-project-reference
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=nt>&#34;references&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>		<span class=p>{</span>
+</span></span><span class=line><span class=cl>			<span class=nt>&#34;path&#34;</span><span class=p>:</span> <span class=s2>&#34;path/for/subproject&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>			<span class=nt>&#34;prepend&#34;</span><span class=p>:</span> <span class=kc>true</span> <span class=err>|</span> <span class=kc>false</span> <span class=c1>// option to resolve project dependency order. It MUST be treated carefully.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=p>],</span>
+</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>	<span class=nt>&#34;compilerOptions&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// There are options only recommended.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=c1>// Fields for type checking
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=nt>&#34;awlwaysStrict&#34;</span><span class=p>:</span> <span class=kc>true</span><span class=err>(default)</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&#34;exactOptionalPropertyTypes&#34;</span><span class=p>:</span> <span class=kc>true</span><span class=err>(recommended)</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&#34;noImplicitAny&#34;</span><span class=p>:</span> <span class=kc>true</span><span class=err>(default)</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&#34;noImplicitThis&#34;</span><span class=p>:</span> <span class=kc>true</span><span class=err>(default)</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// Will be supported more stricter options into this field.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=nt>&#34;strict&#34;</span><span class=p>:</span> <span class=kc>true</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&#34;strictBindCallApply&#34;</span><span class=p>:</span> <span class=kc>true</span><span class=err>(default)</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&#34;strictFunctionTypes&#34;</span><span class=p>:</span> <span class=kc>true</span><span class=err>(default)</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&#34;strictNullChecks&#34;</span><span class=p>:</span> <span class=kc>true</span><span class=err>(default)</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=nt>&#34;strictPropertyInitialization&#34;</span><span class=p>:</span> <span class=kc>true</span><span class=err>(default)</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		
+</span></span><span class=line><span class=cl>		<span class=c1>// Fields for Interop Constraints
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=c1>// This flag resolve compaitibility problems between import statement and require statement.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=c1>// It this set to true, typescript compiler will tear down codes into plain javascript code that has no require statement.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=nt>&#34;esModuleInterop&#34;</span><span class=p>:</span> <span class=kc>true</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		<span class=c1>// If this set to true, developer should be case-sensitive in decideing name of importing modules.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=nt>&#34;forceConsistentCasingInFileNames&#34;</span><span class=p>:</span> <span class=kc>true</span> <span class=err>|</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>		
+</span></span><span class=line><span class=cl>		<span class=c1>// Fields for Completeness
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=c1>// When you have two or more type modules for libraries, set this option to true.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=c1>// In that case, you should consdier using a feature like yarn&#39;s resolutions to resolve dependency problems.
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=nt>&#34;skipLibCheck&#34;</span><span class=p>:</span> <span class=kc>true</span> <span class=err>|</span> <span class=kc>false</span>
+</span></span><span class=line><span class=cl>	<span class=p>}</span>
+</span></span><span class=line><span class=cl>	<span class=c1>// if you want to see more detailed example, see this blog post:
+</span></span></span><span class=line><span class=cl><span class=c1></span>	<span class=c1>// https://velog.io/@yongbum/TSconfig-Reference-%EC%A0%95%EB%A6%AC
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#generated-by-tsc---init><h2 id=generated-by-tsc---init><span class=hanchor arialabel=Anchor># </span>Generated by <code>tsc --init</code></h2></a><div class=highlight title=tsconfig.json><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span><span class=lnt>133
+</span><span class=lnt>134
+</span><span class=lnt>135
+</span><span class=lnt>136
+</span><span class=lnt>137
+</span><span class=lnt>138
+</span><span class=lnt>139
+</span><span class=lnt>140
+</span><span class=lnt>141
+</span><span class=lnt>142
+</span><span class=lnt>143
+</span><span class=lnt>144
+</span><span class=lnt>145
+</span><span class=lnt>146
+</span><span class=lnt>147
+</span><span class=lnt>148
+</span><span class=lnt>149
+</span><span class=lnt>150
+</span><span class=lnt>151
+</span><span class=lnt>152
+</span><span class=lnt>153
+</span><span class=lnt>154
+</span><span class=lnt>155
+</span><span class=lnt>156
+</span><span class=lnt>157
+</span><span class=lnt>158
+</span><span class=lnt>159
+</span><span class=lnt>160
+</span><span class=lnt>161
+</span><span class=lnt>162
+</span><span class=lnt>163
+</span><span class=lnt>164
+</span><span class=lnt>165
+</span><span class=lnt>166
+</span><span class=lnt>167
+</span><span class=lnt>168
+</span><span class=lnt>169
+</span><span class=lnt>170
+</span><span class=lnt>171
+</span><span class=lnt>172
+</span><span class=lnt>173
+</span><span class=lnt>174
+</span><span class=lnt>175
+</span><span class=lnt>176
+</span><span class=lnt>177
+</span><span class=lnt>178
+</span><span class=lnt>179
+</span><span class=lnt>180
+</span><span class=lnt>181
+</span><span class=lnt>182
+</span><span class=lnt>183
+</span><span class=lnt>184
+</span><span class=lnt>185
+</span><span class=lnt>186
+</span><span class=lnt>187
+</span><span class=lnt>188
+</span><span class=lnt>189
+</span><span class=lnt>190
+</span><span class=lnt>191
+</span><span class=lnt>192
+</span><span class=lnt>193
+</span><span class=lnt>194
+</span><span class=lnt>195
+</span><span class=lnt>196
+</span><span class=lnt>197
+</span><span class=lnt>198
+</span><span class=lnt>199
+</span><span class=lnt>200
+</span><span class=lnt>201
+</span><span class=lnt>202
+</span><span class=lnt>203
+</span><span class=lnt>204
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;compilerOptions&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=err>/*</span> <span class=err>Visit</span> <span class=err>https:</span><span class=c1>//aka.ms/tsconfig to read more about this file */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// /* Projects */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;incremental&#34;: true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;composite&#34;: true,                                /* Enable constraints that allow a TypeScript project to be used with project references. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;tsBuildInfoFile&#34;: &#34;./.tsbuildinfo&#34;,              /* Specify the path to .tsbuildinfo incremental compilation file. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;disableSourceOfProjectReferenceRedirect&#34;: true,  /* Disable preferring source files instead of declaration files when referencing composite projects. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;disableSolutionSearching&#34;: true,                 /* Opt a project out of multi-project reference checking when editing. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;disableReferencedProjectLoad&#34;: true,             /* Reduce the number of projects loaded automatically by TypeScript. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=err>/*</span> <span class=err>Language</span> <span class=err>and</span> <span class=err>Environment</span> <span class=err>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;target&#34;</span><span class=p>:</span> <span class=s2>&#34;es2016&#34;</span> <span class=err>/*</span> <span class=err>Set</span> <span class=err>the</span> <span class=err>JavaScript</span> <span class=err>language</span> <span class=err>version</span> <span class=err>for</span> <span class=err>emitted</span> <span class=err>JavaScript</span> <span class=err>and</span> <span class=err>include</span> <span class=err>compatible</span> <span class=err>library</span> <span class=err>declarations.</span> <span class=err>*/</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;lib&#34;: [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;jsx&#34;: &#34;preserve&#34;,                                /* Specify what JSX code is generated. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;experimentalDecorators&#34;: true,                   /* Enable experimental support for TC39 stage 2 draft decorators. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;emitDecoratorMetadata&#34;: true,                    /* Emit design-type metadata for decorated declarations in source files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;jsxFactory&#34;: &#34;&#34;,                                 /* Specify the JSX factory function used when targeting React JSX emit, e.g. &#39;React.createElement&#39; or &#39;h&#39;. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;jsxFragmentFactory&#34;: &#34;&#34;,                         /* Specify the JSX Fragment reference used for fragments when targeting React JSX emit e.g. &#39;React.Fragment&#39; or &#39;Fragment&#39;. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;jsxImportSource&#34;: &#34;&#34;,                            /* Specify module specifier used to import the JSX factory functions when using &#39;jsx: react-jsx*&#39;. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;reactNamespace&#34;: &#34;&#34;,                             /* Specify the object invoked for &#39;createElement&#39;. This only applies when targeting &#39;react&#39; JSX emit. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noLib&#34;: true,                                    /* Disable including any library files, including the default lib.d.ts. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;useDefineForClassFields&#34;: true,                  /* Emit ECMAScript-standard-compliant class fields. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;moduleDetection&#34;: &#34;auto&#34;,                        /* Control what method is used to detect module-format JS files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=err>/*</span> <span class=err>Modules</span> <span class=err>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;module&#34;</span><span class=p>:</span> <span class=s2>&#34;commonjs&#34;</span> <span class=err>/*</span> <span class=err>Specify</span> <span class=err>what</span> <span class=err>module</span> <span class=err>code</span> <span class=err>is</span> <span class=err>generated.</span> <span class=err>*/</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;rootDir&#34;: &#34;./&#34;,                                  /* Specify the root folder within your source files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;moduleResolution&#34;: &#34;node&#34;,                       /* Specify how TypeScript looks up a file from a given module specifier. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;baseUrl&#34;: &#34;./&#34;,                                  /* Specify the base directory to resolve non-relative module names. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;paths&#34;: {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;rootDirs&#34;: [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;typeRoots&#34;: [],                                  /* Specify multiple folders that act like &#39;./node_modules/@types&#39;. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;types&#34;: [],                                      /* Specify type package names to be included without being referenced in a source file. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;allowUmdGlobalAccess&#34;: true,                     /* Allow accessing UMD globals from modules. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;moduleSuffixes&#34;: [],                             /* List of file name suffixes to search when resolving a module. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;resolveJsonModule&#34;: true,                        /* Enable importing .json files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noResolve&#34;: true,                                /* Disallow &#39;import&#39;s, &#39;require&#39;s or &#39;&lt;reference&gt;&#39;s from expanding the number of files TypeScript should add to a project. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=err>/*</span> <span class=err>JavaScript</span> <span class=err>Support</span> <span class=err>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;allowJs&#34;: true,                                  /* Allow JavaScript files to be a part of your program. Use the &#39;checkJS&#39; option to get errors from these files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;checkJs&#34;: true,                                  /* Enable error reporting in type-checked JavaScript files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;maxNodeModuleJsDepth&#34;: 1,                        /* Specify the maximum folder depth used for checking JavaScript files from &#39;node_modules&#39;. Only applicable with &#39;allowJs&#39;. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=err>/*</span> <span class=err>Emit</span> <span class=err>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;declaration&#34;: true,                              /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;declarationMap&#34;: true,                           /* Create sourcemaps for d.ts files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;emitDeclarationOnly&#34;: true,                      /* Only output d.ts files and not JavaScript files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;sourceMap&#34;: true,                                /* Create source map files for emitted JavaScript files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;outFile&#34;: &#34;./&#34;,                                  /* Specify a file that bundles all outputs into one JavaScript file. If &#39;declaration&#39; is true, also designates a file that bundles all .d.ts output. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;outDir&#34;: &#34;./&#34;,                                   /* Specify an output folder for all emitted files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;removeComments&#34;: true,                           /* Disable emitting comments. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noEmit&#34;: true,                                   /* Disable emitting files from a compilation. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;importHelpers&#34;: true,                            /* Allow importing helper functions from tslib once per project, instead of including them per-file. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;importsNotUsedAsValues&#34;: &#34;remove&#34;,               /* Specify emit/checking behavior for imports that are only used for types. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;downlevelIteration&#34;: true,                       /* Emit more compliant, but verbose and less performant JavaScript for iteration. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;sourceRoot&#34;: &#34;&#34;,                                 /* Specify the root path for debuggers to find the reference source code. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;mapRoot&#34;: &#34;&#34;,                                    /* Specify the location where debugger should locate map files instead of generated locations. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;inlineSourceMap&#34;: true,                          /* Include sourcemap files inside the emitted JavaScript. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;inlineSources&#34;: true,                            /* Include source code in the sourcemaps inside the emitted JavaScript. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;emitBOM&#34;: true,                                  /* Emit a UTF-8 Byte Order Mark (BOM) in the beginning of output files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;newLine&#34;: &#34;crlf&#34;,                                /* Set the newline character for emitting files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;stripInternal&#34;: true,                            /* Disable emitting declarations that have &#39;@internal&#39; in their JSDoc comments. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noEmitHelpers&#34;: true,                            /* Disable generating custom helper functions like &#39;__extends&#39; in compiled output. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noEmitOnError&#34;: true,                            /* Disable emitting files if any type checking errors are reported. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;preserveConstEnums&#34;: true,                       /* Disable erasing &#39;const enum&#39; declarations in generated code. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;declarationDir&#34;: &#34;./&#34;,                           /* Specify the output directory for generated declaration files. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;preserveValueImports&#34;: true,                     /* Preserve unused imported values in the JavaScript output that would otherwise be removed. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=err>/*</span> <span class=err>Interop</span> <span class=err>Constraints</span> <span class=err>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;isolatedModules&#34;: true,                          /* Ensure that each file can be safely transpiled without relying on other imports. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;allowSyntheticDefaultImports&#34;: true,             /* Allow &#39;import x from y&#39; when a module doesn&#39;t have a default export. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;esModuleInterop&#34;</span><span class=p>:</span> <span class=kc>true</span> <span class=err>/*</span> <span class=err>Emit</span> <span class=err>additional</span> <span class=err>JavaScript</span> <span class=err>to</span> <span class=err>ease</span> <span class=err>support</span> <span class=err>for</span> <span class=err>importing</span> <span class=err>CommonJS</span> <span class=err>modules.</span> <span class=err>This</span> <span class=err>enables</span> <span class=err>&#39;allowSyntheticDefaultImports&#39;</span> <span class=err>for</span> <span class=err>type</span> <span class=err>compatibility.</span> <span class=err>*/</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;preserveSymlinks&#34;: true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;forceConsistentCasingInFileNames&#34;</span><span class=p>:</span> <span class=kc>true</span> <span class=err>/*</span> <span class=err>Ensure</span> <span class=err>that</span> <span class=err>casing</span> <span class=err>is</span> <span class=err>correct</span> <span class=err>in</span> <span class=err>imports.</span> <span class=err>*/</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=err>/*</span> <span class=err>Type</span> <span class=err>Checking</span> <span class=err>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;strict&#34;</span><span class=p>:</span> <span class=kc>true</span> <span class=err>/*</span> <span class=err>Enable</span> <span class=err>all</span> <span class=err>strict</span> <span class=err>type-checking</span> <span class=err>options.</span> <span class=err>*/</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noImplicitAny&#34;: true,                            /* Enable error reporting for expressions and declarations with an implied &#39;any&#39; type. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;strictNullChecks&#34;: true,                         /* When type checking, take into account &#39;null&#39; and &#39;undefined&#39;. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;strictFunctionTypes&#34;: true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;strictBindCallApply&#34;: true,                      /* Check that the arguments for &#39;bind&#39;, &#39;call&#39;, and &#39;apply&#39; methods match the original function. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;strictPropertyInitialization&#34;: true,             /* Check for class properties that are declared but not set in the constructor. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noImplicitThis&#34;: true,                           /* Enable error reporting when &#39;this&#39; is given the type &#39;any&#39;. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;useUnknownInCatchVariables&#34;: true,               /* Default catch clause variables as &#39;unknown&#39; instead of &#39;any&#39;. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;alwaysStrict&#34;: true,                             /* Ensure &#39;use strict&#39; is always emitted. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noUnusedLocals&#34;: true,                           /* Enable error reporting when local variables aren&#39;t read. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noUnusedParameters&#34;: true,                       /* Raise an error when a function parameter isn&#39;t read. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;exactOptionalPropertyTypes&#34;: true,               /* Interpret optional property types as written, rather than adding &#39;undefined&#39;. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noImplicitReturns&#34;: true,                        /* Enable error reporting for codepaths that do not explicitly return in a function. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noFallthroughCasesInSwitch&#34;: true,               /* Enable error reporting for fallthrough cases in switch statements. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noUncheckedIndexedAccess&#34;: true,                 /* Add &#39;undefined&#39; to a type when accessed using an index. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noImplicitOverride&#34;: true,                       /* Ensure overriding members in derived classes are marked with an override modifier. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;noPropertyAccessFromIndexSignature&#34;: true,       /* Enforces using indexed accessors for keys declared using an indexed type. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;allowUnusedLabels&#34;: true,                        /* Disable error reporting for unused labels. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;allowUnreachableCode&#34;: true,                     /* Disable error reporting for unreachable code. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=err>/*</span> <span class=err>Completeness</span> <span class=err>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=c1>// &#34;skipDefaultLibCheck&#34;: true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;skipLibCheck&#34;</span><span class=p>:</span> <span class=kc>true</span> <span class=err>/*</span> <span class=err>Skip</span> <span class=err>type</span> <span class=err>checking</span> <span class=err>all</span> <span class=err>.d.ts</span> <span class=err>files.</span> <span class=err>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/Develop/Trees/Dev/Programming/Languages/Typescript/Typescript/ data-ctx="⚡Cheat sheet" data-src=/Develop/Trees/Dev/Programming/Languages/Typescript/Typescript class=internal-link>🎉Typescript</a></li></ul></div><div><script async src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://quartz.jzhao.xyz/js/graph.6579af7b10c818dbd2ca038702db0224.js></script></div></div><div id=contact_buttons><footer><p>Made by Jacky Zhao using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://quartz.jzhao.xyz/>Home</a></li><li><a href=https://twitter.com/_jzhao>Twitter</a></li><li><a href=https://github.com/jackyzha0>GitHub</a></li></ul></footer></div></div></body></html>

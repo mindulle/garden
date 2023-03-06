@@ -32,7 +32,7 @@ flowchart LR
 - [[Develop/Seeds/(go to raindrop)Shovel/Manage resources/🎉Manage resources||🎉Manage resources]]
 - [[Develop/Seeds/Shovel/Search/🎉Search|🎉Search]]
 - [[Develop/Seeds/(go to raindrop)Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
-- [[Develop/Seeds/(go to raindrop)Shovel/Useful sites/🎉Useful sites|🎉Useful sites]]
+- [[private/Preview on local/Develop/🎉Useful sites|🎉Useful sites]]
 
 # Features
 - List up frequently used features.

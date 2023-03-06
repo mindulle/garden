@@ -16,13 +16,13 @@ kanban-plugin: basic
 
 - [ ] --- Auto painters ---
 - [x] --- Curations ---
-- [ ] [[Design/Seeds/Shovel/Useful sites/Curations/illustrationlink|illustrationlink]]
+- [ ] [[private/Preview on local/Design/Curations/illustrationlink|illustrationlink]]
 - [ ] [Raindrop.io](https://raindrop.io/)
 - [x] --- Generators ---
-- [ ] [[Design/Seeds/Shovel/Useful sites/Generators/more.graphics|more.graphics]]
+- [ ] [[private/Preview on local/Design/Generators/more.graphics|more.graphics]]
 - [x] --- Search ---
-- [ ] [[Design/Seeds/Shovel/Useful sites/Fonts/산돌구름 폰트 검색|산돌구름 폰트 검색]]
-- [ ] [[Design/Seeds/Shovel/Useful sites/Fonts/Fontpair|Fontpair]]
+- [ ] [[private/Preview on local/Design/Fonts/산돌구름 폰트 검색|산돌구름 폰트 검색]]
+- [ ] [[private/Preview on local/Design/Fonts/Fontpair|Fontpair]]
 
 
 

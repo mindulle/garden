@@ -28,7 +28,7 @@ flowchart LR
 ```
 - [[Design/Seeds/Shovel/Manage resources/🎉Manage resources|🎉Manage resources]]
 - [[Design/Seeds/Shovel/Tools for work/🎉Tools for work|🎉Tools for work]]
-- [[Design/Seeds/Shovel/Useful sites/🎉Useful sites|🎉Useful sites]]
+- [[private/Preview on local/Design/🎉Useful sites|🎉Useful sites]]
 
 # Features
 - List up frequently used features.

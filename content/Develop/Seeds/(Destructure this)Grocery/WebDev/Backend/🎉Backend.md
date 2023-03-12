@@ -26,7 +26,6 @@ erDiagram
 
 # Features
 - List up frequently used features.
-- [[Develop/Seeds/(Destructure this)Grocery/WebDev/Backend/🐝Buzzwords|🐝Buzzwords]]
 - [[Develop/Seeds/(Destructure this)Grocery/WebDev/Backend/📚Dictionary|📚Dictionary]]
 - [[Develop/Seeds/(Destructure this)Grocery/WebDev/Backend/🚚Resources|🚚Resources]]
 

@@ -23,7 +23,6 @@ tags:
 
 # Features
 - List up frequently used features.
-- [[Develop/Seeds/(Destructure this)Grocery/Database/🐝Buzzwords|🐝Buzzwords]]
 - [[Develop/Seeds/(Destructure this)Grocery/Database/🚚Resources|🚚Resources]]
 
 # Issues

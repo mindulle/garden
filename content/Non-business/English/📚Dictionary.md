@@ -8,11 +8,11 @@ isDictionary: true
 
 # add some tags for specifying particular subjects.
 tags:
-  - "dictionary"
+  - "dictionary/english"
 ---
 # A
-?
 ## Admire
+?
 > B1 : to [find](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/find "find") someone or something [attractive](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/attractive "attractive") and [pleasant](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/pleasant "pleasant") to [look](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/look "look") at
 - We [stood](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/stood "stood") for a few [moments](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/moment "moments"), admiring the [view](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/view "view").
 - I was just admiring [your](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/your "your") [jacket](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/jacket "jacket"), Delia.
@@ -60,6 +60,10 @@ tags:
 - 번거로운
 
 # D
+## Defer
+?
+> To put off; to delay to act; to wait. **_[WordLink](https://www.wordnik.com/words/defer_**)
+
 ## Delineate
 ?
 > to [describe](https://dictionary.cambridge.org/dictionary/english/describe "describe") or [mark](https://dictionary.cambridge.org/dictionary/english/mark "mark") the [edge](https://dictionary.cambridge.org/dictionary/english/edge "edge") of something, **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/delineate)_**

@@ -2,7 +2,12 @@
   "customFolder": "Day Planners",
   "mode": 1,
   "mermaid": true,
-  "notesToDates": [],
+  "notesToDates": [
+    {
+      "notePath": "Private/Periodic Notes/2023/Daily/03 March/2023-03-14.md",
+      "date": "Tue Mar 14 2023"
+    }
+  ],
   "completePastItems": true,
   "circularProgress": true,
   "nowAndNextInStatusBar": true,

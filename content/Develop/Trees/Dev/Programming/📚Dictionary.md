@@ -32,6 +32,10 @@ tags:
 > 영어에서 번역됨-데이터 집계는 데이터 처리를 위해 결합된 데이터 세트를 준비하기 위해 데이터베이스에서 정보를 컴파일하는 것입니다. **_[wikipedia](https://en.wikipedia.org/wiki/Data_aggregation)_**
 - aggregation : 집합
 
+## Data deduplication
+?
+> In [computing](https://en.wikipedia.org/wiki/Computing "Computing"), **data deduplication** is a technique for eliminating duplicate copies of repeating data. **_[wikipedia](https://en.wikipedia.org/wiki/Data_deduplication)_**
+
 # F
 ## Functionality
 ?

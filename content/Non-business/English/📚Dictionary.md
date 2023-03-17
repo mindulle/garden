@@ -73,6 +73,11 @@ tags:
 > a [disadvantage](https://dictionary.cambridge.org/dictionary/english/disadvantage "disadvantage") of a [situation](https://dictionary.cambridge.org/dictionary/english/situation "situation"), **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/downside)_**
 
 # I
+## indefinitely
+?
+> With indifiniteness; without settled limitation or precision; infinitely, **_[wordlink](https://www.wordnik.com/words/indefinitely)_**
+
+
 ## immerse
 ?
 > to [become](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/become "become") [completely](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/completely "completely") [involved](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/involved "involved") in something: **_[Cambridge Dictionary](https://dictionary.cambridge.org/us/dictionary/english/immerse)_**
@@ -148,3 +153,8 @@ tags:
 ?
 > [calm](https://dictionary.cambridge.org/dictionary/english/calm "calm") and [peaceful](https://dictionary.cambridge.org/dictionary/english/peaceful "peaceful") and without [noise](https://dictionary.cambridge.org/dictionary/english/noise "noise"), [violence](https://dictionary.cambridge.org/dictionary/english/violence "violence"), [worry](https://dictionary.cambridge.org/dictionary/english/worry "worry"), etc.:
 - She [stared](https://dictionary.cambridge.org/dictionary/english/stare "stared") at the tranquil [surface](https://dictionary.cambridge.org/dictionary/english/surface "surface") of the [water](https://dictionary.cambridge.org/dictionary/english/water "water").
+
+## Tedious
+?
+> adjective Tiresome by reason of length, slowness, or dullness; boring. _synonym_: **boring**. **_[wordlink](https://www.wordnik.com/words/tedious)_**
+

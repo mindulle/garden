@@ -8,7 +8,7 @@ isDictionary: true
 
 # add some tags for specifying particular subjects.
 tags:
-  - "dictionary"
+  - "dictionary/frontend"
 ---
 # V
 ## Vendor Prefix

@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d6eb1da789f57560",
+            "id": "233d560a92ac1fa4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/Trees/Dev/Programming/📚Dictionary.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5bb442ec6b6d0190",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-17.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-18.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-17.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-17.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-18.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-17.md"
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-18.md"
               }
             }
           },
@@ -194,16 +181,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "5bb442ec6b6d0190",
+  "active": "233d560a92ac1fa4",
   "lastOpenFiles": [
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-17.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-18.md",
+    "Private/Periodic Notes/2023/Weekly/2023 Week 11.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-16.md",
     "Develop/Trees/Dev/Programming/📚Dictionary.md",
     "Develop/Trees/Dev/Programming/Languages/CSS/📦assets/_CSS MAP.md",
     "Develop/Trees/Dev/Programming/Languages/CSS/🎉CSS.md",
     "Develop/Seeds/(Destructure this)Grocery/WebDev/Frontend/React/📚Dictionary.md",
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-17.md",
     "Non-business/English/📚Dictionary.md",
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-16.md",
-    "Private/Periodic Notes/2023/Weekly/2023 Week 11.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-14.md",
     "Develop/Seeds/(Destructure this)Grocery/WebDev/Frontend/React/🚚Resources.md",
     "Develop/Seeds/(Destructure this)Grocery/WebDev/Frontend/📚Dictionary.md",
@@ -240,7 +228,6 @@
     "Non-business/Psychology/🎉Psychology.md",
     "_index.md",
     "Develop/Fruits/🎉Fruits.md",
-    "Private/Periodic Notes/2023/Weekly/Week11.md",
-    "Private/Periodic Notes/2023/Daily/Week11.md"
+    "Private/Periodic Notes/2023/Weekly/Week11.md"
   ]
 }

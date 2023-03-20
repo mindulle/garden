@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-19.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-20.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-19.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-19.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-20.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-19.md"
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-20.md"
               }
             }
           },
@@ -183,8 +183,9 @@
   },
   "active": "233d560a92ac1fa4",
   "lastOpenFiles": [
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-18.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-19.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-20.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-18.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-17.md",
     "Private/Periodic Notes/2023/Weekly/2023 Week 11.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-16.md",
@@ -227,7 +228,6 @@
     "Private/Templates/Weekly Note Template.md",
     "Untitled.md",
     "Non-business/Psychology/🎉Psychology.md",
-    "_index.md",
-    "Develop/Fruits/🎉Fruits.md"
+    "_index.md"
   ]
 }

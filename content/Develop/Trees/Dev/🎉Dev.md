@@ -20,6 +20,7 @@ tags:
 flowchart LR
 	HERE[&#127881Dev]
 	subgraph Content[Map of contents]
+		direction LR
 		programming[&#127881Programming]
 		versionControl[&#127881Version control]
 	end
@@ -29,7 +30,7 @@ flowchart LR
 	HERE --> Content
 	HERE --> Features
 ```
-- [[Develop/Trees/Dev/Programming/🎉Programming|🎉Programming]]
+- [[Develop/Trees/Dev/Basis/🎉Basis|🎉Basis]]
 - [[Develop/Trees/Dev/Version control/🎉Version control|🎉Version control]]
 
 # Features

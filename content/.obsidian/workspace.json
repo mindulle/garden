@@ -4,47 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "64d7d10ea2e50420",
+        "id": "41043041a0cf4e14",
         "type": "tabs",
         "children": [
           {
-            "id": "ae29498c0786e5a5",
+            "id": "752db641056e38f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/Trees/Learn/Study Case/🎉Study Case.md",
+                "file": "Develop/Seeds/Shovel/🎉Shovel.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f20ec983b994b780",
+            "id": "7651afd6fc369909",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/Trees/Learn/Study Case/launchpad-ui/🎉lanuchpad-ui.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0470f49f5a8a6ec9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-23.md",
+                "file": "Develop/Seeds/🎉Seeds.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-23.md",
+                "file": "Develop/Seeds/🎉Seeds.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-23.md",
+                "file": "Develop/Seeds/🎉Seeds.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-23.md"
+                "file": "Develop/Seeds/🎉Seeds.md"
               }
             }
           },
@@ -171,7 +159,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "6fec753ef132acfd",
@@ -206,35 +194,39 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "0470f49f5a8a6ec9",
+  "active": "7651afd6fc369909",
   "lastOpenFiles": [
-    "Develop/Trees/Learn/Study Case/launchpad-ui/🎉lanuchpad-ui.md",
-    "Develop/Trees/Learn/Study Case/🎉Study Case.md",
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-23.md",
-    "Develop/Trees/Learn/Study Case/launchpad-ui",
-    "Develop/Trees/Learn/Study Case/🚚Resources.md",
-    "Develop/Trees/Learn/🚚Resources.md",
-    "Develop/Trees/🔖Reading list as developer.md",
-    "Develop/Trees/Learn/Computer Science/📚Dictionary.md",
-    "Private/Templates/Core Template/📚Garden - Dictionary.md",
-    "Private/Templates/Core Template/🎉Garden - Entry Point.md",
-    "Develop/Trees/Learn/Computer Science/🎉Computer Science.md",
-    "Develop/Trees/Learn/🎉Learn.md",
-    "Develop/Trees/Learn/Realworld/🎉Realworld.md",
+    "Develop/Seeds/Grocery/🎉Grocery.md",
+    "Develop/Seeds/Storage/🎉Storage.md",
+    "Develop/Seeds/Shovel/Tools/🎉Tools.md",
+    "Develop/Seeds/Shovel/🎉Shovel.md",
+    "Develop/Seeds/Shovel/Tools/miscs",
+    "Develop/Seeds/Shovel/Tools/Terminal",
+    "Develop/Seeds/Shovel/My workflow/🎉My workflow.md",
+    "Develop/Seeds/Shovel/Tools",
+    "Develop/Seeds/(go to raindrop)Shovel/📋Board.md",
+    "Develop/Seeds/(go to raindrop)Shovel/Manage resources/🎉Manage resources.md",
+    "Develop/Seeds/🚚Resources.md",
+    "Develop/Seeds/🎻orchestrate.md",
+    "Develop/Seeds/🎉Seeds.md",
+    "Develop/Seeds/🌱distribute.md",
+    "Develop/Trees/Dev/Version control/🎉Version control.md",
     "Develop/Trees/Dev/🎉Dev.md",
-    "Develop/Trees/Dev/Version control/My Github Project workflow.md",
-    "Develop/Trees/Dev/Programming/📚Dictionary.md",
-    "Develop/Trees/Learn/Computer Science/Network/📚Dictionary.md",
-    "Develop/Trees/Dev/Programming/🎉Programming.md",
+    "Develop/Trees/Dev/🚚Resources.md",
+    "Develop/Trees/Dev/Version control/🚚Resources.md",
     "Private/Templates/Core Template/🚚Garden - Resources.md",
-    "Design/🎉Design.md",
-    "Design/Trees/🎉Trees.md",
-    "Design/Trees/Learn/🚚Resources.md",
-    "Design/Trees/Learn/📚Dictionary.md",
-    "Design/Trees/Learn/🎉Learn.md",
-    "Design/Trees/Learn/Color/🎉Color.md",
-    "Private/Templates/Daily Note Template.md",
-    "Private/Banners/All Banners on this folder come....md",
+    "Develop/Trees/Dev/Realworld/👓Look at a glance.md",
+    "Develop/Trees/Dev/Basis/📚Dictionary.md",
+    "Develop/Trees/Dev/Basis/🎉Basis.md",
+    "Develop/Trees/Dev/Basis/👓Look at a glance.md",
+    "Develop/Trees/Dev/Basis/Languages/Go/🎉Go.md",
+    "Develop/Trees/Dev/Basis/Languages/CSS/🎉CSS.md",
+    "Develop/Trees/Dev/Basis/Languages/🎉Languages.md",
+    "Develop/Trees/Dev/Basis/Libs&Fwks/Database/🎉Database.md",
+    "Develop/Trees/Dev/Basis/Libs&Fwks/By subject/🎉Advanced.md",
+    "Develop/Trees/Dev/Basis/Libs&Fwks/By subject/Diagraming/mermaid.js/🎉mermaid.js.md",
+    "Develop/Trees/Dev/Realworld",
+    "Develop/Trees/Learn/Study Case/launchpad-ui",
     "Develop/Trees/Learn/Study Case",
     "Private/Banners/2023/03/2023 March 14 Banner.png",
     "Private/Banners/2023/04/2023 April 30 Banner.png",
@@ -246,13 +238,9 @@
     "Private/Banners/2023/04/2023 April 27 Banner.png",
     "Private/Banners/2023/04/2023 April 27 Banner.png.crdownload",
     "Private/Banners/2023/04/2023 April 26 Banner.png",
-    "Private/Banners/2023/04/2023 April 26 Banner.png.crdownload",
     "Private/Banners/2023/04/2023 April 25 Banner.png",
-    "Private/Banners/2023/04/2023 April 25 Banner.png.crdownload",
     "Private/Banners/2023/04/2023 April 24 Banner.png",
-    "Private/Banners/2023/04/2023 April 24 Banner.png.crdownload",
     "Private/Banners/2023/04/2023 April 23 Banner.png",
-    "Private/Banners/2023/04/2023 April 23 Banner.png.crdownload",
     "Private/Banners/2023/04/2023 April 22 Banner.png"
   ]
 }

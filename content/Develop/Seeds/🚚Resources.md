@@ -21,3 +21,14 @@ tags:
 | Name | Purpose | Documents | Related issues | 
 | ---- | ------- | --------- | ------------- |
 |      |         |           |               |
+
+# ✨Reading List
+> [!tip] Below materials may be saved in my raindrop
+> - Title : rewrite name of content to understand intuitively with embeded url of contet.
+> - Nav : folder which I have selected for distributing in raindrop.
+> - Symbol Tag: (Optional) raindrop tag with at('@') mark to specify contents which have same only one purpose.
+
+| Title | Nav | Symbol Tag |
+| ----- | --- | ------------------- |
+|       |     |                     |
+

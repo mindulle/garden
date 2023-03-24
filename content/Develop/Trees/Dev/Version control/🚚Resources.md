@@ -23,7 +23,13 @@ tags:
 | git-sim | to visualize how git command works | [Github Repo](https://github.com/initialcommit-com/git-sim)          |                |
 
 
-# 🌱reading list from my seed storage...
-| link for seed | Purpose | keywords to remeber |
-| ------------- | ------- | ----------------- |
-|               |         |                   |
+# ✨Reading List
+> [!tip] Below materials may be saved in my raindrop
+> - Title : rewrite name of content to understand intuitively with embeded url of contet.
+> - Nav : folder which I have selected for distributing in raindrop.
+> - Symbol Tag: (Optional) raindrop tag with at('@') mark to specify contents which have same only one purpose.
+
+| Title | Nav | Symbol Tag |
+| ----- | --- | ------------------- |
+|       |     |                     |
+

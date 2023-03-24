@@ -1,0 +1,758 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Args A story is a component with a set of arguments that define how the component should render. “Args” are Storybook’s mechanism for defining those arguments in a single JavaScript object."><meta property="og:title" content="Args"><meta property="og:description" content="Args A story is a component with a set of arguments that define how the component should render. “Args” are Storybook’s mechanism for defining those arguments in a single JavaScript object."><meta property="og:type" content="website"><meta property="og:image" content="https://mindulle.github.io/gardenicon.png"><meta property="og:url" content="https://mindulle.github.io/garden/Develop/Trees/Dev/Basis/LibsFwks/webFrontend/Test/Storybook/Guides/Write-stories/Args/"><meta property="og:width" content="200"><meta property="og:height" content="200"><meta name=twitter:card content="summary"><meta name=twitter:title content="Args"><meta name=twitter:description content="Args A story is a component with a set of arguments that define how the component should render. “Args” are Storybook’s mechanism for defining those arguments in a single JavaScript object."><meta name=twitter:image content="https://mindulle.github.io/gardenicon.png"><title>Args</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://mindulle.github.io/garden/icon.png><link href=https://mindulle.github.io/garden/styles.b369a84b3c6e6bfd686ad1f9da65641c.min.css rel=stylesheet><link href=https://mindulle.github.io/garden/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://mindulle.github.io/garden/js/darkmode.71fd764547989a0d567451669afd7a55.min.js></script>
+<script src=https://mindulle.github.io/garden/js/util.a0ccf91e1937fe761a74da4946452710.min.js></script>
+<link rel=preload href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css as=style onload='this.onload=null,this.rel="stylesheet"' integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1></script>
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1></script>
+<script async src=https://mindulle.github.io/garden/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://mindulle.github.io/garden",fetchData=Promise.all([fetch("https://mindulle.github.io/garden/indices/linkIndex.664c2442685958b69916ed1b5c8fb463.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://mindulle.github.io/garden/indices/contentIndex.dbb7164ea82753b94b1e8f89ebfd2a64.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://mindulle.github.io/garden",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!0;drawGraph("https://mindulle.github.io/garden",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()});function a(n){const e=n.target,t=e.className.split(" "),s=t.includes("broken"),o=t.includes("internal-link");plausible("Link Click",{props:{href:e.href,broken:s,internal:o,graph:!1}})}const r=document.querySelectorAll("a");for(link of r)link.className.includes("root-title")&&link.addEventListener("click",a,{once:!0})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/mindulle.github.io\/garden\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
+  </script><script defer data-domain=mindulle.github.io/garden src=https://plausible.io/js/script.js></script>
+<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script></head><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://mindulle.github.io/garden/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js></script><div class=singlePage><header><h1 id=page-title><a class=root-title href=https://mindulle.github.io/garden>Mindulle Garden✨</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Args</h1><p class=meta>Last updated
+Mar 24, 2023
+<a href=https://github.com/mindulle/garden/tree/hugo/content/Develop/Trees/Dev/Basis/Libs&Fwks/webFrontend/Test/Storybook/Guides/Write%20stories/Args.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://mindulle.github.io/garden/tags/tree/>Tree</a></li><li><a href=https://mindulle.github.io/garden/tags/storybook/>Storybook</a></li><li><a href=https://mindulle.github.io/garden/tags/test/>Test</a></li><li><a href=https://mindulle.github.io/garden/tags/web/>Web</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#args-object>Args object</a></li><li><a href=#story-args>Story args</a></li><li><a href=#component-args>Component args</a></li><li><a href=#global-args>Global args</a></li><li><a href=#args-composition>Args composition</a></li><li><a href=#args-can-modify-any-aspect-of-your-component>Args can modify any aspect of your component</a></li><li><a href=#setting-args-through-the-url>Setting args through the URL</a></li><li><a href=#mapping-to-complex-arg-values>Mapping to complex arg values</a></li></ol></nav></details></aside><a href=#args><h1 id=args><span class=hanchor arialabel=Anchor># </span>Args</h1></a><p>A story is a component with a set of arguments that define how the component should render. “Args” are Storybook’s mechanism for defining those arguments in a single JavaScript object. Args can be used to dynamically change props, slots, styles, inputs, etc. It allows Storybook and its addons to live edit components. You <em>do not</em> need to modify your underlying component code to use args.</p><p>When an arg’s value changes, the component re-renders, allowing you to interact with components in Storybook’s UI via addons that affect args.</p><p>Learn how and why to write stories in
+<a href=https://storybook.js.org/docs/react/writing-stories/introduction#using-args rel=noopener>the introduction</a>. For details on how args work, read on.</p><a href=#args-object><h2 id=args-object><span class=hanchor arialabel=Anchor># </span>Args object</h2></a><p>The <code>args</code> object can be defined at the
+<a href=https://storybook.js.org/docs/react/writing-stories/introduction#story-args rel=noopener>story</a>,
+<a href=https://storybook.js.org/docs/react/writing-stories/introduction#component-args rel=noopener>component</a> and
+<a href=https://storybook.js.org/docs/react/writing-stories/introduction#global-args rel=noopener>global level</a>. It is a JSON serializable object composed of string keys with matching valid value types that can be passed into a component for your framework.</p><a href=#story-args><h2 id=story-args><span class=hanchor arialabel=Anchor># </span>Story args</h2></a><p>To define the args of a single story, use the <code>args</code> CSF story key:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Button.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇 We create a “template” of how args map to rendering
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>Template</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>Button</span> <span class=p>{...</span><span class=nx>args</span><span class=p>}</span> <span class=o>/&gt;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇 Each story then reuses that template
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Primary</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Primary</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=nx>primary</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>   <span class=nx>label</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// Button.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=kr>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentStory</span><span class=p>,</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span><span class=p>,</span> <span class=nx>ButtonProps</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Button</span><span class=p>&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇 We create a “template” of how args map to rendering
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>const</span> <span class=nx>Template</span>: <span class=kt>ComponentStory</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Button</span><span class=p>&gt;</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>&lt;</span><span class=nt>Button</span> <span class=p>{</span><span class=na>...args</span><span class=p>}</span> <span class=p>/&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Primary</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>Primary</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>primary</span>: <span class=kt>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>label</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl><span class=c>&lt;!-- Button.stories.mdx--&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Meta, Story } from &#39;@storybook/addon-docs&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Button } from &#39;./Button&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Meta</span> <span class=na>title</span><span class=o>=</span><span class=s>&#34;Button&#34;</span> <span class=na>component</span><span class=o>=</span><span class=s>{Button}</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>&lt;!-- 👇 We create a “template” of how args map to rendering --&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>export const Template = (args) =&gt; <span class=p>&lt;</span><span class=nt>Button</span> <span class=err>{...</span><span class=na>args</span><span class=err>}</span> <span class=p>/&gt;</span>;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>&lt;!-- 👇 Each story then reuses that template --&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Story</span>
+</span></span><span class=line><span class=cl>  <span class=na>name</span><span class=o>=</span><span class=s>&#34;Primary&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=na>args</span><span class=o>=</span><span class=s>{{</span>
+</span></span><span class=line><span class=cl>    <span class=na>primary:</span> <span class=na>true</span><span class=err>,</span>
+</span></span><span class=line><span class=cl>    <span class=na>label:</span> <span class=err>&#39;</span><span class=na>Button</span><span class=err>&#39;,</span>
+</span></span><span class=line><span class=cl>  <span class=err>}}</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  {Template.bind({})}
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>Story</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>These args will only apply to the story for which they are attached, although you can
+<a href=https://storybook.js.org/docs/react/writing-stories/build-pages-with-storybook#args-composition-for-presentational-screens rel=noopener>reuse</a> them via JavaScript object reuse:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>// Button.stories.js|jsx|ts|tsx
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Button } from &#39;./Button&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>export default {
+</span></span><span class=line><span class=cl>  /* 👇 The title prop is optional.
+</span></span><span class=line><span class=cl>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span><span class=line><span class=cl>  * to learn how to generate automatic titles
+</span></span><span class=line><span class=cl>  */
+</span></span><span class=line><span class=cl>  title: &#39;Button&#39;,
+</span></span><span class=line><span class=cl>  component: Button,
+</span></span><span class=line><span class=cl>};
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>const Template = () =&gt; ({
+</span></span><span class=line><span class=cl>  //👇 Your template goes here
+</span></span><span class=line><span class=cl>})
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>export const PrimaryLongName = Template.bind({});
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>PrimaryLongName.args = {
+</span></span><span class=line><span class=cl>  ...Primary.args,
+</span></span><span class=line><span class=cl>  label: &#39;Primary with a really long name&#39;,
+</span></span><span class=line><span class=cl>};
+</span></span></code></pre></td></tr></table></div></div><p>In the above example, we use the
+<a href=https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax rel=noopener>object spread</a> feature of ES 2015.</p><a href=#component-args><h2 id=component-args><span class=hanchor arialabel=Anchor># </span>Component args</h2></a><p>You can also define args at the component level; they will apply to all the component&rsquo;s stories unless you overwrite them. To do so, use the <code>args</code> key on the <code>default</code> CSF export:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Button.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=c1>//👇 Creates specific argTypes
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>argTypes</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>backgroundColor</span><span class=o>:</span> <span class=p>{</span> <span class=nx>control</span><span class=o>:</span> <span class=s1>&#39;color&#39;</span> <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=nx>args</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//👇 Now all Button stories will be primary.
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>primary</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// Button.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=kr>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=c1>//👇 Creates specific argTypes
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>argTypes</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>backgroundColor</span><span class=o>:</span> <span class=p>{</span> <span class=nx>control</span><span class=o>:</span> <span class=s1>&#39;color&#39;</span> <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=nx>args</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=c1>//👇 Now all Button stories will be primary.
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>primary</span>: <span class=kt>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Button</span><span class=p>&gt;;</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl><span class=c>&lt;!-- Button.stories.mdx --&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Meta, Story } from &#39;@storybook/addon-docs&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Button } from &#39;./Button&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>&lt;!-- 👇 Creates specific argTypes and turns all stories into primary --&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Meta</span> 
+</span></span><span class=line><span class=cl>  <span class=na>title</span><span class=o>=</span><span class=s>&#34;Button&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=na>component</span><span class=o>=</span><span class=s>{Button}</span>
+</span></span><span class=line><span class=cl>  <span class=na>argTypes</span><span class=o>=</span><span class=s>{{</span>
+</span></span><span class=line><span class=cl>    <span class=na>backgroundColor:</span> <span class=err>{</span> 
+</span></span><span class=line><span class=cl>      <span class=na>control:</span> <span class=err>&#39;</span><span class=na>color</span><span class=err>&#39;,</span> 
+</span></span><span class=line><span class=cl>    <span class=err>},</span>
+</span></span><span class=line><span class=cl>  <span class=err>}},</span>
+</span></span><span class=line><span class=cl>  <span class=na>args</span><span class=o>=</span><span class=s>{{</span>
+</span></span><span class=line><span class=cl>    <span class=na>primary:</span> <span class=na>true</span><span class=err>,</span>
+</span></span><span class=line><span class=cl>  <span class=err>}}</span><span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>&lt;!-- Remainder story implementation --&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#global-args><h2 id=global-args><span class=hanchor arialabel=Anchor># </span>Global args</h2></a><p>You can also define args at the global level; they will apply to every component&rsquo;s stories unless you overwrite them. To do so, export the <code>args</code> key in your <code>preview.js</code>:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// preview.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=c1>// All stories expect a theme arg
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>export</span> <span class=kr>const</span> <span class=nx>argTypes</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>theme</span><span class=o>:</span> <span class=p>{</span> <span class=nx>control</span><span class=o>:</span> <span class=s1>&#39;select&#39;</span><span class=p>,</span> <span class=nx>options</span><span class=o>:</span> <span class=p>[</span><span class=s1>&#39;light&#39;</span><span class=p>,</span> <span class=s1>&#39;dark&#39;</span><span class=p>]</span> <span class=p>}</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// The default value of the theme arg to all stories
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>export</span> <span class=kr>const</span> <span class=nx>args</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>theme</span><span class=o>:</span> <span class=s1>&#39;light&#39;</span> <span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#args-composition><h2 id=args-composition><span class=hanchor arialabel=Anchor># </span>Args composition</h2></a><p>You can separate the arguments to a story to compose in other stories. Here&rsquo;s how you can combine args for multiple stories of the same component.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Button.stories.js|jsx|ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>({</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// 👈 Your template goes here
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Primary</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Primary</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>primary</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>label</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Secondary</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Secondary</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span><span class=nx>Primary</span><span class=p>.</span><span class=nx>args</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>primary</span><span class=o>:</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><p>💡 If you find yourself re-using the same args for most of a component&rsquo;s stories, you should consider using
+<a href=https://storybook.js.org/docs/react/writing-stories/introduction#component-args rel=noopener>component-level args</a>.</p><p>Args are useful when writing stories for composite components that are assembled from other components. Composite components often pass their arguments unchanged to their child components, and similarly, their stories can be compositions of their child components stories. With args, you can directly compose the arguments:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Page.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Page</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./Page&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇 Imports all Header stories
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>import</span> <span class=o>*</span> <span class=nx>as</span> <span class=nx>HeaderStories</span> <span class=nx>from</span> <span class=s1>&#39;./Header.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Page&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Page</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>Page</span> <span class=p>{...</span><span class=nx>args</span><span class=p>}</span> <span class=o>/&gt;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>LoggedIn</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>LoggedIn</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span><span class=nx>HeaderStories</span><span class=p>.</span><span class=nx>LoggedIn</span><span class=p>.</span><span class=nx>args</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// Page.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=kr>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentStory</span><span class=p>,</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Page</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./Page&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>//👇 Imports all Header stories
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>import</span> <span class=o>*</span> <span class=kr>as</span> <span class=nx>HeaderStories</span> <span class=kr>from</span> <span class=s1>&#39;./Header.stories&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Page&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>Page</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Page</span><span class=p>&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span>: <span class=kt>ComponentStory</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Page</span><span class=p>&gt;</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>&lt;</span><span class=nt>Page</span> <span class=p>{</span><span class=na>...args</span><span class=p>}</span> <span class=p>/&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>LoggedIn</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>LoggedIn</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=p>...</span><span class=nx>HeaderStories</span><span class=p>.</span><span class=nx>LoggedIn</span><span class=p>.</span><span class=nx>args</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#args-can-modify-any-aspect-of-your-component><h2 id=args-can-modify-any-aspect-of-your-component><span class=hanchor arialabel=Anchor># </span>Args can modify any aspect of your component</h2></a><p>You can use args in your stories to configure the component&rsquo;s appearance, similar to what you would do in an application. For example, here&rsquo;s how you could use a <code>footer</code> arg to populate a child component:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Page.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Page</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./Page&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Page&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Page</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=o>&lt;</span><span class=nx>Page</span> <span class=p>{...</span><span class=nx>args</span><span class=p>}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>footer</span><span class=o>&gt;</span><span class=p>{</span><span class=nx>args</span><span class=p>.</span><span class=nx>footer</span><span class=p>}</span><span class=o>&lt;</span><span class=err>/footer&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=o>&lt;</span><span class=err>/Page&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>CustomFooter</span><span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>CustomFooter</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>footer</span><span class=o>:</span> <span class=s1>&#39;Built with Storybook&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// Page.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=kr>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentStory</span><span class=p>,</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Page</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./Page&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Page&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>Page</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Page</span><span class=p>&gt;;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span>: <span class=kt>ComponentStory</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Page</span><span class=p>&gt;</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>Page</span> <span class=p>{</span><span class=na>...args</span><span class=p>}&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>footer</span><span class=p>&gt;{</span><span class=nx>args</span><span class=p>.</span><span class=nx>footer</span><span class=p>}&lt;/</span><span class=nt>footer</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;/</span><span class=nt>Page</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>CustomFooter</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>CustomFooter</span><span class=p>.</span><span class=nx>args</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>footer</span><span class=o>:</span> <span class=s1>&#39;Built with Storybook&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl><span class=c>&lt;!-- Page.stories.mdx --&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Meta, Story } from &#39;@storybook/addon-docs&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Page } from &#39;./Page&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Meta</span> <span class=na>title</span><span class=o>=</span><span class=s>&#34;Page&#34;</span> <span class=na>component</span><span class=o>=</span><span class=s>{Page}</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>export const Template = (args) =&gt; (
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>Page</span> <span class=err>{...</span><span class=na>args</span><span class=err>}</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>&lt;</span><span class=nt>footer</span><span class=p>&gt;</span>{args.footer}<span class=p>&lt;/</span><span class=nt>footer</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;/</span><span class=nt>Page</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>);
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Story</span>
+</span></span><span class=line><span class=cl>  <span class=na>name</span><span class=o>=</span><span class=s>&#34;CustomFooter&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=na>args</span><span class=o>=</span><span class=s>{{</span>
+</span></span><span class=line><span class=cl>    <span class=na>footer:</span> <span class=err>&#39;</span><span class=na>Built</span> <span class=na>with</span> <span class=na>Storybook</span><span class=err>&#39;,</span>
+</span></span><span class=line><span class=cl>  <span class=err>}}</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  {Template.bind({})}
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>Story</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#setting-args-through-the-url><h2 id=setting-args-through-the-url><span class=hanchor arialabel=Anchor># </span>Setting args through the URL</h2></a><p>You can also override the set of initial args for the active story by adding an <code>args</code> query parameter to the URL. Typically you would use the
+<a href=https://storybook.js.org/docs/react/essentials/controls rel=noopener>Controls addon</a> to handle this. For example, here&rsquo;s how you could set a <code>size</code> and <code>style</code> arg in the Storybook&rsquo;s URL:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>?path<span class=o>=</span>/story/avatar--default<span class=p>&amp;</span><span class=nv>args</span><span class=o>=</span>style:rounded<span class=p>;</span>size:100
+</span></span></code></pre></td></tr></table></div></div><p>As a safeguard against
+<a href=https://owasp.org/www-community/attacks/xss/ rel=noopener>XSS</a> attacks, the arg&rsquo;s keys and values provided in the URL are limited to alphanumeric characters, spaces, underscores, and dashes. Any other types will be ignored and removed from the URL, but you can still use them with the Controls addon and
+<a href=https://storybook.js.org/docs/react/writing-stories/introduction#mapping-to-complex-arg-values rel=noopener>within your story</a>.</p><p>The <code>args</code> param is always a set of <code>key: value</code> pairs delimited with a semicolon <code>;</code>. Values will be coerced (cast) to their respective <code>argTypes</code> (which may have been automatically inferred). Objects and arrays are supported. Special values <code>null</code> and <code>undefined</code> can be set by prefixing with a bang <code>!</code>. For example, <code>args=obj.key:val;arr[0]:one;arr[1]:two;nil:!null</code> will be interpreted as:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>{
+</span></span><span class=line><span class=cl>  obj: { key: &#39;val&#39; },
+</span></span><span class=line><span class=cl>  arr: [&#39;one&#39;, &#39;two&#39;],
+</span></span><span class=line><span class=cl>  nil: null
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><p>Similarly, special formats are available for dates and colors. Date objects will be encoded as <code>!date(value)</code> with value represented as an ISO date string. Colors are encoded as <code>!hex(value)</code>, <code>!rgba(value)</code> or <code>!hsla(value)</code>. Note that rgb(a) and hsl(a) should not contain spaces or percentage signs in the URL.</p><p>Args specified through the URL will extend and override any default values of args set on the story.</p><a href=#mapping-to-complex-arg-values><h2 id=mapping-to-complex-arg-values><span class=hanchor arialabel=Anchor># </span>Mapping to complex arg values</h2></a><p>Complex values such as JSX elements cannot be serialized to the manager (e.g., the Controls addon) or synced with the URL. Arg values can be &ldquo;mapped&rdquo; from a simple string to a complex type using the <code>mapping</code> property in <code>argTypes</code> to work around this limitation. It works in any arg but makes the most sense when used with the <code>select</code> control type.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// MyComponent.stories.js|jsx|ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>MyComponent</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./MyComponent&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;MyComponent&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>MyComponent</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>argTypes</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>label</span><span class=o>:</span><span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>options</span><span class=o>:</span> <span class=p>[</span><span class=s1>&#39;Normal&#39;</span><span class=p>,</span> <span class=s1>&#39;Bold&#39;</span><span class=p>,</span> <span class=s1>&#39;Italic&#39;</span><span class=p>],</span>
+</span></span><span class=line><span class=cl>      <span class=nx>mapping</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nx>Bold</span><span class=o>:</span> <span class=o>&lt;</span><span class=nx>b</span><span class=o>&gt;</span><span class=nx>Bold</span><span class=o>&lt;</span><span class=err>/b&gt;,</span>
+</span></span><span class=line><span class=cl>        <span class=nx>Italic</span><span class=o>:</span> <span class=o>&lt;</span><span class=nx>i</span><span class=o>&gt;</span><span class=nx>Italic</span><span class=o>&lt;</span><span class=err>/i&gt;,</span>
+</span></span><span class=line><span class=cl>      <span class=p>},</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><p>Note that <code>mapping</code> does not have to be exhaustive. If the arg value is not a property of <code>mapping</code>, the value will be used directly. Keys in <code>mapping</code> always correspond to arg <em>values</em>, not their index in the <code>options</code> array.</p><details open><summary>Using args in addons</summary><p>If you are <a href=/docs/react/addons/writing-addons>writing an addon</a> that wants to read or update args, use the <code>useArgs</code> hook exported by <code>@storybook/api</code>:</p><div class="frontpage-code-snippets css-0 e7d06zb5"></div></details><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// your-addon/manager.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>useArgs</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;@storybook/api&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=p>[</span><span class=nx>args</span><span class=p>,</span> <span class=nx>updateArgs</span><span class=p>,</span> <span class=nx>resetArgs</span><span class=p>]</span> <span class=o>=</span> <span class=nx>useArgs</span><span class=p>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// To update one or more args:
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>updateArgs</span><span class=p>({</span> <span class=nx>key</span><span class=o>:</span> <span class=s1>&#39;value&#39;</span> <span class=p>});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// To reset one (or more) args:
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>resetArgs</span><span class=p>((</span><span class=nx>argNames</span><span class=o>:</span> <span class=p>[</span><span class=s1>&#39;key&#39;</span><span class=p>]));</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// To reset all args
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>resetArgs</span><span class=p>();</span>
+</span></span></code></pre></td></tr></table></div></div><details open><summary>parameters.passArgsFirst</summary><p>In Storybook 6+, we pass the args as the first argument to the story function. The second argument is the “context”, which includes story parameters, globals, argTypes, and other information.</p><p>In Storybook 5 and before we passed the context as the first argument. If you’d like to revert to that functionality set the <code>parameters.passArgsFirst</code> parameter in <a href=/docs/react/configure/overview#configure-story-rendering><code>.storybook/preview.js</code></a>:</p></details><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// .storybook/preview.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>parameter</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>passArgsFirst</span> <span class=o>:</span> <span class=kc>false</span> <span class=p>}.</span>
+</span></span></code></pre></td></tr></table></div></div><p><a href=https://github.com/storybookjs/storybook/tree/next/docs/writing-stories/args.md target=_blank rel=noopener class="e1soj9vu1 e1ja7avb2 css-1ii1tfm e1ja7avb1"><span class="css-1xdhyk6 e1ja7avb3"><span role=img aria-label=write>✍️</span> Edit on GitHub – PRs welcome!</span></a></p></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/garden/Develop/Trees/Dev/Basis/LibsFwks/webFrontend/Test/Storybook/_Storybook/ data-ctx="Develop/Trees/Dev/Basis/Libs&Fwks/webFrontend/Test/Storybook/Guides/Write stories/Args" data-src=/Develop/Trees/Dev/Basis/LibsFwks/webFrontend/Test/Storybook/_Storybook class=internal-link>_Storybook</a></li></ul></div><div><script async src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://mindulle.github.io/garden/js/graph.6579af7b10c818dbd2ca038702db0224.js></script></div></div><div id=contact_buttons><footer><p>Made by mindulle using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://mindulle.github.io/garden>Home</a></li><li><a href=https://github.com/mindulle>GitHub</a></li></ul></footer></div></div></body></html>

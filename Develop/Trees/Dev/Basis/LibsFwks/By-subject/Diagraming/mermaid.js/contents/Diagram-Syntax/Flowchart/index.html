@@ -1,0 +1,612 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Flowcharts - Basic Syntax All Flowcharts are composed of nodes, the geometric shapes and edges, the arrows or lines. The mermaid code defines the way that these nodes and edges are made and interact."><meta property="og:title" content="Flowchart"><meta property="og:description" content="Flowcharts - Basic Syntax All Flowcharts are composed of nodes, the geometric shapes and edges, the arrows or lines. The mermaid code defines the way that these nodes and edges are made and interact."><meta property="og:type" content="website"><meta property="og:image" content="https://mindulle.github.io/gardenicon.png"><meta property="og:url" content="https://mindulle.github.io/garden/Develop/Trees/Dev/Basis/LibsFwks/By-subject/Diagraming/mermaid.js/contents/Diagram-Syntax/Flowchart/"><meta property="og:width" content="200"><meta property="og:height" content="200"><meta name=twitter:card content="summary"><meta name=twitter:title content="Flowchart"><meta name=twitter:description content="Flowcharts - Basic Syntax All Flowcharts are composed of nodes, the geometric shapes and edges, the arrows or lines. The mermaid code defines the way that these nodes and edges are made and interact."><meta name=twitter:image content="https://mindulle.github.io/gardenicon.png"><title>Flowchart</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://mindulle.github.io/garden/icon.png><link href=https://mindulle.github.io/garden/styles.b369a84b3c6e6bfd686ad1f9da65641c.min.css rel=stylesheet><link href=https://mindulle.github.io/garden/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://mindulle.github.io/garden/js/darkmode.71fd764547989a0d567451669afd7a55.min.js></script>
+<script src=https://mindulle.github.io/garden/js/util.a0ccf91e1937fe761a74da4946452710.min.js></script>
+<link rel=preload href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css as=style onload='this.onload=null,this.rel="stylesheet"' integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script type=module>
+      import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script><script src=https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1></script>
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1></script>
+<script async src=https://mindulle.github.io/garden/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://mindulle.github.io/garden",fetchData=Promise.all([fetch("https://mindulle.github.io/garden/indices/linkIndex.664c2442685958b69916ed1b5c8fb463.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://mindulle.github.io/garden/indices/contentIndex.dbb7164ea82753b94b1e8f89ebfd2a64.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://mindulle.github.io/garden",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!0;drawGraph("https://mindulle.github.io/garden",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()});function a(n){const e=n.target,t=e.className.split(" "),s=t.includes("broken"),o=t.includes("internal-link");plausible("Link Click",{props:{href:e.href,broken:s,internal:o,graph:!1}})}const r=document.querySelectorAll("a");for(link of r)link.className.includes("root-title")&&link.addEventListener("click",a,{once:!0})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/mindulle.github.io\/garden\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
+  </script><script defer data-domain=mindulle.github.io/garden src=https://plausible.io/js/script.js></script>
+<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script></head><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://mindulle.github.io/garden/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js></script><div class=singlePage><header><h1 id=page-title><a class=root-title href=https://mindulle.github.io/garden>Mindulle Garden✨</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Flowchart</h1><p class=meta>Last updated
+Mar 24, 2023
+<a href=https://github.com/mindulle/garden/tree/hugo/content/Develop/Trees/Dev/Basis/Libs&Fwks/By%20subject/Diagraming/mermaid.js/contents/Diagram%20Syntax/Flowchart.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://mindulle.github.io/garden/tags/tree/>Tree</a></li><li><a href=https://mindulle.github.io/garden/tags/mermaidjs/>Mermaidjs</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><ol><li><a href=#a-node-default>A node (default)</a></li><li><a href=#a-node-with-text>A node with text</a></li></ol></li><li><a href=#graph>Graph</a><ol><li></li></ol></li><li><a href=#flowchart-orientation->Flowchart Orientation 🌱</a></li><li><a href=#node-shapes>Node shapes</a><ol><li><a href=#a-node-with-round-edges>A node with round edges</a></li><li><a href=#a-stadium-shaped-node>A stadium-shaped node</a></li><li><a href=#a-node-in-a-subroutine-shape>A node in a subroutine shape</a></li><li><a href=#a-node-in-a-cylindrical-shape->A node in a cylindrical shape ⭐</a></li><li><a href=#a-node-in-the-form-of-a-circle>A node in the form of a circle</a></li><li><a href=#a-node-in-an-asymmetric-shape>A node in an asymmetric shape</a></li><li><a href=#a-node-rhombus>A node (rhombus)</a></li><li><a href=#a-hexagon-node>A hexagon node</a></li><li><a href=#parallelogram>Parallelogram</a></li><li><a href=#parallelogram-alt>Parallelogram alt</a></li><li><a href=#trapezoid>Trapezoid</a></li><li><a href=#trapezoid-alt>Trapezoid alt</a></li><li><a href=#double-circle>Double circle</a></li></ol></li><li><a href=#links-between-nodes>Links between nodes</a><ol><li><a href=#a-link-with-arrow-head->A link with arrow head 🌱⭐</a></li><li><a href=#an-open-link->An open link 🌱⭐</a></li><li><a href=#text-on-links->Text on links 🌱⭐</a></li><li><a href=#a-link-with-arrow-head-and-text->A link with arrow head and text 🌱⭐</a></li><li><a href=#dotted-link->Dotted link 🌱⭐</a></li><li><a href=#dotted-link-with-text>Dotted link with text</a></li><li><a href=#thick-link>Thick link</a></li><li><a href=#thick-link-with-text>Thick link with text</a></li><li><a href=#chaining-of-links->Chaining of links 🎯⭐</a></li><li><a href=#new-arrow-types>New arrow types</a></li><li><a href=#multi-directional-arrows>Multi directional arrows</a></li><li><a href=#minimum-length-of-a-link->Minimum length of a link 🎯⭐</a></li></ol></li><li><a href=#special-characters-that-break-syntax>Special characters that break syntax</a><ol><li></li><li><a href=#entity-codes-to-escape-characters->Entity codes to escape characters 🏁⭐</a></li></ol></li><li><a href=#subgraphs->Subgraphs 🎯⭐</a><ol><li></li></ol></li><li><a href=#flowcharts>flowcharts</a><ol><li></li></ol></li><li><a href=#direction-in-subgraphs>Direction in subgraphs</a><ol><li></li></ol></li><li><a href=#interaction->Interaction 🎯⭐</a><ol><li></li><li><a href=#comments>Comments</a></li></ol></li><li><a href=#styling-and-classes>Styling and classes</a><ol><li><a href=#styling-links>Styling links</a></li><li><a href=#styling-line-curves>Styling line curves</a></li><li><a href=#styling-a-node>Styling a node</a></li><li><a href=#css-classes->Css classes 🏁⭐</a></li><li><a href=#default-class>Default class</a></li></ol></li><li><a href=#basic-support-for-fontawesome-doesnt-support-in-obsidian>Basic support for fontawesome (Doesn&rsquo;t support in obsidian)</a><ol><li></li></ol></li><li><a href=#graph-declarations-with-spaces-between-vertices-and-link-and-without-semicolon>Graph declarations with spaces between vertices and link and without semicolon</a><ol><li></li></ol></li><li><a href=#configuration>Configuration&mldr;</a></li></ol></nav></details></aside><a href=#flowcharts---basic-syntax><h1 id=flowcharts---basic-syntax><span class=hanchor arialabel=Anchor># </span>Flowcharts - Basic Syntax</h1></a><p>All Flowcharts are composed of <strong>nodes</strong>, the geometric shapes and <strong>edges</strong>, the arrows or lines. The mermaid code defines the way that these <strong>nodes</strong> and <strong>edges</strong> are made and interact.</p><p>It can also accommodate different arrow types, multi directional arrows, and linking to and from subgraphs.</p><blockquote><p><strong>Important note</strong>: Do not type the word &ldquo;end&rdquo; as a Flowchart node. Capitalize all or any one the letters to keep the flowchart from breaking, i.e, &ldquo;End&rdquo; or &ldquo;END&rdquo;. Or you can apply this
+<a href=https://github.com/mermaid-js/mermaid/issues/1444#issuecomment-639528897 rel=noopener>workaround</a>.</p></blockquote><a href=#a-node-default><h3 id=a-node-default><span class=hanchor arialabel=Anchor># </span>A node (default)</h3></a><a href=#code><h5 id=code><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>title: Node
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id</div><blockquote><p><strong>Note</strong> The id is what is displayed in the box.</p></blockquote><a href=#a-node-with-text><h3 id=a-node-with-text><span class=hanchor arialabel=Anchor># </span>A node with text</h3></a><p>It is also possible to set text in the box that differs from the id. If this is done several times, it is the last text found for the node that will be used. Also if you define edges for the node later on, you can omit text definitions. The one previously defined will be used when rendering the box.</p><a href=#code-1><h5 id=code-1><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>title: Node with text
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1[This is the text in the box]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1[This is the text in the box]</div><a href=#graph><h2 id=graph><span class=hanchor arialabel=Anchor># </span>Graph</h2></a><p>This statement declares the direction of the Flowchart.</p><p>This declares the flowchart is oriented from top to bottom (<code>TD</code> or <code>TB</code>).</p><a href=#code-2><h5 id=code-2><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TD
+</span></span><span class=line><span class=cl>    Start --&gt; Stop
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TD
+Start --> Stop</div><p>This declares the flowchart is oriented from left to right (<code>LR</code>).</p><a href=#code-3><h5 id=code-3><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    Start --&gt; Stop
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+Start --> Stop</div><hr><a href=#flowchart-orientation-><h2 id=flowchart-orientation-><span class=hanchor arialabel=Anchor># </span>Flowchart Orientation 🌱</h2></a><p>Possible FlowChart orientations are:</p><ul><li>TB - top to bottom</li><li>TD - top-down/ same as top to bottom</li><li>BT - bottom to top</li><li>RL - right to left</li><li>LR - left to right</li></ul><a href=#node-shapes><h2 id=node-shapes><span class=hanchor arialabel=Anchor># </span>Node shapes</h2></a><a href=#a-node-with-round-edges><h3 id=a-node-with-round-edges><span class=hanchor arialabel=Anchor># </span>A node with round edges</h3></a><a href=#code-4><h5 id=code-4><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1(This is the text in the box)
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1(This is the text in the box)</div><a href=#a-stadium-shaped-node><h3 id=a-stadium-shaped-node><span class=hanchor arialabel=Anchor># </span>A stadium-shaped node</h3></a><a href=#code-5><h5 id=code-5><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1([This is the text in the box])
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1([This is the text in the box])</div><a href=#a-node-in-a-subroutine-shape><h3 id=a-node-in-a-subroutine-shape><span class=hanchor arialabel=Anchor># </span>A node in a subroutine shape</h3></a><a href=#code-6><h5 id=code-6><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1[[This is the text in the box]]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1[[This is the text in the box]]</div><a href=#a-node-in-a-cylindrical-shape-><h3 id=a-node-in-a-cylindrical-shape-><span class=hanchor arialabel=Anchor># </span>A node in a cylindrical shape ⭐</h3></a><a href=#code-7><h5 id=code-7><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1[(Database)]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1[(Database)]</div><a href=#a-node-in-the-form-of-a-circle><h3 id=a-node-in-the-form-of-a-circle><span class=hanchor arialabel=Anchor># </span>A node in the form of a circle</h3></a><a href=#code-8><h5 id=code-8><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1((This is the text in the circle))
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1((This is the text in the circle))</div><a href=#a-node-in-an-asymmetric-shape><h3 id=a-node-in-an-asymmetric-shape><span class=hanchor arialabel=Anchor># </span>A node in an asymmetric shape</h3></a><a href=#code-9><h5 id=code-9><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1&gt;This is the text in the box]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1>This is the text in the box]</div><p>Currently only the shape above is possible and not its mirror. <em>This might change with future releases.</em></p><a href=#a-node-rhombus><h3 id=a-node-rhombus><span class=hanchor arialabel=Anchor># </span>A node (rhombus)</h3></a><a href=#code-10><h5 id=code-10><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1{This is the text in the box}
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1{This is the text in the box}</div><a href=#a-hexagon-node><h3 id=a-hexagon-node><span class=hanchor arialabel=Anchor># </span>A hexagon node</h3></a><a href=#code-11><h5 id=code-11><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1{{This is the text in the box}}
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1{{This is the text in the box}}</div><a href=#parallelogram><h3 id=parallelogram><span class=hanchor arialabel=Anchor># </span>Parallelogram</h3></a><a href=#code-12><h5 id=code-12><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TD
+</span></span><span class=line><span class=cl>    id1[/This is the text in the box/]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TD
+id1[/This is the text in the box/]</div><a href=#parallelogram-alt><h3 id=parallelogram-alt><span class=hanchor arialabel=Anchor># </span>Parallelogram alt</h3></a><a href=#code-13><h5 id=code-13><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TD
+</span></span><span class=line><span class=cl>    id1[\This is the text in the box\]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TD
+id1[\This is the text in the box\]</div><a href=#trapezoid><h3 id=trapezoid><span class=hanchor arialabel=Anchor># </span>Trapezoid</h3></a><a href=#code-14><h5 id=code-14><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TD
+</span></span><span class=line><span class=cl>    A[/Christmas\]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TD
+A[/Christmas\]</div><a href=#trapezoid-alt><h3 id=trapezoid-alt><span class=hanchor arialabel=Anchor># </span>Trapezoid alt</h3></a><a href=#code-15><h5 id=code-15><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TD
+</span></span><span class=line><span class=cl>    B[\Go shopping/]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TD
+B[\Go shopping/]</div><a href=#double-circle><h3 id=double-circle><span class=hanchor arialabel=Anchor># </span>Double circle</h3></a><a href=#code-16><h5 id=code-16><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TD
+</span></span><span class=line><span class=cl>    id1(((This is the text in the circle)))
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TD
+id(((This is the text in the circle)))</div><a href=#links-between-nodes><h2 id=links-between-nodes><span class=hanchor arialabel=Anchor># </span>Links between nodes</h2></a><p>Nodes can be connected with links/edges. It is possible to have different types of links or attach a text string to a link.</p><a href=#a-link-with-arrow-head-><h3 id=a-link-with-arrow-head-><span class=hanchor arialabel=Anchor># </span>A link with arrow head 🌱⭐</h3></a><a href=#code-17><h5 id=code-17><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A--&gt;B
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A-->B</div><a href=#an-open-link-><h3 id=an-open-link-><span class=hanchor arialabel=Anchor># </span>An open link 🌱⭐</h3></a><a href=#code-18><h5 id=code-18><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A --- B
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A --- B</div><a href=#text-on-links-><h3 id=text-on-links-><span class=hanchor arialabel=Anchor># </span>Text on links 🌱⭐</h3></a><a href=#code-19><h5 id=code-19><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A-- This is the text! ---B
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A-- This is the text! ---B</div><p>or</p><a href=#code-20><h5 id=code-20><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A---|This is the text|B
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A---|This is the text|B</div><a href=#a-link-with-arrow-head-and-text-><h3 id=a-link-with-arrow-head-and-text-><span class=hanchor arialabel=Anchor># </span>A link with arrow head and text 🌱⭐</h3></a><a href=#code-21><h5 id=code-21><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A--&gt;|text|B
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A-->|text|B</div><p>or</p><a href=#code-22><h5 id=code-22><span class=hanchor arialabel=Anchor># </span>Code</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A-- text --&gt;B
+</span></span></code></pre></td></tr></table></div></div><a href=#dotted-link-><h3 id=dotted-link-><span class=hanchor arialabel=Anchor># </span>Dotted link 🌱⭐</h3></a><a href=#code-23><h5 id=code-23><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>   A-.-&gt;B;
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A-.->B;</div><a href=#dotted-link-with-text><h3 id=dotted-link-with-text><span class=hanchor arialabel=Anchor># </span>Dotted link with text</h3></a><a href=#code-24><h5 id=code-24><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>   A-. text .-&gt; B
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A-. text .-> B</div><a href=#thick-link><h3 id=thick-link><span class=hanchor arialabel=Anchor># </span>Thick link</h3></a><a href=#code-25><h5 id=code-25><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>   A ==&gt; B
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A ==> B</div><a href=#thick-link-with-text><h3 id=thick-link-with-text><span class=hanchor arialabel=Anchor># </span>Thick link with text</h3></a><a href=#code-26><h5 id=code-26><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>   A <mark> text </mark>&gt; B
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A <mark>text </mark>> B</div><a href=#chaining-of-links-><h3 id=chaining-of-links-><span class=hanchor arialabel=Anchor># </span>Chaining of links 🎯⭐</h3></a><p>It is possible declare many links in the same line as per below:</p><a href=#code-27><h5 id=code-27><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>   A -- text --&gt; B -- text2 --&gt; C
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A -- text --> B -- teext2 --> C</div><p>It is also possible to declare multiple nodes links in <mark>the same line as per</mark> below:</p><a href=#code-28><h5 id=code-28><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>   a --&gt; b &amp; c--&gt; d
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+a --> B & c--> d</div><p>You can then describe dependencies in a very expressive way. Like the one-liner below:</p><a href=#code-29><h5 id=code-29><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TB
+</span></span><span class=line><span class=cl>    A &amp; B--&gt; C &amp; D
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TB
+A & B --> C & D</div><p>If you describe the same diagram using the the <mark>basic syntax</mark>, it will take <mark>four lines</mark>. A word of warning, one could go overboard with this making the flowchart harder to read in markdown form. The Swedish word <code>lagom</code><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> comes to mind. It means, not too much and not too little. This goes for expressive syntaxes as well.</p><a href=#code-30><h5 id=code-30><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TB
+</span></span><span class=line><span class=cl>    A --&gt; C
+</span></span><span class=line><span class=cl>    A --&gt; D
+</span></span><span class=line><span class=cl>    B --&gt; C
+</span></span><span class=line><span class=cl>    B --&gt; D
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TB
+A --> C
+A --> D
+B --> C
+B --> D</div><a href=#new-arrow-types><h3 id=new-arrow-types><span class=hanchor arialabel=Anchor># </span>New arrow types</h3></a><p>There are new types of arrows supported as per below:</p><a href=#code-31><h5 id=code-31><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A --o B
+</span></span><span class=line><span class=cl>    B --x C
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A --o B
+B --x C</div><a href=#multi-directional-arrows><h3 id=multi-directional-arrows><span class=hanchor arialabel=Anchor># </span>Multi directional arrows</h3></a><p>There is the possibility to use multidirectional arrows.</p><a href=#code-32><h5 id=code-32><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A o--o B
+</span></span><span class=line><span class=cl>    B &lt;--&gt; C
+</span></span><span class=line><span class=cl>    C x--x D
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A o--o B
+B <--> C
+C x--x D</div><a href=#minimum-length-of-a-link-><h3 id=minimum-length-of-a-link-><span class=hanchor arialabel=Anchor># </span>Minimum length of a link 🎯⭐</h3></a><p>Each node in the flowchart is ultimately assigned to a rank in the rendered graph, i.e. to a vertical or horizontal level (depending on the flowchart orientation), based on the nodes to which it is linked. By default, links can span any number of ranks, but you can ask for any link to be longer than the others by adding extra dashes in the link definition.</p><p>In the following example, two extra dashes are added in the link from node <em>B</em> to node <em>E</em>, so that it spans two more ranks than regular links:</p><a href=#code-33><h5 id=code-33><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TD
+</span></span><span class=line><span class=cl>    A[Start] --&gt; B{Is it?}
+</span></span><span class=line><span class=cl>    B --&gt;|Yes| C[OK]
+</span></span><span class=line><span class=cl>    C --&gt; D[Rethink]
+</span></span><span class=line><span class=cl>    D --&gt; B
+</span></span><span class=line><span class=cl>    B ----&gt;|No| E[End]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TD
+A[Start] --> B{Is it?}
+B -->|Yes| C[OK]
+C --> D[Rethink]
+D --> B
+B ---->|NO| E[End]</div><blockquote><p><strong>Note</strong> Links may still be made longer than the requested number of ranks by the rendering engine to accommodate other requests.</p></blockquote><p>When the link label is written in the middle of the link, the extra dashes must be added on the right side of the link. The following example is equivalent to the previous one:</p><a href=#code-34><h5 id=code-34><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TD
+</span></span><span class=line><span class=cl>    A[Start] --&gt; B{Is it?}
+</span></span><span class=line><span class=cl>    B -- Yes --&gt; C[OK]
+</span></span><span class=line><span class=cl>    C --&gt; D[Rethink]
+</span></span><span class=line><span class=cl>    D --&gt; B
+</span></span><span class=line><span class=cl>    B -- No ----&gt; E[End]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TD
+A[Start] --> B{Is it?}
+B -- Yes --> C[OK]
+C --> D[Rethink]
+D --> B
+B -- No ----> E[End]</div><p>For dotted or thick links, the characters to add are equals signs or dots, as summed up in the following table:</p><table><thead><tr><th>Length</th><th>1</th><th>2</th><th>3</th></tr></thead><tbody><tr><td>Normal</td><td><code>---</code></td><td><code>----</code></td><td><code>-----</code></td></tr><tr><td>Normal with arrow</td><td><code>--></code></td><td><code>---></code></td><td><code>----></code></td></tr><tr><td>Thick</td><td>`===`</td><td>`====`</td><td>`=====`</td></tr><tr><td>Thick with arrow</td><td>`==>`</td><td>`===>`</td><td>`====>`</td></tr><tr><td>Dotted</td><td><code>-.-</code></td><td><code>-..-</code></td><td><code>-...-</code></td></tr><tr><td>Dotted with arrow</td><td><code>-.-></code></td><td><code>-..-</code></td><td><code>-...-></code></td></tr></tbody></table><hr><a href=#special-characters-that-break-syntax><h2 id=special-characters-that-break-syntax><span class=hanchor arialabel=Anchor># </span>Special characters that break syntax</h2></a><p>It is possible to put text within quotes in order to render more troublesome characters. As in the example below:</p><a href=#code-35><h5 id=code-35><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1[&#34;This is the (text) in the box&#34;]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1["This is the (text) in the box"]</div><a href=#entity-codes-to-escape-characters-><h3 id=entity-codes-to-escape-characters-><span class=hanchor arialabel=Anchor># </span>Entity codes to escape characters 🏁⭐</h3></a><p>It is possible to escape characters using the syntax exemplified here.</p><a href=#code-36><h5 id=code-36><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A[&#34;A double quote:#quot;&#34;] --&gt;B[&#34;A dec char:#9829;&#34;]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A["A double quote:#quot;"] -->B["A dec char:#9829;"]</div><p>Numbers given are base 10, so <code>#</code> can be encoded as <code>#35;</code>. It is also supported to use HTML character names.</p><hr><a href=#subgraphs-><h2 id=subgraphs-><span class=hanchor arialabel=Anchor># </span>Subgraphs 🎯⭐</h2></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>subgraph title
+</span></span><span class=line><span class=cl>    graph definition
+</span></span><span class=line><span class=cl>end
+</span></span></code></pre></td></tr></table></div></div><p>An example below:</p><a href=#code-37><h5 id=code-37><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TB
+</span></span><span class=line><span class=cl>    c1--&gt;a2
+</span></span><span class=line><span class=cl>    subgraph one
+</span></span><span class=line><span class=cl>    a1--&gt;a2
+</span></span><span class=line><span class=cl>    end
+</span></span><span class=line><span class=cl>    subgraph two
+</span></span><span class=line><span class=cl>    b1--&gt;b2
+</span></span><span class=line><span class=cl>    end
+</span></span><span class=line><span class=cl>    subgraph three
+</span></span><span class=line><span class=cl>    c1--&gt;c2
+</span></span><span class=line><span class=cl>    end
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TB
+c1-->a2
+subgraph one
+a1-->a2
+end
+subgraph two
+b1-->b2
+end
+subgraph three
+c1-->c2
+end</div><p>You can also set an explicit id for the subgraph.</p><a href=#code-38><h5 id=code-38><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TB
+</span></span><span class=line><span class=cl>    c1--&gt;a2
+</span></span><span class=line><span class=cl>    subgraph ide1 [one]
+</span></span><span class=line><span class=cl>    a1--&gt;a2
+</span></span><span class=line><span class=cl>    end
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TB
+c1-->a2
+subgraph ide1 [one]
+a1-->a2
+end</div><hr><a href=#flowcharts><h2 id=flowcharts><span class=hanchor arialabel=Anchor># </span>flowcharts</h2></a><p>With the graphtype flowchart it is also possible to set edges to and from subgraphs as in the flowchart below.</p><a href=#code-39><h5 id=code-39><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TB
+</span></span><span class=line><span class=cl>    c1--&gt;a2
+</span></span><span class=line><span class=cl>    subgraph one
+</span></span><span class=line><span class=cl>    a1--&gt;a2
+</span></span><span class=line><span class=cl>    end
+</span></span><span class=line><span class=cl>    subgraph two
+</span></span><span class=line><span class=cl>    b1--&gt;b2
+</span></span><span class=line><span class=cl>    end
+</span></span><span class=line><span class=cl>    subgraph three
+</span></span><span class=line><span class=cl>    c1--&gt;c2
+</span></span><span class=line><span class=cl>    end
+</span></span><span class=line><span class=cl>    one --&gt; two
+</span></span><span class=line><span class=cl>    three --&gt; two
+</span></span><span class=line><span class=cl>    two --&gt; c2
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TB
+c1-->a2
+subgraph one
+a1-->a2
+end
+subgraph two
+b1-->b2
+end
+subgraph three
+c1-->c2
+end
+one --> two
+three --> two
+two --> c2</div><hr><a href=#direction-in-subgraphs><h2 id=direction-in-subgraphs><span class=hanchor arialabel=Anchor># </span>Direction in subgraphs</h2></a><p>With the graphtype flowcharts you can use the direction statement to set the direction which the subgraph will render like in this example.</p><a href=#code-40><h5 id=code-40><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>  subgraph TOP
+</span></span><span class=line><span class=cl>    direction TB
+</span></span><span class=line><span class=cl>    subgraph B1
+</span></span><span class=line><span class=cl>        direction RL
+</span></span><span class=line><span class=cl>        i1 --&gt;f1
+</span></span><span class=line><span class=cl>    end
+</span></span><span class=line><span class=cl>    subgraph B2
+</span></span><span class=line><span class=cl>        direction BT
+</span></span><span class=line><span class=cl>        i2 --&gt;f2
+</span></span><span class=line><span class=cl>    end
+</span></span><span class=line><span class=cl>  end
+</span></span><span class=line><span class=cl>  A --&gt; TOP --&gt; B
+</span></span><span class=line><span class=cl>  B1 --&gt; B2
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+subgraph TOP
+direction TB
+subgraph B1
+direction RL
+i1 -->f1
+end
+subgraph B2
+direction BT
+i2 -->f2
+end
+end
+A --> TOP --> B
+B1 --> B2</div><hr><a href=#interaction-><h2 id=interaction-><span class=hanchor arialabel=Anchor># </span>Interaction 🎯⭐</h2></a><p>It is possible to bind a click event to a node, the click can lead to either a javascript callback or to a link which will be opened in a new browser tab. <strong>Note</strong>: This functionality is disabled when using <code>securityLevel='strict'</code> and enabled when using <code>securityLevel='loose'</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>click nodeId callback
+</span></span><span class=line><span class=cl>click nodeId call callback()
+</span></span></code></pre></td></tr></table></div></div><ul><li>nodeId is the id of the node</li><li>callback is the name of a javascript function defined on the page displaying the graph, the function will be called with the nodeId as parameter.</li></ul><p>Examples of tooltip usage below:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>&lt;script&gt;
+</span></span><span class=line><span class=cl>  const callback = function () {
+</span></span><span class=line><span class=cl>    alert(&#39;A callback was triggered&#39;);
+</span></span><span class=line><span class=cl>  };
+</span></span><span class=line><span class=cl>&lt;/script&gt;
+</span></span></code></pre></td></tr></table></div></div><p>The tooltip text is surrounded in double quotes. The styles of the tooltip are set by the class <code>.mermaidTooltip</code>.</p><a href=#code-41><h5 id=code-41><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A--&gt;B
+</span></span><span class=line><span class=cl>    B--&gt;C
+</span></span><span class=line><span class=cl>    C--&gt;D
+</span></span><span class=line><span class=cl>    click A callback &#34;Tooltip for a callback&#34;
+</span></span><span class=line><span class=cl>    click B &#34;https://www.github.com&#34; &#34;This is a tooltip for a link&#34;
+</span></span><span class=line><span class=cl>    click A call callback() &#34;Tooltip for a callback&#34;
+</span></span><span class=line><span class=cl>    click B href &#34;https://www.github.com&#34; &#34;This is a tooltip for a link&#34;
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A-->B
+B-->C
+C-->D
+click A callback "Tooltip for a callback"
+click B "https://www.github.com" "This is a tooltip for a link"
+click A call callback() "Tooltip for a callback"
+click B href "https://www.github.com" "This is a tooltip for a link"</div><blockquote><p><strong>Success</strong> The tooltip functionality and the ability to link to urls are available from version 0.5.2.</p></blockquote><p>?> Due to limitations with how Docsify handles JavaScript callback functions, an alternate working demo for the above code can be viewed at
+<a href=https://jsfiddle.net/s37cjoau/3/ rel=noopener>this jsfiddle</a>.</p><p>Links are opened in the same browser tab/window by default. It is possible to change this by adding a link target to the click definition (<code>_self</code>, <code>_blank</code>, <code>_parent</code> and <code>_top</code> are supported):</p><a href=#code-42><h5 id=code-42><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A--&gt;B
+</span></span><span class=line><span class=cl>    B--&gt;C
+</span></span><span class=line><span class=cl>    C--&gt;D
+</span></span><span class=line><span class=cl>    D--&gt;E
+</span></span><span class=line><span class=cl>    click A &#34;https://www.github.com&#34; _blank
+</span></span><span class=line><span class=cl>    click B &#34;https://www.github.com&#34; &#34;Open this in a new tab&#34; _blank
+</span></span><span class=line><span class=cl>    click C href &#34;https://www.github.com&#34; _blank
+</span></span><span class=line><span class=cl>    click D href &#34;https://www.github.com&#34; &#34;Open this in a new tab&#34; _blank
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A-->B
+B-->C
+C-->D
+D-->E
+click A "https://www.github.com" _blank
+click B "https://www.github.com" "Open this in a new tab" _blank
+click C href "https://www.github.com" _blank
+click D href "https://www.github.com" "Open this in a new tab" _blank</div><p>Beginner&rsquo;s tip—a full example using interactive links in a html context:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>pre</span> <span class=na>class</span><span class=o>=</span><span class=s>&#34;mermaid&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    flowchart LR
+</span></span><span class=line><span class=cl>        A--&gt;B
+</span></span><span class=line><span class=cl>        B--&gt;C
+</span></span><span class=line><span class=cl>        C--&gt;D
+</span></span><span class=line><span class=cl>        click A callback &#34;Tooltip&#34;
+</span></span><span class=line><span class=cl>        click B &#34;https://www.github.com&#34; &#34;This is a link&#34;
+</span></span><span class=line><span class=cl>        click C call callback() &#34;Tooltip&#34;
+</span></span><span class=line><span class=cl>        click D href &#34;https://www.github.com&#34; &#34;This is a link&#34;
+</span></span><span class=line><span class=cl>  <span class=p>&lt;/</span><span class=nt>pre</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>script</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=kr>const</span> <span class=nx>callback</span> <span class=o>=</span> <span class=kd>function</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>alert</span><span class=p>(</span><span class=s1>&#39;A callback was triggered&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=p>};</span>
+</span></span><span class=line><span class=cl>    <span class=kr>const</span> <span class=nx>config</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>startOnLoad</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>flowchart</span><span class=o>:</span> <span class=p>{</span> <span class=nx>useMaxWidth</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span> <span class=nx>htmlLabels</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span> <span class=nx>curve</span><span class=o>:</span> <span class=s1>&#39;cardinal&#39;</span> <span class=p>},</span>
+</span></span><span class=line><span class=cl>      <span class=nx>securityLevel</span><span class=o>:</span> <span class=s1>&#39;loose&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>};</span>
+</span></span><span class=line><span class=cl>    <span class=nx>mermaid</span><span class=p>.</span><span class=nx>initialize</span><span class=p>(</span><span class=nx>config</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>body</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#comments><h3 id=comments><span class=hanchor arialabel=Anchor># </span>Comments</h3></a><p>Comments can be entered within a flow diagram, which will be ignored by the parser. Comments need to be on their own line, and must be prefaced with <code>%%</code> (double percent signs). Any text after the start of the comment to the next newline will be treated as a comment, including any flow syntax</p><a href=#code-43><h5 id=code-43><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>%% this is a comment A -- text --&gt; B{node}
+</span></span><span class=line><span class=cl>   A -- text --&gt; B -- text2 --&gt; C
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+%% this is a comment A -- text --> B{node}
+A -- text --> B -- text2 --> C</div><a href=#styling-and-classes><h2 id=styling-and-classes><span class=hanchor arialabel=Anchor># </span>Styling and classes</h2></a><a href=#styling-links><h3 id=styling-links><span class=hanchor arialabel=Anchor># </span>Styling links</h3></a><p>It is possible to style links. For instance, you might want to style a link that is going backwards in the flow. As links have no ids in the same way as nodes, some other way of deciding what style the links should be attached to is required. Instead of ids, the order number of when the link was defined in the graph is used, or use default to apply to all links. In the example below the style defined in the linkStyle statement will belong to the fourth link in the graph:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>linkStyle 3 stroke:#ff3,stroke-width:4px,color:red;
+</span></span></code></pre></td></tr></table></div></div><a href=#styling-line-curves><h3 id=styling-line-curves><span class=hanchor arialabel=Anchor># </span>Styling line curves</h3></a><p>It is possible to style the type of curve used for lines between items, if the default method does not meet your needs. Available curve styles include <code>basis</code>, <code>bump</code>, <code>linear</code>, <code>monotoneX</code>, <code>monotoneY</code>, <code>natural</code>, <code>step</code>, <code>stepAfter</code>, and <code>stepBefore</code>.</p><p>In this example, a left-to-right graph uses the <code>stepBefore</code> curve style:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>%%{ init: { &#39;flowchart&#39;: { &#39;curve&#39;: &#39;stepBefore&#39; } } }%%
+</span></span><span class=line><span class=cl>graph LR
+</span></span></code></pre></td></tr></table></div></div><p>For a full list of available curves, including an explanation of custom curves, refer to the
+<a href=https://github.com/d3/d3-shape/blob/main/README.md#curves rel=noopener>Shapes</a> documentation in the
+<a href=https://github.com/d3/d3-shape/ rel=noopener>d3-shape</a> project.</p><a href=#styling-a-node><h3 id=styling-a-node><span class=hanchor arialabel=Anchor># </span>Styling a node</h3></a><p>It is possible to apply specific styles such as a thicker border or a different background color to a node.</p><a href=#code-44><h5 id=code-44><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    id1(Start)--&gt;id2(Stop)
+</span></span><span class=line><span class=cl>    style id1 fill:#f9f,stroke:#333,stroke-width:4px
+</span></span><span class=line><span class=cl>    style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+id1(Start)-->id2(Stop)
+style id1 fill:#f9f,stroke:#333,stroke-width:4px
+style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5</div><a href=#classes><h4 id=classes><span class=hanchor arialabel=Anchor># </span>Classes</h4></a><p>More convenient than defining the style every time is to <strong><mark>define a class of styles</mark></strong> and attach this class to the nodes that should have a different look.</p><p>a class definition looks like the example below:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>    classDef className fill:#f9f,stroke:#333,stroke-width:4px;
+</span></span></code></pre></td></tr></table></div></div><p>Attachment of a class to a node is done as per below:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>    class nodeId1 className;
+</span></span></code></pre></td></tr></table></div></div><p>It is also possible to attach a class to a list of nodes in one statement:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>    class nodeId1,nodeId2 className;
+</span></span></code></pre></td></tr></table></div></div><p>A shorter form of adding a class is to attach the classname to the node using the <code>:::</code>operator as per below:</p><a href=#code-45><h5 id=code-45><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A:::someclass --&gt; B
+</span></span><span class=line><span class=cl>    classDef someclass fill:#f96
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A:::someclass --> B
+classDef someclass fill:#f96</div><a href=#css-classes-><h3 id=css-classes-><span class=hanchor arialabel=Anchor># </span>Css classes 🏁⭐</h3></a><p>It is also possible to predefine classes in css styles that can be applied from the graph definition as in the example below:</p><pre><code>**Example style**
+</code></pre><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>style</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>.</span><span class=nc>cssClass</span> <span class=o>&gt;</span> <span class=nt>rect</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>fill</span><span class=p>:</span> <span class=mh>#ff0000</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>stroke</span><span class=p>:</span> <span class=mh>#ffff00</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>stroke-width</span><span class=p>:</span> <span class=mi>4</span><span class=kt>px</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>style</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p><strong>Example definition</strong></p><a href=#code-46><h5 id=code-46><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A--&gt;B[AAA&lt;span&gt;BBB&lt;/span&gt;]
+</span></span><span class=line><span class=cl>    B--&gt;D
+</span></span><span class=line><span class=cl>    class A cssClass
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A-->B[AAA<span>BBB</span>]
+B-->D
+class A cssClass</div><a href=#default-class><h3 id=default-class><span class=hanchor arialabel=Anchor># </span>Default class</h3></a><p>If a class is named default it will be assigned to all classes without specific class definitions.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>    classDef default fill:#f9f,stroke:#333,stroke-width:4px;
+</span></span></code></pre></td></tr></table></div></div><hr><a href=#basic-support-for-fontawesome-doesnt-support-in-obsidian><h2 id=basic-support-for-fontawesome-doesnt-support-in-obsidian><span class=hanchor arialabel=Anchor># </span>Basic support for fontawesome (Doesn&rsquo;t support in obsidian)</h2></a><p>It is possible to add icons from fontawesome.</p><p>The icons are accessed via the syntax fa:#icon class name#.</p><a href=#code-47><h5 id=code-47><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart TD
+</span></span><span class=line><span class=cl>    B[&#34;fab:fa-twitter for peace&#34;]
+</span></span><span class=line><span class=cl>    B--&gt;C[fa:fa-ban forbidden]
+</span></span><span class=line><span class=cl>    B--&gt;D(fa:fa-spinner)
+</span></span><span class=line><span class=cl>    B--&gt;E(A fa:fa-camera-retro perhaps?)
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart TD
+B["fab:fa-twitter for peace"]
+B-->C[fa:fa-ban forbidden]
+B-->D(fa:fa-spinner)
+B-->E(A fa:fa-camera-retro perhaps?)</div><p>Mermaid is now only compatible with Font Awesome versions 4 and 5. Check that you are using the correct version of Font Awesome.</p><a href=#graph-declarations-with-spaces-between-vertices-and-link-and-without-semicolon><h2 id=graph-declarations-with-spaces-between-vertices-and-link-and-without-semicolon><span class=hanchor arialabel=Anchor># </span>Graph declarations with spaces between vertices and link and without semicolon</h2></a><ul><li><p>In graph declarations, the statements also can now end without a semicolon. After release 0.2.16, ending a graph statement with semicolon is just optional. So the below graph declaration is also valid along with the old declarations of the graph.</p></li><li><p>A single space is allowed between vertices and the link. However there should not be any space between a vertex and its text and a link and its text. The old syntax of graph declaration will also work and hence this new feature is optional and is introduced to improve readability.</p></li></ul><p>Below is the new declaration of the graph edges which is also valid along with the old declaration of the graph edges.</p><a href=#code-48><h5 id=code-48><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>flowchart LR
+</span></span><span class=line><span class=cl>    A[Hard edge] --&gt;|Link text| B(Round edge)
+</span></span><span class=line><span class=cl>    B --&gt; C{Decision}
+</span></span><span class=line><span class=cl>    C --&gt;|One| D[Result one]
+</span></span><span class=line><span class=cl>    C --&gt;|Two| E[Result two]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>flowchart LR
+A[Hard edge] -->|Link text| B(Round edge)
+B --> C{Decision}
+C -->|One| D[Result one]
+C -->|Two| E[Result two]</div><a href=#configuration><h2 id=configuration><span class=hanchor arialabel=Anchor># </span>Configuration&mldr;</h2></a><p>It is possible to adjust the width of the rendered flowchart.</p><p>This is done by defining <strong>mermaid.flowchartConfig</strong> or by the CLI to use a JSON file with the configuration. How to use the CLI is described in the mermaidCLI page. mermaid.flowchartConfig can be set to a JSON string with config parameters or the corresponding object.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl><span class=nx>mermaid</span><span class=p>.</span><span class=nx>flowchartConfig</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>width</span><span class=o>:</span> <span class=mi>100</span><span class=o>%</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p>너무 많지도 적지도 않은.
+<a href=https://en.wikipedia.org/wiki/Lagom rel=noopener>위키백과</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/garden/Develop/Fruits/mindulle/cli/Dev/Backend/Database/ data-ctx="Flowchart#Subgraphs 🎯⭐" data-src=/Develop/Fruits/mindulle/cli/Dev/Backend/Database class=internal-link>Database</a></li><li><a href=/garden/Develop/Trees/Dev/Basis/LibsFwks/By-subject/Diagraming/mermaid.js/contents/Diagram-Syntax/Diagram-Syntax/ data-ctx=Flowcahrt data-src=/Develop/Trees/Dev/Basis/LibsFwks/By-subject/Diagraming/mermaid.js/contents/Diagram-Syntax/Diagram-Syntax class=internal-link>🎉Diagram Syntax</a></li></ul></div><div><script async src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://mindulle.github.io/garden/js/graph.6579af7b10c818dbd2ca038702db0224.js></script></div></div><div id=contact_buttons><footer><p>Made by mindulle using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://mindulle.github.io/garden>Home</a></li><li><a href=https://github.com/mindulle>GitHub</a></li></ul></footer></div></div></body></html>

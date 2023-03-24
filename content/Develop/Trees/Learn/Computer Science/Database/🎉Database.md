@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Network"
-lastModified: "2022-12-20"
+title: "🎉Database"
+lastModified: "2022-12-26"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -10,6 +10,7 @@ isEntryPoint: true
 tags:
   - "entrypoint"
 ---
+
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
@@ -22,10 +23,10 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Learn/6th standards/Network/HTTP/🎉HTTP|🎉HTTP]]
 
 # Features
 - List up frequently used features.
+- [[Develop/Trees/Learn/Computer Science/Database/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

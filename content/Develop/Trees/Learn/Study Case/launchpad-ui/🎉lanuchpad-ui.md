@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "🎉Realworld"
+title: "🎉lanuchpad-ui"
 lastModified: "2023-03-23"
 
 # field for querying only entry point notes.
@@ -32,4 +32,6 @@ tags:
 - construct visual gallery to summarize your expriences.
 
 # See also
-- Further readings
+- [In Storybook showcase page](https://storybook.js.org/showcase/launchdarkly-launchpad)
+- [Launchpad Github Repo](https://github.com/launchdarkly/launchpad-ui)
+- [Published Chromatic Application](https://main--626696a2018c1f004a1cde86.chromatic.com/)

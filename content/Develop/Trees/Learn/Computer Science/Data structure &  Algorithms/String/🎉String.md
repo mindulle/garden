@@ -25,7 +25,7 @@ erDiagram
 
 # Features
 - List up frequently used features.
-- [[Develop/Trees/Learn/6th standards/Data structure &  Algorithms/String/🚚Resources|🚚Resources]]
+- [[Develop/Trees/Learn/Computer Science/Data structure &  Algorithms/String/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

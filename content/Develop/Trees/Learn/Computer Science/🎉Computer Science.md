@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉Database"
-lastModified: "2022-12-26"
+title: "🎉Computer Science"
+lastModified: "2023-03-23"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -23,10 +23,11 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Trees/Learn/Computer Science/Network/🎉Network|🎉Network]]
 
 # Features
 - List up frequently used features.
-- [[Develop/Trees/Learn/6th standards/Database/🚚Resources|🚚Resources]]
+- [[Develop/Trees/Learn/Computer Science/📚Dictionary|📚Dictionary]]
 
 # Issues
 - what design patterns adapated to each features.

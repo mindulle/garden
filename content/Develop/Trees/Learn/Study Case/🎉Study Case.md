@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
-title: "🎉6th standards"
-lastModified: "2022-12-27"
+title: "🎉Study Case"
+lastModified: "2023-03-23"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -10,20 +10,13 @@ isEntryPoint: true
 tags:
   - "entrypoint"
 ---
-
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
 
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Learn/6th standards/Network/🎉Network|🎉Network]]
 
 # Features
 - List up frequently used features.
@@ -37,3 +30,6 @@ erDiagram
 
 # Showcases
 - construct visual gallery to summarize your expriences.
+
+# See also
+- Further readings

@@ -22,11 +22,11 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Trees/Learn/6th standards/Data structure &  Algorithms/String/🎉String|🎉String]]
+- [[Develop/Trees/Learn/Computer Science/Data structure &  Algorithms/String/🎉String|🎉String]]
 
 # Features
 - List up frequently used features.
-- [[Develop/Trees/Learn/6th standards/Data structure &  Algorithms/🚚Resources|🚚Resources]]
+- [[Develop/Trees/Learn/Computer Science/Data structure &  Algorithms/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.

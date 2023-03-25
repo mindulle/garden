@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "71a366a3850e14b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-24.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/Seeds/🎉Seeds.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/Seeds/🎉Seeds.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Develop/Seeds/🎉Seeds.md"
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-24.md"
               }
             }
           },
@@ -194,12 +206,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "7651afd6fc369909",
+  "active": "71a366a3850e14b2",
   "lastOpenFiles": [
+    "Develop/Seeds/Shovel/🎉Shovel.md",
+    "Develop/Seeds/🎉Seeds.md",
     "Develop/Seeds/Grocery/🎉Grocery.md",
     "Develop/Seeds/Storage/🎉Storage.md",
     "Develop/Seeds/Shovel/Tools/🎉Tools.md",
-    "Develop/Seeds/Shovel/🎉Shovel.md",
     "Develop/Seeds/Shovel/Tools/miscs",
     "Develop/Seeds/Shovel/Tools/Terminal",
     "Develop/Seeds/Shovel/My workflow/🎉My workflow.md",
@@ -208,7 +221,6 @@
     "Develop/Seeds/(go to raindrop)Shovel/Manage resources/🎉Manage resources.md",
     "Develop/Seeds/🚚Resources.md",
     "Develop/Seeds/🎻orchestrate.md",
-    "Develop/Seeds/🎉Seeds.md",
     "Develop/Seeds/🌱distribute.md",
     "Develop/Trees/Dev/Version control/🎉Version control.md",
     "Develop/Trees/Dev/🎉Dev.md",

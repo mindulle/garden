@@ -95,6 +95,15 @@ tags:
 - Joël Franusic [Online-REPs-and-REPLs list](http://joel.franusic.com/Online-REPs-and-REPLs)
 - 한줄짜리 커맨드라인
 
+## Reactive Programming
+?
+> In [computing](https://en.wikipedia.org/wiki/Computing "Computing"), **reactive programming** is a [declarative](https://en.wikipedia.org/wiki/Declarative_programming "Declarative programming") [programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm "Programming paradigm") concerned with [data streams](https://en.wikipedia.org/wiki/Stream_(computing) "Stream (computing)") and the propagation of change. (...)
+> 
+> For example, in an [_imperative_ programming](https://en.wikipedia.org/wiki/Imperative_programming "Imperative programming") setting, `a := b + c` would mean that `a` is being assigned the result of `b + c` in the instant the expression is evaluated, and later, the values of `b` and `c` can be changed with no effect on the value of `a`. 
+> 
+> On the other hand, in _reactive_ programming, the value of `a` is automatically updated whenever the values of `b` or `c` change, ==without the program having to explicitly re-execute the statement `a := b + c`== to determine the presently assigned value of `a`.
+> **_[wikipedia](https://en.wikipedia.org/wiki/Reactive_programming)_**
+
 # S
 ## Syntatic Sugar
 ?

@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-27.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-28.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aa57f2fa9f0e7cef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Develop/Trees/Dev/Basis/Languages/Go/🎉Go.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3a584d8cc9c8ec13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-27.md",
+                "file": "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-27.md",
+                "file": "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-27.md"
+                "file": "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md"
               }
             }
           },
@@ -181,12 +206,15 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "d937a97ab2a08982",
+  "active": "3a584d8cc9c8ec13",
   "lastOpenFiles": [
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-26.md",
+    "Develop/Trees/Dev/Basis/Languages/Go/🎉Go.md",
+    "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-28.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-27.md",
-    "Develop/Trees/Dev/Basis/📚Dictionary.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-26.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-25.md",
+    "Develop/Trees/Dev/Basis/📚Dictionary.md",
     "Develop/Trees/Dev/Basis/🎉Basis.md",
     "Develop/Trees/Trends/📚Dictionary.md",
     "Develop/🎉Develop.md",
@@ -210,9 +238,6 @@
     "Develop/Trees/Dev/Version control/🎉Version control.md",
     "Develop/Trees/Dev/🎉Dev.md",
     "Develop/Trees/Dev/🚚Resources.md",
-    "Develop/Trees/Dev/Version control/🚚Resources.md",
-    "Private/Templates/Core Template/🚚Garden - Resources.md",
-    "Develop/Trees/Dev/Realworld/👓Look at a glance.md",
     "Develop/Trees/Dev/Realworld",
     "Develop/Trees/Learn/Study Case/launchpad-ui",
     "Develop/Trees/Learn/Study Case",

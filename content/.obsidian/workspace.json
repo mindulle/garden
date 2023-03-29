@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "3d1683af5d583f84",
+        "id": "bd598aee92fccd4d",
         "type": "tabs",
         "children": [
           {
-            "id": "d937a97ab2a08982",
+            "id": "9d25910f61dd20f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-28.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa57f2fa9f0e7cef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Develop/Trees/Dev/Basis/Languages/Go/🎉Go.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3a584d8cc9c8ec13",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md",
+                "file": "Non-business/English/📚Dictionary.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md",
+                "file": "Non-business/English/📚Dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md",
+                "file": "Non-business/English/📚Dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md"
+                "file": "Non-business/English/📚Dictionary.md"
               }
             }
           },
@@ -206,11 +181,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "3a584d8cc9c8ec13",
+  "active": "1ed3ae3907a45b75",
   "lastOpenFiles": [
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-29.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-28.md",
     "Develop/Trees/Dev/Basis/Languages/Go/🎉Go.md",
     "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md",
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-28.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-27.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-26.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-25.md",
@@ -237,7 +213,6 @@
     "Develop/Seeds/🌱distribute.md",
     "Develop/Trees/Dev/Version control/🎉Version control.md",
     "Develop/Trees/Dev/🎉Dev.md",
-    "Develop/Trees/Dev/🚚Resources.md",
     "Develop/Trees/Dev/Realworld",
     "Develop/Trees/Learn/Study Case/launchpad-ui",
     "Develop/Trees/Learn/Study Case",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_index.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md"
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md"
               }
             }
           },
@@ -184,6 +184,8 @@
   "active": "1f2c5c897f5a14f4",
   "lastOpenFiles": [
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-29.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md",
+    "_index.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-28.md",
     "Develop/Trees/Dev/Basis/Languages/Go/🎉Go.md",
     "Develop/Trees/Dev/Basis/Languages/Go/contents/Golang과 친해지기.md",
@@ -211,8 +213,6 @@
     "Develop/Seeds/🚚Resources.md",
     "Develop/Seeds/🎻orchestrate.md",
     "Develop/Seeds/🌱distribute.md",
-    "Develop/Trees/Dev/Version control/🎉Version control.md",
-    "Develop/Trees/Dev/🎉Dev.md",
     "Develop/Trees/Dev/Realworld",
     "Develop/Trees/Learn/Study Case/launchpad-ui",
     "Develop/Trees/Learn/Study Case",

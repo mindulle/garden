@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-31.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-31.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md",
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-31.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md"
+                "file": "Private/Periodic Notes/2023/Daily/03 March/2023-03-31.md"
               }
             }
           },
@@ -183,8 +183,9 @@
   },
   "active": "1f2c5c897f5a14f4",
   "lastOpenFiles": [
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-29.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-31.md",
+    "Private/Periodic Notes/2023/Daily/03 March/2023-03-29.md",
     "_index.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-28.md",
     "Develop/Trees/Dev/Basis/Languages/Go/🎉Go.md",
@@ -212,7 +213,6 @@
     "Develop/Seeds/(go to raindrop)Shovel/Manage resources/🎉Manage resources.md",
     "Develop/Seeds/🚚Resources.md",
     "Develop/Seeds/🎻orchestrate.md",
-    "Develop/Seeds/🌱distribute.md",
     "Develop/Trees/Dev/Realworld",
     "Develop/Trees/Learn/Study Case/launchpad-ui",
     "Develop/Trees/Learn/Study Case",

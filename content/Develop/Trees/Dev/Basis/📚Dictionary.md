@@ -11,6 +11,11 @@ tags:
   - "dictionary/programming"
 ---
 # A
+## Aggregate
+?
+> Constituting or amounting to a whole; total
+-   Aggregate analysis, a technique used in [amortized analysis](https://en.wikipedia.org/wiki/Amortized_analysis "Amortized analysis") in computer science, especially in analysis of algorithms
+
 ## AST(TODO)
 ?
 > Blabal Lolerm ipsum ...

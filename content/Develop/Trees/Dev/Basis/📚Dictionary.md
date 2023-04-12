@@ -93,6 +93,10 @@ tags:
 | Windows                                   | `\r\n`                                |
 | standard line-termination on the internet | `\r\n`                                |
 
+# O
+## Overhaul
+?
+> To examine or go over carefully for needed repairs. **_[worklink](https://www.wordnik.com/words/overhaul)_**
 
 # R
 ## Radix

@@ -1,6 +1,6 @@
 ---
 # configs for document itself.
-title: "👓Look at a glance"
+title: "👓Look over at a glance"
 lastModified: "2023-03-24"
 
 # field for querying only features at a glance notes.

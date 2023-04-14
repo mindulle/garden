@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Private/Templates/Core Template/👓Graden - Look over at a glance.md",
+                "file": "Develop/Trees/Dev/Lifecycle/phases/predev.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Private/Templates/Core Template/👓Graden - Look over at a glance.md",
+                "file": "Develop/Trees/Dev/Lifecycle/phases/predev.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Private/Templates/Core Template/👓Graden - Look over at a glance.md",
+                "file": "Develop/Trees/Dev/Lifecycle/phases/predev.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Private/Templates/Core Template/👓Graden - Look over at a glance.md"
+                "file": "Develop/Trees/Dev/Lifecycle/phases/predev.md"
               }
             }
           },
@@ -206,14 +205,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "1ed3ae3907a45b75",
+  "active": "c3b005aed6bc8ede",
   "lastOpenFiles": [
     "Develop/Trees/Dev/Lifecycle/phases/postdev.md",
-    "Develop/Trees/Dev/Lifecycle/phases/ondev.md",
     "Develop/Trees/Dev/Lifecycle/phases/predev.md",
+    "Develop/Trees/Dev/Lifecycle/phases/ondev.md",
+    "Private/Templates/Core Template/👓Graden - Look over at a glance.md",
     "Develop/Trees/Dev/Lifecycle/👓Look over at a glance.md",
     "Develop/Trees/Dev/Realworld/👓Look over at a glance.md",
-    "Private/Templates/Core Template/👓Graden - Look over at a glance.md",
     "Private/Templates/Core Template/🎉Garden - Entry Point.md",
     "Private/Templates/Core Template/🔖Garden - Glossary.md",
     "Private/Templates/Core Template/📚Garden - Dictionary.md",

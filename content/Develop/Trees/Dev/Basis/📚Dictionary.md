@@ -119,6 +119,11 @@ tags:
 > **_[wikipedia](https://en.wikipedia.org/wiki/Reactive_programming)_**
 
 # S
+## Spwan
+?
+> **Spawn** in [computing](https://en.wikipedia.org/wiki/Computing "Computing") refers to a function that loads and [executes](https://en.wikipedia.org/wiki/Execution_(computers) "Execution (computers)") a new [child process](https://en.wikipedia.org/wiki/Child_process "Child process"), **_[wikipedia](https://en.wikipedia.org/wiki/Spawn_(computing))_**
+
+
 ## Syntatic Sugar
 ?
 > In [computer science](https://en.wikipedia.org/wiki/Computer_science "Computer science"), **syntactic sugar** is [syntax](https://en.wikipedia.org/wiki/Syntax_(programming_languages) "Syntax (programming languages)") within a [programming language](https://en.wikipedia.org/wiki/Programming_language "Programming language") that is designed to make things easier to read or to express. **_[wikipedia](https://en.wikipedia.org/wiki/Syntactic_sugar)_**

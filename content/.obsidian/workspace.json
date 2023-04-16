@@ -13,31 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/Trees/Dev/Lifecycle/phases/predev.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f3e48c0cd1855b82",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/Templates/Core Template/🎉Garden - Entry Point.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa8bf15b30161208",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Develop/Trees/Dev/Lifecycle/phases/predev.md",
+                "file": "Develop/Trees/Dev/Basis/📚Dictionary.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/Trees/Dev/Lifecycle/phases/predev.md",
+                "file": "Develop/Trees/Dev/Basis/📚Dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/Trees/Dev/Lifecycle/phases/predev.md",
+                "file": "Develop/Trees/Dev/Basis/📚Dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Develop/Trees/Dev/Lifecycle/phases/predev.md"
+                "file": "Develop/Trees/Dev/Basis/📚Dictionary.md"
               }
             }
           },
@@ -205,15 +181,16 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "c3b005aed6bc8ede",
+  "active": "1ed3ae3907a45b75",
   "lastOpenFiles": [
-    "Develop/Trees/Dev/Lifecycle/phases/postdev.md",
+    "Develop/Trees/Dev/Basis/📚Dictionary.md",
+    "Private/Templates/Core Template/🎉Garden - Entry Point.md",
     "Develop/Trees/Dev/Lifecycle/phases/predev.md",
+    "Develop/Trees/Dev/Lifecycle/phases/postdev.md",
     "Develop/Trees/Dev/Lifecycle/phases/ondev.md",
     "Private/Templates/Core Template/👓Graden - Look over at a glance.md",
     "Develop/Trees/Dev/Lifecycle/👓Look over at a glance.md",
     "Develop/Trees/Dev/Realworld/👓Look over at a glance.md",
-    "Private/Templates/Core Template/🎉Garden - Entry Point.md",
     "Private/Templates/Core Template/🔖Garden - Glossary.md",
     "Private/Templates/Core Template/📚Garden - Dictionary.md",
     "Develop/Trees/Dev/Lifecycle/🎉Lifecycle.md",
@@ -221,7 +198,6 @@
     "Develop/Trees/Dev/Lifecycle/phases",
     "Develop/Trees/Dev/🎉Dev.md",
     "Develop/Trees/Dev/Lifecycle",
-    "Develop/Trees/Dev/Basis/📚Dictionary.md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-04-03.md",
     "Private/Banners/All Banners on this folder come....md",
     "Private/Periodic Notes/2023/Daily/03 March/2023-03-31.md",

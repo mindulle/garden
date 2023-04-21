@@ -26,6 +26,10 @@ tags:
 ?
 > A **callable object**, in [computer programming](https://en.wikipedia.org/wiki/Computer_programming "Computer programming"), is any object that can be called like a [function](https://en.wikipedia.org/wiki/Subroutine "Subroutine"). **_[wikipedia](https://en.wikipedia.org/wiki/Callable_object)_**
 
+## Canonical
+?
+> -   Of the nature of or constituting a canon or rule; accepted as a norm or rule: as, _canonical_ writings. **_[wordlink](https://www.wordnik.com/words/canonical)_**
+
 ## Checksum
 ?
 > A **checksum** is a small-sized [block](https://en.wikipedia.org/wiki/Block_(data_storage) "Block (data storage)") of data derived from another block of [digital data](https://en.wikipedia.org/wiki/Digital_data "Digital data") for the purpose of [detecting errors](https://en.wikipedia.org/wiki/Error_detection "Error detection") that may have been introduced during its [transmission](https://en.wikipedia.org/wiki/Telecommunication "Telecommunication") or [storage](https://en.wikipedia.org/wiki/Computer_storage "Computer storage"). **_[wikipedia](https://en.wikipedia.org/wiki/Checksum)_**

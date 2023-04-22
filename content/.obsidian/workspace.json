@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/Trees/Dev/Basis/📚Dictionary.md",
+                "file": "Non-business/English/📚Dictionary.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/Trees/Dev/Basis/📚Dictionary.md",
+                "file": "Non-business/English/📚Dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/Trees/Dev/Basis/📚Dictionary.md",
+                "file": "Non-business/English/📚Dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Develop/Trees/Dev/Basis/📚Dictionary.md"
+                "file": "Non-business/English/📚Dictionary.md"
               }
             }
           },
@@ -181,7 +181,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "1ed3ae3907a45b75",
+  "active": "c3b005aed6bc8ede",
   "lastOpenFiles": [
     "Develop/Trees/Dev/Basis/📚Dictionary.md",
     "Private/Templates/Core Template/🎉Garden - Entry Point.md",

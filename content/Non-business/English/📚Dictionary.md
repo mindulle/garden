@@ -21,6 +21,13 @@ tags:
 - I admired him **for** his [determination](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/determination "determination").
 - I really admire [people](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/people "people") who can [work](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/work "work") in such [difficult](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/difficult "difficult") [conditions](https://dictionary.cambridge.org/ko/%EC%82%AC%EC%A0%84/%EC%98%81%EC%96%B4/conditions "conditions")
 
+## Analogy
+?
+> It's like a [thought](https://www.urbandictionary.com/define.php?term=thought) with another [thought's](https://www.urbandictionary.com/define.php?term=thought%27s) [hat](https://www.urbandictionary.com/define.php?term=hat) on.
+> "Someone please tell her what an analogy is." 
+> "I know [what it is](https://www.urbandictionary.com/define.php?term=what%20it%20is), it's like a thought with another [thought's](https://www.urbandictionary.com/define.php?term=thought%27s) [hat](https://www.urbandictionary.com/define.php?term=hat) on.
+> **_[urban dictionary](https://www.urbandictionary.com/define.php?term=analogy)_**
+
 ## As is
 ?
 > in the [state](https://dictionary.cambridge.org/dictionary/english/state "state") that something is in at the [present](https://dictionary.cambridge.org/dictionary/english/present "present") [time](https://dictionary.cambridge.org/dictionary/english/time "time"): **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/as-is)_**
@@ -71,6 +78,11 @@ tags:
 ## Downside
 ?
 > a [disadvantage](https://dictionary.cambridge.org/dictionary/english/disadvantage "disadvantage") of a [situation](https://dictionary.cambridge.org/dictionary/english/situation "situation"), **_[Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/downside)_**
+
+# E
+## Elaboration
+?
+> [Explaining](https://www.urbandictionary.com/define.php?term=Explaining) something as [much](https://www.urbandictionary.com/define.php?term=much) as [possible](https://www.urbandictionary.com/define.php?term=possible), **_[urban dictionary](https://www.urbandictionary.com/define.php?term=elaboration)_**
 
 # I
 ## indefinitely

@@ -29,4 +29,4 @@ tags:
 
 
 TODO : 블로그 아티클 두개
-[[Develop/Trees/Learn/Realworld/webFrontend/🚚Resources]] 로 옮겨두기
+[[Develop/Trees/Dev/Basis/Realworld/webFrontend/🚚Resources]] 로 옮겨두기

@@ -30,7 +30,7 @@ flowchart LR
 	HERE --> Content
 	HERE --> Features
 ```
-- [[Develop/Trees/Dev/Basis/🎉Basis|🎉Basis]]
+- [[Develop/Trees/Dev/ingredients/🎉ingredients|🎉ingredients]]
 - [[Develop/Trees/Dev/Version control/🎉Version control|🎉Version control]]
 
 # Features

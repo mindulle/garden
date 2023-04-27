@@ -1,7 +1,7 @@
 ---
 # configs for document itself.
 title: "🎉Basis"
-lastModified: "2022-12-22"
+lastModified: "2023-04-26"
 
 # field for querying only entry point notes.
 isEntryPoint: true
@@ -13,37 +13,15 @@ tags:
 # TL;DR
 - you can summarize contents as a table format.
 - or just write down statements you think it is important within 3 lines.
-```mermaid
-erDiagram
-	You ||--|| Table : Summarize
-	You ||--|| Statements : Sentence
-```
 
 
 # Map of contents
-```mermaid
-flowchart LR
-	HERE[&#127881Programming]
-	subgraph features
-		dictionary[&#128218Dictionary]
-	end
-	subgraph contents
-		languages[&#127881Languages]
-		Libs&Fwks[&#127881Libs&Fwks]
-		Stacks[&#127881Stacks]
-	end
-	HERE --> contents
-	HERE --> features
-```
-- [[Develop/Trees/Dev/Basis/Languages/🎉Languages|🎉Languages]]
-- [[Develop/Trees/Dev/Basis/Libs&Fwks/🎉Libs&Fwks|🎉Libs&Fwks]]
-- [[Develop/Trees/Dev/Basis/Stacks/🎉Stacks|🎉Stacks]]
-
+- Draw a simple excalidraw scatch to understand how contents are constructed and networked.
+- [[Develop/Trees/Dev/Basis/Computer Science/🎉Computer Science|🎉6th standards]]
 
 # Features
 - List up frequently used features.
-- [[Develop/Trees/Dev/Basis/📚Dictionary|📚Dictionary]]
-- [[Develop/Trees/Dev/Basis/👓Look at a glance|👓Look at a glance]]
+- [[Develop/Trees/Dev/Basis/🚚Resources|🚚Resources]]
 
 # Issues
 - what design patterns adapated to each features.
@@ -54,3 +32,6 @@ flowchart LR
 
 # Showcases
 - construct visual gallery to summarize your expriences.
+
+# See also
+- Further readings

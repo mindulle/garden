@@ -28,7 +28,7 @@
 ## flowcharts
 
 > [!tip] Mermaid.js로 FlowChart 그리기
-> [[Develop/Trees/Dev/Basis/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Flowchart#Subgraphs 🎯⭐|Flowchart#Subgraphs 🎯⭐]] 를 이용하면 플로우 차트를 섹션별로 나누어 그릴 수 있다!
+> [[Develop/Trees/Dev/ingredients/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Flowchart#Subgraphs 🎯⭐|Flowchart#Subgraphs 🎯⭐]] 를 이용하면 플로우 차트를 섹션별로 나누어 그릴 수 있다!
 ```mermaid
 flowchart
 	subgraph commands
@@ -73,7 +73,7 @@ flowchart LR
 ```
 ## ERD
 > [!tip] Mermaid.js로 ERD 그리기
-> [[Develop/Trees/Dev/Basis/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Entity Relationship Diagram#Attributes 🎯⭐|Entity Relationship Diagram#Attributes 🎯⭐]]를 이용하면 개념적 데이터 모델링, 논리적 데이터 모델링을 한번에 할 수 있다.
+> [[Develop/Trees/Dev/ingredients/Libs&Fwks/By subject/Diagraming/mermaid.js/contents/Diagram Syntax/Entity Relationship Diagram#Attributes 🎯⭐|Entity Relationship Diagram#Attributes 🎯⭐]]를 이용하면 개념적 데이터 모델링, 논리적 데이터 모델링을 한번에 할 수 있다.
 ```mermaid
 erDiagram
 	

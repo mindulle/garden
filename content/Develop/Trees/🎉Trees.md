@@ -26,7 +26,6 @@ flowchart LR
 	end
 	HERE --> treeContents
 ```
-- [[Develop/Trees/Dev/🎉Dev|🎉Dev]] : __코드 작성__ 단계에서 습관화 해 둘 것들
-- [[Develop/Trees/Learn/🎉Learn|🎉Learn]] : **개념 학습** 단계에서 이해해 두어야 할 것들
+- [[Develop/Trees/Dev/🎉Dev|🎉Dev]] : __개발__ 단계에서 습관화 해 둘 것들
 - [[Develop/Trees/Ops/🎉Ops|🎉Ops]] : **운영 및 배포** 단계에서 구축해야할 환경
 - [[Develop/Trees/Events/🎉Events|🎉Events]] : **동향 파악**

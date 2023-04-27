@@ -10,7 +10,12 @@ isLookAtAGlance: true
 tags:
   - "lookAtAGlance"
 ---
-# Frontend Task Table
+# Libs and Fwks
+- React
+- Vanilla
+- Vue
+
+# Roles and Responsibilities
 | Task                                  | Description                                                                                     | Frontend Requirement                                                                                                                                  | Frontend Example                                                                                                                       | Frontend Real-world Examples                                                                                          | Simple Real-world GitHub Project                      | 
 | ------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | 
 | Accessibility                         | Ability to create frontend applications that are accessible to users with disabilities          | Ability to understand accessibility principles and use them to create frontend applications that are accessible to users with disabilities            | Use accessibility testing tools like Axe or Wave to ensure that frontend applications are accessible to users with disabilities        | Ensure that frontend applications are accessible to all users, regardless of disability                               | https://github.com/dequelabs/axe-core                 | 

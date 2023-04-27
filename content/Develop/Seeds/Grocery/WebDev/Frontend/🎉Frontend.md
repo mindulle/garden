@@ -22,9 +22,9 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Seeds/Grocery/WebDev/Frontend/React/🎉React|🎉React]]
-- [[Develop/Seeds/Grocery/WebDev/Frontend/Vanlia/🎉Vanlia|🎉Vanlia]]
-- [[Develop/Seeds/Grocery/WebDev/Frontend/Vue/🎉Vue|🎉Vue]]
+- [[Develop/Seeds/Grocery/WebDev/Frontend/Libs and Fwks/React/🎉React|🎉React]]
+- [[Develop/Seeds/Grocery/WebDev/Frontend/Libs and Fwks/Vanilla/🎉Vanilla|🎉Vanlia]]
+- [[Develop/Seeds/Grocery/WebDev/Frontend/Libs and Fwks/Vue/🎉Vue|🎉Vue]]
 
 # Features
 - List up frequently used features.

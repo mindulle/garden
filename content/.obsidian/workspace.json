@@ -8,36 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "954a70563cf1a085",
+            "id": "e30dbc8a94252497",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/Seeds/Grocery/WebDev/Backend/🎉Backend.md",
+                "file": "Develop/Trees/Dev/Code/🎉Code.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4e7ffda6a2c0ed93",
+            "id": "d5b044ed349abc24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
+                "file": "Develop/Trees/Dev/Code/Design/🎉Design.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1d4d281c3f0ba799",
+            "id": "8521470dbc727e2b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
+                "file": "Develop/Trees/Dev/Code/Design/Patterns/👓Look over at a glance.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
+                "file": "Develop/Trees/Dev/Code/Design/Patterns/👓Look over at a glance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
+                "file": "Develop/Trees/Dev/Code/Design/Patterns/👓Look over at a glance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md"
+                "file": "Develop/Trees/Dev/Code/Design/Patterns/👓Look over at a glance.md"
               }
             }
           },
@@ -171,7 +171,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "6fec753ef132acfd",
@@ -206,46 +206,46 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "1d4d281c3f0ba799",
+  "active": "8521470dbc727e2b",
   "lastOpenFiles": [
+    "Develop/Trees/Dev/Code/Design/Principles",
+    "Develop/Trees/Dev/Code/Design/Patterns",
+    "Develop/Trees/Dev/Code/Design/🎉Design.md",
+    "Develop/Trees/Dev/Code/Design/Patterns/👓Look over at a glance.md",
+    "Develop/Trees/Dev/Code/🎉Code.md",
+    "Develop/Trees/Ops/Configs",
+    "Develop/Trees/Dev/Code/Scripts",
+    "Develop/Trees/Dev/Code/Snippets",
+    "Develop/Trees/Dev/Code/Design",
+    "Develop/Trees/Dev/Code/Refactor",
+    "Develop/Trees/Dev/Basis/Case study/🎉Case study.md",
+    "Develop/Trees/Dev/Basis/🎉Basis.md",
+    "Develop/Trees/🎉Trees.md",
+    "Develop/Trees/Trends/📚Dictionary.md",
+    "Develop/Trees/Dev/🎉Dev.md",
+    "Develop/Trees/Dev/ingredients/🎉ingredients.md",
+    "Develop/Trees/Dev/Basis/Computer Science/🎉Computer Science.md",
+    "Develop/Trees/Dev/Basis/Design/Design.md",
+    "Develop/Trees/Dev/Code",
+    "Develop/Trees/Dev/ingredients/👓Look at a glance.md",
+    "Develop/Seeds/Grocery/WebDev/Backend/Roles and Responsibilities/Example Requirements.md",
+    "Develop/Trees/Dev/Basis/Design",
+    "Develop/Seeds/Grocery/WebDev/Backend/Roles and Responsibilities/Example Implementations.md",
+    "Develop/Seeds/Grocery/WebDev/Backend/Roles and Responsibilities/with examples.md",
     "Develop/Seeds/Grocery/WebDev/Frontend/👓Look over at a glance.md",
+    "Develop/Seeds/Grocery/WebDev/Frontend/🎉Frontend.md",
+    "Develop/Seeds/Grocery/WebDev/Frontend/Libs and Fwks/React/🎉React.md",
     "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
+    "Develop/Seeds/Grocery/WebDev/Backend/Roles and Responsibilities/Tasks.md",
+    "Develop/Seeds/Grocery/WebDev/Frontend/Roles and Responsibilities",
+    "Develop/Seeds/Grocery/WebDev/Backend/Roles and Responsibilities",
     "Develop/Seeds/Grocery/WebDev/Backend/🎉Backend.md",
     "Develop/Seeds/Grocery/WebDev/Backend/📚Dictionary.md",
     "Non-business/English/📚Dictionary.md",
-    "Develop/Trees/Dev/Basis/📚Dictionary.md",
+    "Develop/Trees/Dev/ingredients/📚Dictionary.md",
     "Private/Templates/Core Template/🎉Garden - Entry Point.md",
-    "Develop/Trees/Dev/Lifecycle/phases/predev.md",
-    "Develop/Trees/Dev/Lifecycle/phases/postdev.md",
-    "Develop/Trees/Dev/Lifecycle/phases/ondev.md",
-    "Private/Templates/Core Template/👓Graden - Look over at a glance.md",
-    "Develop/Trees/Dev/Lifecycle/👓Look over at a glance.md",
-    "Develop/Trees/Dev/Realworld/👓Look over at a glance.md",
-    "Private/Templates/Core Template/🔖Garden - Glossary.md",
-    "Private/Templates/Core Template/📚Garden - Dictionary.md",
-    "Develop/Trees/Dev/Lifecycle/🎉Lifecycle.md",
-    "Develop/Trees/Dev/Lifecycle/phases/🎉phases.md",
-    "Develop/Trees/Dev/Lifecycle/phases",
-    "Develop/Trees/Dev/🎉Dev.md",
-    "Develop/Trees/Dev/Lifecycle",
-    "Private/Periodic Notes/2023/Daily/03 March/2023-04-03.md",
-    "Private/Banners/All Banners on this folder come....md",
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-31.md",
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-30.md",
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-29.md",
-    "_index.md",
-    "Private/Periodic Notes/2023/Daily/03 March/2023-03-28.md",
-    "Develop/Trees/Dev/Basis/Languages/Go/🎉Go.md",
-    "Develop/Trees/Trends",
-    "Develop/Seeds/Shovel/Tools/miscs",
-    "Develop/Seeds/Shovel/Tools/Terminal",
-    "Develop/Seeds/Shovel/Tools",
-    "Develop/Trees/Dev/Realworld",
-    "Develop/Trees/Learn/Study Case/launchpad-ui",
-    "Develop/Trees/Learn/Study Case",
     "Private/Banners/2023/03/2023 March 14 Banner.png",
     "Private/Banners/2023/04/2023 April 30 Banner.png",
-    "Private/Banners/2023/04/2023 April 30 Banner.png.crdownload",
     "Private/Banners/2023/04/2023 April 29 Banner.png",
     "Private/Banners/2023/04/2023 April 28 Banner.png",
     "Private/Banners/2023/04/2023 April 27 Banner.png",

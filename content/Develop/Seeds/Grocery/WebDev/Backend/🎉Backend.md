@@ -22,7 +22,7 @@ erDiagram
 
 # Map of contents
 - Draw a simple excalidraw scatch to understand how contents are constructed and networked.
-- [[Develop/Seeds/Grocery/WebDev/Backend/FastAPI/🎉FastAPI|🎉FastAPI]]
+- [[Develop/Seeds/Grocery/WebDev/Backend/Libs and Fwks/FastAPI/🎉FastAPI|🎉FastAPI]]
 
 # Features
 - List up frequently used features.

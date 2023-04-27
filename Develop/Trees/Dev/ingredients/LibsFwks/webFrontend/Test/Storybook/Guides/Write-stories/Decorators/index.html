@@ -1,0 +1,576 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="Decorators A decorator is a way to wrap a story in extra “rendering” functionality. Many addons define decorators to augment your stories with extra rendering or gather details about how your story renders."><meta property="og:title" content="Decorators"><meta property="og:description" content="Decorators A decorator is a way to wrap a story in extra “rendering” functionality. Many addons define decorators to augment your stories with extra rendering or gather details about how your story renders."><meta property="og:type" content="website"><meta property="og:image" content="https://mindulle.github.io/gardenicon.png"><meta property="og:url" content="https://mindulle.github.io/garden/Develop/Trees/Dev/ingredients/LibsFwks/webFrontend/Test/Storybook/Guides/Write-stories/Decorators/"><meta property="og:width" content="200"><meta property="og:height" content="200"><meta name=twitter:card content="summary"><meta name=twitter:title content="Decorators"><meta name=twitter:description content="Decorators A decorator is a way to wrap a story in extra “rendering” functionality. Many addons define decorators to augment your stories with extra rendering or gather details about how your story renders."><meta name=twitter:image content="https://mindulle.github.io/gardenicon.png"><title>Decorators</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://mindulle.github.io/garden/icon.png><link href=https://mindulle.github.io/garden/styles.b369a84b3c6e6bfd686ad1f9da65641c.min.css rel=stylesheet><link href=https://mindulle.github.io/garden/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://mindulle.github.io/garden/js/darkmode.71fd764547989a0d567451669afd7a55.min.js></script>
+<script src=https://mindulle.github.io/garden/js/util.a0ccf91e1937fe761a74da4946452710.min.js></script>
+<link rel=preload href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css as=style onload='this.onload=null,this.rel="stylesheet"' integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1></script>
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1></script>
+<script async src=https://mindulle.github.io/garden/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://mindulle.github.io/garden",fetchData=Promise.all([fetch("https://mindulle.github.io/garden/indices/linkIndex.e0ad9d26ce8917647ed82a8c044a17f1.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://mindulle.github.io/garden/indices/contentIndex.30fe5cf7d10f92a9db5d1d695a3a6b44.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://mindulle.github.io/garden",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!0;drawGraph("https://mindulle.github.io/garden",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()});function a(n){const e=n.target,t=e.className.split(" "),s=t.includes("broken"),o=t.includes("internal-link");plausible("Link Click",{props:{href:e.href,broken:s,internal:o,graph:!1}})}const r=document.querySelectorAll("a");for(link of r)link.className.includes("root-title")&&link.addEventListener("click",a,{once:!0})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/mindulle.github.io\/garden\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
+  </script><script defer data-domain=mindulle.github.io/garden src=https://plausible.io/js/script.js></script>
+<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script></head><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://mindulle.github.io/garden/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js></script><div class=singlePage><header><h1 id=page-title><a class=root-title href=https://mindulle.github.io/garden>Mindulle Garden✨</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>Decorators</h1><p class=meta>Last updated
+Apr 27, 2023
+<a href=https://github.com/mindulle/garden/tree/hugo/content/Develop/Trees/Dev/ingredients/Libs&Fwks/webFrontend/Test/Storybook/Guides/Write%20stories/Decorators.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://mindulle.github.io/garden/tags/tree/>Tree</a></li><li><a href=https://mindulle.github.io/garden/tags/storybook/>Storybook</a></li><li><a href=https://mindulle.github.io/garden/tags/test/>Test</a></li><li><a href=https://mindulle.github.io/garden/tags/web/>Web</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#context-for-mocking>“Context” for mocking</a><ol><li><a href=#using-decorators-to-provide-data>Using decorators to provide data</a></li></ol></li><li><a href=#story-decorators>Story decorators</a></li><li><a href=#component-decorators>Component decorators</a></li><li><a href=#global-decorators>Global decorators</a></li><li><a href=#decorator-inheritance>Decorator inheritance</a></li></ol></nav></details></aside><a href=#decorators><h1 id=decorators><span class=hanchor arialabel=Anchor># </span>Decorators</h1></a><p>A decorator is a way to wrap a story in extra “rendering” functionality. Many addons define decorators to augment your stories with extra rendering or gather details about how your story renders.</p><p>When writing stories, decorators are typically used to wrap stories with extra markup or context mocking.</p><p>Some components require a “harness” to render in a useful way. For instance, if a component runs right up to its edges, you might want to space it inside Storybook. Use a decorator to add spacing for all stories of the component.</p><p><img src=https://storybook.js.org/a1a69f7f8d2b02f4784fdd3b026ce8b8/decorators-no-padding.png width=auto alt="Story without padding"></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// YourComponent.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>YourComponent</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./YourComponent&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;YourComponent&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>YourComponent</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>decorators</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Story</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=err>/div&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>),</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// YourComponent.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>YourComponent</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./YourComponent&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Replacing the &lt;Story/&gt; element with a Story function is also a good way of writing decorators.
+</span></span></span><span class=line><span class=cl><span class=c1>// Useful to prevent the full remount of the component&#39;s story.
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>   <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;YourComponent&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>YourComponent</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>decorators</span><span class=o>:</span> <span class=p>[(</span><span class=nx>Story</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}</span><span class=o>&gt;</span><span class=p>{</span><span class=nx>Story</span><span class=p>()}</span><span class=o>&lt;</span><span class=err>/div&gt;],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// YourComponent.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>YourComponent</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./YourComponent&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;YourComponent&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>YourComponent</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>decorators</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>Story</span><span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>),</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>YourComponent</span><span class=p>&gt;;</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// YourComponent.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>YourComponent</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./YourComponent&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// Replacing the &lt;Story/&gt; element with a Story function is also a good way of writing decorators.
+</span></span></span><span class=line><span class=cl><span class=c1>// Useful to prevent the full remount of the component&#39;s story.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;YourComponent&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>YourComponent</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>decorators</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>{</span><span class=nx>Story</span><span class=p>()}</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>),</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>YourComponent</span><span class=p>&gt;;</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl><span class=c>&lt;!-- YourComponent.stories.mdx --&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Meta } from &#39;@storybook/addon-docs&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { YourComponent } from &#39;./YourComponent&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Meta</span>
+</span></span><span class=line><span class=cl>  <span class=na>title</span><span class=o>=</span><span class=s>&#34;YourComponent&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=na>component</span><span class=o>=</span><span class=s>{YourComponent}</span>
+</span></span><span class=line><span class=cl>  <span class=na>decorators</span><span class=o>=</span><span class=s>{[</span>
+</span></span><span class=line><span class=cl>    <span class=err>(</span><span class=na>Story</span><span class=err>)</span> <span class=err>=</span><span class=p>&gt;</span> (
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>style</span><span class=o>=</span><span class=s>{{</span> <span class=na>margin:</span> <span class=err>&#39;</span><span class=na>3em</span><span class=err>&#39;</span> <span class=err>}}</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>Story</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    ),
+</span></span><span class=line><span class=cl>  ]}
+</span></span><span class=line><span class=cl>/&gt;
+</span></span></code></pre></td></tr></table></div></div><p><img src=https://storybook.js.org/5b4a05cec634056cfd1ecc0b192b0881/decorators-padding.png width=auto alt="Story with padding"></p><a href=#context-for-mocking><h2 id=context-for-mocking><span class=hanchor arialabel=Anchor># </span>“Context” for mocking</h2></a><p>Framework-specific libraries (e.g.,
+<a href=https://styled-components.com/ rel=noopener>Styled Components</a>,
+<a href=https://github.com/FortAwesome/vue-fontawesome rel=noopener>Fontawesome</a> for Vue, Angular&rsquo;s
+<a href=https://angular.io/api/localize rel=noopener>localize</a>) may require additional configuration to render correctly in Storybook.</p><p>For example, if you&rsquo;re working with React&rsquo;s Styled Components and your components use themes, add a single global decorator to
+<a href=https://storybook.js.org/docs/react/configure/overview#configure-story-rendering rel=noopener><code>.storybook/preview.js</code></a> to enable them. With Vue, extend Storybook&rsquo;s application and register your library. Or with Angular, add the package into your <code>polyfills.ts</code> and import it:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// .storybook/preview.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ThemeProvider</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;styled-components&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>decorators</span> <span class=o>=</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>ThemeProvider</span> <span class=nx>theme</span><span class=o>=</span><span class=s2>&#34;default&#34;</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>Story</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/ThemeProvider&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>),</span>
+</span></span><span class=line><span class=cl><span class=p>];</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Story function
+</span></span></span><span class=line><span class=cl><span class=c1>// .storybook/preview.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ThemeProvider</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;styled-components&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>decorators</span> <span class=o>=</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>ThemeProvider</span> <span class=nx>theme</span><span class=o>=</span><span class=s2>&#34;default&#34;</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>{</span><span class=nx>Story</span><span class=p>()}</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/ThemeProvider&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>),</span>
+</span></span><span class=line><span class=cl><span class=p>];</span>
+</span></span></code></pre></td></tr></table></div></div><p>In the example above, the values provided are hardcoded. Still, you may want to vary them, either per-story basis (i.e., if the values you&rsquo;re adding are relevant to a specific story) or in a user-controlled way (e.g., provide a theme switcher or a different set of icons).</p><p>The second argument to a decorator function is the <strong>story context</strong> which in particular contains the keys:</p><ul><li><code>args</code> - the story arguments. You can use some
+<a href=https://storybook.js.org/docs/react/writing-stories/args rel=noopener><code>args</code></a> in your decorators and drop them in the story implementation itself.</li><li><code>argTypes</code>- Storybook&rsquo;s
+<a href=https://storybook.js.org/docs/react/api/argtypes rel=noopener>argTypes</a> allow you to customize and fine-tune your stories
+<a href=https://storybook.js.org/docs/react/writing-stories/args rel=noopener><code>args</code></a>.</li><li><code>globals</code> - Storybook-wide
+<a href=https://storybook.js.org/docs/react/essentials/toolbars-and-globals#globals rel=noopener>globals</a>. In particular you can use the
+<a href=https://storybook.js.org/docs/react/essentials/toolbars-and-globals#global-types-toolbar-annotations rel=noopener>toolbars feature</a> to allow you to change these values using Storybook’s UI.</li><li><code>hooks</code> - Storybook&rsquo;s API hooks (e.g., useArgs).</li><li><code>parameters</code>- the story&rsquo;s static metadata, most commonly used to control Storybook&rsquo;s behavior of features and addons.</li><li><code>viewMode</code>- Storybook&rsquo;s current active window (e.g., canvas, docs).</li></ul><p>💡 This pattern can also be applied to your own stories. Some of Storybook&rsquo;s supported frameworks already use it (e.g., vue 2).</p><a href=#using-decorators-to-provide-data><h3 id=using-decorators-to-provide-data><span class=hanchor arialabel=Anchor># </span>Using decorators to provide data</h3></a><p>If your components are “connected” and require side-loaded data to render, you can use decorators to provide that data in a mocked way without having to refactor your components to take that data as an arg. There are several techniques to achieve this. Depending on exactly how you are loading that data &ndash; read more in the
+<a href=https://storybook.js.org/docs/react/writing-stories/build-pages-with-storybook rel=noopener>building pages in Storybook</a> section.</p><a href=#story-decorators><h2 id=story-decorators><span class=hanchor arialabel=Anchor># </span>Story decorators</h2></a><p>To define a decorator for a single story, use the <code>decorators</code> key on a named export:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Button.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>Button</span> <span class=p>{...</span><span class=nx>args</span><span class=p>}</span> <span class=o>/&gt;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Primary</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Primary</span><span class=p>.</span><span class=nx>decorators</span> <span class=o>=</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>Story</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/div&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>),</span>
+</span></span><span class=line><span class=cl><span class=p>];</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Button.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Template</span> <span class=o>=</span> <span class=p>(</span><span class=nx>args</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>Button</span> <span class=p>{...</span><span class=nx>args</span><span class=p>}</span> <span class=o>/&gt;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>Primary</span> <span class=o>=</span> <span class=nx>Template</span><span class=p>.</span><span class=nx>bind</span><span class=p>({});</span>
+</span></span><span class=line><span class=cl><span class=nx>Primary</span><span class=p>.</span><span class=nx>decorators</span> <span class=o>=</span> <span class=p>[(</span><span class=nx>Story</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}</span><span class=o>&gt;</span><span class=p>{</span><span class=nx>Story</span><span class=p>()}</span><span class=o>&lt;</span><span class=err>/div&gt;];</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl><span class=c>&lt;!-- Button.stories.mdx --&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Meta, Story } from &#39;@storybook/addon-docs&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Button } from &#39;./Button&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Meta</span> <span class=na>title</span><span class=o>=</span><span class=s>&#34;Button&#34;</span> <span class=na>component</span><span class=o>=</span><span class=s>{Button}</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>export const Template = (args) =&gt; <span class=p>&lt;</span><span class=nt>Button</span> <span class=err>{...</span><span class=na>args</span><span class=err>}</span> <span class=p>/&gt;</span>;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Story</span>
+</span></span><span class=line><span class=cl>  <span class=na>name</span><span class=o>=</span><span class=s>&#34;Primary&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=na>args</span><span class=o>=</span><span class=s>{{}}</span>
+</span></span><span class=line><span class=cl>  <span class=na>decorators</span><span class=o>=</span><span class=s>{[</span>
+</span></span><span class=line><span class=cl>    <span class=err>(</span><span class=na>Story</span><span class=err>)</span> <span class=err>=</span><span class=p>&gt;</span> (
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>style</span><span class=o>=</span><span class=s>{{</span> <span class=na>margin:</span> <span class=err>&#39;</span><span class=na>3em</span><span class=err>&#39;</span> <span class=err>}}</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>Story</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    ),
+</span></span><span class=line><span class=cl>  ]}&gt;
+</span></span><span class=line><span class=cl>  {Template.bind({})}
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>Story</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><p>It is useful to ensure that the story remains a “pure” rendering of the component under test, and any extra HTML or components don&rsquo;t pollute that. In particular the
+<a href=https://storybook.js.org/docs/react/writing-docs/doc-block-source rel=noopener>Source</a> Doc Block works best when you do this.</p><a href=#component-decorators><h2 id=component-decorators><span class=hanchor arialabel=Anchor># </span>Component decorators</h2></a><p>To define a decorator for all stories of a component, use the <code>decorators</code> key of the default CSF export:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// Button.stories.js|jsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span><span class=o>:</span> <span class=nx>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>decorators</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=o>&lt;</span><span class=nx>Story</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=err>/div&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>),</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=line><span class=cl><span class=c1>// Button.stories.ts|tsx
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=kr>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>ComponentMeta</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;@storybook/react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Button</span> <span class=p>}</span> <span class=kr>from</span> <span class=s1>&#39;./Button&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/* 👇 The title prop is optional.
+</span></span></span><span class=line><span class=cl><span class=cm>  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+</span></span></span><span class=line><span class=cl><span class=cm>  * to learn how to generate automatic titles
+</span></span></span><span class=line><span class=cl><span class=cm>  */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>title</span><span class=o>:</span> <span class=s1>&#39;Button&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>component</span>: <span class=kt>Button</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>decorators</span><span class=o>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>    <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=o>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>Story</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=p>),</span>
+</span></span><span class=line><span class=cl>  <span class=p>],</span>
+</span></span><span class=line><span class=cl><span class=p>}</span> <span class=kr>as</span> <span class=nx>ComponentMeta</span><span class=p>&lt;</span><span class=nt>typeof</span> <span class=na>Button</span><span class=p>&gt;;</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-md data-lang=md><span class=line><span class=cl><span class=c>&lt;!-- Button.stories.mdx --&gt;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Meta, Story } from &#39;@storybook/addon-docs&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>import { Button } from &#39;./Button&#39;;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Meta</span>
+</span></span><span class=line><span class=cl>  <span class=na>title</span><span class=o>=</span><span class=s>&#34;Button&#34;</span>
+</span></span><span class=line><span class=cl>  <span class=na>component</span><span class=o>=</span><span class=s>{Button}</span>
+</span></span><span class=line><span class=cl>  <span class=na>decorators</span><span class=o>=</span><span class=s>{[</span>
+</span></span><span class=line><span class=cl>    <span class=err>(</span><span class=na>Story</span><span class=err>)</span> <span class=err>=</span><span class=p>&gt;</span> (
+</span></span><span class=line><span class=cl>      <span class=p>&lt;</span><span class=nt>div</span> <span class=na>style</span><span class=o>=</span><span class=s>{{</span> <span class=na>margin:</span> <span class=err>&#39;</span><span class=na>3em</span><span class=err>&#39;</span> <span class=err>}}</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>        <span class=p>&lt;</span><span class=nt>Story</span> <span class=p>/&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>    ),
+</span></span><span class=line><span class=cl>  ]}
+</span></span><span class=line><span class=cl>/&gt;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c>&lt;!-- Remainder story implementation --&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#global-decorators><h2 id=global-decorators><span class=hanchor arialabel=Anchor># </span>Global decorators</h2></a><p>We can also set a decorator for <strong>all stories</strong> via the <code>decorators</code> export of your
+<a href=https://storybook.js.org/docs/react/configure/overview#configure-story-rendering rel=noopener><code>.storybook/preview.js</code></a> file (this is the file where you configure all stories):</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// .storybook/preview.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s1>&#39;react&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>decorators</span> <span class=o>=</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=o>&lt;</span><span class=nx>Story</span> <span class=o>/&gt;</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/div&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>),</span>
+</span></span><span class=line><span class=cl><span class=p>];</span>
+</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// .storybook/preview.js
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=kr>import</span> <span class=nx>React</span> <span class=nx>from</span> <span class=s2>&#34;react&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>const</span> <span class=nx>decorators</span> <span class=o>=</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>(</span><span class=nx>Story</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=nx>div</span> <span class=nx>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>margin</span><span class=o>:</span> <span class=s1>&#39;3em&#39;</span> <span class=p>}}</span><span class=o>&gt;</span>
+</span></span><span class=line><span class=cl>      <span class=p>{</span><span class=nx>Story</span><span class=p>()}</span>
+</span></span><span class=line><span class=cl>    <span class=o>&lt;</span><span class=err>/div&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>),</span>
+</span></span><span class=line><span class=cl><span class=p>];</span>
+</span></span></code></pre></td></tr></table></div></div><a href=#decorator-inheritance><h2 id=decorator-inheritance><span class=hanchor arialabel=Anchor># </span>Decorator inheritance</h2></a><p>Like parameters, decorators can be defined globally, at the component level, and for a single story (as we’ve seen).</p><p>All decorators relevant to a story will run in the following order once the story renders:</p><ul><li>Global decorators, in the order they are defined</li><li>Component decorators, in the order they are defined</li><li>Story decorators, in the order they are defined</li></ul><p><a href=https://github.com/storybookjs/storybook/tree/next/docs/writing-stories/decorators.md target=_blank rel=noopener class="e1soj9vu1 e1ja7avb2 css-1ii1tfm e1ja7avb1"><span class="css-1xdhyk6 e1ja7avb3"><span role=img aria-label=write>✍️</span> Edit on GitHub – PRs welcome!</span></a></p></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/garden/Develop/Trees/Dev/ingredients/LibsFwks/webFrontend/Test/Storybook/_Storybook/ data-ctx="Develop/Trees/Dev/ingredients/Libs&Fwks/webFrontend/Test/Storybook/Guides/Write stories/Decorators" data-src=/Develop/Trees/Dev/ingredients/LibsFwks/webFrontend/Test/Storybook/_Storybook class=internal-link>_Storybook</a></li></ul></div><div><script async src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://mindulle.github.io/garden/js/graph.6579af7b10c818dbd2ca038702db0224.js></script></div></div><div id=contact_buttons><footer><p>Made by mindulle using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://mindulle.github.io/garden>Home</a></li><li><a href=https://github.com/mindulle>GitHub</a></li></ul></footer></div></div></body></html>

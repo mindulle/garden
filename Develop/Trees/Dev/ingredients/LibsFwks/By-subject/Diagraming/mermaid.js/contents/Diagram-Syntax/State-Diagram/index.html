@@ -1,0 +1,523 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=description content="State diagrams 🌱  &ldquo;A state diagram is a type of diagram used in computer science and related fields to describe the behavior of systems."><meta property="og:title" content="State Diagram"><meta property="og:description" content="State diagrams 🌱  &ldquo;A state diagram is a type of diagram used in computer science and related fields to describe the behavior of systems."><meta property="og:type" content="website"><meta property="og:image" content="https://mindulle.github.io/gardenicon.png"><meta property="og:url" content="https://mindulle.github.io/garden/Develop/Trees/Dev/ingredients/LibsFwks/By-subject/Diagraming/mermaid.js/contents/Diagram-Syntax/State-Diagram/"><meta property="og:width" content="200"><meta property="og:height" content="200"><meta name=twitter:card content="summary"><meta name=twitter:title content="State Diagram"><meta name=twitter:description content="State diagrams 🌱  &ldquo;A state diagram is a type of diagram used in computer science and related fields to describe the behavior of systems."><meta name=twitter:image content="https://mindulle.github.io/gardenicon.png"><title>State Diagram</title><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" type=image/png href=https://mindulle.github.io/garden/icon.png><link href=https://mindulle.github.io/garden/styles.b369a84b3c6e6bfd686ad1f9da65641c.min.css rel=stylesheet><link href=https://mindulle.github.io/garden/styles/_light_syntax.86a48a52faebeaaf42158b72922b1c90.min.css rel=stylesheet id=theme-link><script src=https://mindulle.github.io/garden/js/darkmode.71fd764547989a0d567451669afd7a55.min.js></script>
+<script src=https://mindulle.github.io/garden/js/util.a0ccf91e1937fe761a74da4946452710.min.js></script>
+<link rel=preload href=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css as=style onload='this.onload=null,this.rel="stylesheet"' integrity=sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js integrity=sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/contrib/copy-tex.min.js integrity=sha384-ww/583aHhxWkz5DEVn6OKtNiIaLi2iBRNZXfJRiY1Ai7tnJ9UXpEsyvOITVpTl4A crossorigin=anonymous></script>
+<script type=module>
+      import mermaid from 'https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script><script src=https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1></script>
+<script src=https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1></script>
+<script async src=https://mindulle.github.io/garden/js/popover.aa9bc99c7c38d3ae9538f218f1416adb.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/code-title.ce4a43f09239a9efb48fee342e8ef2df.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/clipboard.2913da76d3cb21c5deaa4bae7da38c9f.min.js></script>
+<script defer src=https://mindulle.github.io/garden/js/callouts.7723cac461d613d118ee8bb8216b9838.min.js></script>
+<script>const SEARCH_ENABLED=!1,LATEX_ENABLED=!0,PRODUCTION=!0,BASE_URL="https://mindulle.github.io/garden",fetchData=Promise.all([fetch("https://mindulle.github.io/garden/indices/linkIndex.e0ad9d26ce8917647ed82a8c044a17f1.min.json").then(e=>e.json()).then(e=>({index:e.index,links:e.links})),fetch("https://mindulle.github.io/garden/indices/contentIndex.30fe5cf7d10f92a9db5d1d695a3a6b44.min.json").then(e=>e.json())]).then(([{index:e,links:t},n])=>({index:e,links:t,content:n})),render=()=>{const e=new URL(BASE_URL),t=e.pathname,n=window.location.pathname,s=t==n;addCopyButtons(),addTitleToCodeBlocks(),addCollapsibleCallouts(),initPopover("https://mindulle.github.io/garden",!0);const o=document.getElementById("footer");if(o){const e=document.getElementById("graph-container");if(!e)return requestAnimationFrame(render);e.textContent="";const t=s&&!0;drawGraph("https://mindulle.github.io/garden",t,[{"/moc":"#4388cc"}],t?{centerForce:1,depth:-1,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.5,linkDistance:1,opacityScale:3,repelForce:1,scale:1.4}:{centerForce:1,depth:1,enableDrag:!0,enableLegend:!0,enableZoom:!0,fontSize:.6,linkDistance:1,opacityScale:3,repelForce:2,scale:1.2})}var i=document.getElementsByClassName("mermaid");i.length>0&&import("https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs").then(e=>{e.default.init()});function a(n){const e=n.target,t=e.className.split(" "),s=t.includes("broken"),o=t.includes("internal-link");plausible("Link Click",{props:{href:e.href,broken:s,internal:o,graph:!1}})}const r=document.querySelectorAll("a");for(link of r)link.className.includes("root-title")&&link.addEventListener("click",a,{once:!0})},init=(e=document)=>{addCopyButtons(),addTitleToCodeBlocks(),renderMathInElement(e.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],macros:{'’':"'"},throwOnError:!1})}</script><script type=module>
+    import { attachSPARouting } from "https:\/\/mindulle.github.io\/garden\/js\/router.d6fe6bd821db9ea97f9aeefae814d8e7.min.js"
+    attachSPARouting(init, render)
+  </script><script defer data-domain=mindulle.github.io/garden src=https://plausible.io/js/script.js></script>
+<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script></head><body><div id=search-container><div id=search-space><input autocomplete=off id=search-bar name=search type=text aria-label=Search placeholder="Search for something..."><div id=results-container></div></div></div><script src=https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js integrity="sha256-i3A0NZGkhsKjVMzFxv3ksk0DZh3aXqu0l49Bbh0MdjE=" crossorigin=anonymous defer></script>
+<script defer src=https://mindulle.github.io/garden/js/full-text-search.e6e2e0c213187ca0c703d6e2c7a77fcd.min.js></script><div class=singlePage><header><h1 id=page-title><a class=root-title href=https://mindulle.github.io/garden>Mindulle Garden✨</a></h1><div class=spacer></div><div id=search-icon><p>Search</p><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">Icon to open search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg></div><div class=darkmode><input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+<label id=toggle-label-light for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="dayIcon" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35"><title>Light Mode</title><path d="M6 17.5C6 16.672 5.328 16 4.5 16h-3C.672 16 0 16.672.0 17.5S.672 19 1.5 19h3C5.328 19 6 18.328 6 17.5zM7.5 26c-.414.0-.789.168-1.061.439l-2 2C4.168 28.711 4 29.086 4 29.5 4 30.328 4.671 31 5.5 31c.414.0.789-.168 1.06-.44l2-2C8.832 28.289 9 27.914 9 27.5 9 26.672 8.329 26 7.5 26zm10-20C18.329 6 19 5.328 19 4.5v-3C19 .672 18.329.0 17.5.0S16 .672 16 1.5v3C16 5.328 16.671 6 17.5 6zm10 3c.414.0.789-.168 1.06-.439l2-2C30.832 6.289 31 5.914 31 5.5 31 4.672 30.329 4 29.5 4c-.414.0-.789.168-1.061.44l-2 2C26.168 6.711 26 7.086 26 7.5 26 8.328 26.671 9 27.5 9zM6.439 8.561C6.711 8.832 7.086 9 7.5 9 8.328 9 9 8.328 9 7.5c0-.414-.168-.789-.439-1.061l-2-2C6.289 4.168 5.914 4 5.5 4 4.672 4 4 4.672 4 5.5c0 .414.168.789.439 1.06l2 2.001zM33.5 16h-3c-.828.0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5h3c.828.0 1.5-.672 1.5-1.5S34.328 16 33.5 16zM28.561 26.439C28.289 26.168 27.914 26 27.5 26c-.828.0-1.5.672-1.5 1.5.0.414.168.789.439 1.06l2 2C28.711 30.832 29.086 31 29.5 31c.828.0 1.5-.672 1.5-1.5.0-.414-.168-.789-.439-1.061l-2-2zM17.5 29c-.829.0-1.5.672-1.5 1.5v3c0 .828.671 1.5 1.5 1.5s1.5-.672 1.5-1.5v-3C19 29.672 18.329 29 17.5 29zm0-22C11.71 7 7 11.71 7 17.5S11.71 28 17.5 28 28 23.29 28 17.5 23.29 7 17.5 7zm0 18c-4.136.0-7.5-3.364-7.5-7.5s3.364-7.5 7.5-7.5 7.5 3.364 7.5 7.5S21.636 25 17.5 25z"/></svg></label><label id=toggle-label-dark for=darkmode-toggle tabindex=-1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="nightIcon" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'"><title>Dark Mode</title><path d="M96.76 66.458c-.853-.852-2.15-1.064-3.23-.534-6.063 2.991-12.858 4.571-19.655 4.571C62.022 70.495 50.88 65.88 42.5 57.5 29.043 44.043 25.658 23.536 34.076 6.47c.532-1.08.318-2.379-.534-3.23-.851-.852-2.15-1.064-3.23-.534-4.918 2.427-9.375 5.619-13.246 9.491-9.447 9.447-14.65 22.008-14.65 35.369.0 13.36 5.203 25.921 14.65 35.368s22.008 14.65 35.368 14.65c13.361.0 25.921-5.203 35.369-14.65 3.872-3.871 7.064-8.328 9.491-13.246C97.826 68.608 97.611 67.309 96.76 66.458z"/></svg></label></div></header><article><h1>State Diagram</h1><p class=meta>Last updated
+Apr 27, 2023
+<a href=https://github.com/mindulle/garden/tree/hugo/content/Develop/Trees/Dev/ingredients/Libs&Fwks/By%20subject/Diagraming/mermaid.js/contents/Diagram%20Syntax/State%20Diagram.md rel=noopener>Edit Source</a></p><ul class=tags><li><a href=https://mindulle.github.io/garden/tags/tree/>Tree</a></li><li><a href=https://mindulle.github.io/garden/tags/mermaidjs/>Mermaidjs</a></li></ul><aside class=mainTOC><details><summary>Table of Contents</summary><nav id=TableOfContents><ol><li><a href=#state-diagrams->State diagrams 🌱</a><ol><li></li></ol></li><li><a href=#states>States</a><ol><li></li></ol></li><li><a href=#transitions->Transitions 🌱</a><ol><li></li></ol></li><li><a href=#start-and-end->Start and End 🌱</a><ol><li></li></ol></li><li><a href=#composite-states->Composite states 🎯⭐</a><ol><li></li></ol></li><li><a href=#choice->Choice 🎯⭐</a><ol><li></li></ol></li><li><a href=#forks->Forks 🏁</a><ol><li></li></ol></li><li><a href=#notes->Notes 🏁⭐</a><ol><li></li></ol></li><li><a href=#concurrency->Concurrency 🎯⭐</a><ol><li></li></ol></li><li><a href=#setting-the-direction-of-the-diagram->Setting the direction of the diagram 🏁</a><ol><li></li></ol></li><li><a href=#styling-with-classdefs->Styling with classDefs 🏁⭐</a><ol><li><a href=#apply-classdef-styles-to-states->Apply classDef styles to states 🏁⭐</a></li></ol></li><li><a href=#spaces-in-state-names>Spaces in state names</a><ol><li></li></ol></li></ol></nav></details></aside><a href=#state-diagrams-><h2 id=state-diagrams-><span class=hanchor arialabel=Anchor># </span>State diagrams 🌱</h2></a><blockquote><p>&ldquo;A state diagram is a type of diagram used in computer science and related fields to describe the behavior of systems. State diagrams require that the system described is composed of a <strong>finite number of states</strong>; sometimes, this is indeed the case, while at other times this is a reasonable abstraction.&rdquo; <strong><em>Wikipedia</em></strong></p></blockquote><p>Mermaid can render state diagrams. The syntax tries to be compliant with the syntax used in plantUml<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> as this will make it easier for users to share diagrams between mermaid and plantUml.</p><a href=#code><h5 id=code><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>title: Simple sample
+</span></span><span class=line><span class=cl>---
+</span></span><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    [*] --&gt; Still
+</span></span><span class=line><span class=cl>    Still --&gt; [*]
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    Still --&gt; Moving
+</span></span><span class=line><span class=cl>    Moving --&gt; Still
+</span></span><span class=line><span class=cl>    Moving --&gt; Crash
+</span></span><span class=line><span class=cl>    Crash --&gt; [*]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]</div><a href=#code-1><h5 id=code-1><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram
+</span></span><span class=line><span class=cl>    [*] --&gt; Still
+</span></span><span class=line><span class=cl>    Still --&gt; [*]
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    Still --&gt; Moving
+</span></span><span class=line><span class=cl>    Moving --&gt; Still
+</span></span><span class=line><span class=cl>    Moving --&gt; Crash
+</span></span><span class=line><span class=cl>    Crash --&gt; [*]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]</div><p>In state diagrams systems are described in terms of <em>states</em> and how one <em>state</em> can change to another <em>state</em> via a <em>🎯transition.</em> The example diagram above shows three states: <strong>Still</strong>, <strong>Moving</strong> and <strong>Crash</strong>. You start in the <strong>Still</strong> state. From <strong>Still</strong> you can change to the <strong>Moving</strong> state. From <strong>Moving</strong> you can change either back to the <strong>Still</strong> state or to the <strong>Crash</strong> state. There is no transition from <strong>Still</strong> to <strong>Crash</strong>. (You can&rsquo;t crash if you&rsquo;re still.)</p><a href=#states><h2 id=states><span class=hanchor arialabel=Anchor># </span>States</h2></a><p>A state can be declared in multiple ways. The simplest way is to define a state with just an id:</p><a href=#code-2><h5 id=code-2><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    stateId
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+stateId</div><p>Another way is by using the state keyword with a description as per below:</p><a href=#code-3><h5 id=code-3><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    state &#34;This is a state description&#34; as s2
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+state "This is a state description" as s2</div><p>Another way to define a state with a description is to define the state id followed by a colon and the description:</p><a href=#code-4><h5 id=code-4><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    s2 : This is a state description
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+s2 : This is a state description</div><a href=#transitions-><h2 id=transitions-><span class=hanchor arialabel=Anchor># </span>Transitions 🌱</h2></a><p>Transitions are <strong>path/edges</strong> when one state passes into another. This is represented using text arrow, <strong>"&ndash;>"</strong>.</p><p>When you define a transition between two states and the states are not already defined, the undefined states are defined with the id from the transition. You can later add descriptions to states defined this way.</p><a href=#code-5><h5 id=code-5><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    s1 --&gt; s2
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+s1 --> s2</div><p>It is possible to add text to a transition to describe what it represents:</p><a href=#code-6><h5 id=code-6><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    s1 --&gt; s2: A transition
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+s1 --> s2: A transition</div><a href=#start-and-end-><h2 id=start-and-end-><span class=hanchor arialabel=Anchor># </span>Start and End 🌱</h2></a><p>There are <strong>two special states</strong> indicating <strong>the start and stop</strong> of the diagram. These are written with the [*] syntax and the direction of the transition to it defines it either as a start or a stop state.</p><a href=#code-7><h5 id=code-7><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    [*] --&gt; s1
+</span></span><span class=line><span class=cl>    s1 --&gt; [*]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+[*] --> s1
+s1 --> [*]</div><a href=#composite-states-><h2 id=composite-states-><span class=hanchor arialabel=Anchor># </span>Composite states 🎯⭐</h2></a><p>In a <strong><em>real world</em></strong> use of state diagrams you often end up with diagrams that are multidimensional as one state can have several internal states. These are called <strong><em>composite states</em></strong> in this terminology.</p><p>In order to define a composite state you need to use the state keyword followed by an id and the body of the composite state between <strong><code>{}</code></strong>. See the example below:</p><a href=#code-8><h5 id=code-8><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    [*] --&gt; First
+</span></span><span class=line><span class=cl>    state First {
+</span></span><span class=line><span class=cl>        [*] --&gt; second
+</span></span><span class=line><span class=cl>        second --&gt; [*]
+</span></span><span class=line><span class=cl>    }
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+[*] --> First
+state First {
+[*] --> second
+second --> [*]
+}</div><p>You can do this in several layers:</p><a href=#code-9><h5 id=code-9><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    [*] --&gt; First
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    state First {
+</span></span><span class=line><span class=cl>        [*] --&gt; Second
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        state Second {
+</span></span><span class=line><span class=cl>            [*] --&gt; second
+</span></span><span class=line><span class=cl>            second --&gt; Third
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            state Third {
+</span></span><span class=line><span class=cl>                [*] --&gt; third
+</span></span><span class=line><span class=cl>                third --&gt; [*]
+</span></span><span class=line><span class=cl>            }
+</span></span><span class=line><span class=cl>        }
+</span></span><span class=line><span class=cl>    }
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+[*] --> First
+state First {
+[*] --> Second
+state Second {
+[*] --> second
+second --> Third
+state Third {
+[*] --> third
+third --> [*]
+}
+}
+}</div><p>You can also define transitions also between composite states:</p><a href=#code-10><h5 id=code-10><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    [*] --&gt; First
+</span></span><span class=line><span class=cl>    First --&gt; Second
+</span></span><span class=line><span class=cl>    First --&gt; Third
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    state First {
+</span></span><span class=line><span class=cl>        [*] --&gt; fir
+</span></span><span class=line><span class=cl>        fir --&gt; [*]
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    state Second {
+</span></span><span class=line><span class=cl>        [*] --&gt; sec
+</span></span><span class=line><span class=cl>        sec --&gt; [*]
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    state Third {
+</span></span><span class=line><span class=cl>        [*] --&gt; thi
+</span></span><span class=line><span class=cl>        thi --&gt; [*]
+</span></span><span class=line><span class=cl>    }
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+[*] --> First
+First --> Second
+First --> Third
+state First {
+[*] --> fir
+fir --> [*]
+}
+state Second {
+[*] --> sec
+sec --> [*]
+}
+state Third {
+[*] --> thi
+thi --> [*]
+}</div><p><em>You <strong>can not</strong> define transitions <strong><mark>between internal states</mark> belonging to different composite states</strong></em></p><a href=#choice-><h2 id=choice-><span class=hanchor arialabel=Anchor># </span>Choice 🎯⭐</h2></a><p>Sometimes you need to model a choice between two or more paths, you can do so using <code>&lt;&lt;choice>></code>.</p><a href=#code-11><h5 id=code-11><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    state if_state &lt;&lt;choice&gt;&gt;
+</span></span><span class=line><span class=cl>    [*] --&gt; IsPositive
+</span></span><span class=line><span class=cl>    IsPositive --&gt; if_state
+</span></span><span class=line><span class=cl>    if_state --&gt; False: if n &lt; 0
+</span></span><span class=line><span class=cl>    if_state --&gt; True : if n &gt;= 0
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+state if_state <<choice>>
+[*] --> IsPositive
+IsPositive --> if_state
+if_state --> False: if n < 0
+if_state --> True : if n >= 0</div><a href=#forks-><h2 id=forks-><span class=hanchor arialabel=Anchor># </span>Forks 🏁</h2></a><p>It is possible to specify a fork in the diagram using <code>&lt;&lt;fork>></code> <code>&lt;&lt;join>></code>.</p><a href=#code-12><h5 id=code-12><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>   stateDiagram-v2
+</span></span><span class=line><span class=cl>    state fork_state &lt;&lt;fork&gt;&gt;
+</span></span><span class=line><span class=cl>      [*] --&gt; fork_state
+</span></span><span class=line><span class=cl>      fork_state --&gt; State2
+</span></span><span class=line><span class=cl>      fork_state --&gt; State3
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      state join_state &lt;&lt;join&gt;&gt;
+</span></span><span class=line><span class=cl>      State2 --&gt; join_state
+</span></span><span class=line><span class=cl>      State3 --&gt; join_state
+</span></span><span class=line><span class=cl>      join_state --&gt; State4
+</span></span><span class=line><span class=cl>      State4 --&gt; [*]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+state fork_state <<fork>>
+[*] --> fork_state
+fork_state --> State2
+fork_state --> State3
+state join_state <<join>>
+State2 --> join_state
+State3 --> join_state
+join_state --> State4
+State4 --> [*]</div><blockquote class=note-callout><p>Fork/Join
+현업에서 사용되는 __<em>github fork</em>__와 데이터베이스 __<em>join</em>__을 생각하면 쉬울 것 같다.</p></blockquote><a href=#notes-><h2 id=notes-><span class=hanchor arialabel=Anchor># </span>Notes 🏁⭐</h2></a><p>Sometimes nothing says it better than a Post-it note. That is also the case in state diagrams.</p><p>Here you can choose to put the note to the <em>right of</em> or to the <em>left of</em> a node.</p><a href=#code-13><h5 id=code-13><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>    stateDiagram-v2
+</span></span><span class=line><span class=cl>        State1: The state with a note
+</span></span><span class=line><span class=cl>        note right of State1
+</span></span><span class=line><span class=cl>            Important information! You can write
+</span></span><span class=line><span class=cl>            notes.
+</span></span><span class=line><span class=cl>        end note
+</span></span><span class=line><span class=cl>        State1 --&gt; State2
+</span></span><span class=line><span class=cl>        note left of State2 : This is the note to the left.
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+State1: The state with a note
+note right of State1
+Important information! You can write
+notes.
+end note
+State1 --> State2
+note left of State2 : This is the note to the left.</div><a href=#concurrency-><h2 id=concurrency-><span class=hanchor arialabel=Anchor># </span>Concurrency 🎯⭐</h2></a><p>As in plantUml you can specify concurrency using the <code>--</code> symbol.</p><a href=#code-14><h5 id=code-14><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    [*] --&gt; Active
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    state Active {
+</span></span><span class=line><span class=cl>        [*] --&gt; NumLockOff
+</span></span><span class=line><span class=cl>        NumLockOff --&gt; NumLockOn : EvNumLockPressed
+</span></span><span class=line><span class=cl>        NumLockOn --&gt; NumLockOff : EvNumLockPressed
+</span></span><span class=line><span class=cl>        --
+</span></span><span class=line><span class=cl>        [*] --&gt; CapsLockOff
+</span></span><span class=line><span class=cl>        CapsLockOff --&gt; CapsLockOn : EvCapsLockPressed
+</span></span><span class=line><span class=cl>        CapsLockOn --&gt; CapsLockOff : EvCapsLockPressed
+</span></span><span class=line><span class=cl>        --
+</span></span><span class=line><span class=cl>        [*] --&gt; ScrollLockOff
+</span></span><span class=line><span class=cl>        ScrollLockOff --&gt; ScrollLockOn : EvScrollLockPressed
+</span></span><span class=line><span class=cl>        ScrollLockOn --&gt; ScrollLockOff : EvScrollLockPressed
+</span></span><span class=line><span class=cl>    }
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+[*] --> Active
+state Active {
+[*] --> NumLockOff
+NumLockOff --> NumLockOn : EvNumLockPressed
+NumLockOn --> NumLockOff : EvNumLockPressed
+--
+[*] --> CapsLockOff
+CapsLockOff --> CapsLockOn : EvCapsLockPressed
+CapsLockOn --> CapsLockOff : EvCapsLockPressed
+--
+[*] --> ScrollLockOff
+ScrollLockOff --> ScrollLockOn : EvScrollLockPressed
+ScrollLockOn --> ScrollLockOff : EvScrollLockPressed
+}</div><a href=#setting-the-direction-of-the-diagram-><h2 id=setting-the-direction-of-the-diagram-><span class=hanchor arialabel=Anchor># </span>Setting the direction of the diagram 🏁</h2></a><p>With state diagrams you can use the direction statement to set the direction which the diagram will render like in this example.</p><a href=#code-15><h5 id=code-15><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram
+</span></span><span class=line><span class=cl>    direction LR
+</span></span><span class=line><span class=cl>    [*] --&gt; A
+</span></span><span class=line><span class=cl>    A --&gt; B
+</span></span><span class=line><span class=cl>    B --&gt; C
+</span></span><span class=line><span class=cl>    state B {
+</span></span><span class=line><span class=cl>      direction LR
+</span></span><span class=line><span class=cl>      a --&gt; b
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>    B --&gt; D
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram
+direction LR
+[*] --> A
+A --> B
+B --> C
+state B {
+direction LR
+a --> b
+}
+B --> D</div><p><strong>Comments</strong> can be entered within a state diagram chart, which will be ignored by the parser. Comments need to be on their own line, and <strong>must be prefaced with <code>%%</code> (double percent signs)</strong>. Any text after the start of the comment to the next newline will be treated as a comment, including any diagram syntax</p><a href=#code-16><h5 id=code-16><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram-v2
+</span></span><span class=line><span class=cl>    [*] --&gt; Still
+</span></span><span class=line><span class=cl>    Still --&gt; [*]
+</span></span><span class=line><span class=cl>%% this is a comment
+</span></span><span class=line><span class=cl>    Still --&gt; Moving
+</span></span><span class=line><span class=cl>    Moving --&gt; Still %% another comment
+</span></span><span class=line><span class=cl>    Moving --&gt; Crash
+</span></span><span class=line><span class=cl>    Crash --&gt; [*]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram-v2
+[*] --> Still
+Still --> [*]
+%% this is a comment
+Still --> Moving
+Moving --> Still %% another comment
+Moving --> Crash
+Crash --> [*]</div><a href=#styling-with-classdefs-><h2 id=styling-with-classdefs-><span class=hanchor arialabel=Anchor># </span>Styling with classDefs 🏁⭐</h2></a><p>As with other diagrams (like flowcharts), you can define a style in the diagram itself and apply that named style to a state or states in the diagram.</p><p><strong>These are the current limitations with state diagram classDefs:</strong></p><ol><li>Cannot be applied to start or end states</li><li>Cannot be applied to or within composite states</li></ol><p><em>These are in development and will be available in a future version.</em></p><p>You define a style using the <code>classDef</code> keyword, which is short for &ldquo;class definition&rdquo; (where &ldquo;class&rdquo; means something like a <em>CSS class</em>) followed by <em>a name for the style,</em> and then one or more <em>property-value pairs</em>. Each <em>property-value pair</em> is a <em><a href=https://www.w3.org/TR/CSS/#properties rel=noopener>valid CSS property name</a></em> followed by a colon (<code>:</code>) and then a <em>value.</em></p><p>Here is an example of a classDef with just one property-value pair:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl>    <span class=nt>classDef</span> <span class=nt>movement</span> <span class=nt>font-style</span><span class=p>:</span><span class=nd>italic</span><span class=o>;</span>
+</span></span></code></pre></td></tr></table></div></div><p>where</p><ul><li>the <em>name</em> of the style is <code>movement</code></li><li>the only <em>property</em> is <code>font-style</code> and its <em>value</em> is <code>italic</code></li></ul><p>If you want to have <strong>more than one <em>property-value pair</em></strong> then you <strong><mark>put a comma (<code>,</code>)</mark></strong> between each <em>property-value pair.</em></p><p>Here is an example with three property-value pairs:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl>    <span class=nt>classDef</span> <span class=nt>badBadEvent</span> <span class=nt>fill</span><span class=o>:</span><span class=p>#</span><span class=nn>f00</span><span class=o>,</span><span class=nt>color</span><span class=p>:</span><span class=nd>white</span><span class=o>,</span><span class=nt>font-weight</span><span class=p>:</span><span class=nd>bold</span><span class=o>,</span><span class=nt>stroke-width</span><span class=p>:</span><span class=nd>2px</span><span class=o>,</span><span class=nt>stroke</span><span class=p>:</span><span class=nd>yellow</span>
+</span></span></code></pre></td></tr></table></div></div><p>where</p><ul><li>the <em>name</em> of the style is <code>badBadEvent</code></li><li>the first <em>property</em> is <code>fill</code> and its <em>value</em> is <code>#f00</code></li><li>the second <em>property</em> is <code>color</code> and its <em>value</em> is <code>white</code></li><li>the third <em>property</em> is <code>font-weight</code> and its <em>value</em> is <code>bold</code></li><li>the fourth <em>property</em> is <code>stroke-width</code> and its <em>value</em> is <code>2px</code></li><li>the fifth <em>property</em> is <code>stroke</code> and its <em>value</em> is <code>yello</code></li></ul><a href=#apply-classdef-styles-to-states-><h3 id=apply-classdef-styles-to-states-><span class=hanchor arialabel=Anchor># </span>Apply classDef styles to states 🏁⭐</h3></a><p>There are two ways to apply a <code>classDef</code> style to a state:</p><ol><li>⭐use the <code>class</code> keyword to apply a classDef style to one or more states in a single statement, or</li><li>use the <code>:::</code> operator to apply a classDef style to a state as it is being used in a transition statement (e.g. with an arrow to/from another state)</li></ol><a href=#1-class-statement><h4 id=1-class-statement><span class=hanchor arialabel=Anchor># </span>1. <code>class</code> statement</h4></a><p>A <code>class</code> statement tells Mermaid to apply the named classDef to one or more classes. The form is:</p><p>text</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>    class [one or more state names, separated by commas] [name of a style defined with classDef]
+</span></span></code></pre></td></tr></table></div></div><p>Here is an example applying the <code>badBadEvent</code> style to a state named <code>Crash</code>:</p><p>text</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>class Crash badBadEvent
+</span></span></code></pre></td></tr></table></div></div><p>Here is an example applying the <code>movement</code> style to the two states <code>Moving</code> and <code>Crash</code>:</p><p>text</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>class Moving, Crash movement
+</span></span></code></pre></td></tr></table></div></div><p>Here is a diagram that shows the examples in use. Note that the <code>Crash</code> state has two classDef styles applied: <code>movement</code> and <code>badBadEvent</code></p><a href=#code-17><h5 id=code-17><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>   stateDiagram
+</span></span><span class=line><span class=cl>   direction TB
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   accTitle: This is the accessible title
+</span></span><span class=line><span class=cl>   accDescr: This is an accessible description
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   classDef notMoving fill:white
+</span></span><span class=line><span class=cl>   classDef movement font-style:italic
+</span></span><span class=line><span class=cl>   classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   [*]--&gt; Still
+</span></span><span class=line><span class=cl>   Still --&gt; [*]
+</span></span><span class=line><span class=cl>   Still --&gt; Moving
+</span></span><span class=line><span class=cl>   Moving --&gt; Still
+</span></span><span class=line><span class=cl>   Moving --&gt; Crash
+</span></span><span class=line><span class=cl>   Crash --&gt; [*]
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   class Still notMoving
+</span></span><span class=line><span class=cl>   class Moving, Crash movement
+</span></span><span class=line><span class=cl>   class Crash badBadEvent
+</span></span><span class=line><span class=cl>   class end badBadEvent
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram
+direction TB
+accTitle: This is the accessible title
+accDescr: This is an accessible description
+classDef notMoving fill:white
+%% classDef movement font-style:italic
+%% classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+[*]--> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+class Still notMoving
+class Moving, Crash movement
+class Crash badBadEvent
+class end badBadEvent</div><blockquote class=error-callout><p>Maybe this feature..
+Does not work in plain obsidian application. I commented some lines of code.
+see this</p></blockquote><a href=#2--operator-to-apply-a-style-to-a-state><h4 id=2--operator-to-apply-a-style-to-a-state><span class=hanchor arialabel=Anchor># </span>2. <code>:::</code> operator to apply a style to a state</h4></a><p>You can apply a classDef style to a state using the <code>:::</code> (three colons) operator. The syntax is</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>[state]:::[style name]
+</span></span></code></pre></td></tr></table></div></div><p>You can use this in a diagram within a statement using a class. This includes the start and end states. For example:</p><a href=#code-18><h5 id=code-18><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram
+</span></span><span class=line><span class=cl>   direction TB
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   accTitle: This is the accessible title
+</span></span><span class=line><span class=cl>   accDescr: This is an accessible description
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   classDef notMoving fill:white
+</span></span><span class=line><span class=cl>   classDef movement font-style:italic;
+</span></span><span class=line><span class=cl>   classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   [*] --&gt; Still:::notMoving
+</span></span><span class=line><span class=cl>   Still --&gt; [*]
+</span></span><span class=line><span class=cl>   Still --&gt; Moving:::movement
+</span></span><span class=line><span class=cl>   Moving --&gt; Still
+</span></span><span class=line><span class=cl>   Moving --&gt; Crash:::movement
+</span></span><span class=line><span class=cl>   Crash:::badBadEvent --&gt; [*]
+</span></span></code></pre></td></tr></table></div></div><div class=mermaid>stateDiagram
+direction TB
+accTitle: This is the accessible title
+accDescr: This is an accessible description
+classDef notMoving fill:white
+%% classDef movement font-style:italic;
+%% classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+%% [*] --> Still:::notMoving
+Still --> [*]
+%% Still --> Moving:::movement
+Moving --> Still
+%% Moving --> Crash:::movement
+%% Crash:::badBadEvent --> [*]</div><blockquote class=error-callout><p>Maybe this feature too..
+Does not work in plain obsidian application. I commented some lines of code.</p></blockquote><a href=#spaces-in-state-names><h2 id=spaces-in-state-names><span class=hanchor arialabel=Anchor># </span>Spaces in state names</h2></a><p>Spaces can be added to a state by first defining the state with an id and then referencing the id later.</p><p>In the following example there is a state with the id <strong>yswsii</strong> and description <strong>Your state with spaces in it</strong>. After it has been defined, <strong>yswsii</strong> is used in the diagram in the first transition (<code>[*] --> yswsii</code>) and also in the transition to <strong>YetAnotherState</strong> (<code>yswsii --> YetAnotherState</code>).<br>(<strong>yswsii</strong> has been styled so that it is different from the other states.)</p><a href=#code-19><h5 id=code-19><span class=hanchor arialabel=Anchor># </span>Code:</h5></a><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>stateDiagram
+</span></span><span class=line><span class=cl>    classDef yourState font-style:italic,font-weight:bold,fill:white
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    yswsii: Your state with spaces in it
+</span></span><span class=line><span class=cl>    [*] --&gt; yswsii:::yourState
+</span></span><span class=line><span class=cl>    [*] --&gt; SomeOtherState
+</span></span><span class=line><span class=cl>    SomeOtherState --&gt; YetAnotherState
+</span></span><span class=line><span class=cl>    yswsii --&gt; YetAnotherState
+</span></span><span class=line><span class=cl>    YetAnotherState --&gt; [*]
+</span></span></code></pre></td></tr></table></div></div><section class=footnotes role=doc-endnotes><hr><ol><li id=fn:1 role=doc-endnote><p>다이어그램을 코딩 할 수 있는
+<a href=http://www.plantuml.com/ rel=noopener>서비스</a>.
+<a href=https://www.notion.so/Notion-Diagrams-6d8bd0a3a0e442e2bd092fa77e8199aa rel=noopener>노션에 임베드</a>도 가능한 듯&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></section></article><hr><div class=page-end id=footer><div class=backlinks-container><h3>Backlinks</h3><ul class=backlinks><li><a href=/garden/Develop/Trees/Dev/ingredients/LibsFwks/By-subject/Diagraming/mermaid.js/contents/Diagram-Syntax/Diagram-Syntax/ data-ctx="State Diagram" data-src=/Develop/Trees/Dev/ingredients/LibsFwks/By-subject/Diagraming/mermaid.js/contents/Diagram-Syntax/Diagram-Syntax class=internal-link>🎉Diagram Syntax</a></li></ul></div><div><script async src=https://cdn.jsdelivr.net/npm/d3@6.7.0/dist/d3.min.js integrity="sha256-+7jaYCp29O1JusNWHaYtgUn6EhuP0VaFuswhNV06MyI=" crossorigin=anonymous></script><h3>Interactive Graph</h3><div id=graph-container></div><style>:root{--g-node:var(--secondary);--g-node-active:var(--primary);--g-node-inactive:var(--visited);--g-link:var(--outlinegray);--g-link-active:#5a7282}</style><script src=https://mindulle.github.io/garden/js/graph.6579af7b10c818dbd2ca038702db0224.js></script></div></div><div id=contact_buttons><footer><p>Made by mindulle using <a href=https://github.com/jackyzha0/quartz>Quartz</a>, © 2023</p><ul><li><a href=https://mindulle.github.io/garden>Home</a></li><li><a href=https://github.com/mindulle>GitHub</a></li></ul></footer></div></div></body></html>

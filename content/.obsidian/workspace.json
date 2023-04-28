@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/BAD.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a323fa2b8dea6ab4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/BAD.md",
+                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/BAD.md",
+                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/BAD.md",
+                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/BAD.md"
+                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md"
               }
             }
           },
@@ -194,25 +181,30 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a323fa2b8dea6ab4",
+  "active": "a2a08fe345d3951e",
   "lastOpenFiles": [
-    "Develop/Trees/Dev/Code/Design/Principles/👓Look over at a glance.md",
-    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/SRP.go.md",
-    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/GOOD.md",
-    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/BAD.md",
+    "Develop/Seeds/Grocery/WebDev/Frontend/👓Look over at a glance.md",
+    "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
     "Develop/Trees/Dev/ingredients/Languages/Go/make a package/👓Look over at a glance.md",
-    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Dependency Inversion Principle/DIP.go.md",
+    "Develop/Trees/Dev/Realworld/👓Look over at a glance.md",
+    "Develop/Trees/Dev/ingredients/👓Look at a glance.md",
     "Develop/Trees/Dev/Code/Design/Principles/SOLID/Dependency Inversion Principle/GOOD.md",
     "Develop/Trees/Dev/Code/Design/Principles/SOLID/Dependency Inversion Principle/BAD.md",
-    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Interface Segregation Principle/ISP.go.md",
     "Develop/Trees/Dev/Code/Design/Principles/SOLID/Interface Segregation Principle/GOOD.md",
     "Develop/Trees/Dev/Code/Design/Principles/SOLID/Interface Segregation Principle/BAD.md",
-    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Liskov Substitution Principle/LSP.go.md",
-    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Liskov Substitution Principle/GOOD.md",
     "Develop/Trees/Dev/Code/Design/Principles/SOLID/Liskov Substitution Principle/BAD.md",
-    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Open Closed Principle/OCP.go.md",
-    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Open Closed Principle/GOOD.md",
+    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Liskov Substitution Principle/GOOD.md",
     "Develop/Trees/Dev/Code/Design/Principles/SOLID/Open Closed Principle/BAD.md",
+    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Open Closed Principle/GOOD.md",
+    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/GOOD.md",
+    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/BAD.md",
+    "Develop/Trees/Dev/Code/Design/Principles/👓Look over at a glance.md",
+    "Develop/Trees/Dev/Code/Design/Principles/DRY",
+    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Single Responsibility Principle/SRP.go.md",
+    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Dependency Inversion Principle/DIP.go.md",
+    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Interface Segregation Principle/ISP.go.md",
+    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Liskov Substitution Principle/LSP.go.md",
+    "Develop/Trees/Dev/Code/Design/Principles/SOLID/Open Closed Principle/OCP.go.md",
     "Develop/Trees/Dev/Code/Design/Principles/SOLID/Dependency Inversion Principle",
     "Develop/Trees/Dev/Code/Design/Principles/SOLID/Interface Segregation Principle",
     "Develop/Trees/Dev/Code/Design/Principles/SOLID/Liskov Substitution Principle",
@@ -225,13 +217,8 @@
     "Develop/Trees/Dev/ingredients/Languages/Go/make a package/caculator.go.md",
     "Develop/Trees/Dev/ingredients/Languages/Go/make a package",
     "Develop/Trees/Dev/ingredients/Languages/Go/🎉Go.md",
-    "Develop/Trees/Dev/ingredients/👓Look at a glance.md",
     "Develop/Trees/Dev/ingredients/Languages/Shell script/⚡Cheat Sheet.md",
-    "Develop/Trees/Dev/ingredients/Languages/Python/🚚Resources.md",
-    "Develop/Trees/Dev/ingredients/Languages/Python/🎉Python.md",
-    "Develop/Trees/Dev/ingredients/Languages/🎉Languages.md",
     "Develop/Trees/Dev/Code/Design/Principles/Go example/Untitled",
-    "Develop/Seeds/Cram",
     "Private/Banners/2023/03/2023 March 14 Banner.png",
     "Private/Banners/2023/04/2023 April 30 Banner.png",
     "Private/Banners/2023/04/2023 April 29 Banner.png",

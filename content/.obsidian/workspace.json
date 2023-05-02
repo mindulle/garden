@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "93212b0ae09e0cd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Develop/Seeds/Grocery/🎉Grocery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3c60c7d13ee8fdcd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Private/Templates/Core Template/🔖Garden - Glossary.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
+                "file": "Develop/Seeds/Grocery/🎉Grocery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
+                "file": "Develop/Seeds/Grocery/🎉Grocery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md"
+                "file": "Develop/Seeds/Grocery/🎉Grocery.md"
               }
             }
           },
@@ -181,10 +206,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a2a08fe345d3951e",
+  "active": "93212b0ae09e0cd0",
   "lastOpenFiles": [
-    "Develop/Seeds/Grocery/WebDev/Frontend/👓Look over at a glance.md",
+    "Develop/Seeds/Grocery/🔖Glossary.md",
+    "Develop/Seeds/Grocery/🎉Grocery.md",
+    "Develop/Seeds/Grocery/📦assets/Pasted image 20221017211243.png",
+    "Private/Templates/Core Template/🔖Garden - Glossary.md",
     "Develop/Seeds/Grocery/WebDev/Backend/👓Look over at a glance.md",
+    "Develop/Seeds/Grocery/WebDev/Frontend/👓Look over at a glance.md",
     "Develop/Trees/Dev/ingredients/Languages/Go/make a package/👓Look over at a glance.md",
     "Develop/Trees/Dev/Realworld/👓Look over at a glance.md",
     "Develop/Trees/Dev/ingredients/👓Look at a glance.md",
@@ -214,10 +243,7 @@
     "Develop/Trees/Dev/Code/Design/Principles/Go example/DRY - BAD.md",
     "Develop/Trees/Dev/Code/Design/Principles/Go example",
     "Develop/Trees/Dev/ingredients/Languages/Go/make a package/caculator_test.go.md",
-    "Develop/Trees/Dev/ingredients/Languages/Go/make a package/caculator.go.md",
     "Develop/Trees/Dev/ingredients/Languages/Go/make a package",
-    "Develop/Trees/Dev/ingredients/Languages/Go/🎉Go.md",
-    "Develop/Trees/Dev/ingredients/Languages/Shell script/⚡Cheat Sheet.md",
     "Develop/Trees/Dev/Code/Design/Principles/Go example/Untitled",
     "Private/Banners/2023/03/2023 March 14 Banner.png",
     "Private/Banners/2023/04/2023 April 30 Banner.png",
@@ -227,7 +253,6 @@
     "Private/Banners/2023/04/2023 April 26 Banner.png",
     "Private/Banners/2023/04/2023 April 25 Banner.png",
     "Private/Banners/2023/04/2023 April 24 Banner.png",
-    "Private/Banners/2023/04/2023 April 23 Banner.png",
-    "Private/Banners/2023/04/2023 April 22 Banner.png"
+    "Private/Banners/2023/04/2023 April 23 Banner.png"
   ]
 }

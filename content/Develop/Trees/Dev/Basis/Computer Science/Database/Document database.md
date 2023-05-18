@@ -1,4 +1,0 @@
-(TODO)
-# Situation
-# Thoughts
-# Behavior

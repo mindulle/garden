@@ -17,5 +17,9 @@
   "customjs",
   "templater-obsidian",
   "obsidian-dynamic-toc",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-annotator",
+  "quick-latex",
+  "markdown-table-editor",
+  "obsidian-raindrop-highlights"
 ]

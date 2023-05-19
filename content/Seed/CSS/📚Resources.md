@@ -1,6 +1,6 @@
 ---
 title: 📚Resources
-lastModified: {{today}}
+lastModified: 2023-05-19
 
 # properties for note itself
 noteType: resource

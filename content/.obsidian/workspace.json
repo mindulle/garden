@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "Seed/CSS/📚Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_index.md",
+                "file": "Seed/CSS/📚Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "Seed/CSS/📚Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md"
+                "file": "Seed/CSS/📚Resources.md"
               }
             }
           },
@@ -191,8 +191,12 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "b9f6ec3ee6cc1313",
+  "active": "1ed3ae3907a45b75",
   "lastOpenFiles": [
+    "Flower",
+    "Seed/CSS/🚪CSS.md",
+    "Seed/CSS/📚Resources.md",
+    "_index.md",
     "📋 Note Templates/✨ Produce/Feedback.md",
     "📋 Note Templates/✨ Produce/Implement.md",
     "📋 Note Templates/🌻 Produce/📜 Manual.md",
@@ -214,12 +218,8 @@
     "📋 Note Templates/💼 tasks/💼 Evaluate.md",
     "📋 Note Templates/💼 tasks/💼 Decision Make.md",
     "📋 Note Templates/💼 tasks/💼 Analysis.md",
-    "Seed/CSS/📚Resources.md",
-    "Seed/CSS/🚪CSS.md",
     "Private/Develop/Trees/Roles/Frontend/Core concepts/CSS/🚚Resources.md",
-    "📋 Note Templates/🚪Entry Point.md",
     "Seed/CSS",
-    "📋 Note Templates/🌻 Produce/📜 Tutorial.md",
     "Fruit",
     "Fruits",
     "Tree",

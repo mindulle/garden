@@ -8,51 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b9f6ec3ee6cc1313",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fb6f5d55b7c30ac1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "32382160ab869fe3",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "c2f2896b7a9974eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "Private/Banners/All Banners on this folder come....md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_index.md",
+                "file": "Private/Banners/All Banners on this folder come....md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "Private/Banners/All Banners on this folder come....md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md"
+                "file": "Private/Banners/All Banners on this folder come....md"
               }
             }
           },
@@ -209,7 +176,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-raindrop-highlights:Sync your Raindrop highlights": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -217,6 +183,7 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-raindrop-highlights:Sync your Raindrop highlights": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "templater-obsidian:Templater": false,
       "obsidian-spaced-repetition:Review flashcards": false,
@@ -226,45 +193,46 @@
   },
   "active": "c2f2896b7a9974eb",
   "lastOpenFiles": [
-    "📦assets/_index 2023-07-01 00.43.44.excalidraw.md",
     "_index.md",
+    "📋 Note Templates/🚠Process.md",
+    "📋 Note Templates/🎬Behavior.md",
+    "📋 Note Templates/💭Thought.md",
+    "📋 Note Templates/🦨Situation.md",
+    "📋 Note Templates/😎Feeling.md",
+    "Tree/🚪Tree.md",
+    "Seed/🚪Seed.md",
+    "Fruit/🚪Fruit.md",
+    "Flower/🚪Flower.md",
+    "Seed/CSS/📚Resources.md",
+    "Seed/CSS/🚪CSS.md",
+    "Seed/CSS",
+    "📋 Note Templates/(Moonlight)📐 Diagrams/📐 Entity Relationship diagram.md",
+    "📋 Note Templates/(Moonlight)📐 Diagrams/📐 User journey.md",
+    "📋 Note Templates/(Moonlight)📐 Diagrams/📐 Mindmap.md",
+    "📋 Note Templates/(Moonlight)📐 Diagrams/📐 Flowchart.md",
+    "📋 Note Templates/(Notion)✨ Produce/✨ Share.md",
+    "📋 Note Templates/✨ Produce/Implement.md",
+    "📋 Note Templates/✨ Produce/Feedback.md",
+    "📋 Note Templates/(Moonlight)💼 tasks/💼 Report.md",
+    "📋 Note Templates/(Moonlight)💼 tasks/💼 Plan.md",
+    "📋 Note Templates/(Moonlight)💼 tasks/💼 Improve.md",
+    "📋 Note Templates/(Moonlight)💼 tasks/💼 Execute.md",
+    "📋 Note Templates/(Moonlight)💼 tasks/💼 Evaluate.md",
+    "📋 Note Templates/(Moonlight)💼 tasks/💼 Decision Make.md",
+    "📋 Note Templates/(Moonlight)💼 tasks/💼 Analysis.md",
     "📦assets/_index 2023-07-01 00.43.44.excalidraw.dark.svg",
     "📦assets/_index 2023-07-01 00.43.44.excalidraw.light.svg",
-    "📦assets/_index 2023-07-01 00.34.40.excalidraw.md",
-    "📦assets/_index 2023-01-13 01.50.35.excalidraw.md",
     "📦assets/_index 2023-01-13 01.50.35.excalidraw.dark.svg",
     "📦assets/_index 2023-01-13 01.50.35.excalidraw.light.svg",
-    "types-of-productivity-tools.md",
-    "Seed/CSS/📚Resources.md",
-    "Flower/🚪Flower.md",
-    "Seed/🚪Seed.md",
-    "Tree/🚪Tree.md",
-    "Fruit/🚪Fruit.md",
     "Flower",
-    "Seed/CSS/🚪CSS.md",
-    "📋 Note Templates/✨ Produce/Feedback.md",
-    "📋 Note Templates/✨ Produce/Implement.md",
-    "📋 Note Templates/🌻 Produce/📜 Manual.md",
-    "📋 Note Templates/🌻 Produce/📜 How to.md",
-    "📋 Note Templates/✨ Produce/✨ Share.md",
-    "📋 Note Templates/🎓 Learn/🎓Question.md",
-    "📋 Note Templates/🎓 Learn/🎓Inspiration.md",
-    "📋 Note Templates/🎓 Learn/🎓Documentation.md",
-    "📋 Note Templates/🎓 Learn/🎓Capture.md",
-    "📋 Note Templates/🎓 Learn/🎓 Link.md",
-    "📋 Note Templates/🎓 Learn/🎓 highlight.md",
-    "Private/Develop/Seeds/Grocery/@Dev/ingredients/Languages/CSS/🚚Resources.md",
-    "📋 Note Templates/✏️ Glean/✏️ Draw.md",
-    "📋 Note Templates/💼 tasks/💼 Report.md",
-    "Seed/CSS",
     "Fruit",
     "Fruits",
     "Tree",
     "Seed",
     "Templates/To design",
     "Templates/Documents/Untitled",
-    "📋 Note Templates/💼 tasks",
-    "📋 Note Templates/📚 Learning materials",
+    "📋 Note Templates/(Moonlight)💼 tasks",
+    "📋 Note Templates/📚 Learning materials - PARA, raindrop",
     "Private/Develop/Seeds/Grocery/📦assets/Pasted image 20221017211243.png",
     "Private/Banners/2023/03/2023 March 14 Banner.png",
     "Private/Banners/2023/04/2023 April 30 Banner.png",

@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1688265073482,
+      "items": [],
+      "title": "Accessibility"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265123809,
+      "items": [],
+      "title": "Adaptability"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265134858,
+      "items": [],
+      "title": "Availability"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265142138,
+      "items": [],
+      "title": "Capability"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265149017,
+      "items": [],
+      "title": "Compatibility"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265153912,
+      "items": [],
+      "title": "Comprehensibility"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265159719,
+      "items": [],
+      "title": "Durability"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265164896,
+      "items": [],
+      "title": "Flexibility"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265169520,
+      "items": [],
+      "title": "Navigability"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265174768,
+      "items": [],
+      "title": "Originality"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265179288,
+      "items": [],
+      "title": "Portability"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265184552,
+      "items": [],
+      "title": "Readability"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265188920,
+      "items": [],
+      "title": "Scalability"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265210130,
+      "items": [],
+      "title": "Usability"
+    },
+    {
+      "type": "group",
+      "ctime": 1688265215290,
+      "items": [],
+      "title": "Visibility"
+    }
+  ]
+}

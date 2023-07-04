@@ -7,6 +7,7 @@
     "outline:open",
     "obsidian-day-planner:app:add-day-planner-to-note",
     "obsidian-tasks-plugin:edit-task",
-    "obsidian-spaced-repetition:srs-review-flashcards"
+    "obsidian-spaced-repetition:srs-review-flashcards",
+    "bookmarks:bookmark-current-view"
   ]
 }

@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "mindulle.github.io/garden",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", "_templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
       typography: {

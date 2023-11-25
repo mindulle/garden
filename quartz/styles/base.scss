@@ -1,7 +1,6 @@
-@use "./custom.scss";
+@use "./variables.scss" as *;
 @use "./syntax.scss";
 @use "./callouts.scss";
-@use "./variables.scss" as *;
 
 html {
   scroll-behavior: smooth;
@@ -65,7 +64,7 @@ a {
     color: var(--tertiary) !important;
   }
 
-  &.internal {
+  &.internal:not(:has(> img)) {
     text-decoration: none;
     background-color: var(--highlight);
     padding: 0 0.1rem;
@@ -95,6 +94,8 @@ a {
   }
 
   & article {
+    position: relative;
+
     & > h1 {
       font-size: 2rem;
     }
@@ -389,23 +390,33 @@ p {
   line-height: 1.6rem;
 }
 
-table {
-  margin: 1rem;
-  padding: 1.5rem;
-  border-collapse: collapse;
-  & > * {
-    line-height: 2rem;
+.table-container {
+  overflow-x: auto;
+
+  & > table {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-collapse: collapse;
+
+    th,
+    td {
+      min-width: 75px;
+    }
+
+    & > * {
+      line-height: 2rem;
+    }
   }
 }
 
 th {
   text-align: left;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 0.7rem;
   border-bottom: 2px solid var(--gray);
 }
 
 td {
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 0.7rem;
 }
 
 tr {
@@ -446,7 +457,7 @@ video {
 
 ul.overflow,
 ol.overflow {
-  height: 300px;
+  max-height: 400;
   overflow-y: auto;
 
   // clearfix
@@ -454,7 +465,7 @@ ol.overflow {
   clear: both;
 
   & > li:last-of-type {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   &:after {
@@ -468,5 +479,11 @@ ol.overflow {
     opacity: 1;
     transition: opacity 0.3s ease;
     background: linear-gradient(transparent 0px, var(--light));
+  }
+}
+
+.transclude {
+  ul {
+    padding-left: 1rem;
   }
 }

@@ -52,7 +52,7 @@ export function slugifyFilePath(fp: FilePath, excludeExt?: boolean): FullSlug {
 
   let slug = withoutFileExt
     .split("/")
-    .map((segment) => segment.replace(/\s/g, "-").replace(/%/g, "-percent")) // slugify all segments
+    .map((segment) => segment.replace(/\s/g, "-").replace(/%/g, "-percent").replace(/\?/g, "-q")) // slugify all segments
     .join("/") // always use / as sep
     .replace(/\/$/, "") // remove trailing slash
 
@@ -82,6 +82,22 @@ export function transformInternalLink(link: string): RelativeURL {
   const trail = folderPath ? "/" : ""
   const res = (_addRelativeToStart(joined) + trail + anchor) as RelativeURL
   return res
+}
+
+// from micromorph/src/utils.ts
+// https://github.com/natemoo-re/micromorph/blob/main/src/utils.ts#L5
+export function normalizeRelativeURLs(el: Element | Document, destination: string | URL) {
+  const rebase = (el: Element, attr: string, newBase: string | URL) => {
+    const rebased = new URL(el.getAttribute(attr)!, newBase)
+    el.setAttribute(attr, rebased.pathname + rebased.hash)
+  }
+
+  el.querySelectorAll('[href^="./"], [href^="../"]').forEach((item) =>
+    rebase(item, "href", destination),
+  )
+  el.querySelectorAll('[src^="./"], [src^="../"]').forEach((item) =>
+    rebase(item, "src", destination),
+  )
 }
 
 // resolve /a/b/c to ../..
@@ -123,7 +139,10 @@ export function slugTag(tag: string) {
 }
 
 export function joinSegments(...args: string[]): string {
-  return args.filter((segment) => segment !== "").join("/")
+  return args
+    .filter((segment) => segment !== "")
+    .join("/")
+    .replace(/\/\/+/g, "/")
 }
 
 export function getAllSegmentPrefixes(tags: string): string[] {

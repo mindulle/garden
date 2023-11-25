@@ -1,0 +1,13 @@
+{
+  "pinned": [
+    "insert-template",
+    "periodic-notes:open-daily-note",
+    "periodic-notes:open-weekly-note",
+    "obsidian-excalidraw-plugin:excalidraw-autocreate-and-embed-on-current",
+    "outline:open",
+    "obsidian-day-planner:app:add-day-planner-to-note",
+    "obsidian-tasks-plugin:edit-task",
+    "obsidian-spaced-repetition:srs-review-flashcards",
+    "bookmarks:bookmark-current-view"
+  ]
+}

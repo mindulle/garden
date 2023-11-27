@@ -9,15 +9,17 @@ viewport: width=device-width, initial-scale=1, shrink-to-fit=no
 ### Problem
 
 The name of a method doesn't explain what the method does.
-
-### Solution
-
-Rename the method.
 ```mermaid
 classDiagram
   class Customer{  
     +getsnm() 
   }
+```
+### Solution
+
+Rename the method.
+```mermaid
+classDiagram  
   class reafactoredCustomer{  
     +getSecondName() 
   }

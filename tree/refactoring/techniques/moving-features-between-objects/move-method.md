@@ -9,13 +9,6 @@ title: Move Method
 
 A method is used more in another class than in its own class.
 
-### Solution
-
-Create a new method in the class that uses the method the most, then
-move code from the old method to there. Turn the code of the original
-method into a reference to the new method in the other class or else
-remove it entirely.
-
 ```mermaid
 classDiagram
   class class1 {
@@ -24,6 +17,14 @@ classDiagram
   class class2 {
   }
 ```
+
+### Solution
+
+Create a new method in the class that uses the method the most, then
+move code from the old method to there. Turn the code of the original
+method into a reference to the new method in the other class or else
+remove it entirely.
+
 ```mermaid
 classDiagram
   class class1 {

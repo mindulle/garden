@@ -5,7 +5,7 @@ title: Data Class
 ---
 
 > [!NOTE] Data Class
-> Classes that have fields, getting and setting methods for the fields, and nothing else. Such classes are dumb data holders and are almost certainly being manipulated in far too much detail by other classes. [
+> Classes that have fields, getting and setting methods for the fields, and nothing else. Such classes are dumb data holders and are almost certainly being manipulated in far too much detail by other classes.
 
 # Data Class
 

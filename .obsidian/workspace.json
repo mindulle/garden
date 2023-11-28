@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a8472e828b55d5c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tree/refactoring/Cheat Sheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f5131f6981e9529a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tree/refactoring/techniques/organizing-data/replace-data-value-with-object.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "7f8f24e3110c0baf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tree/refactoring/techniques/dealing-with-generalization/extract-interface.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tree/refactoring/Cheat Sheet.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tree/refactoring/Cheat Sheet.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tree/refactoring/Cheat Sheet.md"
+                "file": "index.md"
               }
             }
           },
@@ -202,13 +178,24 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "a8472e828b55d5c2",
+  "active": "7f8f24e3110c0baf",
   "lastOpenFiles": [
-    "tree/refactoring/techniques/dealing-with-generalization/collapse-hierarchy.md",
+    "seed/polyglot.md",
+    "index.md",
+    "fruit/quotes",
+    "fruit/humor",
+    "fruit/Untitled.md",
+    "flower/tips and tricks",
+    "flower/tricks",
+    "fruit/snippet(extracted as original form)/datawork/base64-encoding.md",
+    "tree/refactoring/techniques/dealing-with-generalization/extract-interface.md",
     "tree/refactoring/Cheat Sheet.md",
+    "flower/Project Layout",
+    "flower/Integration",
+    "fundamental",
+    "tree/refactoring/techniques/dealing-with-generalization/collapse-hierarchy.md",
     "tree/refactoring/refactoring-cheat-sheet.pdf",
     "tree/refactoring/techniques/organizing-data/replace-data-value-with-object.md",
-    "tree/refactoring/techniques/dealing-with-generalization/extract-interface.md",
     "tree/refactoring/techniques/dealing-with-generalization/extract-subclass.md",
     "tree/refactoring/smells/bloaters/large-class.md",
     "tree/refactoring/techniques/moving-features-between-objects/introduce-local-extension.md",
@@ -227,18 +214,8 @@
     "tree/refactoring/techniques/dealing-with-generalization/pull-up-method.md",
     "tree/refactoring/techniques/simplifying-conditional-expressions/introduce-null-object.md",
     "tree/refactoring/techniques/dealing-with-generalization/form-template-method.md",
-    "tree/refactoring/smells/dispensables/duplicate-code.md",
-    "tree/refactoring/smells/change-preventers/divergent-change.md",
-    "tree/refactoring/techniques/simplifying-method-calls/introduce-parameter-object.md",
     "tree/refactoring/smells/other",
     "tree/refactoring/smells/change-preventers",
-    "tree/refactoring/what-is-refactoring",
-    "tree/refactoring/techniques/simplifying-method-calls",
-    "tree/refactoring/techniques/simplifying-conditional-expressions",
-    "tree/refactoring/techniques/organizing-data",
-    "tree/refactoring/techniques/moving-features-between-objects",
-    "tree/refactoring/techniques/dealing-with-generalization",
-    "tree/refactoring/techniques/composing-methods",
     "tree/testing/javascript/assets/zh-CN/headspace.png",
     "tree/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
     "tree/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

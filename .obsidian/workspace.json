@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "tree/testing/automation/Importance.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "tree/testing/automation/Importance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "tree/testing/automation/Importance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "tree/testing/automation/Importance.md"
               }
             }
           },
@@ -181,7 +181,19 @@
   "active": "7f8f24e3110c0baf",
   "lastOpenFiles": [
     "seed/polyglot.md",
+    "seed/artifact.md",
+    "seed/software development/artifact (software development).md",
+    "seed/computing/ployglot (computing).md",
+    "seed/software development",
+    "tree/testing/automation/Importance.md",
+    "tree/testing/go/build_an_application/io.md",
+    "tree/testing/automation/github action",
+    "tree/testing/automation/jenkins",
+    "tree/testing/go/build_an_application/http-server.md",
+    "tree/testing/go/build_an_application/command-line.md",
+    "tree/testing/go/anti_patterns/anti-patterns.md",
     "index.md",
+    "tree/testing/automation",
     "fruit/quotes",
     "fruit/humor",
     "fruit/Untitled.md",
@@ -192,9 +204,7 @@
     "tree/refactoring/Cheat Sheet.md",
     "flower/Project Layout",
     "flower/Integration",
-    "fundamental",
     "tree/refactoring/techniques/dealing-with-generalization/collapse-hierarchy.md",
-    "tree/refactoring/refactoring-cheat-sheet.pdf",
     "tree/refactoring/techniques/organizing-data/replace-data-value-with-object.md",
     "tree/refactoring/techniques/dealing-with-generalization/extract-subclass.md",
     "tree/refactoring/smells/bloaters/large-class.md",
@@ -206,16 +216,6 @@
     "tree/refactoring/techniques/organizing-data/change-bidirectional-association-to-unidirectional.md",
     "tree/refactoring/smells/couplers/inappropriate-intimacy.md",
     "tree/refactoring/techniques/moving-features-between-objects/inline-class.md",
-    "tree/refactoring/smells/dispensables/lazy-class.md",
-    "tree/refactoring/techniques/moving-features-between-objects/move-field.md",
-    "tree/refactoring/smells/couplers/feature-envy.md",
-    "tree/refactoring/techniques/composing-methods/substitute-algorithm.md",
-    "tree/refactoring/techniques/dealing-with-generalization/pull-up-field.md",
-    "tree/refactoring/techniques/dealing-with-generalization/pull-up-method.md",
-    "tree/refactoring/techniques/simplifying-conditional-expressions/introduce-null-object.md",
-    "tree/refactoring/techniques/dealing-with-generalization/form-template-method.md",
-    "tree/refactoring/smells/other",
-    "tree/refactoring/smells/change-preventers",
     "tree/testing/javascript/assets/zh-CN/headspace.png",
     "tree/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
     "tree/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

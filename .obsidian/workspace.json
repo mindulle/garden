@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seed/computing/Seeding (computing).md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "seed/computing/Seeding (computing).md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "seed/computing/Seeding (computing).md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "seed/computing/Seeding (computing).md"
+                "file": "index.md"
               }
             }
           },
@@ -180,10 +180,12 @@
   },
   "active": "7c3005c3db9f6205",
   "lastOpenFiles": [
+    "flower/Problem/N plus one problem.md",
+    "seed/computing/Seeding (computing).md",
+    "flower/Problem",
     "_templates/_tree/Differences, Contrast.md",
     "_templates/_tree/Cause And Effect.md",
     "_templates/_seed/vocabulary.md",
-    "seed/computing/Seeding (computing).md",
     "_templates/_tree/Similarities, Comparison.md",
     "_templates/_tree/Order Of Importance.md",
     "_templates/_seed/acronym.md",
@@ -222,8 +224,6 @@
     "Private/Excalidraw/Drawing 2023-11-30 13.50.58.excalidraw.md",
     "Private/Excalidraw",
     "Private",
-    "_templates/techniques/_tree/Comparison.md",
-    "_templates/_tree",
     "tree/testing/javascript/assets/zh-CN/headspace.png",
     "tree/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
     "_OKR/2023/Q4/Q4 2023.canvas",

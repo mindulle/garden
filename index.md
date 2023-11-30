@@ -4,13 +4,13 @@ title: Mindulle Garden🌱
 This page shows how I organize my digital garden and summarizes them as a table.
 
 ## on this website
-| folder      | content                                                                                                                 |
-| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
-| seed        | terms, vocabularies                                                                                                     |
-| tree        | contents for [Hwansul/tatics](https://github.com/Hwansul/tactics) repo. algorithm, refactoring, business logics, etc... |
-| fundamental | my fundamental knowledges for work with images, diagrams, videos, etc...                                                |
-| flower      | practical knowledges with exprience during project but not to be available on development immediately.                              |
-| fruit       | [glasp](https://glasp.co) highlights for my digital garden and external resources.                                      |
+| folder      | content                                                                                                             |
+| ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| seed        | terms, vocabularies                                                                                                 |
+| tree        | knowledges not only able to be used for realworld development, but also able to cause an effect to the source code. |
+| fundamental | my fundamental knowledges for work with images, diagrams, videos, etc...                                            |
+| flower      | practical knowledges but not to be available on development immediately.                                            |
+| fruit       | [glasp](https://glasp.co) highlights for my digital garden and external resources.                                  |
 
 ## on my other repository
 ### mindulle

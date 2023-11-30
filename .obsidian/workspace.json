@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tree/testing/automation/Importance.md",
+                "file": "_templates/techniques/emphasize/The rule of three in Writing.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tree/testing/automation/Importance.md",
+                "file": "_templates/techniques/emphasize/The rule of three in Writing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tree/testing/automation/Importance.md",
+                "file": "_templates/techniques/emphasize/The rule of three in Writing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tree/testing/automation/Importance.md"
+                "file": "_templates/techniques/emphasize/The rule of three in Writing.md"
               }
             }
           },
@@ -180,12 +180,28 @@
   },
   "active": "7f8f24e3110c0baf",
   "lastOpenFiles": [
-    "seed/polyglot.md",
-    "seed/artifact.md",
-    "seed/software development/artifact (software development).md",
+    "_templates/Quot from wikipedia.md",
+    "_templates/vocabulary.md",
+    "_templates/acronym.md",
+    "_templates/phrase.md",
+    "_templates/techniques/summarize/SAAC Method.md",
+    "_templates/techniques/summarize/Somebody Wanted But So Then.md",
+    "_templates/techniques/summarize/Give Me the Gist.md",
     "seed/computing/ployglot (computing).md",
-    "seed/software development",
+    "seed/software development/artifact (software development).md",
+    "seed/artifact.md",
+    "_templates/techniques/summarize/First Then Finally.md",
+    "_templates/techniques/logcial/5w1h.md",
+    "_templates/techniques/logcial/Five Whys.md",
+    "_templates/techniques/logcial/Common Kinds Of Logical Writing Order.md",
+    "_templates/techniques/emphasize/The rule of three in Writing.md",
+    "_templates/techniques/summarize",
+    "_templates/techniques/emphasize",
+    "_templates/techniques/logcial",
+    "_templates/techniques",
     "tree/testing/automation/Importance.md",
+    "seed/polyglot.md",
+    "seed/software development",
     "tree/testing/go/build_an_application/io.md",
     "tree/testing/automation/github action",
     "tree/testing/automation/jenkins",
@@ -197,25 +213,9 @@
     "fruit/quotes",
     "fruit/humor",
     "fruit/Untitled.md",
-    "flower/tips and tricks",
-    "flower/tricks",
     "fruit/snippet(extracted as original form)/datawork/base64-encoding.md",
     "tree/refactoring/techniques/dealing-with-generalization/extract-interface.md",
     "tree/refactoring/Cheat Sheet.md",
-    "flower/Project Layout",
-    "flower/Integration",
-    "tree/refactoring/techniques/dealing-with-generalization/collapse-hierarchy.md",
-    "tree/refactoring/techniques/organizing-data/replace-data-value-with-object.md",
-    "tree/refactoring/techniques/dealing-with-generalization/extract-subclass.md",
-    "tree/refactoring/smells/bloaters/large-class.md",
-    "tree/refactoring/techniques/moving-features-between-objects/introduce-local-extension.md",
-    "tree/refactoring/techniques/moving-features-between-objects/introduce-foreign-method.md",
-    "tree/refactoring/smells/other/incomplete-library-class.md",
-    "tree/refactoring/techniques/dealing-with-generalization/replace-inheritance-with-delegation.md",
-    "tree/refactoring/techniques/moving-features-between-objects/hide-delegate.md",
-    "tree/refactoring/techniques/organizing-data/change-bidirectional-association-to-unidirectional.md",
-    "tree/refactoring/smells/couplers/inappropriate-intimacy.md",
-    "tree/refactoring/techniques/moving-features-between-objects/inline-class.md",
     "tree/testing/javascript/assets/zh-CN/headspace.png",
     "tree/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
     "tree/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

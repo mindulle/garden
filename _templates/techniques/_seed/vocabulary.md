@@ -1,3 +1,8 @@
+---
+type: vocabulary
+---
+
+
 ## Quotes 
 > What Urban Dictionary doesn't do
 

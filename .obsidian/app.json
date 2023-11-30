@@ -1,6 +1,6 @@
 {
   "newLinkFormat": "absolute",
-  "attachmentFolderPath": "📦assets",
+  "attachmentFolderPath": "./attachment",
   "promptDelete": false,
   "alwaysUpdateLinks": true,
   "newFileLocation": "current"

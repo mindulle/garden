@@ -1,7 +1,6 @@
 ---
 type: acronym
 ---
-
 ## Acronym
 > Meaning
 

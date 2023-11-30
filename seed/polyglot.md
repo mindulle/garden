@@ -1,3 +1,6 @@
+---
+type: vocabulary
+---
 ## Polyglot
 > Knowing or using many languages. 
 

@@ -1,5 +1,5 @@
 {
-  "folder": "Private/Excalidraw",
+  "folder": "",
   "embedUseExcalidrawFolder": false,
   "templateFilePath": "Excalidraw/Template.excalidraw",
   "scriptFolderPath": "Excalidraw/Scripts",
@@ -57,7 +57,7 @@
   "autoexportPNG": false,
   "autoExportLightAndDark": true,
   "autoexportExcalidraw": false,
-  "embedType": "excalidraw",
+  "embedType": "SVG",
   "embedWikiLink": true,
   "syncExcalidraw": false,
   "experimentalFileType": false,

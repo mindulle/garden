@@ -1,4 +1,7 @@
-## Quotes 
+---
+type: vocabulary
+---
+## Artifact
 > An **artifact** is one of many kinds of _tangible_ by-products produced during the development of software.
 
 \- by [wikipedia](https://en.wikipedia.org/wiki/Artifact_(software_development))

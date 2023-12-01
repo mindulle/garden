@@ -16,10 +16,10 @@ This page shows how I organize my digital garden and summarizes them as a table.
 ### mindulle
 | repo                                                                 | content                                                                    |
 | -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| [mindulle.github.io](https://github.com/mindulle/mindulle.github.io) | My repository journey with react-three-fiber.                                |
+| [mindulle.github.io](https://github.com/mindulle/mindulle.github.io) | My repository journey with react-three-fiber.                              |
 | [bookshelf](https://mindulle.github.io/bookshelf)                    | contents for [Hwansul/strategy](https://github.com/Hwansul/strategy) repo. |
 | [fireflies](https://fireflies.mindulle.vercel.app)                   | roadmaps, prep interview, hacktoverfest                                    |
-| [labnote](https://mindulle.gitlab.io)                                | programming knowledges with executable fiddles.                            |
+| [labnote](https://mindulle.gitlab.io)                                | programming examples with executable fiddles, summarizations                               |
 | [times](https://mindulletimes.web.app/)                              | qurate my tistory blog post. feynman technique third step                  |
 
 ### Hwansul

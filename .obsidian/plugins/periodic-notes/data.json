@@ -1,0 +1,35 @@
+{
+  "showGettingStartedBanner": true,
+  "hasMigratedDailyNoteSettings": true,
+  "hasMigratedWeeklyNoteSettings": false,
+  "daily": {
+    "folder": "Private/Periodic Notes/2023/Daily/03 March",
+    "enabled": true,
+    "template": "Private/Templates/Daily Note Template.md",
+    "format": ""
+  },
+  "weekly": {
+    "format": "YYYY [Week] ww",
+    "template": "Private/Templates/Weekly Note Template.md",
+    "folder": "Private/Periodic Notes/2023/Weekly",
+    "enabled": true
+  },
+  "monthly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  },
+  "quarterly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  },
+  "yearly": {
+    "format": "",
+    "template": "",
+    "folder": "",
+    "enabled": true
+  }
+}

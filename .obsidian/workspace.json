@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "688eb21a747cd38a",
+    "type": "split",
+    "children": [
+      {
+        "id": "1eb1e617dc9515be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c3005c3db9f6205",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "415b314476676799",
+    "type": "split",
+    "children": [
+      {
+        "id": "00f68eae0d8a5e8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ed3ae3907a45b75",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bd7396851c87811d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "51796fc37ebc680b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "3dbdc909114ef603",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9871f8f698df97de",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7348f3bf3ab84f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58eb37721af95c9e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "359bed65e7c0f22c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b21ae332094966ca",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "580333fcd5396ffb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md"
+              }
+            }
+          },
+          {
+            "id": "6dd1966cdd4d614a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "d47b6c4450bcec2a",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-day-planner:Week plan": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-raindrop-highlights:Sync your Raindrop highlights": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "7c3005c3db9f6205",
+  "lastOpenFiles": [
+    "tree/My Favorite Inspiration Websites.md",
+    "index.md",
+    "tree/Maintenance/Bug Fix/N plus one problem.md",
+    "Applications.md",
+    "Inbox.md",
+    "fundamentals/Design/10 Excellent Free Online Graphic Design Courses.md",
+    "fundamentals/Math/OSSU Math.md",
+    "fundamentals/Data Science/OSSU data science.md",
+    "fundamentals/Computer Science/Buffer(Need to Tirage).md",
+    "tree/Untitled",
+    "tree/Paradigms",
+    "fruit/Collaboration",
+    "tree/Product",
+    "tree/Maintenance",
+    "fruit/Code Convention",
+    "tree/Maintenance/Performance Audit",
+    "seed/computing/Seeding (computing).md",
+    "tree/Maintenance/Bug Fix",
+    "_templates/_tree/Differences, Contrast.md",
+    "_templates/_tree/Cause And Effect.md",
+    "_templates/_seed/vocabulary.md",
+    "_templates/_tree/Similarities, Comparison.md",
+    "_templates/_tree/Order Of Importance.md",
+    "_templates/_seed/acronym.md",
+    "_templates/_tree/Chronological Order.md",
+    "seed/software development/Generic function.md",
+    "tree/Product/Features/Render React Component.md",
+    "flower/Frameworks",
+    "flower/Libraries",
+    "tree/Product/Features/Data Visualization.md",
+    "seed/Unix/Shebang (Unix).md",
+    "seed/polyglot.md",
+    "seed/artifact.md",
+    "seed/software development/artifact (software development).md",
+    "seed/computing/ployglot (computing).md",
+    "_templates/Quot from wikipedia.md",
+    "_templates/_tree/attachment/Chronological Order 2023-11-30 14.10.50.excalidraw.dark.svg",
+    "_templates/_tree/attachment/Chronological Order 2023-11-30 14.10.50.excalidraw.light.svg",
+    "_templates/_tree/attachment/Order Of Importance 2023-11-30 14.00.58.excalidraw.dark.svg",
+    "_templates/_tree/attachment/Order Of Importance 2023-11-30 14.00.58.excalidraw.light.svg",
+    "_templates/techniques/_tree/attachment/Order Of Importance 2023-11-30 13.57.44.excalidraw.dark.svg",
+    "_templates/techniques/_tree/attachment/Order Of Importance 2023-11-30 14.00.09.excalidraw.dark.svg",
+    "_templates/techniques/_tree/attachment/Order Of Importance 2023-11-30 14.00.09.excalidraw.light.svg",
+    "_templates/techniques/_tree/attachment/Order Of Importance 2023-11-30 13.57.44.excalidraw.light.svg",
+    "flower/testing/javascript/assets/zh-CN/headspace.png",
+    "flower/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
+    "_OKR/2023/Q4/Q4 2023.canvas",
+    "_OKR/2023/2023.canvas",
+    "Templates/canvas for indices.canvas"
+  ]
+}

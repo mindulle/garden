@@ -34,3 +34,6 @@ This page shows how I organize my digital garden and summarizes them as a table.
 | [my google sites](https://sites.google.com/view/mindulleoffice) | checklists for various best practices for realworld as a google form. |
 | [pinterest](https://www.pinterest.co.kr/mindullestudio)                                                       |                                                                       |
 | [tistory blog](https://mindulle.tistory.com)                                                    | feynman technique step 2                                              |
+
+[[seed/artifact|artifact]]
+[[seed/software development/artifact (software development)|artifact (software development)]]

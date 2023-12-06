@@ -35,3 +35,5 @@ This page shows how I organize my digital garden and summarizes them as a table.
 | [pinterest](https://www.pinterest.co.kr/mindullestudio)                                                       |                                                                       |
 | [tistory blog](https://mindulle.tistory.com)                                                    | feynman technique step 2                                              |
 
+
+[[fruit/Refactoring/smells/change-preventers/shotgun-surgery|shotgun-surgery]]

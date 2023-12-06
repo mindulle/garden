@@ -1,0 +1,3 @@
+[submodule "content/fruit"]
+	path = content/fruit
+	url = https://github.com/mindulle/fruit.git

@@ -1,6 +1,0 @@
-[submodule "content/fruit"]
-	path = content/fruit
-	url = https://github.com/mindulle/fruit.git
-[submodule "content/tree/Product"]
-	path = content/tree/Product
-	url = https://github.com/mindulle/Product.git

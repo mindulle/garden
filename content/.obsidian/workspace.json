@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "688eb21a747cd38a",
+    "type": "split",
+    "children": [
+      {
+        "id": "a569ba7efddecb5c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe420a65ef0ddbf4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tree/Product/Features/[backup]Data Visualization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "415b314476676799",
+    "type": "split",
+    "children": [
+      {
+        "id": "00f68eae0d8a5e8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ed3ae3907a45b75",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bd7396851c87811d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "51796fc37ebc680b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "3dbdc909114ef603",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9871f8f698df97de",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7348f3bf3ab84f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58eb37721af95c9e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "tree/Product/Features/[backup]Data Visualization.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "359bed65e7c0f22c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "tree/Product/Features/[backup]Data Visualization.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b21ae332094966ca",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "580333fcd5396ffb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "tree/Product/Features/[backup]Data Visualization.md"
+              }
+            }
+          },
+          {
+            "id": "6dd1966cdd4d614a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "d47b6c4450bcec2a",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "6878f38e8296207a",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "e52f2f354d6a2f82",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "markdown-table-editor:Open Markdown Table Editor": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-day-planner:Week plan": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-raindrop-highlights:Sync your Raindrop highlights": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "fe420a65ef0ddbf4",
+  "lastOpenFiles": [
+    "tree/Product/Features/[backup]Render React Component.md",
+    "tree/Product/Technical Stacks/Untitled.md",
+    "tree/My Favorite Inspiration Websites.md",
+    "tree/Product/Project Layout/Untitled.md",
+    "tree/Product/Features/Render React Component.md",
+    "tree/Product/Features/Data Visualization.md",
+    "fruit/Refactoring/techniques/composing-methods.md",
+    "fruit/Refactoring/what-is-refactoring/how-to.md",
+    "fruit/Refactoring/what-is-refactoring/Clean code.md",
+    "fruit/Refactoring/Cheat Sheet.md",
+    "fruit/Refactoring/refactoring-cheat-sheet.pdf",
+    "fruit/Patterns/code design/Untitled.md",
+    "tree/Product/Architecture/Untitled.md",
+    "fruit/Testing/go/build_an_application/http-server.md",
+    "fruit/Testing/go/build_an_application/io.md",
+    "fruit/Testing/go/build_an_application/command-line.md",
+    "fruit/Testing/javascript/1 The Test Anatomy/1-6 Dont foo use realistic input data.md",
+    "fruit/Testing/javascript/1 The Test Anatomy/1-5 Choose the right test doubles Avoid mocks in favor of stubs and spies.md",
+    "fruit/Testing/javascript/1 The Test Anatomy/1-3 Describe expectations in a product language use BDD-style assertions.md",
+    "fruit/Testing/javascript/1 The Test Anatomy/1-2 Structure tests by the AAA pattern.md",
+    "fruit/Testing/javascript/0 The Golden Rule/0 Design for lean testing.md",
+    "fruit/fruit.md",
+    "fruit - 복사본/refactoring/smells/other/incomplete-library-class.md",
+    "fruit - 복사본/refactoring/smells/oo-abusers/temporary-field.md",
+    "fruit - 복사본/refactoring/smells/oo-abusers/switch-statements.md",
+    "fruit - 복사본/refactoring/smells/oo-abusers/refused-bequest.md",
+    "fruit - 복사본/refactoring/smells/oo-abusers/alternative-classes-with-different-interfaces.md",
+    "fruit - 복사본/refactoring/smells/other",
+    "fruit - 복사본/refactoring/smells/oo-abusers",
+    "fruit - 복사본/refactoring/smells/dispensables",
+    "fruit - 복사본/refactoring/smells/couplers",
+    "fruit - 복사본/refactoring/smells/change-preventers",
+    "fruit - 복사본/refactoring/smells/bloaters",
+    "fruit - 복사본/refactoring/techniques/composing-methods",
+    "fruit - 복사본/refactoring/smells",
+    "fruit - 복사본/refactoring/techniques",
+    "fruit/testing/javascript/assets/zh-CN/headspace.png",
+    "fruit/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
+    "fruit/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",
+    "fruit/testing/javascript/assets/zh-CN/bp-13-component-test-yoni-goldberg.png",
+    "fruit/testing/javascript/assets/zh-CN/bp-12-rich-testing.jpg",
+    "fruit/testing/javascript/assets/zh-CN/bp-1-3-parts.jpg",
+    "fruit/testing/javascript/assets/yoni-goldberg.jpg",
+    "fruit/testing/javascript/assets/uml.png",
+    "fruit/testing/javascript/assets/twitter.png",
+    "fruit/testing/javascript/assets/tbp.png",
+    "_OKR/2023/Q4/Q4 2023.canvas",
+    "_OKR/2023/2023.canvas",
+    "Templates/canvas for indices.canvas"
+  ]
+}

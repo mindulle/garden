@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "seed/computing/ployglot (computing).md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "seed/computing/ployglot (computing).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "seed/computing/ployglot (computing).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "seed/computing/ployglot (computing).md"
               }
             }
           },
@@ -185,8 +185,14 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "fe420a65ef0ddbf4",
+  "active": "1ed3ae3907a45b75",
   "lastOpenFiles": [
+    "seed/computing/Seeding (computing).md",
+    "seed/software development/Generic function.md",
+    "seed/software development/artifact (software development).md",
+    "seed/Unix/Shebang (Unix).md",
+    "seed/artifact.md",
+    "index.md",
     "tree/Product/Features/[backup]Render React Component.md",
     "tree/Product/Technical Stacks/Untitled.md",
     "tree/My Favorite Inspiration Websites.md",
@@ -208,12 +214,6 @@
     "fruit/Testing/javascript/1 The Test Anatomy/1-3 Describe expectations in a product language use BDD-style assertions.md",
     "fruit/Testing/javascript/1 The Test Anatomy/1-2 Structure tests by the AAA pattern.md",
     "fruit/Testing/javascript/0 The Golden Rule/0 Design for lean testing.md",
-    "fruit/fruit.md",
-    "fruit - 복사본/refactoring/smells/other/incomplete-library-class.md",
-    "fruit - 복사본/refactoring/smells/oo-abusers/temporary-field.md",
-    "fruit - 복사본/refactoring/smells/oo-abusers/switch-statements.md",
-    "fruit - 복사본/refactoring/smells/oo-abusers/refused-bequest.md",
-    "fruit - 복사본/refactoring/smells/oo-abusers/alternative-classes-with-different-interfaces.md",
     "fruit - 복사본/refactoring/smells/other",
     "fruit - 복사본/refactoring/smells/oo-abusers",
     "fruit - 복사본/refactoring/smells/dispensables",

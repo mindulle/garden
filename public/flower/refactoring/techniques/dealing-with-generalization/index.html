@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html><head><title>Dealing with Generalization</title><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Dealing with Generalization"/><meta property="og:description" content="::: body-holder ::: {.announcement-block .announcement-block-autumn .prom data-id=“DIDP-announcement” creative-id=“en” position=“top”} {loading=“lazy” style=“width: 32px; height:32px;vertical-align: middle;“} {loading=“lazy” style=“width: 32px; height:32px;vertical-align: middle;”} [Autumn SALE]{."/><meta property="og:image" content="https://mindulle.github.io/garden/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="::: body-holder ::: {.announcement-block .announcement-block-autumn .prom data-id=“DIDP-announcement” creative-id=“en” position=“top”} {loading=“lazy” style=“width: 32px; height:32px;vertical-align: middle;“} {loading=“lazy” style=“width: 32px; height:32px;vertical-align: middle;”} [Autumn SALE]{."/><meta name="generator" content="Quartz"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="../../../../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../../../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch(`../../../../static/contentIndex.json`).then(data => data.json())</script></head><body data-slug="flower/refactoring/techniques/dealing-with-generalization/index"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title "><a href="../../..">Mindulle Garden</a></h1><div class="spacer mobile-only"></div><div class="search "><div id="search-icon"><p>Search</p><div></div><svg tabIndex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="results-container"></div></div></div></div><div class="darkmode "><input class="toggle" id="darkmode-toggle" type="checkbox" tabIndex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabIndex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xmlSpace="preserve"><title>Light mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabIndex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background='new 0 0 100 100'" xmlSpace="preserve"><title>Dark mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div></div><div class="center"><div class="page-header"><div class="popover-hint"><h1 class="article-title ">Dealing with Generalization</h1></div></div><div class="popover-hint"><article><p><p>::: body-holder
+::: {.announcement-block .announcement-block-autumn .prom data-id=“DIDP-announcement” creative-id=“en” position=“top”}
+<a href="../../../store" class="internal" data-slug="store"><img src="../../../images/content-public/ann/autumn/read.svg-qid=0d119719d4d53f2e62fc6535cb544b74" alt/>{loading=“lazy”
+style=“width: 32px; height:32px;vertical-align: middle;“}
+<img src="../../../images/content-public/ann/autumn/tea-cup.svg-qid=f95aba0fef52083e2dd0a8a64068e37f" alt/>{loading=“lazy”
+style=“width: 32px; height:32px;vertical-align: middle;”} [Autumn
+SALE]{.announcement-link-text}
+<img src="../../../images/content-public/ann/autumn/mulled-wine.svg-qid=ad4bec48a83ede3e72766d40a6a837ed" alt/>{loading=“lazy”
+style=“width: 32px; height:32px;vertical-align: middle;“}
+<img src="../../../images/content-public/ann/autumn/maple-leaf.svg-qid=63cdc79ea962a2657a57f44a22d092b9" alt/>{loading=“lazy”
+style=“width: 32px; height:32px;vertical-align: middle;“}</a>
+:::</p>
+<p>::: cart-placeholder
+::: {.cart-block-container style=“display:none”}
+::: {.cart-block .btn-group}
+<a href="#checkout" class="internal alias">[]{.cart-text} </a>{.btn .cart .open-checkout} <a href="#checkout" class="internal alias">
+[]{.btn-text-span .d-none .d-sm-inline-block .d-lg-none
+.d-hg-inline-block}</a>{.btn .btn-secondary .checkout
+.open-checkout}
+:::
+:::
+:::</p>
+<p>::: {.main-content .top-content .center-content role=“main” page_class=&quot;&quot;}
+::: {.main-content-container .center-content-container}
+::: {.page .text}
+::: breadcrumb
+<a href="../../../" class="internal" data-slug></a>{.home} / <a href="../../../refactoring" class="internal alias" data-slug="refactoring">Refactoring</a>{.type} /
+<a href="../../../refactoring/techniques" class="internal alias" data-slug="refactoring/techniques">Techniques</a>{.type}
+:::</p>
+<h1 id="dealing-with-generalization-dealing-with-generalization-title">Dealing with Generalization {#dealing-with-generalization .title}<a aria-hidden="true" tabindex="-1" href="#dealing-with-generalization-dealing-with-generalization-title" class="internal alias"> §</a></h1>
+<p>Abstraction has its own group of refactoring techniques, primarily
+associated with moving functionality along the class inheritance
+hierarchy, creating new classes and interfaces, and replacing
+inheritance with delegation and vice versa.</p>
+<p>::: {.relations .link-list}
+::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-field" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/pull-up-field">Pull Up Field</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> Two classes have the same field.</p>
+<p><strong>Solution:</strong> Remove the field from subclasses and move it to the
+superclass.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-method" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/pull-up-method">Pull Up Method</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> Your subclasses have methods that perform similar work.</p>
+<p><strong>Solution:</strong> Make the methods identical and then move them to the
+relevant superclass.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-constructor-body" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/pull-up-constructor-body">Pull Up Constructor Body</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> Your subclasses have constructors with code that’s mostly
+identical.</p>
+<p><strong>Solution:</strong> Create a superclass constructor and move the code that’s
+the same in the subclasses to it. Call the superclass constructor in the
+subclass constructors.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/push-down-method" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/push-down-method">Push Down Method</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> Is behavior implemented in a superclass used by only one
+(or a few) subclasses?</p>
+<p><strong>Solution:</strong> Move this behavior to the subclasses.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/push-down-field" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/push-down-field">Push Down Field</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> Is a field used only in a few subclasses?</p>
+<p><strong>Solution:</strong> Move the field to these subclasses.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/extract-subclass" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/extract-subclass">Extract Subclass</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> A class has features that are used only in certain cases.</p>
+<p><strong>Solution:</strong> Create a subclass and use it in these cases.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/extract-superclass" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/extract-superclass">Extract Superclass</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> You have two classes with common fields and methods.</p>
+<p><strong>Solution:</strong> Create a shared superclass for them and move all the
+identical fields and methods to it.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/extract-interface" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/extract-interface">Extract Interface</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> Multiple clients are using the same part of a class
+interface. Another case: part of the interface in two classes is the
+same.</p>
+<p><strong>Solution:</strong> Move this identical portion to its own interface.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/collapse-hierarchy" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/collapse-hierarchy">Collapse Hierarchy</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> You have a class hierarchy in which a subclass is
+practically the same as its superclass.</p>
+<p><strong>Solution:</strong> Merge the subclass and superclass.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/form-template-method" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/form-template-method">Form Template Method</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> Your subclasses implement algorithms that contain similar
+steps in the same order.</p>
+<p><strong>Solution:</strong> Move the algorithm structure and identical steps to a
+superclass, and leave implementation of the different steps in the
+subclasses.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/replace-inheritance-with-delegation" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/replace-inheritance-with-delegation">Replace Inheritance with
+Delegation</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> You have a subclass that uses only a portion of the methods
+of its superclass (or it’s not possible to inherit superclass data).</p>
+<p><strong>Solution:</strong> Create a field and put a superclass object in it, delegate
+methods to the superclass object, and get rid of inheritance.
+:::
+:::</p>
+<p>::: dl
+::: dt
+<a href="../../../flower/refactoring/techniques/dealing-with-generalization/replace-delegation-with-inheritance" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/replace-delegation-with-inheritance">Replace Delegation with
+Inheritance</a>
+:::</p>
+<p>::: dd
+<strong>Problem:</strong> A class contains many simple methods that delegate to all
+methods of another class.</p>
+<p><strong>Solution:</strong> Make the class a delegate inheritor, which makes the
+delegating methods unnecessary.
+:::
+:::
+:::</p>
+<p>::: next</p>
+<h4 id="read-next">Read next<a aria-hidden="true" tabindex="-1" href="#read-next" class="internal alias"> §</a></h4>
+<p><a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-field" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/pull-up-field">Pull Up Field []{.fa .fa-arrow-right}</a>{.btn
+.btn-primary rel=“next”}
+:::</p>
+<p>::: prev</p>
+<h4 id="return">Return<a aria-hidden="true" tabindex="-1" href="#return" class="internal alias"> §</a></h4>
+<p><a href="../../../flower/refactoring/techniques/simplifying-method-calls/replace-exception-with-test" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/replace-exception-with-test">[]{.fa .fa-arrow-left} Replace Exception with
+Test</a>{.btn .btn-default rel=“prev”}
+:::
+:::
+:::
+:::</p>
+<p>::: main-menu-controls
+:::</p>
+<p>::: {.main-menu-list-wrapper .nano}
+::: {.main-menu-list .nano-content}
+<a href="../../../" class="internal" data-slug><img src="../../../images/content-public/logos/logo-new.png-qid=97d554614702483f31e38b32e82d8e34" alt="Refactoring.Guru"/>{width=“200”
+height=“241” loading=“lazy”
+srcset=“/images/content-public/logos/logo-new-2x.png?id=3bc33294e095bab1d6fe9ae421d07837 2x”}</a>{.menu-brand}</p>
+<p>::: {.menu-container style=“position: relative”}</p>
+<ul>
+<li><a href="../../../store" class="internal alias" data-slug="store"> Premium Content</a>
+<ul>
+<li><a href="../../../design-patterns/book" class="internal alias" data-slug="design-patterns/book"> Design Patterns eBook</a></li>
+<li><a href="../../../refactoring/course" class="internal alias" data-slug="refactoring/course"> Refactoring Course</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring" class="internal alias" data-slug="refactoring"> Refactoring</a>
+<ul>
+<li><a href="../../../refactoring/what-is-refactoring" class="internal alias" data-slug="refactoring/what-is-refactoring">What is Refactoring</a>
+<ul>
+<li><a href="../../../refactoring/what-is-refactoring" class="internal alias" data-slug="refactoring/what-is-refactoring">Clean code</a></li>
+<li><a href="../../../refactoring/technical-debt" class="internal alias" data-slug="refactoring/technical-debt">Technical debt</a></li>
+<li><a href="../../../refactoring/when" class="internal alias" data-slug="refactoring/when">When to refactor</a></li>
+<li><a href="../../../refactoring/how-to" class="internal alias" data-slug="refactoring/how-to">How to refactor</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/catalog" class="internal alias" data-slug="refactoring/catalog">Catalog</a></li>
+<li><a href="../../../refactoring/smells" class="internal alias" data-slug="refactoring/smells">Code Smells</a>
+<ul>
+<li><a href="../../../refactoring/smells/bloaters" class="internal alias" data-slug="refactoring/smells/bloaters">Bloaters</a>
+<ul>
+<li><a href="../../../smells/long-method" class="internal alias" data-slug="smells/long-method">Long Method</a></li>
+<li><a href="../../../smells/large-class" class="internal alias" data-slug="smells/large-class">Large Class</a></li>
+<li><a href="../../../smells/primitive-obsession" class="internal alias" data-slug="smells/primitive-obsession">Primitive Obsession</a></li>
+<li><a href="../../../smells/long-parameter-list" class="internal alias" data-slug="smells/long-parameter-list">Long Parameter List</a></li>
+<li><a href="../../../smells/data-clumps" class="internal alias" data-slug="smells/data-clumps">Data Clumps</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/smells/oo-abusers" class="internal alias" data-slug="refactoring/smells/oo-abusers">Object-Orientation Abusers</a>
+<ul>
+<li><a href="../../../smells/switch-statements" class="internal alias" data-slug="smells/switch-statements">Switch Statements</a></li>
+<li><a href="../../../smells/temporary-field" class="internal alias" data-slug="smells/temporary-field">Temporary Field</a></li>
+<li><a href="../../../smells/refused-bequest" class="internal alias" data-slug="smells/refused-bequest">Refused Bequest</a></li>
+<li><a href="../../../smells/alternative-classes-with-different-interfaces" class="internal alias" data-slug="smells/alternative-classes-with-different-interfaces">Alternative Classes with Different
+Interfaces</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/smells/change-preventers" class="internal alias" data-slug="refactoring/smells/change-preventers">Change Preventers</a>
+<ul>
+<li><a href="../../../smells/divergent-change" class="internal alias" data-slug="smells/divergent-change">Divergent Change</a></li>
+<li><a href="../../../smells/shotgun-surgery" class="internal alias" data-slug="smells/shotgun-surgery">Shotgun Surgery</a></li>
+<li><a href="../../../smells/parallel-inheritance-hierarchies" class="internal alias" data-slug="smells/parallel-inheritance-hierarchies">Parallel Inheritance
+Hierarchies</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/smells/dispensables" class="internal alias" data-slug="refactoring/smells/dispensables">Dispensables</a>
+<ul>
+<li><a href="../../../smells/comments" class="internal alias" data-slug="smells/comments">Comments</a></li>
+<li><a href="../../../smells/duplicate-code" class="internal alias" data-slug="smells/duplicate-code">Duplicate Code</a></li>
+<li><a href="../../../smells/lazy-class" class="internal alias" data-slug="smells/lazy-class">Lazy Class</a></li>
+<li><a href="../../../smells/data-class" class="internal alias" data-slug="smells/data-class">Data Class</a></li>
+<li><a href="../../../smells/dead-code" class="internal alias" data-slug="smells/dead-code">Dead Code</a></li>
+<li><a href="../../../smells/speculative-generality" class="internal alias" data-slug="smells/speculative-generality">Speculative Generality</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/smells/couplers" class="internal alias" data-slug="refactoring/smells/couplers">Couplers</a>
+<ul>
+<li><a href="../../../smells/feature-envy" class="internal alias" data-slug="smells/feature-envy">Feature Envy</a></li>
+<li><a href="../../../smells/inappropriate-intimacy" class="internal alias" data-slug="smells/inappropriate-intimacy">Inappropriate Intimacy</a></li>
+<li><a href="../../../smells/message-chains" class="internal alias" data-slug="smells/message-chains">Message Chains</a></li>
+<li><a href="../../../smells/middle-man" class="internal alias" data-slug="smells/middle-man">Middle Man</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/smells/other" class="internal alias" data-slug="refactoring/smells/other">Other Smells</a>
+<ul>
+<li><a href="../../../smells/incomplete-library-class" class="internal alias" data-slug="smells/incomplete-library-class">Incomplete Library
+Class</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="../../../refactoring/techniques" class="internal alias" data-slug="refactoring/techniques">Refactorings</a>
+<ul>
+<li><a href="../../../refactoring/techniques/composing-methods" class="internal alias" data-slug="refactoring/techniques/composing-methods">Composing
+Methods</a>
+<ul>
+<li><a href="../../../flower/refactoring/techniques/composing-methods/extract-method" class="internal alias" data-slug="flower/refactoring/techniques/composing-methods/extract-method">Extract Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/composing-methods/inline-method" class="internal alias" data-slug="flower/refactoring/techniques/composing-methods/inline-method">Inline Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/composing-methods/extract-variable" class="internal alias" data-slug="flower/refactoring/techniques/composing-methods/extract-variable">Extract Variable</a></li>
+<li><a href="../../../flower/refactoring/techniques/composing-methods/inline-temp" class="internal alias" data-slug="flower/refactoring/techniques/composing-methods/inline-temp">Inline Temp</a></li>
+<li><a href="../../../flower/refactoring/techniques/composing-methods/replace-temp-with-query" class="internal alias" data-slug="flower/refactoring/techniques/composing-methods/replace-temp-with-query">Replace Temp with Query</a></li>
+<li><a href="../../../flower/refactoring/techniques/composing-methods/split-temporary-variable" class="internal alias" data-slug="flower/refactoring/techniques/composing-methods/split-temporary-variable">Split Temporary Variable</a></li>
+<li><a href="../../../flower/refactoring/techniques/composing-methods/remove-assignments-to-parameters" class="internal alias" data-slug="flower/refactoring/techniques/composing-methods/remove-assignments-to-parameters">Remove Assignments to
+Parameters</a></li>
+<li><a href="../../../flower/refactoring/techniques/composing-methods/replace-method-with-method-object" class="internal alias" data-slug="flower/refactoring/techniques/composing-methods/replace-method-with-method-object">Replace Method with Method
+Object</a></li>
+<li><a href="../../../flower/refactoring/techniques/composing-methods/substitute-algorithm" class="internal alias" data-slug="flower/refactoring/techniques/composing-methods/substitute-algorithm">Substitute Algorithm</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/techniques/moving-features-between-objects" class="internal alias" data-slug="refactoring/techniques/moving-features-between-objects">Moving Features between
+Objects</a>
+<ul>
+<li><a href="../../../flower/refactoring/techniques/moving-features-between-objects/move-method" class="internal alias" data-slug="flower/refactoring/techniques/moving-features-between-objects/move-method">Move Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/moving-features-between-objects/move-field" class="internal alias" data-slug="flower/refactoring/techniques/moving-features-between-objects/move-field">Move Field</a></li>
+<li><a href="../../../flower/refactoring/techniques/moving-features-between-objects/extract-class" class="internal alias" data-slug="flower/refactoring/techniques/moving-features-between-objects/extract-class">Extract Class</a></li>
+<li><a href="../../../flower/refactoring/techniques/moving-features-between-objects/inline-class" class="internal alias" data-slug="flower/refactoring/techniques/moving-features-between-objects/inline-class">Inline Class</a></li>
+<li><a href="../../../flower/refactoring/techniques/moving-features-between-objects/hide-delegate" class="internal alias" data-slug="flower/refactoring/techniques/moving-features-between-objects/hide-delegate">Hide Delegate</a></li>
+<li><a href="../../../flower/refactoring/techniques/moving-features-between-objects/remove-middle-man" class="internal alias" data-slug="flower/refactoring/techniques/moving-features-between-objects/remove-middle-man">Remove Middle Man</a></li>
+<li><a href="../../../flower/refactoring/techniques/moving-features-between-objects/introduce-foreign-method" class="internal alias" data-slug="flower/refactoring/techniques/moving-features-between-objects/introduce-foreign-method">Introduce Foreign Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/moving-features-between-objects/introduce-local-extension" class="internal alias" data-slug="flower/refactoring/techniques/moving-features-between-objects/introduce-local-extension">Introduce Local Extension</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/techniques/organizing-data" class="internal alias" data-slug="refactoring/techniques/organizing-data">Organizing Data</a>
+<ul>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/self-encapsulate-field" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/self-encapsulate-field">Self Encapsulate Field</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/replace-data-value-with-object" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/replace-data-value-with-object">Replace Data Value with
+Object</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/change-value-to-reference" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/change-value-to-reference">Change Value to Reference</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/change-reference-to-value" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/change-reference-to-value">Change Reference to Value</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/replace-array-with-object" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/replace-array-with-object">Replace Array with Object</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/duplicate-observed-data" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/duplicate-observed-data">Duplicate Observed Data</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/change-unidirectional-association-to-bidirectional" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/change-unidirectional-association-to-bidirectional">Change Unidirectional Association to
+Bidirectional</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/change-bidirectional-association-to-unidirectional" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/change-bidirectional-association-to-unidirectional">Change Bidirectional Association to
+Unidirectional</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/replace-magic-number-with-symbolic-constant" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/replace-magic-number-with-symbolic-constant">Replace Magic Number with Symbolic
+Constant</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/encapsulate-field" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/encapsulate-field">Encapsulate Field</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/encapsulate-collection" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/encapsulate-collection">Encapsulate Collection</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/replace-type-code-with-class" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/replace-type-code-with-class">Replace Type Code with
+Class</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/replace-type-code-with-subclasses" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/replace-type-code-with-subclasses">Replace Type Code with
+Subclasses</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/replace-type-code-with-state-strategy" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/replace-type-code-with-state-strategy">Strategy</a></li>
+<li><a href="../../../flower/refactoring/techniques/organizing-data/replace-subclass-with-fields" class="internal alias" data-slug="flower/refactoring/techniques/organizing-data/replace-subclass-with-fields">Replace Subclass with
+Fields</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/techniques/simplifying-conditional-expressions" class="internal alias" data-slug="refactoring/techniques/simplifying-conditional-expressions">Simplifying Conditional
+Expressions</a>
+<ul>
+<li><a href="../../../flower/refactoring/techniques/simplifying-conditional-expressions/decompose-conditional" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-conditional-expressions/decompose-conditional">Decompose Conditional</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-conditional-expressions/consolidate-conditional-expression" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-conditional-expressions/consolidate-conditional-expression">Consolidate Conditional
+Expression</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-conditional-expressions/consolidate-duplicate-conditional-fragments" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-conditional-expressions/consolidate-duplicate-conditional-fragments">Consolidate Duplicate Conditional
+Fragments</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-conditional-expressions/remove-control-flag" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-conditional-expressions/remove-control-flag">Remove Control Flag</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-conditional-expressions/replace-nested-conditional-with-guard-clauses" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-conditional-expressions/replace-nested-conditional-with-guard-clauses">Replace Nested Conditional with Guard
+Clauses</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-conditional-expressions/replace-conditional-with-polymorphism" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-conditional-expressions/replace-conditional-with-polymorphism">Replace Conditional with
+Polymorphism</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-conditional-expressions/introduce-null-object" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-conditional-expressions/introduce-null-object">Introduce Null Object</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-conditional-expressions/introduce-assertion" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-conditional-expressions/introduce-assertion">Introduce Assertion</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/techniques/simplifying-method-calls" class="internal alias" data-slug="refactoring/techniques/simplifying-method-calls">Simplifying Method
+Calls</a>
+<ul>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/rename-method" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/rename-method">Rename Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/add-parameter" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/add-parameter">Add Parameter</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/remove-parameter" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/remove-parameter">Remove Parameter</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/separate-query-from-modifier" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/separate-query-from-modifier">Separate Query from
+Modifier</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/parameterize-method" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/parameterize-method">Parameterize Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/replace-parameter-with-explicit-methods" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/replace-parameter-with-explicit-methods">Replace Parameter with Explicit
+Methods</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/preserve-whole-object" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/preserve-whole-object">Preserve Whole Object</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/replace-parameter-with-method-call" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/replace-parameter-with-method-call">Replace Parameter with Method
+Call</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/introduce-parameter-object" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/introduce-parameter-object">Introduce Parameter
+Object</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/remove-setting-method" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/remove-setting-method">Remove Setting Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/hide-method" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/hide-method">Hide Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/replace-constructor-with-factory-method" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/replace-constructor-with-factory-method">Replace Constructor with Factory
+Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/replace-error-code-with-exception" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/replace-error-code-with-exception">Replace Error Code with
+Exception</a></li>
+<li><a href="../../../flower/refactoring/techniques/simplifying-method-calls/replace-exception-with-test" class="internal alias" data-slug="flower/refactoring/techniques/simplifying-method-calls/replace-exception-with-test">Replace Exception with
+Test</a></li>
+</ul>
+</li>
+<li><a href="../../../refactoring/techniques/dealing-with-generalization" class="internal alias" data-slug="refactoring/techniques/dealing-with-generalization">Dealing with
+Generalization</a>
+<ul>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-field" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/pull-up-field">Pull Up Field</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-method" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/pull-up-method">Pull Up Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-constructor-body" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/pull-up-constructor-body">Pull Up Constructor Body</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/push-down-method" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/push-down-method">Push Down Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/push-down-field" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/push-down-field">Push Down Field</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/extract-subclass" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/extract-subclass">Extract Subclass</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/extract-superclass" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/extract-superclass">Extract Superclass</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/extract-interface" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/extract-interface">Extract Interface</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/collapse-hierarchy" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/collapse-hierarchy">Collapse Hierarchy</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/form-template-method" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/form-template-method">Form Template Method</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/replace-inheritance-with-delegation" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/replace-inheritance-with-delegation">Replace Inheritance with
+Delegation</a></li>
+<li><a href="../../../flower/refactoring/techniques/dealing-with-generalization/replace-delegation-with-inheritance" class="internal alias" data-slug="flower/refactoring/techniques/dealing-with-generalization/replace-delegation-with-inheritance">Replace Delegation with
+Inheritance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="../../../design-patterns" class="internal alias" data-slug="design-patterns"> Design Patterns</a>
+<ul>
+<li><a href="../../../design-patterns/what-is-pattern" class="internal alias" data-slug="design-patterns/what-is-pattern">What is a Pattern</a>
+<ul>
+<li><a href="../../../design-patterns/what-is-pattern" class="internal alias" data-slug="design-patterns/what-is-pattern">What’s a design
+pattern?</a></li>
+<li><a href="../../../design-patterns/history" class="internal alias" data-slug="design-patterns/history">History of patterns</a></li>
+<li><a href="../../../design-patterns/why-learn-patterns" class="internal alias" data-slug="design-patterns/why-learn-patterns">Why should I learn
+patterns?</a></li>
+<li><a href="../../../design-patterns/criticism" class="internal alias" data-slug="design-patterns/criticism">Criticism of patterns</a></li>
+<li><a href="../../../design-patterns/classification" class="internal alias" data-slug="design-patterns/classification">Classification of
+patterns</a></li>
+</ul>
+</li>
+<li><a href="../../../design-patterns/catalog" class="internal alias" data-slug="design-patterns/catalog">Catalog</a></li>
+<li><a href="../../../design-patterns/creational-patterns" class="internal alias" data-slug="design-patterns/creational-patterns">Creational Patterns</a>
+<ul>
+<li><a href="../../../design-patterns/factory-method" class="internal alias" data-slug="design-patterns/factory-method">Factory Method</a></li>
+<li><a href="../../../design-patterns/abstract-factory" class="internal alias" data-slug="design-patterns/abstract-factory">Abstract Factory</a></li>
+<li><a href="../../../design-patterns/builder" class="internal alias" data-slug="design-patterns/builder">Builder</a></li>
+<li><a href="../../../design-patterns/prototype" class="internal alias" data-slug="design-patterns/prototype">Prototype</a></li>
+<li><a href="../../../design-patterns/singleton" class="internal alias" data-slug="design-patterns/singleton">Singleton</a></li>
+</ul>
+</li>
+<li><a href="../../../design-patterns/structural-patterns" class="internal alias" data-slug="design-patterns/structural-patterns">Structural Patterns</a>
+<ul>
+<li><a href="../../../design-patterns/adapter" class="internal alias" data-slug="design-patterns/adapter">Adapter</a></li>
+<li><a href="../../../design-patterns/bridge" class="internal alias" data-slug="design-patterns/bridge">Bridge</a></li>
+<li><a href="../../../design-patterns/composite" class="internal alias" data-slug="design-patterns/composite">Composite</a></li>
+<li><a href="../../../design-patterns/decorator" class="internal alias" data-slug="design-patterns/decorator">Decorator</a></li>
+<li><a href="../../../design-patterns/facade" class="internal alias" data-slug="design-patterns/facade">Facade</a></li>
+<li><a href="../../../design-patterns/flyweight" class="internal alias" data-slug="design-patterns/flyweight">Flyweight</a></li>
+<li><a href="../../../design-patterns/proxy" class="internal alias" data-slug="design-patterns/proxy">Proxy</a></li>
+</ul>
+</li>
+<li><a href="../../../design-patterns/behavioral-patterns" class="internal alias" data-slug="design-patterns/behavioral-patterns">Behavioral Patterns</a>
+<ul>
+<li><a href="../../../design-patterns/chain-of-responsibility" class="internal alias" data-slug="design-patterns/chain-of-responsibility">Chain of
+Responsibility</a></li>
+<li><a href="../../../design-patterns/command" class="internal alias" data-slug="design-patterns/command">Command</a></li>
+<li><a href="../../../design-patterns/iterator" class="internal alias" data-slug="design-patterns/iterator">Iterator</a></li>
+<li><a href="../../../design-patterns/mediator" class="internal alias" data-slug="design-patterns/mediator">Mediator</a></li>
+<li><a href="../../../design-patterns/memento" class="internal alias" data-slug="design-patterns/memento">Memento</a></li>
+<li><a href="../../../design-patterns/observer" class="internal alias" data-slug="design-patterns/observer">Observer</a></li>
+<li><a href="../../../design-patterns/state" class="internal alias" data-slug="design-patterns/state">State</a></li>
+<li><a href="../../../design-patterns/strategy" class="internal alias" data-slug="design-patterns/strategy">Strategy</a></li>
+<li><a href="../../../design-patterns/template-method" class="internal alias" data-slug="design-patterns/template-method">Template Method</a></li>
+<li><a href="../../../design-patterns/visitor" class="internal alias" data-slug="design-patterns/visitor">Visitor</a></li>
+</ul>
+</li>
+<li><a href="../../../design-patterns/examples" class="internal alias" data-slug="design-patterns/examples">Code Examples</a>
+<ul>
+<li><a href="../../../design-patterns/csharp" class="internal alias" data-slug="design-patterns/csharp">C#</a></li>
+<li><a href="../../../design-patterns/cpp" class="internal alias" data-slug="design-patterns/cpp">C++</a></li>
+<li><a href="../../../design-patterns/go" class="internal alias" data-slug="design-patterns/go">Go</a></li>
+<li><a href="../../../design-patterns/java" class="internal alias" data-slug="design-patterns/java">Java</a></li>
+<li><a href="../../../design-patterns/php" class="internal alias" data-slug="design-patterns/php">PHP</a></li>
+<li><a href="../../../design-patterns/python" class="internal alias" data-slug="design-patterns/python">Python</a></li>
+<li><a href="../../../design-patterns/ruby" class="internal alias" data-slug="design-patterns/ruby">Ruby</a></li>
+<li><a href="../../../design-patterns/rust" class="internal alias" data-slug="design-patterns/rust">Rust</a></li>
+<li><a href="../../../design-patterns/swift" class="internal alias" data-slug="design-patterns/swift">Swift</a></li>
+<li><a href="../../../design-patterns/typescript" class="internal alias" data-slug="design-patterns/typescript">TypeScript</a>
+:::</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>::: main-menu-aux-controls
+<a href="https://refactoring.guru/login" title="Log in" class="external alias"> Log in</a> <a href="https://feedback.refactoring.guru/" title="Contact us" class="external alias"> Contact
+us</a>{.userecho-public
+rel=“nofollow”}
+:::
+:::
+:::</p>
+<p>::: navigation-container
+<a href="../../../" class="internal" data-slug><img src="../../../images/content-public/logos/logo-new-mobile.png-qid=ea18aa9b032eaa92835ed6d472b03b4a" alt="Refactoring.Guru"/>{srcset=“/images/content-public/logos/logo-new-mobile-2x.png?id=7ad5648bfd86ae2e8524147a72877c64 2x”}</a>{.navigation-brand}</p>
+<p>::: {.shop-link .d-none .d-lg-block style=“display: none !important;“}
+<a href="../../../store" class="internal" data-slug="store"><img src="data:image/svg+xml;base64,PHN2ZyBzdHlsZT0id2lkdGg6IDI4cHg7IGhlaWdodDogMjhweDsgZmlsbDogY3VycmVudENvbG9yOyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IG1hcmdpbi10b3A6IC0xNHB4OyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Ym94PSIwIDAgNTEyIDUxMiI+PCEtLSEgRm9udCBBd2Vzb21lIFBybyA2LjMuMCBieSBAZm9udGF3ZXNvbWUgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbSBMaWNlbnNlIC0gaHR0cHM6Ly9mb250YXdlc29tZS5jb20vbGljZW5zZSAoQ29tbWVyY2lhbCBMaWNlbnNlKSBDb3B5cmlnaHQgMjAyMyBGb250aWNvbnMsIEluYy4gLS0+PHBhdGggZD0iTTM1NiA2MGw2MCAyMC02MCAyMC0yMCA2MC0yMC02MEwyNTYgODBsNjAtMjBMMzM2IDBsMjAgNjB6TTQ2NCAyMDhsNDggMTYtNDggMTYtMTYgNDgtMTYtNDgtNDgtMTYgNDgtMTYgMTYtNDggMTYgNDh6bS0yNDMuOC05LjhsMzMgNjYuOSA3My44IDEwLjcgNTkuOCA4LjctNDMuMyA0Mi4yLTUzLjQgNTIuMSAxMi42IDczLjVMMzEzIDUxMmwtNTMuNS0yOC4xLTY2LTM0LjctNjYgMzQuN0w3My45IDUxMmwxMC4yLTU5LjYgMTIuNi03My41TDQzLjMgMzI2LjggMCAyODQuNmw1OS44LTguNyA3My44LTEwLjcgMzMtNjYuOUwxOTMuNSAxNDRsMjYuOCA1NC4yem0yNi4xIDExNC40bC0yNS0zLjYtMTEuMi0yMi42LTE2LjctMzMuOS0xNi43IDMzLjlMMTY1LjYgMzA5bC0yNSAzLjYtMzcuNCA1LjQgMjcuMSAyNi40IDE4LjEgMTcuNkwxNDQgMzg3bC02LjQgMzcuMyAzMy41LTE3LjYgMjIuMy0xMS43IDIyLjMgMTEuNyAzMy41IDE3LjZMMjQyLjkgMzg3bC00LjMtMjQuOSAxOC4xLTE3LjYgMjcuMS0yNi40LTM3LjQtNS40eiI+PC9wYXRoPjwvc3ZnPg==" alt/>
+Shop Now!</a>{.btn .btn-md .btn-primary .btn-featured}
+:::</p>
+<ul>
+<li>[English]{.caption .d-none .d-lg-inline-block}</li>
+</ul>
+<pre><code>::: {.dropdown-menu .dropdown-menu-right aria-labelledby=&quot;dropdownLanguage&quot;}
+</code></pre>
+<pre><code>[English](https://refactoring.guru/refactoring/techniques/dealing-with-generalization &quot;English&quot;){.dropdown-item
+.locale-link .active locale=&quot;en&quot;}
+[Español](https://refactoring.guru/es/refactoring/techniques/dealing-with-generalization &quot;Español&quot;){.dropdown-item
+.locale-link locale=&quot;es&quot;}
+[Français](https://refactoring.guru/fr/refactoring/techniques/dealing-with-generalization &quot;Français&quot;){.dropdown-item
+.locale-link locale=&quot;fr&quot;}
+[日本語](https://refactoring.guru/ja/refactoring/techniques/dealing-with-generalization &quot;日本語&quot;){.dropdown-item
+.locale-link locale=&quot;ja&quot;}
+[한국어](https://refactoring.guru/ko/refactoring/techniques/dealing-with-generalization &quot;한국어&quot;){.dropdown-item
+.locale-link locale=&quot;ko&quot;}
+[Polski](https://refactoring.guru/pl/refactoring/techniques/dealing-with-generalization &quot;Polski&quot;){.dropdown-item
+.locale-link locale=&quot;pl&quot;} [Português
+Brasileiro](https://refactoring.guru/pt-br/refactoring/techniques/dealing-with-generalization &quot;Português Brasileiro&quot;){.dropdown-item
+.locale-link locale=&quot;pt-br&quot;}
+[Русский](https://refactoring.guru/ru/refactoring/techniques/dealing-with-generalization &quot;Русский&quot;){.dropdown-item
+.locale-link locale=&quot;ru&quot;}
+[Українська](https://refactoring.guru/uk/refactoring/techniques/dealing-with-generalization &quot;Українська&quot;){.dropdown-item
+.locale-link locale=&quot;uk&quot;}
+[中文](https://refactoringguru.cn/refactoring/techniques/dealing-with-generalization &quot;中文&quot;){.dropdown-item
+.locale-link locale=&quot;zh&quot;}
+:::
+</code></pre>
+<ul>
+<li><a href="https://feedback.refactoring.guru/?show_feedback_form_private=true" title="Contact us" class="external alias"> [Contact us]{.caption .d-none
+.d-xl-inline-block}</a>{.userecho-private
+rel=“nofollow”}</li>
+<li><a href="https://refactoring.guru/login" title="Log in" class="external alias"> [Log in]{.caption .d-none
+.d-xl-inline-block}</a></li>
+<li></li>
+</ul>
+<p>:::</p>
+<p>::: {.footer-container .center-content-container}
+::: {.footer-inner .container-fluid}
+::: row
+::: {.col-8 .col-md-10}</p>
+<ul>
+<li><a href="../../../" class="internal alias" data-slug>Home</a></li>
+<li><a href="../../../refactoring" class="internal alias" data-slug="refactoring">Refactoring</a></li>
+<li><a href="../../../design-patterns" class="internal alias" data-slug="design-patterns">Design Patterns</a></li>
+<li><a href="../../../store" class="internal alias" data-slug="store">Premium Content</a></li>
+<li><a href="https://refactoring.userecho.com/" class="external alias">Forum</a>{.userecho-public
+rel=“nofollow”}</li>
+<li><a href="https://refactoring.userecho.com/" class="external alias">Contact us</a>{.userecho-private
+rel=“nofollow”}
+:::</li>
+</ul>
+<p>::: {.col-4 .col-md-2}</p>
+<ul>
+<li><a href="https://www.facebook.com/refactoring.guru" class="external"></a></li>
+<li><a href="../../../sendy/form" class="internal" data-slug="sendy/form"></a>{rel=“nofollow”}</li>
+<li><a href="https://github.com/RefactoringGuru" class="external"></a>
+:::
+:::
+:::
+:::</li>
+</ul>
+<p>::: footer-second
+::: {.footer-container .center-content-container}
+::: {.footer-inner .container-fluid}
+::: row
+::: {.col-12 .col-sm-6}
+2014-2023 <a href="../../../" class="internal alias" data-slug>Refactoring.Guru</a>. [All rights
+reserved.]{style=“white-space: nowrap”}<br/>
+Illustrations by <a href="http://zhart.us/" class="external alias">[Dmitry
+Zhart]{style=“white-space: nowrap”}</a>{rel=“nofollow”}
+:::</p>
+<p>::: {.footer-links-right .col-12 .col-sm-6 .mt-4 .mt-sm-0}</p>
+<ul>
+<li><a href="../../../terms" class="internal alias" data-slug="terms">Terms &amp; Conditions</a></li>
+<li><a href="../../../privacy-policy" class="internal alias" data-slug="privacy-policy">Privacy Policy</a></li>
+<li><a href="../../../content-usage-policy" class="internal alias" data-slug="content-usage-policy">Content Usage Policy</a></li>
+<li><a href="../../../site-about" class="internal alias" data-slug="site-about">About us</a>
+:::
+:::
+:::
+:::
+:::
+:::</li>
+</ul></p></article><p>12 items under this folder.</p><div><ul class="section-ul"><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/replace-inheritance-with-delegation" class="internal">Replace Inheritance with Delegation</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/replace-delegation-with-inheritance" class="internal">Replace Delegation with Inheritance</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/push-down-method" class="internal">Push Down Method</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/push-down-field" class="internal">Push Down Field</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-method" class="internal">Pull Up Method</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-field" class="internal">Pull Up Field</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/pull-up-constructor-body" class="internal">Pull Up Constructor Body</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/form-template-method" class="internal">Form Template Method</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/extract-superclass" class="internal">Extract Superclass</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/extract-subclass" class="internal">Extract Subclass</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/extract-interface" class="internal">Extract Interface</a></h3></div><ul class="tags"></ul></div></li><li class="section-li"><div class="section"><p class="meta">Dec 22, 2023</p><div class="desc"><h3><a href="../../../flower/refactoring/techniques/dealing-with-generalization/collapse-hierarchy" class="internal">Collapse Hierarchy</a></h3></div><ul class="tags"></ul></div></li></ul></div></div></div><div class="right sidebar"></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.1.1</a>, © 2023</p><ul><li><a href="https://github.com/mindulle">GitHub</a></li></ul></footer></div></body><script type="application/javascript">// quartz/components/scripts/quartz/components/scripts/callout.inline.ts
+function toggleCallout() {
+  const outerBlock = this.parentElement;
+  outerBlock.classList.toggle(`is-collapsed`);
+  const collapsed = outerBlock.classList.contains(`is-collapsed`);
+  const height = collapsed ? this.scrollHeight : outerBlock.scrollHeight;
+  outerBlock.style.maxHeight = height + `px`;
+  let current = outerBlock;
+  let parent = outerBlock.parentElement;
+  while (parent) {
+    if (!parent.classList.contains(`callout`)) {
+      return;
+    }
+    const collapsed2 = parent.classList.contains(`is-collapsed`);
+    const height2 = collapsed2 ? parent.scrollHeight : parent.scrollHeight + current.scrollHeight;
+    parent.style.maxHeight = height2 + `px`;
+    current = parent;
+    parent = parent.parentElement;
+  }
+}
+function setupCallout() {
+  const collapsible = document.getElementsByClassName(
+    `callout is-collapsible`
+  );
+  for (const div of collapsible) {
+    const title = div.firstElementChild;
+    if (title) {
+      title.removeEventListener(`click`, toggleCallout);
+      title.addEventListener(`click`, toggleCallout);
+      const collapsed = div.classList.contains(`is-collapsed`);
+      const height = collapsed ? title.scrollHeight : div.scrollHeight;
+      div.style.maxHeight = height + `px`;
+    }
+  }
+}
+document.addEventListener(`nav`, setupCallout);
+window.addEventListener(`resize`, setupCallout);
+</script><script type="module">
+          import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+          const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+          mermaid.initialize({
+            startOnLoad: false,
+            securityLevel: 'loose',
+            theme: darkMode ? 'dark' : 'default'
+          });
+          document.addEventListener('nav', async () => {
+            await mermaid.run({
+              querySelector: '.mermaid'
+            })
+          });
+          </script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">
+          const socket = new WebSocket('ws://localhost:3001')
+          socket.addEventListener('message', () => document.location.reload())
+        </script><script src="../../../../postscript.js" type="module"></script></html>

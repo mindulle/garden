@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Mindulle Garden</title>
+      <link>https://mindulle.github.io/garden</link>
+      <description>Last 10 notes on Mindulle Garden</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Untitled</title>
+    <link>https://mindulle.github.io/garden/tree/Software-Development/Project-Layout/Untitled</link>
+    <guid>https://mindulle.github.io/garden/tree/Software-Development/Project-Layout/Untitled</guid>
+    <description></description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item><item>
+    <title>Untitled</title>
+    <link>https://mindulle.github.io/garden/tree/Software-Development/Architecture/Untitled</link>
+    <guid>https://mindulle.github.io/garden/tree/Software-Development/Architecture/Untitled</guid>
+    <description></description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item><item>
+    <title>Lean Canvas</title>
+    <link>https://mindulle.github.io/garden/tree/Product-Design/Design/Lean-Canvas</link>
+    <guid>https://mindulle.github.io/garden/tree/Product-Design/Design/Lean-Canvas</guid>
+    <description> Lean Canvas § … Lean Canvas helps you define your Unique Value Proposition (UVP), identify your target customers, and outline your strategy. - by UX Design Roadmap from roadmap.</description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item><item>
+    <title>Incremental A, B Testing</title>
+    <link>https://mindulle.github.io/garden/tree/Product-Design/Design/Incremental-A,-B-Testing</link>
+    <guid>https://mindulle.github.io/garden/tree/Product-Design/Design/Incremental-A,-B-Testing</guid>
+    <description>Incremental A/B Testing § Incremental A/B testing is the process of testing small design, content, or functionality changes in your user experience (UX) design to evaluate their impact on your conversion goals.</description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item><item>
+    <title>Deploy Social Proof</title>
+    <link>https://mindulle.github.io/garden/tree/Product-Design/Design/Deploy-Social-Proof</link>
+    <guid>https://mindulle.github.io/garden/tree/Product-Design/Design/Deploy-Social-Proof</guid>
+    <description>Deploy Social Proof § … Social proof is the concept that people tend to conform to the actions, beliefs, and attitudes of those around them, especially when they are unsure of the correct behavior in a given situation.</description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item><item>
+    <title>Cheating</title>
+    <link>https://mindulle.github.io/garden/tree/Product-Design/Design/Cheating</link>
+    <guid>https://mindulle.github.io/garden/tree/Product-Design/Design/Cheating</guid>
+    <description>Cheating § Cheating, in the context of behavior change strategies, refers to creating shortcuts and loopholes within a designed system, in order to overcome any obstacles users may face while achieving their goals.</description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item><item>
+    <title>Call to Action</title>
+    <link>https://mindulle.github.io/garden/tree/Product-Design/Design/Call-to-Action</link>
+    <guid>https://mindulle.github.io/garden/tree/Product-Design/Design/Call-to-Action</guid>
+    <description>Call to Action § A Call to Action (CTA) is a UX pattern that encourages users to take a specific action on a website, app, or other digital product. (…) CTAs can come in various forms, including buttons, links, images, or text.</description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item><item>
+    <title>Business Model Canvas</title>
+    <link>https://mindulle.github.io/garden/tree/Product-Design/Design/Business-Model-Canvas</link>
+    <guid>https://mindulle.github.io/garden/tree/Product-Design/Design/Business-Model-Canvas</guid>
+    <description> Business Model Canvas § The Business Model Canvas is a strategic management and visual representation tool that allows you to describe, design, challenge, and pivot your existing business model.</description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item><item>
+    <title>artifact (software development)</title>
+    <link>https://mindulle.github.io/garden/seed/software-development/artifact-(software-development)</link>
+    <guid>https://mindulle.github.io/garden/seed/software-development/artifact-(software-development)</guid>
+    <description>Artifact § An artifact is one of many kinds of tangible by-products produced during the development of software. - by wikipedia Example Sentence § gitlab document: An artifact is a list of files and directories attached to a job after it finishes.</description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item><item>
+    <title>Generic function</title>
+    <link>https://mindulle.github.io/garden/seed/software-development/Generic-function</link>
+    <guid>https://mindulle.github.io/garden/seed/software-development/Generic-function</guid>
+    <description></description>
+    <pubDate>Fri, 22 Dec 2023 14:49:58 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>

@@ -9,7 +9,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "mindulle.github.io/garden",
+    baseUrl: "garden.mindulle.vercel.app",
     ignorePatterns: ["private", "templates", "_templates", ".obsidian"],
     defaultDateType: "created",
     theme: {

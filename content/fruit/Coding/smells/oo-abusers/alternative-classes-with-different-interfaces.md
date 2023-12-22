@@ -15,12 +15,12 @@ The programmer who created one of the classes probably didn't know that a functi
 ### Treatment
 Try to put the interface of classes in terms of a common denominator:
 - [Rename Method](/rename-method)s to make them identical in all alternative classes.
-- [Move Method](/move-method), [Add Parameter](/add-parameter) and[Parameterize Method](/parameterize-method) to make the signature and implementation of methods the same.
+- [Move Method](/move-method), [Add Parameter](/add-parameter) and [Parameterize Method](/parameterize-method) to make the signature and implementation of methods the same.
 - If only part of the functionality of the classes is duplicated, try using [Extract Superclass](/extract-superclass). In this case, the existing classes will become subclasses.- After you have determined which treatment method to use and implemented it, you may be able to delete one of the classes.
 ### Payoff
 - You get rid of unnecessary duplicated code, making the resulting code less bulky.
 - Code becomes more readable and understandable (you no longer have to guess the reason for creation of a second class performing the exact same functions as the first one).
-    
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/refactoring/content/smells/alternative-classes-with-different-interfaces-02.png?id=669874e082965799a70076a120288c6a"

@@ -1,1 +1,0 @@
-To introduce the gist method, explain that summarizing is just like giving a friend the gist of a story.

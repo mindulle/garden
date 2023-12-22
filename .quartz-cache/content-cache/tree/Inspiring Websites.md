@@ -1,6 +1,0 @@
-## Geeks
-
-## Artistic
-
-## Typographic
-

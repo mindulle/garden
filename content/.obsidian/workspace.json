@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a569ba7efddecb5c",
+        "id": "c6cdab17179f5f10",
         "type": "tabs",
         "children": [
           {
-            "id": "fe420a65ef0ddbf4",
+            "id": "57afc95c8116227a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tree/Product/Features/[backup]Data Visualization.md",
+                "file": "fruit/Coding/Patterns/rendering/react/streaming-ssr.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "``` path:fruit/Coding/Testing/go  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 299.5
   },
   "right": {
     "id": "9871f8f698df97de",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tree/Product/Features/[backup]Data Visualization.md",
+                "file": "fruit/Coding/Patterns/rendering/react/streaming-ssr.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tree/Product/Features/[backup]Data Visualization.md",
+                "file": "fruit/Coding/Patterns/rendering/react/streaming-ssr.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tree/Product/Features/[backup]Data Visualization.md"
+                "file": "fruit/Coding/Patterns/rendering/react/streaming-ssr.md"
               }
             }
           },
@@ -142,14 +142,6 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "d47b6c4450bcec2a",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
               "state": {}
             }
           },
@@ -168,9 +160,17 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "e001a5b2014d1e57",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -184,64 +184,64 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-day-planner:Week plan": false,
       "templater-obsidian:Templater": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-day-planner:Week plan": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-raindrop-highlights:Sync your Raindrop highlights": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
       "periodic-notes:Open today": false
     }
   },
-  "active": "fe420a65ef0ddbf4",
+  "active": "57afc95c8116227a",
   "lastOpenFiles": [
-    "tree/Product/Features/[backup]Render React Component.md",
-    "tree/Product/Technical Stacks/Untitled.md",
-    "tree/My Favorite Inspiration Websites.md",
-    "tree/Product/Project Layout/Untitled.md",
-    "tree/Product/Features/Render React Component.md",
-    "tree/Product/Features/Data Visualization.md",
-    "fruit/Refactoring/techniques/composing-methods.md",
-    "fruit/Refactoring/what-is-refactoring/how-to.md",
-    "fruit/Refactoring/what-is-refactoring/Clean code.md",
-    "fruit/Refactoring/Cheat Sheet.md",
-    "fruit/Refactoring/refactoring-cheat-sheet.pdf",
-    "fruit/Patterns/code design/Untitled.md",
-    "tree/Product/Architecture/Untitled.md",
-    "fruit/Testing/go/build_an_application/http-server.md",
-    "fruit/Testing/go/build_an_application/io.md",
-    "fruit/Testing/go/build_an_application/command-line.md",
-    "fruit/Testing/javascript/1 The Test Anatomy/1-6 Dont foo use realistic input data.md",
-    "fruit/Testing/javascript/1 The Test Anatomy/1-5 Choose the right test doubles Avoid mocks in favor of stubs and spies.md",
-    "fruit/Testing/javascript/1 The Test Anatomy/1-3 Describe expectations in a product language use BDD-style assertions.md",
-    "fruit/Testing/javascript/1 The Test Anatomy/1-2 Structure tests by the AAA pattern.md",
-    "fruit/Testing/javascript/0 The Golden Rule/0 Design for lean testing.md",
-    "fruit/fruit.md",
-    "fruit - 복사본/refactoring/smells/other/incomplete-library-class.md",
-    "fruit - 복사본/refactoring/smells/oo-abusers/temporary-field.md",
-    "fruit - 복사본/refactoring/smells/oo-abusers/switch-statements.md",
-    "fruit - 복사본/refactoring/smells/oo-abusers/refused-bequest.md",
-    "fruit - 복사본/refactoring/smells/oo-abusers/alternative-classes-with-different-interfaces.md",
-    "fruit - 복사본/refactoring/smells/other",
-    "fruit - 복사본/refactoring/smells/oo-abusers",
-    "fruit - 복사본/refactoring/smells/dispensables",
-    "fruit - 복사본/refactoring/smells/couplers",
-    "fruit - 복사본/refactoring/smells/change-preventers",
-    "fruit - 복사본/refactoring/smells/bloaters",
-    "fruit - 복사본/refactoring/techniques/composing-methods",
-    "fruit - 복사본/refactoring/smells",
-    "fruit - 복사본/refactoring/techniques",
+    "fruit/Coding/Patterns/rendering/react/client-side-rendering.md",
+    "fruit/Coding/Patterns/rendering/react/incremental-static-rendering.md",
+    "fruit/Coding/Patterns/rendering/react/progressive-hydration.md",
+    "fruit/Coding/Patterns/rendering/react/react-selective-hydration.md",
+    "fruit/Coding/Patterns/rendering/react/react-server-components.md",
+    "fruit/Coding/Patterns/rendering/react/server-side-rendering.md",
+    "fruit/Coding/Patterns/rendering/react/static-rendering.md",
+    "fruit/Coding/Patterns/rendering/react/streaming-ssr.md",
+    "fruit/Coding/Patterns/Design Patterns/react/render-props-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/react/presentational-container-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/react/hooks-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/react/hoc-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/react/compound-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/command-pattern.md",
+    "fruit/Coding/Patterns/rendering/vanilla/islands-architecture.md",
+    "fruit/Coding/Patterns/Design Patterns/react",
+    "fruit/Coding/Patterns/rendering/react",
+    "fruit/Coding/Patterns/rendering/vanilla",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/mediator-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/flyweight-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/mixin-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/module-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/observer-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/prototype-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/provider-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/proxy-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/singleton-pattern.md",
+    "fruit/Coding/Patterns/Design Patterns/vanilla/static-import.md",
+    "fruit/Coding/Patterns/performance/virtual-lists.md",
+    "img/compression",
+    "img",
+    "seed/Web/Design",
+    "seed/Web/Development",
+    "seed/Web",
+    "fruit/Coding/Patterns/Design Patterns/vanilla",
+    "fruit/Coding/Patterns/Design Patterns/design",
+    "fruit/Coding/Testing/javascript/assets/bp-12-rich-testing.jpeg",
+    "fruit/Coding/Testing/javascript/assets/bp-1-3-parts.jpeg",
+    "fruit/Coding/Testing/javascript/assets/amazon-visual-regression.jpeg",
+    "attachment/Deploy Social Proof 2023-12-17 14.22.44.excalidraw.light.svg",
     "fruit/testing/javascript/assets/zh-CN/headspace.png",
     "fruit/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
     "fruit/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",
     "fruit/testing/javascript/assets/zh-CN/bp-13-component-test-yoni-goldberg.png",
     "fruit/testing/javascript/assets/zh-CN/bp-12-rich-testing.jpg",
     "fruit/testing/javascript/assets/zh-CN/bp-1-3-parts.jpg",
-    "fruit/testing/javascript/assets/yoni-goldberg.jpg",
-    "fruit/testing/javascript/assets/uml.png",
-    "fruit/testing/javascript/assets/twitter.png",
-    "fruit/testing/javascript/assets/tbp.png",
     "_OKR/2023/Q4/Q4 2023.canvas",
     "_OKR/2023/2023.canvas",
     "Templates/canvas for indices.canvas"

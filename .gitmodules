@@ -1,0 +1,6 @@
+[submodule "content/core/background-knowledge"]
+	path = content/core/background-knowledge
+	url = https://github.com/mindulle/background-knowledge.git
+[submodule "content/core/workflow"]
+	path = content/core/workflow
+	url = https://github.com/mindulle/workflow.git

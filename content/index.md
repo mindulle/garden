@@ -4,12 +4,13 @@ title: Mindulle Garden🌱
 This page shows how I organize my digital garden and summarizes them as a table.
 
 ## on this website
-| folder      | content                                                                  |
-| ----------- | ------------------------------------------------------------------------ |
-| seed        | terms, vocabularies, programming paradigm                                |
-| tree        | practical knowledges but not to be available on development immediately. |
-| flower      | knowledges for collaborative works.                                      |
-| fruit       | practical knowledges which are able to adapt realworld workflow immediately.                                                                         |
+| folder | content                                                                                |
+| ------ | -------------------------------------------------------------------------------------- |
+| core   | qurated lists with summarization from this website. It is consumed by my cli commands. |
+| seed   | terms, vocabularies, programming paradigm                                              |
+| tree   | foundation knowledges                                                                  |
+| flower | knowledges for collaboration.                                                          |
+| fruit  | practical knowledges which are able to adapt realworld workflow immediately.           |
 
 ## on my other repository
 ### mindulle

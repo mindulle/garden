@@ -5,8 +5,11 @@
     "flashcardHardText": "Hard",
     "flashcardTags": [
       "#flashcards",
-      "#dictionary",
-      "#glossary"
+      "#repetition",
+      "#drawing",
+      "#self-explain",
+      "#notice",
+      "#understand"
     ],
     "convertFoldersToDecks": false,
     "cardCommentOnSameLine": false,
@@ -16,7 +19,7 @@
     "flashcardWidthPercentage": 40,
     "randomizeCardOrder": true,
     "convertHighlightsToClozes": true,
-    "convertBoldTextToClozes": false,
+    "convertBoldTextToClozes": true,
     "convertCurlyBracketsToClozes": false,
     "singleLineCardSeparator": "::",
     "singleLineReversedCardSeparator": ":::",
@@ -40,7 +43,7 @@
     "maxLinkFactor": 1,
     "showDebugMessages": false
   },
-  "buryDate": "2023-03-14",
+  "buryDate": "2023-12-21",
   "buryList": [],
   "historyDeck": null
 }

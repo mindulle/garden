@@ -1,5 +1,7 @@
 ---
 type: vocabulary
+tags:
+  - repetition
 ---
 ## Seeding (computing)
 >In computing, and specifically peer-to-peer file sharing, **seeding** is the uploading of already downloaded content for others to download from.

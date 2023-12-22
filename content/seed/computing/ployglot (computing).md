@@ -1,5 +1,7 @@
 ---
 type: vocabulary
+tags:
+  - repetition
 ---
 ## Polyglot
 > In computing, a **polyglot** is a computer program or script (or other file) written in a valid form of *multiple programming languages* or *file formats*.

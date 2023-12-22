@@ -6,10 +6,10 @@ This page shows how I organize my digital garden and summarizes them as a table.
 ## on this website
 | folder      | content                                                                  |
 | ----------- | ------------------------------------------------------------------------ |
-| seed        | terms, vocabularies, programming paradigm                                |
-| tree        | practical knowledges but not to be available on development immediately. |
-| flower      | knowledges for collaborative works.                                      |
-| fruit       | practical knowledges which are able to adapt realworld workflow immediately.                                                                         |
+| [[seed/index\|seed]]        | terms, vocabularies, programming paradigm                                |
+| [[tree/index\|tree]]        | practical knowledges but not to be available on development immediately. |
+| [[flower/index\|flower]]      | knowledges for collaborative works.                                      |
+| [[fruit/index\|fruit]]       | practical knowledges which are able to adapt realworld workflow immediately.                                                                         |
 
 ## on my other repository
 ### mindulle

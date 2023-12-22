@@ -1,0 +1,35 @@
+# The Catalog of Design Patterns
+
+### [[fruit/Coding/Patterns/Design Patterns/catalog/creational-patterns|Creational Patterns]]
+
+These patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+
+|                                                                                    Patterns                                                                                     |                                                                                       Patterns                                                                                        |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| *[[fruit/Coding/Patterns/Design Patterns/catalog/creational/factory-method\|Factory Method]]*<br/>![50](https://refactoring.guru/images/patterns/cards/factory-method-mini.png) | *[[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory\|Abstract Factory]]*<br/>![50](https://refactoring.guru/images/patterns/cards/abstract-factory-mini.png) |
+|           *[[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder\|Builder]]*<br/>![50](https://refactoring.guru/images/patterns/cards/builder-mini.png)            |                                               *[[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype\|Prototype]]*<br/>![50](https://refactoring.guru/images/patterns/cards/prototype-mini.png)                                                |
+|                                            *[[fruit/Coding/Patterns/Design Patterns/catalog/creational/singleton\|Singleton]]*<br/>![50](https://refactoring.guru/images/patterns/cards/singleton-mini.png)                                             |                                                                                                                                                                                       |
+
+### [[fruit/Coding/Patterns/Design Patterns/catalog/structural-patterns|Structural Patterns]]
+
+These patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
+
+
+|                                                                          Patterns                                                                           |                                                                             Patterns                                                                             |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| *[[fruit/Coding/Patterns/Design Patterns/catalog/structural/adapter\|Adapter]]*<br/>![50](https://refactoring.guru/images/patterns/cards/adapter-mini.png)  |     *[[fruit/Coding/Patterns/Design Patterns/catalog/structural/bridge\|Bridge]]*<br/>![50](https://refactoring.guru/images/patterns/cards/bridge-mini.png)      |
+| *[[fruit/Coding/Patterns/Design Patterns/catalog/structural/composite\|Composite]]*<br/>![50](https://refactoring.guru/images/patterns/cards/composite-mini.png) | *[[fruit/Coding/Patterns/Design Patterns/catalog/structural/decorator\|Decorator]]*<br/>![50](https://refactoring.guru/images/patterns/cards/decorator-mini.png) |
+|   *[[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade\|Facade]]*<br/>![50](https://refactoring.guru/images/patterns/cards/facade-mini.png)   | *[[fruit/Coding/Patterns/Design Patterns/catalog/structural/flyweight\|Flyweight]]*<br/>![50](https://refactoring.guru/images/patterns/cards/flyweight-mini.png) |
+|    *[[fruit/Coding/Patterns/Design Patterns/catalog/structural/proxy\|Proxy]]*<br/>![50](https://refactoring.guru/images/patterns/cards/proxy-mini.png)     |                                      |
+
+### [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral-patterns|Behavioral Patterns]]
+
+These patterns are concerned with algorithms and the assignment of responsibilities between objects.
+
+|                                                                                                  Patterns                                                                                                  |                                                                            Patterns                                                                             |
+|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility\|Chain Of Responsibility]]*<br/>![50](https://refactoring.guru/images/patterns/cards/chain-of-responsibility-mini.png) |   *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command\|Command]]*<br/>![50](https://refactoring.guru/images/patterns/cards/command-mini.png)    |
+|                       *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/iterator\|Iterator]]*<br/>![50](https://refactoring.guru/images/patterns/cards/iterator-mini.png)                        | *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator\|Mediator]]* <br/> ![50](https://refactoring.guru/images/patterns/cards/mediator-mini.png) |
+|                         *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/memento\|Memento]]*<br/>![50](https://refactoring.guru/images/patterns/cards/memento-mini.png)                         | *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/observer\|Observer]]* <br/>![50](https://refactoring.guru/images/patterns/cards/observer-mini.png)  |
+|                            *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/state\|State]]*<br/>![50](https://refactoring.guru/images/patterns/cards/state-mini.png)                            |  *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/strategy\|Strategy]]*<br/>![50](https://refactoring.guru/images/patterns/cards/strategy-mini.png)  |
+|             *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/template-method\|Template Method]]*<br/>![50](https://refactoring.guru/images/patterns/cards/template-method-mini.png)             |                                      *[[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/visitor\|Visitor]]*<br/>![50](https://refactoring.guru/images/patterns/cards/visitor-mini.png)                                       | 

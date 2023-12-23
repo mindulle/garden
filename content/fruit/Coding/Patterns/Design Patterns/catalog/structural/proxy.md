@@ -1,4 +1,5 @@
 # Proxy
+
 ## Intent
 
 **Proxy** is a structural design pattern that lets you provide a
@@ -10,7 +11,8 @@ src="https://refactoring.guru/images/patterns/content/proxy/proxy.png?id=efece46
 srcset="https://refactoring.guru/images/patterns/content/proxy/proxy-2x.png?id=fb3d14e21c210a758d4777f4d93dce09 2x"
 width="640" alt="Proxy design pattern" />
 </figure>
-##  Problem
+
+## Problem
 
 Why would you want to control access to an object? Here is an example: you have a massive object that consumes a vast amount of system resources. You need it from time to time, but not always.
 
@@ -26,7 +28,7 @@ You could implement lazy initialization: create this object only when it's actua
 
 In an ideal world, we'd want to put this code directly into our object's class, but that isn't always possible. For instance, the class may be part of a closed 3rd-party library.
 
-##  Solution
+## Solution
 
 The Proxy pattern suggests that you create a new proxy class with the same interface as an original service object. Then you update your app so that it passes the proxy object to all of the original object's clients. Upon receiving a request from a client, the proxy creates a real service object and delegates all the work to it.
 
@@ -42,7 +44,7 @@ real database object even knowing.</p></figcaption>
 
 But what's the benefit? If you need to execute something either before or after the primary logic of the class, the proxy lets you do this without changing that class. Since the proxy implements the same interface as the original class, it can be passed to any client that expects a real service object.
 
-##  Real-World Analogy
+## Real-World Analogy
 
 <figure class="image">
 <img
@@ -57,7 +59,7 @@ as cash.</p></figcaption>
 A credit card is a proxy for a bank account, which is a proxy for a
 bundle of cash. Both implement the same interface: they can be used for making a payment. A consumer feels great because there's no need to carry loads of cash around. A shop owner is also happy since the income from a transaction gets added electronically to the shop's bank account without the risk of losing the deposit or getting robbed on the way to the bank.
 
-##  Structure
+## Structure
 
 <figure class="image">
 <img
@@ -72,7 +74,7 @@ srcset="https://refactoring.guru/images/patterns/diagrams/proxy/structure-indexe
 loading="lazy" width="410"
 alt="Structure of the Proxy design pattern" />
 </figure>
-1.  The **Service Interface** declares the interface of the Service. The proxy must follow this interface to be able to disguise itself as a service object.
+1. The **Service Interface** declares the interface of the Service. The proxy must follow this interface to be able to disguise itself as a service object.
 
 2. The **Service** is a class that provides some useful business logic.
 
@@ -80,7 +82,7 @@ alt="Structure of the Proxy design pattern" />
 
     Usually, proxies manage the full lifecycle of their service objects.
 
-4.  The **Client** should work with both services and proxies via the
+4. The **Client** should work with both services and proxies via the
     same interface. This way you can pass a proxy into any code that expects a service object.
 
 ## Pseudocode
@@ -186,7 +188,8 @@ class Application is
         manager.reactOnUserInput()
 ```
 
-##  Applicability
+## Applicability
+
 There are dozens of ways to utilize the Proxy pattern. Let's go over the most popular uses.
 
 Lazy initialization (virtual proxy). This is when you have a heavyweight service object that wastes system resources by being always up, even though you only need it from time to time.
@@ -218,30 +221,32 @@ The proxy can keep track of clients that obtained a reference to the service obj
 
 The proxy can also track whether the client had modified the service object. Then the unchanged objects may be reused by other clients.
 
-##  How to Implement
-1.  If there's no pre-existing service interface, create one to make proxy and service objects interchangeable. Extracting the interface from the service class isn't always possible, because you'd need to change all of the service's clients to use that interface. Plan B is to make the proxy a subclass of the service class, and this way it'll inherit the interface of the service.
+## How to Implement
 
-2.  Create the proxy class. It should have a field for storing a reference to the service. Usually, proxies create and manage the whole life cycle of their services. On rare occasions, a service is passed to the proxy via a constructor by the client.
+1. If there's no pre-existing service interface, create one to make proxy and service objects interchangeable. Extracting the interface from the service class isn't always possible, because you'd need to change all of the service's clients to use that interface. Plan B is to make the proxy a subclass of the service class, and this way it'll inherit the interface of the service.
 
-3.  Implement the proxy methods according to their purposes. In most cases, after doing some work, the proxy should delegate the work to the service object.
+2. Create the proxy class. It should have a field for storing a reference to the service. Usually, proxies create and manage the whole life cycle of their services. On rare occasions, a service is passed to the proxy via a constructor by the client.
+
+3. Implement the proxy methods according to their purposes. In most cases, after doing some work, the proxy should delegate the work to the service object.
 
 4. Consider introducing a creation method that decides whether the client gets a proxy or a real service. This can be a simple static method in the proxy class or a full-blown factory method.
 
-5.  Consider implementing lazy initialization for the service object.
+5. Consider implementing lazy initialization for the service object.
 
-##  Pros and Cons
+## Pros and Cons
+
 ### Pros
+
 - You can control the service object without clients knowing about it.
 - You can manage the lifecycle of the service object when clients don't care about it.
 - The proxy works even if the service object isn't ready or is not available.
 - *Open/Closed Principle*. You can introduce new proxies without changing the service or clients.
 
-
-
 - The code may become more complicated since you need to introduce a lot of new classes.
 - The response from the service might get delayed.
 
 ## Relations with Other Patterns
+
 - With [[fruit/Coding/Patterns/Design Patterns/catalog/structural/adapter|Adapter]] you access an existing object via different interface. With [[fruit/Coding/Patterns/Design Patterns/catalog/structural/proxy|Proxy]], the interface stays the same. With [[fruit/Coding/Patterns/Design Patterns/catalog/structural/decorator|Decorator]] you access the object via an enhanced interface.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]] is similar to [[fruit/Coding/Patterns/Design Patterns/catalog/structural/proxy|Proxy]] in that both buffer a complex entity and initialize it on its own. Unlike *Facade*, *Proxy* has the same interface as its service object, which makes them interchangeable.

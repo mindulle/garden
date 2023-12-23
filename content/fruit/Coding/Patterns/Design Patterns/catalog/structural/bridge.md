@@ -1,5 +1,7 @@
 # Bridge
-##  Intent
+
+## Intent
+
 **Bridge** is a structural design pattern that lets you split a large
 class or a set of closely related classes into two separate
 hierarchies---abstraction and implementation---which can be developed independently of each other.
@@ -10,7 +12,8 @@ src="https://refactoring.guru/images/patterns/content/bridge/bridge.png?id=bd543
 srcset="https://refactoring.guru/images/patterns/content/bridge/bridge-2x.png?id=1e905ae5742e5cd10a7eb0e3175ef00d 2x"
 width="640" alt="Bridge design pattern" />
 </figure>
-##  Problem
+
+## Problem
 
 *Abstraction?* *Implementation?* Sound scary? Stay calm and let's
 consider a simple example.
@@ -32,7 +35,7 @@ Adding new shape types and colors to the hierarchy will grow it
 exponentially. For example, to add a triangle shape you'd need to
 introduce two subclasses, one for each color. And after that, adding a new color would require creating three subclasses, one for each shape type. The further we go, the worse it becomes.
 
-##  Solution
+## Solution
 
 This problem occurs because we're trying to extend the shape classes in two independent dimensions: by form and by color. That's a very common issue with class inheritance.
 
@@ -87,8 +90,8 @@ You can bring order to this chaos by extracting the code related to specific int
 
 Let's try to solve this issue with the Bridge pattern. It suggests that we divide the classes into two hierarchies:
 
--   Abstraction: the GUI layer of the app.
--   Implementation: the operating systems' APIs.
+- Abstraction: the GUI layer of the app.
+- Implementation: the operating systems' APIs.
 
 <figure class="image">
 <img
@@ -104,7 +107,8 @@ The abstraction object controls the appearance of the app, delegating the actual
 As a result, you can change the GUI classes without touching the
 API-related classes. Moreover, adding support for another operating system only requires creating a subclass in the implementation hierarchy.
 
-##  Structure
+## Structure
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/bridge/structure-en.png?id=827afa4b40008dc29d26fe0f4d41b9cc"
@@ -122,7 +126,7 @@ loading="lazy" width="560" alt="Bridge design pattern" />
 
     The abstraction may list the same methods as the implementation, but usually the abstraction declares some complex behaviors that rely on a wide variety of primitive operations declared by the implementation.
 
-3.  **Concrete Implementations** contain platform-specific code.
+3. **Concrete Implementations** contain platform-specific code.
 
 4. **Refined Abstractions** provide variants of control logic. Like
     their parent, they work with different implementations via the
@@ -216,7 +220,7 @@ radio = new Radio()
 remote = new AdvancedRemoteControl(radio)
 ```
 
-##  Applicability
+## Applicability
 
 Use the Bridge pattern when you want to divide and organize a monolithic class that has several variants of some functionality (for example, if the class can work with various database servers).
 
@@ -237,34 +241,38 @@ implementation object inside the abstraction. It's as easy as assigning a new va
 
 By the way, this last item is the main reason why so many people confuse the Bridge with the [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/strategy|Strategy]] pattern. Remember that a pattern is more than just a certain way to structure your classes. It may also communicate intent and a problem being addressed.
 
-##  How to Implement
+## How to Implement
 
-1.  Identify the orthogonal dimensions in your classes. These
+1. Identify the orthogonal dimensions in your classes. These
     independent concepts could be: abstraction/platform, domain/infrastructure, front-end/back-end, or interface/implementation.
 
-2.  See what operations the client needs and define them in the base abstraction class.
+2. See what operations the client needs and define them in the base abstraction class.
 
-3.  Determine the operations available on all platforms. Declare the ones that the abstraction needs in the general implementation interface.
+3. Determine the operations available on all platforms. Declare the ones that the abstraction needs in the general implementation interface.
 
-4.  For all platforms in your domain create concrete implementation classes, but make sure they all follow the implementation interface.
+4. For all platforms in your domain create concrete implementation classes, but make sure they all follow the implementation interface.
 
 5. Inside the abstraction class, add a reference field for the implementation type. The abstraction delegates most of the work to the implementation object that's referenced in that field.
 
-6.  If you have several variants of high-level logic, create refined abstractions for each variant by extending the base abstraction class.
+6. If you have several variants of high-level logic, create refined abstractions for each variant by extending the base abstraction class.
 
 7. The client code should pass an implementation object to the abstraction's constructor to associate one with the other. After that, the client can forget about the implementation and work only with the abstraction object.
 
 ## Pros and Cons
+
 ### Pros
+
 - You can create platform-independent classes and apps.
 - The client code works with high-level abstractions. It isn't exposed to the platform details.
 - *Open/Closed Principle*. You can introduce new abstractions and implementations independently from each other.
 - *Single Responsibility Principle*. You can focus on high-level logic in the abstraction and on platform details in the implementation.
 
 ### Cons
+
 - You might make the code more complicated by applying the pattern to a highly cohesive class.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
+
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/bridge|Bridge]] is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, [[fruit/Coding/Patterns/Design Patterns/catalog/structural/adapter|Adapter]] is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/bridge|Bridge]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/state|State]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/strategy|Strategy]] (and to some degree [Adapter](/design-patterns/adapter)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn't just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
 

@@ -1,5 +1,6 @@
 # Abstract Factory
-##  Intent
+
+## Intent
 
 **Abstract Factory** is a creational design pattern that lets you
 produce families of related objects without specifying their
@@ -11,16 +12,18 @@ src="https://refactoring.guru/images/patterns/content/abstract-factory/abstract-
 srcset="https://refactoring.guru/images/patterns/content/abstract-factory/abstract-factory-en-2x.png?id=a488ca862db731876fa0513bb2105640 2x"
 width="640" alt="Abstract Factory pattern" />
 </figure>
-##  Problem
+
+## Problem
 
 Imagine that you're creating a furniture shop simulator. Your code
 consists of classes that represent:
 
-1.  A family of related products, say: `Chair` + `Sofa` + `CoffeeTable`.
+1. A family of related products, say: `Chair` + `Sofa` + `CoffeeTable`.
 
-2.  Several variants of this family. For example, products `Chair` +
+2. Several variants of this family. For example, products `Chair` +
     `Sofa` + `CoffeeTable` are available in these variants: `Modern`,
     `Victorian`, `ArtDeco`.
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/abstract-factory/problem-en.png?id=e38c307511e684828be898de02d6c268"
@@ -87,7 +90,8 @@ There's one more thing left to clarify: if the client is only exposed to the abs
 Usually, the application creates a concrete factory object at the
 initialization stage. Just before that, the app must select the factory type depending on the configuration or the environment settings.
 
-##  Structure
+## Structure
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure.png?id=a3112cdd98765406af94595a3c5e7762"
@@ -105,7 +109,7 @@ loading="lazy" width="700" alt="Abstract Factory design pattern" />
 
 3. The **Abstract Factory** interface declares a set of methods for creating each of the abstract products.
 
-4.  **Concrete Factories** implement creation methods of the abstract factory. Each concrete factory corresponds to a specific variant of products and creates only those product variants.
+4. **Concrete Factories** implement creation methods of the abstract factory. Each concrete factory corresponds to a specific variant of products and creates only those product variants.
 
 5. Although concrete factories instantiate concrete products, signatures of their creation methods must return orresponding *abstract* products. This way the client code that uses a factory doesn't get coupled to the specific variant of the product it gets from a factory. The **Client** can work with any concrete factory/product variant, as long as it communicates with their objects via abstract interfaces.
 
@@ -228,7 +232,8 @@ class ApplicationConfigurator is
         Application app = new Application(factory)
 ```
 
-##  Applicability
+## Applicability
+
 Use the Abstract Factory when your code needs to work with various families of related products, but you don't want it to depend on the concrete classes of those products---they might be unknown beforehand or you simply want to allow for future extensibility.
 
 The Abstract Factory provides you with an interface for creating objects from each class of the product family. As long as your code creates objects via this interface, you don't have to worry about creating the wrong variant of a product which doesn't match the products already created by your app.
@@ -238,32 +243,36 @@ Consider implementing the Abstract Factory when you have a class with a set of [
 In a well-designed program *each class is responsible only for one
 thing*. When a class deals with multiple product types, it may be worth extracting its factory methods into a stand-alone factory class or a full-blown Abstract Factory implementation.
 
-##  How to Implement
+## How to Implement
 
-1.  Map out a matrix of distinct product types versus variants of these products.
+1. Map out a matrix of distinct product types versus variants of these products.
 
-2.  Declare abstract product interfaces for all product types. Then make all concrete product classes implement these interfaces.
+2. Declare abstract product interfaces for all product types. Then make all concrete product classes implement these interfaces.
 
-3.  Declare the abstract factory interface with a set of creation
+3. Declare the abstract factory interface with a set of creation
     methods for all abstract products.
 
-4.  Implement a set of concrete factory classes, one for each product variant.
+4. Implement a set of concrete factory classes, one for each product variant.
 
-5.  Create factory initialization code somewhere in the app. It should instantiate one of the concrete factory classes, depending on the application configuration or the current environment. Pass this factory object to all classes that construct products.
+5. Create factory initialization code somewhere in the app. It should instantiate one of the concrete factory classes, depending on the application configuration or the current environment. Pass this factory object to all classes that construct products.
 
-6.  Scan through the code and find all direct calls to product
+6. Scan through the code and find all direct calls to product
     constructors. Replace them with calls to the appropriate creation method on the factory object.
 
 ## Pros and Cons
+
 ### Pros
+
 - You can be sure that the products you're getting from a factory are compatible with each other.
 - You avoid tight coupling between concrete products and client code. *Single Responsibility Principle*. You can extract the product creation code into one place, making the code easier to support.
 - *Open/Closed Principle*. You can introduce new variants of products without breaking existing client code.
 
 ### Cons
+
 - The code may become more complicated than it should be, since a lot of new interfaces and classes are introduced along with the pattern.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
+
 - Many designs start by using [[fruit/Coding/Patterns/Design Patterns/catalog/creational/factory-method|Factory Method]] (less complicated and more customizable via subclasses) and evolve toward [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]], [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]], or [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builder]] (more flexible, but more complicated).
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builder]] focuses on constructing complex objects step by step. [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]] specializes in creating families of related objects. *Abstract Factory* returns the product immediately, whereas *Builder* lets you run some additional construction steps before fetching the product.
@@ -275,4 +284,3 @@ thing*. When a class deals with multiple product types, it may be worth extracti
 - You can use [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]]  along with [[fruit/Coding/Patterns/Design Patterns/catalog/structural/bridge|Bridge]]. This pairing is useful when some abstractions defined by *Bridge* can only work with specific implementations. In this case, *Abstract Factory* can encapsulate these relations and hide the complexity from the client code.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factories]], [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builders]] and [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototypes]] can all be implemented as [[fruit/Coding/Patterns/Design Patterns/catalog/creational/singleton|Singletons]].
-

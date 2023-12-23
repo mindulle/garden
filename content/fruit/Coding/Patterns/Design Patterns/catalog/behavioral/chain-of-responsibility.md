@@ -1,7 +1,8 @@
 # Chain of Responsibility
+
 **Also known as**: CoR, Chain of command
 
-##  Intent
+## Intent
 
 **Chain of Responsibility** is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
@@ -11,8 +12,6 @@ src="https://refactoring.guru/images/patterns/content/chain-of-responsibility/ch
 srcset="https://refactoring.guru/images/patterns/content/chain-of-responsibility/chain-of-responsibility-2x.png?id=cc104b0a00a410f37fb39da80f392b88 2x"
 width="640" alt="Chain of Responsibility design pattern" />
 </figure>
-
-
 
 ## Problem
 
@@ -53,7 +52,7 @@ The code of the checks, which had already looked like a mess, became more and mo
 
 The system became very hard to comprehend and expensive to maintain. You struggled with the code for a while, until one day you decided to refactor the whole thing.
 
-##  Solution
+## Solution
 
 Like many other behavioral design patterns, the **Chain of
 Responsibility** relies on transforming particular behaviors into
@@ -61,8 +60,7 @@ stand-alone objects called *handlers*. In our case, each check should be extract
 
 The pattern suggests that you link these handlers into a chain. Each linked handler has a field for storing a reference to the next handler in the chain. In addition to processing a request, handlers pass the request further along the chain. The request travels along the chain until all handlers have had a chance to process it.
 
-Here's the best part: a handler can decide not to pass the request
-further down the chain and effectively stop any further processing.
+Here's the best part: a handler can decide not to pass the request further down the chain and effectively stop any further processing.
 
 In our example with ordering systems, a handler performs the processing and then decides whether to pass the request further down the chain. Assuming the request contains the right data, all the handlers can execute their primary behavior, whether it's authentication checks or caching.
 
@@ -93,8 +91,7 @@ object tree.</p></figcaption>
 
 It's crucial that all handler classes implement the same interface. Each concrete handler should only care about the following one having the `execute` method. This way you can compose chains at runtime, using various handlers without coupling your code to their concrete classes.
 
-
-##  Real-World Analogy
+## Real-World Analogy
 
 <figure class="image">
 <img
@@ -106,8 +103,7 @@ alt="Talking with tech support can be hard" />
 multiple operators.</p></figcaption>
 </figure>
 
-You've just bought and installed a new piece of hardware on your
-computer. Since you're a geek, the computer has several operating systems installed. You try to boot all of them to see whether the hardware is supported. Windows detects and enables the hardware automatically. However, your beloved Linux refuses to work with the new hardware. With a small flicker of hope, you decide to call the tech-support phone number written on the box.
+You've just bought and installed a new piece of hardware on your computer. Since you're a geek, the computer has several operating systems installed. You try to boot all of them to see whether the hardware is supported. Windows detects and enables the hardware automatically. However, your beloved Linux refuses to work with the new hardware. With a small flicker of hope, you decide to call the tech-support phone number written on the box.
 
 The first thing you hear is the robotic voice of the autoresponder. It suggests nine popular solutions to various problems, none of which are relevant to your case. After a while, the robot connects you to a live operator.
 
@@ -115,9 +111,7 @@ Alas, the operator isn't able to suggest anything specific either. He keeps quot
 
 Eventually, the operator passes your call to one of the engineers, who had probably longed for a live human chat for hours as he sat in his lonely server room in the dark basement of some office building. The engineer tells you where to download proper drivers for your new hardware and how to install them on Linux. Finally, the solution! You end the call, bursting with joy.
 
-
-
-##  Structure
+## Structure
 
 <figure class="image">
 <img
@@ -133,25 +127,22 @@ loading="lazy" width="380"
 alt="Structure of the Chain Of Responsibility design pattern" />
 </figure>
 
-
-1.  The **Handler** declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
+1. The **Handler** declares the interface, common for all concrete handlers. It usually contains just a single method for handling requests, but sometimes it may also have another method for setting the next handler on the chain.
 
 2. The **Base Handler** is an optional class where you can put the boilerplate code that's common to all handler classes.
-   
+
    Usually, this class defines a field for storing a reference to the next handler. The clients can build a chain by passing a handler to the constructor or setter of the previous handler. The class may also implement the default handling behavior: it can pass execution to the next handler after checking for its existence.
 
-3.  **Concrete Handlers** contain the actual code for processing requests. Upon receiving a request, each handler must decide whether to process it and, additionally, whether to pass it along the chain.
-   
+3. **Concrete Handlers** contain the actual code for processing requests. Upon receiving a request, each handler must decide whether to process it and, additionally, whether to pass it along the chain.
+
     Handlers are usually self-contained and immutable, accepting all necessary data just once via the constructor.
 
-4.  The **Client** may compose chains just once or compose them
-    dynamically, depending on the application's logic. Note that a
-    request can be sent to any handler in the chain---it doesn't have to be the first one.
+4. The **Client** may compose chains just once or compose them
+    dynamically, depending on the application's logic. Note that a request can be sent to any handler in the chain---it doesn't have to be the first one.
 
-##  Pseudocode
+## Pseudocode
 
-In this example, the **Chain of Responsibility** pattern is responsible
-for displaying contextual help information for active GUI elements.
+In this example, the **Chain of Responsibility** pattern is responsible for displaying contextual help information for active GUI elements.
 
 <figure class="image">
 <img
@@ -166,10 +157,7 @@ through all of its container elements.</p></figcaption>
 </figure>
 
 The application's GUI is usually structured as an object tree. For
-example, the `Dialog` class, which renders the main window of the app,
-would be the root of the object tree. The dialog contains `Panels`,
-which might contain other panels or simple low-level elements like
-`Buttons` and `TextFields`.
+example, the `Dialog` class, which renders the main window of the app, would be the root of the object tree. The dialog contains `Panels`, which might contain other panels or simple low-level elements like `Buttons` and `TextFields`.
 
 A simple component can show brief contextual tooltips, as long as the component has some help text assigned. But more complex components define their own way of showing contextual help, such as showing an excerpt from the manual or opening a page in a browser.
 
@@ -273,50 +261,25 @@ class Application is
         component.showHelp()</code></pre>
 ```
 
+## Applicability
 
+Use the Chain of Responsibility pattern when your program is expected to process different kinds of requests in various ways, but the exact types of requests and their sequences are unknown beforehand.
 
-##  Applicability
+The pattern lets you link several handlers into one chain and, upon receiving a request, "ask" each handler whether it can process it. This way all handlers get a chance to process the request.
 
+Use the pattern when it's essential to execute several handlers in a particular order.
 
-
-Use the Chain of Responsibility pattern when your program is expected to
-process different kinds of requests in various ways, but the exact types
-of requests and their sequences are unknown beforehand.
-
-
-
-The pattern lets you link several handlers into one chain and, upon
-receiving a request, "ask" each handler whether it can process it. This
-way all handlers get a chance to process the request.
-
-
-
-Use the pattern when it's essential to execute several handlers in a
-particular order.
-
-
-
-Since you can link the handlers in the chain in any order, all requests
-will get through the chain exactly as you planned.
-
-
+Since you can link the handlers in the chain in any order, all requests will get through the chain exactly as you planned.
 
 Use the CoR pattern when the set of handlers and their order are
 supposed to change at runtime.
 
+If you provide setters for a reference field inside the handler classes, you'll be able to insert, remove or reorder handlers dynamically.
 
-
-If you provide setters for a reference field inside the handler classes,
-you'll be able to insert, remove or reorder handlers dynamically.
-
-
-
-
-
-##  How to Implement
+## How to Implement
 
 1. Declare the handler interface and describe the signature of a method for handling requests.
-   
+
     Decide how the client will pass the request data into the method. The most flexible way is to convert the request into an object and pass it to the handling method as an argument.
 
 2. To eliminate duplicate boilerplate code in concrete handlers, it might be worth creating an abstract base handler class, derived from the handler interface.
@@ -325,50 +288,49 @@ you'll be able to insert, remove or reorder handlers dynamically.
 
     You can also implement the convenient default behavior for the handling method, which is to forward the request to the next object unless there's none left. Concrete handlers will be able to use this behavior by calling the parent method.
 
-3.  One by one create concrete handler subclasses and implement their handling methods. Each handler should make two decisions when receiving a request:
+3. One by one create concrete handler subclasses and implement their handling methods. Each handler should make two decisions when receiving a request:
 
     - Whether it'll process the request.
     - Whether it'll pass the request along the chain.
 
-4.  The client may either assemble chains on its own or receive pre-built chains from other objects. In the latter case, you must implement some factory classes to build chains according to the configuration or environment settings.
+4. The client may either assemble chains on its own or receive pre-built chains from other objects. In the latter case, you must implement some factory classes to build chains according to the configuration or environment settings.
 
-5.  The client may trigger any handler in the chain, not just the first one. The request will be passed along the chain until some handler refuses to pass it further or until it reaches the end of the chain.
+5. The client may trigger any handler in the chain, not just the first one. The request will be passed along the chain until some handler refuses to pass it further or until it reaches the end of the chain.
 
-6.  Due to the dynamic nature of the chain, the client should be ready to handle the following scenarios:
+6. Due to the dynamic nature of the chain, the client should be ready to handle the following scenarios:
 
     - The chain may consist of a single link.
     - Some requests may not reach the end of the chain.
     - Others may reach the end of the chain unhandled.
 
+## Pros and Cons
 
-
-##  Pros and Cons
 ### Pros
+
 - You can control the order of request handling.
 - *Single Responsibility Principle*. You can decouple classes that
   invoke operations from classes that perform operations.
 - *Open/Closed Principle*. You can introduce new handlers into the app without breaking the existing client code.
 
 ### Cons
--    Some requests may end up unhandled.
 
+- Some requests may end up unhandled.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/observer|Observer]] address various ways of connecting senders and receivers of requests:
 
-    - *Chain of Responsibility* passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-    - *Command* establishes unidirectional connections between senders and receivers.
-    - *Mediator* eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-    -  *Observer* lets receivers dynamically subscribe to and        unsubscribe from receiving requests.
+  - *Chain of Responsibility* passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
+  - *Command* establishes unidirectional connections between senders and receivers.
+  - *Mediator* eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
+  - *Observer* lets receivers dynamically subscribe to and        unsubscribe from receiving requests.
 
--  [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]] is often used in conjunction with [[fruit/Coding/Patterns/Design Patterns/catalog/structural/composite|Composite]]. In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
+- [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]] is often used in conjunction with [[fruit/Coding/Patterns/Design Patterns/catalog/structural/composite|Composite]]. In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.
 
--  Handlers in [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]] can be implemented as [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]]. In this case, you can execute a lot of different operations over the same context object, represented by a request.
-   
+- Handlers in [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]] can be implemented as [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]]. In this case, you can execute a lot of different operations over the same context object, represented by a request.
+
    However, there's another approach, where the request itself is a *Command* object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]] and [[fruit/Coding/Patterns/Design Patterns/catalog/structural/decorator|Decorator]] have very similar class structures. Both patterns rely on recursive composition to pass the execution through a series of objects. However, there are several crucial differences.
   
   The *CoR* handlers can execute arbitrary operations independently of each other. They can also stop passing the request further at any point. On the other hand, various *Decorators* can extend the object's behavior while keeping it consistent with the base interface. In addition, decorators aren't allowed to break the flow of the request.
-

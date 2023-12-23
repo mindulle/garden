@@ -2,7 +2,8 @@
 
 **Also known as**: Wrapper
 
-##  Intent
+## Intent
+
 **Adapter** is a structural design pattern that allows objects with
 incompatible interfaces to collaborate.
 
@@ -12,6 +13,7 @@ src="https://refactoring.guru/images/patterns/content/adapter/adapter-en.png?id=
 srcset="https://refactoring.guru/images/patterns/content/adapter/adapter-en-2x.png?id=e0ab0f6103b0b7b0648a8fda592ffab8 2x"
 width="640" alt="Adapter design pattern" />
 </figure>
+
 ## Problem
 
 Imagine that you're creating a stock market monitoring app. The app downloads the stock data from multiple sources in XML format and then displays nice-looking charts and diagrams for the user.
@@ -39,9 +41,9 @@ An adapter wraps one of the objects to hide the complexity of conversion happeni
 Adapters can not only convert data into various formats but can also help objects with different interfaces collaborate. Here's how it works:
 
 1. The adapter gets an interface, compatible with one of the existing objects.
-2.  Using this interface, the existing object can safely call the
+2. Using this interface, the existing object can safely call the
     adapter's methods.
-3.  Upon receiving a call, the adapter passes the request to the second object, but in a format and order that the second object expects.
+3. Upon receiving a call, the adapter passes the request to the second object, but in a format and order that the second object expects.
 
 Sometimes it's even possible to create a two-way adapter that can convert the calls in both directions.
 
@@ -55,7 +57,7 @@ loading="lazy" width="530" alt="Adapter&#39;s solution" />
 Let's get back to our stock market app. To solve the dilemma of
 incompatible formats, you can create XML-to-JSON adapters for every class of the analytics library that your code works with directly. Then you adjust your code to communicate with the library only via these adapters. When an adapter receives a call, it translates the incoming XML data into a JSON structure and passes the call to the appropriate methods of a wrapped analytics object.
 
-##  Real-World Analogy
+## Real-World Analogy
 
 <figure class="image">
 <img
@@ -71,6 +73,7 @@ When you travel from the US to Europe for the first time, you may get a surprise
 ## Structure
 
 #### Object adapter
+
 This implementation uses the object composition principle: the adapter implements the interface of one object and wraps the other one. It can be implemented in all popular programming languages.
 
 <figure class="image">
@@ -89,16 +92,16 @@ alt="Structure of the Adapter design pattern (the object adapter)" />
 1. The **Client** is a class that contains the existing business logic
     of the program.
 
-2.  The **Client Interface** describes a protocol that other classes
+2. The **Client Interface** describes a protocol that other classes
     must follow to be able to collaborate with the client code.
 
-3.  The **Service** is some useful class (usually 3rd-party or legacy).
+3. The **Service** is some useful class (usually 3rd-party or legacy).
     The client can't use this class directly because it has an incompatible interface.
 
 4. The **Adapter** is a class that's able to work with both the client
     and the service: it implements the client interface, while wrapping the service object. The adapter receives calls from the client via the client interface and translates them into calls to the wrapped service object in a format it can understand.
 
-5.  The client code doesn't get coupled to the concrete adapter class as long as it works with the adapter via the client interface. Thanks to this, you can introduce new types of adapters into the program without breaking the existing client code. This can be useful when the interface of the service class gets changed or replaced: you can just create a new adapter class without changing the client code.
+5. The client code doesn't get coupled to the concrete adapter class as long as it works with the adapter via the client interface. Thanks to this, you can introduce new types of adapters into the program without breaking the existing client code. This can be useful when the interface of the service class gets changed or replaced: you can just create a new adapter class without changing the client code.
 
 #### Class adapter
 
@@ -118,8 +121,7 @@ loading="lazy" width="550"
 alt="Adapter design pattern (class adapter)" />
 </figure>
 
-1.  The **Class Adapter** doesn't need to wrap any objects because it inherits behaviors from both the client and the service. The adaptation happens within the overridden methods. The resulting adapter can be used in place of an existing client class.
-
+1. The **Class Adapter** doesn't need to wrap any objects because it inherits behaviors from both the client and the service. The adaptation happens within the overridden methods. The resulting adapter can be used in place of an existing client class.
 
 ## Pseudocode
 
@@ -195,7 +197,8 @@ hole.fits(small_sqpeg_adapter) // true
 hole.fits(large_sqpeg_adapter) // false
 ```
 
-##  Applicability
+## Applicability
+
 Use the Adapter class when you want to use some existing class, but its interface isn't compatible with the rest of your code.
 
 The Adapter pattern lets you create a middle-layer class that serves as a translator between your code and a legacy class, a 3rd-party class or any other class with a weird interface.
@@ -206,7 +209,7 @@ You could extend each subclass and put the missing functionality into new child 
 
 The much more elegant solution would be to put the missing functionality into an adapter class. Then you would wrap objects with missing features inside the adapter, gaining needed features dynamically. For this to work, the target classes must have a common interface, and the adapter's field should follow that interface. This approach looks very similar to the [[fruit/Coding/Patterns/Design Patterns/catalog/structural/decorator|Decorator]] pattern.
 
-##  How to Implement
+## How to Implement
 
 1. Make sure that you have at least two classes with incompatible interfaces:
     - A useful *service* class, which you can't change (often 3rd-party, legacy or with lots of existing dependencies).
@@ -223,15 +226,19 @@ The much more elegant solution would be to put the missing functionality into an
 6. Clients should use the adapter via the client interface. This will
     let you change or extend the adapters without affecting the client code.
 
-##  Pros and Cons
+## Pros and Cons
+
 ## Pros
+
 - *Single Responsibility Principle*. You can separate the interface or data conversion code from the primary business logic of the program.
 - *Open/Closed Principle*. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface.
 
 ### Cons
+
 - The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it's simpler just to change the service class so that it matches the rest of your code.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
+
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/bridge|Bridge]] is usually designed up-front, letting you develop parts of an application independently of each other. On the other hand, [[fruit/Coding/Patterns/Design Patterns/catalog/structural/adapter|Adapter]] is commonly used with an existing app to make some otherwise-incompatible classes work together nicely.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/adapter|Adapter]] provides a completely different interface for accessing an existing object. On the other hand, with the [[fruit/Coding/Patterns/Design Patterns/catalog/structural/decorator|Decorator]] pattern the interface either stays the same or gets extended. In addition, *Decorator* supports recursive composition, which isn't possible when you use *Adapter*.

@@ -2,7 +2,8 @@
 
 **Also known as**: Clone
 
-##  Intent
+## Intent
+
 **Prototype** is a creational design pattern that lets you copy existing objects without making your code dependent on their classes.
 
 <figure class="image">
@@ -11,7 +12,8 @@ src="https://refactoring.guru/images/patterns/content/prototype/prototype.png?id
 srcset="https://refactoring.guru/images/patterns/content/prototype/prototype-2x.png?id=670789c80c8a114e25838ede2da4a881 2x"
 width="640" alt="Prototype Design Pattern" />
 </figure>
-##  Problem
+
+## Problem
 
 Say you have an object, and you want to create an exact copy of it. How would you do it? First, you have to create a new object of the same class. Then you have to go through all the fields of the original object and copy their values over to the new object.
 
@@ -27,7 +29,7 @@ href="https://vimeo.com/120816425">isn’t</a> always possible.</p></figcaption
 
 There's one more problem with the direct approach. Since you have to know the object's class to create a duplicate, your code becomes dependent on that class. If the extra dependency doesn't scare you, there's another catch. Sometimes you only know the interface that the object follows, but not its concrete class, when, for example, a parameter in a method accepts any objects that follow some interface.
 
-##  Solution
+## Solution
 
 The Prototype pattern delegates the cloning process to the actual
 objects that are being cloned. The pattern declares a common interface for all objects that support cloning. This interface lets you clone an object without coupling your code to the class of that object. Usually, such an interface contains just a single `clone` method.
@@ -48,7 +50,7 @@ to subclassing.</p></figcaption>
 
 Here's how it works: you create a set of objects, configured in various ways. When you need an object like the one you've configured, you just clone a prototype instead of constructing a new object from scratch.
 
-##  Real-World Analogy
+## Real-World Analogy
 
 In real life, prototypes are used for performing various tests before starting mass production of a product. However, in this case, prototypes don't participate in any actual production, playing a passive role instead.
 
@@ -66,8 +68,6 @@ Since industrial prototypes don't really copy themselves, a much closer analogy 
 
 #### Basic implementation
 
-
-
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/prototype/structure.png?id=088102c5e9785ff45debbbce86f4df81"
@@ -83,11 +83,12 @@ alt="The structure of the Prototype design pattern" />
 </figure>
 1. The **Prototype** interface declares the cloning methods. In most cases, it's a single `clone` method.
 
-2.  The **Concrete Prototype** class implements the cloning method. In addition to copying the original object's data to the clone, this method may also handle some edge cases of the cloning process related to cloning linked objects, untangling recursive dependencies, etc.
+2. The **Concrete Prototype** class implements the cloning method. In addition to copying the original object's data to the clone, this method may also handle some edge cases of the cloning process related to cloning linked objects, untangling recursive dependencies, etc.
 
-3.  The **Client** can produce a copy of any object that follows the prototype interface.
+3. The **Client** can produce a copy of any object that follows the prototype interface.
 
 #### Prototype registry implementation
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/prototype/structure-prototype-cache.png?id=609c2af5d14ed55dcbb218a00f98e7d5"
@@ -99,10 +100,10 @@ class="structure-img-indexed d-xl-none"
 srcset="https://refactoring.guru/images/patterns/diagrams/prototype/structure-prototype-cache-indexed-2x.png?id=47b99eb7ae51158bdbb31deea4f5e98f 2x"
 loading="lazy" width="550" alt="The prototype registry" />
 </figure>
-1.  The **Prototype Registry** provides an easy way to access frequently-used prototypes. It stores a set of pre-built objects
+1. The **Prototype Registry** provides an easy way to access frequently-used prototypes. It stores a set of pre-built objects
     that are ready to be copied. The simplest prototype registry is a `name → prototype` hash map. However, if you need better search criteria than a simple name, you can build a much more robust version of the registry.
 
-##  Pseudocode
+## Pseudocode
 
 In this example, the **Prototype** pattern lets you produce exact copies of geometric objects, without coupling the code to their classes.
 
@@ -214,7 +215,7 @@ class Application is
         // `shape` array&#39;s children.
 ```
 
-##  Applicability
+## Applicability
 
 Use the Prototype pattern when your code shouldn't depend on the concrete classes of objects that you need to copy.
 
@@ -228,20 +229,20 @@ Suppose you have a complex class that requires a laborious configuration before 
 
 The Prototype pattern lets you use a set of pre-built objects configured in various ways as prototypes. Instead of instantiating a subclass that matches some configuration, the client can simply look for an appropriate prototype and clone it.
 
-##  How to Implement
+## How to Implement
 
-1.  Create the prototype interface and declare the `clone` method in it. Or just add the method to all classes of an existing class hierarchy, if you have one.
+1. Create the prototype interface and declare the `clone` method in it. Or just add the method to all classes of an existing class hierarchy, if you have one.
 
-2.  A prototype class must define the alternative constructor that
+2. A prototype class must define the alternative constructor that
     accepts an object of that class as an argument. The constructor must copy the values of all fields defined in the class from the passed object into the newly created instance. If you're changing a subclass, you must call the parent constructor to let the superclass handle the cloning of its private fields.
 
     If your programming language doesn't support method overloading, you won't be able to create a separate "prototype" constructor. Thus, copying the object's data into the newly created clone will have to be performed within the `clone` method. Still, having this code in a regular constructor is safer because the resulting object is returned fully configured right after you call the `new` operator.
 
-3.  The cloning method usually consists of just one line: running a
+3. The cloning method usually consists of just one line: running a
     `new` operator with the prototypical version of the constructor.
     Note, that every class must explicitly override the cloning method and use its own class name along with the `new` operator. Otherwise, the cloning method may produce an object of a parent class.
 
-4.  Optionally, create a centralized prototype registry to store a
+4. Optionally, create a centralized prototype registry to store a
     catalog of frequently used prototypes.
 
     You can implement the registry as a new factory class or put it in the base prototype class with a static method for fetching the prototype. This method should search for a prototype based on search criteria that the client code passes to the method. The criteria might either be a simple string tag or a complex set of search parameters. After the appropriate prototype is found, the registry should clone it and return the copy to the client.
@@ -249,17 +250,20 @@ The Prototype pattern lets you use a set of pre-built objects configured in vari
     Finally, replace the direct calls to the subclasses' constructors
     with calls to the factory method of the prototype registry.
 
-##  Pros and Cons
+## Pros and Cons
+
 ### Pros
+
 - You can clone objects without coupling to their concrete classes.
 - You can get rid of repeated initialization code in favor of cloning pre-built prototypes.
 - You can produce complex objects more conveniently.
 - You get an alternative to inheritance when dealing with configuration presets for complex objects.
 
 ### Cons
+
 - Cloning complex objects that have circular references might be very tricky.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
 
 - Many designs start by using [[fruit/Coding/Patterns/Design Patterns/catalog/creational/factory-method|Factory Method]] (less complicated and more customizable via subclasses) and evolve toward [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]], [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]], or [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builder]] (more flexible, but more complicated).
 
@@ -267,7 +271,7 @@ The Prototype pattern lets you use a set of pre-built objects configured in vari
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]] can help when you need to save copies of [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]] into history.
 
--   Designs that make heavy use of
+- Designs that make heavy use of
     [Composite](/design-patterns/composite) and [Decorator](/design-patterns/decorator) can often benefit from using [Prototype](/design-patterns/prototype). Applying the pattern lets you clone complex structures instead of re-constructing them from scratch.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]] isn't based on inheritance, so it doesn't have its drawbacks. On the other hand, *Prototype* requires a complicated initialization of the cloned object. [[fruit/Coding/Patterns/Design Patterns/catalog/creational/factory-method|Factory Method]] is based on inheritance but doesn't require an initialization step.
@@ -275,4 +279,3 @@ The Prototype pattern lets you use a set of pre-built objects configured in vari
 - Sometimes [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]] can be a simpler alternative to [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/memento|Memento]]. This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn't have links to external resources, or the links are easy to re-establish.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factories]], [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builders]] and [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]] can all be implemented as [[fruit/Coding/Patterns/Design Patterns/catalog/creational/singleton|Singletons]].
-

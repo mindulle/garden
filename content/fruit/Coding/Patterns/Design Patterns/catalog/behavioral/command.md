@@ -1,7 +1,9 @@
 # Command
+
 **Also known as**: Action, Transaction
 
-##  Intent
+## Intent
+
 **Command** is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request's execution, and support undoable operations.
 
 <figure class="image">
@@ -10,6 +12,7 @@ src="https://refactoring.guru/images/patterns/content/command/command-en.png?id=
 srcset="https://refactoring.guru/images/patterns/content/command/command-en-2x.png?id=6149af804cbbbd5cb18595c30b856d89 2x"
 width="640" alt="Command design pattern" />
 </figure>
+
 ## Problem
 
 Imagine that you're working on a new text-editor app. Your current task is to create a toolbar with a bunch of buttons for various operations of the editor. You created a very neat `Button` class that can be used for buttons on the toolbar, as well as for generic buttons in various dialogs.
@@ -107,7 +110,8 @@ Other GUI elements, such as menus, shortcuts or entire dialogs, can be implement
 
 As a result, commands become a convenient middle layer that reduces coupling between the GUI and business logic layers. And that's only a fraction of the benefits that the Command pattern can offer!
 
-##  Real-World Analogy
+## Real-World Analogy
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/content/command/command-comic-1.png?id=551df832f445080976f3116e0dc120c9"
@@ -123,11 +127,7 @@ information required to cook the meal. It allows the chef to start
 cooking right away instead of running around clarifying the order
 details from you directly.
 
-
-
-##  Structure
-
-
+## Structure
 
 <figure class="image">
 <img
@@ -142,25 +142,22 @@ srcset="https://refactoring.guru/images/patterns/diagrams/command/structure-inde
 loading="lazy" width="640"
 alt="Structure of the Command design pattern" />
 </figure>
-1.  The **Sender** class (aka *invoker*) is responsible for initiating
+1. The **Sender** class (aka *invoker*) is responsible for initiating
     requests. This class must have a field for storing a reference to a command object. The sender triggers that command instead of sending the request directly to the receiver. Note that the sender isn't responsible for creating the command object. Usually, it gets a pre-created command from the client via the constructor.
 
-2.  The **Command** interface usually declares just a single method for executing the command.
+2. The **Command** interface usually declares just a single method for executing the command.
 
-3.  **Concrete Commands** implement various kinds of requests. A
+3. **Concrete Commands** implement various kinds of requests. A
     concrete command isn't supposed to perform the work on its own, but rather to pass the call to one of the business logic objects. However, for the sake of simplifying the code, these classes can be merged.
 
     Parameters required to execute a method on a receiving object can be declared as fields in the concrete command. You can make command objects immutable by only allowing the initialization of these fields via the constructor.
 
-4.  The **Receiver** class contains some business logic. Almost any
+4. The **Receiver** class contains some business logic. Almost any
     object may act as a receiver. Most commands only handle the details of how a request is passed to the receiver, while the receiver itself does the actual work.
 
-5.  The **Client** creates and configures concrete command objects. The client must pass all of the request parameters, including a receiver instance, into the command's constructor. After that, the resulting command may be associated with one or multiple senders.
+5. The **Client** creates and configures concrete command objects. The client must pass all of the request parameters, including a receiver instance, into the command's constructor. After that, the resulting command may be associated with one or multiple senders.
 
-
-
-
-##  Pseudocode
+## Pseudocode
 
 In this example, the **Command** pattern helps to track the history of executed operations and makes it possible to revert an operation if needed.
 
@@ -314,7 +311,7 @@ class Application is
             command.undo()</code></pre>
 ```
 
-##  Applicability
+## Applicability
 
 🐞 Use the Command pattern when you want to parametrize objects with operations.
 
@@ -326,11 +323,7 @@ Here's an example: you're developing a GUI component such as a context menu, and
 
 ⚡ As with any other object, a command can be serialized, which means converting it to a string that can be easily written to a file or a database. Later, the string can be restored as the initial command object. Thus, you can delay and schedule command execution. But there's even more! In the same way, you can queue, log or send commands over the network.
 
-
-
 🐞 Use the Command pattern when you want to implement reversible operations.
-
-
 
 ⚡ Although there are many ways to implement undo/redo, the Command pattern is perhaps the most popular of all.
 
@@ -341,28 +334,28 @@ application's state because some of it can be private. This problem can be mitig
 
 Second, the state backups may consume quite a lot of RAM. Therefore, sometimes you can resort to an alternative implementation: instead of restoring the past state, the command performs the inverse operation. The reverse operation also has a price: it may turn out to be hard or even impossible to implement.
 
-##  How to Implement
+## How to Implement
 
-1.  Declare the command interface with a single execution method.
+1. Declare the command interface with a single execution method.
 
-2.  Start extracting requests into concrete command classes that
+2. Start extracting requests into concrete command classes that
     implement the command interface. Each class must have a set of fields for storing the request arguments along with a reference to the actual receiver object. All these values must be initialized via the command's constructor.
 
-3.  Identify classes that will act as *senders*. Add the fields for
+3. Identify classes that will act as *senders*. Add the fields for
     storing commands into these classes. Senders should communicate with their commands only via the command interface. Senders usually don't create command objects on their own, but rather get them from the client code.
 
-4.  Change the senders so they execute the command instead of sending a request to the receiver directly.
+4. Change the senders so they execute the command instead of sending a request to the receiver directly.
 
-5.  The client should initialize objects in the following order:
+5. The client should initialize objects in the following order:
 
     - Create receivers.
     - Create commands, and associate them with receivers if needed.
     - Create senders, and associate them with specific commands.
 
+## Pros and Cons
 
-
-##  Pros and Cons
 ### Pros
+
 - *Single Responsibility Principle*. You can decouple classes that invoke operations from classes that perform these operations.
 - *Open/Closed Principle*. You can introduce new commands into the app without breaking existing client code.
 - You can implement undo/redo.
@@ -370,26 +363,27 @@ Second, the state backups may consume quite a lot of RAM. Therefore, sometimes y
 - You can assemble a set of simple commands into a complex one.
 
 ### Cons
+
 - The code may become more complicated since you're introducing a whole new layer between senders and receivers.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] and, [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/observer|Observer]] address various ways of connecting senders and receivers of requests:
-    - *Chain of Responsibility* passes a request sequentially along a dynamic chain of potential receivers until one of them handles it. 
-    - *Command* establishes unidirectional connections between senders and receivers. 
-    - *Mediator* eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-    - *Observer* lets receivers dynamically subscribe to and        unsubscribe from receiving requests.
+  - *Chain of Responsibility* passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
+  - *Command* establishes unidirectional connections between senders and receivers.
+  - *Mediator* eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
+  - *Observer* lets receivers dynamically subscribe to and        unsubscribe from receiving requests.
 
 - Handlers in [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]] can be implemented as [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Commands]]. In this case, you can execute a lot of different operations over the same context object, represented by a request.
 
-	However, there's another approach, where the request itself is a *Command* object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
+ However, there's another approach, where the request itself is a *Command* object. In this case, you can execute the same operation in a series of different contexts linked into a chain.
 
 - You can use [Command](/design-patterns/command) and [Memento](/design-patterns/memento) together when implementing "undo". In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/strategy|Strategy]] may look similar because you can use both to parameterize an object with some action. However, they have very different intents.
-	- You can use *Command* to convert any operation into an object. The operation's parameters become fields of that object. The conversion lets you defer execution of the operation, queue it, store the history of commands, send commands to remote services, etc.
+  - You can use *Command* to convert any operation into an object. The operation's parameters become fields of that object. The conversion lets you defer execution of the operation, queue it, store the history of commands, send commands to remote services, etc.
 
-	- On the other hand, *Strategy* usually describes different ways of doing the same thing, letting you swap these algorithms within a single context class.
+  - On the other hand, *Strategy* usually describes different ways of doing the same thing, letting you swap these algorithms within a single context class.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]] can help when you need to save copies of [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Commands]] into history.
 

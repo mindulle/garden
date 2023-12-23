@@ -1,4 +1,5 @@
 # State
+
 ## Intent
 
 **State** is a behavioral design pattern that lets an object alter its
@@ -10,7 +11,8 @@ src="https://refactoring.guru/images/patterns/content/state/state-en.png?id=c323
 srcset="https://refactoring.guru/images/patterns/content/state/state-en-2x.png?id=dfd427a938223ae880291c2850f3e34a 2x"
 width="640" alt="State Design Pattern" />
 </figure>
-##  Problem
+
+## Problem
 
 The State pattern is closely related to the concept of a *Finite-State
 Machine* Finite-State Machine
@@ -27,10 +29,10 @@ The main idea is that, at any given moment, there's a *finite* number of *states
 
 You can also apply this approach to objects. Imagine that we have a `Document` class. A document can be in one of three states: `Draft`, `Moderation` and `Published`. The `publish` method of the document works a little bit differently in each state:
 
--   In `Draft`, it moves the document to moderation.
--   In `Moderation`, it makes the document public, but only if the
+- In `Draft`, it moves the document to moderation.
+- In `Moderation`, it makes the document public, but only if the
     current user is an administrator.
--   In `Published`, it doesn't do anything at all.
+- In `Published`, it doesn't do anything at all.
 
 <figure class="image">
 <img
@@ -63,7 +65,6 @@ class Document is
                 break
 ```
 
-
 The biggest weakness of a state machine based on conditionals reveals itself once we start adding more and more states and state-dependent behaviors to the `Document` class. Most methods will contain monstrous conditionals that pick the proper behavior of a method according to the current state. Code like this is very difficult to maintain because any change to the transition logic may require changing state conditionals in every method.
 
 The problem tends to get bigger as a project evolves. It's quite
@@ -91,15 +92,16 @@ To transition the context into another state, replace the active state object wi
 
 This structure may look similar to the [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/strategy|Strategy]] pattern, but there's one key difference. In the State pattern, the particular states may be aware of each other and initiate transitions from one state to another, whereas strategies almost never know about each other.
 
-##  Real-World Analogy
+## Real-World Analogy
 
 The buttons and switches in your smartphone behave differently depending on the current state of the device:
 
 - When the phone is unlocked, pressing buttons leads to executing various functions.
 - When the phone is locked, pressing any button leads to the unlock screen.
--  When the phone's charge is low, pressing any button shows the charging screen.
+- When the phone's charge is low, pressing any button shows the charging screen.
 
-##  Structure
+## Structure
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/state/structure-en.png?id=38c5cc3a610a201e5bc26a441c63d327"
@@ -113,22 +115,19 @@ srcset="https://refactoring.guru/images/patterns/diagrams/state/structure-en-ind
 loading="lazy" width="540"
 alt="Structure of the State design pattern" />
 </figure>
-1.  **Context** stores a reference to one of the concrete state objects and delegates to it all state-specific work. The context communicates with the state object via the state interface. The context exposes a setter for passing it a new state object.
+1. **Context** stores a reference to one of the concrete state objects and delegates to it all state-specific work. The context communicates with the state object via the state interface. The context exposes a setter for passing it a new state object.
 
-2.  The **State** interface declares the state-specific methods. These methods should make sense for all concrete states because you don't want some of your states to have useless methods that will never be called.
+2. The **State** interface declares the state-specific methods. These methods should make sense for all concrete states because you don't want some of your states to have useless methods that will never be called.
 
-3.  **Concrete States** provide their own implementations for the state-specific methods. To avoid duplication of similar code across multiple states, you may provide intermediate abstract classes that encapsulate some common behavior.
+3. **Concrete States** provide their own implementations for the state-specific methods. To avoid duplication of similar code across multiple states, you may provide intermediate abstract classes that encapsulate some common behavior.
 
     State objects may store a backreference to the context object.
     Through this reference, the state can fetch any required info from the context object, as well as initiate state transitions.
 
-4.  Both context and concrete states can set the next state of the
+4. Both context and concrete states can set the next state of the
     context and perform the actual state transition by replacing the state object linked to the context.
 
-
-
-
-##  Pseudocode
+## Pseudocode
 
 In this example, the **State** pattern lets the same controls of the
 media player behave differently, depending on the current playback
@@ -278,7 +277,7 @@ class PlayingState extends State is
             player.rewind(5)
 ```
 
-##  Applicability
+## Applicability
 
 Use the State pattern when you have an object that behaves differently depending on its current state, the number of states is enormous, and the state-specific code changes frequently.
 
@@ -292,13 +291,13 @@ Use State when you have a lot of duplicate code across similar states and transi
 
 The State pattern lets you compose hierarchies of state classes and reduce duplication by extracting common code into abstract base classes.
 
-##  How to Implement
+## How to Implement
 
-1.  Decide what class will act as the context. It could be an existing class which already has the state-dependent code; or a new class, if the state-specific code is distributed across multiple classes.
+1. Decide what class will act as the context. It could be an existing class which already has the state-dependent code; or a new class, if the state-specific code is distributed across multiple classes.
 
-2.  Declare the state interface. Although it may mirror all the methods declared in the context, aim only for those that may contain state-specific behavior.
+2. Declare the state interface. Although it may mirror all the methods declared in the context, aim only for those that may contain state-specific behavior.
 
-3.  For every actual state, create a class that derives from the state interface. Then go over the methods of the context and extract all code related to that state into your newly created class.
+3. For every actual state, create a class that derives from the state interface. Then go over the methods of the context and extract all code related to that state into your newly created class.
 
     While moving the code to the state class, you might discover that it depends on private members of the context. There are several workarounds:
 
@@ -306,24 +305,28 @@ The State pattern lets you compose hierarchies of state classes and reduce dupli
     - Turn the behavior you're extracting into a public method in the context and call it from the state class. This way is ugly but quick, and you can always fix it later.
     - Nest the state classes into the context class, but only if your  programming language supports nesting classes.
 
-4.  In the context class, add a reference field of the state interface
+4. In the context class, add a reference field of the state interface
     type and a public setter that allows overriding the value of that
     field.
 
-5.  Go over the method of the context again and replace empty state conditionals with calls to corresponding methods of the state object.
+5. Go over the method of the context again and replace empty state conditionals with calls to corresponding methods of the state object.
 
-6.  To switch the state of the context, create an instance of one of the state classes and pass it to the context. You can do this within the context itself, or in various states, or in the client. Wherever this is done, the class becomes dependent on the concrete state class that it instantiates.
+6. To switch the state of the context, create an instance of one of the state classes and pass it to the context. You can do this within the context itself, or in various states, or in the client. Wherever this is done, the class becomes dependent on the concrete state class that it instantiates.
 
-##  Pros and Cons
+## Pros and Cons
+
 ### Pros
+
 - *Single Responsibility Principle*. Organize the code related to particular states into separate classes.
 - Open/Closed Principle*. Introduce new states without changing existing state classes or the context.
 - Simplify the code of the context by eliminating bulky state machine conditionals.
 
 ### cons
+
 - Applying the pattern can be overkill if a state machine has only a few states or rarely changes.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
+
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/bridge|Bridge]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/state|State]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/strategy|Strategy]] (and to some degree [Adapter](/design-patterns/adapter)) have very similar structures. Indeed, all of these patterns are based on composition, which is delegating work to other objects. However, they all solve different problems. A pattern isn't just a recipe for structuring your code in a specific way. It can also communicate to other developers the problem the pattern solves.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/state|State]] can be considered as an extension of [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/strategy|Strategy]]. Both patterns are based on composition: they change the behavior of the context by delegating some work to helper objects. *Strategy* makes these objects completely independent and unaware of each other. However, *State* doesn't restrict dependencies between concrete states, letting them alter the state of the context at will.

@@ -2,7 +2,8 @@
 
 **Also known as**: Virtual Constructor
 
-##  Intent
+## Intent
+
 **Factory Method** is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
 <figure class="image">
@@ -11,7 +12,8 @@ src="https://refactoring.guru/images/patterns/content/factory-method/factory-met
 srcset="https://refactoring.guru/images/patterns/content/factory-method/factory-method-en-2x.png?id=b3961995a4449fb90820a693013511df 2x"
 width="640" alt="Factory Method pattern" />
 </figure>
-##  Problem
+
+## Problem
 
 Imagine that you're creating a logistics management application. The first version of your app can only handle transportation by trucks, so the bulk of your code lives inside the `Truck` class.
 
@@ -33,7 +35,7 @@ Great news, right? But how about the code? At present, most of your code is coup
 As a result, you will end up with pretty nasty code, riddled with
 conditionals that switch the app's behavior depending on the class of transportation objects.
 
-##  Solution
+## Solution
 
 The Factory Method pattern suggests that you replace direct object construction calls (using the `new` operator) with calls to a special *factory* method. Don't worry: the objects are still created via the `new` operator, but it's being called from within the factory method. Objects returned by a factory method are often referred to as *products.*
 
@@ -78,8 +80,8 @@ breaking it.</p></figcaption>
 
 The code that uses the factory method (often called the *client* code) doesn't see a difference between the actual products returned by various subclasses. The client treats all the products as abstract `Transport`. The client knows that all transport objects are supposed to have the `deliver` method, but exactly how it works isn't important to the client.
 
+## Structure
 
-##  Structure
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png?id=4cba0803f42517cfe8548c9bc7dc4c9b"
@@ -93,9 +95,9 @@ srcset="https://refactoring.guru/images/patterns/diagrams/factory-method/structu
 loading="lazy" width="660"
 alt="The structure of the Factory Method pattern" />
 </figure>
-1.  The **Product** declares the interface, which is common to all objects that can be produced by the creator and its subclasses.
+1. The **Product** declares the interface, which is common to all objects that can be produced by the creator and its subclasses.
 
-2.  **Concrete Products** are different implementations of the product interface.
+2. **Concrete Products** are different implementations of the product interface.
 
 3. The **Creator** class declares the factory method that returns new product objects. It's important that the return type of this method matches the product interface.
 
@@ -106,7 +108,7 @@ alt="The structure of the Factory Method pattern" />
     responsibility of the creator. Usually, the creator class already
     has some core business logic related to products. The factory method helps to decouple this logic from the concrete product classes. Here is an analogy: a large software development company can have a training department for programmers. However, the primary function of the company as a whole is still writing code, not producing programmers.
 
-4.  **Concrete Creators** override the base factory method so it returns a different type of product.
+4. **Concrete Creators** override the base factory method so it returns a different type of product.
 
     Note that the factory method doesn't have to **create** new
     instances all the time. It can also return existing objects from a
@@ -215,7 +217,8 @@ class Application is
         dialog.render()
 ```
 
-##  Applicability
+## Applicability
+
 Use the Factory Method when you don't know beforehand the exact types and dependencies of the objects your code should work with.
 
 The Factory Method separates product construction code from the code that actually uses the product. Therefore it's easier to extend the product construction code independently from the rest of the code.
@@ -239,10 +242,10 @@ resource-intensive objects such as database connections, file systems, and netwo
 
 Let's think about what has to be done to reuse an existing object:
 
-1.  First, you need to create some storage to keep track of all of the created objects.
-2.  When someone requests an object, the program should look for a free object inside that pool.
-3.  ... and then return it to the client code.
-4.  If there are no free objects, the program should create a new one (and add it to the pool).
+1. First, you need to create some storage to keep track of all of the created objects.
+2. When someone requests an object, the program should look for a free object inside that pool.
+3. ... and then return it to the client code.
+4. If there are no free objects, the program should create a new one (and add it to the pool).
 
 That's a lot of code! And it must all be put into a single place so that you don't pollute the program with duplicate code.
 
@@ -250,21 +253,21 @@ Probably the most obvious and convenient place where this code could be placed i
 
 Therefore, you need to have a regular method capable of creating new objects as well as reusing existing ones. That sounds very much like a factory method.
 
-##  How to Implement
+## How to Implement
 
-1.  Make all products follow the same interface. This interface should declare methods that make sense in every product.
+1. Make all products follow the same interface. This interface should declare methods that make sense in every product.
 
-2.  Add an empty factory method inside the creator class. The return type of the method should match the common product interface.
+2. Add an empty factory method inside the creator class. The return type of the method should match the common product interface.
 
-3.  In the creator's code find all references to product constructors. One by one, replace them with calls to the factory method, while extracting the product creation code into the factory method.
+3. In the creator's code find all references to product constructors. One by one, replace them with calls to the factory method, while extracting the product creation code into the factory method.
 
     You might need to add a temporary parameter to the factory method to control the type of returned product.
 
     At this point, the code of the factory method may look pretty ugly. It may have a large `switch` statement that picks which product class to instantiate. But don't worry, we'll fix it soon enough.
 
-4.  Now, create a set of creator subclasses for each type of product listed in the factory method. Override the factory method in the subclasses and extract the appropriate bits of construction code from the base method.
+4. Now, create a set of creator subclasses for each type of product listed in the factory method. Override the factory method in the subclasses and extract the appropriate bits of construction code from the base method.
 
-5.  If there are too many product types and it doesn't make sense to create subclasses for all of them, you can reuse the control parameter from the base class in subclasses.
+5. If there are too many product types and it doesn't make sense to create subclasses for all of them, you can reuse the control parameter from the base class in subclasses.
 
     For instance, imagine that you have the following hierarchy of
     classes: the base `Mail` class with a couple of subclasses:
@@ -275,16 +278,20 @@ Therefore, you need to have a regular method capable of creating new objects as 
 
 6. If, after all of the extractions, the base factory method has become empty, you can make it abstract. If there's something left, you can make it a default behavior of the method.
 
-##  Pros and Cons
+## Pros and Cons
+
 ### Pros
+
 - You avoid tight coupling between the creator and the concrete products.
 - *Single Responsibility Principle*. You can move the product creation code into one place in the program, making the code easier to support.
 - *Open/Closed Principle*. You can introduce new types of products into the program without breaking existing client code.
 
 ### Cons
+
 - The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern. The best case scenario is when you're introducing the pattern into an existing hierarchy of creator classes.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
+
 - Many designs start by using [[fruit/Coding/Patterns/Design Patterns/catalog/creational/factory-method|Factory Method]] (less complicated and more customizable via subclasses) and evolve toward [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]], [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]], or [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builder]] (more flexible, but more complicated).
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]] classes are often based on a set of [[fruit/Coding/Patterns/Design Patterns/catalog/creational/factory-method|Factory Method]], but you can also use [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]] to compose the methods on these classes.

@@ -1,9 +1,9 @@
 # Memento
+
 **Also known as**: Snapshot
 
-
-
 ## Intent
+
 **Memento** is a behavioral design pattern that lets you save and restore the previous state of an object without revealing the details of its implementation.
 
 <figure class="image">
@@ -13,9 +13,7 @@ srcset="https://refactoring.guru/images/patterns/content/memento/memento-en-2x.p
 width="640" alt="Memento design pattern" />
 </figure>
 
-
-
-##  Problem
+## Problem
 
 Imagine that you're creating a text editor app. In addition to simple text editing, your editor can format text, insert inline images, etc.
 
@@ -53,7 +51,7 @@ containers would probably end up being objects of one class. The class would hav
 
 It looks like we've reached a dead end: you either expose all internal details of classes, making them too fragile, or restrict access to their state, making it impossible to produce snapshots. Is there any other way to implement the \"undo\"?
 
-##  Solution
+## Solution
 
 All problems that we've just experienced are caused by broken
 encapsulation. Some objects try to do more than they are supposed to. To collect the data required to perform some action, they invade the private space of other objects instead of letting these objects perform the actual action.
@@ -78,10 +76,10 @@ In our text editor example, we can create a separate history class to act as the
 
 When a user triggers the undo, the history grabs the most recent memento from the stack and passes it back to the editor, requesting a roll-back. Since the editor has full access to the memento, it changes its own state with the values taken from the memento.
 
+## Structure
 
-
-##  Structure
 ---
+
 #### Implementation based on nested classes
 
 The classic implementation of the pattern relies on support for nested classes, available in many popular programming languages (such as C++, C#, and Java).
@@ -97,24 +95,22 @@ class="structure-img-indexed d-xl-none"
 srcset="https://refactoring.guru/images/patterns/diagrams/memento/structure1-indexed-2x.png?id=62fea7bdbc96420568869ea3bd25f6ad 2x"
 loading="lazy" width="580" alt="Memento based on nested classes" />
 </figure>
-1.  The **Originator** class can produce snapshots of its own state, as well as restore its state from snapshots when needed.
+1. The **Originator** class can produce snapshots of its own state, as well as restore its state from snapshots when needed.
 
-2.  The **Memento** is a value object that acts as a snapshot of the
+2. The **Memento** is a value object that acts as a snapshot of the
     originator's state. It's a common practice to make the memento immutable and pass it the data only once, via the constructor.
 
-3.  The **Caretaker** knows not only "when" and "why" to capture the originator's state, but also when the state should be restored.
+3. The **Caretaker** knows not only "when" and "why" to capture the originator's state, but also when the state should be restored.
 
     A caretaker can keep track of the originator's history by storing a stack of mementos. When the originator has to travel back in history, the caretaker fetches the topmost memento from the stack and passes it to the originator's restoration method.
 
-4.  In this implementation, the memento class is nested inside the
+4. In this implementation, the memento class is nested inside the
     originator. This lets the originator access the fields and methods of the memento, even though they're declared private. On the other hand, the caretaker has very limited access to the memento's fields and methods, which lets it store mementos in a stack but not tamper with their state.
 
 #### Implementation based on an intermediate interface
 
 There's an alternative implementation, suitable for programming
 languages that don't support nested classes (yeah, PHP, I'm talking about you).
-
-
 
 <figure class="image">
 <img
@@ -128,12 +124,10 @@ srcset="https://refactoring.guru/images/patterns/diagrams/memento/structure2-ind
 loading="lazy" width="560" alt="Memento without nested classes" />
 </figure>
 
-
-
-1.  In the absence of nested classes, you can restrict access to the
+1. In the absence of nested classes, you can restrict access to the
     memento's fields by establishing a convention that caretakers can work with a memento only through an explicitly declared intermediary interface, which would only declare methods related to the memento's metadata.
 
-2.  On the other hand, originators can work with a memento object directly, accessing fields and methods declared in the memento class. The downside of this approach is that you need to declare all members of the memento public.
+2. On the other hand, originators can work with a memento object directly, accessing fields and methods declared in the memento class. The downside of this approach is that you need to declare all members of the memento public.
 
 #### Implementation with even stricter encapsulation
 
@@ -151,15 +145,13 @@ srcset="https://refactoring.guru/images/patterns/diagrams/memento/structure3-ind
 loading="lazy" width="590" alt="Memento with strict encapsulation" />
 </figure>
 
+1. This implementation allows having multiple types of originators and mementos. Each originator works with a corresponding memento class. Neither originators nor mementos expose their state to anyone.
 
+2. Caretakers are now explicitly restricted from changing the state stored in mementos. Moreover, the caretaker class becomes independent from the originator because the restoration method is now defined in the memento class.
 
-1.  This implementation allows having multiple types of originators and mementos. Each originator works with a corresponding memento class. Neither originators nor mementos expose their state to anyone.
+3. Each memento becomes linked to the originator that produced it. The originator passes itself to the memento's constructor, along with the values of its state. Thanks to the close relationship between these classes, a memento can restore the state of its originator, given that the latter has defined the appropriate setters.
 
-2.  Caretakers are now explicitly restricted from changing the state stored in mementos. Moreover, the caretaker class becomes independent from the originator because the restoration method is now defined in the memento class.
-
-3.  Each memento becomes linked to the originator that produced it. The originator passes itself to the memento's constructor, along with the values of its state. Thanks to the close relationship between these classes, a memento can restore the state of its originator, given that the latter has defined the appropriate setters.
-
-##  Pseudocode
+## Pseudocode
 
 This example uses the Memento pattern alongside the
 [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]] pattern for storing snapshots of the complex text editor's state and restoring an earlier state from these snapshots when needed.
@@ -235,7 +227,7 @@ class Command is
             backup.restore()
 ```
 
-##  Applicability
+## Applicability
 
 Use the Memento pattern when you want to produce snapshots of the object's state to be able to restore a previous state of the object.
 
@@ -246,46 +238,46 @@ fields/getters/setters violates its encapsulation.
 
 The Memento makes the object itself responsible for creating a snapshot of its state. No other object can read the snapshot, making the original object's state data safe and secure.
 
-##  How to Implement
+## How to Implement
 
-1.  Determine what class will play the role of the originator. It's
+1. Determine what class will play the role of the originator. It's
     important to know whether the program uses one central object of this type or multiple smaller ones.
 
-2.  Create the memento class. One by one, declare a set of fields that mirror the fields declared inside the originator class.
+2. Create the memento class. One by one, declare a set of fields that mirror the fields declared inside the originator class.
 
-3.  Make the memento class immutable. A memento should accept the data just once, via the constructor. The class should have no setters.
+3. Make the memento class immutable. A memento should accept the data just once, via the constructor. The class should have no setters.
 
-4.  If your programming language supports nested classes, nest the memento inside the originator. If not, extract a blank interface from the memento class and make all other objects use it to refer to the memento. You may add some metadata operations to the interface, but nothing that exposes the originator's state.
+4. If your programming language supports nested classes, nest the memento inside the originator. If not, extract a blank interface from the memento class and make all other objects use it to refer to the memento. You may add some metadata operations to the interface, but nothing that exposes the originator's state.
 
-5.  Add a method for producing mementos to the originator class. The originator should pass its state to the memento via one or multiple arguments of the memento's constructor.
+5. Add a method for producing mementos to the originator class. The originator should pass its state to the memento via one or multiple arguments of the memento's constructor.
 
     The return type of the method should be of the interface you
     extracted in the previous step (assuming that you extracted it at all). Under the hood, the memento-producing method should work directly with the memento class.
 
-6.  Add a method for restoring the originator's state to its class. It
+6. Add a method for restoring the originator's state to its class. It
     should accept a memento object as an argument. If you extracted an interface in the previous step, make it the type of the parameter. In this case, you need to typecast the incoming object to the memento class, since the originator needs full access to that object.
 
-7.  The caretaker, whether it represents a command object, a history, or something entirely different, should know when to request new mementos from the originator, how to store them and when to restore the originator with a particular memento.
+7. The caretaker, whether it represents a command object, a history, or something entirely different, should know when to request new mementos from the originator, how to store them and when to restore the originator with a particular memento.
 
-8.  The link between caretakers and originators may be moved into the memento class. In this case, each memento must be connected to the originator that had created it. The restoration method would also move to the memento class. However, this would all make sense only if the memento class is nested into originator or the originator class provides sufficient setters for overriding its state.
+8. The link between caretakers and originators may be moved into the memento class. In this case, each memento must be connected to the originator that had created it. The restoration method would also move to the memento class. However, this would all make sense only if the memento class is nested into originator or the originator class provides sufficient setters for overriding its state.
 
+## Pros and Cons
 
-
-##  Pros and Cons
 ### Pros
+
 - You can produce snapshots of the object's state without violating its encapsulation.
 - You can simplify the originator's code by letting the caretaker maintain the history of the originator's state.
 
 ### Cons
+
 - The app might consume lots of RAM if clients create mementos too often.
 - Caretakers should track the originator's lifecycle to be able to destroy obsolete mementos.
 - Most dynamic programming languages, such as PHP, Python and JavaScript, can't guarantee that the state within the memento stays untouched.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
 
--   You can use [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/memento|Memento]] together when implementing "undo". In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
+- You can use [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/memento|Memento]] together when implementing "undo". In this case, commands are responsible for performing various operations over a target object, while mementos save the state of that object just before a command gets executed.
 
 - You can use [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/memento|Memento]] along with [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/iterator|Iterator]] to capture the current iteration state and roll it back if necessary.
 
 - Sometimes [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]] can be a simpler alternative to [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/memento|Memento]]. This works if the object, the state of which you want to store in the history, is fairly straightforward and doesn't have links to external resources, or the links are easy to re-establish.
-

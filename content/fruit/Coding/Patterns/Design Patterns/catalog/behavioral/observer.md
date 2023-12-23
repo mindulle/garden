@@ -1,4 +1,5 @@
 # Observer
+
 **Also known as**: Event-Subscriber, Listener
 
 ## Intent
@@ -13,9 +14,7 @@ srcset="https://refactoring.guru/images/patterns/content/observer/observer-2x.pn
 width="640" alt="Observer Design Pattern" />
 </figure>
 
-
-
-##  Problem
+## Problem
 
 Imagine that you have two types of objects: a `Customer` and a `Store`. The customer is very interested in a particular brand of product (say, it's a new model of the iPhone) which should become available in the store very soon.
 
@@ -36,7 +35,7 @@ On the other hand, the store could send tons of emails (which might be considere
 It looks like we've got a conflict. Either the customer wastes time
 checking product availability or the store wastes resources notifying the wrong customers.
 
-##  Solution
+## Solution
 
 The object that has some interesting state is often called *subject*,
 but since it's also going to notify other objects about the changes to its state, we'll call it *publisher*. All other objects that want to track changes to the publisher's state are called *subscribers*.
@@ -70,7 +69,8 @@ notification method on their objects.</p></figcaption>
 
 If your app has several different types of publishers and you want to make your subscribers compatible with all of them, you can go even further and make all publishers follow the same interface. This interface would only need to describe a few subscription methods. The interface would allow subscribers to observe publishers' states without coupling to their concrete classes.
 
-##  Real-World Analogy
+## Real-World Analogy
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/content/observer/observer-comic-2-en.png?id=a9be31ab5f90e47b0f250fe9821c34c5"
@@ -83,7 +83,8 @@ If you subscribe to a newspaper or magazine, you no longer need to go to the sto
 
 The publisher maintains a list of subscribers and knows which magazines they're interested in. Subscribers can leave the list at any time when they wish to stop the publisher sending new magazine issues to them.
 
-##  Structure
+## Structure
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/observer/structure.png?id=365b7e2b8fbecc8948f34b9f8f16f33c"
@@ -98,26 +99,25 @@ loading="lazy" width="620"
 alt="Structure of the Observer design pattern" />
 </figure>
 
-
-1.  The **Publisher** issues events of interest to other objects. These
+1. The **Publisher** issues events of interest to other objects. These
     events occur when the publisher changes its state or executes some behaviors. Publishers contain a subscription infrastructure that lets new subscribers join and current subscribers leave the list.
 
-2.  When a new event happens, the publisher goes over the subscription list and calls the notification method declared in the subscriber interface on each subscriber object.
+2. When a new event happens, the publisher goes over the subscription list and calls the notification method declared in the subscriber interface on each subscriber object.
 
-3.  The **Subscriber** interface declares the notification interface. In
+3. The **Subscriber** interface declares the notification interface. In
     most cases, it consists of a single `update` method. The method may have several parameters that let the publisher pass some event details along with the update.
 
-4.  **Concrete Subscribers** perform some actions in response to
+4. **Concrete Subscribers** perform some actions in response to
     notifications issued by the publisher. All of these classes must
     implement the same interface so the publisher isn't coupled to
     concrete classes.
 
-5.  Usually, subscribers need some contextual information to handle the update correctly. For this reason, publishers often pass some context data as arguments of the notification method. The publisher can pass itself as an argument, letting subscriber fetch any required data directly.
+5. Usually, subscribers need some contextual information to handle the update correctly. For this reason, publishers often pass some context data as arguments of the notification method. The publisher can pass itself as an argument, letting subscriber fetch any required data directly.
 
-6.  The **Client** creates publisher and subscriber objects separately
+6. The **Client** creates publisher and subscriber objects separately
     and then registers subscribers for publisher updates.
 
-##  Pseudocode
+## Pseudocode
 
 In this example, the **Observer** pattern lets the text editor object
 notify other service objects about changes in its state.
@@ -230,7 +230,8 @@ class Application is
         editor.events.subscribe("save", emailAlerts)
 ```
 
-##  Applicability
+## Applicability
+
 Use the Observer pattern when changes to the state of one object may require changing other objects, and the actual set of objects is unknown beforehand or changes dynamically.
 
 You can often experience this problem when working with classes of the graphical user interface. For example, you created custom button classes, and you want to let the clients hook some custom code to your buttons so that it fires whenever a user presses a button.
@@ -241,49 +242,48 @@ Use the pattern when some objects in your app must observe others, but only for 
 
 The subscription list is dynamic, so subscribers can join or leave the list whenever they need to.
 
-##  How to Implement
+## How to Implement
 
-1.  Look over your business logic and try to break it down into two parts: the core functionality, independent from other code, will act as the publisher; the rest will turn into a set of subscriber classes.
+1. Look over your business logic and try to break it down into two parts: the core functionality, independent from other code, will act as the publisher; the rest will turn into a set of subscriber classes.
 
-2.  Declare the subscriber interface. At a bare minimum, it should declare a single `update` method.
+2. Declare the subscriber interface. At a bare minimum, it should declare a single `update` method.
 
 3. Declare the publisher interface and describe a pair of methods for adding a subscriber object to and removing it from the list.
     Remember that publishers must work with subscribers only via the subscriber interface.
 
-4.  Decide where to put the actual subscription list and the
+4. Decide where to put the actual subscription list and the
     implementation of subscription methods. Usually, this code looks the same for all types of publishers, so the obvious place to put it is in an abstract class derived directly from the publisher interface. Concrete publishers extend that class, inheriting the subscription behavior.
 
     However, if you're applying the pattern to an existing class
     hierarchy, consider an approach based on composition: put the subscription logic into a separate object, and make all real
     publishers use it.
 
-5.  Create concrete publisher classes. Each time something important happens inside a publisher, it must notify all its subscribers.
+5. Create concrete publisher classes. Each time something important happens inside a publisher, it must notify all its subscribers.
 
-6.  Implement the update notification methods in concrete subscriber classes. Most subscribers would need some context data about the event. It can be passed as an argument of the notification method.
+6. Implement the update notification methods in concrete subscriber classes. Most subscribers would need some context data about the event. It can be passed as an argument of the notification method.
 
     But there's another option. Upon receiving a notification, the
     subscriber can fetch any data directly from the notification. In
     this case, the publisher must pass itself via the update method. The less flexible option is to link a publisher to the subscriber permanently via the constructor.
 
-7.  The client must create all necessary subscribers and register them with proper publishers.
+7. The client must create all necessary subscribers and register them with proper publishers.
 
+## Pros and Cons
 
-
-##  Pros and Cons
 - *Open/Closed Principle*. You can introduce new subscriber classes without having to change the publisher's code (and vice versa if there's a publisher interface).
 - You can establish relations between objects at runtime.
 - Subscribers are notified in random order.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/observer|Observer]] address various ways of connecting senders and receivers of requests:
 
-    - *Chain of Responsibility* passes a request sequentially along a  dynamic chain of potential receivers until one of them handles it.
-    -  *Command* establishes unidirectional connections between senders and receivers.
-    - *Mediator* eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-    - *Observer* lets receivers dynamically subscribe to and    unsubscribe from receiving requests.
+  - *Chain of Responsibility* passes a request sequentially along a  dynamic chain of potential receivers until one of them handles it.
+  - *Command* establishes unidirectional connections between senders and receivers.
+  - *Mediator* eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
+  - *Observer* lets receivers dynamically subscribe to and    unsubscribe from receiving requests.
 
--   The difference between [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/observer|Observer]] is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let's see how we can do that.
+- The difference between [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/observer|Observer]] is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let's see how we can do that.
 
     The primary goal of *Mediator* is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of *Observer* is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
 

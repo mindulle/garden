@@ -1,4 +1,5 @@
 # Visitor
+
 ## Intent
 
 **Visitor** is a behavioral design pattern that lets you separate
@@ -10,6 +11,7 @@ src="https://refactoring.guru/images/patterns/content/visitor/visitor.png?id=f36
 srcset="https://refactoring.guru/images/patterns/content/visitor/visitor-2x.png?id=2c5d9ab3046d782c19809d3b80650d65 2x"
 width="640" alt="Visitor Design Pattern" />
 </figure>
+
 ## Problem
 
 Imagine that your team develops an app which works with geographic information structured as one colossal graph. Each node of the graph may represent a complex entity such as a city, but also more granular things like industries, sightseeing areas, etc. The nodes are connected with others if there's a road between the real objects that they represent. Under the hood, each node type is represented by its own class, while each specific node is an object.
@@ -75,8 +77,8 @@ You might ask, why don't we use method overloading? That's when you give all met
 
 However, the Visitor pattern addresses this problem. It uses a technique called [Double Dispatch](/design-patterns/visitor-double-dispatch), which helps to execute the proper method on an object without cumbersome conditionals. Instead of letting the client select a proper version of the method to call, how about we delegate this choice to objects we're passing to the visitor as an argument? Since the objects know their own classes, they'll be able to pick a proper method on the visitor less awkwardly. They "accept" a visitor and tell it what visiting method should be executed.
 
-
-<pre class="code" lang="pseudocode"><code>// Client code
+```code
+// Client code
 foreach (Node node in graph)
     node.accept(exportVisitor)
 
@@ -90,8 +92,8 @@ class City is
 class Industry is
     method accept(Visitor v) is
         v.doForIndustry(this)
-    // ...</code></pre>
-</figure>
+    // ...
+```
 
 I confess. We had to change the node classes after all. But at least the
 change is trivial and it lets us add further behaviors without altering
@@ -102,9 +104,7 @@ nodes can work with any visitor you introduce into the app. If you find
 yourself introducing a new behavior related to nodes, all you have to do
 is implement a new visitor class.
 
-
-
-##  Real-World Analogy {#analogy}
+## Real-World Analogy {#analogy}
 
 <figure class="image">
 <img
@@ -120,15 +120,11 @@ can visit every building in a neighborhood, trying to sell insurance to
 everyone he meets. Depending on the type of organization that occupies
 the building, he can offer specialized insurance policies:
 
--   If it's a residential building, he sells medical insurance.
--   If it's a bank, he sells theft insurance.
--   If it's a coffee shop, he sells fire and flood insurance.
+- If it's a residential building, he sells medical insurance.
+- If it's a bank, he sells theft insurance.
+- If it's a coffee shop, he sells fire and flood insurance.
 
-
-
-##  Structure
-
-
+## Structure
 
 <figure class="image">
 <img
@@ -144,37 +140,34 @@ loading="lazy" width="520"
 alt="Structure of the Visitor design pattern" />
 </figure>
 
-
-1.  The **Visitor** interface declares a set of visiting methods that
+1. The **Visitor** interface declares a set of visiting methods that
     can take concrete elements of an object structure as arguments.
     These methods may have the same names if the program is written in a
     language that supports overloading, but the type of their parameters
     must be different.
 
-2.  Each **Concrete Visitor** implements several versions of the same
+2. Each **Concrete Visitor** implements several versions of the same
     behaviors, tailored for different concrete element classes.
 
-3.  The **Element** interface declares a method for "accepting"
+3. The **Element** interface declares a method for "accepting"
     visitors. This method should have one parameter declared with the
     type of the visitor interface.
 
-4.  Each **Concrete Element** must implement the acceptance method. The
+4. Each **Concrete Element** must implement the acceptance method. The
     purpose of this method is to redirect the call to the proper
     visitor's method corresponding to the current element class. Be
     aware that even if a base element class implements this method, all
     subclasses must still override this method in their own classes and
     call the appropriate method on the visitor object.
 
-5.  The **Client** usually represents a collection or some other complex
+5. The **Client** usually represents a collection or some other complex
     object (for example, a [Composite](/design-patterns/composite)
     tree). Usually, clients aren't aware of all the concrete element
     classes because they work with objects from that collection via some
     abstract interface.
 
-
-
-
 ## Pseudocode
+
 In this example, the **Visitor** pattern adds XML export support to the class hierarchy of geometric shapes.
 
 <figure class="image">
@@ -274,7 +267,8 @@ class Application is
 
 If you wonder why we need the `accept` method in this example, my article [Visitor and Double Dispatch](/design-patterns/visitor-double-dispatch) addresses this question in detail.
 
-##  Applicability
+## Applicability
+
 Use the Visitor when you need to perform an operation on all elements of a complex object structure (for example, an object tree).
 
 The Visitor pattern lets you execute an operation over a set of objects with different classes by having a visitor object implement several variants of the same operation, which correspond to all target classes.
@@ -288,22 +282,24 @@ Use the pattern when a behavior makes sense only in some classes of a class hier
 You can extract this behavior into a separate visitor class and
 implement only those visiting methods that accept objects of relevant classes, leaving the rest empty.
 
-##  How to Implement
-1.  Declare the visitor interface with a set of "visiting" methods, one per each concrete element class that exists in the program.
+## How to Implement
 
-2.  Declare the element interface. If you're working with an existing element class hierarchy, add the abstract "acceptance" method to the base class of the hierarchy. This method should accept a visitor object as an argument.
+1. Declare the visitor interface with a set of "visiting" methods, one per each concrete element class that exists in the program.
 
-3.  Implement the acceptance methods in all concrete element classes. These methods must simply redirect the call to a visiting method on the incoming visitor object which matches the class of the current element.
+2. Declare the element interface. If you're working with an existing element class hierarchy, add the abstract "acceptance" method to the base class of the hierarchy. This method should accept a visitor object as an argument.
 
-4.  The element classes should only work with visitors via the visitor interface. Visitors, however, must be aware of all concrete element classes, referenced as parameter types of the visiting methods.
+3. Implement the acceptance methods in all concrete element classes. These methods must simply redirect the call to a visiting method on the incoming visitor object which matches the class of the current element.
 
-5.  For each behavior that can't be implemented inside the element hierarchy, create a new concrete visitor class and implement all of the visiting methods.
+4. The element classes should only work with visitors via the visitor interface. Visitors, however, must be aware of all concrete element classes, referenced as parameter types of the visiting methods.
+
+5. For each behavior that can't be implemented inside the element hierarchy, create a new concrete visitor class and implement all of the visiting methods.
 
     You might encounter a situation where the visitor will need access to some private members of the element class. In this case, you can either make these fields or methods public, violating the element's encapsulation, or nest the visitor class in the element class. The latter is only possible if you're lucky to work with a programming language that supports nested classes.
 
-6.  The client must create visitor objects and pass them into elements via "acceptance" methods.
+6. The client must create visitor objects and pass them into elements via "acceptance" methods.
 
-##  Pros and Cons
+## Pros and Cons
+
 - *Open/Closed Principle*. You can introduce a new behavior that can work with objects of different classes without changing these classes.
 - *Single Responsibility Principle*. You can move multiple versions of the same behavior into the same class.
 - A visitor object can accumulate some useful information while working with various objects. This might be handy when you want to traverse some complex object structure, such as an object tree, and apply the visitor to each object of this structure.
@@ -318,4 +314,3 @@ implement only those visiting methods that accept objects of relevant classes, l
 - You can use [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/visitor|Visitor]] to execute an operation over an entire [[fruit/Coding/Patterns/Design Patterns/catalog/structural/composite|Composite]] tree.
 
 - You can use [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/visitor|Visitor]] along with [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/iterator|Iterator]] to traverse a complex data structure and execute some operation over its elements, even if they all have different classes.
-

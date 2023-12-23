@@ -1,6 +1,7 @@
 # Facade
 
-##  Intent
+## Intent
+
 **Facade** is a structural design pattern that provides a simplified
 interface to a library, a framework, or any other complex set
 of classes.
@@ -12,9 +13,7 @@ srcset="https://refactoring.guru/images/patterns/content/facade/facade-2x.png?id
 width="640" alt="Facade design pattern" />
 </figure>
 
-
-
-##  Problem
+## Problem
 
 Imagine that you must make your code work with a broad set of objects that belong to a sophisticated library or framework. Ordinarily, you'd need to initialize all of those objects, keep track of dependencies, execute methods in the correct order, and so on.
 
@@ -29,7 +28,8 @@ Having a facade is handy when you need to integrate your app with a sophisticate
 
 For instance, an app that uploads short funny videos with cats to social media could potentially use a professional video conversion library. However, all that it really needs is a class with the single method `encode(filename, format)`. After creating such a class and connecting it with the video conversion library, you'll have your first facade.
 
-##  Real-World Analogy
+## Real-World Analogy
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/facade/live-example-en.png?id=461900f9fbacdd0ce981dcd24e121078"
@@ -40,7 +40,8 @@ loading="lazy" width="490" alt="An example of taking a phone order" />
 
 When you call a shop to place a phone order, an operator is your facade to all services and departments of the shop. The operator provides you with a simple voice interface to the ordering system, payment gateways, and various delivery services.
 
-##  Structure
+## Structure
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/facade/structure.png?id=258401362234ac77a2aaf1cde62339e7"
@@ -55,7 +56,6 @@ loading="lazy" width="600"
 alt="Structure of the Facade design pattern" />
 </figure>
 
-
 1. The **Facade** provides convenient access to a particular part of the subsystem's functionality. It knows where to direct the client's request and how to operate all the moving parts.
 
 2. An **Additional Facade** class can be created to prevent polluting a single facade with unrelated features that might make it yet another complex structure. Additional facades can be used by both clients and other facades.
@@ -65,9 +65,9 @@ alt="Structure of the Facade design pattern" />
     Subsystem classes aren't aware of the facade's existence. They
     operate within the system and work with each other directly.
 
-4.  The **Client** uses the facade instead of calling the subsystem objects directly.
+4. The **Client** uses the facade instead of calling the subsystem objects directly.
 
-##  Pseudocode
+## Pseudocode
 
 In this example, the **Facade** pattern simplifies interaction with a
 complex video conversion framework.
@@ -136,7 +136,8 @@ class Application is
         mp4.save()
 ```
 
-##  Applicability
+## Applicability
+
 Use the Facade pattern when you need to have a limited but
 straightforward interface to a complex subsystem.
 
@@ -148,23 +149,27 @@ Create facades to define entry points to each level of a subsystem. You can redu
 
 For example, let's return to our video conversion framework. It can be broken down into two layers: video- and audio-related. For each layer, you can create a facade and then make the classes of each layer communicate with each other via those facades. This approach looks very similar to the [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] pattern.
 
-##  How to Implement
+## How to Implement
+
 1. Check whether it's possible to provide a simpler interface than what an existing subsystem already provides. You're on the right track if this interface makes the client code independent from many of the subsystem's classes.
 
 2. Declare and implement this interface in a new facade class. The facade should redirect the calls from the client code to appropriate objects of the subsystem. The facade should be responsible for initializing the subsystem and managing its further life cycle unless the client code already does this.
 
-3.  To get the full benefit from the pattern, make all the client code communicate with the subsystem only via the facade. Now the client code is protected from any changes in the subsystem code. For example, when a subsystem gets upgraded to a new version, you will only need to modify the code in the facade.
+3. To get the full benefit from the pattern, make all the client code communicate with the subsystem only via the facade. Now the client code is protected from any changes in the subsystem code. For example, when a subsystem gets upgraded to a new version, you will only need to modify the code in the facade.
 
 4. If the facade becomes [[fruit/Coding/code smell/bloaters/large-class|too big]], consider extracting part of its behavior to a new, refined facade class.
 
-##  Pros and Cons
+## Pros and Cons
+
 ### Pros
+
 - You can isolate your code from the complexity of a subsystem.
 
 ### Cons
+
 - A facade can become a god object coupled to all classes of an app.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]] defines a new interface for existing objects, whereas [[fruit/Coding/Patterns/Design Patterns/catalog/structural/adapter|Adapter]] tries to make the existing interface usable. *Adapter* usually wraps just one object, while *Facade* works with an entire subsystem of objects.
 
@@ -172,11 +177,10 @@ For example, let's return to our video conversion framework. It can be broken do
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/flyweight|Flyweight]] shows how to make lots of little objects, whereas [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]] shows how to make a single object that represents an entire subsystem.
 
--  [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
-    - *Facade* defines a simplified interface to a subsystem of objects, but it doesn't introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
-    - *Mediator* centralizes communication between components of the system. The components only know about the mediator object and don't communicate directly.
+- [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
+  - *Facade* defines a simplified interface to a subsystem of objects, but it doesn't introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
+  - *Mediator* centralizes communication between components of the system. The components only know about the mediator object and don't communicate directly.
 
 - A [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]] class can often be transformed into a [Singleton](/design-patterns/singleton) since a single facade object is sufficient in most cases.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]] is similar to [[fruit/Coding/Patterns/Design Patterns/catalog/structural/proxy|Proxy]] in that both buffer a complex entity and initialize it on its own. Unlike *Facade*, *Proxy* has the same interface as its service object, which makes them interchangeable.
-

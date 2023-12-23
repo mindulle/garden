@@ -1,4 +1,5 @@
 # Builder
+
 ## Intent
 
 **Builder** is a creational design pattern that lets you construct
@@ -13,9 +14,7 @@ srcset="https://refactoring.guru/images/patterns/content/builder/builder-en-2x.p
 width="640" alt="Builder design pattern" />
 </figure>
 
-
-
-##  Problem
+## Problem
 
 Imagine a complex object that requires laborious, step-by-step
 initialization of many fields and nested objects. Such initialization
@@ -50,7 +49,7 @@ not all the parameters are needed at all times.</p></figcaption>
 In most cases most of the parameters will be unused, making [the
 constructor calls pretty ugly](/smells/long-parameter-list). For instance, only a fraction of houses have swimming pools, so the parameters related to swimming pools will be useless nine times out of ten.
 
-##  Solution
+## Solution
 
 The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called *builders*.
 
@@ -102,9 +101,7 @@ Having a director class in your program isn't strictly necessary. You can always
 
 In addition, the director class completely hides the details of product construction from the client code. The client only needs to associate a builder with a director, launch the construction with the director, and get the result from the builder.
 
-##  Structure
-
-
+## Structure
 
 <figure class="image">
 <img
@@ -119,24 +116,25 @@ srcset="https://refactoring.guru/images/patterns/diagrams/builder/structure-inde
 loading="lazy" width="470"
 alt="Structure of the Builder design pattern" />
 </figure>
-1.  The **Builder** interface declares product construction steps that
+1. The **Builder** interface declares product construction steps that
     are common to all types of builders.
 
-2.  **Concrete Builders** provide different implementations of the
+2. **Concrete Builders** provide different implementations of the
     construction steps. Concrete builders may produce products that don't follow the common interface.
 
-3.  **Products** are resulting objects. Products constructed by
+3. **Products** are resulting objects. Products constructed by
     different builders don't have to belong to the same class hierarchy or interface.
 
-4.  The **Director** class defines the order in which to call
+4. The **Director** class defines the order in which to call
     construction steps, so you can create and reuse specific
     configurations of products.
 
-5.  The **Client** must associate one of the builder objects with the
+5. The **Client** must associate one of the builder objects with the
     director. Usually, it's done just once, via parameters of the
     director's constructor. Then the director uses that builder object for all further construction. However, there's an alternative approach for when the client passes the builder object to the production method of the director. In this case, you can use a different builder each time you produce something with the director.
 
 ## Pseudocode
+
 This example of the **Builder** pattern illustrates how you can reuse
 the same object construction code when building different types of products, such as cars, and create the corresponding manuals for them.
 <figure class="image">
@@ -153,7 +151,7 @@ A car is a complex object that can be constructed in a hundred different ways. I
 
 If the client code needs to assemble a special, fine-tuned model of a car, it can work with the builder directly. On the other hand, the client can delegate the assembly to the director class, which knows how to use a builder to construct several of the most popular models of cars.
 
-You might be shocked, but every car needs a manual (seriously, who reads them?). The manual describes every feature of the car, so the details in the manuals vary across the different models. That's why it makes sense to reuse an existing construction process for both real cars and their respective manuals. Of course, building a manual isn't the same as building a car, and that's why we must provide another builder class that specializes in composing manuals. This class implements the same 
+You might be shocked, but every car needs a manual (seriously, who reads them?). The manual describes every feature of the car, so the details in the manuals vary across the different models. That's why it makes sense to reuse an existing construction process for both real cars and their respective manuals. Of course, building a manual isn't the same as building a car, and that's why we must provide another builder class that specializes in composing manuals. This class implements the same
 building methods as its car-building sibling, but instead of crafting car parts, it describes them. By passing these builders to the same director object, we can construct either a car or a manual.
 
 The final part is fetching the resulting object. A metal car and a paper manual, although related, are still very different things. We can't place a method for fetching results in the director without coupling the director to concrete product classes. Hence, we obtain the result of the construction from the builder which performed the job.
@@ -302,7 +300,7 @@ class Application is
         Manual manual = builder.getProduct()
 ```
 
-##  Applicability
+## Applicability
 
 🐞 Use the Builder pattern to get rid of a "telescoping constructor".
 
@@ -314,6 +312,7 @@ class Pizza {
     Pizza(int size, boolean cheese) { ... }
     Pizza(int size, boolean cheese, boolean pepperoni) { ... }
 ```
+
 - Creating such a monster is only possible in languages that support method overloading, such as C# or Java.
 
 The Builder pattern lets you build objects step by step, using only those steps that you really need. After implementing the pattern, you don't have to cram dozens of parameters into your constructors anymore.
@@ -321,7 +320,7 @@ The Builder pattern lets you build objects step by step, using only those steps 
 🐞 Use the Builder pattern when you want your code to be able to create different representations of some product (for example, stone and wooden houses).
 
 ⚡ The Builder pattern can be applied when construction of various representations of the product involves similar steps that differ only in the details.
-	The base builder interface defines all possible construction steps, and concrete builders implement these steps to construct particular representations of the product. Meanwhile, the director class guides the order of construction.
+ The base builder interface defines all possible construction steps, and concrete builders implement these steps to construct particular representations of the product. Meanwhile, the director class guides the order of construction.
 
 🐞 Use the Builder to construct [[fruit/Coding/Patterns/Design Patterns/catalog/structural/composite|Composite]] trees or other complex objects.
 
@@ -331,34 +330,37 @@ A builder doesn't expose the unfinished product while running
 construction steps. This prevents the client code from fetching an
 incomplete result.
 
-##  How to Implement
+## How to Implement
 
 1. Make sure that you can clearly define the common construction steps for building all available product representations. Otherwise, you won't be able to proceed with implementing the pattern.
 
-2.  Declare these steps in the base builder interface.
+2. Declare these steps in the base builder interface.
 
-3.  Create a concrete builder class for each of the product
+3. Create a concrete builder class for each of the product
     representations and implement their construction steps.
 
     Don't forget about implementing a method for fetching the result of the construction. The reason why this method can't be declared inside the builder interface is that various builders may construct products that don't have a common interface. Therefore, you don't know what would be the return type for such a method. However, if you're dealing with products from a single hierarchy, the fetching method can be safely added to the base interface.
 
-4.  Think about creating a director class. It may encapsulate various ways to construct a product using the same builder object.
+4. Think about creating a director class. It may encapsulate various ways to construct a product using the same builder object.
 
-5.  The client code creates both the builder and the director objects. Before construction starts, the client must pass a builder object to the director. Usually, the client does this only once, via parameters of the director's class constructor. The director uses the builder object in all further construction. There's an alternative approach, where the builder is passed to a specific product construction method of the director.
+5. The client code creates both the builder and the director objects. Before construction starts, the client must pass a builder object to the director. Usually, the client does this only once, via parameters of the director's class constructor. The director uses the builder object in all further construction. There's an alternative approach, where the builder is passed to a specific product construction method of the director.
 
 6. The construction result can be obtained directly from the director only if all products follow the same interface. Otherwise, the client should fetch the result from the builder.
 
-##  Pros and Cons
+## Pros and Cons
+
 ### Pros
+
 - You can construct objects step-by-step, defer construction steps or run steps recursively.
 - You can reuse the same construction code when building various representations of products.
 - *Single Responsibility Principle*. You can isolate complex construction code from the business logic of the product.
 
 ### Cons
+
 - The overall complexity of the code increases since the pattern requires creating multiple new classes.
 
+## Relations with Other Patterns
 
-##  Relations with Other Patterns
 - Many designs start by using [[fruit/Coding/Patterns/Design Patterns/catalog/creational/factory-method|Factory Method]](less complicated and more customizable via subclasses) and evolve toward [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]], [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototype]], or [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builder]] (more flexible, but more complicated).
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builder]] focuses on constructing complex objects step by step. [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]] specializes in creating families of related objects. *Abstract Factory* returns the product immediately, whereas *Builder* lets you run some additional construction steps before fetching the product.
@@ -368,4 +370,3 @@ incomplete result.
 - You can combine [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builder]] with [[fruit/Coding/Patterns/Design Patterns/catalog/structural/bridge|Bridge]]: the director class plays the role of the abstraction, while different builders act as implementations.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factories]], [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builders]] and [[fruit/Coding/Patterns/Design Patterns/catalog/creational/prototype|Prototypes]] can all be implemented as [[fruit/Coding/Patterns/Design Patterns/catalog/creational/singleton|Singletons]].
-

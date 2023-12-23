@@ -1,7 +1,8 @@
 # Composite
+
 **Also known as**: Object Tree
 
-##  Intent
+## Intent
 
 **Composite** is a structural design pattern that lets you compose
 objects into tree structures and then work with these structures as if they were individual objects.
@@ -12,8 +13,6 @@ src="https://refactoring.guru/images/patterns/content/composite/composite.png?id
 srcset="https://refactoring.guru/images/patterns/content/composite/composite-2x.png?id=8847e6f8e2cb892ed2229faba83bd1b7 2x"
 width="640" alt="Composite design pattern" />
 </figure>
-
-
 
 ## Problem
 
@@ -53,7 +52,7 @@ over all components of an object tree.</p></figcaption>
 
 The greatest benefit of this approach is that you don't need to care about the concrete classes of objects that compose the tree. You don't need to know whether an object is a simple product or a sophisticated box. You can treat them all the same via the common interface. When you call a method, the objects themselves pass the request dhown the tree.
 
-##  Real-World Analogy
+## Real-World Analogy
 
 <figure class="image">
 <img
@@ -86,17 +85,18 @@ alt="Structure of the Composite design pattern" />
 
     Usually, leaf components end up doing most of the real work, since they don't have anyone to delegate the work to.
 
-3.  The **Container** (aka *composite*) is an element that has sub-elements: leaves or other containers. A container doesn't know
+3. The **Container** (aka *composite*) is an element that has sub-elements: leaves or other containers. A container doesn't know
     the concrete classes of its children. It works with all sub-elements only via the component interface.
 
     Upon receiving a request, a container delegates the work to its
     sub-elements, processes intermediate results and then returns the final result to the client.
 
-4.  The **Client** works with all elements through the component
+4. The **Client** works with all elements through the component
     interface. As a result, the client can work in the same way with
     both simple or complex elements of the tree.
 
 ## Pseudocode
+
 In this example, the **Composite** pattern lets you implement stacking of geometric shapes in a graphical editor.
 
 <figure class="image">
@@ -199,7 +199,7 @@ class ImageEditor is
         all.draw()
 ```
 
-##  Applicability
+## Applicability
 
 Use the Composite pattern when you have to implement a tree-like object structure.
 
@@ -209,7 +209,7 @@ Use the pattern when you want the client code to treat both simple and complex e
 
 All elements defined by the Composite pattern share a common interface. Using this interface, the client doesn't have to worry about the concrete class of the objects it works with.
 
-##  How to Implement
+## How to Implement
 
 1. Make sure that the core model of your app can be represented as a tree structure. Try to break it down into simple elements and containers. Remember that containers must be able to contain both simple elements and other containers.
 
@@ -221,19 +221,23 @@ All elements defined by the Composite pattern share a common interface. Using th
 
     While implementing the methods of the component interface, remember that a container is supposed to be delegating most of the work to sub-elements.
 
-5.  Finally, define the methods for adding and removal of child elements in the container.
+5. Finally, define the methods for adding and removal of child elements in the container.
 
     Keep in mind that these operations can be declared in the component interface. This would violate the *Interface Segregation Principle* because the methods will be empty in the leaf class. However, the client will be able to treat all the elements equally, even when composing the tree.
 
-##  Pros and Cons
+## Pros and Cons
+
 ### Pros
+
 - You can work with complex tree structures more conveniently: use polymorphism and recursion to your advantage.
 - *Open/Closed Principle*. You can introduce new element types into the app without breaking the existing code, which now works with the object tree.
 
 ### Cons
+
 - It might be difficult to provide a common interface for classes whose functionality differs too much. In certain scenarios, you'd need to overgeneralize the component interface, making it harder to comprehend.
 
-##  Relations with Other Patterns
+## Relations with Other Patterns
+
 - You can use [[fruit/Coding/Patterns/Design Patterns/catalog/creational/builder|Builder]] when creating complex [[fruit/Coding/Patterns/Design Patterns/catalog/structural/composite|Composite]] trees because you can program its construction steps to work recursively.
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]] is often used in conjunction with [[fruit/Coding/Patterns/Design Patterns/catalog/structural/composite|Composite]]. In this case, when a leaf component gets a request, it may pass it through the chain of all of the parent components down to the root of the object tree.

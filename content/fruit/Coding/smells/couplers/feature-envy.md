@@ -31,6 +31,7 @@ src="https://refactoring.guru/images/refactoring/content/smells/feature-envy-02.
 srcset="https://refactoring.guru/images/refactoring/content/smells/feature-envy-02-2x.png?id=641faecaeb0d422232c0bcc6346352c5 2x"
 loading="lazy" width="500" height="300" />
 </figure>
+
 ### Payoff
 
 - Less code duplication (if the data handling code is put in a central place).

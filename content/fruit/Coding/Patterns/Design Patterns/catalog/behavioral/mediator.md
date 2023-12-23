@@ -1,7 +1,9 @@
 # Mediator
+
 **Also known as**: Intermediary, Controller
 
 ## Intent
+
 **Mediator** is a behavioral design pattern that lets you reduce chaotic dependencies between objects. The pattern restricts direct communications between the objects and forces them to collaborate only via a mediator object.
 
 <figure class="image">
@@ -10,7 +12,9 @@ src="https://refactoring.guru/images/patterns/content/mediator/mediator.png?id=0
 srcset="https://refactoring.guru/images/patterns/content/mediator/mediator-2x.png?id=250c2bf72ca1fdee2e6d97ed5a4765f2 2x"
 width="640" alt="Mediator design pattern" />
 </figure>
+
 ## Problem
+
 Say you have a dialog for creating and editing customer profiles. It consists of various form controls such as text fields, checkboxes,
 buttons, etc.
 <figure class="image">
@@ -61,7 +65,7 @@ You can go further and make the dependency even looser by extracting the common 
 
 This way, the Mediator pattern lets you encapsulate a complex web of relations between various objects inside a single mediator object. The fewer dependencies a class has, the easier it becomes to modify, extend or reuse that class.
 
-##  Real-World Analogy
+## Real-World Analogy
 
 <figure class="image">
 <img
@@ -78,7 +82,8 @@ don't communicate directly with each other. Instead, they speak to an air traffi
 
 The tower doesn't need to control the whole flight. It exists only to enforce constraints in the terminal area because the number of involved actors there might be overwhelming to a pilot.
 
-##  Structure
+## Structure
+
 <figure class="image">
 <img
 src="https://refactoring.guru/images/patterns/diagrams/mediator/structure.png?id=1f2accc7820ecfe9665b6d30cbc0bc61"
@@ -203,7 +208,7 @@ class Checkbox extends Component is
         dialog.notify(this, "check")
 ```
 
-##  Applicability
+## Applicability
 
 Use the Mediator pattern when it's hard to change some of the classes because they are tightly coupled to a bunch of other classes.
 
@@ -218,52 +223,55 @@ Use the Mediator when you find yourself creating tons of component subclasses ju
 Since all relations between components are contained within the
 mediator, it's easy to define entirely new ways for these components to collaborate by introducing new mediator classes, without having to change the components themselves.
 
-##  How to Implement
+## How to Implement
 
-1.  Identify a group of tightly coupled classes which would benefit from being more independent (e.g., for easier maintenance or simpler reuse of these classes).
+1. Identify a group of tightly coupled classes which would benefit from being more independent (e.g., for easier maintenance or simpler reuse of these classes).
 
-2.  Declare the mediator interface and describe the desired
+2. Declare the mediator interface and describe the desired
     communication protocol between mediators and various components. In most cases, a single method for receiving notifications from components is sufficient.
 
     This interface is crucial when you want to reuse component classes in different contexts. As long as the component works with its mediator via the generic interface, you can link the component with a different implementation of the mediator.
 
-3.  Implement the concrete mediator class. Consider storing references to all components inside the mediator. This way, you could call any component from the mediator's methods.
+3. Implement the concrete mediator class. Consider storing references to all components inside the mediator. This way, you could call any component from the mediator's methods.
 
-4.  You can go even further and make the mediator responsible for the creation and destruction of component objects. After this, the mediator may resemble a [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]] or a [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]].
+4. You can go even further and make the mediator responsible for the creation and destruction of component objects. After this, the mediator may resemble a [[fruit/Coding/Patterns/Design Patterns/catalog/creational/abstract-factory|Abstract Factory]] or a [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]].
 
-5.  Components should store a reference to the mediator object. The connection is usually established in the component's constructor, where a mediator object is passed as an argument.
+5. Components should store a reference to the mediator object. The connection is usually established in the component's constructor, where a mediator object is passed as an argument.
 
-6.  Change the components' code so that they call the mediator's notification method instead of methods on other components. Extract the code that involves calling other components into the mediator class. Execute this code whenever the mediator receives notifications from that component.
+6. Change the components' code so that they call the mediator's notification method instead of methods on other components. Extract the code that involves calling other components into the mediator class. Execute this code whenever the mediator receives notifications from that component.
 
 ## Pros and Cons
+
 ### Pros
+
 -  _Single Responsibility Principle_. You can extract the communications between various components into a single place, making it easier to comprehend and maintain.
 -  _Open/Closed Principle_. You can introduce new mediators without having to change the actual components.
 -  You can reduce coupling between various components of a program.
 -  You can reuse individual components more easily.
 
 ### Cons
+
 -  Over time a mediator can evolve into a [God Object](https://refactoring.guru/antipatterns/god-object).
 
 ##  Relations with Other Patterns
 
 - [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility|Chain Of Responsibility]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command|Command]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/observer|Observer]] address various ways of connecting senders and receivers of requests:
 
-    - _Chain of Responsibility_ passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
-    - _Command_ establishes unidirectional connections between senders and receivers.
-    - _Mediator_ eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
-    - _Observer_ lets receivers dynamically subscribe to and unsubscribe from receiving requests.
+  - _Chain of Responsibility_ passes a request sequentially along a dynamic chain of potential receivers until one of them handles it.
+  - _Command_ establishes unidirectional connections between senders and receivers.
+  - _Mediator_ eliminates direct connections between senders and receivers, forcing them to communicate indirectly via a mediator object.
+  - _Observer_ lets receivers dynamically subscribe to and unsubscribe from receiving requests.
 - [[fruit/Coding/Patterns/Design Patterns/catalog/structural/facade|Facade]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] have similar jobs: they try to organize collaboration between lots of tightly coupled classes.
 
-    - _Facade_ defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
-    - _Mediator_ centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
+  - _Facade_ defines a simplified interface to a subsystem of objects, but it doesn’t introduce any new functionality. The subsystem itself is unaware of the facade. Objects within the subsystem can communicate directly.
+  - _Mediator_ centralizes communication between components of the system. The components only know about the mediator object and don’t communicate directly.
 
 - The difference between [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/mediator|Mediator]] and [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/observer|Observer]] is often elusive. In most cases, you can implement either of these patterns; but sometimes you can apply both simultaneously. Let’s see how we can do that.
-    
+
     The primary goal of _Mediator_ is to eliminate mutual dependencies among a set of system components. Instead, these components become dependent on a single mediator object. The goal of _Observer_ is to establish dynamic one-way connections between objects, where some objects act as subordinates of others.
-    
+
     There’s a popular implementation of the _Mediator_ pattern that relies on _Observer_. The mediator object plays the role of publisher, and the components act as subscribers which subscribe to and unsubscribe from the mediator’s events. When _Mediator_ is implemented this way, it may look very similar to _Observer_.
-    
+
     When you’re confused, remember that you can implement the Mediator pattern in other ways. For example, you can permanently link all the components to the same mediator object. This implementation won’t resemble _Observer_ but will still be an instance of the Mediator pattern.
-    
+
     Now imagine a program where all components have become publishers, allowing dynamic connections between each other. There won’t be a centralized mediator object, only a distributed set of observers.

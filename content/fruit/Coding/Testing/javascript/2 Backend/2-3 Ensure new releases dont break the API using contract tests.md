@@ -21,3 +21,26 @@
 
 <br/><br/>
 
+### Deployment Test
+```mermaid
+flowchart BT
+  subgraph MSA1
+    condA{When Route &#47products&#47} --> behavior[Expect &#123 id:1, name:'foo' &#125]
+  end
+
+  MSA1 --> Broker
+  Broker --> MSA2
+
+  subgraph MSA2
+    A[CI&#47Test&#47Build:] --> B[Verify expectations]
+    A --> C[Detect broken contract]
+  end
+
+  MSA2 --> |Status| Broker
+```
+
+### Production Time
+```mermaid
+flowchart LR
+  MSA1 <--> MSA2
+```

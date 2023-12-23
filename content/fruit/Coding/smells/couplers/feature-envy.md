@@ -1,4 +1,5 @@
 # Feature Envy
+
 ### Signs and Symptoms
 
 A method accesses the data of another object more than its own data.
@@ -9,11 +10,15 @@ src="https://refactoring.guru/images/refactoring/content/smells/feature-envy-01.
 srcset="https://refactoring.guru/images/refactoring/content/smells/feature-envy-01-2x.png?id=4329322703e5af5b3ef7faefd17c4750 2x"
 width="500" height="300" />
 </figure>
+
 ### Reasons for the Problem
 
 This smell may occur after fields are moved to a data class. If this is the case, you may want to move the operations on data to this class as well.
+
 ### Treatment
+
 As a basic rule, if things change at the same time, you should keep them in the same place. Usually data and functions that use this data are changed together (although exceptions are possible).
+
 - If a method clearly should be moved to another place, use [[fruit/Coding/Refactoring/techniques/moving-features-between-objects/move-method|Move Method]].
   
 - If only part of a method accesses the data of another object, use [[fruit/Coding/Refactoring/techniques/composing-methods/extract-method|Extract Method]] to move the part in question.
@@ -27,6 +32,7 @@ srcset="https://refactoring.guru/images/refactoring/content/smells/feature-envy-
 loading="lazy" width="500" height="300" />
 </figure>
 ### Payoff
+
 - Less code duplication (if the data handling code is put in a central place).
 - Better code organization (methods for handling data are next to the actual data).
 
@@ -36,5 +42,6 @@ src="https://refactoring.guru/images/refactoring/content/smells/feature-envy-03.
 srcset="https://refactoring.guru/images/refactoring/content/smells/feature-envy-03-2x.png?id=d8d24af45285db63e68560788e6240bc 2x"
 loading="lazy" width="500" height="300" />
 </figure>
+
 ### When to Ignore
 - Sometimes behavior is purposefully kept separate from the class that holds the data. The usual advantage of this is the ability to dynamically change the behavior (see [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/strategy|Strategy]], [[fruit/Coding/Patterns/Design Patterns/catalog/behavioral/visitor|Visitor]] and other patterns).

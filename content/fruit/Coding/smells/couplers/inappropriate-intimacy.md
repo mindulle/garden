@@ -1,5 +1,7 @@
 # Inappropriate Intimacy
+
 ### Signs and Symptoms
+
 One class uses the internal fields and methods of another class.<figure class="image">
 
 <img
@@ -7,9 +9,11 @@ src="https://refactoring.guru/images/refactoring/content/smells/inappropriate-in
 srcset="https://refactoring.guru/images/refactoring/content/smells/inappropriate-intimacy-01-2x.png?id=1857242bb9cf7b2ca50327897d256711 2x"
 width="500" height="300" />
 </figure>
+
 ### Reasons for the Problem
 
 Keep a close eye on classes that spend too much time together. Good classes should know as little about each other as possible. Such classes are easier to maintain and reuse.
+
 ### Treatment
 - The simplest solution is to use [[fruit/Coding/Refactoring/techniques/moving-features-between-objects/move-method|Move Method]] and [[fruit/Coding/Refactoring/techniques/moving-features-between-objects/move-field|Move Field]] to move parts of one class to the class in which those parts are used. But this works only if the first class truly doesn't need these parts. 
   

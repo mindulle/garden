@@ -1,5 +1,4 @@
 # Alternative Classes with Different Interfaces
-
 ### Signs and Symptoms
 
 Two classes perform identical functions but have different method names.
@@ -14,9 +13,11 @@ width="500" height="300" />
 The programmer who created one of the classes probably didn't know that a functionally equivalent class already existed.
 ### Treatment
 Try to put the interface of classes in terms of a common denominator:
-- [Rename Method](/rename-method)s to make them identical in all alternative classes.
-- [Move Method](/move-method), [Add Parameter](/add-parameter) and [Parameterize Method](/parameterize-method) to make the signature and implementation of methods the same.
-- If only part of the functionality of the classes is duplicated, try using [Extract Superclass](/extract-superclass). In this case, the existing classes will become subclasses.- After you have determined which treatment method to use and implemented it, you may be able to delete one of the classes.
+- [[fruit/Coding/Refactoring/techniques/simplifying-method-calls/rename-method|Rename Method]]s to make them identical in all alternative classes.
+- [[fruit/Coding/Refactoring/techniques/moving-features-between-objects/move-method|Move Method]], [[fruit/Coding/Refactoring/techniques/simplifying-method-calls/add-parameter|Add Parameter]] and [[fruit/Coding/Refactoring/techniques/simplifying-method-calls/parameterize-method|Parameterize Method]] to make the signature and implementation of methods the same.
+- If only part of the functionality of the classes is duplicated, try using [[fruit/Coding/Refactoring/techniques/dealing-with-generalization/extract-superclass|Extract Superclass]]. In this case, the existing classes will become subclasses.
+- After you have determined which treatment method to use and implemented it, you may be able to delete one of the classes.
+
 ### Payoff
 - You get rid of unnecessary duplicated code, making the resulting code less bulky.
 - Code becomes more readable and understandable (you no longer have to guess the reason for creation of a second class performing the exact same functions as the first one).

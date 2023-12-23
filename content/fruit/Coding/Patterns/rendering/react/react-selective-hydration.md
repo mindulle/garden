@@ -3,10 +3,8 @@ description: How to use combine streaming server-side rendering with a new appro
 lang: en
 ---
 # Selective Hydration
-In [previous articles](/posts/ssr), we covered how SSR with hydration
-can improve user experience. React is able to (quickly) generate a tree on the server using the `renderToString` method that the `react-dom/server` library provides, which gets sent to the client after
-the entire tree has been generated. The rendered HTML is non
-interactive, until the JavaScript bundle has been fetched and loaded, after which React walks down the tree to hydrate and attaches the handlers.
+In [[fruit/Coding/Patterns/rendering/react/server-side-rendering|previous articles]], we covered how SSR with hydration
+can improve user experience. React is able to (quickly) generate a tree on the server using the `renderToString` method that the `react-dom/server` library provides, which gets sent to the client after the entire tree has been generated. The rendered HTML is non interactive, until the JavaScript bundle has been fetched and loaded, after which React walks down the tree to hydrate and attaches the handlers.
 
 However, this approach can lead to some performance issues due to some limitations with the current implementation.
 

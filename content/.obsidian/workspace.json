@@ -4,18 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c2203881057b50fc",
+        "id": "4d5bc460d2188647",
         "type": "tabs",
         "children": [
           {
-            "id": "2a3ecdaebe415712",
+            "id": "ef64f6939808c2d9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "fruit/Coding/smells/oo-abusers/alternative-classes-with-different-interfaces.md",
-                "mode": "source",
-                "source": false
+                "file": "node_modules/.bin/acorn",
+                "staged": false
               }
             }
           }
@@ -93,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fruit/Coding/smells/oo-abusers/alternative-classes-with-different-interfaces.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +108,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fruit/Coding/smells/oo-abusers/alternative-classes-with-different-interfaces.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,9 +129,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "fruit/Coding/smells/oo-abusers/alternative-classes-with-different-interfaces.md"
-              }
+              "state": {}
             }
           },
           {
@@ -170,7 +165,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -193,34 +188,35 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "2a3ecdaebe415712",
+  "active": "ef64f6939808c2d9",
   "lastOpenFiles": [
-    "fruit/Coding/smells/dispensables/comments.md",
-    "fruit/Coding/smells/couplers/middle-man.md",
-    "fruit/Coding/smells/couplers/message-chains.md",
-    "fruit/Coding/smells/couplers/inappropriate-intimacy.md",
-    "fruit/Coding/smells/couplers/feature-envy.md",
-    "fruit/Coding/smells/change-preventers/shotgun-surgery.md",
-    "fruit/Coding/smells/change-preventers/parallel-inheritance-hierarchies.md",
-    "fruit/Coding/smells/change-preventers/divergent-change.md",
-    "fruit/Coding/smells/bloaters/primitive-obsession.md",
-    "fruit/Coding/smells/bloaters/long-parameter-list.md",
-    "fruit/Coding/smells/bloaters/long-method.md",
-    "fruit/Coding/smells/bloaters/large-class.md",
-    "fruit/Coding/smells/bloaters/data-clumps.md",
+    "index.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls.md",
     "fruit/Coding/Refactoring/techniques/simplifying-conditional-expressions.md",
-    "fruit/Coding/smells/oo-abusers.md",
-    "fruit/Coding/smells/dispensables.md",
-    "fruit/Coding/smells/couplers.md",
-    "fruit/Coding/smells/change-preventers.md",
-    "fruit/Coding/smells/bloaters.md",
-    "fruit/Coding/smells/other/incomplete-library-class.md",
-    "fruit/Coding/smells/oo-abusers/temporary-field.md",
-    "fruit/Coding/smells/oo-abusers/switch-statements.md",
-    "fruit/Coding/smells/oo-abusers/refused-bequest.md",
-    "fruit/Coding/smells/oo-abusers/alternative-classes-with-different-interfaces.md",
-    "fruit/Coding/smells/dispensables/speculative-generality.md",
-    "fruit/Coding/smells/dispensables/lazy-class.md",
+    "fruit/Coding/Refactoring/techniques/organizing-data.md",
+    "fruit/Coding/Refactoring/techniques/moving-features-between-objects.md",
+    "fruit/Coding/Refactoring/techniques/moving-features-between-objects/remove-middle-man.md",
+    "fruit/Coding/Refactoring/techniques/dealing-with-generalization.md",
+    "fruit/Coding/Refactoring/techniques/composing-methods.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/separate-query-from-modifier.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/replace-parameter-with-method-call.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/replace-parameter-with-explicit-methods.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/replace-exception-with-test.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/replace-error-code-with-exception.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/replace-constructor-with-factory-method.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/rename-method.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/remove-setting-method.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/remove-parameter.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/preserve-whole-object.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/parameterize-method.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/introduce-parameter-object.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/hide-method.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/add-parameter.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-conditional-expressions/replace-nested-conditional-with-guard-clauses.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-conditional-expressions/replace-conditional-with-polymorphism.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-conditional-expressions/remove-control-flag.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-conditional-expressions/introduce-null-object.md",
+    "fruit/Coding/Refactoring/techniques/cut-before-heading1.sh",
     "fruit/Coding/smells/temp",
     "fruit/Coding/smells/cut-before-heading1.sh",
     "fruit/Coding/smells/add_frontmatters - 복사본.sh",
@@ -230,7 +226,6 @@
     "fruit/Coding/Refactoring/techniques/simplifying-method-calls",
     "fruit/Coding/Refactoring/techniques/organizing-data",
     "fruit/Coding/Refactoring/techniques/moving-features-between-objects",
-    "fruit/Coding/Refactoring/techniques/dealing-with-generalization",
     "fruit/testing/javascript/assets/zh-CN/headspace.png",
     "fruit/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
     "fruit/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

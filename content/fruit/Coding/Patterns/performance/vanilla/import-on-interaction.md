@@ -1,239 +1,79 @@
 # Import On Interaction
 
-> tl;dr: lazy-load non-critical resources when a user interacts with UI
-> requiring it
+> tl;dr: lazy-load non-critical resources when a user interacts with UI requiring it
 
-Your page may contain code or data for a component or resource that
-isn't immediately necessary. For example, part of the user-interface a
-user doesn't see unless they click or scroll on parts of the page. This
-can apply to many kinds of first-party code you author, but this also
-applies to third-party widgets such as video players or chat widgets
-where you typically need to click a button to display the main
-interface.
+Your page may contain code or data for a component or resource that isn't immediately necessary. For example, part of the user-interface a user doesn't see unless they click or scroll on parts of the page. This can apply to many kinds of first-party code you author, but this also applies to third-party widgets such as video players or chat widgets where you typically need to click a button to display the main interface.
 
-Loading these resources eagerly (i.e right away) can [block the main
-thread](https://web.dev/long-tasks-devtools/) if they are costly,
-pushing out how soon a user can interact with more critical parts of a
-page. This can impact interaction readiness metrics like [First Input
-Delay](https://web.dev/fid/), [Total Blocking
-Time](https://web.dev/lighthouse-total-blocking-time/) and [Time to
-Interactive](https://web.dev/interactive/). Instead of loading these
-resources immediately, you can load them at a more opportune moment,
-such as:
+Loading these resources eagerly (i.e right away) can [block the main thread](https://web.dev/long-tasks-devtools/) if they are costly, pushing out how soon a user can interact with more critical parts of a page. This can impact interaction readiness metrics like [First Input Delay](https://web.dev/fid/), [Total Blocking Time](https://web.dev/lighthouse-total-blocking-time/) and [Time to Interactive](https://web.dev/interactive/). Instead of loading these resources immediately, you can load them at a more opportune moment, such as:
 
-- When the user clicks to interact with that component for the first
-    time
+- When the user clicks to interact with that component for the first time
 - Scrolls the component into view
-- or deferring load of that component until the browser is idle (via
-    [requestIdleCallback](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)).
+- or deferring load of that component until the browser is idle (via [requestIdleCallback](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)).
 
 The different ways to load resources are, at a high-level:
 
 - Eager - load resource right away (the normal way of loading scripts)
-- Lazy
-    ([Route-based](https://web.dev/code-splitting-with-dynamic-imports-in-nextjs/#route-based-and-component-based-code-splitting)) -
-    load when a user navigates to a route or component
+- Lazy ([Route-based](https://web.dev/code-splitting-with-dynamic-imports-in-nextjs/#route-based-and-component-based-code-splitting)) - load when a user navigates to a route or component
 - Lazy (On interaction) - load when the user clicks UI (e.g Show Chat)
-- Lazy (In viewport) - load when the user scrolls towards the
-    component
-- [Prefetch](https://web.dev/link-prefetch/) - load prior to needed,
-    but after critical resources are loaded
-- [Preload](https://web.dev/preload-critical-assets/) - eagerly, with
-    a greater level of urgency
+- Lazy (In viewport) - load when the user scrolls towards the component
+- [Prefetch](https://web.dev/link-prefetch/) - load prior to needed, but after critical resources are loaded
+- [Preload](https://web.dev/preload-critical-assets/) - eagerly, with a greater level of urgency
 
-> Import-on-interaction for first-party code should only be done if
-> you're unable to prefetch resources prior to interaction. The pattern
-> is however very relevant for third-party code, where you generally
-> want to defer it if non-critical to a later point in time. This can be
-> achieved in many ways (defer until interaction, until the browser is
-> idle or using other heuristics).
+> Import-on-interaction for first-party code should only be done if you're unable to prefetch resources prior to interaction. The pattern is however very relevant for third-party code, where you generally want to defer it if non-critical to a later point in time. This can be achieved in many ways (defer until interaction, until the browser is idle or using other heuristics).
 
-Lazily importing feature code on interaction is a pattern used in many
-contexts we will cover in this post. One place you may have used it
-before is Google Docs, where they save loading 500KB of script for the
-share feature by deferring its load until user-interaction.
+Lazily importing feature code on interaction is a pattern used in many contexts we will cover in this post. One place you may have used it before is Google Docs, where they save loading 500KB of script for the share feature by deferring its load until user-interaction.
 
-![Clicking a Share button in Google Docs triggers a download of code
-needed for this highly interactive feature. It weighs in at 500KB of
-script, which is better loaded on-demand rather than eagerly with the
-rest of Google Docs on page
-load](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_1280.png){sizes="(max-width: 1280px) 100vw, 1280px"
-srcset="<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_200.png> 200w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_358.png> 358w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_486.png> 486w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_600.png> 600w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_703.png> 703w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_794.png> 794w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_886.png> 886w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_966.png> 966w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_1047.png> 1047w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_1280.png> 1280w"}
+![Clicking a Share button in Google Docs triggers a download of code needed for this highly interactive feature. It weighs in at 500KB of script, which is better loaded on-demand rather than eagerly with the rest of Google Docs on page load](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image1_ohziu6_c_scale_w_1280.png)
 
-Another place where import-on-interaction can be a good fit is loading
-third-party widgets.
+Another place where import-on-interaction can be a good fit is loading third-party widgets.
 
-------------------------------------------------------------------------
+---
+## "Fake" loading third-party UI with a facade
 
-"Fake" loading third-party UI with a facade
--------------------------------------------
+You might be importing a third-party script and have less control over what it renders or when it loads code. One option for implementing load-on-interaction is straight-forward: use a
+[facade](https://github.com/patrickhulce/third-party-web/blob/10ec0f8f30bbbb73e2de5640cb652a07dd4d7d11/facades.md). A facade is a simple "preview" or "placeholder" for a more costly component where you simulate the basic experience, such as with an image or screenshot. It's terminology we've been using for this idea on the Lighthouse team.
 
-You might be importing a third-party script and have less control over
-what it renders or when it loads code. One option for implementing
-load-on-interaction is straight-forward: use a
-[facade](https://github.com/patrickhulce/third-party-web/blob/10ec0f8f30bbbb73e2de5640cb652a07dd4d7d11/facades.md).
-A facade is a simple "preview" or "placeholder" for a more costly
-component where you simulate the basic experience, such as with an image
-or screenshot. It's terminology we've been using for this idea on the
-Lighthouse team.
-
-When a user clicks on the "preview" (the facade), the code for the
-resource is loaded. This limits users needing to pay the experience cost
-for a feature if they're not going to use it. Similarly, facades can
-[preconnect](https://web.dev/uses-rel-preconnect/) to necessary
-resources on hover.
+When a user clicks on the "preview" (the facade), the code for the resource is loaded. This limits users needing to pay the experience cost for a feature if they're not going to use it. Similarly, facades can [preconnect](https://web.dev/uses-rel-preconnect/) to necessary resources on hover.
 
 > Third-party resources are often added to pages without full
 > consideration for how they fit into the overall loading of a site.
-> Synchronously-loaded third-party scripts block the browser parser and
-> can delay hydration. If possible, 3P script should be loaded with
-> async/defer (or other approaches) to ensure 1P scripts aren't starved
-> of network bandwidth. Unless they are critical, they can be a good
-> candidate for shifting to deferred late-loading using patterns like
-> import-on-interaction.
+> Synchronously-loaded third-party scripts block the browser parser and can delay hydration. If possible, 3P script should be loaded with async/defer (or other approaches) to ensure 1P scripts aren't starved of network bandwidth. Unless they are critical, they can be a good candidate for shifting to deferred late-loading using patterns like import-on-interaction.
 
-------------------------------------------------------------------------
+---
+## Video Player Embeds
 
-Video Player Embeds
--------------------
+A good example of a "facade" is the [YouTube Lite Embed](https://github.com/paulirish/lite-youtube-embed) by Paul Irish. This provides a Custom Element which takes a YouTube Video ID and presents a minimal thumbnail and play button. Clicking the element dynamically loads the full YouTube embed code, meaning users who never click play don't pay the cost of fetching and processing it.
 
-A good example of a "facade" is the [YouTube Lite
-Embed](https://github.com/paulirish/lite-youtube-embed) by Paul Irish.
-This provides a Custom Element which takes a YouTube Video ID and
-presents a minimal thumbnail and play button. Clicking the element
-dynamically loads the full YouTube embed code, meaning users who never
-click play don't pay the cost of fetching and processing it.
+![The lite-youtube component only loads up 3KB of script on page load and the full-fat YouTube payload on interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image2_egy8ct_c_scale_w_1280.png)
 
-![The lite-youtube component only loads up 3KB of script on page load
-and the full-fat YouTube payload on
-interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image2_egy8ct_c_scale_w_1280.png){sizes="(max-width: 1280px) 100vw, 1280px"
-srcset="
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image2_egy8ct_c_scale_w_200.png> 200w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image2_egy8ct_c_scale_w_363.png> 363w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image2_egy8ct_c_scale_w_492.png> 492w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image2_egy8ct_c_scale_w_603.png> 603w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image2_egy8ct_c_scale_w_722.png> 722w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image2_egy8ct_c_scale_w_816.png> 816w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image2_egy8ct_c_scale_w_1280.png> 1280w"}
+A similar technique is used in production on a few Google sites. On Android.com, rather than eagerly loading the YouTube video player embed, a thumbnail with a fake player button is shown to users. When they click it, a modal loads which auto-plays the video using the full-fat YouTube video player embed:
 
-A similar technique is used in production on a few Google sites. On
-Android.com, rather than eagerly loading the YouTube video player embed,
-a thumbnail with a fake player button is shown to users. When they click
-it, a modal loads which auto-plays the video using the full-fat YouTube
-video player embed:
+![Android.com loads code for their video embeds on demand when a user clicks on a thumbnail for one of these videos](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_1280.png)
 
-![Android.com loads code for their video embeds on demand when a user
-clicks on a thumbnail for one of these
-videos](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_1280.png){sizes="(max-width: 1280px) 100vw, 1280px"
-srcset="
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_200.png> 200w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_318.png> 318w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_413.png> 413w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_499.png> 499w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_578.png> 578w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_651.png> 651w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_716.png> 716w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_779.png> 779w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_836.png> 836w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_895.png> 895w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image3_zykzg7_c_scale_w_1280.png> 1280w"}
+---
+## Authentication
 
-------------------------------------------------------------------------
+Apps may need to support authentication with a service via a client-side JavaScript SDK. These can occasionally be large with heavy JS execution costs and one might rather not eagerly load them up front if a user isn't going to login. Instead, dynamically import authentication libraries when a user clicks on a "Login" button, keeping the main thread more free during initial load.
 
-Authentication
---------------
+![A HTML and CSS only version of a Google sign-in button which loads the full client-side SDK and actual button on interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_1280.png)
 
-Apps may need to support authentication with a service via a client-side
-JavaScript SDK. These can occasionally be large with heavy JS execution
-costs and one might rather not eagerly load them up front if a user
-isn't going to login. Instead, dynamically import authentication
-libraries when a user clicks on a "Login" button, keeping the main
-thread more free during initial load.
+---
+## Chat widgets
 
-![A HTML and CSS only version of a Google sign-in button which loads the
-full client-side SDK and actual button on
-interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_1280.png){sizes="(max-width: 1280px) 100vw, 1280px"
-srcset="
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_200.png> 200w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_380.png> 380w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_522.png> 522w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_636.png> 636w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_753.png> 753w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_856.png> 856w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_947.png> 947w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_1036.png> 1036w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image4_qeskzi_c_scale_w_1280.png> 1280w"}
+Calibre app [improved performance of their Intercom-based live chat by 30%](https://calibreapp.com/blog/fast-live-chat) through usage of a similar facade approach. They implemented a "fake" fast loading live chat button using just CSS and HTML, which when clicked would load their Intercom bundles.
 
-------------------------------------------------------------------------
+![An simulated version of the Intercom chat widget button which loads the full chat widget on page interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_1280.png)
 
-Chat widgets
-------------
-
-Calibre app [improved performance of their Intercom-based live chat by
-30%](https://calibreapp.com/blog/fast-live-chat) through usage of a
-similar facade approach. They implemented a "fake" fast loading live
-chat button using just CSS and HTML, which when clicked would load their
-Intercom bundles.
-
-![An simulated version of the Intercom chat widget button which loads
-the full chat widget on page
-interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_1280.png){sizes="(max-width: 1280px) 100vw, 1280px"
-srcset="
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_200.png> 200w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_348.png> 348w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_470.png> 470w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_579.png> 579w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_665.png> 665w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_742.png> 742w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_960.png> 960w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_909.png> 909w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_1005.png> 1005w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image5_x7d5a9_c_scale_w_1280.png> 1280w"}
-
-[Postmark](https://wildbit.com/blog/2020/09/30/getting-postmark-lighthouse-performance-score-to-100)
-noted that their Help chat widget was always eagerly loaded, even though
-it was only occasionally used by customers. The widget would pull in
-314KB of script, more than their whole home page. To improve
-user-experience, they replaced the widget with a fake replica using HTML
-and CSS, loading the real-thing on click. This change reduced Time to
+[Postmark](https://wildbit.com/blog/2020/09/30/getting-postmark-lighthouse-performance-score-to-100) noted that their Help chat widget was always eagerly loaded, even though it was only occasionally used by customers. The widget would pull in 314KB of script, more than their whole home page. To improve user-experience, they replaced the widget with a fake replica using HTML and CSS, loading the real-thing on click. This change reduced Time to
 Interactive from 7.7s to 3.7s.
 
-![A HTML+CSS approximate of the customer help
-widget](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_1280.png){sizes="(max-width: 1280px) 100vw, 1280px"
-srcset="
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_200.png> 200w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_323.png> 323w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_424.png> 424w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_509.png> 509w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_589.png> 589w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_664.png> 664w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_737.png> 737w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_796.png> 796w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_859.png> 859w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_915.png> 915w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_1280.png> 1280w"}
+![A HTML+CSS approximate of the customer help widget](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image6_wtsthu_c_scale_w_1280.png)
 
-------------------------------------------------------------------------
+---
+## Others
+[Ne-digital](https://medium.com/ne-digital/how-to-reduce-next-js-bundle-size-68f7ac70c375) used a React library for animated scrolling back to the top of a page when a user clicks on a "scroll to top" button. Rather than eagerly loading the react-scroll dependency for this, they load it on interaction with the button, saving \~7KB:
 
-Others
-------
-
-[Ne-digital](https://medium.com/ne-digital/how-to-reduce-next-js-bundle-size-68f7ac70c375)
-used a React library for animated scrolling back to the top of a page
-when a user clicks on a "scroll to top" button. Rather than eagerly
-loading the react-scroll dependency for this, they load it on
-interaction with the button, saving \~7KB:
-
-``` {.astro-code .github-dark style="background-color:#24292e;overflow-x:auto" tabindex="0"}
+```js
 handleScrollToTop() {
     import('react-scroll').then(scroll => {
       scroll.animateScroll.scrollToTop({
@@ -242,24 +82,15 @@ handleScrollToTop() {
 }
 ```
 
-![Loading resources on interaction with DevTools showing the resource
-being
-fetched](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/animation.gif)
+![Loading resources on interaction with DevTools showing the resource being fetched](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/animation.gif)
 
-------------------------------------------------------------------------
-
-How do you import-on-interaction?
----------------------------------
+---
+## How do you import-on-interaction?
 
 ### Vanilla JavaScript
 
-In JavaScript, [dynamic
-import()](https://v8.dev/features/dynamic-import) enables lazy-loading
-modules and returns a promise and can be quite powerful when applied
-correctly. Below is an example where dynamic import is used in a button
-event listener to import the lodash.sortby module and then use it.
-
-``` {.astro-code .github-dark style="background-color:#24292e;overflow-x:auto" tabindex="0"}
+In JavaScript, [dynamic import()](https://v8.dev/features/dynamic-import) enables lazy-loading modules and returns a promise and can be quite powerful when applied correctly. Below is an example where dynamic import is used in a button event listener to import the lodash.sortby module and then use it.
+```js
 const btn = document.querySelector("button");
 
 btn.addEventListener("click", (e) => {
@@ -274,12 +105,9 @@ btn.addEventListener("click", (e) => {
 ```
 
 Prior to dynamic import or for use-cases it doesn't fit as well,
-dynamically injecting scripts into the page using a Promise-based script
-loader was also an option (see [here for full
-implementation](https://glitch.com/edit/#!/tree-fluffy-stop?path=script.js%3A1%3A0)
-that demonstrates a sign-in facade):
+dynamically injecting scripts into the page using a Promise-based script loader was also an option (see [here for full implementation](https://glitch.com/edit/#!/tree-fluffy-stop?path=script.js%3A1%3A0) that demonstrates a sign-in facade):
 
-``` {.astro-code .github-dark style="background-color:#24292e;overflow-x:auto" tabindex="0"}
+```js
 const loginBtn = document.querySelector("#login");
 
 loginBtn.addEventListener("click", () => {
@@ -292,18 +120,13 @@ loginBtn.addEventListener("click", () => {
 });
 ```
 
-------------------------------------------------------------------------
+---
+## React
 
-React
------
 
-Let's imagine we have a Chat application which has a `<MessageList>`,
-`<MessageInput>` and an `<EmojiPicker>` component (powered by
-[emoji-mart](https://bundlephobia.com/result?p=emoji-mart@3.0.0), which
-is 98KB minified and gzipped). It can be common to eagerly load all of
-these components on initial page-load.
+Let's imagine we have a Chat application which has a `<MessageList>`, `<MessageInput>` and an `<EmojiPicker>` component (powered by [emoji-mart](https://bundlephobia.com/result?p=emoji-mart@3.0.0), which is 98KB minified and gzipped). It can be common to eagerly load all of these components on initial page-load.
 
-``` {.astro-code .github-dark style="background-color:#24292e;overflow-x:auto" tabindex="0"}
+```jsx
 import MessageList from './MessageList';
 import MessageInput from './MessageInput';
 import EmojiPicker from './EmojiPicker';
@@ -320,26 +143,12 @@ const Channel = () => {
 };
 ```
 
-![Showing different components that are loaded
-separately](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image8_pft4f0_c_scale_w_1280.png){sizes="(max-width: 1280px) 100vw, 1280px"
-srcset="
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image8_pft4f0_c_scale_w_200.png> 200w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image8_pft4f0_c_scale_w_473.png> 473w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image8_pft4f0_c_scale_w_671.png> 671w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image8_pft4f0_c_scale_w_840.png> 840w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image8_pft4f0_c_scale_w_1017.png> 1017w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image8_pft4f0_c_scale_w_1280.png> 1280w"}
+![Showing different components that are loaded separately](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image8_pft4f0_c_scale_w_1280.png)
 
-Breaking the loading of this work up is relatively straight-forward with
-[code-splitting](https://web.dev/reduce-javascript-payloads-with-code-splitting/).
-The `React.lazy` method makes it easy to code-split a React application
-on a component level using dynamic imports. The `React.lazy` function
-provides a built-in way to separate components in an application into
-separate chunks of JavaScript with very little legwork. You can then
-take care of loading states when you couple it with the Suspense
+Breaking the loading of this work up is relatively straight-forward with [code-splitting](https://web.dev/reduce-javascript-payloads-with-code-splitting/). The `React.lazy` method makes it easy to code-split a React application on a component level using dynamic imports. The `React.lazy` function provides a built-in way to separate components in an application into separate chunks of JavaScript with very little legwork. You can then take care of loading states when you couple it with the Suspense
 component.
 
-``` {.astro-code .github-dark style="background-color:#24292e;overflow-x:auto" tabindex="0"}
+```jsx
 import React, { lazy, Suspense } from 'react';
 import MessageList from './MessageList';
 import MessageInput from './MessageInput';
@@ -365,10 +174,9 @@ const Channel = () => {
 ```
 
 We can extend this idea to only import code for the Emoji Picker
-component when the Emoji icon is clicked in a `<MessageInput>`, rather
-than eagerly when the application initially loads:
+component when the Emoji icon is clicked in a `<MessageInput>`, rather than eagerly when the application initially loads:
 
-``` {.astro-code .github-dark style="background-color:#24292e;overflow-x:auto" tabindex="0"}
+```jsx
 import React, { useState, createElement } from "react";
 import MessageList from "./MessageList";
 import MessageInput from "./MessageInput";
@@ -401,36 +209,18 @@ const Channel = () => {
 };
 ```
 
-![Lazy-load the Emoji component on
-interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_1280.png){sizes="(max-width: 1280px) 100vw, 1280px"
-srcset="
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_200.png> 200w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_395.png> 395w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_539.png> 539w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_672.png> 672w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_792.png> 792w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_904.png> 904w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_1014.png> 1014w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_1110.png> 1110w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_1280.png> 1280w"}
+![Lazy-load the Emoji component on interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image9_h0g6sw_c_scale_w_1280.png)
 
-------------------------------------------------------------------------
-
-Vue
 ---
+## Vue
 
-In Vue.js, a similar import-on-interaction pattern can be accomplished
-in a few different ways. One way is to dynamically import the
-`Emojipicker` Vue component using dynamic import wrapped in a function
-i.e `() => import("./Emojipicker")`. Typically doing this will have
-Vue.js lazy-load the component when it needs to be rendered.
+In Vue.js, a similar import-on-interaction pattern can be accomplished in a few different ways. One way is to dynamically import the `Emojipicker` Vue component using dynamic import wrapped in a function i.e `() => import("./Emojipicker")`. Typically doing this will have Vue.js lazy-load the component when it needs to be rendered.
 
 We can then gate lazy-loading behind a user-interaction. Using a
 conditional `v-if` on the picker's parent `div` which is toggled by
-clicking a button, we can then both conditionally fetch and render the
-`Emojipicker` component when the user clicks.
+clicking a button, we can then both conditionally fetch and render the `Emojipicker` component when the user clicks.
 
-``` {.astro-code .github-dark style="background-color:#24292e;overflow-x:auto" tabindex="0"}
+```vue
 <template>
   <div>
     <button @click="show = true">Load Emoji Picker</button>
@@ -451,231 +241,109 @@ clicking a button, we can then both conditionally fetch and render the
 ```
 
 The import-on-interaction pattern should be possible with most
-frameworks and libraries that support dynamic component loading,
-including
-[Angular](https://johnpapa.net/angular-9-lazy-loading-components/).
+frameworks and libraries that support dynamic component loading, including [Angular](https://johnpapa.net/angular-9-lazy-loading-components/).
 
-------------------------------------------------------------------------
+---
 
-Import-on-interaction for first-party code as part of progressive loading
--------------------------------------------------------------------------
+## Import-on-interaction for first-party code as part of progressive loading
 
-Loading code on interaction also happens to be a key part of how Google
-handles progressive loading in large applications like Flights and
-Photos. To illustrate this, let's take a look at an example previously
-presented by Shubhie Panicker.
+Loading code on interaction also happens to be a key part of how Google handles progressive loading in large applications like Flights and Photos. To illustrate this, let's take a look at an example previously presented by Shubhie Panicker.
 
-Imagine a user is planning a trip to Mumbai, India and they visit Google
-Hotels to look at prices. All of the resources needed for this
-interaction could be loaded eagerly upfront, but if a user hasn't
-selected any destination, the HTML/CSS/JS required for the map would be
-unnecessary.
+Imagine a user is planning a trip to Mumbai, India and they visit Google Hotels to look at prices. All of the resources needed for this interaction could be loaded eagerly upfront, but if a user hasn't selected any destination, the HTML/CSS/JS required for the map would be unnecessary.
 
-![Google Hotels on mobile
-web](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_1280.png){sizes="(max-width: 1280px) 100vw, 1280px"
-srcset="
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_200.png> 200w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_325.png> 325w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_423.png> 423w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_507.png> 507w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_585.png> 585w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_654.png> 654w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_718.png> 718w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_782.png> 782w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_846.png> 846w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_899.png> 899w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_951.png> 951w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_1005.png> 1005w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_1050.png> 1050w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_1100.png> 1100w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_1149.png> 1149w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_1196.png> 1196w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_1249.png> 1249w,
-<https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_1280.png> 1280w"}
+![Google Hotels on mobile web](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image10_ofj3bz_c_scale_w_1280.png)
 
-In the simplest download scenario, imagine Google Hotels is using naive
-[client-side
-rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web#csr)
-(CSR). All the code would be downloaded and processed upfront: HTML,
-followed by JS, CSS and then fetching the data, only to render once we
-have everything. However, this leaves the user waiting a long time with
-nothing displayed on-screen. A big chunk of the JavaScript and CSS may
-be unnecessary.
+In the simplest download scenario, imagine Google Hotels is using naive [client-side rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web#csr)
+(CSR). All the code would be downloaded and processed upfront: HTML, followed by JS, CSS and then fetching the data, only to render once we have everything. However, this leaves the user waiting a long time with nothing displayed on-screen. A big chunk of the JavaScript and CSS may be unnecessary.
 
-![Basic client-side
-rendering](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image11.png)
+![Basic client-side rendering](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image11.png)
 
 Next, imagine this experience moved to [server-side
-rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web#server-vs-static)
-(SSR). We would allow the user to get a visually complete page sooner,
-which is great, however it wouldn't be interactive until the data is
-fetched from the server and the client framework completes hydration.
+rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web#server-vs-static) (SSR). We would allow the user to get a visually complete page sooner, which is great, however it wouldn't be interactive until the data is fetched from the server and the client framework completes hydration.
 
-![Basic server-side
-rendering](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image12.png)
+![Basic server-side rendering](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image12.png)
 
-SSR can be an improvement, but the user may have an uncanny valley
-experience where the page looks ready, but they are unable to tap on
-anything. Sometimes this is referred to as rage clicks as users tend to
-click over and over again repeatedly in frustration.
+SSR can be an improvement, but the user may have an uncanny valley experience where the page looks ready, but they are unable to tap on anything. Sometimes this is referred to as rage clicks as users tend to click over and over again repeatedly in frustration.
 
-Returning to the Google Hotels search example, if we zoom in to the UI a
-little we can see that when a user clicks on "more filters" to find
-exactly the right hotel, the code required for that component is
-downloaded.
+Returning to the Google Hotels search example, if we zoom in to the UI a little we can see that when a user clicks on "more filters" to find exactly the right hotel, the code required for that component is downloaded.
 
-### Only very minimal code is downloaded initially and beyond this, user interaction dictates which code is sent down when. {#only-very-minimal-code-is-downloaded-initially-and-beyond-this-user-interaction-dictates-which-code-is-sent-down-when}
+### Only very minimal code is downloaded initially and beyond this, user interaction dictates which code is sent down when. 
 
 Let's take a closer look at this loading scenario.
 
-![Interacting with filters pulling in 30KB of JS and data on
-interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image13.png)
+![Interacting with filters pulling in 30KB of JS and data on interaction](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image13.png)
 
 There are a number of important aspects to interaction-driven
 late-loading:
 
-- First, we download the minimal code initially so the page is
-    visually complete quickly.
-- Next, as the user starts interacting with the page we use those
-    interactions to determine which other code to load. For example
-    loading the code for the "more filters" component.
-- This means code for many features on the page are never sent down to
-    the browser, as the user didn't need to use them.
+- First, we download the minimal code initially so the page is visually complete quickly.
+- Next, as the user starts interacting with the page we use those interactions to determine which other code to load. For example loading the code for the "more filters" component.
+- This means code for many features on the page are never sent down to the browser, as the user didn't need to use them.
 
-![Interaction driven late
-loading](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image14.png)
+![Interaction driven late loading](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image14.png)
 
 ### How do we avoid losing early clicks?
 
-In the framework stack used by these Google teams, we can track clicks
-early because the first chunk of HTML includes a small event library
-([JSAction](https://github.com/google/jsaction)) which tracks all clicks
-before the framework is bootstrapped. The events are used for two
-things:
+In the framework stack used by these Google teams, we can track clicks early because the first chunk of HTML includes a small event library ([JSAction](https://github.com/google/jsaction)) which tracks all clicks before the framework is bootstrapped. The events are used for two things:
 
 - Triggering download of component code based on user interactions
-- Replaying user interactions when the framework finishes
-    bootstrapping
+- Replaying user interactions when the framework finishes bootstrapping
 
-Other potential heuristics one could use include, loading component
-code:
-
+Other potential heuristics one could use include, loading component code:
 - A period after idle time
 - On user mouse hover over the relevant UI/button/call to action
-- Based on a sliding scale of eagerness based on browser signals (e.g
-    network speed, Data Saver mode etc).
+- Based on a sliding scale of eagerness based on browser signals (e.g network speed, Data Saver mode etc).
 
-![Tiny event library included with the initial
-HTML](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image15.png)
+![Tiny event library included with the initial HTML](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image15.png)
 
 ### What about data?
 
-The initial data which is used to render the page is included in the
-initial page's SSR HTML and streamed. Data that is late loaded is
-downloaded based on user interactions as we know what component it goes
-with.
+The initial data which is used to render the page is included in the initial page's SSR HTML and streamed. Data that is late loaded is downloaded based on user interactions as we know what component it goes with.
 
-This completes the import-on-interaction picture with data-fetching
-working similar to how CSS and JS function. As the component is aware of
-what code and data it needs, all of its resources are never more than a
-request away.
+This completes the import-on-interaction picture with data-fetching working similar to how CSS and JS function. As the component is aware of what code and data it needs, all of its resources are never more than a request away.
 
-![How does data-fetching work? By
-component](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image16.png)
+![How does data-fetching work? By component](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/image16.png)
 
-This functions as we create a graph of components and their dependencies
-during build time. The web application is able to refer to this graph at
-any point and quickly fetch the resources (code and data) needed for any
-component. It also means we code-split based on the component rather
-than the route.
+This functions as we create a graph of components and their dependencies during build time. The web application is able to refer to this graph at any point and quickly fetch the resources (code and data) needed for any component. It also means we code-split based on the component rather than the route.
 
-For a walkthrough of the above example, see [Elevating the Web Platform
-with the JavaScript
-Community](https://www.youtube.com/watch?v=-xZHWK-vHbQ).
+For a walkthrough of the above example, see [Elevating the Web Platform with the JavaScript Community](https://www.youtube.com/watch?v=-xZHWK-vHbQ).
 
-------------------------------------------------------------------------
+---
+## Trade-offs
 
-Trade-offs
-----------
+Shifting costly work closer to user-interaction can optimize how quickly pages initially load, however the technique is not without trade-offs. 
 
-Shifting costly work closer to user-interaction can optimize how quickly
-pages initially load, however the technique is not without trade-offs.
+### **What happens if it takes a long time to load a script after the user clicks?**
 
-**What happens if it takes a long time to load a script after the user
-clicks?**
+In the Google Hotels example, small granular chunks minimize the chance a user is going to wait long for code and data to fetch and execute. In some of the other cases, a large dependency may indeed introduce this concern on slower networks.
 
-In the Google Hotels example, small granular chunks minimize the chance
-a user is going to wait long for code and data to fetch and execute. In
-some of the other cases, a large dependency may indeed introduce this
-concern on slower networks.
+One way to reduce the chance of this happening is to better break-up the loading of, or prefetch these resources after critical content in the page is done loading. I'd encourage measuring the impact of this to determine how much it's a real application in your apps.
 
-One way to reduce the chance of this happening is to better break-up the
-loading of, or prefetch these resources after critical content in the
-page is done loading. I'd encourage measuring the impact of this to
-determine how much it's a real application in your apps.
+### **What about lack of functionality before user interaction?**
 
-**What about lack of functionality before user interaction?**
+Another trade-off with facades is a lack of functionality prior to user interaction. An embedded video player for example will not be able to autoplay media. If such functionality is key, you might consider alternative approaches to loading the resources, such as lazy-loading these third-party iframes on the user scrolling them into view rather than deferring load until interaction.
 
-Another trade-off with facades is a lack of functionality prior to user
-interaction. An embedded video player for example will not be able to
-autoplay media. If such functionality is key, you might consider
-alternative approaches to loading the resources, such as lazy-loading
-these third-party iframes on the user scrolling them into view rather
-than deferring load until interaction.
+---
+## Replacing interactive embeds with a static variant
 
-------------------------------------------------------------------------
+We have discussed the import-on-interaction pattern and progressive loading, but what about going entirely static for the embeds use-case?.
 
-Replacing interactive embeds with a static variant
---------------------------------------------------
-
-We have discussed the import-on-interaction pattern and progressive
-loading, but what about going entirely static for the embeds use-case?.
-
-The final rendered content from an embed may be needed immediately in
-some cases e.g a social media post that is visible in the initial
-viewport. This can also introduce its own challenges when the embed
-brings in 2-3MB of JavaScript. Because the embed content is needed right
-away, lazy-loading and facades may be less applicable.
+The final rendered content from an embed may be needed immediately in some cases e.g a social media post that is visible in the initial viewport. This can also introduce its own challenges when the embed brings in 2-3MB of JavaScript. Because the embed content is needed right away, lazy-loading and facades may be less applicable.
 
 If optimizing for performance, it's possible to entirely replace an
-embed with a static variant that looks similar, linking out to a more
-interactive version (e.g the original social media post). At build time,
-the data for the embed can be pulled in and transformed into a static
-HTML version.
+embed with a static variant that looks similar, linking out to a more interactive version (e.g the original social media post). At build time, the data for the embed can be pulled in and transformed into a static HTML version.
 
-![An original heavy-weight JavaScript embed compared to a statically
-rendered
-alternative](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/janesocial.png)
+![An original heavy-weight JavaScript embed compared to a statically rendered alternative](https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1617434835/patterns.dev/import-on-interaction/janesocial.png)
 
-[This](https://twitter.com/wongmjane/status/1330676158724116481) is the
-approach [\@wongmjane](https://twitter.com/@wongmjane)
-[leveraged](https://twitter.com/wongmjane/status/1330273157245243394) on
-their blog for one type of social media embed, improving both page load
-performance and removing the [Cumulative Layout
-Shift](https://web.dev/cls) experienced due to the embed code enhancing
-the fallback text, causing layout shifts.
+[This](https://twitter.com/wongmjane/status/1330676158724116481) is the approach [\@wongmjane](https://twitter.com/@wongmjane) [leveraged](https://twitter.com/wongmjane/status/1330273157245243394) on their blog for one type of social media embed, improving both page load performance and removing the [Cumulative Layout Shift](https://web.dev/cls) experienced due to the embed code enhancing the fallback text, causing layout shifts.
 
-While static replacements can be good for performance, they do often
-require doing something custom so keep this in mind when evaluating your
-options.
+While static replacements can be good for performance, they do often require doing something custom so keep this in mind when evaluating your options.
 
-------------------------------------------------------------------------
+---
+## Conclusions
 
-Conclusions
------------
+First-party JavaScript often impacts the interaction readiness of modern pages on the web, but it can often get delayed on the network behind non-critical JS from either first or third-party sources that keep the main thread busy.
 
-First-party JavaScript often impacts the interaction readiness of modern
-pages on the web, but it can often get delayed on the network behind
-non-critical JS from either first or third-party sources that keep the
-main thread busy.
+In general, avoid synchronous third-party scripts in the  document head and aim to load non-blocking third-party scripts after first-party JS has finished loading. Patterns like import-on-interaction give us a way to defer the loading of non-critical resources to a point when a user is much more likely to need the UI they power.
 
-In general, avoid synchronous third-party scripts in the document head
-and aim to load non-blocking third-party scripts after first-party JS
-has finished loading. Patterns like import-on-interaction give us a way
-to defer the loading of non-critical resources to a point when a user is
-much more likely to need the UI they power.
-
-*With special thanks to Shubhie Panicker, Connor Clark, Patrick Hulce,
-Anton Karlovskiy and Adam Raine for their input.*
-:::
-:::
+*With special thanks to Shubhie Panicker, Connor Clark, Patrick Hulce, Anton Karlovskiy and Adam Raine for their input.*

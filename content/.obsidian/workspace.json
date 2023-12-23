@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fruit/Coding/Patterns/performance/vanilla/dynamic-import.md",
+                "file": "fruit/Coding/Patterns/performance/vanilla/virtual-lists.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fruit/Coding/Patterns/performance/vanilla/dynamic-import.md",
+                "file": "fruit/Coding/Patterns/performance/vanilla/virtual-lists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fruit/Coding/Patterns/performance/vanilla/dynamic-import.md",
+                "file": "fruit/Coding/Patterns/performance/vanilla/virtual-lists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fruit/Coding/Patterns/performance/vanilla/dynamic-import.md"
+                "file": "fruit/Coding/Patterns/performance/vanilla/virtual-lists.md"
               }
             }
           },
@@ -195,18 +195,20 @@
   },
   "active": "cc5bfbe9a1fd61f9",
   "lastOpenFiles": [
+    "fruit/Coding/Patterns/performance/vanilla/tree-shaking.md",
+    "fruit/Coding/Patterns/performance/vanilla/third-party.md",
+    "fruit/Coding/Patterns/performance/vanilla/prpl.md",
+    "fruit/Coding/Patterns/performance/vanilla/preload.md",
+    "fruit/Coding/Patterns/performance/vanilla/prefetch.md",
+    "fruit/Coding/Patterns/performance/vanilla/Preload.md",
+    "fruit/Coding/Patterns/performance/vanilla/loading-sequence.md",
+    "fruit/Coding/Patterns/performance/vanilla/import-on-visibility.md",
+    "fruit/Coding/Patterns/performance/vanilla/import-on-interaction.md",
+    "fruit/Coding/Patterns/performance/vanilla/dynamic-import.md",
     "fruit/Coding/Patterns/performance/vanilla/compression.md",
     "fruit/Coding/Patterns/performance/vanilla/bundle-splitting.md",
     "fruit/Coding/Patterns/performance/temp",
-    "fruit/Coding/Patterns/performance/vanilla/dynamic-import.md",
-    "fruit/Coding/Patterns/performance/vanilla/import-on-interaction.md",
-    "fruit/Coding/Patterns/performance/vanilla/import-on-visibility.md",
-    "fruit/Coding/Patterns/performance/vanilla/loading-sequence.md",
-    "fruit/Coding/Patterns/performance/vanilla/prefetch.md",
-    "fruit/Coding/Patterns/performance/vanilla/third-party.md",
-    "fruit/Coding/Patterns/performance/vanilla/tree-shaking.md",
     "fruit/Coding/Patterns/performance/vanilla/virtual-lists.md",
-    "fruit/Coding/Patterns/performance/vanilla/prpl.md",
     "fruit/Coding/Patterns/performance/cut-before-heading1.sh",
     "fruit/Diagraming/ITSys/interactionView/constructing-communication-diagrams.md",
     "fruit/Coding/Patterns/performance/vanilla",
@@ -224,7 +226,6 @@
     "fruit/Coding/Patterns/performance/bundle-splitting.md",
     "fruit/Coding/Patterns/performance",
     "fruit/Diagraming/ITSys/interactionView/communication-diagram.md",
-    "fruit/Diagraming/ITSys/externalView/use-case-sequence-diagram.md",
     "_templates/dataview",
     "fruit/Coding/Refactoring/techniques/cut-before-heading1.sh",
     "fruit/Coding/smells/temp",

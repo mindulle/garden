@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fruit/Coding/Testing/javascript/3 Frontend/3-11 Detect visual issues with automated tools.md",
-                "mode": "preview",
+                "file": "tree/Software/Development/Trunk Based Development.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fruit/Coding/Testing/javascript/3 Frontend/3-11 Detect visual issues with automated tools.md",
+                "file": "tree/Software/Development/Trunk Based Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fruit/Coding/Testing/javascript/3 Frontend/3-11 Detect visual issues with automated tools.md",
+                "file": "tree/Software/Development/Trunk Based Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fruit/Coding/Testing/javascript/3 Frontend/3-11 Detect visual issues with automated tools.md"
+                "file": "tree/Software/Development/Trunk Based Development.md"
               }
             }
           },
@@ -195,11 +195,24 @@
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
-    "fruit/Coding/Testing/javascript/3 Frontend/3-10 Expose the tests as a live collaborative document.md",
-    "fruit/Coding/Testing/javascript/4 Measuring Tests Effectiveness/4-1 Get enough coverage for being confident 80 seems to be the lucky number.md",
+    "seed/software development/Feature flag.md",
+    "seed/software development/artifact (software development).md",
+    "tree/Software/Development/Trunk Based Development.md",
+    "fruit/Coding/Testing/javascript/5 Continuous Integration/5-9 Build matrix Run the same CI steps using multiple Node versions.md",
+    "fruit/Coding/Testing/javascript/5 Continuous Integration/5-8 Other non-Node related CI tips.md",
+    "fruit/Coding/Testing/javascript/5 Continuous Integration/5-7 Automate dependency updates.md",
+    "fruit/Coding/Testing/javascript/5 Continuous Integration/5-6 Constantly inspect for vulnerable dependencies.md",
+    "fruit/Coding/Testing/javascript/5 Continuous Integration/5-5 Stay away from legal issues using license and plagiarism check.md",
+    "fruit/Coding/Testing/javascript/5 Continuous Integration/5-4 Parallelize test execution.md",
     "fruit/Coding/Testing/javascript/5 Continuous Integration/5-3 Perform e2e testing over a true production-mirror.md",
     "fruit/Coding/Testing/javascript/5 Continuous Integration/5-2 Shorten the feedback loop with local developer-CI.md",
     "fruit/Coding/Testing/javascript/5 Continuous Integration/5-1 Enrich your linters and abort builds that have linting issues.md",
+    "fruit/Coding/Testing/javascript/4 Measuring Tests Effectiveness/4-4 Preventing test code issues with Test linters.md",
+    "fruit/Coding/Testing/javascript/4 Measuring Tests Effectiveness/4-3 Measure logical coverage using mutation testing.md",
+    "fruit/Coding/Testing/javascript/4 Measuring Tests Effectiveness/4-2 Inspect coverage reports to detect untested areas and other oddities.md",
+    "fruit/Coding/Testing/javascript/4 Measuring Tests Effectiveness/4-1 Get enough coverage for being confident 80 seems to be the lucky number.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-11 Detect visual issues with automated tools.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-10 Expose the tests as a live collaborative document.md",
     "fruit/Coding/Testing/javascript/3 Frontend/3-9 Have one E2E smoke test that just travels across the site map.md",
     "fruit/Coding/Testing/javascript/3 Frontend/3-8 Speed-up E2E tests by reusing login credentials.md",
     "fruit/Coding/Testing/javascript/3 Frontend/3-7 Have very few end-to-end tests that spans the whole system.md",
@@ -209,20 +222,7 @@
     "fruit/Coding/Testing/javascript/3 Frontend/3-4 Dont sleep use frameworks built-in support for async events. Also try to speed things up.md",
     "fruit/Coding/Testing/javascript/3 Frontend/3-3 Whenever possible test with a realistic and fully rendered component.md",
     "fruit/Coding/Testing/javascript/3 Frontend/3-1 Separate UI from functionality.md",
-    "fruit/Coding/Testing/javascript/4 Measuring Tests Effectiveness/4-2 Inspect coverage reports to detect untested areas and other oddities.md",
-    "fruit/Coding/Testing/javascript/3 Frontend/3-2 Query HTML elements based on attributes that are unlikely to change.md",
-    "fruit/Coding/Testing/javascript/2 Backend/2-12 Test the five potential outcomes.md",
-    "fruit/Coding/Testing/javascript/2 Backend/2-8 Choose a clear data clean-up strategy After-all recommended or after-each.md",
-    "fruit/Coding/Testing/javascript/2 Backend/2-7 Avoid global test fixtures and seeds add data per-test.md",
-    "fruit/Coding/Testing/javascript/2 Backend/2-6 Check your readiness for Node-related chaos.md",
-    "fruit/Coding/Testing/javascript/2 Backend/2-5 Measure and refactor using static analysis tools.md",
-    "fruit/Coding/Testing/javascript/2 Backend/2-3 Ensure new releases dont break the API using contract tests.md",
     "fruit/Coding/Testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",
-    "fruit/Coding/Testing/javascript/2 Backend/2-4 Test your middlewares in isolation.md",
-    "fruit/Coding/Testing/javascript/2 Backend/2-2 Component testing might be your best affair.md",
-    "fruit/Coding/Testing/javascript/2 Backend/2-1 Enrich your testing portfolio Look beyond unit tests and the pyramid.md",
-    "fruit/Coding/Testing/javascript/1 The Test Anatomy/1-5 Choose the right test doubles Avoid mocks in favor of stubs and spies.md",
-    "fruit/Coding/Testing/javascript/1 The Test Anatomy/1-3 Describe expectations in a product language use BDD-style assertions.md",
     "tree/Business/Logics",
     "tree/Design/ux",
     "tree/Design/ui",

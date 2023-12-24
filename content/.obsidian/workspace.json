@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fruit/Coding/Testing/javascript/2 Backend/2-12 Test the five potential outcomes.md",
+                "file": "fruit/Coding/Testing/javascript/3 Frontend/3-11 Detect visual issues with automated tools.md",
                 "mode": "preview",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fruit/Coding/Testing/javascript/2 Backend/2-12 Test the five potential outcomes.md",
+                "file": "fruit/Coding/Testing/javascript/3 Frontend/3-11 Detect visual issues with automated tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fruit/Coding/Testing/javascript/2 Backend/2-12 Test the five potential outcomes.md",
+                "file": "fruit/Coding/Testing/javascript/3 Frontend/3-11 Detect visual issues with automated tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fruit/Coding/Testing/javascript/2 Backend/2-12 Test the five potential outcomes.md"
+                "file": "fruit/Coding/Testing/javascript/3 Frontend/3-11 Detect visual issues with automated tools.md"
               }
             }
           },
@@ -195,6 +195,23 @@
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
+    "fruit/Coding/Testing/javascript/3 Frontend/3-10 Expose the tests as a live collaborative document.md",
+    "fruit/Coding/Testing/javascript/4 Measuring Tests Effectiveness/4-1 Get enough coverage for being confident 80 seems to be the lucky number.md",
+    "fruit/Coding/Testing/javascript/5 Continuous Integration/5-3 Perform e2e testing over a true production-mirror.md",
+    "fruit/Coding/Testing/javascript/5 Continuous Integration/5-2 Shorten the feedback loop with local developer-CI.md",
+    "fruit/Coding/Testing/javascript/5 Continuous Integration/5-1 Enrich your linters and abort builds that have linting issues.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-9 Have one E2E smoke test that just travels across the site map.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-8 Speed-up E2E tests by reusing login credentials.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-7 Have very few end-to-end tests that spans the whole system.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-6 Stub flaky and slow resources like backend APIs.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-5 Watch how the content is served over the network.md",
+    "fruit/Coding/Testing/javascript/assets/lighthouse2.png",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-4 Dont sleep use frameworks built-in support for async events. Also try to speed things up.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-3 Whenever possible test with a realistic and fully rendered component.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-1 Separate UI from functionality.md",
+    "fruit/Coding/Testing/javascript/4 Measuring Tests Effectiveness/4-2 Inspect coverage reports to detect untested areas and other oddities.md",
+    "fruit/Coding/Testing/javascript/3 Frontend/3-2 Query HTML elements based on attributes that are unlikely to change.md",
+    "fruit/Coding/Testing/javascript/2 Backend/2-12 Test the five potential outcomes.md",
     "fruit/Coding/Testing/javascript/2 Backend/2-8 Choose a clear data clean-up strategy After-all recommended or after-each.md",
     "fruit/Coding/Testing/javascript/2 Backend/2-7 Avoid global test fixtures and seeds add data per-test.md",
     "fruit/Coding/Testing/javascript/2 Backend/2-6 Check your readiness for Node-related chaos.md",
@@ -206,32 +223,16 @@
     "fruit/Coding/Testing/javascript/2 Backend/2-1 Enrich your testing portfolio Look beyond unit tests and the pyramid.md",
     "fruit/Coding/Testing/javascript/1 The Test Anatomy/1-5 Choose the right test doubles Avoid mocks in favor of stubs and spies.md",
     "fruit/Coding/Testing/javascript/1 The Test Anatomy/1-3 Describe expectations in a product language use BDD-style assertions.md",
-    "fruit/Coding/Testing/javascript/1 The Test Anatomy/1-2 Structure tests by the AAA pattern.md",
-    "fruit/Coding/Testing/javascript/1 The Test Anatomy/1-1 Include 3 parts in each test name.md",
-    "fruit/Coding/Testing/javascript/0 The Golden Rule/0 Design for lean testing.md",
-    "fruit/Coding/Testing/go/anti_patterns/anti-patterns.md",
-    "fruit/Coding/Testing/go/tips/context-aware-reader.md",
-    "fruit/Coding/Testing/go/build_an_application/http-server.md",
-    "fruit/Coding/Testing/go/build_an_application/command-line.md",
-    "tree/Business/Planning/Call to Action.md",
     "tree/Business/Logics",
-    "tree/Business/Planning/Incremental A, B Testing.md",
-    "tree/Business/Planning/Deploy Social Proof.md",
-    "tree/Business/Planning/Cheating.md",
-    "tree/Business/Planning/Business Model Canvas.md",
-    "tree/Business/Planning/Lean Canvas.md",
     "tree/Design/ux",
     "tree/Design/ui",
     "tree/Design/graphic",
     "tree/Design/base",
-    "tree/Software/Architecture/Untitled.md",
     "tree/Software/Development",
     "tree/Design/assets",
     "tree/Design",
-    "fruit/Coding/Patterns/rendering/vanilla/view-transitions.md",
     "seed/buzzwords",
     "fruit/Graphic Design",
-    "fruit/Coding/Patterns/rendering/vanilla/rendering-patterns.md",
     "fruit/testing/javascript/assets/zh-CN/headspace.png",
     "fruit/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
     "fruit/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",
@@ -240,7 +241,6 @@
     "fruit/testing/javascript/assets/zh-CN/bp-1-3-parts.jpg",
     "fruit/testing/javascript/assets/yoni-goldberg.jpg",
     "fruit/testing/javascript/assets/uml.png",
-    "fruit/testing/javascript/assets/twitter.png",
     "_OKR/2023/Q4/Q4 2023.canvas",
     "_OKR/2023/2023.canvas",
     "Templates/canvas for indices.canvas"

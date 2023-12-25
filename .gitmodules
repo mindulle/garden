@@ -4,3 +4,6 @@
 [submodule "content/core/workflow"]
 	path = content/core/workflow
 	url = https://github.com/mindulle/workflow.git
+[submodule "content/core/audit"]
+	path = content/core/audit
+	url = https://github.com/mindulle/audit.git

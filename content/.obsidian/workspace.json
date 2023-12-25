@@ -11,8 +11,12 @@
             "id": "3e7a7101c7feee08",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "index.md"
+              }
             }
           },
           {
@@ -187,8 +195,12 @@
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
-    "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.md",
+    "core/index.md",
+    "index.md",
+    "tree/Software/Networkk/Protocol Buffers.md",
     "tree/Software/Development/Trunk Based Development.md",
+    "tree/Software/Networkk",
+    "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.md",
     "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.dark.svg",
     "attachment",
     "seed/software development/Feature flag.md",
@@ -212,9 +224,7 @@
     "fruit/Coding/Testing/javascript/3 Frontend/3-8 Speed-up E2E tests by reusing login credentials.md",
     "fruit/Coding/Testing/javascript/3 Frontend/3-7 Have very few end-to-end tests that spans the whole system.md",
     "fruit/Coding/Testing/javascript/3 Frontend/3-6 Stub flaky and slow resources like backend APIs.md",
-    "fruit/Coding/Testing/javascript/3 Frontend/3-5 Watch how the content is served over the network.md",
     "fruit/Coding/Testing/javascript/assets/lighthouse2.png",
-    "fruit/Coding/Testing/javascript/3 Frontend/3-4 Dont sleep use frameworks built-in support for async events. Also try to speed things up.md",
     "fruit/Coding/Testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",
     "tree/Business/Logics",
     "tree/Design/ux",
@@ -224,7 +234,6 @@
     "tree/Software/Development",
     "tree/Design/assets",
     "tree/Design",
-    "seed/buzzwords",
     "fruit/testing/javascript/assets/zh-CN/headspace.png",
     "fruit/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
     "fruit/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

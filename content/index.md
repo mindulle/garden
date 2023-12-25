@@ -3,13 +3,14 @@ title: Mindulle Garden🌱
 ---
 This page shows how I organize my digital garden and summarizes them as a table.
 
-## on this website
-| folder      | content                                                                  |
-| ----------- | ------------------------------------------------------------------------ |
-| [[seed/index\|seed]]        | terms, vocabularies, programming paradigm                                |
-| [[tree/index\|tree]]        | practical knowledges but not to be available on development immediately. |
-| [[flower/index\|flower]]      | knowledges for collaborative works.                                      |
-| [[fruit/index\|fruit]]       | practical knowledges which are able to adapt realworld workflow immediately.                                                                         |
+## knowledge layers on this website
+| folder                   | content                                                                                                |
+| ------------------------ | ------------------------------------------------------------------------------------------------------ |
+| [[seed/index\|seed]]     | basic terms, vocabularies,  concepts                                                                    |
+| [[tree/index\|tree]]     | practical knowledges and buzzwords for realworld activities. extended from seed.                       |
+| [[flower/index\|flower]] | knowledges for collaborative works.                                                                    |
+| [[fruit/index\|fruit]]   | My favorite practical knowledges which are able to adapt my personal workflow immediately.             |
+| [[core/index\|core]]     | Important knowledges and techniques in realworld business but hard to adapt personal proejct directly. |
 
 ## on my other repository
 ### mindulle
@@ -36,4 +37,3 @@ This page shows how I organize my digital garden and summarizes them as a table.
 | [tistory blog](https://mindulle.tistory.com)                                                    | feynman technique step 2                                              |
 
 
-[[flower/refactoring/smells/change-preventers/shotgun-surgery|shotgun-surgery]]

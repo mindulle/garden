@@ -15,6 +15,7 @@
               "state": {
                 "file": "index.md",
                 "mode": "source",
+                "backlinks": true,
                 "source": false
               }
             }
@@ -189,8 +190,7 @@
       "obsidian-spaced-repetition:Review flashcards": false,
       "templater-obsidian:Templater": false,
       "markdown-table-editor:Open Markdown Table Editor": false,
-      "obsidian-raindrop-highlights:Sync your Raindrop highlights": false,
-      "periodic-notes:Open today": false
+      "obsidian-raindrop-highlights:Sync your Raindrop highlights": false
     }
   },
   "active": "3e7a7101c7feee08",

@@ -1,12 +1,5 @@
 {
-  "obsidian-emoji-toolbar:emoji-picker:open-picker": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": ";"
-    }
-  ],
+  "obsidian-emoji-toolbar:emoji-picker:open-picker": [],
   "editor:toggle-highlight": [
     {
       "modifiers": [

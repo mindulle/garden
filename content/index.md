@@ -37,3 +37,4 @@ This page shows how I organize my digital garden and summarizes them as a table.
 | [tistory blog](https://mindulle.tistory.com)                                                    | feynman technique step 2                                              |
 
 
+

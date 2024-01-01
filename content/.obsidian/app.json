@@ -1,5 +1,5 @@
 {
-  "newLinkFormat": "absolute",
+  "newLinkFormat": "shortest",
   "attachmentFolderPath": "attachment",
   "promptDelete": false,
   "alwaysUpdateLinks": true,

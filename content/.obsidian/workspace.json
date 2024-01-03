@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seed/software development/Variadic function.md",
+                "file": "seed/programming syntax/Block statement.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "seed/software development/Variadic function.md",
+                "file": "seed/programming syntax/Block statement.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "seed/software development/Variadic function.md",
+                "file": "seed/programming syntax/Block statement.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "seed/software development/Variadic function.md"
+                "file": "seed/programming syntax/Block statement.md"
               }
             }
           },
@@ -195,8 +195,10 @@
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
-    "seed/software development/artifact (software development).md",
     "seed/software development/Variadic function.md",
+    "seed/programming syntax/Block statement.md",
+    "seed/programming syntax",
+    "seed/software development/artifact (software development).md",
     "index.md",
     "core/audit/refactor/simpCondExp/replace-nested-conditional-with-guard-clauses.ts",
     "core/audit/refactor/simpCondExp/replace-conditional-with-polymorphism.ts",
@@ -211,7 +213,6 @@
     "core/audit/smell/ooAbusers/alternative-classes-with-different-interfaces.md",
     "core/audit/smell/ooAbusers/switch-statements.md",
     "core/audit/smell/ooAbusers/refused-bequest.md",
-    "core/audit/smell/ooAbusers",
     "core/audit/smell/changePreventers/shotgun-surgery.md",
     "core/audit/smell/changePreventers/parallel-inheritance-hierarchies.md",
     "core/audit/smell/changePreventers/divergent-change.md",
@@ -230,7 +231,6 @@
     "core/audit/ptrn/perf/vanilla/tree-shaking.md",
     "core/audit/ptrn/perf/vanilla/third-party.md",
     "core/audit/ptrn/perf/vanilla/prpl.md",
-    "core/audit/ptrn/perf/vanilla/preload.md",
     "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.dark.svg",
     "fruit/Coding/Testing/javascript/assets/lighthouse2.png",
     "fruit/Coding/Testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

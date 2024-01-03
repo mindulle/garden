@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "seed/software development/Variadic function.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "seed/software development/Variadic function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "seed/software development/Variadic function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "seed/software development/Variadic function.md"
               }
             }
           },
@@ -195,6 +195,9 @@
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
+    "seed/software development/artifact (software development).md",
+    "seed/software development/Variadic function.md",
+    "index.md",
     "core/audit/refactor/simpCondExp/replace-nested-conditional-with-guard-clauses.ts",
     "core/audit/refactor/simpCondExp/replace-conditional-with-polymorphism.ts",
     "core/audit/refactor/simpCondExp/remove-control-flag.ts",
@@ -212,7 +215,6 @@
     "core/audit/smell/changePreventers/shotgun-surgery.md",
     "core/audit/smell/changePreventers/parallel-inheritance-hierarchies.md",
     "core/audit/smell/changePreventers/divergent-change.md",
-    "core/audit/smell/changePreventers",
     "core/audit/ptrn/render/vanilla/view-transitions.md",
     "core/audit/ptrn/render/vanilla/rendering-patterns.md",
     "core/audit/ptrn/render/vanilla/islands-architecture.md",
@@ -229,8 +231,6 @@
     "core/audit/ptrn/perf/vanilla/third-party.md",
     "core/audit/ptrn/perf/vanilla/prpl.md",
     "core/audit/ptrn/perf/vanilla/preload.md",
-    "core/audit/ptrn/perf/vanilla/prefetch.md",
-    "core/audit/ptrn/perf/vanilla/loading-sequence.md",
     "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.dark.svg",
     "fruit/Coding/Testing/javascript/assets/lighthouse2.png",
     "fruit/Coding/Testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

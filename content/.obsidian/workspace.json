@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seed/programming syntax/Block statement.md",
+                "file": "_templates/_seed/vocabulary.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "seed/programming syntax/Block statement.md",
+                "file": "_templates/_seed/vocabulary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "seed/programming syntax/Block statement.md",
+                "file": "_templates/_seed/vocabulary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "seed/programming syntax/Block statement.md"
+                "file": "_templates/_seed/vocabulary.md"
               }
             }
           },
@@ -195,8 +195,9 @@
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
-    "seed/software development/Variadic function.md",
+    "_templates/_seed/acronym.md",
     "seed/programming syntax/Block statement.md",
+    "seed/software development/Variadic function.md",
     "seed/programming syntax",
     "seed/software development/artifact (software development).md",
     "index.md",
@@ -230,7 +231,6 @@
     "core/audit/ptrn/perf/vanilla/virtual-lists.md",
     "core/audit/ptrn/perf/vanilla/tree-shaking.md",
     "core/audit/ptrn/perf/vanilla/third-party.md",
-    "core/audit/ptrn/perf/vanilla/prpl.md",
     "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.dark.svg",
     "fruit/Coding/Testing/javascript/assets/lighthouse2.png",
     "fruit/Coding/Testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

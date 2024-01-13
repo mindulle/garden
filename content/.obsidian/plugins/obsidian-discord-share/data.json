@@ -1,0 +1,23 @@
+{
+  "discordWebhookURL": [
+    {
+      "description": "🌱garden",
+      "url": "https://discord.com/api/webhooks/1195229743763705926/q0Mhf7Ebmf4T7vlIs8ldvyz0ecFs-yAvAZl65KJ76NDAEt2HVl-eU-8NzjBasvJGDSzv"
+    }
+  ],
+  "attachmentsFolder": "",
+  "localSuggestionsLimit": 10,
+  "showPreviewInLocalModal": true,
+  "customBotUsername": "",
+  "customBotAvatarURL": "",
+  "useNoteTitleForEmbed": false,
+  "embedTitle": "",
+  "embedColor": "",
+  "embedURL": "",
+  "embedAuthor": "",
+  "embedDescription": "",
+  "embedThumbnail": "",
+  "embedFields": "",
+  "embedImage": "",
+  "embedFooter": ""
+}

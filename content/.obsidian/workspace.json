@@ -139,14 +139,6 @@
             }
           },
           {
-            "id": "6dd1966cdd4d614a",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
             "id": "d47b6c4450bcec2a",
             "type": "leaf",
             "state": {
@@ -189,13 +181,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-spaced-repetition:Review flashcards": false,
       "templater-obsidian:Templater": false,
-      "markdown-table-editor:Open Markdown Table Editor": false,
-      "obsidian-raindrop-highlights:Sync your Raindrop highlights": false,
       "obsidian42-brat:BRAT": false
     }
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
+    "seed/artifact.md",
+    "seed/computing/ployglot (computing).md",
     "_templates/_seed/vocabulary.md",
     "_templates/_seed/acronym.md",
     "seed/programming syntax/Block statement.md",
@@ -230,8 +222,6 @@
     "core/audit/ptrn/render/react/progressive-hydration.md",
     "core/audit/ptrn/render/react/incremental-static-rendering.md",
     "core/audit/ptrn/render/react/client-side-rendering.md",
-    "core/audit/ptrn/perf/vanilla/virtual-lists.md",
-    "core/audit/ptrn/perf/vanilla/tree-shaking.md",
     "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.dark.svg",
     "fruit/Coding/Testing/javascript/assets/lighthouse2.png",
     "fruit/Coding/Testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

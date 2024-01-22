@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seed/computing/ployglot (computing).md",
+                "file": "core/background-knowledge/fundamental/design/BASIS_01_laws.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "seed/computing/ployglot (computing).md",
+                "file": "core/background-knowledge/fundamental/design/BASIS_01_laws.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "seed/computing/ployglot (computing).md",
+                "file": "core/background-knowledge/fundamental/design/BASIS_01_laws.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "seed/computing/ployglot (computing).md"
+                "file": "core/background-knowledge/fundamental/design/BASIS_01_laws.md"
               }
             }
           },
@@ -184,10 +184,10 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "3e7a7101c7feee08",
+  "active": "1ed3ae3907a45b75",
   "lastOpenFiles": [
-    "seed/artifact.md",
     "seed/computing/ployglot (computing).md",
+    "seed/artifact.md",
     "_templates/_seed/vocabulary.md",
     "_templates/_seed/acronym.md",
     "seed/programming syntax/Block statement.md",

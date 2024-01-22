@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "core/background/law/ux/cognitiveBias/Peak-End_Rule.md",
+                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -46,8 +46,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,8 +210,10 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "959541a687fc1fb0",
+  "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
+    "core/background/law/ux/cognitiveBias/Peak-End_Rule.md",
+    "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
     "core/background/fndmn/design/LAYOUT_02_grid_BASIS_.md",
     "core/background/fndmn/design/BASIS_03_information_architecture.md",
     "core/background/fndmn/design/BASIS_02_process.md",
@@ -242,8 +243,6 @@
     "core/background/law/ux/heuristic",
     "core/background/law/ux/gestalt/Law_of_Similarity.md",
     "core/background/law/ux/gestalt/Law_of_Proximity.md",
-    "core/background/law/ux/gestalt/Law_of_Prägnanz.md",
-    "core/background/law/ux/gestalt/Law_of_Common_Region.md",
     "core/background/law/ux/gestalt",
     "core/background/law/ux/cognitiveBias",
     "core/background/law/decide/images/gartner_hype_cycle.png",

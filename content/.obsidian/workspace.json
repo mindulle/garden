@@ -13,14 +13,41 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "core/background-knowledge/fundamental/design/BASIS_01_laws.md",
+                "file": "core/background/law/ux/cognitiveBias/Peak-End_Rule.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "959541a687fc1fb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8373185aa0f6d7d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "core/background/fndmn/design/LAYOUT_02_grid_BASIS_.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "core/background-knowledge/fundamental/design/BASIS_01_laws.md",
+                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "core/background-knowledge/fundamental/design/BASIS_01_laws.md",
+                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -134,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "core/background-knowledge/fundamental/design/BASIS_01_laws.md"
+                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md"
               }
             }
           },
@@ -184,44 +211,47 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "1ed3ae3907a45b75",
+  "active": "959541a687fc1fb0",
   "lastOpenFiles": [
-    "seed/computing/ployglot (computing).md",
-    "seed/artifact.md",
-    "_templates/_seed/vocabulary.md",
-    "_templates/_seed/acronym.md",
-    "seed/programming syntax/Block statement.md",
-    "seed/software development/Variadic function.md",
-    "seed/programming syntax",
-    "seed/software development/artifact (software development).md",
-    "index.md",
-    "core/audit/refactor/simpCondExp/replace-nested-conditional-with-guard-clauses.ts",
-    "core/audit/refactor/simpCondExp/replace-conditional-with-polymorphism.ts",
-    "core/audit/refactor/simpCondExp/remove-control-flag.ts",
-    "core/audit/refactor/simpCondExp/introduce-null-object.ts",
-    "core/audit/refactor/simpCondExp/introduce-assertion.ts",
-    "core/audit/refactor/simpCondExp/decompose-conditional.ts",
-    "core/audit/refactor/simpCondExp/consolidate-duplicate-conditional-fragments.ts",
-    "core/audit/refactor/simpCondExp/consolidate-conditional-expression.ts",
-    "core/audit/refactor/simpCondExp",
-    "core/audit/smell/ooAbusers/temporary-field.md",
-    "core/audit/smell/ooAbusers/alternative-classes-with-different-interfaces.md",
-    "core/audit/smell/ooAbusers/switch-statements.md",
-    "core/audit/smell/ooAbusers/refused-bequest.md",
-    "core/audit/smell/changePreventers/shotgun-surgery.md",
-    "core/audit/smell/changePreventers/parallel-inheritance-hierarchies.md",
-    "core/audit/smell/changePreventers/divergent-change.md",
-    "core/audit/ptrn/render/vanilla/view-transitions.md",
-    "core/audit/ptrn/render/vanilla/rendering-patterns.md",
-    "core/audit/ptrn/render/vanilla/islands-architecture.md",
-    "core/audit/ptrn/render/react/streaming-ssr.md",
-    "core/audit/ptrn/render/react/static-rendering.md",
-    "core/audit/ptrn/render/react/server-side-rendering.md",
-    "core/audit/ptrn/render/react/react-server-components.md",
-    "core/audit/ptrn/render/react/react-selective-hydration.md",
-    "core/audit/ptrn/render/react/progressive-hydration.md",
-    "core/audit/ptrn/render/react/incremental-static-rendering.md",
-    "core/audit/ptrn/render/react/client-side-rendering.md",
+    "core/background/fndmn/design/LAYOUT_02_grid_BASIS_.md",
+    "core/background/fndmn/design/BASIS_03_information_architecture.md",
+    "core/background/fndmn/design/BASIS_02_process.md",
+    "core/background/fndmn/design/BASIS_01_laws.md",
+    "core/background/law/dev/Brooks-Law.md",
+    "core/workflow/backend/kick-off.md",
+    "core/background/principle/computing/The-Fallacies-of-Distributed-Computing.md",
+    "core/background/principle/computing/The-Unix-Philosophy.md",
+    "core/background/principle/computing/The-Spotify-Model.md",
+    "core/background/principle/computing/images/spotify_model.jpg",
+    "core/background/principle/computing/images",
+    "core/background/principle/computing/새 폴더",
+    "core/background/principle/biz/The-Dilbert-Principle.md",
+    "core/background/principle/biz/The-Peter-Principle.md",
+    "core/background/principle/biz/The-Pareto-Principle-The-8020-Rule.md",
+    "core/background/principle/biz/Occams-Razor.md",
+    "core/background/principle/biz/Dunbars-Number.md",
+    "core/background/law/ux/heuristic/Parkinson’s_Law.md",
+    "core/background/paradigm/XP",
+    "core/background/law/ux/heuristic/Miller’s_Law.md",
+    "core/background/law/ux/heuristic/Jakob’s_Law.md",
+    "core/background/law/ux/heuristic/Hick’s_Law.md",
+    "core/background/law/ux/heuristic/Goal-Gradient_Effect.md",
+    "core/background/law/ux/heuristic/Fitts’s_Law.md",
+    "core/background/law/ux/heuristic/Aesthetic-Usability_Effect.md",
+    "core/background/law/ux/gestalt/Law_of_Uniform_Connectedness.md",
+    "core/background/law/ux/heuristic",
+    "core/background/law/ux/gestalt/Law_of_Similarity.md",
+    "core/background/law/ux/gestalt/Law_of_Proximity.md",
+    "core/background/law/ux/gestalt/Law_of_Prägnanz.md",
+    "core/background/law/ux/gestalt/Law_of_Common_Region.md",
+    "core/background/law/ux/gestalt",
+    "core/background/law/ux/cognitiveBias",
+    "core/background/law/decide/images/gartner_hype_cycle.png",
+    "core/background/law/decide/images",
+    "core/background/principle/cognition",
+    "core/background/law/computing/images/amdahls_law.png",
+    "core/background/law/computing/images",
+    "core/background/principle/computing",
     "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.dark.svg",
     "fruit/Coding/Testing/javascript/assets/lighthouse2.png",
     "fruit/Coding/Testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",
@@ -229,9 +259,6 @@
     "fruit/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
     "fruit/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",
     "fruit/testing/javascript/assets/zh-CN/bp-13-component-test-yoni-goldberg.png",
-    "fruit/testing/javascript/assets/zh-CN/bp-12-rich-testing.jpg",
-    "fruit/testing/javascript/assets/zh-CN/bp-1-3-parts.jpg",
-    "fruit/testing/javascript/assets/yoni-goldberg.jpg",
     "_OKR/2023/Q4/Q4 2023.canvas",
     "_OKR/2023/2023.canvas",
     "Templates/canvas for indices.canvas"

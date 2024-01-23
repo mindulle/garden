@@ -187,9 +187,17 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "17d6ed14981ccbc3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -210,7 +218,7 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "3e7a7101c7feee08",
+  "active": "17d6ed14981ccbc3",
   "lastOpenFiles": [
     "core/audit/ptrn/perf/vanilla/prpl.md",
     "core/audit/ptrn/perf/vanilla/prefetch.md",

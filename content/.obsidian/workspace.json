@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
+                "file": "core/audit/ptrn/perf/vanilla/preload.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
+                "file": "core/audit/ptrn/perf/vanilla/preload.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
+                "file": "core/audit/ptrn/perf/vanilla/preload.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md"
+                "file": "core/audit/ptrn/perf/vanilla/preload.md"
               }
             }
           },
@@ -212,8 +212,23 @@
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
-    "core/background/law/ux/cognitiveBias/Peak-End_Rule.md",
+    "core/audit/ptrn/perf/vanilla/prpl.md",
+    "core/audit/ptrn/perf/vanilla/prefetch.md",
+    "core/audit/ptrn/perf/vanilla/loading-sequence.md",
+    "core/audit/ptrn/perf/vanilla/import-on-interaction.md",
+    "core/audit/ptrn/perf/vanilla/import-on-visibility.md",
+    "core/audit/ptrn/perf/vanilla/compression.md",
+    "core/audit/ptrn/perf/vanilla/bundle-splitting.md",
+    "fruit/Coding/Patterns/performance/vanilla/bundle-splitting.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/add-parameter.md",
+    "core/audit/smell/bloaters/data-clumps.md",
+    "fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command.md",
+    "fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility.md",
+    "core/audit/ptrn/design/behavioral/chain-of-responsibility.md",
+    "fruit/Coding/Patterns/Design Patterns/catalog/behavioral-patterns.md",
+    "core/audit/ptrn/render/react/incremental-static-rendering.md",
     "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
+    "core/background/law/ux/cognitiveBias/Peak-End_Rule.md",
     "core/background/fndmn/design/LAYOUT_02_grid_BASIS_.md",
     "core/background/fndmn/design/BASIS_03_information_architecture.md",
     "core/background/fndmn/design/BASIS_02_process.md",
@@ -226,23 +241,8 @@
     "core/background/principle/computing/images/spotify_model.jpg",
     "core/background/principle/computing/images",
     "core/background/principle/computing/새 폴더",
-    "core/background/principle/biz/The-Dilbert-Principle.md",
-    "core/background/principle/biz/The-Peter-Principle.md",
-    "core/background/principle/biz/The-Pareto-Principle-The-8020-Rule.md",
-    "core/background/principle/biz/Occams-Razor.md",
-    "core/background/principle/biz/Dunbars-Number.md",
-    "core/background/law/ux/heuristic/Parkinson’s_Law.md",
     "core/background/paradigm/XP",
-    "core/background/law/ux/heuristic/Miller’s_Law.md",
-    "core/background/law/ux/heuristic/Jakob’s_Law.md",
-    "core/background/law/ux/heuristic/Hick’s_Law.md",
-    "core/background/law/ux/heuristic/Goal-Gradient_Effect.md",
-    "core/background/law/ux/heuristic/Fitts’s_Law.md",
-    "core/background/law/ux/heuristic/Aesthetic-Usability_Effect.md",
-    "core/background/law/ux/gestalt/Law_of_Uniform_Connectedness.md",
     "core/background/law/ux/heuristic",
-    "core/background/law/ux/gestalt/Law_of_Similarity.md",
-    "core/background/law/ux/gestalt/Law_of_Proximity.md",
     "core/background/law/ux/gestalt",
     "core/background/law/ux/cognitiveBias",
     "core/background/law/decide/images/gartner_hype_cycle.png",

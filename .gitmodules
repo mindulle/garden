@@ -7,3 +7,6 @@
 [submodule "content/core/background"]
 	path = content/core/background
 	url = https://github.com/mindulle/background.git
+[submodule "content/core/customizations"]
+	path = content/core/customizations
+	url = https://github.com/mindulle/customizatoins.git

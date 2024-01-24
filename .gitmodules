@@ -4,3 +4,6 @@
 [submodule "content/core/background"]
 	path = content/core/background
 	url = https://github.com/mindulle/background.git
+[submodule "content/core/preferences"]
+	path = content/core/preferences
+	url = https://github.com/mindulle/preferences.git

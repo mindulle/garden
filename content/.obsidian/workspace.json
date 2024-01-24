@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "core/audit/ptrn/perf/vanilla/preload.md",
+                "file": "core/preferences/Tsconfig.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "core/audit/ptrn/perf/vanilla/preload.md",
+                "file": "core/preferences/Tsconfig.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "core/audit/ptrn/perf/vanilla/preload.md",
+                "file": "core/preferences/Tsconfig.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "core/audit/ptrn/perf/vanilla/preload.md"
+                "file": "core/preferences/Tsconfig.md"
               }
             }
           },
@@ -218,8 +218,20 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "17d6ed14981ccbc3",
+  "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
+    "core/preferences/Linters.md",
+    "core/preferences/Tsconfig.md",
+    "index.md",
+    "core/preferences/typescript",
+    "core/preferences/code convention",
+    "core/preferences",
+    "core/customizations/tsconfig.md",
+    "core/customizations/typescript",
+    "core/customizations/Linters.md",
+    "core/customizations/code convention",
+    "core/customizations",
+    "core/audit/ptrn/perf/vanilla/preload.md",
     "core/audit/ptrn/perf/vanilla/prpl.md",
     "core/audit/ptrn/perf/vanilla/prefetch.md",
     "core/audit/ptrn/perf/vanilla/loading-sequence.md",
@@ -240,25 +252,13 @@
     "core/background/fndmn/design/LAYOUT_02_grid_BASIS_.md",
     "core/background/fndmn/design/BASIS_03_information_architecture.md",
     "core/background/fndmn/design/BASIS_02_process.md",
-    "core/background/fndmn/design/BASIS_01_laws.md",
-    "core/background/law/dev/Brooks-Law.md",
-    "core/workflow/backend/kick-off.md",
-    "core/background/principle/computing/The-Fallacies-of-Distributed-Computing.md",
-    "core/background/principle/computing/The-Unix-Philosophy.md",
-    "core/background/principle/computing/The-Spotify-Model.md",
     "core/background/principle/computing/images/spotify_model.jpg",
     "core/background/principle/computing/images",
     "core/background/principle/computing/새 폴더",
     "core/background/paradigm/XP",
     "core/background/law/ux/heuristic",
-    "core/background/law/ux/gestalt",
-    "core/background/law/ux/cognitiveBias",
     "core/background/law/decide/images/gartner_hype_cycle.png",
-    "core/background/law/decide/images",
-    "core/background/principle/cognition",
     "core/background/law/computing/images/amdahls_law.png",
-    "core/background/law/computing/images",
-    "core/background/principle/computing",
     "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.dark.svg",
     "fruit/Coding/Testing/javascript/assets/lighthouse2.png",
     "fruit/Coding/Testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",

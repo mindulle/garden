@@ -1,12 +1,6 @@
-[submodule "content/core/workflow"]
-	path = content/core/workflow
-	url = https://github.com/mindulle/workflow.git
 [submodule "content/core/audit"]
 	path = content/core/audit
 	url = https://github.com/mindulle/audit.git
 [submodule "content/core/background"]
 	path = content/core/background
 	url = https://github.com/mindulle/background.git
-[submodule "content/core/customizations"]
-	path = content/core/customizations
-	url = https://github.com/mindulle/customizatoins.git

@@ -21,6 +21,16 @@
             }
           },
           {
+            "id": "f4ef34f379a876e4",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
+          },
+          {
             "id": "959541a687fc1fb0",
             "type": "leaf",
             "state": {
@@ -46,7 +56,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -218,7 +229,7 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "3e7a7101c7feee08",
+  "active": "f4ef34f379a876e4",
   "lastOpenFiles": [
     "core/background/fndmn/design/@TABLE_OF_CONTENT.md",
     "core/preferences/Linters.md",

@@ -13,33 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "959541a687fc1fb0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8373185aa0f6d7d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "core/background/fndmn/design/LAYOUT_02_grid_BASIS_.md",
+                "file": "seed/UI/Inputs/Rating.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -75,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:fruit/Coding/smells ",
+                "query": "tag:#f3",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "seed/UI/Inputs/Rating.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "seed/UI/Inputs/Rating.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -160,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "seed/UI/Inputs/Rating.md"
               }
             }
           },
@@ -197,7 +171,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -220,6 +194,18 @@
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
+    "seed/UI/Inputs/Number Input.md",
+    "seed/UI/Inputs/Rating.md",
+    "index.md",
+    "_templates/TEMP - UI.md",
+    "core/background/fndmn/design/LAYOUT_02_grid_BASIS_.md",
+    "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
+    "seed/UI/Inputs/Color Picker.md",
+    "fruit/Diagraming/prepIntegr/processView/the-business-system-model-as-foundation.md",
+    "fruit/Coding/Testing/javascript/1 The Test Anatomy/1-11 Tag your tests.md",
+    "tree/Software/Writing",
+    "seed/UI/Inputs",
+    "seed/UI",
     "core/audit/ptrn/design/behavioral/command.md",
     "core/audit/ptrn/design/behavioral/chain-of-responsibility.md",
     "seed/programming syntax/Block statement.md",
@@ -228,7 +214,6 @@
     "core/preferences/Tsconfig.md",
     "core/background/fndmn/design/@TABLE_OF_CONTENT.md",
     "core/preferences/Linters.md",
-    "index.md",
     "core/preferences/typescript",
     "core/preferences/code convention",
     "core/preferences",
@@ -244,19 +229,8 @@
     "core/audit/ptrn/perf/vanilla/import-on-interaction.md",
     "core/audit/ptrn/perf/vanilla/import-on-visibility.md",
     "core/audit/ptrn/perf/vanilla/compression.md",
-    "core/audit/ptrn/perf/vanilla/bundle-splitting.md",
-    "fruit/Coding/Patterns/performance/vanilla/bundle-splitting.md",
-    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/add-parameter.md",
-    "core/audit/smell/bloaters/data-clumps.md",
-    "fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command.md",
-    "fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility.md",
-    "fruit/Coding/Patterns/Design Patterns/catalog/behavioral-patterns.md",
-    "core/audit/ptrn/render/react/incremental-static-rendering.md",
     "core/background/principle/computing/images/spotify_model.jpg",
     "core/background/principle/computing/images",
-    "core/background/principle/computing/새 폴더",
-    "core/background/paradigm/XP",
-    "core/background/law/ux/heuristic",
     "core/background/law/decide/images/gartner_hype_cycle.png",
     "core/background/law/computing/images/amdahls_law.png",
     "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.dark.svg",

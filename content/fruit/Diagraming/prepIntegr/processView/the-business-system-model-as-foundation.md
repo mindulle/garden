@@ -1,3 +1,7 @@
+---
+trello_plugin_note_id: ANg_Oim6uIkOfu2rYDIp2
+trello_board_card_id: 65e9d5d90b7a57d6a1b0b66f;6605a9e43b4cdf99ca144619
+---
 
 
 
@@ -78,7 +82,7 @@ Figure 5.3 shows the use case diagram from *[Modeling Business
 Systems](/uml/modeling-business-systems)*, (\<a
 href=\"/uml/modeling-business-systems/external-view/use-case-diagrams
 
-#f3.14\"\>Figure 3.14), which forms the base diagram for the two marked
+`f3`.14\"\>Figure 3.14), which forms the base diagram for the two marked
 business use cases.
 
 Both examples include activities from the business use case *requesting
@@ -695,7 +699,7 @@ Figure 5.3 shows the use case diagram from *[Modeling Business
 Systems](/uml/modeling-business-systems)*, (\<a
 href=\"/uml/modeling-business-systems/external-view/use-case-diagrams
 
-#f3.14\"\>Figure 3.14), which forms the base diagram for the two marked
+`f3`.14\"\>Figure 3.14), which forms the base diagram for the two marked
 business use cases.
 
 Both examples include activities from the business use case *requesting

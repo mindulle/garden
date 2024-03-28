@@ -38,3 +38,12 @@ This page shows how I organize my digital garden and summarizes them as a table.
 
 
 
+## Tagging System
+
+> [!NOTE] When establishing naming conventions for my tagging system...
+> I took into account the principles of `black box testing` in software development.
+
+![Black box test image from wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Black_box_diagram.svg/1920px-Black_box_diagram.svg.png)
+`input` : `kebab-case`. mostly supposed to be there concepts for the current document.
+`Box` : `camelCase`. would be described to function in software development.
+`output`: `PascalCase`. result of function.

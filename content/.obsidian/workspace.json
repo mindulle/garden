@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "seed/programming syntax/Block statement.md",
+                "file": "core/audit/ptrn/design/behavioral/command.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "seed/programming syntax/Block statement.md",
+                "file": "core/audit/ptrn/design/behavioral/command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "seed/programming syntax/Block statement.md",
+                "file": "core/audit/ptrn/design/behavioral/command.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "seed/programming syntax/Block statement.md"
+                "file": "core/audit/ptrn/design/behavioral/command.md"
               }
             }
           },
@@ -211,15 +211,17 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian42-brat:BRAT": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
       "templater-obsidian:Templater": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "obsidian42-brat:BRAT": false
     }
   },
-  "active": "ea607ec2969d3511",
+  "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
+    "core/audit/ptrn/design/behavioral/chain-of-responsibility.md",
+    "seed/programming syntax/Block statement.md",
     "seed/computing/Seeding (computing).md",
     "seed/computing/ployglot (computing).md",
     "core/preferences/Tsconfig.md",
@@ -247,11 +249,9 @@
     "core/audit/smell/bloaters/data-clumps.md",
     "fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command.md",
     "fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility.md",
-    "core/audit/ptrn/design/behavioral/chain-of-responsibility.md",
     "fruit/Coding/Patterns/Design Patterns/catalog/behavioral-patterns.md",
     "core/audit/ptrn/render/react/incremental-static-rendering.md",
     "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
-    "core/background/law/ux/cognitiveBias/Peak-End_Rule.md",
     "core/background/principle/computing/images/spotify_model.jpg",
     "core/background/principle/computing/images",
     "core/background/principle/computing/새 폴더",

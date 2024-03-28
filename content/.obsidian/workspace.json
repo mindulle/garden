@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "core/audit/ptrn/design/behavioral/command.md",
+                "file": "index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "core/audit/ptrn/design/behavioral/command.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "core/audit/ptrn/design/behavioral/command.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -160,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "core/audit/ptrn/design/behavioral/command.md"
+                "file": "index.md"
               }
             }
           },
@@ -220,6 +220,7 @@
   },
   "active": "3e7a7101c7feee08",
   "lastOpenFiles": [
+    "core/audit/ptrn/design/behavioral/command.md",
     "core/audit/ptrn/design/behavioral/chain-of-responsibility.md",
     "seed/programming syntax/Block statement.md",
     "seed/computing/Seeding (computing).md",
@@ -251,7 +252,6 @@
     "fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility.md",
     "fruit/Coding/Patterns/Design Patterns/catalog/behavioral-patterns.md",
     "core/audit/ptrn/render/react/incremental-static-rendering.md",
-    "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
     "core/background/principle/computing/images/spotify_model.jpg",
     "core/background/principle/computing/images",
     "core/background/principle/computing/새 폴더",

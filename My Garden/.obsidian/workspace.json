@@ -1,0 +1,273 @@
+{
+  "main": {
+    "id": "688eb21a747cd38a",
+    "type": "split",
+    "children": [
+      {
+        "id": "265c6ce6745e9c88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3e7a7101c7feee08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "seed/programming syntax/Block statement.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "959541a687fc1fb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8373185aa0f6d7d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "core/background/fndmn/design/LAYOUT_02_grid_BASIS_.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "415b314476676799",
+    "type": "split",
+    "children": [
+      {
+        "id": "00f68eae0d8a5e8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ed3ae3907a45b75",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bd7396851c87811d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "path:fruit/Coding/smells ",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "51796fc37ebc680b",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "3dbdc909114ef603",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9871f8f698df97de",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7348f3bf3ab84f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58eb37721af95c9e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "seed/programming syntax/Block statement.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "359bed65e7c0f22c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "seed/programming syntax/Block statement.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "b21ae332094966ca",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "580333fcd5396ffb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "seed/programming syntax/Block statement.md"
+              }
+            }
+          },
+          {
+            "id": "32af2cef306523d7",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "7729ee8352d8a740",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "17d6ed14981ccbc3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ea607ec2969d3511",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian42-brat:BRAT": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-spaced-repetition:Review flashcards": false
+    }
+  },
+  "active": "ea607ec2969d3511",
+  "lastOpenFiles": [
+    "seed/computing/Seeding (computing).md",
+    "seed/computing/ployglot (computing).md",
+    "core/preferences/Tsconfig.md",
+    "core/background/fndmn/design/@TABLE_OF_CONTENT.md",
+    "core/preferences/Linters.md",
+    "index.md",
+    "core/preferences/typescript",
+    "core/preferences/code convention",
+    "core/preferences",
+    "core/customizations/tsconfig.md",
+    "core/customizations/typescript",
+    "core/customizations/Linters.md",
+    "core/customizations/code convention",
+    "core/customizations",
+    "core/audit/ptrn/perf/vanilla/preload.md",
+    "core/audit/ptrn/perf/vanilla/prpl.md",
+    "core/audit/ptrn/perf/vanilla/prefetch.md",
+    "core/audit/ptrn/perf/vanilla/loading-sequence.md",
+    "core/audit/ptrn/perf/vanilla/import-on-interaction.md",
+    "core/audit/ptrn/perf/vanilla/import-on-visibility.md",
+    "core/audit/ptrn/perf/vanilla/compression.md",
+    "core/audit/ptrn/perf/vanilla/bundle-splitting.md",
+    "fruit/Coding/Patterns/performance/vanilla/bundle-splitting.md",
+    "fruit/Coding/Refactoring/techniques/simplifying-method-calls/add-parameter.md",
+    "core/audit/smell/bloaters/data-clumps.md",
+    "fruit/Coding/Patterns/Design Patterns/catalog/behavioral/command.md",
+    "fruit/Coding/Patterns/Design Patterns/catalog/behavioral/chain-of-responsibility.md",
+    "core/audit/ptrn/design/behavioral/chain-of-responsibility.md",
+    "fruit/Coding/Patterns/Design Patterns/catalog/behavioral-patterns.md",
+    "core/audit/ptrn/render/react/incremental-static-rendering.md",
+    "core/background/law/ux/cognitiveBias/Serial_Position_Effect.md",
+    "core/background/law/ux/cognitiveBias/Peak-End_Rule.md",
+    "core/background/principle/computing/images/spotify_model.jpg",
+    "core/background/principle/computing/images",
+    "core/background/principle/computing/새 폴더",
+    "core/background/paradigm/XP",
+    "core/background/law/ux/heuristic",
+    "core/background/law/decide/images/gartner_hype_cycle.png",
+    "core/background/law/computing/images/amdahls_law.png",
+    "attachment/Trunk Based Development 2023-12-25 00.34.57.excalidraw.dark.svg",
+    "fruit/Coding/Testing/javascript/assets/lighthouse2.png",
+    "fruit/Coding/Testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",
+    "fruit/testing/javascript/assets/zh-CN/headspace.png",
+    "fruit/testing/javascript/assets/zh-CN/bp-20-yoni-goldberg-mutation-testing.jpg",
+    "fruit/testing/javascript/assets/zh-CN/bp-14-testing-best-practices-contract-flow.png",
+    "fruit/testing/javascript/assets/zh-CN/bp-13-component-test-yoni-goldberg.png",
+    "_OKR/2023/Q4/Q4 2023.canvas",
+    "_OKR/2023/2023.canvas",
+    "Templates/canvas for indices.canvas"
+  ]
+}
